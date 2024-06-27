@@ -1,0 +1,239 @@
+@prefix : <http://example.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+
+:KGShape
+    a sh:NodeShape ;
+    #sh:targetClass wd:Q33002955 ;
+    sh:targetClass schema:Thing ;
+    sh:property [
+        sh:path dct:identifier ;
+        sh:minCount 1 ;
+        sh:datatype rdfs:Literal;
+        sh:description "The identifier for KG metadata. This is valuable for lexical search systems." ;
+        sh:example "https://www.wikidata.org"^^xsd:string ;
+    ];
+    
+    sh:property [
+        sh:path rdf:type ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+    
+        sh:description "To specify the type of object in the description." ;
+        sh:example "dcat:Dataset"^^xsd:IRI ;        
+        sh:or (
+            [ sh:class dcat:Dataset ]
+            [ sh:class wd:Q33002955 ]
+        ) ;
+    ];
+
+    #Title	dct:title	rdf:LangString	schema:name	schema:Text	To provide a name or formal title for the KG	"Wikidata"@en
+    sh:property [
+        sh:path dct:title ;
+        sh:minCount 1 ;
+        sh:datatype rdfs:Literal;
+        sh:description "To provide a name or formal title for the KG." ;
+        sh:example "Wikidata"^^xsd:string ;
+    ];
+
+    # Alternative Title	dct:alternative	rdf:langString	schema:alternateName	schema:Text	To specify a second, or alternative title to the primary title
+    sh:property [
+        sh:path dct:alternative ;
+        sh:datatype rdfs:Literal;
+        sh:description "To specify a second, or alternative title to the primary title." ;
+        sh:example "Wikidata"^^xsd:string ;
+    ];
+
+    #Acronym	http://qudt.org/schema/qudt/acronym	Literal	schema:termCode	schema:DefinedTerm	To specify an acronym for the KG	WD
+    sh:property [
+        sh:path schema:termCode ;
+        sh:datatype rdfs:Literal;
+        sh:description "To specify an acronym for the KG." ;
+        sh:example "WD"^^xsd:string ;
+    ];
+
+    # Homepage URL foaf:page	IRI	schema:url	schema:CreativeWork or schema:Event	page provides minimal information, link to access to data 
+    sh:property [
+        sh:path schema:url ;
+        sh:nodeKind sh:IRI;
+        sh:minCount 1 ;
+        sh:description "page provides minimal information, link to access to data." ;
+        sh:example "https://www.wikidata.org"^^xsd:anyURI ;
+    ];
+
+    # Other Pages	rdfs:seeAlso	IRI	schema:relatedLink	schema:URL	To provide additional relevant pages for the KG	http://viaf.org/viaf/partnerpages/WKP.html 
+    sh:property [
+        sh:path rdfs:seeAlso ;
+        sh:nodeKind sh:IRI ;
+        sh:description "To provide additional relevant pages for the KG." ;
+        sh:example "https://www.wikidata.org/wiki/Wikidata:Introduction"^^xsd:anyURI ;
+    ];
+
+    # [0,∞]	Creator	dct:creator	IRI	schema:creator	schema:Organization or schema:Person	The author of the KG	 Wikimedia Foundation, Wikidata editors, Wikimedia Deutschland	ORCID when exists
+    sh:property [
+        sh:path dct:creator ;
+        sh:nodeKind sh:IRI ;
+        sh:description "The author of the KG." ;
+        sh:example "https://wikimediafoundation.org"^^xsd:anyURI ;
+    ];
+
+    # [0,1]	Created Date	pav:createdOn	xsd:dateTimeStamp	schema:dateCreated	schema:Date or schema:DateTime	To provide the date when the KG is created
+    sh:property [
+        sh:path pav:createdOn ;
+        sh:datatype xsd:date;
+        sh:description "To provide the date when the KG is created." ;
+        sh:example "2020-01-01"^^xsd:date ;
+    ];
+    # [0,∞]	Publisher	dct:publisher	IRI	schema:publisher	schema:Organization or schema:Person	The publisher of the KG, typically as a ROR id of the insitution which the authors below to
+    sh:property [
+        sh:path dct:publisher ;
+        sh:nodeKind sh:IRI ;
+        sh:description "The publisher of the KG, typically as a ROR id of the insitution which the authors below to." ;
+        sh:example "https://wikimediafoundation.org"^^xsd:anyURI ;
+    ];
+
+    # [0,∞]	Funded by 	foaf:fundedBy	IRI	schema:funding		The organism that funded the KG bulding and/or publication
+    sh:property [
+        sh:path foaf:fundedBy ;
+        sh:nodeKind sh:IRI ;
+        sh:description "The organisation(s) that funded the construction/maintenance of the KG." ;
+        sh:example "https://wikimediafoundation.org"^^xsd:anyURI ;
+    ];
+
+    # Modified Date	dct:modified	xsd:dateTimeStamp	schema:dateModified	schema:Date or schema:DateTime	To provide the date when the KG is lastly modified
+    sh:property [
+        sh:path dct:modified ;
+        sh:datatype xsd:date;
+        sh:description "The date when the KG is lastly modified." ;
+        sh:example "2024-06-01"^^xsd:date ;
+    ];
+
+    # [0,∞]	REST API	dcat:dataService	IRI	schema:mainEntityOfPage	schema:CreativeWork or schema:URL -> schema:WebAPI	To provide a REST API for the KG	https://www.wikidata.org/wiki/Q42722531
+    sh:property [
+        sh:path dcat:dataService ;
+        sh:nodeKind sh:IRI ;
+        sh:class dcat:DataService;
+        sh:description "To provide a REST API for the KG." ;
+        sh:example "https://www.wikidata.org/wiki/Q42722531"^^xsd:anyURI ;
+    ];
+
+    #Vocabularies used	void:vocabulary	IRI			To specify the vocabularies used in the knowledge	https://github.com/mkroetzsch/wda/blob/master/wikidata-ontology.owl
+    sh:property [
+        sh:path void:vocabulary ;
+        sh:nodeKind sh:IRI ;
+        sh:description "To specify the vocabularies used in the knowledge." ;
+        sh:example "";
+    ];
+
+    # [0,∞]	Keywords	dcat:keyword	rdf:langString	schema:keywords	schema:Text	To provide keywords for the KG	"knowledge graph, wikidata, ontology"@en
+    sh:property [
+        sh:path dcat:keyword ;
+        sh:datatype rdfs:Literal;
+        sh:description "To provide keywords for the KG." ;
+        sh:example "knowledge graph, wikidata, ontology"^^xsd:string ;
+    ];
+
+    #[0,∞]	publication/references	dct:references	IRI	"schema:publication, 
+    sh:property [
+        sh:path dct:references ;
+        sh:nodeKind sh:IRI ;
+        sh:description "To provide references for the KG." ;
+        sh:example "https://www.wikidata.org/wiki/Wikidata:Introduction"^^xsd:anyURI ;
+    ];
+    
+    # [0,∞]	License	dct:license	IRI	schema:license	schema:CreativeWork or schema:URL	To specify the license of the KG	https://creativecommons.org/licenses/by-sa/3.0/
+    sh:property [
+        sh:path dct:license ;
+        sh:nodeKind sh:IRI ;
+        sh:description "To specify the license of the KG." ;
+        sh:example "https://creativecommons.org/licenses/by-sa/3.0/"^^xsd:anyURI ;
+    ];
+
+    # [1,∞]	Language	dct:language	IETF language tag (bcp-47)	schema:language	schema:Language	Languages represented in the knowledge graph.	multiple languages
+    sh:property [
+        sh:path dct:language ;
+        sh:datatype rdfs:Literal;
+        sh:description "Languages represented in the knowledge graph." ;
+        sh:example "en"^^xsd:string ;
+    ];
+
+    # [0,∞]	IRI template	void:uriRegexPattern or hydra:template	string			To provide 0..* IRI Templates, following RFC 6570, that individuals are typically identified by	
+    sh:property [
+        sh:path void:uriRegexPattern ;
+        sh:datatype rdfs:Literal;
+        sh:description "IRI Templates, following RFC 6570, that individuals are typically identified by." ;
+        sh:example "https://www.wikidata.org/wiki/{id}"^^xsd:string ;
+    ];
+
+    # [0,∞]	example resource	void:exampleResource 	IRI			To provide an example instance in the KG	https://www.wikidata.org/wiki/Q2013
+    sh:property [
+        sh:path void:exampleResource ;
+        sh:nodeKind sh:IRI ;
+        sh:description "To provide an example instance in the KG." ;
+        sh:example "https://www.wikidata.org/wiki/Q2013"^^xsd:anyURI ;
+    ];
+
+    # [0,∞]	Source	prov:hadPrimarySource	IRI			To specify the origin or source of data for the KG	http://www.wikidata.org/entity/$1 
+    sh:property [
+        sh:path prov:hadPrimarySource ;
+        sh:nodeKind sh:IRI ;
+        sh:description "To specify the origin or source of data for the KG." ;
+        sh:example "https://www.wikidata.org/wiki/Wikidata:Introduction"^^xsd:anyURI ;
+    ];
+    .@prefix : <http://example.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix pav: <http://purl.org/pav/> .
+
+
+:DCATDataService
+    a sh:NodeShape ;
+    sh:targetClass dcat:DataService ;      
+    sh:nodeKind sh:IRI;
+
+    sh:property [
+        sh:path dcat:endpointURL ;
+        sh:nodeKind sh:IRI;
+        sh:message "The URL for the dataservice endpoint" ;
+    ] ;
+    sh:property [
+        sh:path dcat:endpointDescription ;
+        sh:nodeKind sh:IRI ;
+        sh:message "A webpage descripting the service endpoint" ;
+    ] ;
+    sh:property [
+        sh:path dct:conformsTo;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:message "The URL of the standard that the service conforms to" ;
+    ] ;
+    sh:property [
+        sh:path dcat:servesDataset;
+        sh:nodeKind sh:IRI ;
+        sh:class dcat:Dataset ;
+        sh:minCount 1 ;
+        sh:message "The dataset that the service serves" ;
+    ];
+    sh:property [
+        sh:path dct:title;
+        sh:datatype rdf:langString ;
+        sh:message "A name for the dataservice";
+    ];
+    .
