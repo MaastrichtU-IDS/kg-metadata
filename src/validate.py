@@ -28,7 +28,7 @@ try:
     conforms, report_graph, report_text = results
     
     print("Conforms:", conforms)
-    print("Results Text:", results_text)
+    print("Results Text:", report_text)
     
 except Exception as e:
     print("An error occurred:")
