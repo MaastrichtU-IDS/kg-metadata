@@ -1,0 +1,46 @@
+@prefix : <http://example.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix pav: <http://purl.org/pav/> .
+
+
+:DCATDataService
+    a sh:NodeShape ;
+    sh:targetClass dcat:DataService ;      
+    sh:nodeKind sh:IRI;
+
+    sh:property [
+        sh:path dcat:endpointURL ;
+        sh:nodeKind sh:IRI;
+        sh:message "The URL for the dataservice endpoint" ;
+    ] ;
+    sh:property [
+        sh:path dcat:endpointDescription ;
+        sh:nodeKind sh:IRI ;
+        sh:message "A webpage descripting the service endpoint" ;
+    ] ;
+    sh:property [
+        sh:path dct:conformsTo;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:message "The URL of the standard that the service conforms to" ;
+    ] ;
+    sh:property [
+        sh:path dcat:servesDataset;
+        sh:nodeKind sh:IRI ;
+        sh:class dcat:Dataset ;
+        sh:minCount 1 ;
+        sh:message "The dataset that the service serves" ;
+    ];
+    sh:property [
+        sh:path dct:title;
+        sh:datatype rdf:langString ;
+        sh:message "A name for the dataservice";
+    ];
+    .
