@@ -1,0 +1,477 @@
+@prefix : <http://example.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qudt: <http://qudt.org/schema/qudt/>.
+@prefix w3id: <https://w3id.org/mod#>.
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix cito: <http://purl.org/spar/cito> .
+:DCATDatasetShape
+    a sh:NodeShape ;
+    sh:targetClass dcat:Dataset ;
+    sh:targetClass dcat:Resource;
+    
+    sh:property [
+        sh:path dct:identifier ;
+        sh:or (
+        [ sh:datatype rdfs:Literal ]
+        [ sh:nodeKind sh:IRI ]
+                ) ;
+        sh:description "The identifier for KG metadata." ;
+        sh:example "https://www.wikidata.org"^^xsd:string ;
+    ];
+    
+    sh:property [
+        sh:path rdf:type ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+    
+        sh:description "To specify the type of object in the description." ;
+        sh:example "dcat:Dataset"^^xsd:IRI ;        
+        # sh:class dcat:Dataset;
+    ];
+
+
+    sh:property [
+        sh:path dct:title ;
+        sh:minCount 1 ;
+        sh:or (
+        [ sh:datatype rdf:langString ]
+        [ sh:datatype xsd:string ]) ;
+        sh:description "To provide a name or formal title for the KG." ;
+        sh:example "Wikidata"^^xsd:string ;    # Example without a language tag
+        sh:example "Wikidata"@en ;            # Example with a language tag
+] ;
+
+    sh:property [
+        sh:path dct:alternative ;
+        sh:or (
+        [ sh:datatype rdf:langString ]
+        [ sh:datatype xsd:string ]) ;
+        sh:description "To specify a second, or alternative title to the primary title." ;
+        
+    ];
+  
+    sh:property [
+        sh:path qudt:acronym  ;
+        sh:datatype xsd:string;
+        sh:description "To specify an acronym for the KG." ;
+        
+    ]; 
+          
+    #description        
+    sh:property [
+        sh:path dct:description ;
+        sh:minCount 1 ;
+        sh:or (
+        [ sh:datatype rdf:langString ]
+        [ sh:datatype xsd:string ]) ;   
+        sh:description """To provide a human readable description of the KG. Minimally, the description should be in English, and ideally, there would be descriptions available in other languages.""" ;
+         sh:example """Wikidata is a free and open knowledge base that can be read and edited by both humans and machines. 
+        Wikidata acts as central storage for the structured data of its Wikimedia sister projects including Wikipedia, Wikivoyage, Wiktionary, Wikisource, and others. Wikidata also provides support to many other sites and services beyond just Wikimedia projects! The content of Wikidata is available under a free license, exported using standard formats, and can be interlinked to other open data sets on the linked data web."""@en ;            # Example with a language tag
+] ;
+
+
+    sh:property [
+        sh:path foaf:page ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI;
+        sh:description "page provides minimal information, link to access to data." ;
+        sh:example <https://www.wikidata.org> ;
+    ];
+
+
+    sh:property [
+        sh:path rdfs:seeAlso ;
+        sh:nodeKind sh:IRI ;
+        sh:description "To provide additional relevant pages for the KG." ;
+        sh:example <https://www.wikidata.org/wiki/Wikidata:Introduction>;
+    ];
+
+
+    sh:property [
+        sh:path prov:qualifiedAttribution ;
+        sh:minCount 1 ;
+        sh:description "Link to an Agent having some form of responsibility for the resource";
+        sh:nodeKind sh:BlankNode ;
+        sh:node [
+                sh:property [
+                sh:path prov:agent ;
+                sh:minCount 1 ;
+                sh:nodeKind sh:IRI;
+                sh:node :AgentShape ;
+                            ] ;
+
+                sh:property [
+                    sh:path dcat:hadRole ;
+                    sh:minCount 1 ;
+                    sh:description "Use dcat:hadRole on the prov:Attribution to capture the responsibility of the Agent with respect to the Resource. ";
+                ] ;]];
+
+    sh:property [
+        sh:path pav:createdOn ;
+        sh:datatype xsd:dateTimeStamp;
+        sh:description "To provide the date when the KG is created." ;
+        sh:example "2020-01-01T15:30:00Z"^^xsd:dateTimeStamp;
+    ];
+
+
+    sh:property [
+        sh:path dct:modified ;
+        sh:datatype xsd:dateTimeStamp;
+        sh:description "The date when the KG is lastly modified." ;
+        sh:example "2024-11-25T15:30:00Z"^^xsd:dateTimeStamp ;
+    ];
+            
+
+    sh:property [
+        sh:path dct:issued ;
+        sh:datatype xsd:dateTimeStamp;
+        sh:minCount 1 ;
+        sh:description "The date when the KG is published." ;
+        sh:example "2012-10-29T15:30:00Z"^^xsd:date ;
+    ];
+            
+  
+    sh:property [
+        sh:path void:vocabulary ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:description "To specify the vocabularies used in the knowledge." ;
+        sh:example "";
+    ];   
+            
+                   
+    
+    sh:property [
+        sh:path cito:citesAsAuthority ;
+        sh:nodeKind sh:IRI ;
+        sh:description "To provide a reference to a document, article or data paper describing the KG." ;
+        sh:example <https://dl.acm.org/doi/10.1145/2629489>;
+    ];   
+            
+    
+    sh:property [
+        sh:path foaf:depiction ;
+        sh:nodeKind sh:IRI ;
+        sh:description "To provide an illustration of the graph connectivity through its types and relations between instances" ;
+        sh:example <https://www.researchgate.net/figure/A-simplified-class-level-diagram-of-the-Wikidata-knowledge-graph-for-biomedical-entities_fig1_339985351> ;
+    ] ;
+           
+    #Statistics
+    #triples
+    sh:property [
+        sh:path void:triples;
+        sh:datatype rdfs:Literal ;
+        sh:description "To provide number of triples in the knowledge graph. See HCLS: https://www.w3.org/TR/hcls-dataset/#s6_6" ;
+        sh:example "8939"^^xsd:integer ;
+    ] ;
+  
+    sh:property [
+        sh:path w3id:sampleQueries   ;
+        sh:or (
+        [ sh:datatype rdfs:Literal ]
+        [ sh:nodeKind sh:IRI ]);
+        sh:description "To provide an exemplar query against the KG" ;
+        sh:example "https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples"^^xsd:anyURI ;
+    ] ;   
+    
+     
+     # version
+    sh:property [
+        sh:path dct:version;
+        sh:datatype rdfs:Literal;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:description "To specify the version of the dataset, if defined" ;
+    ];            
+    
+   
+    sh:property [
+        sh:path dct:license ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:description "To provide the license that the KG is released with. The Software Ontology defines a set of standard licenses to could be chosen from (see http://www.ebi.ac.uk/swo/SWO_0000002)" ;
+        sh:example <https://www.wikidata.org/wiki/Q6938433> ;
+    ];
+
+    sh:property [
+        sh:path dcat:keyword ;
+        sh:datatype xsd:string;
+        sh:minCount 1 ;
+        sh:description "To provide keywords for the KG." ;
+        sh:example "knowledge graph, wikidata, ontology"^^xsd:string ;
+    ];
+
+    sh:property [
+        sh:path dct:references ;
+        sh:nodeKind sh:IRI ;
+        sh:description "To provide references for the KG." ;
+        sh:example <https://www.wikidata.org/wiki/Wikidata:Introduction> ;
+    ];
+                  
+    sh:property [
+        sh:path dct:language ;
+        sh:datatype rdf:langString;
+        sh:minCount 1 ;
+        sh:description "Languages represented in the knowledge graph." ;
+        sh:example "en"@en ;
+    ];
+          
+    sh:property [
+        sh:path void:uriRegexPattern ;
+        sh:datatype rdfs:Literal;
+        sh:description "To provide 0..* IRI Templates, following RFC 6570, that individuals are typically identified by" ;
+        sh:example "https://www.wikidata.org/wiki/{id}"^^xsd:string ;
+    ];
+
+   #example resource 
+    sh:property [
+        sh:path void:exampleResource;
+        sh:description "To provide an example resource." ;
+        sh:nodeKind sh:BlankNode ;
+        sh:node [
+            sh:property [
+                sh:path dct:title;
+                sh:datatype rdfs:Literal ;
+                sh:description "A name." ;
+            ] ;
+            sh:property [
+                sh:path dct:description ;
+                sh:datatype rdfs:Literal ; 
+                sh:description "A free-text account of the example." ;
+            ];
+            sh:property [
+                sh:path dcat:mediaType;
+                sh:datatype xsd:string ;
+                sh:description "The media type" ;
+            ] ;
+            sh:property [
+				sh:path adms:status;
+                sh:datatype xsd:string ;
+                sh:description "The status " ;
+                 ] ;
+            sh:property [
+                sh:path dcat:accessURL;
+                sh:nodeKind sh:IRI;
+                sh:description "A URL of the resource that gives access to a distribution of the dataset. E.g., landing page, feed, SPARQL endpoint." ;
+            ] ;];];
+
+    #Access Statement        
+    sh:property [
+        sh:path dct:accessRights ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:description "To specify any restrictions on the access to the resource, and how to gain legitimate access" ;
+    ];            
+   
+    sh:property [
+        sh:path prov:hadPrimarySource ;
+        sh:nodeKind sh:IRI ;
+        sh:description "To specify the origin or source of data for the KG." ;
+        sh:example <http://www.wikidata.org/entity/$1> ;
+    ];
+
+    sh:property [
+        sh:path void:uriSpace ;
+        sh:nodeKind sh:IRI ;
+        sh:description "property can be used to state that all entity URIs in a dataset start with a given string." ;
+        sh:example <http://www.wikidata.org/entity/$1> ;
+    ];
+        #sparql endpoint
+    sh:property [
+        sh:path void:sparqlEndpoint; 
+        sh:description "To provide a SPARQL endpoint for the KG" ;
+        sh:example <https://query.wikidata.org/sparql> ;
+        sh:nodeKind sh:BlankNode ;
+        sh:node [
+			sh:property [
+				sh:path dct:title;
+                sh:datatype rdfs:Literal ;
+                sh:description "A name given to the data service." ;
+                 ] ;
+                sh:property [
+                sh:path dcat:endpointDescription ;
+                sh:datatype rdfs:Literal ; 
+                sh:description "A description of the services available via the end-points, including their operations, parameters etc." ;
+            ];
+            sh:property [
+				sh:path adms:status;
+                sh:datatype xsd:string ;
+                sh:description "The status of the endpoint " ;
+                 ] ;
+            sh:property [
+				sh:path dct:identifier;
+                sh:datatype rdfs:Literal;
+                sh:description "The identifier for sparql endpoint" ;] ;
+            sh:property [
+				sh:path dcat:endpointURL;
+                sh:nodeKind sh:IRI;
+                sh:description "A URL of the resource that gives access to a distribution of the dataset. E.g., landing   page, feed, SPARQL endpoint." ;
+                 ] ; ]] ;
+
+        #distribution
+    sh:property [
+        sh:path dcat:distribution;
+        sh:minCount 1 ; 
+        sh:description "To provide different concrete distributions (files) of the resource." ;
+        sh:example <https://www.wikidata.org/wiki/Wikidata:Database_download/nl> ;
+        sh:nodeKind sh:BlankNode ;
+        sh:node [
+            sh:property [
+                sh:path dct:title;
+                sh:minCount 1 ;
+                sh:datatype rdfs:Literal ;
+                sh:description "A name given to the distribution." ;
+            ] ;
+            sh:property [
+                sh:path dct:description ;
+                sh:minCount 1 ;
+                sh:datatype rdfs:Literal ; 
+                sh:description "A free-text account of the distribution." ;
+            ];
+            sh:property [
+                sh:path dcat:mediaType;
+                sh:minCount 1 ;
+                sh:datatype xsd:string ;
+                sh:description "The media type of the distribution as defined by IANA " ;
+            ] ;
+            sh:property [
+                sh:path dcat:downloadURL;
+                sh:minCount 1 ;
+                sh:nodeKind sh:IRI;
+                sh:description "The URL of the downloadable file in a given format. E.g., CSV file or RDF file. The format is indicated by the distribution's dcterms:format and/or dcat:mediaType" ;
+            ] ;
+            sh:property [
+                sh:path dcat:accessURL;
+                sh:minCount 1 ;
+                sh:nodeKind sh:IRI;
+                sh:description "A URL of the resource that gives access to a distribution of the dataset. E.g., landing page, feed, SPARQL endpoint." ;
+            ] ;
+
+            sh:property [
+                sh:path dct:conformsTo ;
+                sh:nodeKind sh:IRI ; 
+                sh:description "To specify the file against which to validate the KG metadata. Recommended that the IRI is a Profile (https://www.w3.org/TR/dx-prof/)." ;
+                sh:example <https://www.wikidata.org/wiki/Wikidata:WikiProject_Schemas#:~:text=Wikidata%20Schemas%20are%20formally%20described,ShEx)%2C%20using%20ShExC%20syntax.> ;
+            ] ;
+            
+            # Non-required properties
+            sh:property [
+                sh:path dcat:accessService;
+                sh:description "A service that provides access to the distribution." ;
+            ] ;
+            sh:property [
+                sh:path dcat:byteSize;
+                sh:datatype xsd:integer ;
+                sh:description "The size of the distribution in bytes." ;
+            ] ;
+            sh:property [
+                sh:path dcat:compressFormat;
+                sh:description "The compression format of the distribution." ;
+            ] ;
+            sh:property [
+                sh:path dct:format;
+                sh:description "The file format of the distribution." ;
+            ] ;
+            sh:property [
+                sh:path dcat:hasPolicy;
+                sh:description "A policy associated with the distribution." ;
+            ] ;
+            sh:property [
+                sh:path dct:license;
+                sh:description "The license under which the distribution is made available." ;
+            ] ;
+            sh:property [
+                sh:path dcat:packagingFormat;
+                sh:description "The packaging format of the distribution." ;
+            ] ;
+            sh:property [
+                sh:path dct:issued;
+                sh:datatype xsd:dateTime ;
+                sh:description "The release date of the distribution." ;
+            ] ;
+            sh:property [
+                sh:path dct:rights;
+                sh:description "Rights information of the distribution." ;
+            ] ;
+            sh:property [
+                sh:path dcat:spatialResolutionInMeters;
+                sh:datatype xsd:decimal ;
+                sh:description "The spatial resolution of the distribution in meters." ;
+            ] ;
+            sh:property [
+                sh:path dcat:temporalResolution;
+                sh:datatype xsd:duration ;
+                sh:description "The temporal resolution of the distribution." ;
+            ] ;
+            sh:property [
+                sh:path dct:title;
+                sh:description "An additional title for the distribution." ;
+            ] ;
+            sh:property [
+                sh:path dct:modified;
+                sh:datatype xsd:dateTime ;
+                sh:description "The date when the distribution was last modified."]
+        ]
+        ]
+        
+            .
+
+:LinksetShape
+    a sh:NodeShape ;
+    sh:targetClass void:Linkset ;
+    sh:property [
+        sh:path void:target ;
+        sh:nodeKind sh:IRI ;
+        sh:description "One of the two void:Datasets connected by this void:Linkset." ;
+    ] ;
+    sh:property [
+        sh:path void:triples ;
+        sh:datatype xsd:integer ;
+        sh:description "The number of RDF triples in the linkset." ;
+    ] .
+
+            
+:DCATDataService
+    a sh:NodeShape ;
+    sh:targetClass dcat:DataService ;      
+    sh:nodeKind sh:IRI;
+    sh:property [
+        sh:path dcat:servesDataset;
+        sh:nodeKind sh:IRI ;
+        sh:class dcat:Dataset ;
+        sh:description "The dataset that the service serves" ;
+    ].
+
+# Shape for Agent (prov:Agent)
+:AgentShape
+    a sh:NodeShape ;
+    sh:targetClass prov:Agent ; 
+   
+    sh:property [
+        sh:path foaf:name ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:description "name of the agent."
+    ] ;
+
+    sh:property [
+        sh:path foaf:mbox ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:description "email of the agent."
+    ] ;
+.
+
+

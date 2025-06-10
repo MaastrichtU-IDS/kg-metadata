@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compact Styled Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            background-color: #f9f9f9;
+        }
+        table {
+            width: 65%;
+            border-collapse: collapse;
+            margin: 10px auto;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        thead {
+            background-color: #007BFF;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        h1 {
+            text-align: center;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Knowledge Graph Metadata</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Card.</th>
+                <th>HCLS Term</th>
+                <th>HCLS Datatype</th>
+                <th>Schema.org Term</th>
+                <th>Schema Datatype</th>
+                <th>Purpose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>[0, ∞]</td>
+                <td>dct:identifier</td>
+                <td>rdfs:Literal or IRI</td>
+                <td>schema:identifier</td>
+                <td>schema:Text or schema:URL</td>
+                <td>The identifier for KG metadata.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
