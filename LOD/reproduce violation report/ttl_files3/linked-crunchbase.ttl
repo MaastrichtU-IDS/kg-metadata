@@ -1,0 +1,72 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:linked-crunchbase a dcat:Dataset ;
+    dcat:keyword "crunchbase", "format-rdf", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-proprietary-vocab", "published-by-third-party", "usergeneratedcontent", "wrapper" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title_main "Linked_Crunchbase" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "application/ld+json;charset=ISO-8859-1" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://km.aifb.kit.edu/services/crunchbase/api/company/facebook#id> ;
+        adms:status_exampleResource """
+FAIL (503)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "application/ld+json;charset=ISO-8859-1" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://km.aifb.kit.edu/services/crunchbase/api/company/ibm#id> ;
+        adms:status_exampleResource """
+FAIL (503)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        adms:status_exampleResource """
+FAIL (No connection adapters were found for 'lhttp://km.aifb.kit.edu/services/crunchbase/api/person/sheryl-sandberg#id')
+""" ;
+    ] ;
+    dct:description_main """
+A CrunchBase wrapper to Linked Data
+"""@en ;
+
+    foaf:page <http://km.aifb.kit.edu/services/crunchbase/api/> ;
+    void:triples "5000000"^^xsd:integer ;
+    void:uriSpace <http://km.aifb.kit.edu/services/crunchbase/api/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :linked-crunchbase ;
+    void:triples "16706"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Andreas_Harth"^^xsd:string ;
+     foaf:Cmbox <mailto:andreas@harth.org> ; 
+ .
+

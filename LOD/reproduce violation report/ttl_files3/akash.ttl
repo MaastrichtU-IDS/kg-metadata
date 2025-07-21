@@ -1,0 +1,42 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:akash a dcat:Dataset ;
+    foaf:page <http://www.semanticweb.org/manycetomar/ontologies/2019/4/EEO-ontology-2> ;
+    dct:license <http://www.opendefinition.org/licenses/odc-odbl> ;
+    dct:title_main "_equipment_ontology" ;
+    dct:description_main """
+it is an ontology for equipment.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    dcat:theme "cross_domain" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:mandytomar@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "akashdeep"^^xsd:string ;
+     foaf:Cmbox <mailto:rkrajput988@gmail.com> ; 
+ .
+

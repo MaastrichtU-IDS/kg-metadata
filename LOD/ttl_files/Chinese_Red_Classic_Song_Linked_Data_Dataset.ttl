@@ -1,0 +1,170 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Chinese_Red_Classic_Song_Linked_Data_Dataset a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title "Chinese_Red_Classic_Song_Linked_Data_Dataset_endpoint" ;
+        dct:identifier "22cd9796-f1d6-7b5d-9794-9b7d57fc1112" ;
+        dcat:endpointDescription """
+Chinese Red Classic Song Linked Data Dataset endpoint
+""" ;
+        dcat:accessURL <http://47.97.223.173:3030> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='47.97.223.173', port=3030): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686da0c40>: Failed to establish a new connection: [Errno 111] Connection refused')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/plain;_charset=utf-8" ;
+        dct:description """
+related figure about song
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "related_figure" ;
+        dct:mirror "[]" ;
+        dct:identifier "2babcdbc-26ca-55cc-ca2d-bcfc756da8cd" ;
+        dcat:downloadURL <https://raw.githubusercontent.com/baixue1/linked-data/master/data/figure.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/plain;_charset=utf-8" ;
+        dct:description """
+related imagery about song
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "related_imagery" ;
+        dct:mirror "[]" ;
+        dct:identifier "60e8fb00-9f47-543b-eebd-e4083266a20b" ;
+        dcat:downloadURL <https://raw.githubusercontent.com/baixue1/linked-data/master/data/imagery.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/plain;_charset=utf-8" ;
+        dct:description """
+related history event about song
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "related_history_event_" ;
+        dct:mirror "[]" ;
+        dct:identifier "a23a0dc5-567e-a2f3-5e5b-5abedf4081d4" ;
+        dcat:downloadURL <https://raw.githubusercontent.com/baixue1/linked-data/master/data/historyevent.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/plain;_charset=utf-8" ;
+        dct:description """
+performer of song
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "performer" ;
+        dct:mirror "[]" ;
+        dct:identifier "2da1f3bb-695f-ab62-e845-bf944b25dbc9" ;
+        dcat:downloadURL <https://raw.githubusercontent.com/baixue1/linked-data/master/data/performer.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/plain;_charset=utf-8" ;
+        dct:description """
+composer of song
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "composer" ;
+        dct:mirror "[]" ;
+        dct:identifier "9969b64a-e2e8-21e3-2ce1-2a4e4c72bc74" ;
+        dcat:downloadURL <https://raw.githubusercontent.com/baixue1/linked-data/master/data/composer.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/plain;_charset=utf-8" ;
+        dct:description """
+song
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "song" ;
+        dct:mirror "[]" ;
+        dct:identifier "d7fd8228-8b5d-1bb7-93b1-8b908cb6be49" ;
+        dcat:downloadURL <https://raw.githubusercontent.com/baixue1/linked-data/master/data/song.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/plain;_charset=utf-8" ;
+        dct:description """
+lyricist of song
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "lyricist" ;
+        dct:mirror "[]" ;
+        dct:identifier "7242c165-66f0-42c3-c804-35d9d44ee84d" ;
+        dcat:downloadURL <https://raw.githubusercontent.com/baixue1/linked-data/master/data/Lyricist.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/plain;_charset=utf-8" ;
+        dct:description """
+original performer of song
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "original_performer" ;
+        dct:mirror "[]" ;
+        dct:identifier "604995d2-736f-3d96-ce24-6bc619003966" ;
+        dcat:downloadURL <https://raw.githubusercontent.com/baixue1/linked-data/master/data/original_performer.ttl> ;
+    ] ;
+    foaf:page <http://47.97.223.173:8000> ;
+    dcat:keyword "Red_Classic_Song_Chinese_History-event_Figure_Imagery" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "Chinese_Red_Song_Linked_Data_Dataset" ;
+    dct:description """
+Red songs are precious historical materials, reflecting the face of Chinese people in a specific historical period, praising the glorious achievements of the party and the motherland, praising the noble spirit of the people of all ethnic groups who are not afraid of hardships and hard struggle, and expressing their yearning for their hometown. At the same time, many songs reflect the historical events experienced by the party and the state in the development process, and praise a large number of proletarian revolutionaries and ordinary workers who have made great contributions to the prosperity of the country and the happiness of the people. At the same time, it attacked the oppression of imperialism and feudalism. These are still worth learning.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:triples "5828"^^xsd:integer ;
+    dcat:theme "media" ;
+    void:exampleResource [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Selected the red classic song "hong mei zan" and the related composers, composers, singers, as well as its related characters, images and so on.
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='47.97.223.173', port=8000): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dad150>: Failed to establish a new connection: [Errno 111] Connection refused')))
+""" ;
+        dct:title "Chinese_Red_Classic_Song_Linked_Data_Dataset_Demo" ;
+        dcat:accessURL <http://47.97.223.173:8000> ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:rupalitiwary0311@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "baixue"^^xsd:string ;
+     foaf:mbox <mailto:wawabaixue@sina.com> ; 
+ .
+

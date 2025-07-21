@@ -1,0 +1,409 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bioportal-mfoem a dcat:Dataset ;
+    dcat:keyword "biomedicine", "bioportal", "format-owl", "format-rdf", "lod", "ontology", "published-by-third-party" ;
+    dct:title "Emotion_Ontology" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+REST API Wiki Documentation
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+SPARQL endpoint
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://sparql.bioontology.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+Download link, BioPortal API KEY is required
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://rest.bioontology.org/bioportal/ontologies/download/46852?apikey=BP_API_KEY> ;
+    ] ;
+    dct:description """
+An ontology of affective phenomena such as emotions, moods, appraisals and subjective feelings, designed to support interdisciplinary research by providing unified annotations.  The ontology is a domain specialisation of the broader Mental Functioning Ontology. 
+"""@en ;
+
+    foaf:page <http://bioportal.bioontology.org/ontologies/1666> ;
+    void:triples "3676"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-acgt a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "42"^^xsd:integer ;
+ .
+
+:bioportal-aero a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "185"^^xsd:integer ;
+ .
+
+:bioportal-bao a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "103"^^xsd:integer ;
+ .
+
+:bioportal-bdo a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-bfo a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "39"^^xsd:integer ;
+ .
+
+:bioportal-biomodels a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-birnlex a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "54"^^xsd:integer ;
+ .
+
+:bioportal-canco a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "64"^^xsd:integer ;
+ .
+
+:bioportal-cao a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "49"^^xsd:integer ;
+ .
+
+:bioportal-cheminf a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "162"^^xsd:integer ;
+ .
+
+:bioportal-clo a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "148"^^xsd:integer ;
+ .
+
+:bioportal-cogpo a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "148"^^xsd:integer ;
+ .
+
+:bioportal-cpr a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "53"^^xsd:integer ;
+ .
+
+:bioportal-csp a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:bioportal-ddi a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "163"^^xsd:integer ;
+ .
+
+:bioportal-ecg a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "57"^^xsd:integer ;
+ .
+
+:bioportal-efo a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+:bioportal-ep a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-ero a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "61"^^xsd:integer ;
+ .
+
+:bioportal-flu a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "148"^^xsd:integer ;
+ .
+
+:bioportal-galen a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "28"^^xsd:integer ;
+ .
+
+:bioportal-hl7 a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-hpio a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "45"^^xsd:integer ;
+ .
+
+:bioportal-iao a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "97"^^xsd:integer ;
+ .
+
+:bioportal-icnp a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:bioportal-icpc2p a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-ido a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "51"^^xsd:integer ;
+ .
+
+:bioportal-idobru a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "56"^^xsd:integer ;
+ .
+
+:bioportal-idomal a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-ino a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "39"^^xsd:integer ;
+ .
+
+:bioportal-lnc a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-mdr a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-mesh-owl a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "55"^^xsd:integer ;
+ .
+
+:bioportal-mf a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "162"^^xsd:integer ;
+ .
+
+:bioportal-miro a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "39"^^xsd:integer ;
+ .
+
+:bioportal-msh a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "30"^^xsd:integer ;
+ .
+
+:bioportal-ncit a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "96"^^xsd:integer ;
+ .
+
+:bioportal-nemo_x1 a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "67"^^xsd:integer ;
+ .
+
+:bioportal-neomark a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:bioportal-neumore a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:bioportal-nif a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "179"^^xsd:integer ;
+ .
+
+:bioportal-nif_cell a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "52"^^xsd:integer ;
+ .
+
+:bioportal-nif_dysfunction a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "52"^^xsd:integer ;
+ .
+
+:bioportal-nmr a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "37"^^xsd:integer ;
+ .
+
+:bioportal-npo a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "36"^^xsd:integer ;
+ .
+
+:bioportal-oae a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "47"^^xsd:integer ;
+ .
+
+:bioportal-obi a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "136"^^xsd:integer ;
+ .
+
+:bioportal-ocre a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:bioportal-odgi a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "48"^^xsd:integer ;
+ .
+
+:bioportal-ogi a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "41"^^xsd:integer ;
+ .
+
+:bioportal-ogms a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "50"^^xsd:integer ;
+ .
+
+:bioportal-omrse a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "50"^^xsd:integer ;
+ .
+
+:bioportal-ontodm a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "162"^^xsd:integer ;
+ .
+
+:bioportal-ontodt a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-ooevv a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-opl a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "51"^^xsd:integer ;
+ .
+
+:bioportal-pvonto a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:bioportal-rcd a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "24"^^xsd:integer ;
+ .
+
+:bioportal-rnao a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "39"^^xsd:integer ;
+ .
+
+:bioportal-sao a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "37"^^xsd:integer ;
+ .
+
+:bioportal-sdo a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "53"^^xsd:integer ;
+ .
+
+:bioportal-sio a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "72"^^xsd:integer ;
+ .
+
+:bioportal-snomedct a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "55"^^xsd:integer ;
+ .
+
+:bioportal-sopharm a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "45"^^xsd:integer ;
+ .
+
+:bioportal-swo a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "19"^^xsd:integer ;
+ .
+
+:bioportal-teo a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "162"^^xsd:integer ;
+ .
+
+:bioportal-tmo a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "96"^^xsd:integer ;
+ .
+
+:bioportal-vo a void:Linkset ;
+    void:target :bioportal-mfoem ;
+    void:triples "42"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Janna_Hastings"^^xsd:string ;
+ .
+

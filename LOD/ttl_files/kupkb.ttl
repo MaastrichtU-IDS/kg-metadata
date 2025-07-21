@@ -1,0 +1,108 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:kupkb a dcat:Dataset ;
+    dcat:keyword "biological_database", "format-efo", "gene_expression", "kidney", "lifesciences", "lod", "lodcloud-diagram-2014-08-30", "urinary_pathway" ;
+    dct:title "Kidney_and_Urinary_Pathway_Knowledge_Base" ;
+    void:sparqlEndpoint [
+        dct:title "KUPKB_SPARQL" ;
+        dcat:endpointDescription """
+SPARQL endpoint to the KUPKB
+""" ;
+        dcat:accessURL <http://sparql.kupkb.org/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='sparql.kupkb.org', port=80): Max retries exceeded with url: /sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684303a30>: Failed to establish a new connection: [Errno -5] No address associated with hostname')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Example experiment from the KUPKB. 
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Gudmap,_GSE17138" ;
+        dct:mirror "['ipfs:QmPkancEC4UNpZwF8tNKnk1NaWwjwqFLvq5KMoGzwyEY8U']" ;
+        dcat:accessURL <http://www.kupkb.org/data/kupkb/experiment/gse17138_adult_assay> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+basic metadata about the KUPKB dataset
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "dataset_descripton" ;
+        dct:mirror "['ipfs:QmfJT8fZEvBZX9UdQAvfdeqiYaGJ6CXB9B7YbUbAtE6Mrj']" ;
+        dcat:accessURL <http://www.kupkb.org/data/kupkb/dataset/010913> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "OWL" ;
+        dct:description """
+Kidney and Urinary pathway ontology.
+""" ;
+        adms:status """
+FAIL (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+""" ;
+        dct:title "KUPKB_ontology" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.kupkb.org/public/kupkb/kupkb.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "OWL" ;
+        dct:description """
+Ontology describing kidney and urinary pathways cell, anatomy, and disease. 
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Kidney_and_Urinary_Pathway_Ontology" ;
+        dct:mirror "['ipfs:Qmc6doaj5K29WG7YiyRy2KEUsZ5ypyrEDsvf4UBJYw9UDe']" ;
+        dcat:accessURL <http://www.kupkb.org/public/kupo/kupo.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "void_description" ;
+        dct:mirror "['ipfs:QmfJT8fZEvBZX9UdQAvfdeqiYaGJ6CXB9B7YbUbAtE6Mrj']" ;
+        dcat:accessURL <http://www.kupkb.org/data/kupkb/dataset/010913> ;
+    ] ;
+    dct:description """
+The KUPKB is a collection of omics datasets that have been extracted from scientific publications and other related renal databases. The iKUP browser provides a single point of entry for you to query and browse these datasets. http://www.kupkb.org. SPARQL endpoint http://sparql.kupkb.org/sparql
+"""@en ;
+
+    void:triples "7000000"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    void:uriSpace <http://www.kupkb.org/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bio2rdf-genbank a void:Linkset ;
+    void:target :kupkb ;
+    void:triples "789483"^^xsd:integer ;
+ .
+
+:uniprotkb a void:Linkset ;
+    void:target :kupkb ;
+    void:triples "1339019"^^xsd:integer ;
+ .
+

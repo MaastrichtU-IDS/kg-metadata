@@ -1,0 +1,113 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:data-incubator-nasa a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-dc", "format-foaf", "format-owl", "format-po", "format-rdf", "government", "lodcloud-diagram-2011-09-19", "nasa", "published-by-third-party", "space" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-pddl> ;
+    dct:title "NASA_Space_Flight_&_Astronaut_data_in_RDF" ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL endpoint for Nasa
+""" ;
+        dcat:accessURL <http://api.kasabi.com/dataset/nasa/apis/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Kasabi page for Nasa Reconciliation API
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://kasabi.com/dataset/nasa/apis/reconciliation> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Kasabi page for Nasa Augmentation API
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://kasabi.com/dataset/nasa/apis/augmentation> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Void description of Nasa dataset
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.kasabi.com/dataset/nasa> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/octet-stream" ;
+        dct:description """
+Dump of the dataset uploaded to Internet Archive
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Dataset_export" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://archive.org/download/kasabi/nasa.gz> ;
+    ] ;
+    dct:description """
+### Description
+
+Conversion of various NASA datasets into RDF, starting 
+with the spacecraft data from the NSSDC master catalog.
+
+This dataset consists of a conversion of the NASA NSSDC Master Catalog and extracts of the Apollo By Numbers statistics.
+
+Currently the data consists of all of the Spacecraft from the NSSDC database which is a comprehensive list of orbital, suborbital, and interplanetary spacecraft launches dataing from the 1950s to the present day. Entries are not limited to NASA missions, but include spacecraft launched by various agencies from around the globe.
+
+*Note* this dataset is no longer updated, it was taken off-line during the shutdown of Kasabi. A dump of the dataset has been [uploaded to the Internet Archive](http://archive.org/details/kasabi)
+"""@en ;
+
+    foaf:page <http://kasabi.com/dataset/nasa> ;
+    void:triples "97974"^^xsd:integer ;
+    dcat:theme "government" ;
+    void:uriSpace <http://data.kasabi.com/dataset/nasa> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bbc-programmes a void:Linkset ;
+    void:target :data-incubator-nasa ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :data-incubator-nasa ;
+    void:triples "61"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Leigh_Dodds"^^xsd:string ;
+     foaf:mbox <mailto:leigh@ldodds.com> ; 
+ .
+

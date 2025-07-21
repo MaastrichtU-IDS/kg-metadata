@@ -1,0 +1,85 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:the-view-from a dcat:Dataset ;
+    dcat:keyword "format-dc", "format-rdf", "geographic", "lod", "lodcloud.unconnected", "no-deref-vocab", "photo", "photography", "published-by-third-party", "tourism", "usergeneratedcontent", "void-sparql-endpoint" ;
+    dct:title_main "The_View_From" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://theviewfrom.org/things/en/Banff_Springs_Hotel> ;
+        adms:status_exampleResource """
+FAIL (500)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "None" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://api.talis.com/stores/theviewfrom/services/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='api.talis.com', port=80): Max retries exceeded with url: /stores/theviewfrom/services/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686c9e0e0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD description
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "['ipfs:QmSgK2hAGmu76KzEpFuXKp7aVkDQ37SvuYpiTYdkG3m8SP']" ;
+        dcat:accessURL_distribution <http://theviewfrom.org/.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "api/search" ;
+        dct:description_distribution """
+Search API
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='api.talis.com', port=80): Max retries exceeded with url: /stores/theviewfrom/items (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686c9feb0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://api.talis.com/stores/theviewfrom/items> ;
+    ] ;
+    dct:description_main """
+A set of data about photos of the view from various places
+"""@en ;
+
+    foaf:page <http://theviewfrom.org/> ;
+    void:triples "368"^^xsd:integer ;
+    dcat:theme "geography" ;
+    void:uriSpace <http://theviewfrom.org/things/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :the-view-from ;
+    void:triples "31"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Tom_Heath"^^xsd:string ;
+     foaf:Cmbox <mailto:tom.he@h@talis.com> ; 
+ .
+

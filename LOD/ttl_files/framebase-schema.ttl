@@ -1,0 +1,69 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:framebase-schema a dcat:Dataset ;
+    dcat:keyword "data_heterogeneity", "data_mining", "graph_databases", "knowledge_bases", "linguistics", "linked_data", "rdf", "semantic_web" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "FrameBase_schema" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+FrameBase is distributed in RDF (Resource Description Format), though it can be translated to other formats.
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='www.framebase.org', port=443): Max retries exceeded with url: /data (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:997)'))))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.framebase.org/data> ;
+    ] ;
+    dct:description """
+FrameBase is a linked open knowledge base meant to *uniformly represent a wide range of knowledge*, tackling semantic heterogeneity among various sources of structured knowledge, such as the ones in the Linked Open Data cloud. It provides a flexible and uniform way of capturing n-ary relationships by adapting and combining repositories of frames from the fields of linguistics and cognitive science (FrameNet and WordNet) to establish a large and wide-coverage vocabulary that can be used to represent complex knowledge and extended with more specific elements.
+
+There are two interconnected representation levels in FrameBase:
+
+* A highly expressive layer where information is represented with explicit entities instantiating the frames, and representing specific situations, processes or events of any kind, organized into a rich hierarchy.
+
+* A less expressive but simpler layer based on direct binary predicates between the elements (participants, properties) of the frames. This level is more compact to store and query, and it is connected with the other layer by means Reification-Dereification (ReDer) rules. It can also be used to connect to similar predicates in other sources of structured knowledge or natural language.
+
+FrameBase is distributed in RDF (Resource Description Format), though it can be translated to other formats.
+
+FrameBase connects to other knowledge bases by means of integration rules that can link data in ways that cannot be implemented with existing binary properties like owl:sameAs and rdfs:subClassOf .
+
+Furthermore, because of FrameNet's ties to linguistic semantics, it offers additional possibilities for interfacing with natural language, both for querying and text mining.
+"""@en ;
+
+    foaf:page <http://www.framebase.org/> ;
+    void:triples "500000"^^xsd:integer ;
+    void:uriSpace <http://framebase.org/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:lexvo a void:Linkset ;
+    void:target :framebase-schema ;
+    void:triples "25000"^^xsd:integer ;
+ .
+
+:wordnet-rdf a void:Linkset ;
+    void:target :framebase-schema ;
+    void:triples "6000"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "FrameBase_team"^^xsd:string ;
+     foaf:mbox <mailto:jacobo@rouces.org> ; 
+ .
+

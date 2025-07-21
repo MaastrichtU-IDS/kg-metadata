@@ -1,0 +1,99 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:vulnerapedia a dcat:Dataset ;
+    dcat:keyword "crossdomain", "format-dc", "format-doap", "format-owl", "lod", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "published-by-third-party", "security", "vocab-mappings", "web-security" ;
+    dct:title_main "vulnerapedia" ;
+    void:exampleResource [
+        dct:title_exampleResource "VulneraPedia_Example_XSS_Attack" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example data item within the data set VulneraPedia
+""" ;
+        dcat:accessURL_exampleResource <http://minsky.gsi.dit.upm.es/semanticwiki/index.php/Special:ExportRDF/Cross-site_Scripting_%2528XSS%2529> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='minsky.gsi.dit.upm.es', port=80): Max retries exceeded with url: /semanticwiki/index.php/Special:ExportRDF/Cross-site_Scripting_%28XSS%29 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dac3d0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "VulneraPedia_SPARQL" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint 
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://minsky.gsi.dit.upm.es/semanticwiki/index.php/Special:SPARQLEndpoint> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='minsky.gsi.dit.upm.es', port=80): Max retries exceeded with url: /semanticwiki/index.php/Special:SPARQLEndpoint (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686daf850>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+VulneraPedia Full Knowledge Base
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "2011-11-03T123441/VulneraPedia.full.v0.5.rdf" ;
+        dct:mirror_distribution "['ipfs:QmZTc83TLhuof1iMrSgCDK4xfhvaizQ6DLsTmdvjTgqhPF']" ;
+        dcat:accessURL_distribution <https://commondatastorage.googleapis.com/ckannet-storage/2011-11-03T123441/VulneraPedia.full.v0.5.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/sitemap" ;
+        dct:description_distribution """
+VulneraPedia XMLSitemap
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='minsky.gsi.dit.upm.es', port=80): Max retries exceeded with url: /semanticwiki/images/0/0d/XMLSitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dad450>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "XMLSitemap" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://minsky.gsi.dit.upm.es/semanticwiki/images/0/0d/XMLSitemap.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "mapping/OWL" ;
+        dct:description_distribution """
+OWL Vocabulary Mapping
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='minsky.gsi.dit.upm.es', port=80): Max retries exceeded with url: /semanticwiki/images/4/41/OWLMapping.xml (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dac4f0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "Vocabulary_Mapping" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://minsky.gsi.dit.upm.es/semanticwiki/images/4/41/OWLMapping.xml> ;
+    ] ;
+    dct:description_main """
+Many vulnerabilities, attacks and controls semantic data of knowledge collected from OWASP, CWE and CAPEC communities.
+Our main objective is to improve the security that is managed in organizations, encouraging people to use security knowledge in all the application lifecycle stages and in their daily work. The use of semantic in security data generates security knowledge that improves the security processes and strategies to follow.
+Firstly, we must collect the data from the three web-reputed security-specialized communities. Later, we extract the enclosed knowledge following an ontology. Finally, we integrate all resources in this knowledge base.
+"""@en ;
+
+    foaf:page <http://minsky.gsi.dit.upm.es/semanticwiki/index.php/Main_Page> ;
+    void:triples "14000"^^xsd:integer ;
+    dcat:theme "cross_domain" ;
+    void:uriSpace <http://minsky.gsi.dit.upm.es/semanticwiki/index.php/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :vulnerapedia ;
+    void:triples "89"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Francisco_Blanco"^^xsd:string ;
+     foaf:Cmbox <mailto:fcojavibr@dit.upm.es> ; 
+ .
+

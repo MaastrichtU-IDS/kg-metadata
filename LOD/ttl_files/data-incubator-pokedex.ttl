@@ -1,0 +1,94 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:data-incubator-pokedex a dcat:Dataset ;
+    dcat:keyword "data-incubator", "deref-vocab", "format-owl", "format-rdf", "lodcloud-diagram-2011-09-19", "media", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "pokemon", "published-by-third-party", "talis" ;
+    dct:title "Pokedex_data_in_RDF" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL <http://pokedex.dataincubator.org/pokemon/garchomp> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='pokedex.dataincubator.org', port=80): Max retries exceeded with url: /pokemon/garchomp (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686c9f490>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "None" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://api.talis.com/stores/pokedex/services/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='api.talis.com', port=80): Max retries exceeded with url: /stores/pokedex/services/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686c9c460>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD description
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='pokedex.dataincubator.org', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686c9c520>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://pokedex.dataincubator.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/octet-stream" ;
+        dct:description """
+Dump of the dataset uploaded to Internet Archive
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Dataset_export" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://archive.org/download/kasabi/pokedex-data-rdf.gz> ;
+    ] ;
+    dct:description """
+### Description
+
+Linked data on all Pokemon in the [Pokedex](http://www.upokecenter.com/dex/)
+
+*Note* this dataset is no longer updated, it was taken off-line during the shutdown of Kasabi. A dump of the dataset has been [uploaded to the Internet Archive](http://archive.org/details/kasabi)
+"""@en ;
+
+    foaf:page <http://pokedex.dataincubator.org/> ;
+    void:triples "26134"^^xsd:integer ;
+    dcat:theme "media" ;
+    void:uriSpace <http://pokedex.dataincubator.org/pokemon/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :data-incubator-pokedex ;
+    void:triples "493"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :data-incubator-pokedex ;
+    void:triples "425"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Kier_Davis"^^xsd:string ;
+     foaf:mbox <mailto:kierdavis@gmail.com> ; 
+ .
+

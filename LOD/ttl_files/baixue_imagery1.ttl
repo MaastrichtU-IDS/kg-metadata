@@ -1,0 +1,55 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:baixue_imagery1 a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType "MIME_type" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "imagery" ;
+        dct:mirror "[]" ;
+        dct:identifier "48ab2c1b-225a-89f7-475e-9120b69f5b01" ;
+        dcat:downloadURL <https://dataverse.harvard.edu/api/access/datafile/3775310> ;
+    ] ;
+    foaf:page <http://agegahgrggh.com> ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "红色经典歌曲" ;
+    dct:description """
+h
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    dcat:theme "cross_domain" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:baixueimis@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "wageawgw"^^xsd:string ;
+     foaf:mbox <mailto:ewagrehawg@qage.com> ; 
+ .
+

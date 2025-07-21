@@ -1,0 +1,99 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:dcs-sheffield a dcat:Dataset ;
+    dcat:keyword "education", "format-bib", "format-dc", "format-foaf", "format-rdf", "format-swrc", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "no-vocab-mappings", "publications", "published-by-producer" ;
+    dct:title "data.dcs" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL <http://data.dcs.shef.ac.uk/person/Matthew-Rowe> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.dcs.shef.ac.uk', port=80): Max retries exceeded with url: /person/Matthew-Rowe (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686daff70>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL <http://data.dcs.shef.ac.uk/group/oak> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.dcs.shef.ac.uk', port=80): Max retries exceeded with url: /group/oak (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dad9c0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL <http://data.dcs.shef.ac.uk/paper/4156> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.dcs.shef.ac.uk', port=80): Max retries exceeded with url: /paper/4156 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dac760>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "" ;
+        dct:description """
+Downloads
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.dcs.shef.ac.uk', port=80): Max retries exceeded with url: /dump/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dacf40>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.dcs.shef.ac.uk/dump/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download (RDF/XML)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmYUf1F1csDocb3BUMREdfcXbW3HG8SrPZ4yZvF6QjpuKU']" ;
+        dcat:accessURL <http://data.dcs.shef.ac.uk/dump/datadcs-withdblpV1-28Feb2010.rdf> ;
+    ] ;
+    dct:description """
+Describes people, research groups and publications within the Department of Computer Science based at the University of Sheffield.
+
+Publishes Linked Data in RDF.
+"""@en ;
+
+    foaf:page <http://data.dcs.shef.ac.uk/> ;
+    void:triples "8596"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://www.dcs.shef.ac.uk/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:fu-berlin-dblp a void:Linkset ;
+    void:target :dcs-sheffield ;
+    void:triples "210"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Matthew_Rowe"^^xsd:string ;
+     foaf:mbox <mailto:m.rowe@dcs.shef.ac.uk> ; 
+ .
+

@@ -1,0 +1,65 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:national-library-of-greece-authority-records a dcat:Dataset ;
+    dcat:keyword "GLAM", "authority", "bibliographic", "library", "linked_data", "lld", "lod", "no-proprietary-vocab" ;
+    dct:title "National_Library_of_Greece_Authority_Records" ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://nlg.okfn.gr/sparql> ;
+        adms:status """
+FAIL (Exceeded 30 redirects.)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+Dataset Description.
+""" ;
+        adms:status """
+FAIL (Exceeded 30 redirects.)
+""" ;
+        dct:title "Dataset_description" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://nlg.okfn.gr/resource/authority/Dataset> ;
+    ] ;
+    dct:description """
+This is the National Library of Greece Authority Records Dataset in Linked Data form. 
+"""@en ;
+
+    foaf:page <http://nlg.okfn.gr> ;
+    void:uriSpace <http://nlg.okfn.gr/resource/authority/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:lcsh a void:Linkset ;
+    void:target :national-library-of-greece-authority-records ;
+    void:triples "16223"^^xsd:integer ;
+ .
+
+:viaf a void:Linkset ;
+    void:target :national-library-of-greece-authority-records ;
+    void:triples "70000"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Sotirios_Karampatakis"^^xsd:string ;
+     foaf:mbox <mailto:s.karamp@akis@gmail.com> ; 
+ .
+

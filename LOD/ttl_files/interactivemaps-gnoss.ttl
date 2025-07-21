@@ -1,0 +1,136 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:interactivemaps-gnoss a dcat:Dataset ;
+    dcat:keyword "country-spain", "country.es", "dc", "enrique_alonso", "enrique_alonso_gutiérrez", "foaf", "format-dc", "format-dcam", "format-foaf", "format-rdfg", "format-sioc", "format-skos", "format-wot", "juegos_de_geografía", "language-spa", "license-metadata", "lod", "mapas_enrique_alonso", "mapas_flash", "mapas_flash_interactivos", "mapas_físicos", "mapas_interactivos", "mapas_interactivos_flash", "mapas_políticos", "no-proprietary-vocab", "no-vocab-mappings", "provenance-metadata", "published-by-third-party", "schemata", "sioc", "skos", "socialweb", "sp", "spain", "usergeneratedcontent", "wrapper" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title "Interactive_Maps,_a_collection_of_interactive_flash_maps_(GNOSS)" ;
+    void:exampleResource [
+        dct:title "RDF/XML_resource_example" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+This is an RDF/XML example link of one of the resources published in Mapas Flash Interactivos. Currently, almost 1000 resources have been published in the community.
+""" ;
+        dcat:accessURL <http://mapasinteractivos.didactalia.net/comunidad/mapasflashinteractivos/recurso/Rios-de-Espa%25C3%25B1a-Donde-esta-Avanzado/7ad059aa-dd45-4659-9436-a12958941879?rdf> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='mapasinteractivos.didactalia.net', port=443): Read timed out. (read timeout=30))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "RDF/XML_resource_example_2" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+This is an RDF/XML example link of one of the resources published in Mapas Flash Interactivos. Currently, almost 1000 resources have been published in the community.
+""" ;
+        dcat:accessURL <http://mapasinteractivos.didactalia.net/comunidad/mapasflashinteractivos/recurso/Paises-de-Europa-Puzzle/08fe090d-681b-4422-8615-07b8444c9c9c?rdf> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='mapasinteractivos.didactalia.net', port=80): Read timed out. (read timeout=30))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "RDF/XML_search_example_" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+This is an RDF/XML example link of a search results.
+""" ;
+        dcat:accessURL <http://red.gnoss.com/en/community/mapasflashinteractivos/advanced-search/tag/spain?rdf> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='mapasinteractivos.didactalia.net', port=80): Read timed out. (read timeout=30))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/owl" ;
+        dct:description """
+Gnoss OWL Ontology
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Gnoss_Ontology" ;
+        dct:mirror "['ipfs:QmbDWiHLbnjJ2vGnaViALUEZFtCGu3hgUVhsSZjQ5xwpki']" ;
+        dcat:accessURL <http://gnoss.com/gnoss.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD description
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "voiD_description" ;
+        dct:mirror "['ipfs:QmctGBhktjfyhzrTEF4N2nq7uQRqUDAmveFvPdK4L6xkZi']" ;
+        dcat:accessURL <http://mapasinteractivos.didactalia.net/voidMapasInteractivosGNOSS.n3> ;
+    ] ;
+    dct:description """
+<p>
+<a href="http://mapasinteractivos.didactalia.net/">Mapas interactivos</a> is a collection of interactive flash maps developed by 
+<a href="http://mapasinteractivos.didactalia.net/comunidad/mapasflashinteractivos/perfil/Enrique-Alonso-Guti%C3%A9rrez/">Enrique Alonso</a>
+ to facilitate the physical and political geography learning. It includes maps of Spain and its autonomies, Europe and its countries, the European Union, Asia, Africa, and America and countries of America. The project, with maps in 10 languages, is part of <a href="http://didactalia.net/">Didactalia (GNOSS)</a>.
+</p>
+<p>
+Mapas interactivos works with 
+<a href="http://gnoss.com/">GNOSS software (RIAM Intelearning Lab)</a>
+. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. Mapas interactivos offers a selection of 841 maps (November 2012). It includes a facet-based search engine and enriched contexts. Both are developments by GNOSS.
+</p>
+
+<p>
+<a href="http://mapasinteractivos.didactalia.net/">Mapas interactivos</a>
+ es una colección de mapas en flash elaborados por <a href="http://mapasinteractivos.didactalia.net/comunidad/mapasflashinteractivos/perfil/Enrique-Alonso-Guti%C3%A9rrez/">Enrique Alonso</a> para facilitar el aprendizaje de Geografía (física y política). Incluye mapas de España y sus Comunidades Autónomas; países de Europa, Europa y la Unión Europea; Asia; África; y países de América y América. El proyecto forma parte de <a href="http://didactalia.net/">Didactalia (GNOSS)</a> y está en 10 idiomas.
+</p>
+<p>
+Mapas interactivos trabaja con 
+<a href="http://gnoss.com/">software de GNOSS (RIAM Intelearning Lab)</a>. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. Mapas interactivos ofrece en este caso una colección con 841 mapas en flash (Octubre 2012). Incluye un buscador facetado y contextos enriquecidos. Ambos son desarrollos de GNOSS.
+</p>
+"""@en ;
+
+    foaf:page <http://mapasinteractivos.didactalia.net/comunidad/mapasflashinteractivos> ;
+    void:triples "90226"^^xsd:integer ;
+    dcat:theme "user_generated" ;
+    void:uriSpace <http://mapasinteractivos.didactalia.net/comunidad/mapasflashinteractivos> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :interactivemaps-gnoss ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:didactalia a void:Linkset ;
+    void:target :interactivemaps-gnoss ;
+    void:triples "4180"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :interactivemaps-gnoss ;
+    void:triples "180"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :interactivemaps-gnoss ;
+    void:triples "1359"^^xsd:integer ;
+ .
+
+:gnoss a void:Linkset ;
+    void:target :interactivemaps-gnoss ;
+    void:triples "1096"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "GNOSS_Team"^^xsd:string ;
+     foaf:mbox <mailto:gnoss@gnoss.com> ; 
+ .
+

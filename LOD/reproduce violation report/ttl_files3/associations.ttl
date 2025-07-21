@@ -1,0 +1,130 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:associations a dcat:Dataset ;
+    dcat:keyword "Artificial_Intelligence", "associations", "format-rdfs", "human_associations", "lifesciences", "linguistic", "linguistics", "lod", "machine_learning", "psychological", "psychology", "published-by-producer", "semantic_associations", "thesaurus", "word_associations" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "associations" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/gzip" ;
+        dct:description_distribution """
+A transformation of the original EAT dataset to RDF using the association vocabulary.
+
+The original dataset was obtained from http://www.eat.rl.ac.uk/ that sadly is no longer available. Here you find a transformation of it into RDF consisting of ~1.7 M triples
+
+Original publication:
+Kiss, G., Armstrong, C., Milroy, R., & Piper, J. (1973). An associative thesaurus of English and its computer analysis. In A. J. Aitken, R. W. Bailey, & N. Hamilton-Smith (Eds.), The Computer and Literary Studies (pp. 153–165). Edinburgh, UK: Edinburgh University Press. Retrieved from http://www.eat.rl.ac.uk/Kiss_EAT_Chapter_1973.pdf
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Edinburgh_Associative_Thesaurus_(EAT)_as_RDF" ;
+        dct:mirror_distribution "[]" ;
+        dcat:downloadURL_distribution <https://w3id.org/associations/eat.nt.gz> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "RDF_example_link" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+An example for the association http://www.eat.rl.ac.uk/#stimulus=crop&response=wheat being mapped to its DBpedia entities.
+""" ;
+        dcat:accessURL_exampleResource <https://w3id.org/associations/mapping_eat_dbpedia#crop%2Fwheat> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Website" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://w3id.org/associations> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle;_charset=utf-8" ;
+        dct:description_distribution """
+The vocabulary to model associations (consisting of terms, stimuli, responses) and their (verified) mappings to other datasets like DBpedia.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Association_Vocabulary" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://w3id.org/associations/vocab.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+xml" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Verified_Semantic_Associations_mapped_to_DBpedia" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://w3id.org/associations/mapping_eat_dbpedia.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle;_charset=utf-8" ;
+        dct:description_distribution """
+voiD description
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "voiD_file" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://w3id.org/associations/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/tab-separated-values" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Verified_Semantic_Associations_mapped_to_DBpedia_(TSV)" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://w3id.org/associations/mapping_eat_dbpedia.tsv> ;
+    ] ;
+    dct:description_main """
+A collection of associations and mapping to DBpedia entities. Currently consisting of 780000 human associations from the Edinburgh Associative Thesaurus (as RDF) and a verified mapping of 790 strong distinct associations (corresponding to ~25000 human associations) to DBpedia entities.
+
+See https://w3id.org/associations for more information.
+"""@en ;
+
+    foaf:page <https://w3id.org/associations> ;
+    void:triples "1680000"^^xsd:integer ;
+    void:uriSpace <https://w3id.org/associations/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :associations ;
+    void:triples "1580"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Jörn_Hees"^^xsd:string ;
+     foaf:Cmbox <mailto:associ@ions+spamprotect+remove+if+human@joernhees.de> ; 
+ .
+

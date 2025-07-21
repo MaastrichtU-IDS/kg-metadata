@@ -1,0 +1,63 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:newborn-photography-maternity-photoshoot-shivani-goyal a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://shivanigoyalphotography.com/> ;
+    void:triples "3567"^^xsd:integer ;
+    dcat:distribution [
+        dct:identifier_distribution "22353af4-6eee-5c9e-b5ef-583575bfea99" ;
+        dct:title_distribution "Shivani_Goyal_Photography" ;
+        dct:description_distribution """
+
+""" ;
+        dcat:mediaType_distribution "application/rdf+xml;_charset=UTF-8" ;
+        dcat:downloadURL_distribution <https://shivanigoyalphotography.com/rdf/> ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:keyword "newborn_photoshoot", "maternity_photoshoot", "baby_photoshoot", "pregnancy_photoshoot", "baby_photography" ;
+    dct:description_main """
+Shivani Goyal is a Mumbai based Newborn Photographer, Maternity photoshoot, Baby photoshoot, Child Photographer and Family Photographer and has travelled across India for Newborn and Maternity Photoshoot.
+"""@en ;
+
+    dct:title_main "Shivani_Goyal_Photography" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dcat:theme "user_generated" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] ;
+    foaf:depiction <https://shivanigoyalphotography.com/wp-content/uploads/2018/06/cropped-Shivani-Goyal-Photography-HighRes-2.png> .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:wikidata a void:Linkset ;
+    void:target :newborn-photography-maternity-photoshoot-shivani-goyal ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:organicsearch@organicsearch.in> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Shivani_Goyal"^^xsd:string ;
+     foaf:Cmbox <mailto:info@shivanigoyalphotography.com> ; 
+ .
+

@@ -1,0 +1,57 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Bioportal a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://github.com/ArchanaPatel92/IBO-Covid19/blob/main/1.5%20Covid19-IBO.owl> ;
+    void:triples "99"^^xsd:integer ;
+    dcat:distribution [
+        dct:identifier_distribution "5afeea42-76e6-c806-0406-a64bbcb361f5" ;
+        dct:title_distribution "Covid19-IBO" ;
+        dct:description_distribution """
+Download from Bioportal
+""" ;
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dcat:downloadURL_distribution <https://github.com/ArchanaPatel92/IBO-Covid19/blob/main/1.5%2520Covid19-IBO.owl> ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:keyword "Covid19", "banking", "disease", "person" ;
+    dct:description_main """
+Covid19 Impact on Banking Ontology (Covid19-IBO) provides semantic information about the impact of the Covid-19 on the banking sector of India
+"""@en ;
+
+    dct:title_main "Covid19_Impact_on_Banking_ontology_(Covid19-IBO)" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dcat:theme "publications" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:archanamca92@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Archana_PATEL"^^xsd:string ;
+     foaf:Cmbox <mailto:archanamca92@gmail.com> ; 
+ .
+

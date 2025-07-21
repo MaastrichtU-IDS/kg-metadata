@@ -1,0 +1,68 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:fv a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType_distribution "srbgd" ;
+        dct:description_distribution """
+sgd
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='sdbsbrs', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686aef460>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title_distribution "sgsg" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "af4b272c-1d02-295d-d491-6398a3e4dfd0" ;
+        dcat:downloadURL_distribution <http://sdbsbrs> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "mp3" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='rsgehrthsh.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686aeefe0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "rgg" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "101a09ca-05df-00ba-4b79-c7b9a017e645" ;
+        dcat:downloadURL_distribution <http://rsgehrthsh.com> ;
+    ] ;
+    foaf:page <http://agegahgrggh.com> ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "fvdb" ;
+    dct:description_main """
+sbregrsg
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    dcat:theme "media" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:baixueimis@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "wageawgw"^^xsd:string ;
+     foaf:Cmbox <mailto:ewagrehawg@qage.com> ; 
+ .
+

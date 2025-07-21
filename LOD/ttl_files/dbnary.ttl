@@ -1,0 +1,116 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:dbnary a dcat:Dataset ;
+    dcat:keyword "Dutch", "Linguistic_Dataset_LOD_RDF", "bulgarian", "english", "finnish", "french", "german", "greek", "indonesian", "italian", "japanese", "latin", "lemon", "lexical-resources", "lithuanian", "llod", "lod", "malagasy", "norvegian", "polish", "portuguese", "russian", "serbo-croatian", "spanish", "swedish", "turkish", "wiktionary" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "dbnary" ;
+    void:exampleResource [
+        dct:title "French_entry_dictionnaire_in_LEMON_format" ;
+        dcat:mediaType "example/turtle" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <https://ckannet-storage.commondatastorage.googleapis.com/2013-01-16T130120/dictionnaire.ttl> ;
+        adms:status """
+FAIL (403)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint_for_dbnary" ;
+        dcat:endpointDescription """
+A SPARQL endpoint to browse dbnary data. The data URIs are resolvable
+""" ;
+        dcat:accessURL <http://kaiko.getalp.org/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "linked_data" ;
+        dct:description """
+The resource will be resolved via content negotiation to either [an html description](http://kaiko.getalp.org/describe/?url=http%3A%2F%2Fkaiko.getalp.org%2Fdbnary/fra/dictionnaire) or [a rdf/xml dataset](http://kaiko.getalp.org/sparql?query=DESCRIBE%20%3Chttp%3A%2F%2Fkaiko.getalp.org%2Fdbnary%2Ffra%2Fdictionnaire%3E&format=application%2Frdf%2Bxml).
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Sample_French_entry_dictionnaire_" ;
+        dct:mirror "['ipfs:QmXDNkJ6jFjEMiP7aMwszHX865uwqaBGhornUigpriYhU6']" ;
+        dcat:accessURL <http://kaiko.getalp.org/dbnary/fra/dictionnaire> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=ISO-8859-1" ;
+        dct:description """
+Directory: Most up to date extracts in ONTOLEX formats.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Download_URL_for_latest_versions" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://kaiko.getalp.org/about-dbnary/ontolex/latest/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=ISO-8859-1" ;
+        dct:description """
+Download URL for data in LEMON or ONTOLEX formats (the later has replaced the former in newer versions).
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Download_URL_for_all_versions" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://kaiko.getalp.org/static/> ;
+    ] ;
+    dct:description """
+Extracts of wiktionary data for several languages, structured as an RDF graph, based mainly on the LEMON model. Bulgarian, Dutch, English, Finnish, French, German, Greek, Indonesian, Italian, Japanese, Latin, Lithanian, Malagasy, Norvegian, Portuguese, Russian, Serbo-Croatian, Swedish and Turkish.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://kaiko.getalp.org/about-dbnary> ;
+    void:triples "194822148"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:lexinfo a void:Linkset ;
+    void:target :dbnary ;
+    void:triples "17739763"^^xsd:integer ;
+ .
+
+:lexvo a void:Linkset ;
+    void:target :dbnary ;
+    void:triples "16546361"^^xsd:integer ;
+ .
+
+:olia a void:Linkset ;
+    void:target :dbnary ;
+    void:triples "23459074"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:gilles.serasset@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Gilles_Sérasset"^^xsd:string ;
+     foaf:mbox <mailto:gilles.serasset@imag.fr> ; 
+ .
+

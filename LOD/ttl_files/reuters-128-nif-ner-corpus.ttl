@@ -1,0 +1,84 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:reuters-128-nif-ner-corpus a dcat:Dataset ;
+    dcat:keyword "corpus", "evaluation", "linguistic", "linguistics", "lod", "ner", "nif", "rdf", "training" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "Reuters-128_NIF_NER_Corpus" ;
+    dcat:distribution [
+        dcat:mediaType "text/plain;_charset=utf-8" ;
+        dct:description """
+Full corpus in single Turtle format file
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Complete_Reuters-128_Corpus" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://raw.githubusercontent.com/AKSW/n3-collection/master/Reuters-128.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/pdf" ;
+        dct:description """
+Title: N3 - A Collection of Datasets for Named Entity Recognition and Disambiguation in the NLP Interchange Format 
+Authors: Michael Röder, Ricardo Usbeck, Sebastian Hellmann, Daniel Gerber und Andreas Both 
+In: The 9th edition of the Language Resources and Evaluation Conference, 26-31 May, Reykjavik, Iceland 
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Documentation_paper" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://svn.aksw.org/papers/2014/LREC_N3NIFNERNED/public.pdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+Metadata description of the corpus
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "DataID" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://ckannet-storage.commondatastorage.googleapis.com/2014-10-29T16:24:39.177Z/dataid.ttl> ;
+    ] ;
+    dct:description """
+This English corpus is based on the well known Reuters-21578 corpus which contains economic news articles. In particular, we chose 128 articles containing at least one NE. Compared to the News-100 corpus the documents of Reuters-128 are significantly shorter and thus carry a smaller context.
+
+To create the annotation of NEs with URIs, we implemented a supporting judgement tool.
+.
+The input for the tool was a subset of more than 150 Reuters-21578 news articles sampled randomly. First, FOX (Ngonga Ngomo et al., 2011) was used for recognizing a first set of NEs. This reduced the amount of work to a feasible portion regarding the size of this dataset. Afterwards, the domain experts corrected the mistakes of FOX manually using the annotation tool. Therefore, the tool highlighted the entities in the texts and added initial URI candidates via simple string matching algorithms. Two scientists determined the correct URI for each named entity manually with an initial voter agreement of 74%. This low
+initial agreement rate hints towards the difficulty of the disambiguation task.
+In some cases judges did not agree initially, but came to an agreement shortly after reviewing the cases. While annotating, we left out ticker symbols of companies (e.g., GOOG for Google Inc.), abbreviations and job descriptions be-
+cause those are always preceded by the full company name respectively a person’s name.
+"""@en ;
+
+    void:triples "6967"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :reuters-128-nif-ner-corpus ;
+    void:triples "650"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Ricardo_Usbeck"^^xsd:string ;
+     foaf:mbox <mailto:ricardo.usbeck@googlemail.com> ; 
+ .
+

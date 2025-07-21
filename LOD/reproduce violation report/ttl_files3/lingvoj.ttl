@@ -1,0 +1,128 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:lingvoj a dcat:Dataset ;
+    dcat:keyword "crossdomain", "deref-vocab", "format-dc", "format-owl", "format-rdf", "language", "license-metadata", "license-not-specified", "linked-data", "llod", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-vocab-mappings", "provenance-metadata", "published-by-producer", "rdf" ;
+    dct:title_main "lingvoj_?_Languages_of_the_World_(Multilingual_RDF_Descriptions)" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://www.lingvoj.org/lang/fr> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD description
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www.lingvoj.org/void> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Ontology (RDF/XML)
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www.lingvoj.org/ontology.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Full RDF dump
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www.lingvoj.org/lingvoj.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Mapping to lexvo.org
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "['ipfs:QmfBMY7KF2RsdVU8wBr1XqtWaZwV2VyKs4EmZVBrgQ9ge7']" ;
+        dcat:accessURL_distribution <http://www.lingvoj.org/lingvoj-to-lexvo.rdf> ;
+    ] ;
+    dct:description_main """
+### Description
+
+Lingvoj means languages in Esperanto. From the frontpage of <http://www.lingvoj.org/>:
+
+Since the launch of lingvoj.org in 2007, the linked data cloud has grown at a steady pace, and a growing number of URI sets have been published to identify human languages.  Lexvo.org   is providing the most exhaustive of those so far, in which URIs for languages are integrated in a global approach of terminology. Through exchanges with Gerard de Melo, editor at Lexvo.org, it has been decided to redirect and deprecate lingvoj.org URIs for individual languages to the benefit of the more stable and exhaustive publication at Lexvo.org.
+
+Most lingvoj.org URIs for individual languages are redirected to lexvo.org URIs through content negotiation. A few exceptions are URIs of languages with no ISO 639-3 codes, since lexvo URIs are built on those codes, and languages with a regional tag, such as en-us. 
+
+The  lingvoj-to-lexvo RDF file provides the mappings and equivalence between lingvo and lexvo URIs. Applications using the lingvoj.org URIs are invited to change their references accordingly, although the redirection mechanism should avoid any breakdown of applications using lingvoj.org URIs. 
+
+### Openness: OPEN
+
+  * License: not specified but Open Data logo prominently displayed and part of the Linked Data effort so assumed to be open.
+  * Access: Good.
+    * bulk. (download of rdf file)
+"""@en ;
+
+    foaf:page <http://www.lingvoj.org/> ;
+    void:triples "22442"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    void:uriSpace <http://www.lingvoj.org> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :lingvoj ;
+    void:triples "215"^^xsd:integer ;
+ .
+
+:dbtune-musicbrainz a void:Linkset ;
+    void:target :lingvoj ;
+    void:triples "71"^^xsd:integer ;
+ .
+
+:lexvo a void:Linkset ;
+    void:target :lingvoj ;
+    void:triples "510"^^xsd:integer ;
+ .
+
+:umbel a void:Linkset ;
+    void:target :lingvoj ;
+    void:triples "132"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Bernard_Vatant"^^xsd:string ;
+     foaf:Cmbox <mailto:bernard[dot]v@ant[@]mondeca[dot]com> ; 
+ .
+

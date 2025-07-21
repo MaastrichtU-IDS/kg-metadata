@@ -1,0 +1,173 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:dataturcyl-lod-for-tourists-in-castilla-y-leon-spain a dcat:Dataset ;
+    dcat:keyword "government", "lod" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "DATATURCYLLOD_for_tourists_in_Castilla_y_León_(Spain)" ;
+    void:exampleResource [
+        dct:title "example_of_camping" ;
+        dcat:mediaType "example/turtle" ;
+        dct:description """
+An example of  a resource in turtle
+""" ;
+        dcat:accessURL <http://visualdataweb.infor.uva.es:8080/opendata/resource/campings/acueducto.ttl> ;
+        adms:status """
+FAIL (400)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "Sparql_Endpoint" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://visualdataweb.infor.uva.es/sparql> ;
+        adms:status """
+FAIL (502)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/json" ;
+        dct:description """
+Browse Restaurants
+""" ;
+        adms:status """
+FAIL (500)
+""" ;
+        dct:title "Restaurants" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://visualdataweb.infor.uva.es/opendata/resource/restaurantes> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/json" ;
+        dct:description """
+Browse hotels
+""" ;
+        adms:status """
+FAIL (500)
+""" ;
+        dct:title "Hotels" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://visualdataweb.infor.uva.es/opendata/resource/hoteles> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/json" ;
+        dct:description """
+Browse museums
+""" ;
+        adms:status """
+FAIL (500)
+""" ;
+        dct:title "museums" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://visualdataweb.infor.uva.es/opendata/resource/museos> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/json" ;
+        dct:description """
+Browse pubs
+""" ;
+        adms:status """
+FAIL (500)
+""" ;
+        dct:title "pubs" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://visualdataweb.infor.uva.es/opendata/resource/bares> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/json" ;
+        dct:description """
+Browse rural tourism
+""" ;
+        adms:status """
+FAIL (500)
+""" ;
+        dct:title "rural_tourism" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://visualdataweb.infor.uva.es/opendata/resource/turismorural> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/json" ;
+        dct:description """
+Browse campings
+""" ;
+        adms:status """
+FAIL (500)
+""" ;
+        dct:title "campings" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://visualdataweb.infor.uva.es/opendata/resource/campings> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/json" ;
+        dct:description """
+Browse other activities
+""" ;
+        adms:status """
+FAIL (500)
+""" ;
+        dct:title "other_activities" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://visualdataweb.infor.uva.es/opendata/resource/otrasactividades> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/json" ;
+        dct:description """
+Browse cafeterias
+""" ;
+        adms:status """
+FAIL (500)
+""" ;
+        dct:title "cafeterias" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://visualdataweb.infor.uva.es/opendata/resource/cafeterias> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (502)
+""" ;
+        dct:title "VoID_description" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://visualdataweb.infor.uva.es/void.ttl> ;
+    ] ;
+    dct:description """
+The aim of this project, called DATATURCYL, is to reuse and redistribute open data provided by the Junta de Castilla y León to enrich and enhance information services about tourism in the community. To provide them with an added value, this project embraces the Linked Open Data philosophy. In our particular case, the information for tourism (bars, restaurants, hotels, etc.) is converted to RDF and enriched with geographic data sources and open knowledge in Dbpedia.
+"""@en ;
+
+    void:triples "332991"^^xsd:integer ;
+    dcat:theme "government" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:RDFLicense a void:Linkset ;
+    void:target :dataturcyl-lod-for-tourists-in-castilla-y-leon-spain ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :dataturcyl-lod-for-tourists-in-castilla-y-leon-spain ;
+    void:triples "1992"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Daniel_Revilla"^^xsd:string ;
+     foaf:mbox <mailto:danrevi@gmail.com> ; 
+ .
+

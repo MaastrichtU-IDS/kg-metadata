@@ -1,0 +1,67 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:multimedia-lab a dcat:Dataset ;
+    dcat:keyword "lod", "lodcloud-diagram-2014-08-30", "publications" ;
+    dct:title "Multimedia_Lab" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.mmlab.be', port=80): Max retries exceeded with url: /mmlab (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dae6b0>, 'Connection to data.mmlab.be timed out. (connect timeout=30)')))
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.mmlab.be/mmlab> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.mmlab.be', port=80): Max retries exceeded with url: /mmlab (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dad5d0>, 'Connection to data.mmlab.be timed out. (connect timeout=30)')))
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.mmlab.be/mmlab> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+This dataset is available as [triple pattern fragments](http://linkeddatafragments.org/concept/) in HTML, Turtle, JSON, and JSON-LD.
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.mmlab.be', port=80): Max retries exceeded with url: /mmlab (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686da3c70>, 'Connection to data.mmlab.be timed out. (connect timeout=30)')))
+""" ;
+        dct:title "Multimedia_Lab_Data" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.mmlab.be/mmlab> ;
+    ] ;
+    dct:description """
+Linked Open Data from Multimedia Lab, a research group of Ghent University ? iMinds, Belgium.
+"""@en ;
+
+    dcat:theme "publications" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dblp a void:Linkset ;
+    void:target :multimedia-lab ;
+    void:triples "500"^^xsd:integer ;
+ .
+

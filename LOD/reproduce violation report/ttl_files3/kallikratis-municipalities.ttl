@@ -1,0 +1,82 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:kallikratis-municipalities a dcat:Dataset ;
+    dcat:keyword "Greece", "administrative-divisions", "country-greece", "format-dcterms", "format-foaf", "format-geo", "format-geonames", "format-owl", "format-rdf", "format-skos", "government", "greek", "hellenic", "license-metadata", "lod", "lodcloud", "municipalities", "municipality", "no-proprietary-vocab", "provenance-metadata", "published-by-producer" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "Kallikratis_municipalities" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_(RDF/XML)" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://greek-lod.auth.gr/Kalikratis/kalikratis.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "Kalikratis_municipalities_SPARQL_endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://greek-lod.math.auth.gr/kalikratis/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (503)
+""" ;
+    ] ;
+    dct:description_main """
+The Kalikratis municipalities project represents an attempt to retrieve useful information from Hellenic municipalities of Kalikratis program. Kalikratis program, is called the Greek law, which implements the administrative division of Greece into new municipalities. The main goal of this attempt is to gather all the related to these municipalities data to a united space, so as to be used by innovative applications and services. Another goal is to enrich Greek open data.
+"""@en ;
+
+    foaf:page <http://greek-lod.math.auth.gr/kalikratis/> ;
+    void:triples "31068"^^xsd:integer ;
+    dcat:theme "government" ;
+    void:uriSpace <http://greek-lod.math.auth.gr/kalikratis/resource/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :kallikratis-municipalities ;
+    void:triples "137"^^xsd:integer ;
+ .
+
+:dbpedia-el_ a void:Linkset ;
+    void:target :kallikratis-municipalities ;
+    void:triples "392"^^xsd:integer ;
+ .
+
+:eurostat-rdf a void:Linkset ;
+    void:target :kallikratis-municipalities ;
+    void:triples "67"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :kallikratis-municipalities ;
+    void:triples "336"^^xsd:integer ;
+ .
+
+:geonames a void:Linkset ;
+    void:target :kallikratis-municipalities ;
+    void:triples "54"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Nena_Xanthopoulou"^^xsd:string ;
+     foaf:Cmbox <mailto:neksanth@hotmail.com> ; 
+ .
+

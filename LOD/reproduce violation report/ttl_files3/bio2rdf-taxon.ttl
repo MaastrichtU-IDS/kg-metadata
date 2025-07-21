@@ -1,0 +1,41 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bio2rdf-taxon a dcat:Dataset ;
+    dcat:keyword "LinkedDataCrawl2014", "crawledLinkedDataCloud2014", "dataset-level-metadata", "dump", "format-dcterm", "format-owl", "format-rdf", "format-rdfs", "format-void", "lifesciences", "lodcloud-diagram-2014-08-30", "sparql" ;
+    dct:title_main "bio2rdf-taxon" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "application/rdf+xml;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://bio2rdf.org/taxon:449610> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    dct:description_main """
+None
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bio2rdf-taxonomy a void:Linkset ;
+    void:target :bio2rdf-taxon ;
+    void:triples "1104"^^xsd:integer ;
+ .
+

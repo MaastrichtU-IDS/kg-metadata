@@ -1,0 +1,121 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:data-open-ac-uk a dcat:Dataset ;
+    dcat:keyword "course", "education", "format-bibo", "format-rdf", "format-skos", "kmiou", "lld", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-proprietary-vocab", "openuniversity", "publications", "published-by-producer" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "data.open.ac.uk,_Linked_Data_from_the_Open_University" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL <http://data.open.ac.uk/resource/oro/21166> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL <http://data.open.ac.uk/resource/podcast/218dce44a4ed17b36ada50d18b866b03> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL <http://data.open.ac.uk/resource/person/c9aa7f2e582d191ed728ad414c5ea711> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL <http://data.open.ac.uk/resource/course/m366> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://data.open.ac.uk/query> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dct:description """
+The result of extracting and interlinking data from various institutional repositories of the [Open University](http://www.open.ac.uk/) and making it available for reuse.
+
+
+#### RDF statistics
+
+1.6 Million triples, updated daily. 
+
+#### Links
+
+Course descriptions link to geonames for availability and price validity. 
+
+URI from the Open University linked to the corresponding URI in education.data.gov.uk
+
+Buildings are linked to their postcode in ordnancesurvey.co.uk
+
+Some links to DBPedia, with various levels of validity. 
+
+"""@en ;
+
+    foaf:page <http://data.open.ac.uk/> ;
+    void:triples "1600000"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://data.open.ac.uk/resource/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:data-gov-uk a void:Linkset ;
+    void:target :data-open-ac-uk ;
+    void:triples "14500"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :data-open-ac-uk ;
+    void:triples "170000"^^xsd:integer ;
+ .
+
+:ordnance-survey-linked-data a void:Linkset ;
+    void:target :data-open-ac-uk ;
+    void:triples "218"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "[LUCERO_Team](http://lucero-project.info)"^^xsd:string ;
+     foaf:mbox <mailto:info@lucero-project.info> ; 
+ .
+

@@ -1,0 +1,57 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:LPIS_Czech_Republic a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint_in_Virtuoso" ;
+        dct:identifier "9e4be85a-cf34-88c1-f5dd-7823aa83ae22" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <https://www.foodie-cloud.org/sparql> ;
+        adms:status """
+FAIL (502)
+""" ;
+    ] ;
+    foaf:depiction <https://box.psnc.pl/f/cae78aea0f/?raw=1> ;
+    foaf:page <https://www.foodie-cloud.org/fct/> ;
+    dcat:keyword "land_parcel", "agriculture", "land_boundary", "cadsatral" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "Land_parcel_dataset_(LPIS)_from_Czech_Republic_@PSNC" ;
+    dct:description """
+This dataset contains land parcel and cadastral data collected from czech republic . the initial data source was in shapefiles which are transformed into linked data.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <https://w3id.org/foodie/open/cz/pLPIS_180616_WGS/> ;
+    void:triples "24491282"^^xsd:integer ;
+    dcat:theme "geography" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:soumya.put.poznan@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Raul_Palma,_Soumya_Brahma"^^xsd:string ;
+     foaf:mbox <mailto:rpalma@man.poznan.pl> ; 
+ .
+

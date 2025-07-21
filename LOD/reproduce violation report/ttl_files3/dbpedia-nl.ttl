@@ -1,0 +1,293 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:dbpedia-nl a dcat:Dataset ;
+    dcat:keyword "access-api", "access-bulk", "access-www", "crossdomain", "deref-vocab", "format-foaf", "format-rdf", "format-rdfs", "format-xhtml", "llod", "lod", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "published-by-producer", "rdf", "search", "void-sparql-endpoint", "wikipedia" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "DBpedia_in_Dutch" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;charset=UTF-8" ;
+        dct:description_distribution """
+Download
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Download" ;
+        dct:mirror_distribution "[]" ;
+        dcat:downloadURL_distribution <http://nl.dbpedia.org/downloads/nlwiki/> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Link_to_an_example_data_item_within_the_dataset_(RDFa)" ;
+        dcat:mediaType_exampleResource "example/rdfa" ;
+        dct:description_exampleResource """
+Link to an example data item within the dataset (RDFa)
+The actual URI is http://nl.dbpedia.org/resource/Amsterdam, which redirect via 303 to http://nl.dbpedia.org/page/Amsterdam
+""" ;
+        dcat:accessURL_exampleResource <http://nl.dbpedia.org/page/Amsterdam> ;
+        adms:status_exampleResource """
+FAIL (406)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Link_to_an_example_data_item_within_the_dataset_(Turtle)" ;
+        dcat:mediaType_exampleResource "example/turtle" ;
+        dct:description_exampleResource """
+Link to an example data item within the dataset (Turtle)
+The actual URI is http://nl.dbpedia.org/resource/Amsterdam, which redirect via 303 to http://nl.dbpedia.org/data/Amsterdam.n3
+""" ;
+        dcat:accessURL_exampleResource <http://nl.dbpedia.org/data/Amsterdam.n3> ;
+        adms:status_exampleResource """
+FAIL (406)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Link_to_an_example_data_item_within_the_dataset_(RDF/XML)" ;
+        dcat:mediaType_exampleResource "application/rdf+xml;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Link to an example data item within the dataset (RDF/XML)
+The actual URI is http://nl.dbpedia.org/resource/Amsterdam, which redirect via 303 to application/rdf+xml
+""" ;
+        dcat:accessURL_exampleResource <http://nl.dbpedia.org/data/Amsterdam.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Link_to_an_example_data_item_within_the_dataset_(NTriples)" ;
+        dcat:mediaType_exampleResource "example/ntriples" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://nl.dbpedia.org/data/Amsterdam.nt> ;
+        adms:status_exampleResource """
+FAIL (406)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL Endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://nl.dbpedia.org/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "linked_data" ;
+        dct:description_distribution """
+The resource will be resolved via content negotiation to either:
+http://nl.dbpedia.org/page/Amsterdam
+or 
+http://nl.dbpedia.org/data/Amsterdam.rdf
+http://nl.dbpedia.org/data/Amsterdam.n3
+http://nl.dbpedia.org/data/Amsterdam.json
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Link_to_an_example_Linked_Data_entry" ;
+        dct:mirror_distribution "['ipfs:Qmd5maiA34F4ujQP31RwrPA6Y5MTxWMutqMu7DagdEsoG8']" ;
+        dcat:accessURL_distribution <http://nl.dbpedia.org/resource/Amsterdam> ;
+    ] ;
+    dct:description_main """
+DBpedia is a "community effort to extract structured information from Wikipedia and to make this information available on the Web. DBpedia allows you to ask sophisticated queries against Wikipedia, and to link other data sets on the Web to Wikipedia data. We hope this will make it easier for the amazing amount of information in Wikipedia to be used in new and interesting ways, and that it might inspire new mechanisms for navigating, linking and improving the encyclopaedia itself." 
+"""@en ;
+
+    foaf:page <http://nl.dbpedia.org> ;
+    void:triples "79674010"^^xsd:integer ;
+    dcat:theme "cross_domain" ;
+    void:uriSpace <http://nl.dbpedia.org/resource/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:2000-us-census-rdf a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "11769"^^xsd:integer ;
+ .
+
+:amsterdam-museum-as-edm-lod a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "180"^^xsd:integer ;
+ .
+
+:bbc-wildlife-finder a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "237"^^xsd:integer ;
+ .
+
+:dblp a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "28"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "566737"^^xsd:integer ;
+ .
+
+:dbpedia-de a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "359909"^^xsd:integer ;
+ .
+
+:dbpedia-el a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "40921"^^xsd:integer ;
+ .
+
+:dbpedia-fr a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "406628"^^xsd:integer ;
+ .
+
+:dbpedia-pt a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "303833"^^xsd:integer ;
+ .
+
+:dbtune a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "48"^^xsd:integer ;
+ .
+
+:drugbank a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "755"^^xsd:integer ;
+ .
+
+:eunis a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "541"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "415255"^^xsd:integer ;
+ .
+
+:fu-berlin-cordis a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "41"^^xsd:integer ;
+ .
+
+:fu-berlin-dailymed a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "329"^^xsd:integer ;
+ .
+
+:fu-berlin-diseasome a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "308"^^xsd:integer ;
+ .
+
+:fu-berlin-sider a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "947"^^xsd:integer ;
+ .
+
+:gadm-geovocab a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "1902"^^xsd:integer ;
+ .
+
+:geonames a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "46025"^^xsd:integer ;
+ .
+
+:geospecies a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "4273"^^xsd:integer ;
+ .
+
+:gutenberg a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "874"^^xsd:integer ;
+ .
+
+:italian-public-schools-linkedopendata-it a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "5686"^^xsd:integer ;
+ .
+
+:linkedgeodata a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "47397"^^xsd:integer ;
+ .
+
+:linkedmdb a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "3712"^^xsd:integer ;
+ .
+
+:musicbrainz a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "5993"^^xsd:integer ;
+ .
+
+:nytimes-linked-open-data a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "4829"^^xsd:integer ;
+ .
+
+:opencyc a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "15016"^^xsd:integer ;
+ .
+
+:openei a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "367"^^xsd:integer ;
+ .
+
+:revyu a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:tcmgenedit_dataset a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "182"^^xsd:integer ;
+ .
+
+:umbel a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "112698"^^xsd:integer ;
+ .
+
+:wordnet a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "85486"^^xsd:integer ;
+ .
+
+:world-factbook-fu-berlin a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "280"^^xsd:integer ;
+ .
+
+:yago a void:Linkset ;
+    void:target :dbpedia-nl ;
+    void:triples "303500"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Dutch_DBpedia_Teamhttp://nl.dbpedia.org/"^^xsd:string ;
+     foaf:Cmbox <mailto:dbpedia-dutch@lists.sourceforge.net> ; 
+ .
+

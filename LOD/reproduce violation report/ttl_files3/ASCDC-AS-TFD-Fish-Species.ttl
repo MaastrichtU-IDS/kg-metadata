@@ -1,0 +1,137 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ASCDC-AS-TFD-Fish-Species a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://data.ascdc.tw/en/data.php> ;
+    void:triples "1477259"^^xsd:integer ;
+    dcat:distribution [
+        dct:identifier_distribution "84598a90-5950-9e3b-f54e-392ceb4fcffd" ;
+        dct:title_distribution "ASCDC_LODDatasets" ;
+        dct:description_distribution """
+Launched in 2018, ASCDC LODDatasets is an online portal platform for publishing LOD-based datasets, which are converted and provided by the ASCDC in Taiwan (R.O.C), with service for SPARQL queries and data downloads.
+""" ;
+        dcat:mediaType_distribution "XML,_JSON,_TTL,_CSV." ;
+        dcat:downloadURL_distribution <https://data.ascdc.tw/en/index.php> ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+FAIL (400)
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "d290d530-44e2-3890-a4d7-6bffa231cb7d" ;
+        dct:title_distribution "ASCDC_LODDataset_of_AS-TFD-Fish-Species" ;
+        dct:description_distribution """
+Full download of ASCDC LODDataset of AS-TFD-Fish-Species in ttl format.
+""" ;
+        dcat:mediaType_distribution "ttl" ;
+        dcat:downloadURL_distribution <https://data.ascdc.tw/dataset/ASCDC-TFD-Fish-Species.ttl> ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+FAIL (400)
+""" ;
+    ] ;
+    dcat:keyword "ASCDC", "Biology", "Aquatic_Animals", "Fishes", "Specimen", "Taiwan", "Biodiversity_Research_Center", "Academia_Sinica", "Taiwan_Union_Catalog" ;
+    dct:description_main """
+The LOD dataset of ASCDC_Taiwan Fauna Database Research: Taiwan Digital Fish Species Database (AS-TFD-Fish-Species) was created by the Academia Sinica Center for Digital Cultures (ASCDC) and based on the metadata from the “Taiwan fauna database research: Taiwan digital fish species database” (臺灣動物相典藏之研究：臺灣魚類相之數位典藏) in the “Taiwan Union Catalog” (數位典藏與數位學習聯合目錄, https://catalog.digitalarchives.tw/Organization/List.jsp?CID=17509). Originally, the metadata was established by the Biodiversity Research Center, Academia Sinica (中央研究院生物多樣性研究中心) in Taiwan (ROC). It provides information on the fish species data collected by the Biodiversity Research Center at the Academia Sinica and can serve as database for the study of fish species in the coastal waters in and around the Taiwan Island. Containing 41,861 data records and 1,477,259 triples, the textual content within the LOD dataset is licensed under the Creative Commons Attribution (CC 0), while the digitized items are under CC-BY-NC-SA.
+"""@en ;
+
+    dct:title_main "Taiwan_Fauna_Database_Research:_Taiwan_Digital_Fish_Species_Database_(AS-TFD-Fish-Species)" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_Resource:_Neoglyphidodon_nigroris/_黑褐副雀鯛" ;
+        dct:description_exampleResource """
+Resource contains the LOD-based data on the collected fish specimens of “Neoglyphidodon nigroris/ 黑褐副雀鯛”.
+""" ;
+        dcat:accessURL_exampleResource <http://data.ascdc.tw/uc/bio/as/00003d36> ;
+        adms:status_exampleResource """
+OK
+""" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_Resource:_Hippocampus_trimaculatus/_三斑海馬" ;
+        dct:description_exampleResource """
+Resource contains the LOD-based data on the collected fish specimens of “Hippocampus trimaculatus/ 三斑海馬”.
+""" ;
+        dcat:accessURL_exampleResource <https://data.ascdc.tw/uc/bio/as/000039ce> ;
+        adms:status_exampleResource """
+OK
+""" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+    ] ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dcat:distribution [
+        dct:identifier_distribution "57347128-e652-d490-05e5-e5fcefae2d51" ;
+        dct:title_distribution "ASCDC_LODDatasetsDownloads" ;
+        dct:description_distribution """
+Webpage of ASCDC LODDatasets for downloads of entire published LOD-based datasets.
+""" ;
+        dcat:accessURL_distribution <https://data.ascdc.tw/en/data.php> ;
+        dcat:mediaType_distribution "text/html" ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+FAIL (400)
+""" ;
+    ] ;
+    dcat:theme "life_sciences" ;
+    void:uriSpace <http://data.ascdc.tw/uc/bio/> ;
+    void:sparqlEndpoint [
+        dct:identifier_sparqlEndpoint "2b551ad8-9af5-ea71-0847-15ab061649c9" ;
+        dct:title_sparqlEndpoint "ASCDC_LODDatasetsSPARQL_Queries" ;
+        dcat:endpointDescription_sparqlEndpoint """
+Access to the SPARQL endpoint of ASCDC's LOD datasets for data retrieval (with template-based examples), downloads and further reuse.
+""" ;
+        dcat:accessURL_sparqlEndpoint <https://data.ascdc.tw/en/sparql.php> ;
+        adms:status_sparqlEndpoint """
+FAIL (400)
+""" ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:getty-aat a void:Linkset ;
+    void:target :ASCDC-AS-TFD-Fish-Species ;
+    void:triples "7899"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :ASCDC-AS-TFD-Fish-Species ;
+    void:triples "35856"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :ASCDC-AS-TFD-Fish-Species ;
+    void:triples "24435"^^xsd:integer ;
+ .
+
+:viaf a void:Linkset ;
+    void:target :ASCDC-AS-TFD-Fish-Species ;
+    void:triples "80987"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:luluyen1210@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Dr._Shu-Jiun_Sophy_Chen_(Academia_Sinica_Center_for_Digital_Cultures,_Taiwan_R.O.C.)"^^xsd:string ;
+     foaf:Cmbox <mailto:sophy@g@e.sinica.edu.tw> ; 
+ .
+

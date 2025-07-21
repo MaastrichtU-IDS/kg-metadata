@@ -1,0 +1,68 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:The_Central_Bank_of_the_Republic_of_Uzbekistan a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title "API" ;
+        dct:identifier "fb48bbdb-a079-622b-54ad-9b4ab5645a67" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <https://data.gov.uz/uz/docs/do/view/usage> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    foaf:depiction <https://data.gov.uz/img/logo.png> ;
+    foaf:page <https://data.gov.uz/en> ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "Open_data_of_Uzbekistan" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Exchange_rate_of_foreign_currencies_to_national_currency_of_Republic_of_Uzbekistan_set_by_the_Central_bank" ;
+        dct:mirror "[]" ;
+        dct:identifier "89a525ce-84b8-a992-ec03-27de8d262262" ;
+        dcat:downloadURL <https://data.gov.uz/uz/datasets/2485> ;
+    ] ;
+    dct:description """
+Government
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:triples "14"^^xsd:integer ;
+    dcat:theme "government" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:akromsultanov82@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Akrom_Sultanov"^^xsd:string ;
+     foaf:mbox <mailto:akromsultanov82@gmail.com> ; 
+ .
+

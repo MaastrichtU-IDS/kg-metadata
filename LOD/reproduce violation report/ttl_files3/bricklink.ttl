@@ -1,0 +1,151 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bricklink a dcat:Dataset ;
+    dcat:keyword "format-rdf", "lodcloud-diagram-2011-09-19", "media", "published", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Bricklink" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-nquads" ;
+        dct:description_distribution """
+Exported version of the dataset on the Internet Archive
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Dataset_export" ;
+        dct:mirror_distribution "['ipfs:QmUX4MLfFYaxaPBLENMoSbgdWqiBHNe6EeYkW7GGb34PYg']" ;
+        dcat:downloadURL_distribution <http://archive.org/download/kasabi/bricklink.gz> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+Example RDF for Bricklink
+""" ;
+        dcat:accessURL_exampleResource <http://data.kasabi.com/dataset/bricklink/colour/67.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint for Bricklink
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://api.kasabi.com/dataset/bricklink/apis/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Kasabi page for Bricklink Search API
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://kasabi.com/api/search-api-bricklink> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Kasabi page for Bricklink SPARQL Endpoint
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://kasabi.com/api/sparql-endpoint-bricklink> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Kasabi page for Bricklink Lookup API
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://kasabi.com/dataset/bricklink/apis/lookup> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Kasabi page for Bricklink Reconciliation API
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://kasabi.com/dataset/bricklink/apis/reconciliation> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Kasabi page for Bricklink Augmentation API
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://kasabi.com/dataset/bricklink/apis/augmentation> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Void description of Bricklink dataset
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://data.kasabi.com/dataset/bricklink> ;
+    ] ;
+    dct:description_main """
+Bricklink is an unofficial lego marketplace. Essentially it is the EBay for lego, where you can buy or sell anything to do with Lego. The lego community maintain a number of fantastic resources that catalogue all of the Lego products, often down to the detail of the number, colour and type of each part in a lego set. The catalogue that powers the Bricklink website is available for download and reuse and has been used to create this dataset.
+
+Currently the dataset consists of descriptions of over 9000 Lego sets and over 23,000 Lego parts. A number of the lego sets have detailed inventories including number, type and colour of parts. There are also links to sets, instructions and part images.
+
+*Note* this dataset is no longer updated, it was taken off-line during the shutdown of Kasabi. A dump of the dataset has been [uploaded to the Internet Archive](http://archive.org/details/kasabi)
+
+"""@en ;
+
+    foaf:page <http://kasabi.com/dataset/bricklink> ;
+    void:triples "3314214"^^xsd:integer ;
+    dcat:theme "media" ;
+    void:uriSpace <http://data.kasabi.com/dataset/bricklink/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :bricklink ;
+    void:triples "25797"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Leigh_Dodds"^^xsd:string ;
+     foaf:Cmbox <mailto:leigh@ldodds.com> ; 
+ .
+

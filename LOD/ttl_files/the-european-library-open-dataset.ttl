@@ -1,0 +1,141 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:the-european-library-open-dataset a dcat:Dataset ;
+    dcat:keyword "bibliographic_data", "crossdomain", "format-dcterms", "format-dctypes", "format-foaf", "format-frbr", "format-owl", "format-rda", "format-schema", "format-skos", "format-wgs", "license-metadata", "lod", "no-proprietary-vocab", "provenance-metadata", "publications", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "The_European_Library_Open_Dataset" ;
+    void:exampleResource [
+        dct:title "Example_of_a_bibliographic_resource" ;
+        dcat:mediaType "example/turtle" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <https://ckannet-storage.commondatastorage.googleapis.com/2015-02-09T17:53:33.979Z/tel-open-dataset-example.ttl> ;
+        adms:status """
+FAIL (403)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Download_page" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.theeuropeanlibrary.org/tel4/access/data/opendata/details> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "RDF/XML_download" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.theeuropeanlibrary.org/download/opendata/datasets.rdf.tar> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Turtle_download" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.theeuropeanlibrary.org/download/opendata/datasets.ttl.tar> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "URL" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.theeuropeanlibrary.org/tel4/access/data/opendata> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='datahub.ckan.io', port=443): Max retries exceeded with url: /dataset/71714db9-6dd7-4551-b021-83f0ed82ab87/resource/5b33837e-2588-4295-bef0-90051c9547ac/download/theeuropeanlibraryopendataset.ttl (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f36843027d0>, 'Connection to datahub.ckan.io timed out. (connect timeout=30)')))
+""" ;
+        dct:title "VOID_file_for_The_European_Library_Open_Dataset" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://datahub.ckan.io/dataset/71714db9-6dd7-4551-b021-83f0ed82ab87/resource/5b33837e-2588-4295-bef0-90051c9547ac/download/theeuropeanlibraryopendataset.ttl> ;
+    ] ;
+    dct:description """
+The dataset is derived from the data aggregated by The European Library. It is comprised of all the aggregated data that is made openly available by the data providing libraries (European national and research libraries). The dataset includes national bibliographies, library catalogues, and research collections including both digital and physical resources. The data is made available under open licensing terms, which allow the unrestricted use of the data for any purpose by anyone, including commercial use.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://lod-cloud.net/edit-dataset/the-european-library-open-dataset> ;
+    void:triples "4418628287"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://data.theeuropeanlibrary.org/BibliographicResource/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:b3kat a void:Linkset ;
+    void:target :the-european-library-open-dataset ;
+    void:triples "1000000"^^xsd:integer ;
+ .
+
+:data-bnf-fr a void:Linkset ;
+    void:target :the-european-library-open-dataset ;
+    void:triples "75000"^^xsd:integer ;
+ .
+
+:dewey_decimal_classification a void:Linkset ;
+    void:target :the-european-library-open-dataset ;
+    void:triples "600000"^^xsd:integer ;
+ .
+
+:dnb-gemeinsame-normdatei a void:Linkset ;
+    void:target :the-european-library-open-dataset ;
+    void:triples "42000"^^xsd:integer ;
+ .
+
+:lcsh a void:Linkset ;
+    void:target :the-european-library-open-dataset ;
+    void:triples "7500000"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:mohammedziakamran@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "The_European_Library"^^xsd:string ;
+     foaf:mbox <mailto:info@theeuropeanlibrary.org> ; 
+ .
+

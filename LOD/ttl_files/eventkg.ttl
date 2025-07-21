@@ -1,0 +1,69 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:eventkg a dcat:Dataset ;
+    dcat:keyword "events", "knowledge_graph" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "EventKG" ;
+    dcat:distribution [
+        dcat:mediaType "nq" ;
+        dct:description """
+Seven TTL files:
+
+* Events with labels and descriptions: events.nq
+* Entities with labels: entities.nq
+* Locations, start times and end times of events: relations_base.nq
+* Link relations between events and other events or entities: relations_links.nq
+* Other relations between events and other events or entities: relations_other.nq
+* Data sets used in EventKG: graphs.ttl
+* Schema of EventKG: schema.ttl
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "EventKG:_All_data_in_TTL" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://eventkg.l3s.uni-hannover.de/data/eventkg.tar.gz> ;
+    ] ;
+    dct:description """
+The EventKG is a novel multilingual resource incorporating event-centric information extracted from several large-scale knowledge graphs such as Wikidata, DBpedia and YAGO, as well as less structured sources such as Wikipedia Current Events and Wikipedia event lists in five languages. The EventKG is an extensible event-centric resource modeled in RDF. It relies on Open Data and best practices to make event data spread across different sources available through a common representation and reusable for a variety of novel algorithms and real-world applications.
+"""@en ;
+
+    foaf:page <http://eventkg.l3s.uni-hannover.de> ;
+    void:triples "200000000"^^xsd:integer ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :eventkg ;
+    void:triples "15235024"^^xsd:integer ;
+ .
+
+:wikidata a void:Linkset ;
+    void:target :eventkg ;
+    void:triples "39234796"^^xsd:integer ;
+ .
+
+:yago a void:Linkset ;
+    void:target :eventkg ;
+    void:triples "2358699"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Simon_Gottschalk"^^xsd:string ;
+     foaf:mbox <mailto:gottschalk@L3S.de> ; 
+ .
+

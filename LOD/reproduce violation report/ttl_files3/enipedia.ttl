@@ -1,0 +1,96 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:enipedia a dcat:Dataset ;
+    dcat:keyword "crossdomain", "energy", "format-wiki", "industry", "license-metadata", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-proprietary-vocab", "published-by-producer", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-pddl> ;
+    dct:title_main "EnipediaEnergy_Industry_Data" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://enipedia.tudelft.nl/wiki/Special:ExportRDF/Navajo_Powerplant> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+Sparql endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://enipedia.tudelft.nl/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+weblog
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://enipedia.tudelft.nl/blog> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Downloads (RDF/XML)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://enipedia.tudelft.nl/downloads/enipedia.rdf> ;
+    ] ;
+    dct:description_main """
+Enipedia is an active exploration into the applications of wikis and the semantic web for energy and industry issues. Through this we seek to create a collaborative environment for discussion, while also providing the tools that allow for data from different sources to be connected, queried, and visualized from different perspectives. 	
+"""@en ;
+
+    foaf:page <http://enipedia.tudelft.nl> ;
+    void:triples "4180734"^^xsd:integer ;
+    dcat:theme "cross_domain" ;
+    void:uriSpace <http://enipedia.tudelft.nl/wiki/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :enipedia ;
+    void:triples "1365"^^xsd:integer ;
+ .
+
+:open-energy-info-wiki a void:Linkset ;
+    void:target :enipedia ;
+    void:triples "189"^^xsd:integer ;
+ .
+
+:world-factbook-fu-berlin a void:Linkset ;
+    void:target :enipedia ;
+    void:triples "204"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Enipedia_Team_@_Energy_and_Industry_Section,_TBM,_Delft_University_of_Technology"^^xsd:string ;
+     foaf:Cmbox <mailto:c.b.davis@tudelft.nl> ; 
+ .
+

@@ -1,0 +1,200 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:twc-healthdata a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "ecommerce", "format-con", "format-doap", "format-foaf", "format-owl", "format-prov", "format-qb", "format-rdf", "format-rdfs", "format-vann", "format-vcard", "geographic", "government", "lifesciences", "lod", "no-license-metadata", "provenance-metadata", "published-by-third-party", "schemata", "vocab-mappings" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "HealthData.gov_Platform_(HDP)_on_the_Semantic_Web" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_URI" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://purl.org/twc/health/source/hub-healthdata-gov/dataset/hospital-compare/version/2012-Jul-17/provider/010054> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='healthdata.tw.rpi.edu', port=80): Max retries exceeded with url: /source/hub-healthdata-gov/dataset/hospital-compare/version/2012-Jul-17/provider/010054 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684300d90>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://healthdata.tw.rpi.edu/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='healthdata.tw.rpi.edu', port=80): Max retries exceeded with url: /sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684301b70>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='healthdata.tw.rpi.edu', port=80): Max retries exceeded with url: /source/hub-healthdata-gov/file/2008-basic-stand-alone-skilled/version/2012-Mar-15/conversion/hub-healthdata-gov-2008-basic-stand-alone-skilled-2012-Mar-15.void.ttl.gz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684301930>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "Download_File" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://purl.org/twc/health/source/hub-healthdata-gov/file/2008-basic-stand-alone-skilled/version/2012-Mar-15/conversion/hub-healthdata-gov-2008-basic-stand-alone-skilled-2012-Mar-15.void.ttl.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+Listing of all RDF datasets available, using the Vocabulary of Interlinked Datasets (VoID)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "VoID_Listing" ;
+        dct:mirror_distribution "['ipfs:QmVAy6vsrsQxRZVkqg1c4b9ZUp9N8G7bayPKi5Brq2Jccm']" ;
+        dcat:accessURL_distribution <http://healthdata.tw.rpi.edu/void> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "rdf_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmbCDqDXc9G1akWmszjTirVeYmfhJrxCno4TFmTiDwKk8z']" ;
+        dcat:accessURL_distribution <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "rdfs_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmSAukqNUbLECMEnd9EjrJGchmZHjypaAqpnxwoKfqJuAc']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2000/01/rdf-schema> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "doap_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmXcK6sGhaGqZAL8bygjfkVHavUddGZifHquDBz3bDabgA']" ;
+        dcat:accessURL_distribution <http://usefulinc.com/ns/doap> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "foaf_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmXTmGjkei19mbhkXLHHFAQqgAqhSPvVv4gHXFBzVTTxko']" ;
+        dcat:accessURL_distribution <http://xmlns.com/foaf/0.1/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "owl_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmUAphtEqEuH4MudQ9pXxormvin7Th9tbko61SwxTq47XW']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2002/07/owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "prov_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmUzz1Z8nRvSfoZBntrHu4XihYEMSHWnV4h9tNo5RpCN5y']" ;
+        dcat:accessURL_distribution <http://www.w3.org/ns/prov> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "qb_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmbCAXp8T44Yjs1VmMoQYvWQH4gPkFTt8EKgeTEcRFVFYh']" ;
+        dcat:accessURL_distribution <http://purl.org/linked-data/cube> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "vann_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmWR7JcUQ6WQsesWD9MvEnn2fQcYweFRpTf338pAZ2ThdM']" ;
+        dcat:accessURL_distribution <http://purl.org/vocab/vann/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "vcard_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmWNrdt9fWyQsFchgjtAEfPUnDJZeoMrtLSMmDn5gAf9ZJ']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2006/vcard/ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "con_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmYBLNDKX6SWrY6KNhfaG5ifkpTo2KABbEZUvnQTWJ9kYw']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2000/10/swap/pim/contact> ;
+    ] ;
+    dct:description_main """
+Linked Data version of the metadata and data listed at http://hub.healthdata.gov.
+"""@en ;
+
+    foaf:page <http://healthdata.tw.rpi.edu/index.html> ;
+    void:triples "1934046908"^^xsd:integer ;
+    void:uriSpace <http://purl.org/twc/health/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "James_McCusker"^^xsd:string ;
+     foaf:Cmbox <mailto:mccusj@rpi.edu> ; 
+ .
+

@@ -1,0 +1,197 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:disgenet a dcat:Dataset ;
+    dcat:keyword "animal_model", "biomedicine", "disease", "disgenet", "format-dc", "format-foaf", "format-owl", "format-rdf", "format-rdfs", "format-sio", "format-skos", "format-void", "format-xsd", "gene", "gene-disease", "gene-disease_associations", "gene-disease_network", "gene-disease_ontology", "gene-disease_text-mining", "genotype", "genotype-phenotype", "human_diseases", "human_genes", "license-metadata", "lifesciences", "lod", "no-proprietary-vocab", "phenotype", "provenance-metadata", "published-by-producer", "rdf", "text-mining" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-odbl> ;
+    dct:title_main "DisGeNET" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;charset=ISO-8859-1" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "DisGeNET-RDF_downloads" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "a68dc882-2e71-79a8-f04d-daef5998dda8" ;
+        dcat:downloadURL_distribution <http://rdf.disgenet.org/download/v6.0.0/> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_Resouce_(RDF/Turtle)" ;
+        dcat:mediaType_exampleResource "text/plain;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Example Resource
+""" ;
+        dcat:accessURL_exampleResource <http://rdf.disgenet.org/resource/example/DGN62f27b11f686fcc408502737f5ee7a4b> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL Endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://rdf.disgenet.org/sparql/> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;charset=ISO-8859-1" ;
+        dct:description_distribution """
+Download current version (v6.0.0)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Download" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://rdf.disgenet.org/download/v6.0.0/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+Faceted Browser
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Faceted_Browser" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://rdf.disgenet.org/fct/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-gzip" ;
+        dct:description_distribution """
+VoID Metadata Description
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "VoID_Metadata_Description" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://rdf.disgenet.org/download/v6.0.0/void.ttl.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/html" ;
+        dct:description_distribution """
+Example Resource 
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Example_Resource_(HTML)" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://rdf.disgenet.org/resource/gda/DGN06666ac1f20dc99b0e3f7780a305e805> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "image/png" ;
+        dct:description_distribution """
+RDF data model
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "RDF_Schema" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://www.disgenet.org/static/disgenet_ap1/images/rdf/disgenet_rdf_schema_v6.png> ;
+    ] ;
+    dct:description_main """
+Linked Data version of DisGeNET-RDF, which is a Resource Description Framework (RDF) representation of the DisGeNET database, integrating gene, and variant-disease associations from a variety of authoritative sources on human genetics and text mining.  The Linked Data version of DisGeNET is an alternative way to access DisGeNET and provides new opportunities for data integration, querying and linking DisGeNET data with other external RDF datasets.
+There are four main components in the RDF dataset: GDA content, VDA content, metadata description of the RDF dataset (VoID description), and linkouts to other Linked Datasets. The current RDF representation of DisGeNET (v7.0.0) has 99,057,987 triples serialized in Turtle syntax. The triples annotate 1,134,942 gene-disease associations (GDAs), 21,671 genes, and 30,170 diseases, disorders, traits, and clinical or abnormal human phenotypes and 369,554 variant-disease associations (VDAs), between 194,515 variants and 14,155 diseases, traits, and phenotypes. The RDF graph model is centered around two concepts the GDA concept and the VDA concept and their attributes.
+
+web: http://rdf.disgenet.org/
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://ibi.imim.es/> ;
+    void:triples "21730060"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    void:uriSpace <http://rdf.disgenet.org/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bio2rdf-dbsnp a void:Linkset ;
+    void:target :disgenet ;
+    void:triples "45813"^^xsd:integer ;
+ .
+
+:bio2rdf-mesh a void:Linkset ;
+    void:target :disgenet ;
+    void:triples "8558"^^xsd:integer ;
+ .
+
+:bio2rdf-ncbigene a void:Linkset ;
+    void:target :disgenet ;
+    void:triples "17181"^^xsd:integer ;
+ .
+
+:bio2rdf-omim a void:Linkset ;
+    void:target :disgenet ;
+    void:triples "10141"^^xsd:integer ;
+ .
+
+:bio2rdf-orphanet a void:Linkset ;
+    void:target :disgenet ;
+    void:triples "2543"^^xsd:integer ;
+ .
+
+:bio2rdf-pubmed a void:Linkset ;
+    void:target :disgenet ;
+    void:triples "308996"^^xsd:integer ;
+ .
+
+:bioportal-icd9cm a void:Linkset ;
+    void:target :disgenet ;
+    void:triples "2075"^^xsd:integer ;
+ .
+
+:bioportal-ncit a void:Linkset ;
+    void:target :disgenet ;
+    void:triples "5026"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :disgenet ;
+    void:triples "14619"^^xsd:integer ;
+ .
+
+:fu-berlin-diseasome a void:Linkset ;
+    void:target :disgenet ;
+    void:triples "17181"^^xsd:integer ;
+ .
+
+:linked-life-data a void:Linkset ;
+    void:target :disgenet ;
+    void:triples "1390561"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:janet.pinero@prof.esci.upf.edu> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "IBI_Group"^^xsd:string ;
+     foaf:Cmbox <mailto:lfurlong@imim.es> ; 
+ .
+

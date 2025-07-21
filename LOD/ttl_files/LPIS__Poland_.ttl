@@ -1,0 +1,57 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:LPIS__Poland_ a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint_in_Virtuoso" ;
+        dct:identifier "9f162477-fdc2-2d94-121c-2c8f8caeb192" ;
+        dcat:endpointDescription """
+The dataset can be queried using SPARQL queries from this endpoint.
+""" ;
+        dcat:accessURL <https://www.foodie-cloud.org/sparql> ;
+        adms:status """
+FAIL (502)
+""" ;
+    ] ;
+    foaf:depiction <https://box.psnc.pl/f/74ce58291c/?raw=1> ;
+    foaf:page <https://www.foodie-cloud.org/fct/> ;
+    dcat:keyword "Land_use", "Land_parcel", "cadastral", "land_boundary" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "Polish_Land_Parcel_Information_System_(LPIS)_dataset_@PSNC" ;
+    dct:description """
+Polish Land Parcel Information System (LPIS) data (land parcel and cadastral data), including all the voivodeships. The input data was in the form of geospatial data in shapefile format.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <http://w3id.org/foodie/open/pl/LPIS/> ;
+    void:triples "727517039"^^xsd:integer ;
+    dcat:theme "geography" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:soumya.put.poznan@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Raul_Palma"^^xsd:string ;
+     foaf:mbox <mailto:rpalma@man.poznan.pl> ; 
+ .
+

@@ -1,0 +1,51 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:gemet-annotated a dcat:Dataset ;
+    dcat:keyword "llod", "lod" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-odbl> ;
+    dct:title "gemet-annotated" ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "2012-09-02T184411/gemet-annotated.rdf" ;
+        dct:mirror "['ipfs:QmYoU5bZX3Mzo4aEZsJbGaWDdHbs5153HwbgEa3ZSG5xRW']" ;
+        dcat:accessURL <https://commondatastorage.googleapis.com/ckannet-storage/2012-09-02T184411/gemet-annotated.rdf> ;
+    ] ;
+    dct:description """
+Details about how this dataset was built are described in the article: Are SKOS concept schemes ready for multilingual retrieval applications? — Diana Tanase and Epaminondas Kapetanios
+"""@en ;
+
+    void:triples "231297"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:gemet a void:Linkset ;
+    void:target :gemet-annotated ;
+    void:triples "103569"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Diana_Tanase"^^xsd:string ;
+     foaf:mbox <mailto:diana.tanase@my.westminster.ac.uk> ; 
+ .
+

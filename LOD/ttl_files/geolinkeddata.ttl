@@ -1,0 +1,100 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:geolinkeddata a dcat:Dataset ;
+    dcat:keyword "country-spain", "deref-vocab", "format-dc", "format-rdf", "geodata", "geographic", "government", "lod", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "published-by-third-party", "sparql" ;
+    dct:title "GeoLinkedData" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Download
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "fsadfsaf" ;
+        dct:mirror "['ipfs:QmScbDH4No8zLmC9fyJ2rpqW7UVZhUiq9nav6yZjBBAZgp']" ;
+        dcat:downloadURL <http://geo.linkeddata.es/source/rdf/NOMGEO/NOMGEO_provincias.rdf> ;
+    ] ;
+    void:exampleResource [
+        dct:title "adsgagasg" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Link to an example data item within the dataset (RDF/XML)
+""" ;
+        dcat:accessURL <http://geo.linkeddata.es/resource/Provincia/Madrid> ;
+        adms:status """
+FAIL (500)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "gadgasg" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://geo.linkeddata.es/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+RDF Schema
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "dsgagdsagvdsv" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://geo.linkeddata.es/source/rdf/ontology/> ;
+    ] ;
+    dct:description """
+GeoLinkedData (.es) is an open initiative whose aim is to enrich the Web of Data with Spanish geospatial data. This initiative started off by publishing diverse information sources belonging to the National Geographic Institute of Spain. Such sources are made available as RDF (Resource Description Framework) knowledge bases according to the Linked Data principles. These data are interlinked with other knowledge bases belonging to the Linking Open Data Initiative.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://geo.linkeddata.es/> ;
+    void:triples "21564199"^^xsd:integer ;
+    dcat:theme "geography" ;
+    void:uriSpace <http://geo.linkeddata.es/resource/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :geolinkeddata ;
+    void:triples "51"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :geolinkeddata ;
+    void:triples "51"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:saad18409@iiitd.ac.in> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Ontology_Engineering_Group,_Facultad_de_Informática,_Universidad_Politécnica_de_Madrid."^^xsd:string ;
+     foaf:mbox <mailto:admin_linkedd@a@delicias.dia.fi.upm.es> ; 
+ .
+

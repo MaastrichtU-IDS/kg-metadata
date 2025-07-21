@@ -1,0 +1,78 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:arrayexpress-e-afmx-1 a dcat:Dataset ;
+    dcat:keyword "format-efo", "format-pobo", "format-prov", "lifesciences", "lod", "no-proprietary-vocab", "provenance-metadata", "published-by-third-party" ;
+    dct:title_main "Transcription_profiling_of_human,_chimp_and_mouse_brain" ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://purl.org/twc/arrayexpress/virtuoso/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='aquarius.tw.rpi.edu', port=80): Max retries exceeded with url: /projects/lobi/virtuoso/sparql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686da1d50>, 'Connection to aquarius.tw.rpi.edu timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "a_RDFS_Schema" ;
+        dct:mirror_distribution "['ipfs:QmUzz1Z8nRvSfoZBntrHu4XihYEMSHWnV4h9tNo5RpCN5y']" ;
+        dcat:accessURL_distribution <http://www.w3.org/ns/prov> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "efo_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmV92UqDeYTEvPcGwmRKSMngwJFFhUQ1hAnnmGXtzF4eW4']" ;
+        dcat:accessURL_distribution <http://www.ebi.ac.uk/efo/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/xml" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "pobo_RDF_Schema" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://purl.obolibrary.org/obo/> ;
+    ] ;
+    dct:description_main """
+Microarray technologies allow the identification of large numbers of expression differences within and between species. Although environmental and physiological stimuli are clearly responsible for changes in the expression levels of many genes, it is not known whether the majority of changes of gene expression fixed during evolution between species and between various tissues within a species are caused by Darwinian selection or by stochastic processes. We find the following: (1) expression differences between species accumulate approximately linearly with time; (2) gene expression variation among individuals within a species correlates positively with expression divergence between species; (3) rates of expression divergence between species do not differ significantly between intact genes and expressed pseudogenes; (4) expression differences between brain regions within a species have accumulated approximately linearly with time since these regions emerged during evolution. These results suggest that the majority of expression differences observed between species are selectively neutral or nearly neutral and likely to be of little or no functional significance. Therefore, the identification of gene expression differences between species fixed by selection should be based on null hypotheses assuming functional neutrality. Furthermore, it may be possible to apply a molecular clock based on expression differences to infer the evolutionary history of tissues.
+"""@en ;
+
+    void:triples "3014"^^xsd:integer ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Endre_Anderssen"^^xsd:string ;
+     foaf:Cmbox <mailto:endre.anderssen@gmail.com> ; 
+ .
+

@@ -1,0 +1,87 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:twc-logd a dcat:Dataset ;
+    dcat:keyword "country-us", "deref-vocab", "format-rdf", "government", "lod", "lodcloud-diagram-2011-09-19", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "TWC:_Linking_Open_Government_Data" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example URI
+""" ;
+        dcat:accessURL_exampleResource <http://logd.tw.rpi.edu/source/dfid-gov-uk/dataset/statistics-on-international-development-2009/version/2009-Nov-10/foreignAid_158_6> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='logd.tw.rpi.edu', port=80): Max retries exceeded with url: /source/dfid-gov-uk/dataset/statistics-on-international-development-2009/version/2009-Nov-10/foreignAid_158_6 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dac190>, 'Connection to logd.tw.rpi.edu timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Download (Turtle, gzipped)
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='logd.tw.rpi.edu', port=80): Max retries exceeded with url: /twc-logd (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686da0a00>, 'Connection to logd.tw.rpi.edu timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://logd.tw.rpi.edu/twc-logd> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "api/query" ;
+        dct:description_distribution """
+SPARQL endpoint
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='logd.tw.rpi.edu', port=80): Max retries exceeded with url: /sparql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686da0430>, 'Connection to logd.tw.rpi.edu timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://logd.tw.rpi.edu/sparql> ;
+    ] ;
+    dct:description_main """
+The Tetherless World Constellation (TWC) at Rensselaer Polytechnic Institute (RPI) maintains Linked Open Government Data (LOGD), an RDF version of the datasets published by package:data-gov and other government-related sources.
+
+LOGD replaces the old TWC Data-gov Corpus published in May 2010.
+"""@en ;
+
+    foaf:page <http://logd.tw.rpi.edu> ;
+    void:triples "9803142573"^^xsd:integer ;
+    dcat:theme "government" ;
+    void:uriSpace <http://logd.tw.rpi.edu/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :twc-logd ;
+    void:triples "2039"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :twc-logd ;
+    void:triples "1839"^^xsd:integer ;
+ .
+
+:govtrack a void:Linkset ;
+    void:target :twc-logd ;
+    void:triples "1909"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Tetherless_World_Constellation,_Rensselaer_Polytechnic_Institute"^^xsd:string ;
+ .
+

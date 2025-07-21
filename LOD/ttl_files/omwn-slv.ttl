@@ -1,0 +1,96 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:omwn-slv a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType "application/zip" ;
+        dct:description """
+Download of data with LMF and Lemon files
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='compling.hss.ntu.edu.sg', port=80): Max retries exceeded with url: /omw/wns/slv+xml.zip (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686db67a0>, 'Connection to compling.hss.ntu.edu.sg timed out. (connect timeout=30)')))
+""" ;
+        dct:title "Full_Download" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://compling.hss.ntu.edu.sg/omw/wns/slv%2Bxml.zip> ;
+    ] ;
+    dcat:keyword "lexicon", "wordnet", "lemon" ;
+    dct:license <https://creativecommons.org/licenses/by/3.0/> ;
+    dct:title "sloWNet_WordNet_(as_part_of_Open_Multilingual_WordNet)" ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint" ;
+        dct:identifier "b7cea95e-85a6-d997-5659-2a058fee25a2" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://omwn.linguistic-lod.org/sparql/> ;
+        adms:status """
+FAIL (503)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/zip" ;
+        dct:description """
+Download of tab separated values for data
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='compling.hss.ntu.edu.sg', port=80): Max retries exceeded with url: /omw/wns/slv.zip (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686db66b0>, 'Connection to compling.hss.ntu.edu.sg timed out. (connect timeout=30)')))
+""" ;
+        dct:title "TSV_files" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://compling.hss.ntu.edu.sg/omw/wns/slv.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/x-bibtex" ;
+        dct:description """
+Citation for using this work
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='compling.hss.ntu.edu.sg', port=80): Max retries exceeded with url: /omw/wns/slv/citation.bib (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f36843fd270>, 'Connection to compling.hss.ntu.edu.sg timed out. (connect timeout=30)')))
+""" ;
+        dct:title "Citation" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://compling.hss.ntu.edu.sg/omw/wns/slv/citation.bib> ;
+    ] ;
+    dct:description """
+The sloWNet wordnet as published as part of the Open Multilingual WordNet. The goal of Open Multilingual WordNet is to make it easy to use wordnets in multiple languages. The individual wordnets have been made by many different projects and vary greatly in size and accuracy. We have (i) extracted and normalized the data, (ii) linked it to Princeton WordNet 3.0 and (iii) put it in one place. The Open Multilingual Wordnet and its components are open: they can be freely used, modified, and shared by anyone for any purpose. 
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:triples "414557"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    foaf:page <http://compling.hss.ntu.edu.sg/omw/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:wordnet-rdf a void:Linkset ;
+    void:target :omwn-slv ;
+    void:triples "70947"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:john.mccrae@insight-centre.org> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Francis_Bond"^^xsd:string ;
+     foaf:mbox <mailto:bond@ieee.org> ; 
+ .
+

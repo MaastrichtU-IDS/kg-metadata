@@ -1,0 +1,113 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:yovisto a dcat:Dataset ;
+    dcat:keyword "academic", "crossdomain", "deref-vocab", "e-learning", "education", "format-cc", "format-dc", "format-foaf", "format-mpeg7", "format-tag", "lod", "lodcloud-diagram-2011-09-19", "multimedia", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "published-by-producer", "science", "usergeneratedcontent", "video", "void-sparql-endpoint" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "Yovistoacademic_video_search" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://www.yovisto.com/resource/speaker/470> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='vintage.yovisto.com', port=80): Max retries exceeded with url: /resource/speaker/470 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686aeeda0>: Failed to establish a new connection: [Errno 113] No route to host')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+Public SPARQL-Endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://sparql.yovisto.com/> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='sparql.yovisto.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686aef130>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "HTML+RDFa" ;
+        dct:description_distribution """
+Embedded RDFa in Yovisto website.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "['ipfs:QmXKQ8g5ynGmZCTRrY3dhiVXm9Uhzm9aHxXD51s1LE5ktA']" ;
+        dcat:accessURL_distribution <http://www.yovisto.com/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-gzip" ;
+        dct:description_distribution """
+Turtle Dump (gzipped)
+""" ;
+        adms:status_distribution """
+FAIL (401)
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www.yovisto.com/labs/dumps/latest.ttl.tar.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+OWL-DL Description
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "['ipfs:QmTVBnn82CYNRHJMbaz6nz1QnaiYUih1XVPHg6pjX9D9Us']" ;
+        dcat:accessURL_distribution <http://www.yovisto.com/ontology/0.9/index.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/sitemap" ;
+        dct:description_distribution """
+Sitemap
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www.yovisto.com/sitemapext.xml> ;
+    ] ;
+    dct:description_main """
+Yovisto is a video search engine specialized in academic lecture recordings and conference talks. Unlike other video search engines, Yovisto provides a time based video index,
+which allows to search within the videos? content. Automated analysis techniques such as scene detection
+and intelligent character recognition are used for metadata generation. Time dependent collaborative annotation enables the user to annotate tags and comments at any
+point within a video.
+"""@en ;
+
+    foaf:page <http://www.yovisto.com/ontology/> ;
+    void:triples "4932352"^^xsd:integer ;
+    dcat:theme "user_generated" ;
+    void:uriSpace <http://www.yovisto.com/resource> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :yovisto ;
+    void:triples "300"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Yovisto.com"^^xsd:string ;
+     foaf:Cmbox <mailto:info@yovisto.com> ; 
+ .
+

@@ -1,0 +1,205 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:temple-ov-thee-lemur-datasets a dcat:Dataset ;
+    dcat:keyword "chess", "crossdomain", "deref-vocab", "format-dc", "format-foaf", "format-owl", "format-rdf", "games", "humour", "lod", "lodcloud-diagram-2011-09-19", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "occult", "perverse", "published-by-producer", "tarot" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "Temple_ov_thee_Lemur" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+Example resource (deck of cards)
+""" ;
+        dcat:accessURL <http://data.totl.net/playingcards/deck> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download: The Tree of Life (esoteric)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmWm1srEs1gcjLvYURAb3M81JNarf2aDjhnfjBCzLTbgmi']" ;
+        dcat:accessURL <http://data.totl.net/kabbalah/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download: Hebrew Characters (esoteric)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmdEuTKwVW1JCmjG7ew6YsyTUxx1osCeouK5pGfPxRbgKc']" ;
+        dcat:accessURL <http://data.totl.net/he/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download: Western Zodiac (esoteric)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmP5U8VzMPRZgFVeG8TSD7Eh2DXuLLwaLfVNYeBBp1NjXH']" ;
+        dcat:accessURL <http://data.totl.net/zodiac/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download: Tarot Cards (esoteric)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmaMcYjLaBfW1EvBYDWbxS1fHR92q1muwasHSHAArBd5Rr']" ;
+        dcat:accessURL <http://data.totl.net/tarot/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download: Rider Waite Tarot Cards (esoteric)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmeH3QEqsmUEg5BCcxqNLZu1gygYdE3tLB6AKLkM9QSfo5']" ;
+        dcat:accessURL <http://data.totl.net/tarot-rwcs/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download: Alchemical Elements (esoteric)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmQ7gC9jtqHvhxMjuGZnseLYDJp34KPhWsJprG96Li6mMU']" ;
+        dcat:accessURL <http://data.totl.net/element/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download: Alchemical Planets (esoteric)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmX8T6BTpznuqRxxswDPECgyaLvo3XsJLjdxweKj48WcqA']" ;
+        dcat:accessURL <http://data.totl.net/planet/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download: Playing Cards (games)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmU4yrmUo2gZ2waYxbV4HsZRPpKbi7T869g5UfguB5bBme']" ;
+        dcat:accessURL <http://data.totl.net/playingcards/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download: Tic Tac Toe (games)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmZrroAbygU2gQNheyUpDu7Jg9rmEQ8JLcmjbHp1yHkcVk']" ;
+        dcat:accessURL <http://data.totl.net/tictactoe/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download: 4-in-a-Row (games) (do not spider)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmchB9xmVVmfVCq8jPshs4gY9BbN4aKikaNrwVFEYQ6sYf']" ;
+        dcat:accessURL <http://data.totl.net/4inarow/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download: Chess (games) (do not spider)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmdhMC3LMDNKNCKqR24eNDhgUqduCvEiYgBFZrVi2TFVYd']" ;
+        dcat:accessURL <http://data.totl.net/chess/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download: Daily Mail Causes and Preventions of Cancer
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmQGpKfysTq2uorSEC69X3TPBPsVvNDauQ8WUHj1eRESFc']" ;
+        dcat:accessURL <http://data.totl.net/cancer_causes.rdf> ;
+    ] ;
+    dct:description """
+This resource provides 3 groups of RDF datasets. 1. Esoteric subjects such as tarot and alchemy. These all interlink and the Horoscope, Tarot, Planets and Elements sets link into DBPedia resources for Starsigns, Metals, Tarot Suits, Planets, Gems, and the Narnia novels(!)
+
+2. Descriptions of Game States such as tic-tac-toe and chess. Do not attmpt to spider these as they are effectively infinite.
+
+3. Deliberately perverse datasets including Daily Mail cancer. Where possible, the causes and preventions of cancer are linked to their DBPedia indentifiers. Other perverse datasets are considered 'toys' and not linked here. They are listed on the homepage.
+"""@en ;
+
+    foaf:page <http://data.totl.net/> ;
+    void:triples "10000"^^xsd:integer ;
+    dcat:theme "cross_domain" ;
+    void:uriSpace <http://data.totl.net/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :temple-ov-thee-lemur-datasets ;
+    void:triples "500"^^xsd:integer ;
+ .
+
+:semantictweet a void:Linkset ;
+    void:target :temple-ov-thee-lemur-datasets ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Christopher_Gutteridge"^^xsd:string ;
+     foaf:mbox <mailto:cjg@ecs.soton.ac.uk> ; 
+ .
+

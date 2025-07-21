@@ -1,0 +1,222 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bio2rdf-mgi a dcat:Dataset ;
+    dcat:keyword "bio2rdf", "deref-vocab", "format-dc", "format-rdf", "format-rdfs", "license-metadata", "lifesciences", "lod", "lodcloud-diagram-2011-09-19", "provenance-metadata", "published-by-third-party", "vocab-mappings" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "Bio2RDF::Mgi" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download MGI_GenePheno.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/mgi/MGI_GenePheno.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download MGI_PhenotypicAllele.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/mgi/MGI_PhenotypicAllele.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download MGI_Strain.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/mgi/MGI_Strain.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download MRK_Sequence.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/mgi/MRK_Sequence.nq.gz> ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_resource_(RDF)" ;
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+Example resource (RDF)
+""" ;
+        dcat:accessURL <http://bio2rdf.org/mgi:95484> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://mgi.bio2rdf.org/sparql> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='mgi.bio2rdf.org', port=443): Max retries exceeded with url: /sparql (Caused by SSLError(CertificateError("hostname 'mgi.bio2rdf.org' doesn't match either of 'bio2rdf.org', 'openlifedata.org', 'search.openlifedata.org', 'sparql.openlifedata.org', 'virtuoso.openlifedata.org'"))))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "" ;
+        dct:description """
+Download
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_page_(n-quads,_gz_compressed)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/current/mgi/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "HTML" ;
+        dct:description """
+Dataset description (HTML)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Dataset_description_(HTML)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/current/mgi/mgi.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+Dataset description (RDF)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Dataset_description_(RDF)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/current/mgi/bio2rdf-mgi.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+OWL Schema
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "OWL_Schema" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/release/3/mgi/mgi.schema.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "mapping/owl" ;
+        dct:description """
+Mappings (SIO)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Mappings_(SIO)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/mgi/bio2rdf_mgi_sio_mapping.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/sitemap" ;
+        dct:description """
+Semantic Web Sitemap
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Semantic_Web_Sitemap" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/release/3/mgi/sitemap.xml> ;
+    ] ;
+    dct:description """
+The Mouse Genome Database (MGD) project includes data on gene characterization, nomenclature, mapping, gene homologies among mammals, sequence links, phenotypes, allelic variants and mutants, and strain data.
+"""@en ;
+
+    foaf:page <http://mgi.bio2rdf.org/> ;
+    void:triples "8206813"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    void:uriSpace <http://bio2rdf.org/mgi:> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bio2rdf-ensembl a void:Linkset ;
+    void:target :bio2rdf-mgi ;
+    void:triples "134875"^^xsd:integer ;
+ .
+
+:bio2rdf-genbank a void:Linkset ;
+    void:target :bio2rdf-mgi ;
+    void:triples "270087"^^xsd:integer ;
+ .
+
+:bio2rdf-mgi a void:Linkset ;
+    void:target :bio2rdf-mgi ;
+    void:triples "135983"^^xsd:integer ;
+ .
+
+:bio2rdf-mp a void:Linkset ;
+    void:target :bio2rdf-mgi ;
+    void:triples "7813"^^xsd:integer ;
+ .
+
+:bio2rdf-pubmed a void:Linkset ;
+    void:target :bio2rdf-mgi ;
+    void:triples "26159"^^xsd:integer ;
+ .
+
+:bio2rdf-refseq a void:Linkset ;
+    void:target :bio2rdf-mgi ;
+    void:triples "173676"^^xsd:integer ;
+ .
+
+:bio2rdf-trembl a void:Linkset ;
+    void:target :bio2rdf-mgi ;
+    void:triples "50539"^^xsd:integer ;
+ .
+
+:bio2rdf-uniprot a void:Linkset ;
+    void:target :bio2rdf-mgi ;
+    void:triples "16171"^^xsd:integer ;
+ .
+
+:bio2rdf-vega a void:Linkset ;
+    void:target :bio2rdf-mgi ;
+    void:triples "108930"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Bio2RDF"^^xsd:string ;
+     foaf:mbox <mailto:bio2rdf@googlegroups.com> ; 
+ .
+

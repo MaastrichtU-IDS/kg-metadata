@@ -1,0 +1,95 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:de-gaap-ontology-lexicon a dcat:Dataset ;
+    dcat:keyword "lemon", "llod", "lod", "multilingual", "ontology", "ontology-lexicon", "parse_tree" ;
+    dct:title "de-gaap-ontology-lexicon" ;
+    void:exampleResource [
+        dct:title "English_de-gaap_ontology-lexicon_" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://lemon-model.net/lexica/de-gaap/lexicon.en> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "German_de-gaap_ontology-lexicon" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://lemon-model.net/lexica/de-gaap/lexicon.de> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "PDF" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "data-set-description.pdf" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://commondatastorage.googleapis.com/ckannet-storage/2012-09-24T124029/de-gaap-ontology-lexicon-data-set-description.pdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Shows the lexinfo/lemon annotation of the German term "Lizenzen and Rechten und Werten" (licence in rights and assets) parsed from the s-expression "(NP (NN-Lizenzen) (PP (APPR-an) (CNP (NN-Rechten) (KON-und) (NN-Werten))))"
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Example_of_annotation:_Lizenzen_and_Rechten_und_Werten" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://lemon-model.net/lexica/de-gaap/de/Lizenzen%2Ban%2BRechten%2Bund%2BWerten> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "ZIP" ;
+        dct:description """
+The lemon model with 2020 German and 1819 English lexical entries as one file instead of uris hosted at lemon-model.net/lexica/de-gaap
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "Model_as_file" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://ckannet-storage.commondatastorage.googleapis.com/2012-10-18T110739/model.lemon.rdf.zip> ;
+    ] ;
+    dct:description """
+The dataset is a German-English financial ontology-lexicon with 728 bilingual annotated phrases with Constituent and Part-Of-Speech Tags in <a href="http://lexinfo.net/">lexinfo</a>/<a href="http://lemon-model.net/">lemon</a> format. The ontology lexicon was generated from the rdf version (using xbrl2rdf by Dennis Spohr) of the German <a href="http://xbrl.de">XBRL</a> HGB Taxonomy V4.1 which describes financial concepts used in German reporting. Special thanks to Noëmi Aepli for the part-of-speech annotions. All work was done within the <a href="http://monnet-project.eu/">MONNET (Multilingual Ontologies for Networked Knowledge Project</a>.The ontology-lexicon and its ontology be downloaded here.
+"""@en ;
+
+    void:triples "246522"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:lexinfo a void:Linkset ;
+    void:target :de-gaap-ontology-lexicon ;
+    void:triples "43727"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Tobias_Wunner"^^xsd:string ;
+ .
+

@@ -1,0 +1,57 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:metashare a dcat:Dataset ;
+    dcat:keyword "NLP", "linguistics", "llod", "lod", "lrec-2014", "metadata" ;
+    dct:title_main "MetaShare_metadata_model" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/rdf+ttl" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='gilmere.upf.edu', port=80): Max retries exceeded with url: /corpus_data/rdf/IULA-UPF-MetashareRecordsOntology.ttl (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db70d0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "LREC-2014_Share_your_resources_data_submission" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://gilmere.upf.edu/corpus_data/rdf/IULA-UPF-MetashareRecordsOntology.ttl> ;
+    ] ;
+    dct:description_main """
+Ontology	
+Metadata as LOD	
+
+Availability: Freely Avalable	
+
+Usage: 	Status:Newly created-in progress
+
+Description: 	LOD prelimnary version of the MetaShare metadata model.
+
+(http://www.resourcebook.eu/shareyourlr/index.php#)
+"""@en ;
+
+    void:triples "8334"^^xsd:integer ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dblp a void:Linkset ;
+    void:target :metashare ;
+    void:triples "161"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :metashare ;
+    void:triples "227"^^xsd:integer ;
+ .
+

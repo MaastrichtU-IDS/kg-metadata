@@ -1,0 +1,84 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:amsterdam-museum-as-edm-lod a dcat:Dataset ;
+    dcat:keyword "amsterdam", "country-netherlands", "crossdomain", "cultural", "culturalheritage", "datagovuk", "deref-vocab", "edm", "europeana", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "museum", "no-license-metadata", "no-provenance-metadata", "publications", "published-by-third-party", "rdf", "vu" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "Amsterdam_Museum_as_Linked_Open_Data_in_the_Europeana_Data_Model" ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint" ;
+        dcat:endpointDescription """
+SPARQL endpoint for the DIVE+ data layer, which also includes Amsterdam Museum
+""" ;
+        dcat:accessURL <http://data.dive.beeldengeluid.nl/sparql/> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.dive.beeldengeluid.nl', port=80): Max retries exceeded with url: /sparql/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843718a0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "GIT_at_Bitbucket" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://bitbucket.org/biktorrr/amlod/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "HTML" ;
+        dct:description """
+DIVE+ Cliopatria triple store web frontend. This contains the AM LOD data
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='d', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684373490>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title "DIVE+_Cliopatria_Triple_store_" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://d> ;
+    ] ;
+    dct:description """
+The Amsterdam Museum dataset describes more than 70.000 cultural heritage objects related to the city of Amsterdam described by the museum. 
+
+The metadata was retrieved from an XML Web API of the museum's Adlib collection database and converted to RDF compliant with the Europeana Data Model (EDM). This makes the Amsterdam Museum data the first of its kind to be officially converted and made available in this format.
+
+
+"""@en ;
+
+    foaf:page <http://semanticweb.cs.vu.nl/lod/am/> ;
+    void:triples "5000000"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://purl.org/collections/nl/am/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :amsterdam-museum-as-edm-lod ;
+    void:triples "43"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :amsterdam-museum-as-edm-lod ;
+    void:triples "658"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Victor_de_Boer,_Jan_Wielemaker,_Jacco_van_Ossenbruggen,_Antoine_Isaac,_Guus_Schreiber"^^xsd:string ;
+     foaf:mbox <mailto:v.de.boer@vu.nl> ; 
+ .
+

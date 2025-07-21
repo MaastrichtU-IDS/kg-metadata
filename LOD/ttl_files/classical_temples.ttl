@@ -1,0 +1,70 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:classical_temples a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://romeresearchgroup.org/database-of-temples/> ;
+    void:triples "0"^^xsd:integer ;
+    dcat:keyword "Rome", "Greece", "religion", "temple", "ancient", "classics" ;
+    dct:description """
+A searchable digital database of temples (loosely defined) constructed in the Classical World (also loosely defined).
+
+"""@en ;
+
+    dct:title "Temples_of_the_Classical_World" ;
+    void:exampleResource [
+        dct:title "Temple_of_Bellona" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <https://romeresearchgroup.org/items/1000004> ;
+        adms:status """
+OK
+""" ;
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+    ] ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dcat:distribution [
+        dct:identifier "6eef0aa1-afa1-763a-8785-612f74f0b417" ;
+        dct:title "All_temples_in_turtle_format" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <https://romeresearchgroup.org/items/temples.ttl> ;
+        dcat:mediaType "text/turtle" ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:theme "geography" ;
+    void:uriSpace <https://romeresearchgroup.org/items/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:jmuccigr@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "John_Muccigrosso"^^xsd:string ;
+     foaf:mbox <mailto:jmuccigr@drew.edu> ; 
+ .
+

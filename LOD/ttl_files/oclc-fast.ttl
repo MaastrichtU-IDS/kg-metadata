@@ -1,0 +1,84 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:oclc-fast a dcat:Dataset ;
+    dcat:keyword "authorities", "format-dc", "format-foaf", "format-skos", "format-void", "license-metadata", "lod", "lodcloud", "lodcloud-diagram-2014-08-30", "no-proprietary-vocab", "provenance-metadata", "publications", "published-by-producer" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-by> ;
+    dct:title "Faceted_Application_of_Subject_Terminology" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+Example resource (RDF)
+""" ;
+        dcat:accessURL <http://id.worldcat.org/fast/1411628> ;
+        adms:status """
+FAIL (406)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/xml" ;
+        dct:description """
+OpenSearch
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://experimental.worldcat.org/fast/xsl/FastOpenSearch.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+VoID description
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmRARkgLa1YPTtNo1ZZfY24kMgGfWWDuMgFEcN51Lph7BN']" ;
+        dcat:accessURL <http://fast.oclc.org/fast/void/0.1/> ;
+    ] ;
+    dct:description """
+FAST (Faceted Application of Subject Terminology) is an enumerative, faceted subject heading schema derived from the Library of Congress Subject Headings (LCSH). Its purpose is to be easier to understand, control, apply, and use than LCSH. Any valid set of LC subject headings can be converted to FAST headings.
+
+FAST contains 1.6M authority records.
+
+The triple count (30M) is a rough estimate based on the number of authority records. The LCSH link count is based on the observation that many but not all of the authority records have LCSH links. The Geonames link count is based on [this account](http://www.oclc.org/nextspace/018/research.htm) that states 100k total geographic entities with 60% matched to Geonames.
+"""@en ;
+
+    foaf:page <http://id.worldcat.org/fast/> ;
+    void:triples "30000000"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://id.worldcat.org/fast/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames a void:Linkset ;
+    void:target :oclc-fast ;
+    void:triples "60000"^^xsd:integer ;
+ .
+
+:lcsh a void:Linkset ;
+    void:target :oclc-fast ;
+    void:triples "1600000"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "OCLC_Research"^^xsd:string ;
+ .
+

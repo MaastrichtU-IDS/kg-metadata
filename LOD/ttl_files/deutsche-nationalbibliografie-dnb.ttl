@@ -1,0 +1,185 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:deutsche-nationalbibliografie-dnb a dcat:Dataset ;
+    dcat:keyword "bibliographic", "bibliographic_data", "cc0", "germany", "lld", "lod", "rdf" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "Deutsche_Nationalbibliografie_(DNB)" ;
+    dcat:distribution [
+        dct:identifier "9e540ec9-eca0-9513-645f-204b4c6965a3" ;
+        dct:title "Deutsche_Nationalbibliografie_(DNB)" ;
+        dct:description """
+RDF/XML
+""" ;
+        dcat:mediaType "application/x-gzip" ;
+        dcat:downloadURL <https://data.dnb.de/opendata/dnb-all_lds.rdf.gz> ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier "d08b0b55-3244-cc6b-7d82-8d6fc9ce5f64" ;
+        dct:title "Deutsche_Nationalbibliografie_(DNB)" ;
+        dct:description """
+RDF/turtle
+""" ;
+        dcat:mediaType "application/x-gzip" ;
+        dcat:downloadURL <https://data.dnb.de/opendata/dnb-all_lds.ttl.gz> ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier "dc86c195-943c-b702-5e59-48ae34c50b24" ;
+        dct:title "Deutsche_Nationalbibliografie_(DNB)" ;
+        dct:description """
+JSON-LD
+""" ;
+        dcat:mediaType "application/x-gzip" ;
+        dcat:downloadURL <https://data.dnb.de/opendata/dnb-all_lds.jsonld.gz> ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier "a3c6e803-4886-2703-9f3b-cf98cce7c2e2" ;
+        dct:title "Deutsche_Nationalbibliografie_(DNB)" ;
+        dct:description """
+nTriples
+""" ;
+        dcat:mediaType "application/x-gzip" ;
+        dcat:downloadURL <https://data.dnb.de/opendata/dnb-all_lds.nt.gz> ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier "a5b0f177-74e0-6580-9427-f6b6c64f33f7" ;
+        dct:title "Deutsche_Nationalbibliografie_(DNB)" ;
+        dct:description """
+HDT
+""" ;
+        dcat:mediaType "application/x-gzip" ;
+        dcat:downloadURL <https://data.dnb.de/opendata/dnb-all_lds.hdt.gz> ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_series" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <https://d-nb.info/011078677/about/lds> ;
+        adms:status """
+FAIL (400)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_article" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <https://d-nb.info/1014234816/about/lds> ;
+        adms:status """
+FAIL (400)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_collection" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <https://d-nb.info/1015411169/about/lds> ;
+        adms:status """
+FAIL (400)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_book" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <https://d-nb.info/1022139770/about/lds> ;
+        adms:status """
+FAIL (400)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_periodical" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <https://d-nb.info/944912621/about/lds> ;
+        adms:status """
+FAIL (400)
+""" ;
+    ] ;
+    dct:description """
+The Linked Data Service of the German National Library  (Deutsche Nationalbibliothek, DNB) includes bibliographic data since January 2012. As a first step, the bibliographic data of the DNB’s main collection (apart from the collection  of the Deutsches Exilarchiv) and the serials 
+(magazines, newspapers and series of the German Union Catalogue of serials (ZDB)) have been converted. 
+For more information see https://www.dnb.de/lds
+From January 2014 on, the Linked Data Service of the German National Library (DNB) will issue scheduled releases and will be integrated in the export releases of the other formats. Changes to the conversion and to the data modelling will be made in January, May and September. Changes will be notified in advance via the Linked Data Service mailing list (http://lists.dnb.de/mailman/listinfo/lds). Please subscribe if you are interested in receiving information about future developments in DNB Linked Data Services. In a schedule corresponding to the export releases, updated dumps of the authority and bibliographic data in RDF/XML and Turtle will be available for download in February, June and October. 
+
+**Documentation** of the data model and used vocabularies: [https://d-nb.info/1241844151/34](https://d-nb.info/1241844151/34)
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://www.dnb.de/EN/lds> ;
+    void:triples "521028069"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <https://d-nb.info/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:deutsche-nationalbibliografie-dnb a void:Linkset ;
+    void:target :deutsche-nationalbibliografie-dnb ;
+    void:triples "24794541"^^xsd:integer ;
+ .
+
+:dewey_decimal_classification a void:Linkset ;
+    void:target :deutsche-nationalbibliografie-dnb ;
+    void:triples "1550034"^^xsd:integer ;
+ .
+
+:dnb-gemeinsame-normdatei a void:Linkset ;
+    void:target :deutsche-nationalbibliografie-dnb ;
+    void:triples "31039088"^^xsd:integer ;
+ .
+
+:doi a void:Linkset ;
+    void:target :deutsche-nationalbibliografie-dnb ;
+    void:triples "2454367"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:tracy.hoffmann@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Deutsche_Nationalbibliothek_(German_National_Library)"^^xsd:string ;
+     foaf:mbox <mailto:metad@endienste@dnb.de> ; 
+ .
+

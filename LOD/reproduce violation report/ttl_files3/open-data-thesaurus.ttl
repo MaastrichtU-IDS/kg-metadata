@@ -1,0 +1,79 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:open-data-thesaurus a dcat:Dataset ;
+    dcat:keyword "crossdomain", "deref-vocab", "format-owl", "format-skos", "llod", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "ogd", "opendata", "published-by-producer", "technology", "thesaurus" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "Open_Data_Thesaurus" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-ntriples" ;
+        dct:description_distribution """
+Download
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "['ipfs:QmdMhd2RmQY73XjoeZuwPCAXgRCdPuVPzG1eZTmp3sdXsC']" ;
+        dcat:downloadURL_distribution <http://ckan.net/storage/f/file/12be3509-4cd1-4fc5-8c95-d0d3a7121766> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+Example
+""" ;
+        dcat:accessURL_exampleResource <http://vocabulary.semantic-web.at/OpenData/CKAN> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://vocabulary.semantic-web.at/PoolParty/sparql/OpenData> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dct:description_main """
+The Open Data Thesaurus is a collection of key concepts and entities, their definitions and semantic links. Following the principle of ?eat your own dog food? this thesaurus is available in machine-readable form based on open W3C standards and under a Creative Commons license. The thesaurus can thus be integrated into other applications, such as for creating mashups, or for indexing of documents. The thesaurus is available in English and German.
+"""@en ;
+
+    foaf:page <http://vocabulary.semantic-web.at/PoolParty/wiki/OpenData> ;
+    void:triples "8000"^^xsd:integer ;
+    dcat:theme "cross_domain" ;
+    void:uriSpace <http://vocabulary.semantic-web.at/OpenData/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :open-data-thesaurus ;
+    void:triples "50"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :open-data-thesaurus ;
+    void:triples "40"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "OGD_Austria"^^xsd:string ;
+     foaf:Cmbox <mailto:office@semantic-web.@> ; 
+ .
+

@@ -1,0 +1,104 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:linkedlccn a dcat:Dataset ;
+    dcat:keyword "format-bibo", "format-dc", "format-foaf", "format-frbr", "format-mo", "format-owl", "format-rdf", "format-rdfs", "format-skos", "format-xhtml", "library", "lld", "lod", "lodcloud-diagram-2011-09-19", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "no-vocab-mappings", "publications", "published-by-third-party" ;
+    dct:title "LinkedLCCN" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "example/rdfa" ;
+        dct:description """
+HTML RDFa example
+""" ;
+        dcat:accessURL <http://purl.org/NET/lccn/76090902> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='lccn.lcsubjects.org', port=80): Max retries exceeded with url: /76090902 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db4b80>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+RDF/XML example
+""" ;
+        dcat:accessURL <http://purl.org/NET/lccn/93707283.rdf> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='lccn.lcsubjects.org', port=80): Max retries exceeded with url: /93707283.rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db5b40>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://api.talis.com/stores/rsinger-dev4/services/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='api.talis.com', port=80): Max retries exceeded with url: /stores/rsinger-dev4/services/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db4b20>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dct:description """
+A wrapper for the Library of Congress' LCCN Permalink service which models the MARCXML output as linked data in RDF.
+
+
+"""@en ;
+
+    foaf:page <http://purl.org/NET/lccn/> ;
+    void:triples "1573663"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://purl.org/NET/lccn/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:books-isbn a void:Linkset ;
+    void:target :linkedlccn ;
+    void:triples "4468"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :linkedlccn ;
+    void:triples "10911"^^xsd:integer ;
+ .
+
+:dbtune-musicbrainz a void:Linkset ;
+    void:target :linkedlccn ;
+    void:triples "6909"^^xsd:integer ;
+ .
+
+:linkedmdb a void:Linkset ;
+    void:target :linkedlccn ;
+    void:triples "883"^^xsd:integer ;
+ .
+
+:marc-codes a void:Linkset ;
+    void:target :linkedlccn ;
+    void:triples "80275"^^xsd:integer ;
+ .
+
+:openlibrary a void:Linkset ;
+    void:target :linkedlccn ;
+    void:triples "15331"^^xsd:integer ;
+ .
+
+:viaf a void:Linkset ;
+    void:target :linkedlccn ;
+    void:triples "209422"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Ross_Singer"^^xsd:string ;
+     foaf:mbox <mailto:rossfsinger@gmail.com> ; 
+ .
+

@@ -1,0 +1,137 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:artenuevosmedios-gnoss a dcat:Dataset ;
+    dcat:keyword "Vida_artificial", "arte_digital", "arte_sonoro", "corporate_excellence", "country-spain", "country.es", "dc", "entornos_interactivos", "foaf", "format-dc", "format-dcam", "format-foaf", "format-rdfg", "format-sioc", "format-skos", "format-wot", "instalaciones", "laboratorio_de_ideas", "language-spa", "license-metadata", "lod", "no-proprietary-vocab", "no-vocab-mappings", "programación_gráfica", "provenance-metadata", "proyecciones_escénicas", "published-by-third-party", "schemata", "sensores", "sioc", "skos", "socialweb", "sp", "spain", "usergeneratedcontent", "wrapper" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title_main "Entornos_interactivos._Arte_en_los_nuevos_medios_(GNOSS)" ;
+    void:exampleResource [
+        dct:title_exampleResource "RDF/XML_resource_example" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+This is an RDF/XML example link of one of the resources published in the   Arte en los nuevos medios (GNOSS) community. 
+""" ;
+        dcat:accessURL_exampleResource <http://red.gnoss.com/en/community/Interactivos/resource/Video-Projection-Tools--VPT/0278522a-59f9-4cf4-a766-d6f121da1ba6?rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "RDF/XML_resource_example_2" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+This is an RDF/XML example link of one of the resources published in the   Arte en los nuevos medios (GNOSS) community. 
+""" ;
+        dcat:accessURL_exampleResource <http://red.gnoss.com/en/community/Interactivos/resource/Scramble-Suit--Kyle-McDonald-Arturo-Castro/468deccf-8fef-4cd4-8782-25990cc20cb3> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "RDF/XML_search_example_" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+This is an RDF/XML example link of a search results.
+""" ;
+        dcat:accessURL_exampleResource <http://red.gnoss.com/en/community/Interactivos/advanced-search/tag/arte?rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/owl" ;
+        dct:description_distribution """
+Gnoss OWL Ontology
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Gnoss_Ontology" ;
+        dct:mirror_distribution "['ipfs:QmbDWiHLbnjJ2vGnaViALUEZFtCGu3hgUVhsSZjQ5xwpki']" ;
+        dcat:accessURL_distribution <http://gnoss.com/gnoss.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD description
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "voiD_description" ;
+        dct:mirror_distribution "['ipfs:QmXjgsJLprfp7rEBD2d1SbR26Y5H9qZD4AX4sVMoYyZAxo']" ;
+        dcat:accessURL_distribution <http://ineverycrea.net/voidArteNuevosMediosGNOSS.n3> ;
+    ] ;
+    dct:description_main """
+<p>
+<a href="http://red.gnoss.com/comunidad/Interactivos">Entornos Interactivos. Arte en los nuevos medios</a>
+ is a community promoted by Jaime Munárriz Ortiz, Professor and Associate Dean for Research and Graduate School of Fine Arts at the University Complutense of Madrid, for the subject Image Synthesis and Interactive Environments, of the Research Master in Art and Creation. The community works with 
+<a href="http://gnoss.com/">GNOSS software (RIAM Intelearning Lab)</a>
+. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. Green Competitiveness offers a selection of 135 resources (November 2012). It includes a facet-based engine search and enriched contexts. Both are developments by GNOSS.
+</p>
+
+<p>
+<a href="http://red.gnoss.com/comunidad/Interactivos">Entornos Interactivos. Arte en los nuevos medios</a>
+ es una comunidad promovida por Jaime Munárriz Ortiz, profesor y Vicedecano de Investigación y Posgrado de la
+<a href="http://www.bellasartes.ucm.es/">Facultad de Bellas Artes</a>
+de la Universidad Complutense de Madrid, para la asignatura Imagen de Síntesis y Entornos Interactivos, del Máster en Investigación en Arte y Creación. La comunidad trabaja con software de 
+<a href="http://gnoss.com/">GNOSS software (RIAM Intelearning Lab)</a>
+. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. NextWeb ofrece en este caso una selección de 135 recursos (Noviembre 2012). Incluye un buscador facetado y contextos enriquecidos. Ambos son desarrollos de GNOSS.
+</p>
+"""@en ;
+
+    foaf:page <http://gnoss.com/comunidad/Interactivos> ;
+    void:triples "7736"^^xsd:integer ;
+    dcat:theme "user_generated" ;
+    void:uriSpace <http://gnoss.com/comunidad/Interactivos> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :artenuevosmedios-gnoss ;
+    void:triples "663"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :artenuevosmedios-gnoss ;
+    void:triples "425"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :artenuevosmedios-gnoss ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:gnoss a void:Linkset ;
+    void:target :artenuevosmedios-gnoss ;
+    void:triples "76"^^xsd:integer ;
+ .
+
+:mismuseos-gnoss a void:Linkset ;
+    void:target :artenuevosmedios-gnoss ;
+    void:triples "205"^^xsd:integer ;
+ .
+
+:nytimes-linked-open-data a void:Linkset ;
+    void:target :artenuevosmedios-gnoss ;
+    void:triples "620"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "GNOSS_Team"^^xsd:string ;
+     foaf:Cmbox <mailto:gnoss@gnoss.com> ; 
+ .
+

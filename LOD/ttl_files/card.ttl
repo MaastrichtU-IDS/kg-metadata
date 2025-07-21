@@ -1,0 +1,42 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:card a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://1drv.ms/u/s!AsFgXSXbjIZRv3TdS-LTUmfuAfXc> ;
+    dct:description """
+FoaF
+"""@en ;
+
+    dct:title "person" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dcat:theme "social_networking" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:10027@hebron.edu> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "monjed"^^xsd:string ;
+     foaf:mbox <mailto:10027@hebron.edu> ; 
+ .
+

@@ -1,0 +1,58 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:GACS a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Global Agricultural Concept Space core concepts
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "gacs_core" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "427f33c6-2444-33f9-892f-1638d3be0c04" ;
+        dcat:downloadURL_distribution <https://github.com/gacs/gacs-scheme/blob/master/src/gacs-core-scheme.ttl> ;
+    ] ;
+    foaf:page <https://agrisemantics.org/#GACShome/> ;
+    dcat:keyword "format-skos", "biology", "ecology", "organisms", "agriculture", "earth_sciences", "health", "forestry", "fishery", "environment", "nutrition" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Global_Agricultural_Concept_Space" ;
+    dct:description_main """
+The Global Agricultural Concept Space (GACS) is a hub for concepts related to agriculture, in multiple languages, for use in Linked Data. GACS Core is the first of potentially many concept schemes in this larger concept space. The idea for GACS emerged out of discussions at the World Congress of IAALD, the International Association of Agricultural Information Specialists, in July 2013. The Food and Agricultural Organization of the United Nations (FAO), CAB International (CABI), and the National Agricultural Library of the USA (NAL) agreed in October 2013 to explore the feasibility of developing a shared concept scheme by integrating their three thesauri: the AGROVOC Concept Scheme, the CAB Thesaurus (CABT), and NAL Thesaurus (NALT). In the GACS vision, the integration of these three thesauri is but the first step towards the realization of a hub that links to and from the concept schemes beyond the initial three, and in multiple language areas.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <id.agrisemantics.org/gacs> ;
+    void:triples "2699098"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:brandonnodnarb@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "brandon_whitehead"^^xsd:string ;
+     foaf:Cmbox <mailto:b.whitehead@cabi.org> ; 
+ .
+

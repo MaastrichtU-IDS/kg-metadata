@@ -1,0 +1,400 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ichoose a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-coin", "format-con", "format-conv", "format-datafaqs", "format-dbpedia", "format-dc", "format-dcat", "format-doap", "format-foaf", "format-org", "format-ov", "format-owl", "format-pml", "format-pmlj", "format-pmlp", "format-prov", "format-rdf", "format-rdfs", "format-sio", "format-sioc", "format-tag", "format-vann", "format-void", "lod", "prizms", "provenance-metadata", "vocab-mappings" ;
+    dct:title_main "ichoose" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-ntriples" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "N-Triples_Download" ;
+        dct:mirror_distribution "['ipfs:QmXykaxGQBuXdJ9A5UkPGNmqfMohkswLc3rDXcuS2VVG77']" ;
+        dcat:downloadURL_distribution <http://ichoose.tw.rpi.edu/source/ichoose/file/cr-full-dump/version/latest/conversion/ichoose-tw-rpi-edu.nt.gz> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_URI" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jun-21/company/1341.0> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='ichoose.tw.rpi.edu', port=80): Max retries exceeded with url: /source/ctg-albany-edu/dataset/voluntary-sustainable-certification/version/2013-Jun-21/company/1341.0 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843000a0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_URI" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/roaster-database/maritime-floid5547.xls-supplierlog/version/2013-Jun-21/Importadores_de_la_Caf_Justo_de_la_Paz> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='ichoose.tw.rpi.edu', port=80): Max retries exceeded with url: /source/ctg-albany-edu/dataset/roaster-database/maritime-floid5547.xls-supplierlog/version/2013-Jun-21/Importadores_de_la_Caf_Justo_de_la_Paz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843008e0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_URI" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://ichoose.tw.rpi.edu/source/ctg-albany-edu/dataset/exporter-database/agromercado-floid6230.xls-customerlog/version/2013-Jun-21/customer_17> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='ichoose.tw.rpi.edu', port=80): Max retries exceeded with url: /source/ctg-albany-edu/dataset/exporter-database/agromercado-floid6230.xls-customerlog/version/2013-Jun-21/customer_17 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684301960>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://ichoose.tw.rpi.edu/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='ichoose.tw.rpi.edu', port=80): Max retries exceeded with url: /sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684301e40>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "pmlp_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmVc8XGJZYr2dhh3RPJk2Kjnu1TdAdo7fHuPdVjigAtYRV']" ;
+        dcat:accessURL_distribution <http://inference-web.org/2.0/pml-provenance.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "rdf_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:Qmc12LrbUifW7U3PyFpQ55TDxGXgfkEPRYhexMA6E24iQR']" ;
+        dcat:accessURL_distribution <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "owl_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmWJ8maTa1PfLdfM17wvXh6nzuZG6CD4fGiZcb1GSB6Kxf']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2002/07/owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "dcat_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmTo9AhvWcEtMWnesnZLuwJGN1LvBavu1KJBpRJVbPZSi3']" ;
+        dcat:accessURL_distribution <http://www.w3.org/ns/dcat> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "pmlj_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmS97AnjACRGiFQZHBTSgVb2We7kvQ44Cp2X5n36e7Jvkz']" ;
+        dcat:accessURL_distribution <http://inference-web.org/2.0/pml-justification.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "prov_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmQ2KLCuzHEM6EBXKgmgE1ZRhTsxouzSwFq2FYxKHxDDJF']" ;
+        dcat:accessURL_distribution <http://www.w3.org/ns/prov> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "dbpedia_RDF_Schema" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://dbpedia.org/resource/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "org_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmeKtgw842qyt5xJonKgC1KLQYrTPvELrGoWa8Pk32axXx']" ;
+        dcat:accessURL_distribution <http://www.w3.org/ns/org> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "pml_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmbAnynAh3sT48N6EhJ2ZKsrSTtHDi2Yr29Gwd33xxuLiv']" ;
+        dcat:accessURL_distribution <http://provenanceweb.org/ns/pml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "void_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmPKEQdP9ZDzrRmsLVywkAR4cew2EePAg82g9WDYBDtxxZ']" ;
+        dcat:accessURL_distribution <http://rdfs.org/ns/void> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "foaf_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmXTmGjkei19mbhkXLHHFAQqgAqhSPvVv4gHXFBzVTTxko']" ;
+        dcat:accessURL_distribution <http://xmlns.com/foaf/0.1/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "conv_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmZSmZm2wqd3j47Eovmmep5n2hVAAxTWsekk9tyMJeFqQw']" ;
+        dcat:accessURL_distribution <http://purl.org/twc/vocab/conversion/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "dc_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmSQLZddg8vL7gsJPTDaR1dzEcvKR2Nao6NzUMXxPS93JX']" ;
+        dcat:accessURL_distribution <http://purl.org/dc/terms/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='sparql.tw.rpi.edu', port=80): Max retries exceeded with url: /vocab/datafaqs (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fd330>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "datafaqs_RDF_Schema" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://purl.org/twc/vocab/datafaqs> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "sioc_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmYX7qAiJrm16HPovqSCcyAyrV4ZjhEAEZB8onFFwcNQ6F']" ;
+        dcat:accessURL_distribution <http://rdfs.org/sioc/ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "vann_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmWR7JcUQ6WQsesWD9MvEnn2fQcYweFRpTf338pAZ2ThdM']" ;
+        dcat:accessURL_distribution <http://purl.org/vocab/vann/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "rdfs_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmNuJDKL5WBEEy1NBxQqTLWXysDQ21TFHb8iaHN1yNV91o']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2000/01/rdf-schema> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "doap_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmZn7wXHpgSrGFEP32zAfKQYRFNoyGrYoJXUYPZDBwyg4R']" ;
+        dcat:accessURL_distribution <http://usefulinc.com/ns/doap> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "con_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmVXinE7W8zud343FMXJUqEXS43xnjirTuLHFTyHmfun9j']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2000/10/swap/pim/contact> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "tag_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmPRSH2VWey2S9yYvL35tQ5782v915wo8tDN8MkAPPSq5a']" ;
+        dcat:accessURL_distribution <http://www.holygoat.co.uk/owl/redwood/0.1/tags/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='open.vocab.org', port=443): Max retries exceeded with url: /terms/ (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997)'))))
+""" ;
+        dct:title_distribution "ov_RDF_Schema" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://open.vocab.org/terms/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+Listing of all RDF datasets available, using the Vocabulary of Interlinked Datasets (VoID)
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='ichoose.tw.rpi.edu', port=80): Max retries exceeded with url: /void.ttl (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684303760>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "VoID_Listing" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://ichoose.tw.rpi.edu/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/sitemap" ;
+        dct:description_distribution """
+Listing of all RDF datasets available.
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='ichoose.tw.rpi.edu', port=80): Max retries exceeded with url: /source/ichoose/file/cr-sitemap/version/latest/conversion/sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684303100>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "Sitemap" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://ichoose.tw.rpi.edu/source/ichoose/file/cr-sitemap/version/latest/conversion/sitemap.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "mapping/twc-conversion" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='ichoose.tw.rpi.edu', port=80): Max retries exceeded with url: /source/ichoose/file/cr-aggregated-params/version/latest/conversion/ichoose-cr-aggregated-params-latest.ttl.gz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684301150>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "Conversion_Enhancement_Parameters" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://ichoose.tw.rpi.edu/source/ichoose/file/cr-aggregated-params/version/latest/conversion/ichoose-cr-aggregated-params-latest.ttl.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (403)
+""" ;
+        dct:title_distribution "sio_RDF_Schema" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://semanticscience.org/resource/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "coin_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmfAv8tKH2LKNXq2nCvNu9yDWK64fTiYKZmAUsMju1yg9k']" ;
+        dcat:accessURL_distribution <http://purl.org/court/def/2009/coin> ;
+    ] ;
+    dct:description_main """
+SUNY Albany Center for Technology in Government I-Choose project
+"""@en ;
+
+    void:triples "99411"^^xsd:integer ;
+    dcat:theme "user_generated" ;
+    void:uriSpace <http://ichoose.tw.rpi.edu/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :ichoose ;
+    void:triples "2"^^xsd:integer ;
+ .
+

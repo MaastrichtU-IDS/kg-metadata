@@ -1,0 +1,321 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:statusnet-quitter-se a dcat:Dataset ;
+    dcat:keyword "LinkedDataCrawl2014", "crawledLinkedDataCloud2014", "format-bio", "format-foaf", "format-pos", "format-rdf", "format-rdfs", "format-sioc", "lodcloud-diagram-2014-08-30", "social_web" ;
+    dct:title_main "statusnet-quitter-se" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://quitter.se/p1ng0ut/foaf> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    dct:description_main """
+StatusNet instance hosted at http://quitter.se
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:personal-homepages a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "403"^^xsd:integer ;
+ .
+
+:statusnet-1w6-org a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "53"^^xsd:integer ;
+ .
+
+:statusnet-atari-frosch-de a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "43"^^xsd:integer ;
+ .
+
+:statusnet-belfalas-org a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "7"^^xsd:integer ;
+ .
+
+:statusnet-bka-li a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+:statusnet-ced117-net a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-chromic-org a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:statusnet-cooleysekula-net a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "30"^^xsd:integer ;
+ .
+
+:statusnet-datenfahrt-org a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:statusnet-davidhaberthuer-ch a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-dtdns-net a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:statusnet-exdc-net a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:statusnet-fcac-com a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:statusnet-fragdev-com a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "567"^^xsd:integer ;
+ .
+
+:statusnet-gegeweb-org a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:statusnet-glou-org a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:statusnet-gomertronic-com a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "40"^^xsd:integer ;
+ .
+
+:statusnet-hackerposse-com a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:statusnet-ilikefreedom-ro a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:statusnet-jonkman-ca a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "53"^^xsd:integer ;
+ .
+
+:statusnet-kaimi-cc a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "79"^^xsd:integer ;
+ .
+
+:statusnet-kenzoid-com a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-lebsanft-org a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+:statusnet-legadolibre-com-ar a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "33"^^xsd:integer ;
+ .
+
+:statusnet-linuxwrangling-com a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "60"^^xsd:integer ;
+ .
+
+:statusnet-lydiastench-com a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "7"^^xsd:integer ;
+ .
+
+:statusnet-m-kuttner-com a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-macno-org a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+:statusnet-mamalibre-com-ar a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:statusnet-maymay-net a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:statusnet-morphtown-de a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "142"^^xsd:integer ;
+ .
+
+:statusnet-mrblog-nl a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-opensim-chat-eu a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:statusnet-orangeseeds-org a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-ourcoffs-org-au a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:statusnet-panda-id-au a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-piana-eu a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+:statusnet-postblue-info a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "66"^^xsd:integer ;
+ .
+
+:statusnet-qdnx-org a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "9"^^xsd:integer ;
+ .
+
+:statusnet-rainbowdash-net a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "32"^^xsd:integer ;
+ .
+
+:statusnet-recit-org a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:statusnet-russwurm-org a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "113"^^xsd:integer ;
+ .
+
+:statusnet-samnoble-org a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "7"^^xsd:integer ;
+ .
+
+:statusnet-schiessle-org a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:statusnet-scoffoni-net a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:statusnet-skilledtests-com a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "387"^^xsd:integer ;
+ .
+
+:statusnet-somsants-net a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "27"^^xsd:integer ;
+ .
+
+:statusnet-soucy-cc a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-spraci-org a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "8"^^xsd:integer ;
+ .
+
+:statusnet-ssweeny-net a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:statusnet-status-net a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "72"^^xsd:integer ;
+ .
+
+:statusnet-tekk-com-ar a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "8"^^xsd:integer ;
+ .
+
+:statusnet-thelovebug-org a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "62"^^xsd:integer ;
+ .
+
+:statusnet-thornton2-com a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-timttmy-co-uk a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "48"^^xsd:integer ;
+ .
+
+:statusnet-tschlotfeldt-de a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:wordpress a void:Linkset ;
+    void:target :statusnet-quitter-se ;
+    void:triples "4"^^xsd:integer ;
+ .
+

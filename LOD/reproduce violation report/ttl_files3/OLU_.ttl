@@ -1,0 +1,57 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:OLU_ a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint_in_Virtuoso" ;
+        dct:identifier_sparqlEndpoint "1283b52a-f7bf-152a-c116-af99ff43edef" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <https://www.foodie-cloud.org/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (502)
+""" ;
+    ] ;
+    foaf:depiction <https://box.psnc.pl/f/2fd25dfa99/?raw=1> ;
+    foaf:page <https://www.foodie-cloud.org/fct/> ;
+    dcat:keyword "Open_land_use", "land_use", "europe", "agriculture", "agglomeration", "_" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "Open_Land_Use" ;
+    dct:description_main """
+Open Land Use Map is a composite map that is intended to create detailed land-use maps of various regions based on certain pan-Europen datasets such as CORINE Landcover, UrbanAtlas enriched by available regional data. The dataset is derived from available open datasources at different levels of detail and coverage. These data sources include: 1) Digital cadastral maps if available 2) Land Parcel Identification System if Available 3) Urban Atlas(European Environmental Agency) 4) CORINE Land Cover 2006 (European Environmental Agency) 5) Open Street Map The order of the data sources is according to the level of detail and, therefore, the priority for data integration. The dataset includes agriculture related lands (hilucs_code<200) from Czech, Poland, Spain & for few main cities in Czech Republic (centers of NUTS3 regions), Poland (agglomeration areas from Urban Atlas) and Spain (agglomeration areas from Urban Atlas)
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <http://w3id.org/foodie/olu/> ;
+    void:triples "127926060"^^xsd:integer ;
+    dcat:theme "geography" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:soumya.put.poznan@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Raul_Palma,_Soumya_Brahma"^^xsd:string ;
+     foaf:Cmbox <mailto:rpalma@man.poznan.pl> ; 
+ .
+

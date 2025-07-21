@@ -1,0 +1,117 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:statusnet-scoffoni-net a dcat:Dataset ;
+    dcat:keyword "LinkedDataCrawl2014", "crawledLinkedDataCloud2014", "format-bio", "format-foaf", "format-pos", "format-rdf", "format-rdfs", "format-sioc", "lodcloud-diagram-2014-08-30", "social_web" ;
+    dct:title "statusnet-scoffoni-net" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://status.scoffoni.net/index.php/pscoffoni/foaf> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='status.scoffoni.net', port=80): Max retries exceeded with url: /index.php/pscoffoni/foaf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fef80>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dct:description """
+StatusNet instance hosted at http://scoffoni.net
+"""@en ;
+
+    dcat:theme "social_networking" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:personal-homepages a void:Linkset ;
+    void:target :statusnet-scoffoni-net ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-belfalas-org a void:Linkset ;
+    void:target :statusnet-scoffoni-net ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:statusnet-gegeweb-org a void:Linkset ;
+    void:target :statusnet-scoffoni-net ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-imirhil-fr a void:Linkset ;
+    void:target :statusnet-scoffoni-net ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-kathryl-fr a void:Linkset ;
+    void:target :statusnet-scoffoni-net ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-keuser-fr a void:Linkset ;
+    void:target :statusnet-scoffoni-net ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-planet-libre-org a void:Linkset ;
+    void:target :statusnet-scoffoni-net ;
+    void:triples "8"^^xsd:integer ;
+ .
+
+:statusnet-postblue-info a void:Linkset ;
+    void:target :statusnet-scoffoni-net ;
+    void:triples "6"^^xsd:integer ;
+ .
+
+:statusnet-quitter-se a void:Linkset ;
+    void:target :statusnet-scoffoni-net ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:statusnet-recit-org a void:Linkset ;
+    void:target :statusnet-scoffoni-net ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-sebseb01-net a void:Linkset ;
+    void:target :statusnet-scoffoni-net ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-shnoulle-net a void:Linkset ;
+    void:target :statusnet-scoffoni-net ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:statusnet-skilledtests-com a void:Linkset ;
+    void:target :statusnet-scoffoni-net ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-soucy-cc a void:Linkset ;
+    void:target :statusnet-scoffoni-net ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-spip-org a void:Linkset ;
+    void:target :statusnet-scoffoni-net ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-status-net a void:Linkset ;
+    void:target :statusnet-scoffoni-net ;
+    void:triples "38"^^xsd:integer ;
+ .
+

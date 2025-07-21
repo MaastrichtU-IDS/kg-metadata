@@ -1,0 +1,119 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:tcmgenedit_dataset a dcat:Dataset ;
+    dcat:keyword "ckanupload.esw.200910", "format-rdf", "genetics", "lifesciences", "linkeddata", "lod", "lodcloud-diagram-2011-09-19", "medical", "no-deref-vocab", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "published-by-third-party", "rdf", "size-kb" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "TCMGeneDIT_Dataset" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://purl.org/net/tcm/tcm.lifescience.ntu.edu.tw/id/disease/Hyperthyroidism> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='www.open-biomed.org.uk', port=8080): Max retries exceeded with url: /tcm/id/disease/Hyperthyroidism (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684302ef0>, 'Connection to www.open-biomed.org.uk timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+api
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://www.open-biomed.org.uk/sparql/endpoint/tcm> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+Download
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www.open-biomed.org.uk/tcmdata/tcm_rdf_data_release3_190609.tar.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+Download
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www.open-biomed.org.uk/tcmdata/tcm_rdf_data_release3_190609_turtle.tar.gz> ;
+    ] ;
+    dct:description_main """
+Data exposed: Traditional Chinese medicine, gene and disease association dataset and a linkset mapping TCM gene symbols to Extrez Gene IDs created by Neurocommons
+
+Size of dump and data set: 288kb compressed
+
+Notes: Creative Commons with Attributions
+"""@en ;
+
+    foaf:page <http://code.google.com/p/junsbriefcase/wiki/TGDdataset> ;
+    void:triples "117643"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    void:uriSpace <http://purl.org/net/tcm/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :tcmgenedit_dataset ;
+    void:triples "1400"^^xsd:integer ;
+ .
+
+:entrez_gene a void:Linkset ;
+    void:target :tcmgenedit_dataset ;
+    void:triples "944"^^xsd:integer ;
+ .
+
+:fu-berlin-dailymed a void:Linkset ;
+    void:target :tcmgenedit_dataset ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:fu-berlin-diseasome a void:Linkset ;
+    void:target :tcmgenedit_dataset ;
+    void:triples "376"^^xsd:integer ;
+ .
+
+:fu-berlin-drugbank a void:Linkset ;
+    void:target :tcmgenedit_dataset ;
+    void:triples "385"^^xsd:integer ;
+ .
+
+:fu-berlin-sider a void:Linkset ;
+    void:target :tcmgenedit_dataset ;
+    void:triples "171"^^xsd:integer ;
+ .
+
+:linkedct a void:Linkset ;
+    void:target :tcmgenedit_dataset ;
+    void:triples "141"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Jun_Zhao"^^xsd:string ;
+ .
+

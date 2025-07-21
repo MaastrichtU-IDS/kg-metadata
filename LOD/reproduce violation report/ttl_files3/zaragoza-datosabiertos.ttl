@@ -1,0 +1,119 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:zaragoza-datosabiertos a dcat:Dataset ;
+    dcat:keyword "country-es", "deref-vocab", "government", "lod", "lodcloud.nolinks", "lodcloud.unconnected", "published-by-producer" ;
+    dct:title_main "Datos_Abiertos_de_Zaragoza" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-turtle" ;
+        dct:description_distribution """
+RDF-Turlte
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Catálogo_Conjuntos_de_Datos" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www.zaragoza.es/datosabiertos/sparql?query=CONSTRUCT%2B%7B%250D%250A%2B%2B%253Fcatalogo%2Ba%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523Catalog%253E%253B%250D%250A%2B%2B%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523dataset%253E%2B%253Fdataset.%250D%250A%2B%2B%253Fdataset%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523distribution%253E%2B%253Fdistribucion%253B%250D%250A%2B%2B%2B%253Chttp%253A%252F%252Fpurl.org%252Fdc%252Fterms%252FaccrualPeriodicity%253E%2B%253Ffrecuencia%253B%250D%250A%2B%2B%2B%253Fp%2B%253Fo.%250D%250A%2B%2B%253Ffrecuencia%2B%253Ffrec_p%2B%253Ffrec_o%2B.%250D%250A%2B%2B%253Fdistribucion%2B%253Fdist_p%2B%253Fdist_o%2B.%250D%250A%7D%250D%250AWHERE%2B%7B%250D%250A%2B%2B%253Fcatalogo%2Ba%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523Catalog%253E%253B%250D%250A%2B%2B%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523dataset%253E%2B%253Fdataset.%250D%250A%2B%2B%253Fdataset%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523distribution%253E%2B%253Fdistribucion%253B%250D%250A%2B%2B%2B%253Chttp%253A%252F%252Fpurl.org%252Fdc%252Fterms%252FaccrualPeriodicity%253E%2B%253Ffrecuencia%253B%250D%250A%2B%2B%2B%253Fp%2B%253Fo.%250D%250A%2B%2B%253Ffrecuencia%2B%253Ffrec_p%2B%253Ffrec_o%2B.%250D%250A%2B%2B%253Fdistribucion%2B%253Fdist_p%2B%253Fdist_o%2B.%250D%250A%7D&format=application%2Fx-turtle> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+xml" ;
+        dct:description_distribution """
+RDF-XML
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Catálogo_Conjuntos_de_Datos" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www.zaragoza.es/datosabiertos/sparql?query=CONSTRUCT%2B%7B%250D%250A%2B%2B%253Fcatalogo%2Ba%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523Catalog%253E%253B%250D%250A%2B%2B%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523dataset%253E%2B%253Fdataset.%250D%250A%2B%2B%253Fdataset%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523distribution%253E%2B%253Fdistribucion%253B%250D%250A%2B%2B%2B%253Chttp%253A%252F%252Fpurl.org%252Fdc%252Fterms%252FaccrualPeriodicity%253E%2B%253Ffrecuencia%253B%250D%250A%2B%2B%2B%253Fp%2B%253Fo.%250D%250A%2B%2B%253Ffrecuencia%2B%253Ffrec_p%2B%253Ffrec_o%2B.%250D%250A%2B%2B%253Fdistribucion%2B%253Fdist_p%2B%253Fdist_o%2B.%250D%250A%7D%250D%250AWHERE%2B%7B%250D%250A%2B%2B%253Fcatalogo%2Ba%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523Catalog%253E%253B%250D%250A%2B%2B%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523dataset%253E%2B%253Fdataset.%250D%250A%2B%2B%253Fdataset%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523distribution%253E%2B%253Fdistribucion%253B%250D%250A%2B%2B%2B%253Chttp%253A%252F%252Fpurl.org%252Fdc%252Fterms%252FaccrualPeriodicity%253E%2B%253Ffrecuencia%253B%250D%250A%2B%2B%2B%253Fp%2B%253Fo.%250D%250A%2B%2B%253Ffrecuencia%2B%253Ffrec_p%2B%253Ffrec_o%2B.%250D%250A%2B%2B%253Fdistribucion%2B%253Fdist_p%2B%253Fdist_o%2B.%250D%250A%7D&format=application%252Frdf%252Bxml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/rdf+n3" ;
+        dct:description_distribution """
+RDF-N3
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Catálogo_Conjuntos_de_Datos" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www.zaragoza.es/datosabiertos/sparql?query=CONSTRUCT%2B%7B%250D%250A%2B%2B%253Fcatalogo%2Ba%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523Catalog%253E%253B%250D%250A%2B%2B%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523dataset%253E%2B%253Fdataset.%250D%250A%2B%2B%253Fdataset%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523distribution%253E%2B%253Fdistribucion%253B%250D%250A%2B%2B%2B%253Chttp%253A%252F%252Fpurl.org%252Fdc%252Fterms%252FaccrualPeriodicity%253E%2B%253Ffrecuencia%253B%250D%250A%2B%2B%2B%253Fp%2B%253Fo.%250D%250A%2B%2B%253Ffrecuencia%2B%253Ffrec_p%2B%253Ffrec_o%2B.%250D%250A%2B%2B%253Fdistribucion%2B%253Fdist_p%2B%253Fdist_o%2B.%250D%250A%7D%250D%250AWHERE%2B%7B%250D%250A%2B%2B%253Fcatalogo%2Ba%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523Catalog%253E%253B%250D%250A%2B%2B%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523dataset%253E%2B%253Fdataset.%250D%250A%2B%2B%253Fdataset%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523distribution%253E%2B%253Fdistribucion%253B%250D%250A%2B%2B%2B%253Chttp%253A%252F%252Fpurl.org%252Fdc%252Fterms%252FaccrualPeriodicity%253E%2B%253Ffrecuencia%253B%250D%250A%2B%2B%2B%253Fp%2B%253Fo.%250D%250A%2B%2B%253Ffrecuencia%2B%253Ffrec_p%2B%253Ffrec_o%2B.%250D%250A%2B%2B%253Fdistribucion%2B%253Fdist_p%2B%253Fdist_o%2B.%250D%250A%7D&format=text%252Frdf%252Bn3> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/sparql-results+xml" ;
+        dct:description_distribution """
+SPARQL-JSON
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Catálogo_Conjuntos_de_Datos" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www.zaragoza.es/datosabiertos/sparql?query=SELECT%2B%2A%2BWHERE%2B%7B%250D%250A%2B%2B%253Fcatalogo%2Ba%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523Catalog%253E%253B%250D%250A%2B%2B%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523dataset%253E%2B%253Fdataset.%250D%250A%2B%2B%253Fdataset%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523distribution%253E%2B%253Fdistribucion%253B%250D%250A%2B%2B%2B%253Chttp%253A%252F%252Fpurl.org%252Fdc%252Fterms%252FaccrualPeriodicity%253E%2B%253Ffrecuencia%253B%250D%250A%2B%2B%2B%253Fp%2B%253Fo.%250D%250A%2B%2B%253Ffrecuencia%2B%253Ffrec_p%2B%253Ffrec_o%2B.%250D%250A%2B%2B%253Fdistribucion%2B%253Fdist_p%2B%253Fdist_o%2B.%250D%250A%7D&format=application%2Fsparql-results%2Bjson> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/sparql-results+xml" ;
+        dct:description_distribution """
+SPARQL-XML
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Catálogo_Conjuntos_de_Datos" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www.zaragoza.es/datosabiertos/sparql?query=SELECT%2B%2A%2BWHERE%2B%7B%250D%250A%2B%2B%253Fcatalogo%2Ba%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523Catalog%253E%253B%250D%250A%2B%2B%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523dataset%253E%2B%253Fdataset.%250D%250A%2B%2B%253Fdataset%2B%253Chttp%253A%252F%252Fvocab.deri.ie%252Fdcat%2523distribution%253E%2B%253Fdistribucion%253B%250D%250A%2B%2B%2B%253Chttp%253A%252F%252Fpurl.org%252Fdc%252Fterms%252FaccrualPeriodicity%253E%2B%253Ffrecuencia%253B%250D%250A%2B%2B%2B%253Fp%2B%253Fo.%250D%250A%2B%2B%253Ffrecuencia%2B%253Ffrec_p%2B%253Ffrec_o%2B.%250D%250A%2B%2B%253Fdistribucion%2B%253Fdist_p%2B%253Fdist_o%2B.%250D%250A%7D&format=application%2Fsparql-results%2Bxml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/xml;_charset=ISO-8859-1" ;
+        dct:description_distribution """
+RSS
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Catálogo_Conjuntos_de_Datos" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www.zaragoza.es/ciudad/rss/hilo/ver_Risp> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;charset=UTF-8" ;
+        dct:description_distribution """
+Acceso al buscador facetado: SOLR
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Catálogo_Conjuntos_de_Datos" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www.zaragoza.es/ciudad/risp/camposindizados.htm#risp> ;
+    ] ;
+    dct:description_main """
+Datos Abiertos Zaragoza es una iniciativa del Ayuntamiento de Zaragoza para el fomento de la reutilización de la información publicada en su web por parte de la ciudadanía, las empresas y otros organismos, lo que ofrece un aumento de la transparencia de la administración, el incremento de la participación ciudadana y la posibilidad de crecimiento económico en distintos sectores.
+"""@en ;
+
+    foaf:page <http://www.zaragoza.es/ciudad/risp/presentacion.htm> ;
+    void:triples "2744"^^xsd:integer ;
+    dcat:theme "government" ;
+    void:uriSpace <http://www.zaragoza.es/datosabiertos/id/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Ayuntamiento_de_Zaragoza"^^xsd:string ;
+     foaf:Cmbox <mailto:webmunicipal@zaragoza.es> ; 
+ .
+

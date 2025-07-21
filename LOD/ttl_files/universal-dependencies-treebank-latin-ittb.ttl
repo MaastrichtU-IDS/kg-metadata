@@ -1,0 +1,66 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:universal-dependencies-treebank-latin-ittb a dcat:Dataset ;
+    dcat:keyword "corpus", "linguistics", "lod" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title "Universal_Dependencies_Treebank_Latin-ITTB" ;
+    dcat:distribution [
+        dcat:mediaType "application/zip" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "UD_Latin-ITTB_Treebank" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://github.com/UniversalDependencies/UD_Latin-ITTB/archive/master.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+Converted test.conllu using ACoLi's conll-rdf converter
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='datahub.ckan.io', port=443): Max retries exceeded with url: /dataset/34ee0d83-9540-4254-b685-19bf1f93fa22/resource/b2c17c3e-6aad-484a-b72c-52c0ea735aa0/download/udlatin-ittb.rdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3686db6890>, 'Connection to datahub.ckan.io timed out. (connect timeout=30)')))
+""" ;
+        dct:title "UD_Latin-ITTB_RDF_Example" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://datahub.ckan.io/dataset/34ee0d83-9540-4254-b685-19bf1f93fa22/resource/b2c17c3e-6aad-484a-b72c-52c0ea735aa0/download/udlatin-ittb.rdf> ;
+    ] ;
+    dct:description """
+Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).
+
+This dataset refers to UD's Latin-ITTB treebank.
+
+"""@en ;
+
+    foaf:page <https://github.com/UniversalDependencies/UD_Latin-ITTB> ;
+    void:triples "291295"^^xsd:integer ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:olia a void:Linkset ;
+    void:target :universal-dependencies-treebank-latin-ittb ;
+    void:triples "72"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Passarotti,_Marco;_Zeman,_Daniel;_Gonzáles_Saavedra,_Berta"^^xsd:string ;
+     foaf:mbox <mailto:zeman@ufal.mff.cuni.cz> ; 
+ .
+

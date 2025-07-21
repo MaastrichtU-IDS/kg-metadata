@@ -1,0 +1,99 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:msc a dcat:Dataset ;
+    dcat:keyword "bibliographic", "format-skos", "lld", "lod", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-proprietary-vocab", "provenance-metadata", "publications", "published-by-producer", "topic.schemata" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title_main "Mathematics_Subject_Classification" ;
+    void:exampleResource [
+        dct:title_exampleResource "_Link_to_an_example_data_item_within_the_dataset_(RDF/XML)" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://msc2010.org/resources/MSC/2010/54B30> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "MSC2010-SKOS_SPARQL_endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+MSC2010-SKOS SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://sparql.msc2010.org> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+MSC2010  SKOS RDF/XML download
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "MSC2010__SKOS_RDF/XML_download" ;
+        dct:mirror_distribution "['ipfs:QmR4EBi8LiJPiwsBufxRMJGetA4LEqENrDhTMaBoTUPVoV']" ;
+        dcat:accessURL_distribution <http://msc2010.org/mscwork/msc2010-nomath.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "voiD_description" ;
+        dct:mirror_distribution "['ipfs:QmVxSPx5NmDfs6AJEytDcpNcLQBKMyYwt8KxTEmPjxmxmF']" ;
+        dcat:accessURL_distribution <http://sci-class.math.auth.gr/MSCLW/msc_void.ttl> ;
+    ] ;
+    dct:description_main """
+The Mathematics Subject Classification (MSC2010) as a Linked Open Dataset using SKOS - Simple Knowledge Organization System.
+The Mathematics Subject Classi?cation (MSC) is a widely used scheme for classifying documents in mathematics by subject.  The Final MSC2010 revision was made public here in May 2009, and deployed in production in July 2009 by Zbl for ZMATH and MR for MathSciNet.
+
+The license is CC-BY-NC-SA.
+"""@en ;
+
+    foaf:page <http://msc2010.org/mscwork/> ;
+    void:triples "14359"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://msc2010.org/resources/MSC/2010/msc2010/_> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :msc ;
+    void:triples "2691"^^xsd:integer ;
+ .
+
+:dewey_decimal_classification a void:Linkset ;
+    void:target :msc ;
+    void:triples "667"^^xsd:integer ;
+ .
+
+:rkb-explorer-acm a void:Linkset ;
+    void:target :msc ;
+    void:triples "316"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "http://sci-class.math.auth.gr/MSCLW/index.php/User_contributions"^^xsd:string ;
+     foaf:Cmbox <mailto:project-msc-lod@jacobs-university.de> ; 
+ .
+

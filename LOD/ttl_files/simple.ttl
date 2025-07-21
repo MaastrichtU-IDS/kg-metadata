@@ -1,0 +1,257 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:simple a dcat:Dataset ;
+    dcat:keyword "lexical-resource", "lexicon", "linguistic", "llod", "lod" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-by> ;
+    dct:title "SIMPLE" ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Complete dataset of SIMPLE lexical entries rendered as Lemon Entries (RDF)
+
+The resource is pscLemon
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "SIMPLE_Lexical_Entries_rendered_as_Lemon_Entries_(RDF)" ;
+        dct:mirror "['ipfs:QmUzGpiLBvkyStmzvj7pTM4H717hGmFaVKDZu9yZU1aYNQ']" ;
+        dcat:accessURL <http://www.languagelibrary.eu/owl/simple/psc/pscLemon> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/json" ;
+        dct:description """
+SIMPLE Lexical Entries rendered as Lemon Entries in JSON
+
+The resource is pscLemon
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "SIMPLE_Lexical_Entries_rendered_as_Lemon_Entries_(JSON)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.languagelibrary.eu/owl/simple/psc/pscLemon.json> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "TXT" ;
+        dct:description """
+SIMPLE Lexical Entries rendered as Lemon Entries in JSON-TRIPLE.
+
+The resource is pscLemon
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "SIMPLE_Lexical_Entries_rendered_as_Lemon_Entries_(JSON-TRIPLE)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.languagelibrary.eu/owl/simple/psc/pscLemon.jsont> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/plain;_charset=UTF-8" ;
+        dct:description """
+SIMPLE Lexical Entries rendered as Lemon Entries TURTLE.
+
+The resource is pscLemon
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "SIMPLE_Lexical_Entries_rendered_as_Lemon_Entries_(TURTLE)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.languagelibrary.eu/owl/simple/psc/pscLemon.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "TXT" ;
+        dct:description """
+SIMPLE Lexical Entries rendered as Lemon Entries in DOT.
+
+The resource is pscLemon
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "SIMPLE_Lexical_Entries_rendered_as_Lemon_Entries_(GRAPHVIZ)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.languagelibrary.eu/owl/simple/psc/pscLemon.dot> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/xml" ;
+        dct:description """
+This is the top level Ontology which contains the definitions
+of both semantic types and relations.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "SIMPLE-OWL" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.languagelibrary.eu/owl/simple/SimpleOntology> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/xml" ;
+        dct:description """
+A list of SIMPLE
+entries pointing to single file A list of
+lemon lexical entries each list item pointing to a
+single file containing the corresponging entry, i.e. http://www.languagelibrary.eu/owl/simple/inds/5/5c2/USem873animale.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "A_list_of_SIMPLE_entries_pointing_to_each_single_file" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.languagelibrary.eu/owl/simple/inds/individualspointingtosinglefile> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/xml" ;
+        dct:description """
+A list of SIMPLE
+entries pointing to big file A list of lemon
+lexical entries, each list item pointing to one file;
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "A_list_of_SIMPLE_entries_pointing_to_same_big_file" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.languagelibrary.eu/owl/simple/inds/individualspointingtobigfile> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "TXT" ;
+        dct:description """
+SIMPLE Entries which contains the list of all
+USems in SIMPLE converted into OWL named
+individuals. These concepts are connected to
+their semantic type in SIMPLE-OWL through
+rdf:type. (JSON-TRIPLES)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "SIMPLE_USems_in_JSON-TRIPLES" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.languagelibrary.eu/owl/simple/inds/SimpleEntries.jsont> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/json" ;
+        dct:description """
+SIMPLE Entries which contains the list of all
+USems in SIMPLE converted into OWL named
+individuals. These concepts are connected to
+their semantic type in SIMPLE-OWL through
+rdf:type. (JSON)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "SIMPLE_USems_in_JSON" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.languagelibrary.eu/owl/simple/inds/SimpleEntries.json> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/plain;_charset=UTF-8" ;
+        dct:description """
+SIMPLE Entries which contains the list of all
+USems in SIMPLE converted into OWL named
+individuals. These concepts are connected to
+their semantic type in SIMPLE-OWL through
+rdf:type. (TURTLE.)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "SIMPLE_USems_in_TURTLE" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.languagelibrary.eu/owl/simple/inds/SimpleEntries.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "TXT" ;
+        dct:description """
+SIMPLE Entries which contains the list of all
+USems in SIMPLE converted into OWL named
+individuals. These concepts are connected to
+their semantic type in SIMPLE-OWL through
+rdf:type. (DOT.)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "SIMPLE_USems_in_DOT" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.languagelibrary.eu/owl/simple/inds/SimpleEntries.dot> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+SIMPLE Entries which contains the list of all
+USems in SIMPLE converted into OWL named
+individuals. These concepts are connected to
+their semantic type in SIMPLE-OWL through
+rdf:type.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "SIMPLE_USems_in_RDF" ;
+        dct:mirror "['ipfs:QmV5L85zjZpxYgJXQTW1EHHs9eK48V1WxeTvUUWM1KHSUC']" ;
+        dcat:accessURL <http://www.languagelibrary.eu/owl/simple/inds/SimpleEntries> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/xml" ;
+        dct:description """
+A list of
+lemon lexical entries each list item pointing to a
+single file containing the corresponging entry;
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "SIMPLE_Lexical_Entries_as_Collection_of_LEMON_instances_pointing_to_a_big_file" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.languagelibrary.eu/owl/simple/psc/lemonentriespointingtobigfile> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/xml" ;
+        dct:description """
+list of lemon lexical entries, each list item pointing to one file;
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "SIMPLE_Lexical_Entries_as_Collection_of_LEMON_instances_pointing_to_single_file" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.languagelibrary.eu/owl/simple/psc/lemonentriespointingtosinglefile> ;
+    ] ;
+    dct:description """
+This dataset contains the conversion of the Italian SIMPLE lexicon in different formats including RDF, TTL and a Lemon version of lexical entries with their pointers to senses.
+"""@en ;
+
+    void:triples "372294"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:lexinfo a void:Linkset ;
+    void:target :simple ;
+    void:triples "31449"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Riccardo_Del_Gratta"^^xsd:string ;
+     foaf:mbox <mailto:riccardo.delgr@ta@ilc.cnr.it> ; 
+ .
+

@@ -1,0 +1,127 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:doi a dcat:Dataset ;
+    dcat:keyword "academic", "articles", "citation", "format-bibo", "format-dc", "format-prism", "format-rdf", "library", "linkeddata", "lld", "lod", "lodcloud-diagram-2014-08-30", "no-deref-vocab", "publications", "published-by-producer" ;
+    dct:title_main "CrossRef_DOI_Resolver" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-ntriples" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "['ipfs:QmZB8pHYnYJGHE1CABz5T9VvSMCDVeTbyoVwiPNZBYUS4n']" ;
+        dcat:downloadURL_distribution <http://www.crossref.org/titleList/> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource: content negotiate for RDF as XML
+""" ;
+        dcat:accessURL_exampleResource <http://dx.doi.org/10.1038/171737a0> ;
+        adms:status_exampleResource """
+FAIL (406)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/turtle" ;
+        dct:description_exampleResource """
+Example resource:  content negotiate RDF as Turtle
+""" ;
+        dcat:accessURL_exampleResource <http://dx.doi.org/10.1038/171737a0> ;
+        adms:status_exampleResource """
+FAIL (406)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+content negotiate for HTML splash page from publisher
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://dx.doi.org/10.1038/171737a0> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+content negotiate for Atom XML
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://dx.doi.org/10.1038/171737a0> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+content negotiate for CrossRef's XML
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://dx.doi.org/10.1038/171737a0> ;
+    ] ;
+    dct:description_main """
+Digital Object Idenfiers (DOI) are a persistent identifier strategy used by around 3,000 publishers to identify their documents: mostly scholarly publications. An example of a DOI is
+
+> doi:10.1038/171737a0
+
+which identifies:
+
+> Watson JD, Crick FH (April 1953). "Molecular structure of nucleic acids; a structure for deoxyribose nucleic acid" (PDF). Nature 171 (4356): 737?738. 
+
+[CrossRef](http://crossref.org) maintains one of the largest DOI registries, and has minted URLs for every DOI they manage. For example the DOI above can also be expressed as the URL:
+
+> http://dx.doi.org/10.1038/171737a0
+
+When resolved this URL will redirect to the publisher's page for the document that is identified. The dx.doi.org service will content negotiate to make available alternate representations of the citation metadata:
+
+* application/rdf+xml
+* text/turtle
+* application/atom+xml
+* application/unixref+xml (CrossRef's homegrown XML format)
+
+For example:
+
+> curl --location --header "Accept: application/rdf+xml" http://dx.doi.org/10.1038/171737a0
+
+Detailed information about journals, pages, authors can be found in the data, as well as links to journals in the [Linked Periodicals](http://periodicals.dataincubator.org/.html) dataset. More about the service can be found on a CrossRef 
+[blog post](http://www.crossref.org/CrossTech/2011/04/content_negotiation_for_crossr.html).
+"""@en ;
+
+    foaf:page <http://dx.doi.org> ;
+    void:triples "1000000000"^^xsd:integer ;
+    dcat:theme "publications" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:linked-periodicals a void:Linkset ;
+    void:target :doi ;
+    void:triples "100000000"^^xsd:integer ;
+ .
+

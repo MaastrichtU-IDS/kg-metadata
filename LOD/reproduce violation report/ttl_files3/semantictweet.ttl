@@ -1,0 +1,51 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:semantictweet a dcat:Dataset ;
+    dcat:keyword "format-rdf", "lod", "lodcloud-diagram-2011-09-19", "no-proprietary-vocab", "published-by-third-party", "usergeneratedcontent", "wrapper" ;
+    dct:title_main "SemanticTweet" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://semantictweet.com/barackobama/friends> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    dct:description_main """
+SemanticTweet is a simple web service that generates a FOAF RDF document for you from your list of Twitter friends and followers (or more specifically, from the 100 most recent of each of your friends and followers). It does this using the Twitter REST API. This service uses public Twitter data only, and so doesn?t need your Twitter username or password.
+"""@en ;
+
+    foaf:page <http://semantictweet.com/> ;
+    void:triples "500000"^^xsd:integer ;
+    dcat:theme "user_generated" ;
+    void:uriSpace <http://semantictweet.com/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames-semantic-web a void:Linkset ;
+    void:target :semantictweet ;
+    void:triples "100"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Steve_Flinter"^^xsd:string ;
+     foaf:Cmbox <mailto:stephen@flinter.com> ; 
+ .
+

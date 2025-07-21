@@ -1,0 +1,49 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:fu-berlin-ec-competition a dcat:Dataset ;
+    dcat:keyword "antitrust", "business", "cartels", "competition", "ec", "eccompetition", "europe", "europeanunion", "latc", "lod", "mergers", "stateaid" ;
+    dct:title_main "European_Commission_Competition_data_set_(FU_Berlin)" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_merger_(RDF/XML)" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://www4.wiwiss.fu-berlin.de/eccompetition/resource/Merger/M.10> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://www4.wiwiss.fu-berlin.de/eccompetition/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (404)
+""" ;
+    ] ;
+    dct:description_main """
+Case database of antitrust cases, cartels, mergers, and state aid, maintained by the European Commission. Republished as Linked Data.
+"""@en ;
+
+    foaf:page <http://www4.wiwiss.fu-berlin.de/eccompetition/> ;
+    void:triples "582579"^^xsd:integer ;
+    void:uriSpace <http://www4.wiwiss.fu-berlin.de/eccompetition/resource/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 

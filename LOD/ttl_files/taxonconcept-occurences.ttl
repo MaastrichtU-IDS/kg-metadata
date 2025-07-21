@@ -1,0 +1,47 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:taxonconcept-occurences a dcat:Dataset ;
+    dcat:keyword "LinkedDataCrawl2014", "crawledLinkedDataCloud2014", "format-bibo", "format-cc", "format-dcterm", "format-foaf", "format-gn", "format-owl", "format-pos", "format-rdf", "format-rdfs", "format-time", "format-wdrs", "geographic", "lifesciences", "lodcloud-diagram-2014-08-30" ;
+    dct:title "taxonconcept-occurences" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://ocs.taxonconcept.org/ocs/ad94a9e5-0c4d-49e4-ac92-d891ecc4c13f.rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dct:description """
+None
+"""@en ;
+
+    dcat:theme "life_sciences" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames-semantic-web a void:Linkset ;
+    void:target :taxonconcept-occurences ;
+    void:triples "9036"^^xsd:integer ;
+ .
+
+:taxonconcept a void:Linkset ;
+    void:target :taxonconcept-occurences ;
+    void:triples "15939"^^xsd:integer ;
+ .
+

@@ -1,0 +1,58 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:racai-llod-corola-we a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://racai.ro/p/llod/> ;
+    void:triples "1254723"^^xsd:integer ;
+    dcat:distribution [
+        dct:identifier "a568181b-b0eb-73ab-71b5-d2adb881fd9e" ;
+        dct:title "CoRoLa_word_embeddings_converted_to_LLOD_format" ;
+        dct:description """
+Downloadable file with word embeddings in Turtle format
+""" ;
+        dcat:mediaType "text/turtle" ;
+        dcat:downloadURL <http://www.racai.ro/p/llod/resources/corola.300.20.vec.ttl> ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:keyword "Romanian", "word_embeddings" ;
+    dct:description """
+Word embeddings from the representative corpus of contemporary Romanian language (CoRoLa)
+"""@en ;
+
+    dct:title "Romanian_CoRoLa_Word_Embeddings" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dcat:theme "linguistics" ;
+    void:uriSpace <http://corolaws.racai.ro/word_embeddings/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:vergi@racai.ro> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Verginica_Mititelu"^^xsd:string ;
+     foaf:mbox <mailto:vergi@racai.ro> ; 
+ .
+

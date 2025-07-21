@@ -1,0 +1,61 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:congresspeople a dcat:Dataset ;
+    dcat:keyword "format-con", "format-conv", "format-dbo", "format-dbp", "format-dc", "format-doap", "format-foaf", "format-ov", "format-owl", "format-pmlj", "format-pmlp", "format-rdf", "format-rdfs", "format-scovo", "format-vann", "format-void", "government" ;
+    dct:title_main "2011_US_Congress_People" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "BIN" ;
+        dct:description_distribution """
+US Congress People in 2011
+""" ;
+        adms:status_distribution """
+FAIL (403)
+""" ;
+        dct:title_distribution "Congress_People_2011" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://commondatastorage.googleapis.com/ckannet-storage/2011-11-01T195324/triples.nt> ;
+    ] ;
+    dct:description_main """
+The 2011 US congress people data, with ntriples format. Could benefit from connections to http://thedatahub.org/dataset/congresspedia
+"""@en ;
+
+    foaf:page <http://www.contactingthecongress.org/> ;
+    dcat:theme "government" ;
+    void:uriSpace <http://logd.tw.rpi.edu/source/contactingthecongress/dataset/directory-for-the-112th-congress/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :congresspeople ;
+    void:triples "67"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :congresspeople ;
+    void:triples "50"^^xsd:integer ;
+ .
+
+:govtrack a void:Linkset ;
+    void:target :congresspeople ;
+    void:triples "56"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Yanning_Chen"^^xsd:string ;
+     foaf:Cmbox <mailto:cheny18@rpi.edu> ; 
+ .
+

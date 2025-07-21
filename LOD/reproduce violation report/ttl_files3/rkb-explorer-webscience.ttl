@@ -1,0 +1,102 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:rkb-explorer-webscience a dcat:Dataset ;
+    dcat:keyword "crossdomain", "deref-vocab", "format-owl", "format-rdf", "lod", "lodcloud-diagram-2014-08-30", "lodcloud.needsfixing", "lodcloud.unconnected", "provenance-metadata", "published-by-producer", "void-sparql-endpoint" ;
+    dct:title_main "Web_Science_Conference_(RKBExplorer)" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+example ressource (rdf)
+""" ;
+        dcat:accessURL_exampleResource <http://acm.rkbexplorer.com/ontologies/acm#B.1.3.1> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='acm.rkbexplorer.com', port=80): Max retries exceeded with url: /ontologies/acm (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fd510>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://webscience.rkbexplorer.com/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='webscience.rkbexplorer.com', port=80): Max retries exceeded with url: /sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fd540>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/xml" ;
+        dct:description_distribution """
+XML Sitemap
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='webscience.rkbexplorer.com', port=80): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843ff2e0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://webscience.rkbexplorer.com/sitemap.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD file
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "['ipfs:QmPT5ezJyrUpbRmfsTQGZmK1EKekaGNG6NVr6zAQYwrQy8']" ;
+        dcat:accessURL_distribution <http://webscience.rkbexplorer.com/models/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-gzip" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='webscience.rkbexplorer.com', port=80): Max retries exceeded with url: /models/dump.tgz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fd930>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title_distribution "Download_(tar_gzip_of_RDF)" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://webscience.rkbexplorer.com/models/dump.tgz> ;
+    ] ;
+    dct:description_main """
+This is one of several semantic repositories that contains and publishes RDF linked data and co-reference information, forming the underlying distributed storage model behind the RKB Explorer initiative.
+"""@en ;
+
+    foaf:page <http://webscience.rkbexplorer.com> ;
+    void:triples "33596"^^xsd:integer ;
+    dcat:theme "cross_domain" ;
+    void:uriSpace <http://webscience.rkbexplorer.com/id/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :rkb-explorer-webscience ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:semantictweet a void:Linkset ;
+    void:target :rkb-explorer-webscience ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Hugh_Glaser"^^xsd:string ;
+     foaf:Cmbox <mailto:hg@ecs.soton.ac.uk> ; 
+ .
+

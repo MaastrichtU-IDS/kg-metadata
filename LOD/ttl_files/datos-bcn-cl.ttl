@@ -1,0 +1,108 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:datos-bcn-cl a dcat:Dataset ;
+    dcat:keyword "format-bcnnorms", "format-dbpedia-owl", "format-dc", "format-foaf", "format-skos", "government", "lod", "no-deref-vocab", "no-license-metadata", "no-proprietary-vocab", "provenance-metadata", "published-by-producer" ;
+    dct:license <https://creativecommons.org/licenses/by/3.0/> ;
+    dct:title "Datos.bcn.cl" ;
+    void:exampleResource [
+        dct:title "Example_(RDF/XML)" ;
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+A treaty with Germany published as linked data.
+""" ;
+        dcat:accessURL <http://datos.bcn.cl/recurso/cl/dto/ministerio-de-relaciones-exteriores/2008-02-07/267/es%402008-02-07> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint" ;
+        dcat:endpointDescription """
+A sparql endpoint for query 
+""" ;
+        dcat:accessURL <http://datos.bcn.cl/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+The documentation about how to consume legislative norms published as linked open data. That includes URI formats, rdf of example and content types of the published resources.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Legislative_Norms" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://datos.bcn.cl/es/documentacion/normas> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/xml" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "XML_Sitemap" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://datos.bcn.cl/sitemap.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/zip" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Download" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://datos.bcn.cl/downloads/2011-10-25/all_ontologies.zip> ;
+    ] ;
+    dct:description """
+Linked Open Data about Chile and the political environment of the country. Some important graphs published are: Legislative norms, International treaties (linking countries to dbpedia and geonames), geographical data and parliamentary biographies, and we are publishing every day more.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://datos.bcn.cl/es/> ;
+    void:triples "8285886"^^xsd:integer ;
+    dcat:theme "government" ;
+    void:uriSpace <http://datos.bcn.cl/recurso/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :datos-bcn-cl ;
+    void:triples "568"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:name "Alvaro_Sandoval"^^xsd:string ;
+     foaf:mbox <mailto:alvaroisp@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Library_of_Congress_of_Chile"^^xsd:string ;
+     foaf:mbox <mailto:fcifuentes@bcn.cl> ; 
+ .
+

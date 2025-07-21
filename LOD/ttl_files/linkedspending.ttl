@@ -1,0 +1,90 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:linkedspending a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint_for_LinkedSpending" ;
+        dct:identifier "1ee4ebb4-9090-56b8-401b-3962f22ae0d5" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://linkedspending.aksw.org/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='linkedspending.aksw.org', port=80): Read timed out. (read timeout=30))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/gzip" ;
+        dct:description """
+Compressed N-Triples Dump
+""" ;
+        dcat:downloadURL <http://linkedspending.aksw.org/extensions/page/page> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='linkedspending.aksw.org', port=80): Read timed out. (read timeout=30))
+""" ;
+        dct:identifier "ae0ac864-e347-2571-39e4-464350d5bedf" ;
+        dct:mirror "[]" ;
+        dct:title "LinkedSpending_Full_Version_2014-03" ;
+    ] ;
+    dcat:keyword "spending", "openspending" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-pddl> ;
+    dct:title "LinkedSpending" ;
+    void:exampleResource [
+        dct:title "Finland_Aid" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://linkedspending.aksw.org/resource/properties/?r=http%253A%252F%252Flinkedspending.aksw.org%252Finstance%252Ffinland-aid> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='linkedspending.aksw.org', port=80): Read timed out. (read timeout=30))
+""" ;
+    ] ;
+    dct:description """
+The conversion of OpenSpending to LinkedSpending, which provides more than five million financial transactions in 955 data sets from
+all over the world as RDF Data Cubes.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://linkedspending.aksw.org/> ;
+    void:triples "113640534"^^xsd:integer ;
+    dcat:theme "government" ;
+    void:uriSpace <http://linkedspending.aksw.org/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:linkedgeodata a void:Linkset ;
+    void:target :linkedspending ;
+    void:triples "9000000"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :linkedspending ;
+    void:triples "15000000"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:konrad@gmx.@> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Konrad_Höffner"^^xsd:string ;
+     foaf:mbox <mailto:konrad.hoeffner@uni-leipzig.de> ; 
+ .
+

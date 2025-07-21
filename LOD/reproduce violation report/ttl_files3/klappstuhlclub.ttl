@@ -1,0 +1,71 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:klappstuhlclub a dcat:Dataset ;
+    dcat:keyword "klappstuhlclub", "ksc", "lod", "lodcloud-diagram-2011-09-19", "rdf2wp", "semantic-web", "usergeneratedcontent", "wiki", "wikipedia", "wordpress" ;
+    dct:title_main "Klappstuhlclub" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+Download
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "['ipfs:QmcLLxQHiEfgiJbqEvKV9C9rp65hGryEhX6WsdaLNM3mG6']" ;
+        dcat:accessURL_distribution <http://klappstuhlclub.de/wp/wp-content/plugins/RDF2WP/Output/EntireBlogExporter.php?format=text%2Fplain> ;
+    ] ;
+    dct:description_main """
+##Klappstuhlclub
+http://klappstuhlclub.de 
+The Klappstuhlclub (Folding chair club) is meeting every week (mostly Wednesday evening) in cities around the globe. The focus is on Germany currently (Leipzig over 300 meetings, Berlin over 200 meetings), but also Lisbon, France and USA.
+
+### Get involved
+Please email if:  
+1. You want to join the Klappstuhlclub or you want to create a Klappstuhlclub in your city . (kurzum@googlemail.com)
+2. You want to know how we made a simple Wordpress blog Linked Data ready and all that. (hellmann@informatik.uni-leipzig.de )
+
+### License 
+Data is protected for privacy issues.
+
+### Semantic Wiki Wordpress
+The data was created with a Wordpress plugin see
+http://bitbucket.org/aksw/rdf2wp/overview
+
+Each Blogpost is available as Linked Data. User enter data the same way as in Wikipedia infoboxes (with a Wiki template)
+
+SPARQL endpoint (Virtuoso) is here:
+http://klappstuhlclub.de/sparql
+
+
+"""@en ;
+
+    foaf:page <http://klappstuhlclub.de> ;
+    void:triples "1032"^^xsd:integer ;
+    dcat:theme "user_generated" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :klappstuhlclub ;
+    void:triples "50"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Sebastian_Hellmann"^^xsd:string ;
+ .
+

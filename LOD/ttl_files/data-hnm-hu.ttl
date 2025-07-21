@@ -1,0 +1,264 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:data-hnm-hu a dcat:Dataset ;
+    dcat:keyword "format-bibframe", "format-owl", "format-rdf", "format-rdfs", "license-metadata", "lod", "no-proprietary-vocab", "published-by-producer" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "data-hnm-huHungarian_National_Museum_Datasets" ;
+    void:exampleResource [
+        dct:title "Example_resource_of_the_colls-lib-bib_subset" ;
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+BIBFRAME in http://www.w3.org/ns/formats/RDF_XML
+""" ;
+        dcat:accessURL <http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563.rdf> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.hnm.hu', port=80): Max retries exceeded with url: /doc/colls/lib/bib/Instance/MNMKVT19563.rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686c9f070>: Failed to establish a new connection: [Errno 113] No route to host')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_resource_of_the_colls-lib-bib_subset" ;
+        dcat:mediaType "example/turtle" ;
+        dct:description """
+BIBFRAME in http://www.w3.org/ns/formats/Turtle
+""" ;
+        dcat:accessURL <http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563.ttl> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.hnm.hu', port=80): Max retries exceeded with url: /doc/colls/lib/bib/Instance/MNMKVT19563.ttl (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686c9cd90>: Failed to establish a new connection: [Errno 113] No route to host')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_resource_of_the_colls-lib-bib_subset" ;
+        dcat:mediaType "example/ntriples" ;
+        dct:description """
+BIBFRAME in http://www.w3.org/ns/formats/N-Triples
+""" ;
+        dcat:accessURL <http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563.nt> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.hnm.hu', port=80): Max retries exceeded with url: /doc/colls/lib/bib/Instance/MNMKVT19563.nt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684373cd0>, 'Connection to data.hnm.hu timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_resource_of_the_colls-lib-bib_subset" ;
+        dcat:mediaType "example/rdf+json" ;
+        dct:description """
+BIBFRAME in http://www.w3.org/ns/formats/RDF_JSON
+""" ;
+        dcat:accessURL <http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563.json> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.hnm.hu', port=80): Max retries exceeded with url: /doc/colls/lib/bib/Instance/MNMKVT19563.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684373b80>, 'Connection to data.hnm.hu timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_resource_of_the_colls-lib-bib_subset" ;
+        dcat:mediaType "application/ld+json" ;
+        dct:description """
+BIBFRAME in http://www.w3.org/ns/formats/JSON-LD
+""" ;
+        dcat:accessURL <http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563.jsonld> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.hnm.hu', port=80): Max retries exceeded with url: /doc/colls/lib/bib/Instance/MNMKVT19563.jsonld (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686aefd90>, 'Connection to data.hnm.hu timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "Sparql_endpoint_of_the_colls-lib-bib_subset" ;
+        dcat:endpointDescription """
+Graph IRI: http://data.hnm.hu/colls/lib/bib
+""" ;
+        dcat:accessURL <http://data.hnm.hu/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.hnm.hu', port=80): Max retries exceeded with url: /sparql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684373a60>, 'Connection to data.hnm.hu timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+General description for humans
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.hnm.hu', port=80): Max retries exceeded with url: /set/colls/void-colls.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686c9c0a0>, 'Connection to data.hnm.hu timed out. (connect timeout=30)')))
+""" ;
+        dct:title "General_description" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.hnm.hu/set/colls/void-colls.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle;_charset=UTF-8" ;
+        dct:description """
+VoID description in ttl
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.hnm.hu', port=80): Max retries exceeded with url: /set/colls/void-colls.ttl (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686bde050>: Failed to establish a new connection: [Errno 113] No route to host')))
+""" ;
+        dct:title "VoID_description_of_the_Collections_dataset" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.hnm.hu/set/colls/void-colls.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+RDF Schema
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "RDF_Schema_of_the_colls-lib-bib_subset" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://bibframe.org/vocab/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+BIBFRAME in text/html
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.hnm.hu', port=80): Max retries exceeded with url: /doc/colls/lib/bib/Instance/MNMKVT19563 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684370160>: Failed to establish a new connection: [Errno 113] No route to host')))
+""" ;
+        dct:title "Example_resource_of_the_colls-lib-bib_subset" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=UTF-8" ;
+        dct:description """
+MARC in OPAC
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.hnm.hu', port=80): Max retries exceeded with url: /doc/colls/lib/bib/Instance/MNMKVT19563.opac (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f36843730a0>, 'Connection to data.hnm.hu timed out. (connect timeout=30)')))
+""" ;
+        dct:title "Example_resource_of_the_colls-lib-bib_subset" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563.opac> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/zip;_charset=UTF-8" ;
+        dct:description """
+Dataset dump in http://www.w3.org/ns/formats/Turtle
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.hnm.hu', port=80): Max retries exceeded with url: /datadumps/colls_lib_bib_20170412000001.zip (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684302d10>, 'Connection to data.hnm.hu timed out. (connect timeout=30)')))
+""" ;
+        dct:title "Dataset_dump_of_the_colls-lib-bib_subset" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.hnm.hu/datadumps/colls_lib_bib_20170412000001.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+URI name convention used in the dataset and subset.
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.hnm.hu', port=80): Max retries exceeded with url: /set/colls/uri.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686bdcdc0>, 'Connection to data.hnm.hu timed out. (connect timeout=30)')))
+""" ;
+        dct:title "URI_name_convention" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.hnm.hu/set/colls/uri.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=UTF-8" ;
+        dct:description """
+In the HEAD of the OPAC HTML pages we put the LINK tag with appropriate attributes to lead the crawlers to the equivalent RDF statements. E.g. 
+
+ link rel="alternate" type="application/rdf+json"  title="Structured Descriptor Document (RDF/JSON format)" href="http://data.hnm.hu/sparql?query=define%20sql%3Adescribe-mode%20%22LOD%22%20%20DESCRIBE%20%3Chttp%3A%2F%2Fdata.hnm.hu%2Fid%2Fcolls%2Flib%2Fbib%2FInstance%2FMNMKVT19563%3E&amp;output=application%2Frdf%2Bjson"
+
+In order to see the other LINK tags click on the link above and view the source of the page.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Link_rel_discovery_service" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://link.hnm.hu/lib/bib/MNMKVT19563> ;
+    ] ;
+    dct:description """
+Open linked data from the Hungarian National Museum. 
+The following datasets and subsets are available:
+
+* Collections (dataset, short  name: colls)
+ * Bibliographic Data of the Central Library (subset, short name: colls-lib-bib)
+
+The Bibliographic Data of the Central Library contains the entire online catalogue of the library in BIBFRAME format and provides links to external sources including: [BNF](http://data.bnf.fr), [ISNI](http://isni.org), [LC NAF](http://id.loc.gov/authorities/names.html), [VIAF](http:viaf.org) and [Wikidata](http://wikidata.org).
+
+One of the aims of this publication is to make Hungarian librarians more familiar with BIBFRAME. In order to achieve this the BIBFRAME and the MARC descriptions are cross linked. Knowing the BIBFRAME URI of an instance:
+
+[http://data.hnm.hu/id/colls/lib/bib/Instance/MNMKVT19563](http://data.hnm.hu/id/colls/lib/bib/Instance/MNMKVT19563)
+
+one can get the MARC description by appending ".opac" to the URI:
+
+[http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563.opac](http://data.hnm.hu/doc/colls/lib/bib/Instance/MNMKVT19563.opac).
+
+Knowing the permalink of an OPAC record 
+
+[http://link.hnm.hu/lib/bib/MNMKVT19563](http://link.hnm.hu/lib/bib/MNMKVT19563)
+
+one can get the BIBRAME description in HTML format by appending .rdf to it:
+
+[http://link.hnm.hu/lib/bib/MNMKVT19563.rdf](http://link.hnm.hu/lib/bib/MNMKVT19563.rdf).
+
+Other formats can also be invoked by appending the following extensions:
+.rdf-ttl, .rdf-nt, .rdf-json, .rdf-jsonld, and .rdf-rdf. The .rdf-rdf extentsion gives back the rdf-xml format.
+
+Clicking the BIBFRAME icon in the OPAC also leads to the BIBFRAME description.
+
+The OPAC pages also support the link rel discovery service in order for the crawlers and other programs to find the RDF descriptions in different formats automatically.
+
+The project was carried out in partnership with @Cult srl., Italy (MARC BIBFRAME conversion) and Monguz Ltd., Hungary (OPAC modification). We also used some parts of the ALIADA open source tool.
+
+The @Cult MARC21 BIBFRAME conversion have the following main features:
+
+- Work recognition
+- Entity recognition
+- Name entities are linked to external datasets.
+
+The BIBFRAME dataset will be updated periodically as BIBFRAME and the conversion evolves. 
+"""@en ;
+
+    foaf:page <http://hnm.hu> ;
+    void:triples "1993963"^^xsd:integer ;
+    void:uriSpace <http://data.hnm.hu/id/colls/lib/bib/Instance/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:data-bnf-fr a void:Linkset ;
+    void:target :data-hnm-hu ;
+    void:triples "10333"^^xsd:integer ;
+ .
+
+:http://isni.org/isni/ a void:Linkset ;
+    void:target :data-hnm-hu ;
+    void:triples "18675"^^xsd:integer ;
+ .
+
+:library-of-congress-name-authority-file a void:Linkset ;
+    void:target :data-hnm-hu ;
+    void:triples "19396"^^xsd:integer ;
+ .
+
+:viaf a void:Linkset ;
+    void:target :data-hnm-hu ;
+    void:triples "21512"^^xsd:integer ;
+ .
+
+:wikidata a void:Linkset ;
+    void:target :data-hnm-hu ;
+    void:triples "9329"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Hungarian_National_Museum"^^xsd:string ;
+     foaf:mbox <mailto:adam.horv@h@hnm.hu> ; 
+ .
+

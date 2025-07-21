@@ -1,0 +1,106 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:data-incubator-moseley a dcat:Dataset ;
+    dcat:keyword "country-uk", "events", "format-dc", "format-foaf", "format-mo", "format-owl", "format-rdf", "lodcloud-diagram-2011-09-19", "media", "music", "published-by-third-party", "talis" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "Moseley_Folk_Festival_Data" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://moseley.dataincubator.org/artist/beth-orton> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='moseley.dataincubator.org', port=80): Max retries exceeded with url: /artist/beth-orton (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684301c90>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "None" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://api.talis.com/stores/moseley/services/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='api.talis.com', port=80): Max retries exceeded with url: /stores/moseley/services/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843006d0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD description
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='moseley.dataincubator.org', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684302fb0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://moseley.dataincubator.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "googleclone" ;
+        dct:description_distribution """
+googleclone
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://googleclone.tumblr.com/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+Dump of the dataset uploaded to Internet Archive
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Dataset_export" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://archive.org/download/kasabi/moseley-folk-festival-data.gz> ;
+    ] ;
+    dct:description_main """
+### Description
+
+Artist information for the [Moseley Folk Festival](http://www.moseleyfolk.co.uk/) from 2006-2009, in RDF.
+
+*Note* this dataset is no longer updated, it was taken off-line during the shutdown of Kasabi. A dump of the dataset has been [uploaded to the Internet Archive](http://archive.org/details/kasabi)
+"""@en ;
+
+    foaf:page <http://moseley.dataincubator.org/> ;
+    void:triples "1268"^^xsd:integer ;
+    dcat:theme "media" ;
+    void:uriSpace <http://moseley.dataincubator.org/artist/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bbc-music a void:Linkset ;
+    void:target :data-incubator-moseley ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:data-incubator-discogs a void:Linkset ;
+    void:target :data-incubator-moseley ;
+    void:triples "43"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :data-incubator-moseley ;
+    void:triples "18"^^xsd:integer ;
+ .
+

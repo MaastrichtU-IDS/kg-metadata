@@ -1,0 +1,86 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:lotico a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-foaf", "format-rdf", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "published-by-producer", "social-networks", "sparql", "usergeneratedcontent" ;
+    dct:title "Lotico" ;
+    void:sparqlEndpoint [
+        dct:title "Lotico" ;
+        dcat:endpointDescription """
+SPARQL Endpoint
+""" ;
+        dcat:accessURL <http://www.lotico.com:3030/lotico/sparql> ;
+        adms:status """
+FAIL (405)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+SPARQL query form on geosparql.org
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Lotico_SPARQL_Query_Form" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.geosparql.org> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Example (RDF/XML)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmYHT4o73U7K45t1ntAMSrUPYoNKkrTRc9Spi2JNtiQGo4']" ;
+        dcat:accessURL <http://www.lotico.com/resource/member_2316446> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Example (RDF/XML)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmZvhXpsaPyXeUSJ18D5qinQFhVV7S5SKZAAPgo3BPrrvg']" ;
+        dcat:accessURL <http://www.lotico.com/resource/member_9711222> ;
+    ] ;
+    dct:description """
+A social network of active Lotico Semantic Web community members, provided as RDF via resolvable URIs and a SPARQL endpoint.
+"""@en ;
+
+    foaf:page <http://www.lotico.com/> ;
+    void:triples "4248758"^^xsd:integer ;
+    dcat:theme "user_generated" ;
+    void:uriSpace <http://www.lotico.com/resource/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :lotico ;
+    void:triples "65"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Marco_Neumann"^^xsd:string ;
+     foaf:mbox <mailto:marco.neumann@gmail.com> ; 
+ .
+

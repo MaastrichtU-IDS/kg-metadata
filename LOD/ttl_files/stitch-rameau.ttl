@@ -1,0 +1,115 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:stitch-rameau a dcat:Dataset ;
+    dcat:keyword "authorities", "ckanupload.esw.200910", "decommissioned", "format-rdf", "format-skos", "library", "linkeddata", "lld", "lod", "lodcloud-diagram-2011-09-19", "no-deref-vocab", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "publications", "published-by-third-party", "rdf", "vu" ;
+    dct:title "RAMEAU_subject_headings_(STITCH)" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://stitch.cs.vu.nl/vocabularies/rameau/autorites_matieres> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='eculture2.cs.vu.nl', port=48080): Max retries exceeded with url: /vocreptags/RestVocabularyRepository/conceptscheme?format=rdf&uri=http%3A%2F%2Fstitch.cs.vu.nl%2Fvocabularies%2Frameau%2Fautorites_matieres (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dacc70>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Subject headings (SKOS)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmfGcSGhUeKMWhGvFNcLrVbKB1TNPMgLM32A8ytFm16UsQ']" ;
+        dcat:accessURL <http://www.cs.vu.nl/STITCH/rameau/dump/Rameau.skos.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+LCSH mappings (SKOS)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmbjuaPXiGNF8NfknzTd1gxpzUTwGkezrXobtwDjJf9hwv']" ;
+        dcat:accessURL <http://www.cs.vu.nl/STITCH/rameau/dump/MACSMapping-Rameau_LCSH.skos.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/zip" ;
+        dct:description """
+SWD mappings (SKOS)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.cs.vu.nl/STITCH/rameau/dump/MACSMappings-Rameau_SWD.rdf.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+RAMEAU data in the officiel data.bnf.fr (open license)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Dump_at_data.bnf.fr" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://echanges.bnf.fr/PIVOT/databnf_all_rdf_xml.tar.gz?user=databnf&password=databnf> ;
+    ] ;
+    dct:description """
+Data exposed: SKOS representation of the RAMEAU book indexing vocabulary, maintained by the French National Library (BnF)
+Size of dump and data set: 130 MB uncompressed
+Notes: aligned to LCSH and SWD via SKOS mapping links
+
+Published as SKOS/RDF by the STITCH project.
+
+As of February 2012, URIs of the RAMEAU concepts redirect to equivalent descriptions at data.bnf.fr, see http://data.bnf.fr/semanticweb-en
+"""@en ;
+
+    foaf:page <http://stitch.cs.vu.nl/rameau/> ;
+    void:triples "1619918"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://stitch.cs.vu.nl/vocabularies/rameau/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:agrovoc-skos a void:Linkset ;
+    void:target :stitch-rameau ;
+    void:triples "700"^^xsd:integer ;
+ .
+
+:dnb-gemeinsame-normdatei a void:Linkset ;
+    void:target :stitch-rameau ;
+    void:triples "20000"^^xsd:integer ;
+ .
+
+:lcsh a void:Linkset ;
+    void:target :stitch-rameau ;
+    void:triples "60000"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Antoine_Isaac_<http://www.few.vu.nl/~aisaac>,_Rameau_committee_<http://rameau.bnf.fr>"^^xsd:string ;
+     foaf:mbox <mailto:aisaac@few.vu.nl> ; 
+ .
+

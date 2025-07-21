@@ -1,0 +1,70 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:opencyc a dcat:Dataset ;
+    dcat:keyword "ckanupload.esw.200910", "crossdomain", "deref-vocab", "format-rdf", "license-nonefordb", "linkeddata", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "lodcloud.nolinks", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "ontology", "published-by-producer", "rdf" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "OpenCyc" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://sw.opencyc.org/concept/Mx4rwP1ZTZwpEbGdrcN5Y29ycA> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='sw.opencyc.org', port=80): Max retries exceeded with url: /concept/Mx4rwP1ZTZwpEbGdrcN5Y29ycA (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fe830>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:Qmf18ZyHMv2aYjX6XaJoh89VH6WVu24D34qi6SATnHiYru']" ;
+        dcat:accessURL <http://sw.opencyc.org/downloads/opencyc_owl_downloads/opencyc-latest.owl.gz> ;
+    ] ;
+    dct:description """
+### About
+
+> Now it is even easier to use the rich and diverse collection of real-world concepts in OpenCyc to bring meaning to your semantic web applications! The full OpenCyc content is now available both as downloadable OWL ontologies as well as via semantic web endpoints (i.e., permanent URIs). These URIs return RDF representations of each Cyc concept as well as a human-readable version when accessed via a Web Browser.
+
+Data exposed: OpenCyc Ontology
+Size of dump and data set: ~1.6 million triples, ~150MB uncompressed
+
+### Openness
+
+[License](http://www.opencyc.org/license) states:
+
+> These files contain an OWL representation of information contained in the OpenCyc Knowledge Base. The content of these OWL files are licensed under the Creative Commons Attribution 3.0 license whose text can be found at . The content of these OWL files, including the OpenCyc content they represent, constitutes the "Work" referred to in the Creative Commons license. The terms of this license equally apply to, without limitation, renamings and other logically equivalent reformulations of the content of these OWL files (or portions thereof) in any natural or formal language, as well as to derivations of this content or inclusion of it in other ontologies.
+"""@en ;
+
+    foaf:page <http://sw.opencyc.org/> ;
+    void:triples "1600000"^^xsd:integer ;
+    dcat:theme "cross_domain" ;
+    void:uriSpace <http://sw.opencyc.org/concept/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:name "Cycorp,_Inc."^^xsd:string ;
+     foaf:mbox <mailto:http://sw.opencyc.org/concept/Mx4rvViYm5wpEbGdrcN5Y29ycA> ; 
+ .
+

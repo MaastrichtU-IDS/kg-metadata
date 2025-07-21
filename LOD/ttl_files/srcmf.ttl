@@ -1,0 +1,134 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:srcmf a dcat:Dataset ;
+    dcat:keyword "corpus", "linguistics", "llod", "lod", "lrec-2014", "old-french", "syntax" ;
+    dct:title "Syntactic_Reference_Corpus_of_Medieval_French_(SRCMF)" ;
+    void:exampleResource [
+        dct:title "Vie_de_Saint_Alexis_(1050)" ;
+        dcat:mediaType "application/zip" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://srcmf.org/public/alexis-rdf.zip> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Chanson_de_Roland_(1100)" ;
+        dcat:mediaType "application/zip" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://srcmf.org/public/roland-rdf.zip> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Tristan_de_Beroul_(11651200)" ;
+        dcat:mediaType "application/zip" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://srcmf.org/public/beroul-rdf.zip> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Aucassin_et_Nicolete_(fin_12e/déb._13e)" ;
+        dcat:mediaType "application/zip" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://srcmf.org/public/aucassin-rdf.zip> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "La_Conqueste_de_Constantinople_de_R._de_Clari_(1205)" ;
+        dcat:mediaType "application/zip" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://srcmf.org/public/clari-rdf.zip> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Queste_del_Saint_Graal_	(1220)" ;
+        dcat:mediaType "application/zip" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://srcmf.org/public/qgraal-rdf.zip> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "description" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://srcmf.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "licensing" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://srcmf.org/#sec%3Aaccess> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/zip" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Yvain_de_Chretien_de_Troyes_(1177-1181)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://srcmf.org/public/yvainku-rdf.zip> ;
+    ] ;
+    dct:description """
+The SRCMF contains the 15 Old French texts with about 280000 words. It has a high-quality manual annotation, based on a linguistically adequate dependency grammar. Annotation data is provided as RDF/XML. Available export formats are CONLL and TigerXML. The final revision of the texts is ongoing and will be finished by the end of 2013. The project was funded by the Agence Nationale de la Recherche (ANR, France) and the Deutsche Forschungsgemeinschaft (DFG, Germany) 2009-2012.
+"""@en ;
+
+    void:triples "690000"^^xsd:integer ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:name "Sophie_Prévost,_Achim_Stein"^^xsd:string ;
+     foaf:mbox <mailto:http://www.l@tice.cnrs.fr/Sophie-Prevost,229?lang=fr,http://www.uni-stuttgart.de/lingrom/stein> ; 
+ .
+

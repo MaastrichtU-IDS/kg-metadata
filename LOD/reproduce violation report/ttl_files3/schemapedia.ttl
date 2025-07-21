@@ -1,0 +1,55 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:schemapedia a dcat:Dataset ;
+    dcat:keyword "format-ctag", "format-dcterms", "format-foaf", "format-rdf", "format-rdfs", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "published-by-producer", "schemas", "talis", "usergeneratedcontent" ;
+    dct:title_main "Schemapedia:_RDF_schema_compendium" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_(Turtle)" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://schemapedia.com/schemas/qb.ttl> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://api.talis.com/stores/schemapedia/services/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='api.talis.com', port=80): Max retries exceeded with url: /stores/schemapedia/services/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dae1a0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dct:description_main """
+A compendium of RDF schemas and vocabularies, including various metadata and examples.
+"""@en ;
+
+    foaf:page <http://schemapedia.com/> ;
+    void:triples "6000"^^xsd:integer ;
+    void:uriSpace <http://schemapedia.com/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Ian_Davis"^^xsd:string ;
+     foaf:Cmbox <mailto:nospam@iandavis.com> ; 
+ .
+

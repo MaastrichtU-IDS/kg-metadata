@@ -1,0 +1,108 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:periodo a dcat:Dataset ;
+    dcat:keyword "archaeology", "deref-vocab", "format-dcterms", "format-skos", "format-time", "history", "license-metadata", "lod", "no-vocab-mappings", "periodization", "provenance-metadata", "published-by-producer", "schemata" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "PeriodO_Period_Gazetteer" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/ld+json" ;
+        dct:description_distribution """
+This is a collection of period definitions found in academic literature. The data model is documented at [the PeriodO website](http://perio.do/data-model/).
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "PeriodO_Period_Gazetteer_JSON-LD" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://n2t.net/ark:/99152/p0d.jsonld> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+VoID description of the PeriodO Period Gazetteer, including statistics on the current number of triples and links to other datasets.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Description_of_the_PeriodO_Period_Gazetteer" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://n2t.net/ark:/99152/p0/.well-known/void> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+PeriodO primarily uses the SKOS, Dublin Core, and OWL-Time vocabularies, but this proprietary vocabulary documents a few additional properties we needed to create.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "PeriodO_Vocabulary" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://n2t.net/ark:/99152/p0v> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+A log of all changes made to the PeriodO Period Gazetteer, published as JSON-LD using the [PROV Ontology](http://www.w3.org/TR/prov-o/).
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "PeriodO_Period_Gazetteer_Change_History" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://n2t.net/ark:/99152/p0h> ;
+    ] ;
+    dct:description_main """
+[PeriodO](http://perio.do) is a gazetteer of scholarly definitions of historical, art-historical, and archaeological periods. It eases the task of linking among datasets that define periods differently. It also helps scholars and students see where period definitions overlap or diverge.
+"""@en ;
+
+    void:triples "69033"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://n2t.net/ark:/99152/p0> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :periodo ;
+    void:triples "5069"^^xsd:integer ;
+ .
+
+:doi a void:Linkset ;
+    void:target :periodo ;
+    void:triples "7"^^xsd:integer ;
+ .
+
+:english-heritage-periods-list a void:Linkset ;
+    void:target :periodo ;
+    void:triples "43"^^xsd:integer ;
+ .
+
+:pleiades a void:Linkset ;
+    void:target :periodo ;
+    void:triples "116"^^xsd:integer ;
+ .
+
+:worldcat a void:Linkset ;
+    void:target :periodo ;
+    void:triples "472"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Ryan_Shaw"^^xsd:string ;
+     foaf:Cmbox <mailto:ryanshaw@unc.edu> ; 
+ .
+

@@ -1,0 +1,129 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:open-data-risp a dcat:Dataset ;
+    dcat:keyword "España", "administracion", "country-spain", "country.es", "dc", "estandares", "estándares_w3c", "foaf", "format-dc", "format-dcam", "format-foaf", "format-rdfg", "format-sioc", "format-skos", "format-wot", "language-spa", "license-metadata", "lod", "no-proprietary-vocab", "no-vocab-mappings", "open_administration", "open_data", "open_gov", "open_government", "provenance-metadata", "psi", "published-by-third-party", "risp", "schemata", "sioc", "skos", "socialweb", "sp", "spain", "technology", "tecnología", "usergeneratedcontent", "w3c", "wrapper" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title "Open_Data_RISP,_the_Spanish_Open_Data_community" ;
+    void:exampleResource [
+        dct:title "RDF/XML_resource_example" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+This is an RDF/XML example link of one of the resources published in the Open Data RISP community.
+""" ;
+        dcat:accessURL <http://red.gnoss.com/en/community/OpenData/resource/Publicando-datos-extraidos-de-un-PDF/deca5597-f39d-46cf-ae1c-8e5f9057f1ea?rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "RDF/XML_resource_example_2" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+This is an RDF/XML example link of one of the resources published in the Open Data RISP community.
+""" ;
+        dcat:accessURL <http://red.gnoss.com/en/community/OpenData/resource/IOGDS-International-Open-Government-Dataset-Searc/34cc8744-b38f-44bb-9292-fe1cd54f4406?rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "RDF/XML_search_example_" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+This is an RDF/XML example link of a search results.
+""" ;
+        dcat:accessURL <http://red.gnoss.com/en/community/OpenData/advanced-search/tag/web?rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/owl" ;
+        dct:description """
+Gnoss OWL Ontology
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Gnoss_Ontology" ;
+        dct:mirror "['ipfs:QmbDWiHLbnjJ2vGnaViALUEZFtCGu3hgUVhsSZjQ5xwpki']" ;
+        dcat:accessURL <http://gnoss.com/gnoss.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD description
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "voiD_description" ;
+        dct:mirror "['ipfs:QmYKGQNkB3CXihdvxSgZbUMQyywKmcEdTbfdZwRhLcmkgt']" ;
+        dcat:accessURL <http://red.gnoss.com/voidOpenDataRISP.n3> ;
+    ] ;
+    dct:description """
+<p>
+The <a href="http://red.gnoss.com/en/community/OpenData">Open Data RISP / Spanish Open Data Community</a> is a space to discuss issues related to the opening of the public data and reuse. This group is open to any participant with a minimum of interest in the subject. The community is being coordinated by the W3C with the help of the main initiatives in Spain and its re-users (citizens and companies). Open Data RISP offers a selection of 30 resources (November 2012).
+</p>
+
+<p>
+La <a href="http://red.gnoss.com/comunidad/OpenData">comunidad de Trabajo Open Data en España / Open Data RISP</a>  es un espacio para discutir temas relacionados con la apertura de datos de la administración pública y sobre su reutilización. Este grupo es abierto a cualquier participante con un mínimo de interés sobre el tema y está siendo coordinado desde la Oficina del W3C y con el impulso de las principales iniciativas RISP en España y sus reutilizadores (ciudadanía y empresas infomediarias). Open Data RISP ofrece una selección de 30 recursos (Noviembre 2012).
+</p>
+"""@en ;
+
+    foaf:page <http://red.gnoss.com/comunidad/OpenData> ;
+    void:triples "150203"^^xsd:integer ;
+    dcat:theme "user_generated" ;
+    void:uriSpace <http://red.gnoss.com/comunidad/OpenData> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dblp-deusto-gnoss a void:Linkset ;
+    void:target :open-data-risp ;
+    void:triples "184"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :open-data-risp ;
+    void:triples "53"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :open-data-risp ;
+    void:triples "81"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :open-data-risp ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:gnoss a void:Linkset ;
+    void:target :open-data-risp ;
+    void:triples "112"^^xsd:integer ;
+ .
+
+:nytimes-linked-open-data a void:Linkset ;
+    void:target :open-data-risp ;
+    void:triples "48"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "GNOSS_Team"^^xsd:string ;
+     foaf:mbox <mailto:gnoss@gnoss.com> ; 
+ .
+

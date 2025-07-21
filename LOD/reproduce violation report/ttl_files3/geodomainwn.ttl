@@ -1,0 +1,139 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:geodomainwn a dcat:Dataset ;
+    dcat:keyword "Linguistic_Dataset_LOD_RDF" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-by> ;
+    dct:title_main "geodomainwn" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+English collection of geonames synset. This is the list of the concepts extracted from the geonames resource. It contains entries such as http://www.languagelibrary.eu/owl/geodomainWN/eng/instances/geosynset-abandoned_camp-N-1
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "English_collection_of_geonames_synset" ;
+        dct:mirror_distribution "['ipfs:QmTRiHu4sSF6ZaGhMvrD9zu1kMrpUdzXj5yhEMwYCFVzyE']" ;
+        dcat:accessURL_distribution <http://www.languagelibrary.eu/owl/geodomainWN/eng/geonames-synset> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Italian colection of geonames synset. This file contains the list of concepts extracted from the geonames resource. It contains entries such as http://www.languagelibrary.eu/owl/geodomainWN/ita/instances/geosynset-zona_umida_stagionale-N-1
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Italian_collection_of_geonames_synset" ;
+        dct:mirror_distribution "['ipfs:QmRZLR7GoE7ecNBWewT2QBgzmf9GP1iMqqmX6AU1ANMx3W']" ;
+        dcat:accessURL_distribution <http://www.languagelibrary.eu/owl/geodomainWN/ita/geonames-synset> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/xml" ;
+        dct:description_distribution """
+Italian collection of words and wordsenses. This file contains links to words (http://www.languagelibrary.eu/owl/geodomainWN/ita/instances/geoword-argine) and wordsenses (http://www.languagelibrary.eu/owl/geodomainWN/ita/instances/geowordsense-centro_spaziale-N-1)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Italian_collection_of_words_and_wordsenses" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www.languagelibrary.eu/owl/geodomainWN/ita/schema/wordsenseandwords> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+English collection of words and wordsenses. This file contains links to words (http://www.languagelibrary.eu/owl/geodomainWN/eng/instances/geoword-shelf_edge) and wordsenses (http://www.languagelibrary.eu/owl/geodomainWN/eng/instances/geowordsense-deep-N-1)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "English_collection_of_words_and_wordsenses" ;
+        dct:mirror_distribution "['ipfs:QmYW3Kc8bJGixaipTMaXFbw1wgCwCazSCNgn21xGx95boS']" ;
+        dcat:accessURL_distribution <http://www.languagelibrary.eu/owl/geodomainWN/eng/schema/wordsenseandwords> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/xml" ;
+        dct:description_distribution """
+This file contains the entries which point to lemon version of the geoword:
+http://www.languagelibrary.eu/owl/geodomainWN/eng/lemon/c/ca4/crater
+
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "English_list_of_lemon_entries" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www.languagelibrary.eu/owl/geodomainWN/eng/lemon/geodomainWNeng-lemon-list> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/xml" ;
+        dct:description_distribution """
+This file contains the entries which point to lemon version of the geoword:
+http://www.languagelibrary.eu/owl/geodomainWN/ita/lemon/3/3bd/sfioratore
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Italian_list_of_lemon_entries" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www.languagelibrary.eu/owl/geodomainWN/ita/lemon/geodomainWNita-lemon-list> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+This file contains the full entries of the words in the lemon format
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Italian_list_of_lemon_lexical_entries" ;
+        dct:mirror_distribution "['ipfs:QmPuEXL14cPdAaTt19fF1acFC2zRzBYFDfHwAmoyPPvjyk']" ;
+        dcat:accessURL_distribution <http://www.languagelibrary.eu/owl/geodomainWN/ita/lemon/geodomainWNita-lemon> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+This file contains all lexical entries (in lemon)  in the same file
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "English_list_of_lemon_lexical_entries" ;
+        dct:mirror_distribution "['ipfs:QmUbYFA6HzyuwnWJaRRSJujjgLghzo4BbFJeKyoxSCssL5']" ;
+        dcat:accessURL_distribution <http://www.languagelibrary.eu/owl/geodomainWN/eng/lemon/geodomainWNeng-lemon> ;
+    ] ;
+    dct:description_main """
+This dataset contains the geographical resource, geonames, in a wordnet-like picture. They are 657 concepts extracted from the GLOSS Project. Available in English and Italian. 
+Also a lemonization (lemon model) 
+"""@en ;
+
+    dcat:theme "linguistics" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames-semantic-web a void:Linkset ;
+    void:target :geodomainwn ;
+    void:triples "3939"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Riccardo_Del_Gratta"^^xsd:string ;
+     foaf:Cmbox <mailto:riccardo.delgr@ta@ilc.cnr.it> ; 
+ .
+

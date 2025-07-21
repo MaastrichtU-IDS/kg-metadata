@@ -1,0 +1,104 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ogolod a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "diseases-information-orthology", "format-ogo", "lifesciences", "lod", "no-license-metadata", "no-vocab-mappings", "provenance-metadata", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "Orthology_and_Diseases_InformationOGO" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "text/rdf" ;
+        dct:description """
+Link to an example data item within the dataset (RDF/XML)
+""" ;
+        dcat:accessURL <http://miuras.inf.um.es/dump/dump.rdf> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='miuras.inf.um.es', port=80): Max retries exceeded with url: /dump/dump.rdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686da1f30>, 'Connection to miuras.inf.um.es timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://miuras.inf.um.es/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='miuras.inf.um.es', port=80): Max retries exceeded with url: /sparql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686da1450>, 'Connection to miuras.inf.um.es timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/xml" ;
+        dct:description """
+Sitemap
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='miuras.inf.um.es', port=80): Max retries exceeded with url: /sitemap_index.xml (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686daded0>, 'Connection to miuras.inf.um.es timed out. (connect timeout=30)')))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://miuras.inf.um.es/sitemap_index.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+Void description
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmXrwfZCwcVo4kpEmSLysbNTKMVvvTKqrycDHUvkAFc46W']" ;
+        dcat:accessURL <http://miuras.inf.um.es/lod/voidogolod.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+Main schema used
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmeUgpvMMuP9mUaLddkadb5ZrHvBuqNzVZhTTtZk1SXx9S']" ;
+        dcat:accessURL <http://miuras.inf.um.es/lod/ogolod2.owl> ;
+    ] ;
+    dct:description """
+The OGOLOD system, an extension of the OGO Knowledge Base, publishes ortholog/diseases information using Linked Data. This gives the scientists the ability to query the structured information in connection with other Linked
+Data and to discover new information in the cloud, related to orthologs and human diseases.
+"""@en ;
+
+    foaf:page <http://miuras.inf.um.es/~ogo/ogolod.html> ;
+    void:triples "38035102"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    void:uriSpace <http:miuras.inf.um.es/ogolod/resource/Gene/67440> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bio2rdf-chebi a void:Linkset ;
+    void:target :ogolod ;
+    void:triples "3456570"^^xsd:integer ;
+ .
+
+:bio2rdf-omim a void:Linkset ;
+    void:target :ogolod ;
+    void:triples "18141"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "José_Antonio_Miñarro_Gimenez_and_Mikel_Egaña_Aranguren"^^xsd:string ;
+     foaf:mbox <mailto:megana@fi.upm.es> ; 
+ .
+

@@ -1,0 +1,109 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Qualit__de_l_air_dans_le_monde a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml;charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='mmisw.org', port=443): Read timed out. (read timeout=30))
+""" ;
+        dct:title "RDF/XML" ;
+        dct:mirror "[]" ;
+        dct:identifier "9bf698e8-9cbb-9dc1-b6fa-784a9911694d" ;
+        dcat:downloadURL <https://mmisw.org/ont/api/v0/ont?format=rdf&iri=https%3A%2F%2Fmmisw.org%2Font%2F~jqueiros%2Fair_quality> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle;charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='mmisw.org', port=443): Read timed out. (read timeout=30))
+""" ;
+        dct:title "Turtle" ;
+        dct:mirror "[]" ;
+        dct:identifier "c7445a3d-25a7-f676-6091-9c251a531764" ;
+        dcat:downloadURL <https://mmisw.org/ont/api/v0/ont?format=ttl&iri=https%3A%2F%2Fmmisw.org%2Font%2F~jqueiros%2Fair_quality> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/json+ld;charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='mmisw.org', port=443): Read timed out. (read timeout=30))
+""" ;
+        dct:title "JSON-LD" ;
+        dct:mirror "[]" ;
+        dct:identifier "9e4e91d3-0b46-80a2-a9b9-d9555fe2309f" ;
+        dcat:downloadURL <https://mmisw.org/ont/api/v0/ont?format=jsonld&iri=https%3A%2F%2Fmmisw.org%2Font%2F~jqueiros%2Fair_quality> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/plain;charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='mmisw.org', port=443): Read timed out. (read timeout=30))
+""" ;
+        dct:title "N-Triples" ;
+        dct:mirror "[]" ;
+        dct:identifier "1a36b690-5578-1e39-b515-24658ae935e2" ;
+        dcat:downloadURL <https://mmisw.org/ont/api/v0/ont?format=nt&iri=https%3A%2F%2Fmmisw.org%2Font%2F~jqueiros%2Fair_quality> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/n3;charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='mmisw.org', port=443): Read timed out. (read timeout=30))
+""" ;
+        dct:title "N3" ;
+        dct:mirror "[]" ;
+        dct:identifier "7bb0f5d4-07c0-28ee-aeb9-46142567dbfc" ;
+        dcat:downloadURL <https://mmisw.org/ont/api/v0/ont?format=n3&iri=https%3A%2F%2Fmmisw.org%2Font%2F~jqueiros%2Fair_quality> ;
+    ] ;
+    foaf:page <https://mmisw.org/ont/~jqueiros/air_quality> ;
+    dcat:keyword "Qualité_air" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "Qualité_de_lair_dans_le_monde" ;
+    dct:description """
+Mesures de certains polluants dans des villes à travers le monde
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:triples "0"^^xsd:integer ;
+    dcat:theme "user_generated" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:amanijy01@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Julie_Queiros"^^xsd:string ;
+     foaf:mbox <mailto:julie.queiros7@gmail.com> ; 
+ .
+

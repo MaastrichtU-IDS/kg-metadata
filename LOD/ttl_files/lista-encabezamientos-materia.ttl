@@ -1,0 +1,150 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:lista-encabezamientos-materia a dcat:Dataset ;
+    dcat:keyword "bibliographic", "format-rdf", "format-skos", "lem", "library", "linkeddata", "lld", "lod", "no-license-metadata", "no-proprietary-vocab", "provenance-metadata", "publications", "published-by-producer", "void-sparql-endpoint" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "Lista_de__Encabezamientos_de_Materia_as_Linked_Open_Data" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "text/html;charset=UTF-8" ;
+        dct:description """
+Arquitectura Musulmana / Islamic Architecture (example dereferenceable URI)
+""" ;
+        dcat:accessURL <http://id.sgcb.mcu.es/Autoridades/LEM201000848/concept> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "text/html;charset=UTF-8" ;
+        dct:description """
+Arquitectura Musulmana / Islamic Architecture (Turtle example)
+""" ;
+        dcat:accessURL <http://id.sgcb.mcu.es/data/Autoridades/LEM201000848/concept.ttl> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "text/html;charset=UTF-8" ;
+        dct:description """
+Esquema General de Encabezamientos de Materia (example dereferenceable URI)
+""" ;
+        dcat:accessURL <http://id.sgcb.mcu.es/Autoridades/conceptScheme> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL Endpoint
+""" ;
+        dcat:accessURL <http://id.sgcb.mcu.es/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "ZIP" ;
+        dct:description """
+Zipped RDF/XML file (Full ontology)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://id.sgcb.mcu.es/lem/ficheros/lem-rdf-xml.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/marc" ;
+        dct:description """
+Zipped MARC 21 authorities file
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://id.sgcb.mcu.es/lem/ficheros/lem-marc21.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "HTML" ;
+        dct:description """
+Faceted Browser
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://id.sgcb.mcu.es/fct> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/sitemap" ;
+        dct:description """
+Semantic Web Sitemap
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://id.sgcb.mcu.es/sitemap.xml> ;
+    ] ;
+    dct:description """
+Este nuevo recurso informático que la Dirección General de Libro, Archivos y Bibliotecas pone a disposición del ciudadano supone un importante avnace tecnologico pueste que implica la tranformación de la Lista de Encabezamietos de Materia (LEM) al Simple Knowledge Organization System SKOS, uno de los pilares del Linked Open Data y de su adaptación a Europeana como uno de los namespaces constitutivos del Europeana Data Model. 
+Se ha establecido ademas, siempre que ha sido posible, un skos:closeMatch con los LCSH y se está progresando para proporcionar una funcionalidad análoga con RAMEAU o SWD.
+Incorpora además un fichero en zip de los registros MARC dea utoridades de materia, es decir aquellos basados en el campo 150 en los que se ha añadido las URI de las LEM y las del LCSH.
+
+---
+
+This new digital resource that the Dirección General del Libro, Archivos y Bibliotecas offers to its users represents a huge technological step forward, for it means the transformation of the Subject Headings List (Lista de Encabezamientos de Materia, LEM) to the Simple Knowledge Organization System (SKOS), one of the main pillars of Linked Open Data and of its adaptation to Europeana as one of the Europeana Data Model primary namespaces.
+skos:closeMatch links to LCSH have been defined whenever possible, and work is being done towards establishing similar links to RAMEAU and SWD.
+The list is also presented in a zipped MARC file of subject authorities (those based on field 150 in which LEM and LCSH URIs have been added).
+"""@en ;
+
+    foaf:page <http://id.sgcb.mcu.es> ;
+    void:triples "193865"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://id.sgcb.mcu.es/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:data-bnf-fr a void:Linkset ;
+    void:target :lista-encabezamientos-materia ;
+    void:triples "7572"^^xsd:integer ;
+ .
+
+:dnb-gemeinsame-normdatei a void:Linkset ;
+    void:target :lista-encabezamientos-materia ;
+    void:triples "6660"^^xsd:integer ;
+ .
+
+:lcsh a void:Linkset ;
+    void:target :lista-encabezamientos-materia ;
+    void:triples "8937"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Ministerio_de_Educación,_Cultura_y_DeporteGobierno_de_España"^^xsd:string ;
+     foaf:mbox <mailto:lemskos@mcu.es> ; 
+ .
+

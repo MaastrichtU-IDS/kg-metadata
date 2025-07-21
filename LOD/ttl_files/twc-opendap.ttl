@@ -1,0 +1,516 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:twc-opendap a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-bibo", "format-bte", "format-con", "format-conv", "format-datafaqs", "format-dbpedia", "format-dc", "format-dcat", "format-doap", "format-foaf", "format-formats", "format-irw", "format-nif", "format-oboro", "format-opm", "format-ov", "format-owl", "format-pml", "format-pmlj", "format-pmlp", "format-pronom", "format-prov", "format-rdf", "format-rdfs", "format-schema", "format-sd", "format-sio", "format-skos", "format-tag", "format-vann", "format-void", "format-vsr", "linked-data", "lod", "prizms", "provenance", "provenance-metadata", "vocab-mappings" ;
+    dct:title "twc-opendap" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "N-Triples_Download" ;
+        dct:mirror "['ipfs:QmW7ooJAp4mAFBfFqi1WpMLXvYvA3kcETtiTCYySbpEVWj']" ;
+        dcat:downloadURL <http://opendap.tw.rpi.edu/source/us/file/cr-full-dump/version/latest/conversion/opendap-tw-rpi-edu.nt.gz> ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_URI" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://opendap.tw.rpi.edu/id/component/olfs> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='opendap.tw.rpi.edu', port=80): Max retries exceeded with url: /id/component/olfs (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686aeec50>, 'Connection to opendap.tw.rpi.edu timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://opendap.tw.rpi.edu/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='opendap.tw.rpi.edu', port=80): Max retries exceeded with url: /sparql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686aeead0>, 'Connection to opendap.tw.rpi.edu timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "GitHub_Repository" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://github.com/tetherless-world/opendap> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "sio_RDF_Schema" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://semanticscience.org/resource/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "rdfs_RDF_Schema" ;
+        dct:mirror "['ipfs:QmNuJDKL5WBEEy1NBxQqTLWXysDQ21TFHb8iaHN1yNV91o']" ;
+        dcat:accessURL <http://www.w3.org/2000/01/rdf-schema> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "doap_RDF_Schema" ;
+        dct:mirror "['ipfs:QmZn7wXHpgSrGFEP32zAfKQYRFNoyGrYoJXUYPZDBwyg4R']" ;
+        dcat:accessURL <http://usefulinc.com/ns/doap> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "oboro_RDF_Schema" ;
+        dct:mirror "['ipfs:QmevCZhEftbZ9Mmbw5kEJ9JAJVuSNCkVvdfCBrTXjetu3X']" ;
+        dcat:accessURL <http://obofoundry.org/ro/ro.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "dcat_RDF_Schema" ;
+        dct:mirror "['ipfs:QmTo9AhvWcEtMWnesnZLuwJGN1LvBavu1KJBpRJVbPZSi3']" ;
+        dcat:accessURL <http://www.w3.org/ns/dcat> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "dc_RDF_Schema" ;
+        dct:mirror "['ipfs:QmSQLZddg8vL7gsJPTDaR1dzEcvKR2Nao6NzUMXxPS93JX']" ;
+        dcat:accessURL <http://purl.org/dc/terms/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='sparql.tw.rpi.edu', port=80): Max retries exceeded with url: /vocab/datafaqs (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684300550>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "datafaqs_RDF_Schema" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://purl.org/twc/vocab/datafaqs> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "vann_RDF_Schema" ;
+        dct:mirror "['ipfs:QmWR7JcUQ6WQsesWD9MvEnn2fQcYweFRpTf338pAZ2ThdM']" ;
+        dcat:accessURL <http://purl.org/vocab/vann/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "tag_RDF_Schema" ;
+        dct:mirror "['ipfs:QmPRSH2VWey2S9yYvL35tQ5782v915wo8tDN8MkAPPSq5a']" ;
+        dcat:accessURL <http://www.holygoat.co.uk/owl/redwood/0.1/tags/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "conv_RDF_Schema" ;
+        dct:mirror "['ipfs:QmZSmZm2wqd3j47Eovmmep5n2hVAAxTWsekk9tyMJeFqQw']" ;
+        dcat:accessURL <http://purl.org/twc/vocab/conversion/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "irw_RDF_Schema" ;
+        dct:mirror "['ipfs:QmcnPVscubhUz88BYDRPm57K8K6BcprFiS6rMDhe1rT4gp']" ;
+        dcat:accessURL <http://www.ontologydesignpatterns.org/ont/web/irw.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='open.vocab.org', port=443): Max retries exceeded with url: /terms/ (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997)'))))
+""" ;
+        dct:title "ov_RDF_Schema" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://open.vocab.org/terms/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "prov_RDF_Schema" ;
+        dct:mirror "['ipfs:QmSPVZpJP4FJV9y8VeYURMKQnwAaiHmq7cFamnbJXo3xVc']" ;
+        dcat:accessURL <http://purl.org/net/provenance/ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "pmlj_RDF_Schema" ;
+        dct:mirror "['ipfs:QmS97AnjACRGiFQZHBTSgVb2We7kvQ44Cp2X5n36e7Jvkz']" ;
+        dcat:accessURL <http://inference-web.org/2.0/pml-justification.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "schema_RDF_Schema" ;
+        dct:mirror "['ipfs:QmcPgEEJH8b9FDhnUJ4yjnc8xFG9TNMC57xiz2sVKRW1PH']" ;
+        dcat:accessURL <http://schema.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "opm_RDF_Schema" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://openprovenance.org/ontology> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "con_RDF_Schema" ;
+        dct:mirror "['ipfs:QmVXinE7W8zud343FMXJUqEXS43xnjirTuLHFTyHmfun9j']" ;
+        dcat:accessURL <http://www.w3.org/2000/10/swap/pim/contact> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "nif_RDF_Schema" ;
+        dct:mirror "['ipfs:QmPmLuPNXNnbRUyVsAxWgbwakcbiKzdVNB4cE4vA7fjD6u']" ;
+        dcat:accessURL <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "owl_RDF_Schema" ;
+        dct:mirror "['ipfs:QmWJ8maTa1PfLdfM17wvXh6nzuZG6CD4fGiZcb1GSB6Kxf']" ;
+        dcat:accessURL <http://www.w3.org/2002/07/owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "prov_RDF_Schema" ;
+        dct:mirror "['ipfs:QmQ2KLCuzHEM6EBXKgmgE1ZRhTsxouzSwFq2FYxKHxDDJF']" ;
+        dcat:accessURL <http://www.w3.org/ns/prov> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "pmlp_RDF_Schema" ;
+        dct:mirror "['ipfs:QmVc8XGJZYr2dhh3RPJk2Kjnu1TdAdo7fHuPdVjigAtYRV']" ;
+        dcat:accessURL <http://inference-web.org/2.0/pml-provenance.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "pml_RDF_Schema" ;
+        dct:mirror "['ipfs:QmbAnynAh3sT48N6EhJ2ZKsrSTtHDi2Yr29Gwd33xxuLiv']" ;
+        dcat:accessURL <http://provenanceweb.org/ns/pml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "void_RDF_Schema" ;
+        dct:mirror "['ipfs:QmPKEQdP9ZDzrRmsLVywkAR4cew2EePAg82g9WDYBDtxxZ']" ;
+        dcat:accessURL <http://rdfs.org/ns/void> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "bte_RDF_Schema" ;
+        dct:mirror "['ipfs:QmXWzwcMv8auw9BqfzXdyDPKeaEuYmMqqbZp5XMpebstjn']" ;
+        dcat:accessURL <http://purl.org/twc/vocab/between-the-edges/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "rdf_RDF_Schema" ;
+        dct:mirror "['ipfs:Qmc12LrbUifW7U3PyFpQ55TDxGXgfkEPRYhexMA6E24iQR']" ;
+        dcat:accessURL <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "foaf_RDF_Schema" ;
+        dct:mirror "['ipfs:QmXTmGjkei19mbhkXLHHFAQqgAqhSPvVv4gHXFBzVTTxko']" ;
+        dcat:accessURL <http://xmlns.com/foaf/0.1/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "dbpedia_RDF_Schema" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://dbpedia.org/resource/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+Listing of all RDF datasets available, using the Vocabulary of Interlinked Datasets (VoID)
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='opendap.tw.rpi.edu', port=80): Max retries exceeded with url: /void.ttl (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684303130>, 'Connection to opendap.tw.rpi.edu timed out. (connect timeout=30)')))
+""" ;
+        dct:title "VoID_Listing" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://opendap.tw.rpi.edu/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/sitemap" ;
+        dct:description """
+Listing of all RDF datasets available.
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='opendap.tw.rpi.edu', port=80): Max retries exceeded with url: /source/us/file/cr-sitemap/version/latest/conversion/sitemap.xml (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684300820>, 'Connection to opendap.tw.rpi.edu timed out. (connect timeout=30)')))
+""" ;
+        dct:title "Sitemap" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://opendap.tw.rpi.edu/source/us/file/cr-sitemap/version/latest/conversion/sitemap.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "mapping/twc-conversion" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='opendap.tw.rpi.edu', port=80): Max retries exceeded with url: /source/us/file/cr-aggregated-params/version/latest/conversion/us-cr-aggregated-params-latest.ttl.gz (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684300310>, 'Connection to opendap.tw.rpi.edu timed out. (connect timeout=30)')))
+""" ;
+        dct:title "Conversion_Enhancement_Parameters" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://opendap.tw.rpi.edu/source/us/file/cr-aggregated-params/version/latest/conversion/us-cr-aggregated-params-latest.ttl.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "vsr_RDF_Schema" ;
+        dct:mirror "['ipfs:QmYiW58HLAaYcXz7z6JsaRdt7uLE7Buhu3RQBLUmAfiQaV']" ;
+        dcat:accessURL <http://purl.org/twc/vocab/vsr> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "sd_RDF_Schema" ;
+        dct:mirror "['ipfs:QmaaPV1TyK8oyv9gw5pCpURkWfjLJy4VCwneLxAqrF2pBE']" ;
+        dcat:accessURL <http://www.w3.org/ns/sparql-service-description> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='reference.data.gov.uk', port=80): Max retries exceeded with url: /technical-registry/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686aefa60>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "pronom_RDF_Schema" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://reference.data.gov.uk/technical-registry/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "skos_RDF_Schema" ;
+        dct:mirror "['ipfs:QmbrBjNbm32hJUodBGGpiRazJpa1SSbPgrJAFzDTUgbmdN']" ;
+        dcat:accessURL <http://www.w3.org/2004/02/skos/core> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "formats_RDF_Schema" ;
+        dct:mirror "['ipfs:QmTDMriyDNabgYHuLFwksdeQTAEfptstCMR2rwsnugK5bn']" ;
+        dcat:accessURL <http://www.w3.org/ns/formats/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "bibo_RDF_Schema" ;
+        dct:mirror "['ipfs:QmfHEffjG7eWcxaeW7mpKuszYDeGgFsSRYaumXiAfNoutN']" ;
+        dcat:accessURL <http://purl.org/ontology/bibo/> ;
+    ] ;
+    dct:description """
+Linked Data Provenance for OPeNDAP data processing.
+"""@en ;
+
+    void:triples "6437058"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://opendap.tw.rpi.edu/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :twc-opendap ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Timothy_Lebo"^^xsd:string ;
+     foaf:mbox <mailto:lebot@rpi.edu> ; 
+ .
+

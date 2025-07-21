@@ -1,0 +1,307 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:locv a dcat:Dataset ;
+    dcat:keyword "computer_vision", "format-con", "format-conv", "format-dc", "format-dcat", "format-doap", "format-foaf", "format-oboro", "format-opm", "format-ov", "format-pml", "format-pmlj", "format-pmlp", "format-prov", "format-rdf", "format-rdfs", "format-sd", "format-vann", "format-void", "linked_data" ;
+    dct:title "Linked_Open_Computer_Vision" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "N-Triples_Download" ;
+        dct:mirror "['ipfs:QmcwciJzmUtfgX7zWiWRod2TKZVSQxvdPgwdY5PdeVnYRE']" ;
+        dcat:downloadURL <http://locv.tw.rpi.edu/source/us/file/cr-full-dump/version/latest/conversion/locv-tw-rpi-edu.nt.gz> ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_URI" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://locv.tw.rpi.edu/source/us/dataset/cv-lineage/vision-mas-ecp-fr/facades-benchmark-2011/esat-kuleuven-be/three-layered-facade> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='locv.tw.rpi.edu', port=80): Max retries exceeded with url: /source/us/dataset/cv-lineage/vision-mas-ecp-fr/facades-benchmark-2011/esat-kuleuven-be/three-layered-facade (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686da36a0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "GitHub_Repository" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://github.com/timrdf/locv> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "rdfs_RDF_Schema" ;
+        dct:mirror "['ipfs:QmNuJDKL5WBEEy1NBxQqTLWXysDQ21TFHb8iaHN1yNV91o']" ;
+        dcat:accessURL <http://www.w3.org/2000/01/rdf-schema> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "void_RDF_Schema" ;
+        dct:mirror "['ipfs:QmPKEQdP9ZDzrRmsLVywkAR4cew2EePAg82g9WDYBDtxxZ']" ;
+        dcat:accessURL <http://rdfs.org/ns/void> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "sd_RDF_Schema" ;
+        dct:mirror "['ipfs:QmaaPV1TyK8oyv9gw5pCpURkWfjLJy4VCwneLxAqrF2pBE']" ;
+        dcat:accessURL <http://www.w3.org/ns/sparql-service-description> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "prov_RDF_Schema" ;
+        dct:mirror "['ipfs:QmQ2KLCuzHEM6EBXKgmgE1ZRhTsxouzSwFq2FYxKHxDDJF']" ;
+        dcat:accessURL <http://www.w3.org/ns/prov> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "dcat_RDF_Schema" ;
+        dct:mirror "['ipfs:QmTo9AhvWcEtMWnesnZLuwJGN1LvBavu1KJBpRJVbPZSi3']" ;
+        dcat:accessURL <http://www.w3.org/ns/dcat> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "dc_RDF_Schema" ;
+        dct:mirror "['ipfs:QmSQLZddg8vL7gsJPTDaR1dzEcvKR2Nao6NzUMXxPS93JX']" ;
+        dcat:accessURL <http://purl.org/dc/terms/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "conv_RDF_Schema" ;
+        dct:mirror "['ipfs:QmZSmZm2wqd3j47Eovmmep5n2hVAAxTWsekk9tyMJeFqQw']" ;
+        dcat:accessURL <http://purl.org/twc/vocab/conversion/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "vann_RDF_Schema" ;
+        dct:mirror "['ipfs:QmWR7JcUQ6WQsesWD9MvEnn2fQcYweFRpTf338pAZ2ThdM']" ;
+        dcat:accessURL <http://purl.org/vocab/vann/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "doap_RDF_Schema" ;
+        dct:mirror "['ipfs:QmZn7wXHpgSrGFEP32zAfKQYRFNoyGrYoJXUYPZDBwyg4R']" ;
+        dcat:accessURL <http://usefulinc.com/ns/doap> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "prov_RDF_Schema" ;
+        dct:mirror "['ipfs:QmSPVZpJP4FJV9y8VeYURMKQnwAaiHmq7cFamnbJXo3xVc']" ;
+        dcat:accessURL <http://purl.org/net/provenance/ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "opm_RDF_Schema" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://openprovenance.org/ontology> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "con_RDF_Schema" ;
+        dct:mirror "['ipfs:QmVXinE7W8zud343FMXJUqEXS43xnjirTuLHFTyHmfun9j']" ;
+        dcat:accessURL <http://www.w3.org/2000/10/swap/pim/contact> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='open.vocab.org', port=443): Max retries exceeded with url: /terms/ (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997)'))))
+""" ;
+        dct:title "ov_RDF_Schema" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://open.vocab.org/terms/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "pmlp_RDF_Schema" ;
+        dct:mirror "['ipfs:QmVc8XGJZYr2dhh3RPJk2Kjnu1TdAdo7fHuPdVjigAtYRV']" ;
+        dcat:accessURL <http://inference-web.org/2.0/pml-provenance.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "pmlj_RDF_Schema" ;
+        dct:mirror "['ipfs:QmS97AnjACRGiFQZHBTSgVb2We7kvQ44Cp2X5n36e7Jvkz']" ;
+        dcat:accessURL <http://inference-web.org/2.0/pml-justification.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "oboro_RDF_Schema" ;
+        dct:mirror "['ipfs:QmevCZhEftbZ9Mmbw5kEJ9JAJVuSNCkVvdfCBrTXjetu3X']" ;
+        dcat:accessURL <http://obofoundry.org/ro/ro.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "pml_RDF_Schema" ;
+        dct:mirror "['ipfs:QmbAnynAh3sT48N6EhJ2ZKsrSTtHDi2Yr29Gwd33xxuLiv']" ;
+        dcat:accessURL <http://provenanceweb.org/ns/pml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "rdf_RDF_Schema" ;
+        dct:mirror "['ipfs:Qmc12LrbUifW7U3PyFpQ55TDxGXgfkEPRYhexMA6E24iQR']" ;
+        dcat:accessURL <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "foaf_RDF_Schema" ;
+        dct:mirror "['ipfs:QmXTmGjkei19mbhkXLHHFAQqgAqhSPvVv4gHXFBzVTTxko']" ;
+        dcat:accessURL <http://xmlns.com/foaf/0.1/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+Listing of all RDF datasets available, using the Vocabulary of Interlinked Datasets (VoID)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "VoID_Listing" ;
+        dct:mirror "['ipfs:QmQrjBpzMPLDo8o6cjkpzZSAra3oVNfujwC9osNGqkBody']" ;
+        dcat:accessURL <http://locv.tw.rpi.edu/void.ttl> ;
+    ] ;
+    dct:description """
+Interconnecting computer vision datasets
+"""@en ;
+
+    void:triples "10781"^^xsd:integer ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:name "Timothy_Lebo"^^xsd:string ;
+     foaf:mbox <mailto:lebot@rpi.edu> ; 
+ .
+

@@ -1,0 +1,65 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:universal-dependencies-treebank-catalan a dcat:Dataset ;
+    dcat:keyword "corpus", "linguistics", "lod" ;
+    dct:title_main "Universal_Dependencies_Treebank_Catalan" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+GNU GPL 3.0 
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "UD_Catalan_Treebank" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://github.com/UniversalDependencies/UD_Catalan/archive/master.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+xml" ;
+        dct:description_distribution """
+Converted test.conllu using ACoLi's conll-rdf converter
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='datahub.ckan.io', port=443): Max retries exceeded with url: /dataset/cca2b820-e5e9-428e-8454-8df56ddfe403/resource/a94f67fc-a16d-4198-9516-889fe689f6c2/download/udcatalan.rdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3684302230>, 'Connection to datahub.ckan.io timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "UD_Catalan_RDF_Example" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://datahub.ckan.io/dataset/cca2b820-e5e9-428e-8454-8df56ddfe403/resource/a94f67fc-a16d-4198-9516-889fe689f6c2/download/udcatalan.rdf> ;
+    ] ;
+    dct:description_main """
+Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).
+
+This dataset refers to UD's Catalan treebank.
+
+"""@en ;
+
+    foaf:page <https://github.com/UniversalDependencies/UD_Catalan> ;
+    void:triples "530766"^^xsd:integer ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:olia a void:Linkset ;
+    void:target :universal-dependencies-treebank-catalan ;
+    void:triples "72"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Martínez_Alonso,_Héctor;_Pascual,_Elena;_Zeman,_Daniel"^^xsd:string ;
+     foaf:Cmbox <mailto:zeman@ufal.mff.cuni.cz> ; 
+ .
+

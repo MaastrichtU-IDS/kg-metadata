@@ -1,0 +1,215 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bncf-ns a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "http://digitale.bncf.firenze.sbn.it/openrdf-workbench/repositories/NS/query" ;
+        dct:identifier_sparqlEndpoint "7f383679-3883-e3aa-e7fa-69db89df16fc" ;
+        dcat:endpointDescription_sparqlEndpoint """
+Thesaurus BNCF - Endpoint SPARQL
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://digitale.bncf.firenze.sbn.it/openrdf-workbench/repositories/NS/query> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+RDF/XML version of Thesaurus BNCF (update of march 2018)
+""" ;
+        dcat:downloadURL_distribution <https://github.com/m-pepe/BNCF-NS/raw/main/ns201803.zip> ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "BNCF-NS-201803" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "2f368cff-749b-cb1e-b7c3-27a96b2a223b" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+RDF/XML version of Thesaurus BNCF (update of october 2018)
+""" ;
+        dcat:downloadURL_distribution <https://github.com/m-pepe/BNCF-NS/raw/main/ns201810.zip> ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "BNCF-NS-201810" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "33852b1b-e9b5-e6be-d6a0-a86f9dc9cb9c" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+RDF/XML version of Thesaurus BNCF (update of april 2019)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "BNCF-NS-201904" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "32b8c8e8-ab1a-6abd-8437-847a1ed46f59" ;
+        dcat:downloadURL_distribution <https://github.com/m-pepe/BNCF-NS/raw/main/ns201904.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+RDF/XML version of Thesaurus BNCF (update of october 2019)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "BNCF-NS-201910" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "ca378df3-f189-b23a-72e8-6b18181863ab" ;
+        dcat:downloadURL_distribution <https://github.com/m-pepe/BNCF-NS/raw/main/ns201910.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+RDF/XML version of Thesaurus BNCF (update of april 2020)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "BNCF-NS-202004" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "df008d5b-9eb4-6c01-82f3-df449e6821dd" ;
+        dcat:downloadURL_distribution <https://github.com/m-pepe/BNCF-NS/raw/main/ns202004.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+RDF/XML version of Thesaurus BNCF (update of october 2020)
+""" ;
+        dcat:downloadURL_distribution <https://github.com/m-pepe/BNCF-NS/raw/main/ns202010.zip> ;
+        dct:mirror_distribution "[]" ;
+        dct:title_distribution "BNCF-NS-202010" ;
+        dct:identifier_distribution "971de31a-b164-a0d5-9188-4300f73a70c1" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "244fdc7a-396c-24dd-49ec-95ba5d1b5e64" ;
+        dct:title_distribution "BNCF-NS-202104" ;
+        dct:description_distribution """
+RDF/XML version of Thesaurus BNCF (update of april 2021)
+""" ;
+        dcat:mediaType_distribution "application/zip" ;
+        dcat:downloadURL_distribution <https://github.com/m-pepe/BNCF-NS/raw/main/ns202104.zip> ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "1b7870a8-6aab-5c80-0618-2a0a866aed81" ;
+        dct:title_distribution "BNCF-NS-202110" ;
+        dct:description_distribution """
+RDF/XML version of Thesaurus BNCF (update of october 2021)
+""" ;
+        dcat:mediaType_distribution "application/zip" ;
+        dcat:downloadURL_distribution <https://github.com/m-pepe/BNCF-NS/raw/main/ns202110.zip> ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "1b127165-9a21-2661-bbca-23f089ec0a0b" ;
+        dct:title_distribution "BNCF-NS-202203" ;
+        dct:description_distribution """
+RDF/XML version of Thesaurus BNCF (update of march 2022)
+""" ;
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dcat:downloadURL_distribution <https://github.com/m-pepe/BNCF-NS/blob/main/ns202203.zip> ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    foaf:page <http://thes.bncf.firenze.sbn.it/> ;
+    dcat:keyword "publications", "bibliographics", "format-rdf", "format-skos", "library", "authorities", "linkeddata" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Thesaurus_BNCF" ;
+    dct:description_main """
+Nuovo soggettario (NS), edited by the National Central Library of Florence, is the Italian subject indexing tool for various types of resources. It has been developed in compliance with the IFLA recommendations, and other international standards in the field of subject indexing. This tool has been created for general and specialized Italian libraries, and for museums, multimedia libraries, archives and documentation centres. The main component of the NS is a general thesaurus available on the web since 2007 (http://thes.bncf.firenze.sbn.it/ricerca.php). The thesaurus comprises nowadays approximately 69.400 terms and it is updated on a regular basis.
+All metadata can be used, in accordance with Creative Commons Attribution 4.0 licence.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <http://thes.bncf.firenze.sbn.it> ;
+    void:triples "786062"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:exampleResource [
+        dcat:mediaType_exampleResource "application/rdf+xml;_charset=UTF-8" ;
+        dct:description_exampleResource """
+RDF/XML Example
+""" ;
+        adms:status_exampleResource """
+OK
+""" ;
+        dct:title_exampleResource "Download" ;
+        dcat:accessURL_exampleResource <http://thes.bncf.firenze.sbn.it/dati.php?id=50006> ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:getty-aat a void:Linkset ;
+    void:target :bncf-ns ;
+    void:triples "84"^^xsd:integer ;
+ .
+
+:lcsh a void:Linkset ;
+    void:target :bncf-ns ;
+    void:triples "15847"^^xsd:integer ;
+ .
+
+:dnb-gemeinsame-normdatei a void:Linkset ;
+    void:target :bncf-ns ;
+    void:triples "4227"^^xsd:integer ;
+ .
+
+:datos-bne-es a void:Linkset ;
+    void:target :bncf-ns ;
+    void:triples "3173"^^xsd:integer ;
+ .
+
+:data-bnf-fr a void:Linkset ;
+    void:target :bncf-ns ;
+    void:triples "13730"^^xsd:integer ;
+ .
+
+:agrovoc a void:Linkset ;
+    void:target :bncf-ns ;
+    void:triples "3046"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:maria.pepe@beniculturali.it> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "BNCFsettore_Ricerche_e_strumenti_di_indicizzazione_semantica"^^xsd:string ;
+     foaf:Cmbox <mailto:bnc-fi.nuovosoggettario@beniculturali.it> ; 
+ .
+

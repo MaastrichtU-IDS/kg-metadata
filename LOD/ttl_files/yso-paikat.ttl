@@ -1,0 +1,69 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:yso-paikat a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://finto.fi/yso-paikat/en/> ;
+    void:triples "7844"^^xsd:integer ;
+    dcat:distribution [
+        dct:identifier "c4f7d35a-05a0-c0d3-774e-17a2d483ab2f" ;
+        dct:title "YSO_places" ;
+        dct:description """
+
+""" ;
+        dcat:mediaType "application/rdf+xml" ;
+        dcat:downloadURL <https://finto.fi/rest/v1/yso-paikat/data?format=application%2Frdf%252Bxml> ;
+        dct:mirror "[]" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='finto.fi', port=443): Read timed out. (read timeout=30))
+""" ;
+    ] ;
+    dcat:keyword "Finland", "places", "locations", "regions", "countries", "cities", "villages", "lakes", "rivers" ;
+    dct:description """
+YSO places is a bi-lingual general geographic gazetteer.  It includes administrative and other regions as well as natural locations and places based on the needs of GLAM organistions .  Places refer to Finnish and external  both modern and historic places. Hierarchies are built by partOf relationships.
+"""@en ;
+
+    dct:title "YSO_places" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dcat:theme "geography" ;
+    void:uriSpace <_http://www.yso.fi/onto/yso/places> ;
+    void:sparqlEndpoint [
+        dct:identifier "4ba995ca-8a7a-bc7d-2e5b-3c6e46453224" ;
+        dct:title "Finto_SPARQL_endpoint_for_yso-places_RDF" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <https://api.finto.fi/rest/v1/yso-places/data> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:jarmo.saarikko@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Finto_service,_National_Library_of_Finland"^^xsd:string ;
+     foaf:mbox <mailto:finto-posti@helsinki.fi> ; 
+ .
+

@@ -1,0 +1,51 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:addgene a dcat:Dataset ;
+    dcat:keyword "ckanupload.esw.200910", "format-rdf", "genetics", "license-unclear", "linkeddata", "lod", "lodcloud.nolinks", "lodcloud.unconnected", "rdf", "size-small" ;
+    dct:title "Addgene" ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+Download
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='sw.neurocommons.org', port=80): Max retries exceeded with url: /2007/kb-sources/addgene.ttl (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684300a90>, 'Connection to sw.neurocommons.org timed out. (connect timeout=30)')))
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://purl.org/hcls/2007/kb-sources/addgene.ttl> ;
+    ] ;
+    dct:description """
+Data exposed: Addgene catalog (tab delimited file)
+
+Size of dump and data set: 1.1 MB
+
+Notes: provided to Science Commons by Addgene
+
+### Openness: ?
+
+T&C here: http://www.addgene.org/pgvec1?f=a&cmd=showfile&file=terms
+
+However hard to work out what these mean ...
+"""@en ;
+
+    foaf:page <http://www.addgene.org/> ;
+    void:triples "16610"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    void:uriSpace <http://purl.org/science/plasmid/addgene/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 

@@ -1,0 +1,98 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:kore-50-nif-ner-corpus a dcat:Dataset ;
+    dcat:keyword "corpus", "evaluation", "linguistic", "linguistics", "lod", "ner", "nif", "rdf", "training" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "KORE_50_NIF_NER_Corpus" ;
+    dcat:distribution [
+        dcat:mediaType "text/plain" ;
+        dct:description """
+Complete KORA-50 NIF corpus
+""" ;
+        adms:status """
+FAIL (401)
+""" ;
+        dct:title "Complete_corpus_in_turtle" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.yovisto.com/labs/ner-benchmarks/data/kore50-nif-2014-11-03.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/pdf" ;
+        dct:description """
+
+
+Title: Statistical Analyses of Named Entity Disambiguation Benchmarks
+
+Authors: Nadine Steinmetz, Magnus Knuth, and Harald Sack
+
+In: 1st Workshop on NLP&DBpedia 2013 (in conjunction with ISWC 2013), 2013
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Documentation_paper" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://ceur-ws.org/Vol-1064/Steinmetz_Statistical.pdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+KORE50 corpus, validated anf updated according to NIF 2.0 specification
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "Updated,_validated_NIF_corpus" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://ckannet-storage.commondatastorage.googleapis.com/2014-10-27T12:51:16.896Z/kore50.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+Metadata description of the corpus
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://ckannet-storage.commondatastorage.googleapis.com/2015-09-22T10:28:30.244Z/dataid.ttl> ;
+    ] ;
+    dct:description """
+KORE 50[1] (AIDA) is a subset of the larger AIDA corpus, which is based
+on the dataset of the CoNLL 2003 NER task. The dataset aims to capture hard to disambiguate mentions of entities and it contains a large number of first names referring to persons, whose identity needs to be deduced from the given context. It comprises 50 sentences from different domains, such as music, celebrities, and business and is provided in a clear TSV format.
+
+The corpus was converted to NLP Interchange Format (NIF).
+
+[1] J. Hoffart, S. Seufert, D. B. Nguyen, M. Theobald, and G. Weikum. KORE: Keyphrase overlap relatedness for entity disambiguation. In Proc. of the 21st ACM international conference on Information and knowledge management, pages 545{554. ACM, 2012
+"""@en ;
+
+    void:triples "1410"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :kore-50-nif-ner-corpus ;
+    void:triples "144"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Magnus_Knuth"^^xsd:string ;
+     foaf:mbox <mailto:magnus.knuth@hpi.uni-potsdam.de> ; 
+ .
+

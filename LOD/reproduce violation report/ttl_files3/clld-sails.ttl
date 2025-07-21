@@ -1,0 +1,68 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:clld-sails a dcat:Dataset ;
+    dcat:keyword "linguistics", "llod", "lod" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title_main "CLLD-SAILS" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle;_charset=utf-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "VoID_description" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://sails.clld.org/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/n3" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "RDF_dump" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://sails.clld.org/static/download/SAILS-dataset.n3.gz> ;
+    ] ;
+    dct:description_main """
+SAILS Online published by the CLLD project
+"""@en ;
+
+    foaf:page <http://sails.clld.org> ;
+    void:triples "564738"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:clld-glottolog a void:Linkset ;
+    void:target :clld-sails ;
+    void:triples "164"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :clld-sails ;
+    void:triples "164"^^xsd:integer ;
+ .
+
+:lexvo a void:Linkset ;
+    void:target :clld-sails ;
+    void:triples "164"^^xsd:integer ;
+ .
+

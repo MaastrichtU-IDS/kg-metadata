@@ -1,0 +1,93 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:open-energy-info-wiki a dcat:Dataset ;
+    dcat:keyword "country-usa", "deref-vocab", "energy", "format-rdf", "government", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "published-by-producer", "smw", "wiki" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "OpenEIOpen_Energy_Info" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "application/xml;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Link to an example data item
+""" ;
+        dcat:accessURL_exampleResource <http://en.openei.org/wiki/Special:ExportRDF/National_Renewable_Energy_Laboratory> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://en.openei.org/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dct:description_main """
+### About
+
+From website:
+
+> Open Energy Info is a platform to connect the world?s energy data. It is a linked open data platform bringing together energy information to provide improved analyses, unique visualizations, and real-time access to data. OpenEI follows guidelines set by the White House?s Open Government Initiative , which is focused on transparency, collaboration, and participation. OpenEI strives to provide open access to this energy information, which will spur creativity and drive innovation in the energy sector.
+
+### Openness
+
+Project representatives confirmed [via email](http://lists.w3.org/Archives/Public/public-egov-ig/2010Mar/0008.html):
+
+> The default license for all information in OpenEI I Creative Commons Zero (http://wiki.creativecommons.org/CC0_FAQ).  You can see this documented in a notice shown in the site's editing interface for any page (e.g. http://en.openei.org/w/index.php?title=Colorado&action=edit).
+
+### Access
+
+Project representatives confirmed [via email](http://lists.w3.org/Archives/Public/public-egov-ig/2010Mar/0008.html):
+
+> As for bulk downloads of data...  We currently offer the following:
+
+>> * "Download CSV" links are present on certain pages (e.g. http://en.openei.org/wiki/Map_of_Clean_Energy_Companies)
+>> * A SPARQL endpoint for querying data (http://en.openei.org/sparql), plus a few examples of its use (http://en.openei.org/resources/)
+>> * RDF Exports of any given page via the "browse properties" link (e.g. http://en.openei.org/wiki/Special:ExportRDF/Colorado)
+
+> We realize that we could be doing more in this area, though.  A few things we're planning to do:
+
+>> * Provide a bulk download of our complete RDF (similar to how one can get complete dbpedia exports)
+>> * Provide a better way to find various datasets (and download them in various formats, such as RDF and CSV)
+>> * Provide a mechanism for submitting bulk datasets which is separate from, but complementary to, our Wiki)
+"""@en ;
+
+    foaf:page <http://en.openei.org/> ;
+    void:triples "16384698"^^xsd:integer ;
+    dcat:theme "government" ;
+    void:uriSpace <http://en.openei.org/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :open-energy-info-wiki ;
+    void:triples "52546"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :open-energy-info-wiki ;
+    void:triples "497"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "OpenEI.org"^^xsd:string ;
+     foaf:Cmbox <mailto:openei.webmaster@nrel.gov> ; 
+ .
+

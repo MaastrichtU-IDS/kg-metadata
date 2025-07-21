@@ -1,0 +1,42 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:opendatascotland-simd-education-rank a dcat:Dataset ;
+    dcat:keyword "LinkedDataCrawl2014", "crawledLinkedDataCloud2014", "dataset-level-metadata", "dump", "format-cube", "format-dcat", "format-dcterm", "format-rdf", "format-rdfs", "format-void", "government", "license-metadata", "lodcloud-diagram-2014-08-30", "provenance-metadata", "sparql" ;
+    dct:title "opendatascotland-simd-education-rank" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://data.opendatascotland.org/data/simd/education-rank/2012/S01000957> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.opendatascotland.org', port=80): Max retries exceeded with url: /data/simd/education-rank/2012/S01000957 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684300940>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dct:description """
+None
+"""@en ;
+
+    dcat:theme "government" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:statistics-data-gov-uk a void:Linkset ;
+    void:target :opendatascotland-simd-education-rank ;
+    void:triples "1"^^xsd:integer ;
+ .
+

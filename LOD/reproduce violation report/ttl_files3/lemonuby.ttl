@@ -1,0 +1,88 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:lemonuby a dcat:Dataset ;
+    dcat:keyword "english", "framenet", "german", "lemon", "lexical-resource", "llod", "lod", "lodcloud-diagram-2014-08-30", "omegawiki", "wiktionary", "wordnet" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "lemonUby" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_(WordNet,_RDF/XML)" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://lemon-model.net/lexica/uby/wn/WN_LexicalEntry_0.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+description
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Start_page" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://lemon-model.net/lexica/uby> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Example_(WordNet,_HTML)" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://lemon-model.net/lexica/uby/wn/WN_LexicalEntry_0.html> ;
+    ] ;
+    dct:description_main """
+Export of UBY to lemon format
+"""@en ;
+
+    void:triples "32916476"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:isocat a void:Linkset ;
+    void:target :lemonuby ;
+    void:triples "69"^^xsd:integer ;
+ .
+
+:olia a void:Linkset ;
+    void:target :lemonuby ;
+    void:triples "1470741"^^xsd:integer ;
+ .
+
+:vu-wordnet a void:Linkset ;
+    void:target :lemonuby ;
+    void:triples "206773"^^xsd:integer ;
+ .
+
+:w3c-wordnet a void:Linkset ;
+    void:target :lemonuby ;
+    void:triples "84416"^^xsd:integer ;
+ .
+
+:wiktionary-dbpedia-org a void:Linkset ;
+    void:target :lemonuby ;
+    void:triples "76294"^^xsd:integer ;
+ .
+

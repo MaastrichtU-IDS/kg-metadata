@@ -1,0 +1,71 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:coins-openuplabs a dcat:Dataset ;
+    dcat:keyword "country.uk", "government", "lod", "lodcloud.nolinks", "lodcloud.unconnected", "no-deref-vocab", "published-by-third-party" ;
+    dct:license <http://reference.data.gov.uk/id/open-government-licence> ;
+    dct:title_main "OpenUpLabs_COINS" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://finance.data.gov.uk/def/coins/department-code/des022> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='finance.data.gov.uk', port=80): Max retries exceeded with url: /def/coins/department-code/des022 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686daf6a0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "None" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://gov.tso.co.uk/coins/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='gov.tso.co.uk', port=80): Max retries exceeded with url: /coins/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dac0a0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf+schema" ;
+        dct:description_distribution """
+Schema
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='source.data.gov.uk', port=80): Max retries exceeded with url: /finance/coins/2010-06-14/schema (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686daf4c0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://source.data.gov.uk/finance/coins/2010-06-14/schema> ;
+    ] ;
+    dct:description_main """
+COINS – the Combined On-line Information System – is used by the Treasury to collect financial data from across the public sector to support fiscal management, the production of Parliamentary Supply Estimates and public expenditure statistics, the preparation of Whole of Government Accounts (WGA) and to meet data requirements of the Office for National Statistics (ONS). Up to nine years of data are actively maintained : five historic (or outturn) years, the current year and up to three future (or plan) years depending on the timing of the latest spending review. COINS is a consolidation system rather than an accounts application, so it does not hold details of individual financial transactions by departments.
+
+
+part of package:openuplabs
+"""@en ;
+
+    foaf:page <http://data.gov.uk/resources/coins> ;
+    void:triples "5000000"^^xsd:integer ;
+    void:uriSpace <http://finance.data.gov.uk/def/coins/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "The_Stationery_Office_Limited"^^xsd:string ;
+     foaf:Cmbox <mailto:customer.services@tso.co.uk> ; 
+ .
+

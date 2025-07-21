@@ -1,0 +1,69 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:AntiqueCarsCollection a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://linkedcars.mywebcommunity.org/Main.html> ;
+    void:triples "504"^^xsd:integer ;
+    dcat:distribution [
+        dct:identifier_distribution "3ccf2dee-612b-0cae-aa4b-28d6648190e7" ;
+        dct:title_distribution "LinkedCars.json" ;
+        dct:description_distribution """
+JSON-LD encoding of antique cars collection (Linked Cars)
+""" ;
+        dcat:mediaType_distribution "application/ld+json" ;
+        dcat:downloadURL_distribution <http://linkedcars.mywebcommunity.org/LinkedCars.json> ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:keyword "Linked_Data", "Antique_Cars", "Cars", "Web_Components", "JSON-LD", "Car_Collection" ;
+    dct:description_main """
+This dataset concerns a collection of 21 antique cars owned by different organizations around the world. It has been used in a proof-of-concept Semantic Web application (demonstrating Web components and JSON-LD data).
+Created by Markopoulos Athanasios, student of the University of the Aegean, Dept. of Cultural Technology and Communication, 2021 (as part of his graduate thesis).
+"""@en ;
+
+    dct:title_main "Antique_Cars_Collection_(Linked_Cars)" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dcat:theme "user_generated" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] ;
+    foaf:depiction <https://ibb.co/9VMcqG0> .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:wikidata a void:Linkset ;
+    void:target :AntiqueCarsCollection ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :AntiqueCarsCollection ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:auiop664@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Kotis_Konstantinos"^^xsd:string ;
+     foaf:Cmbox <mailto:kotis@aegean.gr> ; 
+ .
+

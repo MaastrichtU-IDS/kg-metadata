@@ -1,0 +1,94 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:linked-hypernyms a dcat:Dataset ;
+    dcat:keyword "ldl-2014", "lexical-resources", "linguistics", "llod", "lod" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "linked_hypernyms" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Dutch_instances" ;
+        dct:mirror "['ipfs:QmW6FKKkZByZqo4eZ9dksdEFK2SEeNArWAbgCB8pdMuHRs']" ;
+        dcat:downloadURL <http://ner.vse.cz/datasets/linkedhypernyms/nl.instances.all.nt.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "English_instances" ;
+        dct:mirror "['ipfs:QmTp26SoCKiPBUyYquNr9Vndtsqyjg5tSupS6TgQZqmt5b']" ;
+        dcat:downloadURL <http://ner.vse.cz/datasets/linkedhypernyms/en.instances.all.nt.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "German_instances" ;
+        dct:mirror "['ipfs:QmQ5umYnwwMb24JBhXsS99ZBnry1WFWcdhK6YyBtCSDiuh']" ;
+        dcat:downloadURL <http://ner.vse.cz/datasets/linkedhypernyms/de.instances.all.nt.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Description" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://ner.vse.cz/datasets/linkedhypernyms/> ;
+    ] ;
+    dct:description """
+This Linked Hypernym dataset attaches entity articles in English, German and Dutch Wikipedia with a DBpedia resource or a DBpedia ontology concept as their type. The types are hypernyms mined from articles' free text using hand-crafted lexicosyntactic patterns.
+
+The dataset contains 2.8 million entity-type assignments, out of which nearly 2.5 million are novel with respect to DBpedia and 2 million w.r.t. Yago 2s and DBpedia.
+"""@en ;
+
+    void:triples "73000000"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :linked-hypernyms ;
+    void:triples "0"^^xsd:integer ;
+ .
+
+:yago a void:Linkset ;
+    void:target :linked-hypernyms ;
+    void:triples "0"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Tomas_Kliegr,_Milan_Dojchinovski"^^xsd:string ;
+     foaf:mbox <mailto:http://ner.vse.cz/d@asets/linkedhypernyms/contact/> ; 
+ .
+

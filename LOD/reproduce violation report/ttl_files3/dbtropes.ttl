@@ -1,0 +1,73 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:dbtropes a dcat:Dataset ;
+    dcat:keyword "book", "deref-vocab", "fiction", "format-rdf", "format-rdfs", "license-metadata", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "media", "movie", "provenance-metadata", "published-by-third-party", "trope" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "DBTropes" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+DBTropes dump as NTRIPLES ZIP file
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='dbtropes.org', port=80): Max retries exceeded with url: /static/dbtropes.zip (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fd390>: Failed to establish a new connection: [Errno 113] No route to host')))
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:downloadURL_distribution <http://dbtropes.org/static/dbtropes.zip> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+RDF/XML example link
+""" ;
+        dcat:accessURL_exampleResource <http://dbtropes.org/resource/Main/TheMatrix> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='dbtropes.org', port=80): Max retries exceeded with url: /resource/Main/TheMatrix (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fc460>: Failed to establish a new connection: [Errno 113] No route to host')))
+""" ;
+    ] ;
+    dct:description_main """
+DBTropes.org is a Linked Data wrapper for the TVTropes.org community wiki. It contains descriptions of numerous movies, books, and other items, and associates these with tropes (writing devices and conventions).
+"""@en ;
+
+    foaf:page <http://dbtropes.org/> ;
+    void:triples "8000000"^^xsd:integer ;
+    dcat:theme "media" ;
+    void:uriSpace <http://dbtropes.org/resource/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :dbtropes ;
+    void:triples "6000"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :dbtropes ;
+    void:triples "800"^^xsd:integer ;
+ .
+
+:linkedmdb a void:Linkset ;
+    void:target :dbtropes ;
+    void:triples "400"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "TVTropes.org_community"^^xsd:string ;
+ .
+

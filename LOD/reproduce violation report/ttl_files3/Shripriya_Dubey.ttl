@@ -1,0 +1,43 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Shripriya_Dubey a dcat:Dataset ;
+    foaf:depiction <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-30> ;
+    foaf:page <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-30> ;
+    dct:license <http://www.opendefinition.org/licenses/odc-odbl> ;
+    dct:title_main "Person" ;
+    dct:description_main """
+An ontology showing ah hierarchy of persons in a university and subjects. It specifies a relationship between teachers and subjects and students and subjects.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    dcat:theme "publications" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:amanijy01@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Shripriya_Dubey"^^xsd:string ;
+     foaf:Cmbox <mailto:shriya2021@gmail.com> ; 
+ .
+

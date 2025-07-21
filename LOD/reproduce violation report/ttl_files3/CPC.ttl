@@ -1,0 +1,85 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:CPC a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_endpoint_for_the_CPC" ;
+        dct:identifier_sparqlEndpoint "f2a81708-8180-47bf-f48c-f3db55ad33c5" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL form is available in https://data.epo.org/linked-data/sparql.html
+""" ;
+        dcat:accessURL_sparqlEndpoint <https://data.epo.org/linked-data/query> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html" ;
+        dct:description_distribution """
+Always the newest version of the CPC is available for download. There are about 3-5 new versions / year.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Download_of_the_CPC" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "f527526a-458e-ef72-3634-f14302568d0c" ;
+        dcat:downloadURL_distribution <https://data.epo.org/linked-data/download/> ;
+    ] ;
+    foaf:page <https://www.epo.org/linked-data/> ;
+    dcat:keyword "Patent_Classification", "CPC", "Cooperative_Patent_Classification", "IPC", "International_Patent_Classification" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Cooperative_Patent_Classification" ;
+    dct:description_main """
+This data set contains the Cooperative Patent Classification scheme. It is a hierarchical ontology with skos:narrower and skos:broader relations between its about 250 000 nodes (aka "CPC symbols") covering the complete technical domain. It is a refinement of the older International Patent Classification (IPC). CPC is used by major patent offices to classify patent documents.
+For more details see https://www.cooperativepatentclassification.org/
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <http://data.epo.org/linked-data/def/cpc/> ;
+    void:triples "3450000"^^xsd:integer ;
+    dcat:theme "government" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_of_CPC_symbol_in_ttl" ;
+        dct:description_exampleResource """
+CPC symbol "C21B 13/0046"
+""" ;
+        dcat:accessURL_exampleResource <https://data.epo.org/linked-data/def/cpc/C21B13-0046.ttl> ;
+        adms:status_exampleResource """
+FAIL (400)
+""" ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:European_Patent_Information a void:Linkset ;
+    void:target :CPC ;
+    void:triples "177000"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:mkracker@epo.org> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Martin_Kracker_/_European_Patent_Office"^^xsd:string ;
+     foaf:Cmbox <mailto:mkracker@epo.org> ; 
+ .
+

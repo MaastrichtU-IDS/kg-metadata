@@ -1,0 +1,95 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:european-election-results a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "eu", "eu-institution", "europe", "european_parliament", "format-qb", "format-rdfs", "format-skos", "geographic", "government", "latc", "license-metadata", "linkeddata", "lod", "lodcloud", "provenance-metadata", "published-by-third-party", "rdf" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "European_Election_Results" ;
+    void:exampleResource [
+        dct:title "Netherlands" ;
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+example resource
+""" ;
+        dcat:accessURL <http://elections.publicdata.eu/data/country/nl> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "example_election_result_observation" ;
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Example Resource
+""" ;
+        dcat:accessURL <http://elections.publicdata.eu/data/2009/national_parties/observation/7> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Europe_of_Freedom_and_Democracy_Group" ;
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Example Resource
+""" ;
+        dcat:accessURL <http://elections.publicdata.eu/data/political_group/efd> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://api.talis.com/stores/elections/services/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='api.talis.com', port=80): Max retries exceeded with url: /stores/elections/services/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dacb50>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "voiD_Description" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://elections.publicdata.eu/void.ttl> ;
+    ] ;
+    dct:description """
+EU Election Results from 2009.
+"""@en ;
+
+    foaf:page <http://elections.publicdata.eu> ;
+    void:triples "3165"^^xsd:integer ;
+    void:uriSpace <http://elections.publicdata.eu/data/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:eurostat-linked-data a void:Linkset ;
+    void:target :european-election-results ;
+    void:triples "27"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Tim_Hodson"^^xsd:string ;
+     foaf:mbox <mailto:tim.hodson@kasabi.com> ; 
+ .
+

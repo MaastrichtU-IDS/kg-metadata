@@ -1,0 +1,93 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ufo a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title "Sparql_endpoint_(RDF4J)_for_the_current_version_of_UFO" ;
+        dct:identifier "0fa1b712-0fc3-ee96-bff8-116eac5b14c2" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://onto.fel.cvut.cz/rdf4j-server/repositories/ufo-current> ;
+        adms:status """
+FAIL (400)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/xml" ;
+        dct:description """
+
+""" ;
+        dcat:downloadURL <http://onto.fel.cvut.cz/ontologies/ufo> ;
+        adms:status """
+OK
+""" ;
+        dct:title "Ontology_(OWL)TTL" ;
+        dct:mirror "[]" ;
+        dct:identifier "53dc1f95-436f-a8d8-175a-f6b7d222578c" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/xml" ;
+        dct:description """
+
+""" ;
+        dcat:downloadURL <http://onto.fel.cvut.cz/ontologies/ufo> ;
+        adms:status """
+OK
+""" ;
+        dct:title "Ontology_(OWL)RDF" ;
+        dct:mirror "[]" ;
+        dct:identifier "87008de2-96c0-6f78-cf9f-e2ddfcdd9f61" ;
+    ] ;
+    foaf:page <http://onto.fel.cvut.cz/ontologies/ufo/current/index-en.html> ;
+    dcat:keyword "Unified_Foundational_Ontology", "UFO", "OntoUML" ;
+    dct:license <https://creativecommons.org/licenses/by-sa/3.0/> ;
+    dct:title "Unified_Foundational_Ontology" ;
+    dct:description """
+This dataset contains Unified Foundational Ontology (UFO), a top-level ontology biased towards conceptual modeling support.  The ontology is represented in OWL.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <http://onto.fel.cvut.cz/ontologies/ufo/> ;
+    void:triples "1000"^^xsd:integer ;
+    dcat:theme "cross_domain" ;
+    void:exampleResource [
+        dct:title "KindAn_example_of_a_UFO_vocabulary_term." ;
+        dct:description """
+Kind denotes a UFO type which is a rigid sortal providing the principle of identity for its instances.
+""" ;
+        dcat:accessURL <http://onto.fel.cvut.cz/ontologies/ufo/kind> ;
+        adms:status """
+FAIL (500)
+""" ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:name "Petr_Křemen"^^xsd:string ;
+     foaf:mbox <mailto:petr.kremen@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Petr_Křemen"^^xsd:string ;
+     foaf:mbox <mailto:petr.kremen@fel.cvut.cz> ; 
+ .
+

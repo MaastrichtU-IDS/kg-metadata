@@ -1,0 +1,107 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:statusnet-1w6-org a dcat:Dataset ;
+    dcat:keyword "LinkedDataCrawl2014", "crawledLinkedDataCloud2014", "format-foaf", "format-pos", "format-rdf", "format-rdfs", "format-sioc", "lodcloud-diagram-2014-08-30", "social_web" ;
+    dct:title "statusnet-1w6-org" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://sn.1w6.org/drak/foaf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dct:description """
+StatusNet instance hosted at http://1w6.org
+"""@en ;
+
+    dcat:theme "social_networking" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames-semantic-web a void:Linkset ;
+    void:target :statusnet-1w6-org ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:personal-homepages a void:Linkset ;
+    void:target :statusnet-1w6-org ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:statusnet-bka-li a void:Linkset ;
+    void:target :statusnet-1w6-org ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-fcac-com a void:Linkset ;
+    void:target :statusnet-1w6-org ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-fragdev-com a void:Linkset ;
+    void:target :statusnet-1w6-org ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:statusnet-jonkman-ca a void:Linkset ;
+    void:target :statusnet-1w6-org ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-kaimi-cc a void:Linkset ;
+    void:target :statusnet-1w6-org ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-mrblog-nl a void:Linkset ;
+    void:target :statusnet-1w6-org ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-opensim-chat-eu a void:Linkset ;
+    void:target :statusnet-1w6-org ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-quitter-se a void:Linkset ;
+    void:target :statusnet-1w6-org ;
+    void:triples "54"^^xsd:integer ;
+ .
+
+:statusnet-russwurm-org a void:Linkset ;
+    void:target :statusnet-1w6-org ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-skilledtests-com a void:Linkset ;
+    void:target :statusnet-1w6-org ;
+    void:triples "6"^^xsd:integer ;
+ .
+
+:statusnet-somsants-net a void:Linkset ;
+    void:target :statusnet-1w6-org ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:statusnet-thelovebug-org a void:Linkset ;
+    void:target :statusnet-1w6-org ;
+    void:triples "4"^^xsd:integer ;
+ .
+

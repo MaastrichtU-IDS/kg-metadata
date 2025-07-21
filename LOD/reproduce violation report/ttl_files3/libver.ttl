@@ -1,0 +1,115 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:libver a dcat:Dataset ;
+    dcat:keyword "bibliographic", "format-rdf", "format-rdfs", "lld", "lod", "media", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "publications", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "Public_Library_of_Veroia" ;
+    void:exampleResource [
+        dct:title_exampleResource "Link_to_an_example_data_item_within_the_dataset_(RDF/XML)" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://libver.math.auth.gr/data/agent3911.rdf> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='libver.math.auth.gr', port=80): Max retries exceeded with url: /data/agent3911.rdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dac730>, 'Connection to libver.math.auth.gr timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Link_to_an_example_data_item_within_the_dataset_(RDFa)" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Link to an example data item within the dataset (RDFa)
+The actual URI is http://libver.math.auth.gr/resource/agent3911, which redirect via 303 to http://libver.math.auth.gr/page/agent3911
+""" ;
+        dcat:accessURL_exampleResource <http://libver.math.auth.gr/page/agent3911> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='libver.math.auth.gr', port=80): Max retries exceeded with url: /page/agent3911 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dacb80>, 'Connection to libver.math.auth.gr timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+The sparql endpoint of Public Library of Veroia 
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://libver.math.auth.gr/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='libver.math.auth.gr', port=80): Max retries exceeded with url: /sparql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dacd00>, 'Connection to libver.math.auth.gr timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "api/search" ;
+        dct:description_distribution """
+You can search the entire dataset through the Virtuoso Faceted Search application. You can try the free text search or an entity lookup.
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='libver.math.auth.gr', port=80): Max retries exceeded with url: /fct (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dacd90>, 'Connection to libver.math.auth.gr timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "Virtuoso_Faceted_Search" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://libver.math.auth.gr/fct> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+RDF/XML file of a Book.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "2012-09-06T043619/record1_10.rdf" ;
+        dct:mirror_distribution "['ipfs:Qmb1CBEvtQLkfEkCgeXZrSTrd7P7mvGmDziJXMcTXC2Cda']" ;
+        dcat:accessURL_distribution <https://commondatastorage.googleapis.com/ckannet-storage/2012-09-06T043619/record1_10.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "2012-09-25T143058/void.ttl" ;
+        dct:mirror_distribution "['ipfs:QmQWq7zAJ5vgtYXNb85PnEmHzipuQQsf6U1DNi2g1sDzhv']" ;
+        dcat:accessURL_distribution <https://commondatastorage.googleapis.com/ckannet-storage/2012-09-25T143058/void.ttl> ;
+    ] ;
+    dct:description_main """
+Public Library of Veroia Linked Open Data Project. This is the first effort of a Greek Library to expose it's Bibliographic Data as Linked Open Data.
+"""@en ;
+
+    foaf:page <http://libver.math.auth.gr> ;
+    void:triples "1285417"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://libver.math.auth.gr/resource> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :libver ;
+    void:triples "2915"^^xsd:integer ;
+ .
+
+:dbpedia-el a void:Linkset ;
+    void:target :libver ;
+    void:triples "4197"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Sotiris_Karampatakis"^^xsd:string ;
+     foaf:Cmbox <mailto:s.karamp@akis@gmail.com> ; 
+ .
+

@@ -1,0 +1,56 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:http___data_linkedeodata_eu_road_id_StateRoadD010Turkey-1 a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType_distribution ".." ;
+        dct:description_distribution """
+
+""" ;
+        dcat:downloadURL_distribution <http://data.linkedeodata.eu/road/id/StateRoadD010Turkey-1> ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "RoadTrb" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "ad6f4c6a-afe6-dc67-2f30-4527cb5761f3" ;
+    ] ;
+    foaf:page <http://data.linkedeodata.eu/road/id/StateRoadD010Turkey-1> ;
+    dct:license <http://www.opendefinition.org/licenses/odc-odbl> ;
+    dct:title_main "RoadTrb" ;
+    dct:description_main """
+Road
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    dcat:theme "geography" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:Oname "Deniztan_Ulutaş"^^xsd:string ;
+     foaf:Ombox <mailto:dulutas.21@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname ".."^^xsd:string ;
+     foaf:Cmbox <mailto:d@gmail.com> ; 
+ .
+

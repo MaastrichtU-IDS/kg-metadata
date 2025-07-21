@@ -1,0 +1,133 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:rkb-explorer-jisc a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-dc", "format-rdf", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-vocab-mappings", "provenance-metadata", "publications", "published-by-third-party", "void-sparql-endpoint" ;
+    dct:title_main "UK_JISC_(RKBExplorer)" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://jisc.rkbexplorer.com/id/project-1355> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='jisc.rkbexplorer.com', port=80): Max retries exceeded with url: /id/project-1355 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fece0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://jisc.rkbexplorer.com/id/project-1355> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='jisc.rkbexplorer.com', port=80): Max retries exceeded with url: /id/project-1355 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fcb80>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://jisc.rkbexplorer.com/sparql/> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='jisc.rkbexplorer.com', port=80): Max retries exceeded with url: /sparql/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fce50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/xml" ;
+        dct:description_distribution """
+XML Sitemap
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='jisc.rkbexplorer.com', port=80): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fce50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://jisc.rkbexplorer.com/sitemap.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD file
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "['ipfs:QmahbivYhneFUBATjLkKyXsU1kVzNx4VcrVdp5ZsdDQPiJ']" ;
+        dcat:accessURL_distribution <http://jisc.rkbexplorer.com/models/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-gzip" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='jisc.rkbexplorer.com', port=80): Max retries exceeded with url: /models/dump.tgz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fe1a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title_distribution "Download_(tar_gzip_of_RDF)" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://jisc.rkbexplorer.com/models/dump.tgz> ;
+    ] ;
+    dct:description_main """
+
+"""@en ;
+
+    foaf:page <http://jisc.rkbexplorer.com> ;
+    void:triples "64672"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://jisc.rkbexplorer.com/id/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:rkb-explorer-cordis a void:Linkset ;
+    void:target :rkb-explorer-jisc ;
+    void:triples "82"^^xsd:integer ;
+ .
+
+:rkb-explorer-dotac a void:Linkset ;
+    void:target :rkb-explorer-jisc ;
+    void:triples "1231"^^xsd:integer ;
+ .
+
+:rkb-explorer-eprints a void:Linkset ;
+    void:target :rkb-explorer-jisc ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-kisti a void:Linkset ;
+    void:target :rkb-explorer-jisc ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-risks a void:Linkset ;
+    void:target :rkb-explorer-jisc ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-southampton a void:Linkset ;
+    void:target :rkb-explorer-jisc ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Hugh_Glaser"^^xsd:string ;
+     foaf:Cmbox <mailto:hg@ecs.soton.ac.uk> ; 
+ .
+

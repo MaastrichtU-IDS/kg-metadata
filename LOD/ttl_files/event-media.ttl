@@ -1,0 +1,173 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:event-media a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "events", "format-dc", "format-foaf", "format-lode", "format-ma", "format-rdf", "format-sioc", "lod", "media", "no-license-metadata", "provenance-metadata", "published-by-third-party", "usergeneratedcontent", "vocab-mappings" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "EventMedia" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+sameAs linkset for artists
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://www.eurecom.fr/~troncy/ic2011/Artists_sameAs.nt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+sameAs linkset for venues
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://www.eurecom.fr/~troncy/ic2011/Venues_sameAs.nt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+sameAs linkset for events
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://www.eurecom.fr/~troncy/ic2011/Events_sameAs.nt> ;
+    ] ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "text/turtle;_charset=UTF-8" ;
+        dct:description """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL <http://data.linkedevents.org/agent/0a5a771a-5410-4c15-b695-b8059616e52f> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL endpoint 
+""" ;
+        dcat:accessURL <http://eventmedia.eurecom.fr/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+LODE ontology
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:Qmdjg8ZdN9ChD8q3iYKsqkBL5dZo8B2HDRwR8wLt1HuN48']" ;
+        dcat:accessURL <http://linkedevents.org/ontology/2010-10-07/rdfxml/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "mapping/OWL" ;
+        dct:description """
+LODE ontology including vocab mappings
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:Qmdjg8ZdN9ChD8q3iYKsqkBL5dZo8B2HDRwR8wLt1HuN48']" ;
+        dcat:accessURL <http://linkedevents.org/ontology/2010-10-07/rdfxml/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "mapping/OWL" ;
+        dct:description """
+W3C Ontology for Media Resources 1.0
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmXsSWzvXKDaDupBoCC9dA44NLLefKLBs4qG45g4pyit4d']" ;
+        dcat:accessURL <http://www.w3.org/ns/ma-ont> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=ISO-8859-1" ;
+        dct:description """
+Dump for events and media (in zip archive)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.eurecom.fr/~troncy/ldtc2010/> ;
+    ] ;
+    dct:description """
+This dataset is composed of events and media descriptions associated with these events. It is obtained from three large public event directories (last.fm, eventful and upcoming) represented with the LODE ontology and from large media directories (flickr, youtube) represented with the W3C Media Ontology. It is interlinked with the larger Linked Open Data cloud and in particular with DBpedia, Freebase, Geonames. It also contains links to numerous related web pages, including MusicBrainz, Geonames, Last.fm, Eventful, Upcoming and Foursquare.
+
+
+"""@en ;
+
+    foaf:page <http://eventmedia.eurecom.fr/> ;
+    void:triples "36274454"^^xsd:integer ;
+    dcat:theme "media" ;
+    void:uriSpace <http://data.linkedevents.org/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :event-media ;
+    void:triples "15420"^^xsd:integer ;
+ .
+
+:dbtune-musicbrainz a void:Linkset ;
+    void:target :event-media ;
+    void:triples "42889"^^xsd:integer ;
+ .
+
+:flickr-wrappr a void:Linkset ;
+    void:target :event-media ;
+    void:triples "14000000"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :event-media ;
+    void:triples "955"^^xsd:integer ;
+ .
+
+:nytimes-linked-open-data a void:Linkset ;
+    void:target :event-media ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:uberblic a void:Linkset ;
+    void:target :event-media ;
+    void:triples "40498"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Raphael_Troncy"^^xsd:string ;
+     foaf:mbox <mailto:raphael.troncy@eurecom.fr> ; 
+ .
+

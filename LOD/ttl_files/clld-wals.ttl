@@ -1,0 +1,68 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:clld-wals a dcat:Dataset ;
+    dcat:keyword "linguistics", "llod", "lod" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "CLLD-WALS" ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle;_charset=utf-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "VoID_description" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://wals.info/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/n3" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "RDF_dump" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://wals.info/static/download/wals-dataset.n3.gz> ;
+    ] ;
+    dct:description """
+WALS Online published by the CLLD project
+"""@en ;
+
+    foaf:page <http://wals.info> ;
+    void:triples "1478985"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :clld-wals ;
+    void:triples "2621"^^xsd:integer ;
+ .
+
+:geonames a void:Linkset ;
+    void:target :clld-wals ;
+    void:triples "3044"^^xsd:integer ;
+ .
+
+:lexvo a void:Linkset ;
+    void:target :clld-wals ;
+    void:triples "2621"^^xsd:integer ;
+ .
+

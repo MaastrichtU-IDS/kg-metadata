@@ -1,0 +1,60 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:sandre a dcat:Dataset ;
+    foaf:depiction <http://www.sandre.eaufrance.fr/atlas/images/logos/f3e84019-82cb-43fd-aed9-086370fe9e9f.png?1524844428125> ;
+    dcat:keyword "taxon", "taxonomy", "water", "france" ;
+    dct:license <https://creativecommons.org/licenses/by-nc-sa/2.0/fr/> ;
+    dct:title_main "Taxons_" ;
+    dcat:distribution [
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+FAIL (Invalid URL '': No schema supplied. Perhaps you meant http://?)
+""" ;
+    ] ;
+    void:exampleResource [
+        dcat:mediaType_exampleResource "application/xml" ;
+        dcat:accessURL_exampleResource <http://id.eaufrance.fr/apt/3944.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dcat:accessURL_sparqlEndpoint <http://id.eaufrance.fr/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dct:description_main """
+Taxons of the French Water Information System (SIE)
+"""@en ;
+
+    foaf:page <http://sandre.eaufrance.fr/> ;
+    void:triples "104907"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :sandre ;
+    void:triples "1982"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Louis_Crespin"^^xsd:string ;
+     foaf:Cmbox <mailto:l.crespin@oieau.fr> ; 
+ .
+

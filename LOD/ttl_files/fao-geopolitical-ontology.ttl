@@ -1,0 +1,144 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:fao-geopolitical-ontology a dcat:Dataset ;
+    dcat:keyword "access-web", "agrovoc", "arabic", "borders", "change", "chinese", "code", "country", "country-netherlands", "crossdomain", "dbpedia", "deref-vocab", "english", "fao", "faostat", "format-dc", "format-owl", "french", "geographic", "geopolitical", "government", "group", "historical", "id", "information", "iso2", "iso3", "italian", "llod", "lod", "lod.fao.geopolitical", "lodcloud-diagram-2011", "lodcloud-diagram-2014", "lodcloud-diagram-2014-08-30", "lodcloud.nolinks", "lodcloud.unconnected", "memberships", "names", "no-license-metadata", "ontology", "owl", "profiles", "provenance-metadata", "published-by-producer", "rdf", "russian", "schemata", "services", "spanish", "track", "un", "vocab-mappings" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "FAO_geopolitical_ontology" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+RDF/XML link to an example data item (country) 
+""" ;
+        dcat:accessURL <http://www.fao.org/countryprofiles/geoinfo/geopolitical/data/self_governing> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+HTML+RDFa link to an example data item (country)
+""" ;
+        dcat:accessURL <http://www.fao.org/countryprofiles/geoinfo/geopolitical/page/self_governing> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Overview of all resources
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+RDF dump download
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmbTufDUtrHo6fkxzjBCGrSLFwNfAAFpS4EWZpfZjTxgN4']" ;
+        dcat:accessURL <http://www.fao.org/countryprofiles/geoinfo/geopolitical/data> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+OWL download
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmQZMjnDL5WwWHddFHNQt9tXnrg2MrKVdnZ2HdSkdR1mrL']" ;
+        dcat:accessURL <http://aims.fao.org/aos/geopolitical.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "XML" ;
+        dct:description """
+Overview of Web Services
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmYcT5PdPVvu26kwd6aova2pFP3hcBsL7LStCJqwh6WDtZ']" ;
+        dcat:accessURL <http://www.fao.org/countryprofiles/webservices.asp> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Application to download RDF/XML/CSV
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.fao.org/countryprofiles/geoinfo/modulemaker/index.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle;_charset=utf-8" ;
+        dct:description """
+Vocabulary Mappings
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.w3.org/2002/07/owl#sameAs> ;
+    ] ;
+    dct:description """
+The FAO geopolitical ontology provides a master reference for geopolitical information, as it manages names in multiple languages (English, French, Spanish, Arabic, Chinese, Russian and Italian); maps standard coding systems (UN, ISO, FAOSTAT, AGROVOC, DBPedia, etc); provides relations among territories (land borders, group membership, etc); and tracks historical changes.
+
+The ontology contains <br>
+*number of triples : 22495 triples  <br>
+*links to other data sets: 195 links to DBPEDIA <br>
+
+
+The Food and Agriculture Organization of the United Nations (FAO) leads international efforts to defeat hunger and serves as a knowledge network.
+
+
+"""@en ;
+
+    foaf:page <http://www.fao.org/countryprofiles/geoinfo.asp?lang=en> ;
+    void:triples "22495"^^xsd:integer ;
+    dcat:theme "geography" ;
+    void:uriSpace <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :fao-geopolitical-ontology ;
+    void:triples "195"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "FAO_Country_profiles"^^xsd:string ;
+     foaf:mbox <mailto:FAO-country-profiles@fao.org> ; 
+ .
+

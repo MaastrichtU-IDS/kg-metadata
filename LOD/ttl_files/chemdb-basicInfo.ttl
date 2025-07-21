@@ -1,0 +1,70 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:chemdb-basicInfo a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://semweb.csdb.cn/> ;
+    void:triples "6586615"^^xsd:integer ;
+    dcat:keyword "compound", "chemical_identifier", "chemical_basic_information", "thermochemical_properties", "phase_change", "estimated_properties", "physicochemical_properties", "LCS", "GC" ;
+    dct:description """
+This dataset collects information on the commonly used chemical identifiers (e.g. CAS-RN, SMILES, InChIKey, et. al.) and basic information (e.g. Name, Formulas, et. al.) of compounds and on the thermochemical properties and basic physicochemical properties of compounds at gaseous state and condensed state, including heat capacity, standard entropy and standard enthalpy, et. al.This dataset also collects information on the entropy, enthalpy, temperature, pressure,et. al. that associated with phase change of compounds.And critical properties for compounds are also collected. And this dataset collects information on the estimated properties of compounds, including ALogP,ALogP_MR, Minimized_Energy,et. al. via the law of corresponding states (LCS), the method of group contributions (GC), and the like.
+"""@en ;
+
+    dct:title "chemdb__dataset" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dcat:theme "life_sciences" ;
+    void:sparqlEndpoint [
+        dct:identifier "47e38590-9136-77c9-9f5f-43bd814816e2" ;
+        dct:title "chemdb-basicInfo_SPARQL_endpoint" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://chemdb.semweb.csdb.cn/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-cheminf a void:Linkset ;
+    void:target :chemdb-basicInfo ;
+    void:triples "1937240"^^xsd:integer ;
+ .
+
+:bioportal-sio a void:Linkset ;
+    void:target :chemdb-basicInfo ;
+    void:triples "3874479"^^xsd:integer ;
+ .
+
+:bioportal-chebi a void:Linkset ;
+    void:target :chemdb-basicInfo ;
+    void:triples "387448"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:hfsophie123@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "赵月红"^^xsd:string ;
+     foaf:mbox <mailto:yhzhao@ipe.ac.cn> ; 
+ .
+

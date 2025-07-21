@@ -1,0 +1,142 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:uis-linked-data a dcat:Dataset ;
+    dcat:keyword "UN", "communication", "country-codes", "demographics", "economic", "economics", "education", "europe", "films", "format-dcterms", "format-prov", "format-qb", "format-rdf", "format-sdmx", "format-skos", "government", "heritage", "indicators", "international", "license-metadata", "linked-data", "lod", "lodcloud", "lodcloud.candidate", "no-proprietary-vocab", "projects", "provenance-metadata", "published-by-third-", "published-by-third-party", "science_and_technology", "statistics", "united_nations", "vocab-mappings", "void-sparql-endpoint", "world" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "UNESCO_Institute_for_Statistics_(UIS)_Linked_Data" ;
+    void:exampleResource [
+        dct:title "Example_RDF/XML" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example RDF/XML of a dataset which contains statistical observations. 
+""" ;
+        dcat:accessURL <http://uis.270a.info/dataset/CUL_DS> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='uis.270a.info', port=80): Max retries exceeded with url: /dataset/CUL_DS (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686aefa00>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://uis.270a.info/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='uis.270a.info', port=80): Max retries exceeded with url: /sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686aeff70>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+A VoID Description of the imf.270a.info dataset
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='uis.270a.info', port=80): Max retries exceeded with url: /.well-known/void (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686aef130>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "VoID" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://uis.270a.info/.well-known/void> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+UIS Datasets which contain the statistical observations
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='uis.270a.info', port=80): Max retries exceeded with url: /data/data.tar.gz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686aeee90>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "UIS_Datasets" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://uis.270a.info/data/data.tar.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='uis.270a.info', port=80): Max retries exceeded with url: /data/meta.tar.gz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686aefa00>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "RDF_Schema" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://uis.270a.info/data/meta.tar.gz> ;
+    ] ;
+    dct:description """
+UIS  data and metadata
+"""@en ;
+
+    void:triples "10400000"^^xsd:integer ;
+    dcat:theme "government" ;
+    void:uriSpace <http://uis.270a.info/dataset/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bfs-linked-data a void:Linkset ;
+    void:target :uis-linked-data ;
+    void:triples "849"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :uis-linked-data ;
+    void:triples "964"^^xsd:integer ;
+ .
+
+:ecb-linked-data a void:Linkset ;
+    void:target :uis-linked-data ;
+    void:triples "855"^^xsd:integer ;
+ .
+
+:fao-linked-data a void:Linkset ;
+    void:target :uis-linked-data ;
+    void:triples "825"^^xsd:integer ;
+ .
+
+:frb-linked-data a void:Linkset ;
+    void:target :uis-linked-data ;
+    void:triples "800"^^xsd:integer ;
+ .
+
+:imf-linked-data a void:Linkset ;
+    void:target :uis-linked-data ;
+    void:triples "119"^^xsd:integer ;
+ .
+
+:oecd-linked-data a void:Linkset ;
+    void:target :uis-linked-data ;
+    void:triples "17337"^^xsd:integer ;
+ .
+
+:the-eurostat-linked-data a void:Linkset ;
+    void:target :uis-linked-data ;
+    void:triples "964"^^xsd:integer ;
+ .
+
+:transparency-linked-data a void:Linkset ;
+    void:target :uis-linked-data ;
+    void:triples "854"^^xsd:integer ;
+ .
+
+:world-bank-linked-data a void:Linkset ;
+    void:target :uis-linked-data ;
+    void:triples "964"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Sarven_Capadisli"^^xsd:string ;
+     foaf:mbox <mailto:info@csarven.ca> ; 
+ .
+

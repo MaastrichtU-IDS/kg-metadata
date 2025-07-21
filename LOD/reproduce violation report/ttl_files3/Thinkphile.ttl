@@ -1,0 +1,50 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Thinkphile a dcat:Dataset ;
+    void:triples "2"^^xsd:integer ;
+    dcat:keyword "Publisher", "blog", "blogger", "content", "news", "media_website", "website", "news_and_media" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "ThinkPhile_(Publisher_|_Blog_,_Content_,News_,_and_Media_Website)" ;
+    dct:description_main """
+ThinkPhilecom is an online publishing Blog ,Content ,News and Media Platform . Helping you realize BIG things for your blog & side-hustle! Served with a complimentary side of snark and a smile.��
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://www.thinkphile.com> ;
+    foaf:depiction <https://ibb.co/mS5RbJG> ;
+    dcat:theme "media" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:SocialLink a void:Linkset ;
+    void:target :Thinkphile ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:thinksphile@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "thinkphile"^^xsd:string ;
+     foaf:Cmbox <mailto:contact@thinkphile.com> ; 
+ .
+

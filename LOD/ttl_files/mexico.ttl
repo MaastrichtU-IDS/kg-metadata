@@ -1,0 +1,77 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:mexico a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-dc", "format-foaf", "format-owl", "format-prov", "format-rdf", "format-xsd", "general_ontology_of_linguistic_description", "linguistics", "lod", "published-by-producer", "rdf", "schemata" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "MExiCo" ;
+    void:exampleResource [
+        dct:title "MExiCo_corpus_example" ;
+        dcat:mediaType "example/turtle" ;
+        dct:description """
+Example of a corpus modelled in MExiCo using RDF
+""" ;
+        dcat:accessURL <http://data.sfb673.org/mexico/mexico-example.ttl> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.sfb673.org', port=80): Max retries exceeded with url: /mexico/mexico-example.ttl (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686db53f0>, 'Connection to data.sfb673.org timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+RDF representation of the central classes and relations of the MExiCo data model.
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.sfb673.org', port=80): Max retries exceeded with url: /mexico/mexico-1.0.ttl (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686db5ff0>, 'Connection to data.sfb673.org timed out. (connect timeout=30)')))
+""" ;
+        dct:title "MExiCo_data_model,_RDF_(Turtle)_representation" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.sfb673.org/mexico/mexico-1.0.ttl> ;
+    ] ;
+    dct:description """
+MExiCo (short for "Multimodal Experiment Corpora") is a data model for data collections containing multimodal linguistic and interaction annotations.
+"""@en ;
+
+    void:triples "305"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:isocat a void:Linkset ;
+    void:target :mexico ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:metashare a void:Linkset ;
+    void:target :mexico ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:olia a void:Linkset ;
+    void:target :mexico ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:provenanceweb a void:Linkset ;
+    void:target :mexico ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Peter_Menke"^^xsd:string ;
+     foaf:mbox <mailto:pmenke@TechFak.Uni-Bielefeld.DE> ; 
+ .
+

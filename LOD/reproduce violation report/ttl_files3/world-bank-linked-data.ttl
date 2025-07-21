@@ -1,0 +1,189 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:world-bank-linked-data a dcat:Dataset ;
+    dcat:keyword "climate-change", "construction", "country-codes", "currency", "debt", "deref-vocab", "education", "energy", "environment", "finances", "format-dcterms", "format-geo", "format-qb", "format-rdf", "format-sdmx", "format-skos", "format-wgs", "gdp", "government", "health", "human-development", "indicators", "information-communication-technologies", "insurance", "international", "license-metadata", "linked-data", "lod", "lodcloud", "lodcloud-diagram-2014-08-30", "lodcloud.candidate", "population", "projects", "provenance-metadata", "published-by-third-party", "social-development", "socioeconomics", "statistics", "trade", "vocab-mappings", "void-sparql-endpoint", "world", "world-bank", "world-development" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "World_Bank_Linked_Data" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_RDF/XML" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://worldbank.270a.info/classification/indicator/AG.AGR.TRAC.NO> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='worldbank.270a.info', port=80): Max retries exceeded with url: /classification/indicator/AG.AGR.TRAC.NO (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686da05e0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://worldbank.270a.info/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='worldbank.270a.info', port=80): Max retries exceeded with url: /sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686da1240>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+A VoiD Description of the worldbank.270a.info dataset
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "VoID" ;
+        dct:mirror_distribution "['ipfs:QmNuHWA22DbASFvttvwaHBBq9cTaayQHBi9KoPhAgY3UXy']" ;
+        dcat:accessURL_distribution <http://worldbank.270a.info/.well-known/void> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+Schema and metadata used for all of the data in the :WorldBank dataset
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmTPEPFsXX8Bpg64D3eWdXmBohaHDtmdPnZhGGYy5STztv']" ;
+        dcat:accessURL_distribution <http://worldbank.270a.info/data/meta/meta.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+World Development Indicators data from The World Bank. It contains developmental observations.
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='worldbank.270a.info', port=80): Max retries exceeded with url: /data/world-development-indicators.en.tar.gz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686da14b0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "Dataset_dumpWorld_Development_Indicators" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://worldbank.270a.info/data/world-development-indicators.en.tar.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+World Bank Finances data from The World Bank. It contains financial observations.
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='worldbank.270a.info', port=80): Max retries exceeded with url: /data/world-bank-finances.tar.gz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686da06d0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "Dataset_dumpWorld_Bank_Finances" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://worldbank.270a.info/data/world-bank-finances.tar.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+World Bank Climate Change data from The World Bank.
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='worldbank.270a.info', port=80): Max retries exceeded with url: /data/world-bank-climates.tar.gz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686da3af0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "Dataset_dumpWorld_Bank_Climate_Change" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://worldbank.270a.info/data/world-bank-climates.tar.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+World Bank Projects and Operations data from The World Bank.
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='worldbank.270a.info', port=80): Max retries exceeded with url: /data/world-bank-projects-and-operations.tar.gz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686da1c00>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "Dataset_dumpWorld_Bank_Projects_and_Operations" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://worldbank.270a.info/data/world-bank-projects-and-operations.tar.gz> ;
+    ] ;
+    dct:description_main """
+The World Bank data published using the Linked Data design principles. Contains statistical observations and code lists from World Development Indicators, World Bank Finances, World Bank Projects and Operations, and World Bank Climate Change data.
+"""@en ;
+
+    foaf:page <http://worldbank.270a.info/> ;
+    void:triples "175000000"^^xsd:integer ;
+    dcat:theme "government" ;
+    void:uriSpace <http://worldbank.270a.info/dataset/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bfs-linked-data a void:Linkset ;
+    void:target :world-bank-linked-data ;
+    void:triples "185"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :world-bank-linked-data ;
+    void:triples "380"^^xsd:integer ;
+ .
+
+:ecb-linked-data a void:Linkset ;
+    void:target :world-bank-linked-data ;
+    void:triples "190"^^xsd:integer ;
+ .
+
+:fao-linked-data a void:Linkset ;
+    void:target :world-bank-linked-data ;
+    void:triples "178"^^xsd:integer ;
+ .
+
+:frb-linked-data a void:Linkset ;
+    void:target :world-bank-linked-data ;
+    void:triples "280"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :world-bank-linked-data ;
+    void:triples "216"^^xsd:integer ;
+ .
+
+:iati-as-linked-data a void:Linkset ;
+    void:target :world-bank-linked-data ;
+    void:triples "212"^^xsd:integer ;
+ .
+
+:imf-linked-data a void:Linkset ;
+    void:target :world-bank-linked-data ;
+    void:triples "26"^^xsd:integer ;
+ .
+
+:nasa a void:Linkset ;
+    void:target :world-bank-linked-data ;
+    void:triples "170"^^xsd:integer ;
+ .
+
+:the-eurostat-linked-data a void:Linkset ;
+    void:target :world-bank-linked-data ;
+    void:triples "216"^^xsd:integer ;
+ .
+
+:transparency-linked-data a void:Linkset ;
+    void:target :world-bank-linked-data ;
+    void:triples "182"^^xsd:integer ;
+ .
+
+:uis-linked-data a void:Linkset ;
+    void:target :world-bank-linked-data ;
+    void:triples "964"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Sarven_Capadisli"^^xsd:string ;
+     foaf:Cmbox <mailto:info@csarven.ca> ; 
+ .
+

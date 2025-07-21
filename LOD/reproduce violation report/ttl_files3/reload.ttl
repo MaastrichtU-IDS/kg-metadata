@@ -1,0 +1,202 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:reload a dcat:Dataset ;
+    dcat:keyword "LODLAM", "archives", "country-italy", "library", "lod", "lodcloud-diagram-2014-08-30", "open_archives" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Repository_for_Linked_Open_Archival_Data" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_resource" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+"Assemblea Costituente" finding aid of Historical Archive of Chamber of deputies 
+""" ;
+        dcat:accessURL_exampleResource <http://lod.xdams.org/reload/oad/uod/CD1700000001> ;
+        adms:status_exampleResource """
+FAIL (500)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "Endpoint_SPARQL" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://lod.xdams.org/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Dataset from Archivio Centrale dello Stato
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Archivio_della_Direzione_generale_dell?Agricoltura_del_MAIC_1860_?_1912" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://github.com/regestaexe/ReloadProject/tree/master/data/acs/entiMaic.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+data from Historical Archive of Chamber of deputies
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Assemblea_Costituente" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://github.com/regestaexe/ReloadProject/tree/master/data/cd/assembleaCostituente.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+data from Historical Archive of Chamber of deputies
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "commissioni_parlamentari_dinchiesta" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://github.com/regestaexe/ReloadProject/tree/master/data/cd/commissioniParlamentariInchiesta.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+dataset from Archivio Centrale dello Stato
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Places_from_historical_archives" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://github.com/regestaexe/ReloadProject/tree/master/data/acs/luoghiACS.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+dataset from Archivio Centrale dello Stato
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "persons_from_Archivio_Centrale_dello_Stato" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://github.com/regestaexe/ReloadProject/tree/master/data/acs/personeMaic.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Titolario_from_Archivio_Centrale_dello_stato" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://github.com/regestaexe/ReloadProject/tree/master/data/acs/titolarioMAIC.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Unit_of_Description_from_Archivio_Centrale_dello_Stato" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://github.com/regestaexe/ReloadProject/tree/master/data/acs/uodMAIC.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Units_of_description_from_Istituto_per_i_beni_culturali_dell?Emilia_Romagna" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://github.com/regestaexe/ReloadProject/tree/master/data/ibc/caster_complessi.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Corporate_body_from_Istituto_per_i_beni_culturali_dell?Emilia_Romagna" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://github.com/regestaexe/ReloadProject/tree/master/data/ibc/caster_soggettiConservatori.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Corporate_body_from_Istituto_per_i_beni_culturali_dell?Emilia_Romagna" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://github.com/regestaexe/ReloadProject/tree/master/data/ibc/caster_soggettiProduttori.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "VOID_of_RELOAD_dataset" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://labs.regesta.com/progettoReload/void.ttl> ;
+    ] ;
+    dct:description_main """
+ReLoad project will foster experimentation with the technology and methods of linked open data for archival resources and its goal is the creation of a web of linked archival data
+"""@en ;
+
+    void:triples "10455463"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://lod.xdams.org/reload/oad/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :reload ;
+    void:triples "8133"^^xsd:integer ;
+ .
+
+:linkedgeodata a void:Linkset ;
+    void:target :reload ;
+    void:triples "8548"^^xsd:integer ;
+ .
+
+:ocd a void:Linkset ;
+    void:target :reload ;
+    void:triples "596"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Reload_Team:_Archivio_Centrale_dello_Stato,_Istituto_per_i_Beni_culturali_dell?Emilia-Romagna,_regesta.exe"^^xsd:string ;
+ .
+

@@ -1,0 +1,72 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ssf a dcat:Dataset ;
+    foaf:depiction <http://www.ss-framework.com/crollod.jpg> ;
+    dcat:keyword "croatian", "lexicon" ;
+    dct:license <https://creativecommons.org/licenses/by/3.0/> ;
+    dct:title "Lexicon_of_Syntactic_and_Semantic_Framework" ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://www.ss-framework.com/owl/ssf.xml> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dcat:mediaType "text/xml" ;
+        dcat:accessURL <http://www.ss-framework.com/sample.xml> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dcat:accessURL <http://www.ss-framework.com/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dct:description """
+Ontology contains over 70.000 lexical entries of Croatian language. The ontology is daily improved in a cooperation with a Mathematical department of the University of Osijek in Croatia
+"""@en ;
+
+    foaf:page <http://www.ss-framework.com> ;
+    void:triples "70366"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:lexinfo a void:Linkset ;
+    void:target :ssf ;
+    void:triples "67717"^^xsd:integer ;
+ .
+
+:wordnet a void:Linkset ;
+    void:target :ssf ;
+    void:triples "35687"^^xsd:integer ;
+ .
+
+:babelnet a void:Linkset ;
+    void:target :ssf ;
+    void:triples "20456"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Marko_Orešković"^^xsd:string ;
+     foaf:mbox <mailto:moreskovic@nsk.hr> ; 
+ .
+

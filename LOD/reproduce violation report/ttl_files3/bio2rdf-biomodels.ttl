@@ -1,0 +1,336 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bio2rdf-biomodels a dcat:Dataset ;
+    dcat:keyword "bio2rdf", "deref-vocab", "format-dc", "format-rdf", "format-rdfs", "license-metadata", "lifesciences", "lod", "lodcloud-diagram-2014-08-30", "provenance-metadata", "published-by-third-party", "vocab-mappings" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Bio2RDF::Biomodels" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-nquads" ;
+        dct:description_distribution """
+Download biomodels.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Download_(n-quads,_gzipped)" ;
+        dct:mirror_distribution "[]" ;
+        dcat:downloadURL_distribution <http://download.bio2rdf.org/current/biomodels/biomodels.nq.gz> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_resource_(RDF)" ;
+        dcat:mediaType_exampleResource "application/rdf+xml;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Example resource (RDF)
+""" ;
+        dcat:accessURL_exampleResource <http://bio2rdf.org/biomodels:BIOMD0000000048> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://biomodels.bio2rdf.org/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPSConnectionPool(host='biomodels.bio2rdf.org', port=443): Max retries exceeded with url: /sparql (Caused by SSLError(CertificateError("hostname 'biomodels.bio2rdf.org' doesn't match either of 'bio2rdf.org', 'openlifedata.org', 'search.openlifedata.org', 'sparql.openlifedata.org', 'virtuoso.openlifedata.org'"))))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "" ;
+        dct:description_distribution """
+Download
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Download_page_(n-quads,_gz_compressed)" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://download.bio2rdf.org/current/biomodels/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "HTML" ;
+        dct:description_distribution """
+Dataset description (HTML)
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Dataset_description_(HTML)" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://download.bio2rdf.org/current/biomodels/biomodels.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+Dataset description (RDF)
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Dataset_description_(RDF)" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://download.bio2rdf.org/current/biomodels/bio2rdf-biomodels.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+OWL Schema
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "OWL_Schema" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://download.bio2rdf.org/release/3/biomodels/biomodels.schema.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "mapping/owl" ;
+        dct:description_distribution """
+Mappings (SIO)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Mappings_(SIO)" ;
+        dct:mirror_distribution "['ipfs:QmWKweqNRR4ZpArPaLa9zJKvipLSTfK4QFbePwca64ke7u']" ;
+        dcat:accessURL_distribution <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/biomodels/bio2rdf_biomodels_sio_mapping.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/sitemap" ;
+        dct:description_distribution """
+Semantic Web Sitemap
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Semantic_Web_Sitemap" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://download.bio2rdf.org/release/3/biomodels/sitemap.xml> ;
+    ] ;
+    dct:description_main """
+BioModels Database is a data resource that allows biologists to store, search and retrieve published mathematical models of biological interests.
+"""@en ;
+
+    foaf:page <http://biomodels.bio2rdf.org/> ;
+    void:triples "2380009"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    void:uriSpace <http://bio2rdf.org/biomodels:> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bio2rdf-3dmet a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "8"^^xsd:integer ;
+ .
+
+:bio2rdf-bind a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:bio2rdf-biomodels a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "180169"^^xsd:integer ;
+ .
+
+:bio2rdf-bto a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "60"^^xsd:integer ;
+ .
+
+:bio2rdf-cas a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bio2rdf-cco a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "9"^^xsd:integer ;
+ .
+
+:bio2rdf-chebi a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "902"^^xsd:integer ;
+ .
+
+:bio2rdf-cl a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:bio2rdf-do a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "6"^^xsd:integer ;
+ .
+
+:bio2rdf-doi a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bio2rdf-ec a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "402"^^xsd:integer ;
+ .
+
+:bio2rdf-eco a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "364"^^xsd:integer ;
+ .
+
+:bio2rdf-ensembl a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "34"^^xsd:integer ;
+ .
+
+:bio2rdf-fma a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:bio2rdf-go a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "1100"^^xsd:integer ;
+ .
+
+:bio2rdf-hsa a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:bio2rdf-icd9 a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "7"^^xsd:integer ;
+ .
+
+:bio2rdf-insdc a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:bio2rdf-intact a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:bio2rdf-interpro a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "99"^^xsd:integer ;
+ .
+
+:bio2rdf-isbn a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:bio2rdf-mi a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:bio2rdf-mirbase a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:bio2rdf-narcis a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:bio2rdf-ncbigene a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:bio2rdf-omim a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "24"^^xsd:integer ;
+ .
+
+:bio2rdf-pato a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bio2rdf-pirsf a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "7"^^xsd:integer ;
+ .
+
+:bio2rdf-pr a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:bio2rdf-pubmed a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "504"^^xsd:integer ;
+ .
+
+:bio2rdf-pw a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:bio2rdf-reactome a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "249"^^xsd:integer ;
+ .
+
+:bio2rdf-sbo a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "18"^^xsd:integer ;
+ .
+
+:bio2rdf-sce a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "424"^^xsd:integer ;
+ .
+
+:bio2rdf-sgd a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "425"^^xsd:integer ;
+ .
+
+:bio2rdf-so a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:bio2rdf-taxonomy a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "61"^^xsd:integer ;
+ .
+
+:bio2rdf-tcdb a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:bio2rdf-uniprot a void:Linkset ;
+    void:target :bio2rdf-biomodels ;
+    void:triples "1670"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Bio2RDF"^^xsd:string ;
+     foaf:Cmbox <mailto:bio2rdf@googlegroups.com> ; 
+ .
+

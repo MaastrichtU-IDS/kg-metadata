@@ -1,0 +1,102 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:fu-berlin-sider a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-rdf", "lifesciences", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-provenance-metadata", "published-by-third-party", "vocab-mappings" ;
+    dct:title_main "SIDER:_Side_Effect_Resource" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-ntriples" ;
+        dct:description_distribution """
+N-Triples, bz2 packed
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:downloadURL_distribution <http://www4.wiwiss.fu-berlin.de/sider/sider_dump.nt.bz2> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://www4.wiwiss.fu-berlin.de/sider/resource/drugs/1003> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "None" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://www4.wiwiss.fu-berlin.de/sider/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (404)
+""" ;
+    ] ;
+    dct:description_main """
+The Linked Data version of SIDER which contains information on marketed drugs and their adverse effects. The information is extracted from public documents and package inserts.
+
+Licensing
+
+The data is available under a mix of Creative Commons Zero and Creative SA-BY-NC.
+"""@en ;
+
+    foaf:page <http://www4.wiwiss.fu-berlin.de/sider/> ;
+    void:triples "192515"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    void:uriSpace <http://www4.wiwiss.fu-berlin.de/sider/resource/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :fu-berlin-sider ;
+    void:triples "2126"^^xsd:integer ;
+ .
+
+:fu-berlin-dailymed a void:Linkset ;
+    void:target :fu-berlin-sider ;
+    void:triples "1986"^^xsd:integer ;
+ .
+
+:fu-berlin-diseasome a void:Linkset ;
+    void:target :fu-berlin-sider ;
+    void:triples "238"^^xsd:integer ;
+ .
+
+:fu-berlin-drugbank a void:Linkset ;
+    void:target :fu-berlin-sider ;
+    void:triples "1140"^^xsd:integer ;
+ .
+
+:fu-berlin-stitch a void:Linkset ;
+    void:target :fu-berlin-sider ;
+    void:triples "14894"^^xsd:integer ;
+ .
+
+:tcmgenedit_dataset a void:Linkset ;
+    void:target :fu-berlin-sider ;
+    void:triples "171"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Anja_Jentzsch"^^xsd:string ;
+     foaf:Cmbox <mailto:anja@anjeve.de> ; 
+ .
+

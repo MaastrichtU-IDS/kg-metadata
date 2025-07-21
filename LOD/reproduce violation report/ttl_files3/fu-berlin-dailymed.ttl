@@ -1,0 +1,110 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:fu-berlin-dailymed a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-rdf", "lifesciences", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-provenance-metadata", "published-by-third-party", "vocab-mappings", "void-sparql-endpoint" ;
+    dct:title_main "DailyMed" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-ntriples" ;
+        dct:description_distribution """
+N-Triples, bz2 packed
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:downloadURL_distribution <http://www4.wiwiss.fu-berlin.de/dailymed/dailymed_dump.nt.bz2> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://www4.wiwiss.fu-berlin.de/dailymed/resource/drugs/1> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://www4.wiwiss.fu-berlin.de/dailymed/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/sitemap" ;
+        dct:description_distribution """
+XML Sitemap
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www4.wiwiss.fu-berlin.de/dailymed/sitemap.xml> ;
+    ] ;
+    dct:description_main """
+The Linked Data version of DailyMed which is published by the National Library of Medicine, and provides high quality information about marketed drugs. DailyMed provides much information including general background on the chemical structure of the compound and its therapeutic purpose, details on the compound's clinical pharmacology, indication and usage, contraindications, warnings, precautions, adverse reactions, overdosage, and patient counseling.
+"""@en ;
+
+    foaf:page <http://www4.wiwiss.fu-berlin.de/dailymed/> ;
+    void:triples "164276"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    void:uriSpace <http://www4.wiwiss.fu-berlin.de/dailymed/resource/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :fu-berlin-dailymed ;
+    void:triples "2552"^^xsd:integer ;
+ .
+
+:fu-berlin-diseasome a void:Linkset ;
+    void:target :fu-berlin-dailymed ;
+    void:triples "6124"^^xsd:integer ;
+ .
+
+:fu-berlin-drugbank a void:Linkset ;
+    void:target :fu-berlin-dailymed ;
+    void:triples "5908"^^xsd:integer ;
+ .
+
+:fu-berlin-sider a void:Linkset ;
+    void:target :fu-berlin-dailymed ;
+    void:triples "1592"^^xsd:integer ;
+ .
+
+:linkedct a void:Linkset ;
+    void:target :fu-berlin-dailymed ;
+    void:triples "27729"^^xsd:integer ;
+ .
+
+:tcmgenedit_dataset a void:Linkset ;
+    void:target :fu-berlin-dailymed ;
+    void:triples "58"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Anja_Jentzsch"^^xsd:string ;
+     foaf:Cmbox <mailto:anja@anjeve.de> ; 
+ .
+

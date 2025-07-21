@@ -1,0 +1,59 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:multext-east a dcat:Dataset ;
+    dcat:keyword "linguistics", "llod", "lod" ;
+    dct:title "Multext-East" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-gzip" ;
+        dct:description """
+15144 phrases taken from the George Orwell novel 1984. Each phrase is one resource, containing rdfs:labels in 3 languages: en, bg and cs in parallel. License information is contained
+""" ;
+        adms:status """
+FAIL (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+""" ;
+        dct:title "Annotated_Parallel_1984_Corpus" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://mlode.nlp2rdf.org/datasets/multext1984.ttl.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-gzip" ;
+        dct:description """
+Multext East speech corpus, containing 215 phrases, each with rdfs:labels in Romanian, Slovene, Estonian, Hungarian, (English, Czech, Bulgarian) in parallel.
+""" ;
+        adms:status """
+FAIL (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+""" ;
+        dct:title "MULTEXT-East_speech_corpus._" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://mlode.nlp2rdf.org/datasets/multextspch.ttl.gz> ;
+    ] ;
+    dct:description """
+From the web site: Version 4 of the MULTEXT-East resources, a multilingual dataset for language engineering research and development. This dataset contains, for Bulgarian, Croatian, Czech, English, Estonian, Hungarian, Lithuanian, Macedonian, Persian, Polish, Resian, Romanian, Russian, Serbian, Slovak, Slovene, Ukrainian, some or all of the following resources:
+
+
+"""@en ;
+
+    foaf:page <http://nl.ijs.si/ME/V4/> ;
+    void:triples "127651"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:gold a void:Linkset ;
+    void:target :multext-east ;
+    void:triples "15355"^^xsd:integer ;
+ .
+

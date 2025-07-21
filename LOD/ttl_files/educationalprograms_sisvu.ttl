@@ -1,0 +1,109 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:educationalprograms_sisvu a dcat:Dataset ;
+    dcat:keyword "course", "crossdomain", "deref-vocab", "educational-programs", "faculty", "format-aiiso", "format-bibo", "format-dc", "format-foaf", "format-geonames", "format-sisvu", "format-skos", "format-univ-ont", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-vocab-mappings", "provenance-metadata", "published-by-third-party", "study", "university" ;
+    dct:title "Educational_programsSISVU" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://kent.zpr.fer.hr:8080/educationalProgram/all> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='kent.zpr.fer.hr', port=8080): Max retries exceeded with url: /educationalProgram/all (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dac1c0>: Failed to establish a new connection: [Errno 101] Network is unreachable')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "None" ;
+        dcat:endpointDescription """
+Educational programs - SISVU endpoint
+""" ;
+        dcat:accessURL <http://kent.zpr.fer.hr:8080/educationalProgram/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='kent.zpr.fer.hr', port=8080): Max retries exceeded with url: /educationalProgram/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dae0b0>: Failed to establish a new connection: [Errno 101] Network is unreachable')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+RDF Schema (SISVU)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmcV72UQkUGwacbwo2cCmx6YpkNQMydsbFbisTusicEtct']" ;
+        dcat:accessURL <http://kent.zpr.fer.hr:8080/educationalProgram/vocab/sisvu.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "mapping/owl" ;
+        dct:description """
+Mappings (already included in the main schema)Preview
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmcV72UQkUGwacbwo2cCmx6YpkNQMydsbFbisTusicEtct']" ;
+        dcat:accessURL <http://kent.zpr.fer.hr:8080/educationalProgram/vocab/sisvu.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download (dump)
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='kent.zpr.fer.hr', port=8080): Max retries exceeded with url: /educationalProgram/educationalProgram-dump.rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dacd00>: Failed to establish a new connection: [Errno 101] Network is unreachable')))
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://kent.zpr.fer.hr:8080/educationalProgram/educationalProgram-dump.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+Void description
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='kent.zpr.fer.hr', port=8080): Max retries exceeded with url: /educationalProgram/void.rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686daded0>: Failed to establish a new connection: [Errno 101] Network is unreachable')))
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://kent.zpr.fer.hr:8080/educationalProgram/void.rdf> ;
+    ] ;
+    dct:description """
+Semantic ISVU (SISVU) aims to thoroughly describe study programmes offered by ISVU - The Information System of Higher Education (Croatian acronym: ISVU). ISVU integrates data on universities, polytechnics and academies located in Croatia. It contains data on organisations, institutions, programmes, courses, lecturers and every other aspect of educational system. Part of the data that describes study programmes is publicly accessible through the web page www.isvu.hr. SISVU semantically describes that part of data.
+"""@en ;
+
+    foaf:page <http://kent.zpr.fer.hr:8080/educationalProgram/> ;
+    void:triples "2373863"^^xsd:integer ;
+    dcat:theme "cross_domain" ;
+    void:uriSpace <http://kent.zpr.fer.hr:8080/educationalProgram/resource> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames-semantic-web a void:Linkset ;
+    void:target :educationalprograms_sisvu ;
+    void:triples "792"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Lidia_Rovan"^^xsd:string ;
+     foaf:mbox <mailto:lidia.rovan@fer.hr> ; 
+ .
+

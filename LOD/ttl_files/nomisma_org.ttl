@@ -1,0 +1,115 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:nomisma_org a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title "Nomisma.org_SPARQL_endpoint" ;
+        dct:identifier "4769bb85-47d1-45e3-238a-1cabb3889386" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://nomisma.org/query> ;
+        adms:status """
+FAIL (400)
+""" ;
+    ] ;
+    foaf:depiction <https://avatars2.githubusercontent.com/u/5949443> ;
+    foaf:page <http://nomisma.org> ;
+    dcat:keyword "numismatics" ;
+    dct:license <https://creativecommons.org/licenses/by/3.0/> ;
+    dct:title "Nomisma.org_" ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml;charset=utf-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "RDF/XML" ;
+        dct:mirror "[]" ;
+        dct:identifier "125ead21-83d4-720b-ae98-29d8d34a9605" ;
+        dcat:downloadURL <http://nomisma.org/nomisma.org.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle;charset=utf-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Turtle" ;
+        dct:mirror "[]" ;
+        dct:identifier "3e11375e-0c8f-adae-e1a9-cb96970d69fd" ;
+        dcat:downloadURL <http://nomisma.org/nomisma.org.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/ld+json;charset=utf-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "JSON-LD" ;
+        dct:mirror "[]" ;
+        dct:identifier "bf05c4c4-de59-2657-42ea-fb613544d187" ;
+        dcat:downloadURL <http://nomisma.org/nomisma.org.jsonld> ;
+    ] ;
+    dct:description """
+Nomisma.org is an international collaborative project to define the intellectual concepts of numismatics following the principles of Linked Open Data
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <http://nomisma.org/> ;
+    dcat:theme "cross_domain" ;
+    void:exampleResource [
+        dct:title "Rome" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://nomisma.org/id/rome> ;
+        adms:status """
+FAIL (406)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Denarius" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://nomisma.org/id/denarius> ;
+        adms:status """
+FAIL (406)
+""" ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:ewg4xuva@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Ethan_Gruber"^^xsd:string ;
+     foaf:mbox <mailto:ewg4xuva@gmail.com> ; 
+ .
+

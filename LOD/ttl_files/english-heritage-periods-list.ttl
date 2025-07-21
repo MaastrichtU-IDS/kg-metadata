@@ -1,0 +1,133 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:english-heritage-periods-list a dcat:Dataset ;
+    dcat:keyword "archaeology", "format-skos", "license-metadata", "lod", "no-proprietary-vocab", "no-vocab-mappings", "provenance-metadata", "published-by-third-party", "schemata" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "English_Heritage_Periods_List" ;
+    void:exampleResource [
+        dct:title "Example_resource_(RDF/XML)" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+ROMAN
+""" ;
+        dcat:accessURL <http://http://purl.org/heritagedata/schemes/eh_period/concepts/RO.rdf> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='%3chttp', port=80): Max retries exceeded with url: //purl.org/heritagedata/schemes/eh_period/concepts/RO.rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843ff100>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint" ;
+        dcat:endpointDescription """
+SPARQL endpoint on the HeritageData site giving access to the RDF data for the thesaurus
+""" ;
+        dcat:accessURL <http://heritagedata.org/live/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "JSON" ;
+        dct:description """
+ROMAN
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='%3chttp', port=80): Max retries exceeded with url: //purl.org/heritagedata/schemes/eh_period/concepts/RO.json (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686da23b0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Example_resource_(JSON)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://http://purl.org/heritagedata/schemes/eh_period/concepts/RO.json> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "HTML" ;
+        dct:description """
+ROMAN
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='%3chttp', port=80): Max retries exceeded with url: //purl.org/heritagedata/schemes/eh_period/concepts/RO.html (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686da2110>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Example_resource_(HTML)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://http://purl.org/heritagedata/schemes/eh_period/concepts/RO.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/n-triples" ;
+        dct:description """
+ROMAN
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='%3chttp', port=80): Max retries exceeded with url: //purl.org/heritagedata/schemes/eh_period/concepts/RO.n3 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686da2350>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Example_resource_(NTriples)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://http://purl.org/heritagedata/schemes/eh_period/concepts/RO.n3> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+ROMAN
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='%3chttp', port=80): Max retries exceeded with url: //purl.org/heritagedata/schemes/eh_period/concepts/RO.ttl (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686da25f0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Example_resource_(Turtle)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://http://purl.org/heritagedata/schemes/eh_period/concepts/RO.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+Download of entire thesaurus
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "RDF/XML_download" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://heritagedata.org/live/seneschal_eh_period_20130717.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=UTF-8" ;
+        dct:description """
+Linked Data URI of the Concept Scheme
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Concept_Scheme_URI" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://purl.org/heritagedata/schemes/eh_period> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+VoID description of the dataset
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "VoID_file" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://purl.org/heritagedata/void.ttl> ;
+    ] ;
+    dct:description """
+English Heritage Periods List
+"""@en ;
+
+    void:triples "557"^^xsd:integer ;
+    dcat:theme "user_generated" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 

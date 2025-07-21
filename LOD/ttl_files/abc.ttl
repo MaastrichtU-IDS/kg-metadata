@@ -1,0 +1,72 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:abc a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://www.semanticweb.org/acer/ontologies/2021/11/untitled-ontology-6> ;
+    void:triples "10000"^^xsd:integer ;
+    dcat:distribution [
+        dct:identifier "a4d7a3cf-37dc-714f-a102-0f74b227c6b0" ;
+        dct:title "SummerOlympics" ;
+        dct:description """
+
+""" ;
+        dcat:mediaType ".owl" ;
+        dcat:downloadURL <https://drive.google.com/file/d/1G7LXhziwtv31orByTmL_VxeNqvOvQN5d/view?usp=sharing> ;
+        dct:mirror "[]" ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dct:description """
+This dataset  includes all the summer Olympics medalists from 1896-2014 and information about them
+"""@en ;
+
+    dct:title "SummerOlympics" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-odbl> ;
+    dcat:theme "user_generated" ;
+    void:sparqlEndpoint [
+        dct:identifier "bf02d2ca-6ebe-b951-b992-df3cedc1ad76" ;
+        dct:title "Dbpedia" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <https://dbpedia.org/page/Summer_Olympic_Games> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :abc ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:i191768@nu.edu.pk> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Zaid_Khan"^^xsd:string ;
+     foaf:mbox <mailto:i191688@nu.edu.pk> ; 
+ .
+

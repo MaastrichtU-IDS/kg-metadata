@@ -1,0 +1,67 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:tcga a dcat:Dataset ;
+    dcat:keyword "cancer", "gene", "life", "lifesciences", "lod", "lodcloud.nolinks", "lodcloud.unconnected", "microarray", "no-deref-vocab", "protein", "published-by-third-party", "tcga" ;
+    dct:title "The_Cancer_Genome_Atlas" ;
+    void:exampleResource [
+        dct:title "Example_Resource" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://ibl.mdanderson.org/TCGA/I417388> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint_for_TCGA" ;
+        dcat:endpointDescription """
+SPARQL endpoint for TCGA
+""" ;
+        dcat:accessURL <http://hcls.deri.org:8080/openrdf-sesame/repositories/tcga> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='hcls.deri.org', port=8080): Max retries exceeded with url: /openrdf-sesame/repositories/tcga (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dad1e0>: Failed to establish a new connection: [Errno 111] Connection refused')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Dump
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Dump" ;
+        dct:mirror "['ipfs:QmYVCPUuWxfNFoFMXG4NeUGNQNTqudMYku3sNLAqgrMQVR']" ;
+        dcat:accessURL <https://commondatastorage.googleapis.com/ckannet-storage/2012-01-03T123420/TCGA.rdf> ;
+    ] ;
+    dct:description """
+The RDF representation of TCGA was achieved by representing data elements from the TCGA dataset as statements from the S3DB Core Model (see S3DB Core Model for more information on the S3DB Core Model). As such, the RDF graph that fuels this endpoint is structured according the S3DB Core Model entities: Collections, Items, Rules and Statements. The advantage of this annotation is that entities that belong to the description of the domain are annotated as "Collections" (for example, "Sample" is a Collection) or Rules (for example, "GenomicCharacterization-obtainedFrom-Sample" is a Rule) and their instances are annotated as Items (for example, "TCGA-01-0001" is an Item of the collection "Samples) or Statements (for example, "TCGA-01-0001"-"provided"-"GC1234" is as Statement that uses the Rule "GenomicCharacterization-obtainedFrom-Sample"). For more information see Deus HF, DF Veiga, PR Freire, JN Weinstein, GB Mills, JS Almeida (2010) Exposing The Cancer Genome Atlas as a SPARQL endpoint. Journal Biomedical Informatics [PMID 20851208].
+"""@en ;
+
+    foaf:page <http://tcga.s3db.org/> ;
+    void:triples "65470"^^xsd:integer ;
+    void:uriSpace <http://ibl.mdanderson.org/TCGA/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:name "Helena_F._Deus"^^xsd:string ;
+     foaf:mbox <mailto:helena.deus@deri.org> ; 
+ .
+

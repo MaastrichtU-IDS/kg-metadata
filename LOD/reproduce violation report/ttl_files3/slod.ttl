@@ -1,0 +1,66 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:slod a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "Linked_Stage_Graph" ;
+        dct:identifier_sparqlEndpoint "f4e73c11-b4b9-8b72-7c89-f518a11d4435" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://slod.fiz-karlsruhe.de/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    foaf:page <http://slod.fiz-karlsruhe.de/> ;
+    dcat:keyword "theater", "photographs", "cultural_heritage", "archive", "glam" ;
+    dct:license <https://creativecommons.org/licenses/by/3.0/> ;
+    dct:title_main "Linked_Stage_Graph" ;
+    dct:description_main """
+Linked Stage Graph is a Knowledge Graph using a dataset by the Archive of Baden-Wuerttemberg, Germany. It contains black and white photographs and metadata about the Stuttgart State Theaters from the 1890s to the 1940s. The original EAD-XML files were converted to RDF and named entities were extracted and linked to Wikidata and the German Authority Files (GND).
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <http://slod.fiz-karlsruhe.de> ;
+    void:triples "143345"^^xsd:integer ;
+    dcat:theme "media" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:wikidata a void:Linkset ;
+    void:target :slod ;
+    void:triples "1839"^^xsd:integer ;
+ .
+
+:dnb-gemeinsame-normdatei a void:Linkset ;
+    void:target :slod ;
+    void:triples "95"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:tabea.tietz@googlemail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Tabea_Tietz"^^xsd:string ;
+     foaf:Cmbox <mailto:tabea.tietz@fiz-karlsruhe.de> ; 
+ .
+

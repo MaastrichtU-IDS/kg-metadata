@@ -1,0 +1,159 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bioportal-hcpcs a dcat:Dataset ;
+    dcat:keyword "biomedicine", "bioportal", "format-rdf", "format-rrf", "lod", "ontology", "published-by-third-party" ;
+    dct:title "HCPCS" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+REST API Wiki Documentation
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+SPARQL endpoint
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://sparql.bioontology.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+Download link, BioPortal API KEY is required
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://rest.bioontology.org/bioportal/ontologies/download/44454?apikey=BP_API_KEY> ;
+    ] ;
+    dct:description """
+Healthcare Common Procedure Coding System
+"""@en ;
+
+    foaf:page <http://bioportal.bioontology.org/ontologies/1529> ;
+    void:triples "96969"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-canco a void:Linkset ;
+    void:target :bioportal-hcpcs ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-chebi a void:Linkset ;
+    void:target :bioportal-hcpcs ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:bioportal-cpt a void:Linkset ;
+    void:target :bioportal-hcpcs ;
+    void:triples "108"^^xsd:integer ;
+ .
+
+:bioportal-csp a void:Linkset ;
+    void:target :bioportal-hcpcs ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-galen a void:Linkset ;
+    void:target :bioportal-hcpcs ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+:bioportal-lnc a void:Linkset ;
+    void:target :bioportal-hcpcs ;
+    void:triples "41"^^xsd:integer ;
+ .
+
+:bioportal-mdr a void:Linkset ;
+    void:target :bioportal-hcpcs ;
+    void:triples "19"^^xsd:integer ;
+ .
+
+:bioportal-mesh-owl a void:Linkset ;
+    void:target :bioportal-hcpcs ;
+    void:triples "76"^^xsd:integer ;
+ .
+
+:bioportal-msh a void:Linkset ;
+    void:target :bioportal-hcpcs ;
+    void:triples "69"^^xsd:integer ;
+ .
+
+:bioportal-ncit a void:Linkset ;
+    void:target :bioportal-hcpcs ;
+    void:triples "58"^^xsd:integer ;
+ .
+
+:bioportal-nddf a void:Linkset ;
+    void:target :bioportal-hcpcs ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-ndfrt a void:Linkset ;
+    void:target :bioportal-hcpcs ;
+    void:triples "45"^^xsd:integer ;
+ .
+
+:bioportal-pdq a void:Linkset ;
+    void:target :bioportal-hcpcs ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-rcd a void:Linkset ;
+    void:target :bioportal-hcpcs ;
+    void:triples "65"^^xsd:integer ;
+ .
+
+:bioportal-rid a void:Linkset ;
+    void:target :bioportal-hcpcs ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-rxnorm a void:Linkset ;
+    void:target :bioportal-hcpcs ;
+    void:triples "76"^^xsd:integer ;
+ .
+
+:bioportal-snomedct a void:Linkset ;
+    void:target :bioportal-hcpcs ;
+    void:triples "187"^^xsd:integer ;
+ .
+
+:bioportal-vandf a void:Linkset ;
+    void:target :bioportal-hcpcs ;
+    void:triples "60"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Cynthia_Hake"^^xsd:string ;
+ .
+

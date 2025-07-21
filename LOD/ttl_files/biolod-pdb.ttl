@@ -1,0 +1,185 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:biolod-pdb a dcat:Dataset ;
+    dcat:keyword "lifesciences" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "BioLOD_for_Protein_Data_Bank_Japan" ;
+    dcat:distribution [
+        dcat:mediaType "" ;
+        dct:description """
+Protein Data Bank
+""" ;
+        adms:status """
+FAIL (406)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://biolod.org/class/cria1u1i/PDB_Protein_Data_Bank> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "TXT" ;
+        dct:description """
+PDB (Protein Data Bank) / Label Table / vol1
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='database.riken.jp', port=443): Max retries exceeded with url: /sw/download/cria1u1i~archives~table~label_table.tsv.en.UTF8.1.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: CA signature digest algorithm too weak (_ssl.c:997)'))))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://database.riken.jp/sw/download/cria1u1i~archives~table~label_table.tsv.en.UTF8.1.txt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "TXT" ;
+        dct:description """
+PDB (Protein Data Bank) / Label Table / vol2
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='database.riken.jp', port=443): Max retries exceeded with url: /sw/download/cria1u1i~archives~table~label_table.tsv.en.UTF8.2.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: CA signature digest algorithm too weak (_ssl.c:997)'))))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://database.riken.jp/sw/download/cria1u1i~archives~table~label_table.tsv.en.UTF8.2.txt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "TXT" ;
+        dct:description """
+PDB (Protein Data Bank) / Label Table / vol3
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='database.riken.jp', port=443): Max retries exceeded with url: /sw/download/cria1u1i~archives~table~label_table.tsv.en.UTF8.3.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: CA signature digest algorithm too weak (_ssl.c:997)'))))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://database.riken.jp/sw/download/cria1u1i~archives~table~label_table.tsv.en.UTF8.3.txt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "TXT" ;
+        dct:description """
+PDB (Protein Data Bank) / Link Table / vol1
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='database.riken.jp', port=443): Max retries exceeded with url: /sw/download/cria1u1i~archives~table~link_table.tsv.en.UTF8.1.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: CA signature digest algorithm too weak (_ssl.c:997)'))))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://database.riken.jp/sw/download/cria1u1i~archives~table~link_table.tsv.en.UTF8.1.txt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "TXT" ;
+        dct:description """
+PDB (Protein Data Bank) / Link Table / vol2
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='database.riken.jp', port=443): Max retries exceeded with url: /sw/download/cria1u1i~archives~table~link_table.tsv.en.UTF8.2.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: CA signature digest algorithm too weak (_ssl.c:997)'))))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://database.riken.jp/sw/download/cria1u1i~archives~table~link_table.tsv.en.UTF8.2.txt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "TXT" ;
+        dct:description """
+PDB (Protein Data Bank) / Link Table / vol3
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='database.riken.jp', port=443): Max retries exceeded with url: /sw/download/cria1u1i~archives~table~link_table.tsv.en.UTF8.3.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: CA signature digest algorithm too weak (_ssl.c:997)'))))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://database.riken.jp/sw/download/cria1u1i~archives~table~link_table.tsv.en.UTF8.3.txt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "" ;
+        dct:description """
+CCI (Chemical Component Identifier)
+""" ;
+        adms:status """
+FAIL (406)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://biolod.org/class/cria1u2i/CCI_chemical_component_identifier> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "TXT" ;
+        dct:description """
+CCI (Chemical Component Identifier) / Label Table
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='database.riken.jp', port=443): Max retries exceeded with url: /sw/download/cria1u2i~archives~table~label_table.tsv.en.UTF8.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: CA signature digest algorithm too weak (_ssl.c:997)'))))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://database.riken.jp/sw/download/cria1u2i~archives~table~label_table.tsv.en.UTF8.txt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "TXT" ;
+        dct:description """
+CCI (Chemical Component Identifier) / Link Table
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='database.riken.jp', port=443): Max retries exceeded with url: /sw/download/cria1u2i~archives~table~link_table.tsv.en.UTF8.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: CA signature digest algorithm too weak (_ssl.c:997)'))))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://database.riken.jp/sw/download/cria1u2i~archives~table~link_table.tsv.en.UTF8.txt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "XLS" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "PDB_test-sample.xls" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-21T121038/PDB_test-sample.xls> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "XLS" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "PDB_test.xls" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-21T121133/PDB_test.xls> ;
+    ] ;
+    dct:description """
+Data source of this content; PDBj (Protein Data Bank Japan)<br>
+Go to <a href="http://www.pdbj.org/index.html">source site</a>.
+
+"""@en ;
+
+    foaf:page <http://biolod.org/database/ria1i/Protein_Data_Bank> ;
+    void:triples "362823"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dppedia a void:Linkset ;
+    void:target :biolod-pdb ;
+    void:triples "0"^^xsd:integer ;
+ .
+
+:geonames a void:Linkset ;
+    void:target :biolod-pdb ;
+    void:triples "0"^^xsd:integer ;
+ .
+

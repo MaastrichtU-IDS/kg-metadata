@@ -1,0 +1,69 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:hungarian-national-library-catalog a dcat:Dataset ;
+    dcat:keyword "bibliographic", "broken_link", "catalog", "format-bibo", "format-dbpedia", "format-dc", "format-foaf", "format-rdf", "format-skos", "format-xhtml", "library", "linkeddata", "lld", "lod", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "no-vocab-mappings", "publications", "published-by-producer", "rdf", "sparql" ;
+    dct:license <https://opendefinition.org/licenses/fal> ;
+    dct:title_main "Hungarian_National_Library_(NSZL)_catalog" ;
+    dct:description_main """
+OPAC and Digital Library and the corresponding authority data as Linked Open Data.
+
+The used vocabularies are
+
+    * RDFDC for bibliographic data,
+    * FOAF for name authority entries, and
+    * SKOS for subject terms and geographical names. 
+    * BIBO for bibliographic terms
+
+
+NSZL uses CoolURIs. Every resource has both RDF and HTML representation.
+
+RDFDC, FAOF and SKOS statements are linked together. The name authority is matched with the DBPedia name files, and URI aliases are handled as owl:sameAs statements. The name authority dataset also contains links to Virtual International Authority File (VIAF) and VIAF links back to NSZL's data.
+
+NSZL also supports the HTML link auto-discovery. 
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://nektar.oszk.hu/wiki/Semantic_web> ;
+    void:triples "19300000"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://nektar.oszk.hu/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :hungarian-national-library-catalog ;
+    void:triples "6285"^^xsd:integer ;
+ .
+
+:viaf a void:Linkset ;
+    void:target :hungarian-national-library-catalog ;
+    void:triples "33709"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:mohammedziakamran@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "National_Széchényi_Library"^^xsd:string ;
+     foaf:Cmbox <mailto:horv@h.adam@oszk.hu> ; 
+ .
+

@@ -1,0 +1,127 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:eunis a dcat:Dataset ;
+    dcat:keyword "biodiversity", "deref-vocab", "environment", "format-rdf", "geographic", "license-metadata", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-vocab-mappings", "provenance-metadata", "published-by-producer", "void-sparql-endpoint" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "European_Nature_Information_System" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "application/rdf+xml;charset=UTF-8" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://eunis.eea.europa.eu/species/4055/rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://semantic.eea.europa.eu/sparql> ;
+        adms:status """
+FAIL (400)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD description
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "voiD_description" ;
+        dct:mirror "['ipfs:QmWVP9J484bihiDh1F38Wr5qaRLN3Uxvs7Cfr9oM11tTTq']" ;
+        dcat:accessURL <http://eunis.eea.europa.eu/void.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download species
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Species" ;
+        dct:mirror "['ipfs:QmYs4ZzAi1ALj3zqSKwUKvZCbYLkSE1qSCEJee6N1y9CjT']" ;
+        dcat:accessURL <http://eunis.eea.europa.eu/rdf/species.rdf.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download protected sites
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Sites" ;
+        dct:mirror "['ipfs:QmVnBN8tAHdMRvhU3Ns22QWFvkf6GaAqLd9v6bSMpzcNu8']" ;
+        dcat:accessURL <http://eunis.eea.europa.eu/rdf/sites.rdf.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download habitat types
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Habitat_types" ;
+        dct:mirror "['ipfs:QmYzE6LpoSQJmZXWaKBxZtvvxvkPByuBUDkjVinwU1bUTf']" ;
+        dcat:accessURL <http://eunis.eea.europa.eu/rdf/habitats.rdf.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download higher taxonomies
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Higher_taxonomies" ;
+        dct:mirror "['ipfs:QmdLmTzfZR1tvWuPYtiKWWXSkTGmge2JMUhWEHLbiAMpJd']" ;
+        dcat:accessURL <http://eunis.eea.europa.eu/rdf/taxonomies.rdf.gz> ;
+    ] ;
+    dct:description """
+EUNIS consists of information on species, habitat types and sites.
+"""@en ;
+
+    foaf:page <http://eunis.eea.europa.eu> ;
+    void:triples "20229105"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    void:uriSpace <http://eunis.eea.europa.eu/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :eunis ;
+    void:triples "5683"^^xsd:integer ;
+ .
+
+:geospecies a void:Linkset ;
+    void:target :eunis ;
+    void:triples "3346"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "European_Environment_Agency"^^xsd:string ;
+     foaf:mbox <mailto:eunis@eea.europa.eu> ; 
+ .
+

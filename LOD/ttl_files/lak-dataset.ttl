@@ -1,0 +1,97 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:lak-dataset a dcat:Dataset ;
+    dcat:keyword "bibliographic_data", "crossdomain", "deref-vocab", "education", "format-http", "format-rdf", "l3s", "learning-analytics", "lod", "published-by-producer", "sparql", "sparql-endpoint", "topic.crossdomain" ;
+    dct:title "Learning_Analytics_and_Knowledge_(LAK)_Dataset" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (500)
+""" ;
+        dct:title "Dump_(NT)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://lak.linkededucation.org/lak/LAK-DATASET-DUMP.nt.zip> ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_resource" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://data.linkededucation.org/resource/lak/conference/lak2013/paper/93> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://data.linkededucation.org/request/lak-conference/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (500)
+""" ;
+        dct:title "Schema" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://lak.linkededucation.org/schema/lak.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (500)
+""" ;
+        dct:title "Dump_(RDF/XML)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://lak.linkededucation.org/lak/LAK-DATASET-DUMP.rdf.zip> ;
+    ] ;
+    dct:description """
+The LAK dataset provides access to structured fulltext and metadata from key research publications in the field of learning analytics and educational data mining (see http://lak.linkededucation.org for details). It is regularly updated with data, for instance, from the LAK or EDM Conference series. 
+"""@en ;
+
+    foaf:page <http://www.solaresearch.org/resources/lak-dataset/> ;
+    void:triples "27843"^^xsd:integer ;
+    dcat:theme "cross_domain" ;
+    void:uriSpace <http://data.linkededucation.org/resource/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :lak-dataset ;
+    void:triples "150"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "LAK_Data_Team"^^xsd:string ;
+     foaf:mbox <mailto:admin@d@a.linkededuc@ion.org> ; 
+ .
+

@@ -1,0 +1,77 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:alpino-rdf a dcat:Dataset ;
+    dcat:keyword "llod", "lod", "lodcloud-diagram-2014-08-30" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "ALPINO_RDF_Treebank" ;
+    void:exampleResource [
+        dct:title "Example_file" ;
+        dcat:mediaType "example/rdf" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://lexinfo.net/corpora/alpino/cdb/123.rdf> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://lexinfo.net/corpora/alpino/query.php> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "HTML" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Welcome_page" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://lexinfo.net/corpora/alpino/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "ZIP" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Dump_of_files" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://lexinfo.net/corpora/alpino/alpino-rdf.zip> ;
+    ] ;
+    dct:description """
+Export of the ALPINO Dutch Treebank to RDF.
+"""@en ;
+
+    void:triples "1799901"^^xsd:integer ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:lexinfo a void:Linkset ;
+    void:target :alpino-rdf ;
+    void:triples "466794"^^xsd:integer ;
+ .
+

@@ -1,0 +1,148 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ASCDC-Linked-Taiwan-Artists a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://linkedart.ascdc.tw/index.php> ;
+    void:triples "17298"^^xsd:integer ;
+    dcat:distribution [
+        dct:identifier_distribution "a47a6f49-18ea-22ad-44a6-feface0dbd5c" ;
+        dct:title_distribution "ASCDC_LODDatasets" ;
+        dct:description_distribution """
+Launched in 2018, ASCDC LODDatasets is an online portal as platform for publishing LOD-based datasets, which are converted and provided by the ASCDC in Taiwan (R.O.C), with service for SPARQL queries and data downloads.
+""" ;
+        dcat:mediaType_distribution "XML,_JSON,_TTL,_CSV." ;
+        dcat:downloadURL_distribution <https://data.ascdc.tw/en/index.php> ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+FAIL (400)
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "49705e68-76f6-ec61-174b-52b620fd0b25" ;
+        dct:title_distribution "ASCDC-Linked_Taiwan_ArtistsSPARQL_Endpoint" ;
+        dct:description_distribution """
+Access to full download of entire LOD dataset of ASCDC's Linked Taiwan Artists for further reuse.
+""" ;
+        dcat:mediaType_distribution "OWL" ;
+        dcat:downloadURL_distribution <https://linkedart.ascdc.tw/assets/ASCDC_Taiwan%2520Artists.owl> ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+FAIL (400)
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "5926d779-f52e-5d9f-3207-da7e24f07b25" ;
+        dct:title_distribution "ASCDC-Linked_Taiwan_ArtistsSPARQL_Endpoint" ;
+        dct:description_distribution """
+Access to full download of entire LOD dataset of ASCDC's Linked Taiwan Artists JSON format for further reuses.
+""" ;
+        dcat:mediaType_distribution "JSON" ;
+        dcat:downloadURL_distribution <https://linkedart.ascdc.tw/sparql?query=PREFIX%2Brdfs%253A%2B%253Chttp%253A%252F%252Fwww.w3.org%252F2000%252F01%252Frdf-schema%2523%253E%250D%250APREFIX%2Bdbpedia-owl%253A%2B%253Chttp%253A%252F%252Fdbpedia.org%252Fontology%252F%253E%250D%250APREFIX%2Bdbpedia%253A%2B%253Chttp%253A%252F%252Fdbpedia.org%252Fresource%252F%253E%250D%250Aselect%2B%253Fs%2B%253Fp%2B%253Fo%2B%250D%250Awhere%2B%257B%250D%250A%253Fs%2B%253Fp%2B%253Fo.%250D%250A%257D&output=json> ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+FAIL (400)
+""" ;
+    ] ;
+    dcat:keyword "ASCDC", "Arts", "Art_History", "Paintings", "Artists", "Chen_Cheng-po", "Taiwan", "Japanese_Colonial_Period" ;
+    dct:description_main """
+The LOD dataset of Linked Taiwan Artists (LTA) was created by the Academia Sinica Center for Digital Cultures (ASCDC) and based on the online database of “Starting Out from 23.5°N: Chen Cheng-po” (從北緯23.5°出發 陳澄波, https://chenchengpo.asdc.sinica.edu.tw/main_en). It provides information on the biographical and work information of the renowned Taiwanese artists of the early 20th centuries and could be served as foundation for the study of Taiwan’s art history at that period. Containing 311 data records and 17,298 triples, the textual content within the LOD dataset is licensed under the Creative Common Attribution (CC 0).
+"""@en ;
+
+    dct:title_main "Linked_Taiwan_Artists_(LTA)" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_Resource:_Chen_Cheng-po/_陳澄波" ;
+        dct:description_exampleResource """
+Resource contains the LOD-based biographical data on the life of the Taiwanese painter “Chen Cheng-po/ 陳澄波”, lived between 1895 and 1947.
+""" ;
+        dcat:accessURL_exampleResource <https://linkedart.ascdc.tw/lod/Person/PR0001> ;
+        adms:status_exampleResource """
+FAIL (401)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_Resource:_Temple_of_Wenling_Sea_Goddess/_溫陵媽祖廟" ;
+        dct:description_exampleResource """
+Resource contains the LOD-based data on Chen Cheng-po’s painting work about the “Temple of Wenling Sea Goddess/ 溫陵媽祖廟”, created in 1927.
+""" ;
+        dcat:accessURL_exampleResource <https://linkedart.ascdc.tw/lod/Painting/AW0307> ;
+        adms:status_exampleResource """
+FAIL (401)
+""" ;
+    ] ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dcat:distribution [
+        dct:identifier_distribution "acfc3496-a3d4-6439-4b33-30767a516ef5" ;
+        dct:title_distribution "ASCDC_LODDatasetsDownloads" ;
+        dct:description_distribution """
+Webpage of ASCDC LODDatasets for downloads of entire published LOD-based datasets.
+""" ;
+        dcat:accessURL_distribution <https://data.ascdc.tw/en/data.php> ;
+        dcat:mediaType_distribution "text/html" ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+FAIL (400)
+""" ;
+    ] ;
+    dcat:theme "user_generated" ;
+    void:uriSpace <http://linkedart.ascdc.tw/lod/> ;
+    void:sparqlEndpoint [
+        dct:identifier_sparqlEndpoint "eaae596c-1157-1ead-6e79-3bbb2dcfe9c6" ;
+        dct:title_sparqlEndpoint "ASCDC-Linked_Taiwan_ArtistsSPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+Access to SPARQL endpoint of ASCDC's Linked Taiwan Artists datasets for data retrievals, downloads and further reuses.
+""" ;
+        dcat:accessURL_sparqlEndpoint <https://linkedart.ascdc.tw/live_sparql.php> ;
+        adms:status_sparqlEndpoint """
+FAIL (400)
+""" ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:getty-aat a void:Linkset ;
+    void:target :ASCDC-Linked-Taiwan-Artists ;
+    void:triples "234"^^xsd:integer ;
+ .
+
+:getty-tgn a void:Linkset ;
+    void:target :ASCDC-Linked-Taiwan-Artists ;
+    void:triples "53"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :ASCDC-Linked-Taiwan-Artists ;
+    void:triples "170"^^xsd:integer ;
+ .
+
+:viaf a void:Linkset ;
+    void:target :ASCDC-Linked-Taiwan-Artists ;
+    void:triples "31"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:luluyen1210@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Dr._Shu-Jiun_Sophy_Chen_(Academia_Sinica_Center_for_Digital_Cultures,_Taiwan_R.O.C.)"^^xsd:string ;
+     foaf:Cmbox <mailto:sophy@g@e.sinica.edu.tw> ; 
+ .
+

@@ -1,0 +1,359 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bioportal-rxnorm a dcat:Dataset ;
+    dcat:keyword "biomedicine", "bioportal", "format-rdf", "format-rrf", "lod", "ontology", "published-by-third-party" ;
+    dct:title "RxNORM" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+REST API Wiki Documentation
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+SPARQL endpoint
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://sparql.bioontology.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+Download link, BioPortal API KEY is required
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://rest.bioontology.org/bioportal/ontologies/download/46395?apikey=BP_API_KEY> ;
+    ] ;
+    dct:description """
+RxNorm Vocabulary
+"""@en ;
+
+    foaf:page <http://bioportal.bioontology.org/ontologies/1423> ;
+    void:triples "5832652"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-acgt a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "24"^^xsd:integer ;
+ .
+
+:bioportal-amino-acid a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+:bioportal-bao a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "24"^^xsd:integer ;
+ .
+
+:bioportal-bho a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-biomodels a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "58"^^xsd:integer ;
+ .
+
+:bioportal-canco a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "442"^^xsd:integer ;
+ .
+
+:bioportal-cco a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-cdao a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+:bioportal-chebi a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "1701"^^xsd:integer ;
+ .
+
+:bioportal-cpt a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "80"^^xsd:integer ;
+ .
+
+:bioportal-csp a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "2051"^^xsd:integer ;
+ .
+
+:bioportal-efo a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "418"^^xsd:integer ;
+ .
+
+:bioportal-ehda a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-envo a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-eo a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:bioportal-fda-meddevice a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-galen a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "1676"^^xsd:integer ;
+ .
+
+:bioportal-gaz a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "35"^^xsd:integer ;
+ .
+
+:bioportal-hcpcs a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "76"^^xsd:integer ;
+ .
+
+:bioportal-hl7 a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "294"^^xsd:integer ;
+ .
+
+:bioportal-icd10 a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:bioportal-icnp a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-icpc2p a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-idomal a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "55"^^xsd:integer ;
+ .
+
+:bioportal-imr a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "65"^^xsd:integer ;
+ .
+
+:bioportal-lnc a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "4388"^^xsd:integer ;
+ .
+
+:bioportal-mccl a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-mccl_x1 a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "55"^^xsd:integer ;
+ .
+
+:bioportal-mddb a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "9667"^^xsd:integer ;
+ .
+
+:bioportal-mdr a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "84"^^xsd:integer ;
+ .
+
+:bioportal-medlineplus a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "89"^^xsd:integer ;
+ .
+
+:bioportal-mesh-owl a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "6367"^^xsd:integer ;
+ .
+
+:bioportal-miro a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:bioportal-mod a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-msh a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "13788"^^xsd:integer ;
+ .
+
+:bioportal-ncbitaxon a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "32"^^xsd:integer ;
+ .
+
+:bioportal-ncit a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "5980"^^xsd:integer ;
+ .
+
+:bioportal-nddf a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "43513"^^xsd:integer ;
+ .
+
+:bioportal-ndfrt a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "30696"^^xsd:integer ;
+ .
+
+:bioportal-nif a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "265"^^xsd:integer ;
+ .
+
+:bioportal-npo a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "96"^^xsd:integer ;
+ .
+
+:bioportal-obi a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+:bioportal-oboe-sbc a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-omim a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "29"^^xsd:integer ;
+ .
+
+:bioportal-pdq a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "2808"^^xsd:integer ;
+ .
+
+:bioportal-phare a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "19"^^xsd:integer ;
+ .
+
+:bioportal-pma a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-pr a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "43"^^xsd:integer ;
+ .
+
+:bioportal-rcd a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "18613"^^xsd:integer ;
+ .
+
+:bioportal-rid a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "59"^^xsd:integer ;
+ .
+
+:bioportal-sdo a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "81"^^xsd:integer ;
+ .
+
+:bioportal-snomedct a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "31630"^^xsd:integer ;
+ .
+
+:bioportal-snpo a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "41"^^xsd:integer ;
+ .
+
+:bioportal-so_x1 a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-sopharm a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "558"^^xsd:integer ;
+ .
+
+:bioportal-vandf a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "34063"^^xsd:integer ;
+ .
+
+:bioportal-vo a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "87"^^xsd:integer ;
+ .
+
+:bioportal-xco a void:Linkset ;
+    void:target :bioportal-rxnorm ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Stuart_Nelson"^^xsd:string ;
+ .
+

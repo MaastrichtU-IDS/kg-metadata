@@ -1,0 +1,72 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:clld-glottolog a dcat:Dataset ;
+    dcat:keyword "linguistics", "llod", "lod" ;
+    dct:title_main "CLLD-GLOTTOLOG" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle;_charset=utf-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "VoID_description" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://glottolog.org/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/n3" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "RDF_dump" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://glottolog.org/static/download/glottolog-dataset.n3.gz> ;
+    ] ;
+    dct:description_main """
+Glottolog 2.7 published by the CLLD project
+"""@en ;
+
+    foaf:page <http://glottolog.org> ;
+    void:triples "8322839"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :clld-glottolog ;
+    void:triples "7822"^^xsd:integer ;
+ .
+
+:geonames a void:Linkset ;
+    void:target :clld-glottolog ;
+    void:triples "10763"^^xsd:integer ;
+ .
+
+:gold a void:Linkset ;
+    void:target :clld-glottolog ;
+    void:triples "24393"^^xsd:integer ;
+ .
+
+:lexvo a void:Linkset ;
+    void:target :clld-glottolog ;
+    void:triples "7822"^^xsd:integer ;
+ .
+

@@ -1,0 +1,187 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:acorn-sat a dcat:Dataset ;
+    dcat:keyword "australia", "bureau-of-meteorology", "climate", "deref-vocab", "format-dct", "format-foaf", "format-geo", "format-qb", "format-skos", "format-ssn", "format-time", "government", "lod", "lodcloud-diagram-2014-08-30", "provenance-metadata", "published-by-third-party", "temperature" ;
+    dct:title_main "Australian_Climate_Observations_Reference_NetworkSurface_Air_Temperature_Dataset" ;
+    void:exampleResource [
+        dct:title_exampleResource "Data_Cube_Yearly_Slices_of_Observations_(RDF/XML)" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://lab.environment.data.gov.au/data/acorn/climate/slice/station/year.rdf> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Data_Cube_Yearly_Slices_of_Observations_(TTL)" ;
+        dcat:mediaType_exampleResource "example/turtle" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://lab.environment.data.gov.au/data/acorn/climate/slice/station/year.ttl> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Data_Cube_Yearly_Slices_of_Observations_(HTML)" ;
+        dcat:mediaType_exampleResource "example/html" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://lab.environment.data.gov.au/data/acorn/climate/slice/station/year.html> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Data_Cube_Monthly_Slices_of_Observations_(RDF/XML)" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://lab.environment.data.gov.au/data/acorn/climate/slice/station/year/month.rdf> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Data_Cube_Monthly_Slices_of_Observations_(TTL)" ;
+        dcat:mediaType_exampleResource "example/turtle" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://lab.environment.data.gov.au/data/acorn/climate/slice/station/year/month.ttl> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Data_Cube_Monthly_Slices_of_Observations_(HTML)" ;
+        dcat:mediaType_exampleResource "example/html" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://lab.environment.data.gov.au/data/acorn/climate/slice/station/year/month.html> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "Sparql_endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+Sparql endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://lab.environment.data.gov.au/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Australian_Climate_Observations_Reference_NetworkSurface_Air_Temperature_Dataset" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://lab.environment.data.gov.au/data/acorn.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "All_Slices_Data_dump" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://lab.environment.data.gov.au/dumps/release/all_slices.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "All_Observations_Data_dump" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://lab.environment.data.gov.au/dumps/release/observations.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "ACORN-SAT_observations_ontology_(RDF/XML)" ;
+        dct:mirror_distribution "['ipfs:QmPADzp6C8vCuuCWhvA1Q51x6wsLwyV6aUsrMBdjxbYvrX']" ;
+        dcat:accessURL_distribution <http://lab.environment.data.gov.au/def/acorn/sat.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "ACORN-SAT_series_ontology_(RDF/XML)" ;
+        dct:mirror_distribution "['ipfs:QmdP8M8nF74WzZLxtEnFkLX31W75X8fjB4eUei5jhmdsct']" ;
+        dcat:accessURL_distribution <http://lab.environment.data.gov.au/def/acorn/time-series.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "ACORN-SAT_climate_ontology_(RDF/XML)" ;
+        dct:mirror_distribution "['ipfs:QmZ1wAVnmN1u9eniSTzMukBSDaWbsPTLDj9YAWLZ9hnykR']" ;
+        dcat:accessURL_distribution <http://lab.environment.data.gov.au/data/acorn/climate.rdf> ;
+    ] ;
+    dct:description_main """
+ACORN-SAT, the Australian Climate Observations Reference Network - Surface Air Temperature data set, is a homogenized daily maximum and minimum temperature data set containing data from 112 locations across Australia extending from 1910 to the present.
+"""@en ;
+
+    foaf:page <http://lab.environment.data.gov.au> ;
+    void:triples "61406503"^^xsd:integer ;
+    dcat:theme "government" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames a void:Linkset ;
+    void:target :acorn-sat ;
+    void:triples "583"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Armin_Haller"^^xsd:string ;
+     foaf:Cmbox <mailto:armin.haller@csiro.au> ; 
+ .
+

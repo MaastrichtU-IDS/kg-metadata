@@ -1,0 +1,135 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:mismuseos-gnoss a dcat:Dataset ;
+    dcat:keyword "artista", "artistas", "catálogo_de_arte", "catálogo_de_obras_de_arte", "catálogo_semántico", "colecciones_de_arte", "colección_de_arte", "colección_de_obras_de_arte", "country-spain", "country.es", "cuadro", "dc", "escuelas_artísticas", "escultores", "escultura", "exposiciones", "exposiciones_de_museos", "foaf", "format-dc", "format-dcam", "format-foaf", "format-rdfg", "format-sioc", "format-skos", "format-wot", "instalaciones", "language-spa", "license-metadata", "lod", "mncars", "museo_de_bellas_artes_de_bilbao", "museo_del_prado", "museo_nacional_centro_de_arte_reina_sofía", "museos", "no-proprietary-vocab", "no-vocab-mappings", "obras_de_arte", "obras_de_arte_por_autor", "obras_de_arte_por_estilo", "obras_de_arte_por_museo", "obras_de_arte_por_época", "obras_de_museos", "pinacoteca", "pinacoteca_digital", "pinacoteca_virtual", "pintores", "pintura", "provenance-metadata", "published-by-third-party", "recursos_artísticos", "schemata", "sioc", "skos", "socialweb", "sp", "spain", "usergeneratedcontent", "wrapper", "índice_de_obras_de_arte" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title "Mis_Museos,_índice_semántico_de_museos,_artistas_y_obras_de_arte_(GNOSS)" ;
+    void:exampleResource [
+        dct:title "RDF/XML_resource_example" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+This is an RDF/XML example link of one of the resources published in MisMuseos.net. Currently, almost 9000 resources have been published in the platform.
+""" ;
+        dcat:accessURL <http://mismuseos.net/comunidad/museos/recurso/Guernica/cac61948-81db-4f01-a505-8718e92bb414?rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "RDF/XML_resource_example_2" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+This is an RDF/XML example link of one of the resources published in MisMuseos.net. Currently, almost 9000 resources have been published in the platform.
+""" ;
+        dcat:accessURL <http://mismuseos.net/comunidad/museos/recurso/La-maja-vestida/28347478-566c-445d-b6e6-339a10f9cdc6?rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "RDF/XML_search_example_" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+This is an RDF/XML example link of a search results.
+""" ;
+        dcat:accessURL <http://mismuseos.net/en/community/museos/advanced-search/tag/barroco?rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/owl" ;
+        dct:description """
+Gnoss OWL Ontology
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Gnoss_Ontology" ;
+        dct:mirror "['ipfs:QmbDWiHLbnjJ2vGnaViALUEZFtCGu3hgUVhsSZjQ5xwpki']" ;
+        dcat:accessURL <http://gnoss.com/gnoss.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD description
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "voiD_description" ;
+        dct:mirror "['ipfs:QmTCDs5HETzyFir4W5skwaTbAaUvHefTocr4ZoXzUWx2Mr']" ;
+        dcat:accessURL <http://mismuseos.net/voidMisMuseosGNOSS.n3> ;
+    ] ;
+    dct:description """
+<p>
+<a href="http://mismuseos.net/en/community/museos">MisMuseos.net</a> is a semantic index of artistic resources (museums, artists and artwork) powered by <a href="http://gnoss.com/">GNOSS</a>. MisMuseos.net structures, organizes and offers you, in accordance with the principles promoted by the Linked Data Project, an extensive catalog of works of art that museums publish on the Web. MisMuseos.net connects them with educational recommendations and contexts. <p> The information on public cultural goods comes from data published in the Europeana dataset as RDF (Resource Description Framework), CER.ES Collection (Red Digital de Colecciones de Museos de España) and online public museums collections in Spain not included in CER.ES. MisMuseos.net offers a selection of 8,947 resources (November 2012).</p>
+</p>
+
+<p>
+Museos, Obras de Arte y Artistas componen la colección de <a href="http://mismuseos.net/">MisMuseos.net</a>, el gran índice de recursos artísticos en Internet promovido por 
+<a href="http://gnoss.com/">GNOSS</a> y destinado al enriquecimiento de la Web Semántica. MisMuseos.net estructura, organiza y pone a tu alcance, de acuerdo con los principios promovidos por el Linked Data Project, un extenso catálogo de las obras de arte que los museos publican en la Red conectándolo con otras bases de conocimiento educativas existentes en la iniciativa Linking Open permitiendo la generación de contextos educativos relacionados con los bienes culturales. </p>
+<p> La información sobre bienes culturales públicos procede de los datos publicados en el Europeana dataset como RDF (Resource Description Framework), de la colección CER.ES (Red Digital de Colecciones de Museos de España), y de las colecciones online de los museos públicos de España no incluidos en CER.ES. MisMuseos.net dispone en la actualidad de 8.947 obras de arte (Noviembre 2012)</p>
+"""@en ;
+
+    foaf:page <http://mismuseos.net/> ;
+    void:triples "1235894"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://mismuseos.net/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :mismuseos-gnoss ;
+    void:triples "1129"^^xsd:integer ;
+ .
+
+:didactalia a void:Linkset ;
+    void:target :mismuseos-gnoss ;
+    void:triples "44745"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :mismuseos-gnoss ;
+    void:triples "28715"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :mismuseos-gnoss ;
+    void:triples "1071"^^xsd:integer ;
+ .
+
+:gnoss a void:Linkset ;
+    void:target :mismuseos-gnoss ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:museosespania-gnoss a void:Linkset ;
+    void:target :mismuseos-gnoss ;
+    void:triples "8949"^^xsd:integer ;
+ .
+
+:nytimes-linked-open-data a void:Linkset ;
+    void:target :mismuseos-gnoss ;
+    void:triples "59"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "GNOSS_Team"^^xsd:string ;
+     foaf:mbox <mailto:gnoss@gnoss.com> ; 
+ .
+

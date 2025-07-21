@@ -1,0 +1,121 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:dblp-deusto-gnoss a dcat:Dataset ;
+    dcat:keyword "computer_science", "country-spain", "country.es", "dblp", "dc", "deusto", "foaf", "format-dc", "format-dcam", "format-foaf", "format-rdfg", "format-sioc", "format-skos", "format-wot", "indice_científico", "informática", "language-spa", "license-metadata", "lod", "no-proprietary-vocab", "no-vocab-mappings", "provenance-metadata", "published-by-third-party", "schemata", "sioc", "skos", "socialweb", "sp", "spain", "usergeneratedcontent", "wrapper" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title_main "DBLP_Research_Groups_(University_of_Deusto-GNOSS)" ;
+    void:exampleResource [
+        dct:title_exampleResource "RDF/XML_resource_example" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+This is an RDF/XML example link of one of the resources published in the DBLP Research Groups (Deusto University - GNOSS) community. Currently, more than 2 million resources have been published in the community.
+""" ;
+        dcat:accessURL_exampleResource <http://researchgroups.gnoss.com/comunidad/publicaciones/recurso/Linked-Open-Data-Perspectives-Incorporating-Linke/4995cbcb-0543-40b5-b5af-05e6d04acc09?rdf> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='researchgroups.gnoss.com', port=80): Max retries exceeded with url: /comunidad/publicaciones/recurso/Linked-Open-Data-Perspectives-Incorporating-Linke/4995cbcb-0543-40b5-b5af-05e6d04acc09?rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684302620>: Failed to establish a new connection: [Errno 113] No route to host')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "RDF/XML_resource_example_2" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+This is an RDF/XML example link of one of the resources published in the DBLP Research Groups (Deusto University - GNOSS) community. Currently, more than 2 million resources have been published in the community.
+""" ;
+        dcat:accessURL_exampleResource <http://researchgroups.gnoss.com/comunidad/publicaciones/recurso/A-reasonable-Semantic-Web/5ac2b9d8-534c-4cca-b6e2-a5ff4758fc83?rdf> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='researchgroups.gnoss.com', port=80): Max retries exceeded with url: /comunidad/publicaciones/recurso/A-reasonable-Semantic-Web/5ac2b9d8-534c-4cca-b6e2-a5ff4758fc83?rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843003d0>: Failed to establish a new connection: [Errno 113] No route to host')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "RDF/XML_search_example_" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+This is an RDF/XML example link of a search results.
+""" ;
+        dcat:accessURL_exampleResource <http://researchgroups.gnoss.com/en/community/publicaciones/advanced-search/tag/web?rdf> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='researchgroups.gnoss.com', port=80): Max retries exceeded with url: /en/community/publicaciones/advanced-search/tag/web?rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686aef7f0>: Failed to establish a new connection: [Errno 113] No route to host')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/owl" ;
+        dct:description_distribution """
+Gnoss OWL Ontology
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Gnoss_Ontology" ;
+        dct:mirror_distribution "['ipfs:QmbDWiHLbnjJ2vGnaViALUEZFtCGu3hgUVhsSZjQ5xwpki']" ;
+        dcat:accessURL_distribution <http://gnoss.com/gnoss.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD description
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='researchgroups.gnoss.com', port=80): Max retries exceeded with url: /voidDBLPDeustoResearchGroupsGNOSS.n3 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684302b00>: Failed to establish a new connection: [Errno 113] No route to host')))
+""" ;
+        dct:title_distribution "voiD_description" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://researchgroups.gnoss.com/voidDBLPDeustoResearchGroupsGNOSS.n3> ;
+    ] ;
+    dct:description_main """
+<p>
+<a href="http://researchgroups.gnoss.com/">DBLP Research Groups (University of Deusto-GNOSS) </a>
+is the platform for creating research communities enriched with scientific contexts from
+<a href="http://www.informatik.uni-trier.de/~ley/db/">DBLP</a>
+. The recommendation contexts of Deusto-GNOSS Research Groups are a part of an index with over two million scientific publications in IT developed by GNOSS in collaboration with the
+<a href="http://www.deusto.es/">University of Deusto</a>
+. You can use the contexts for your community or research group.
+</p>
+<p>
+<a href="http://researchgroups.gnoss.com/">DBLP Research Groups (University of Deusto-GNOSS) </a>
+works with
+<a href="http://gnoss.com/">GNOSS software (RIAM Intelearning Lab)</a>
+. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. GNOSS works within the philosophy of Open Data and proposes a solution so that data can be linked (Linked Data). Data are expressed in OWL-RDF files. We are implementing semantic technology in Education (educational communities and social learning), semantic catalogs for companies, corporate e-commerce portals and platforms to realize the concept of Open Government and Enterprise 2.0 (corporate social networks).
+</p>
+"""@en ;
+
+    foaf:page <http://researchgroups.gnoss.com> ;
+    void:triples "222375855"^^xsd:integer ;
+    dcat:theme "user_generated" ;
+    void:uriSpace <http://researchgroups.gnoss.com> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :dblp-deusto-gnoss ;
+    void:triples "72"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :dblp-deusto-gnoss ;
+    void:triples "582"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :dblp-deusto-gnoss ;
+    void:triples "72"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "GNOSS_Team"^^xsd:string ;
+     foaf:Cmbox <mailto:gnoss@gnoss.com> ; 
+ .
+

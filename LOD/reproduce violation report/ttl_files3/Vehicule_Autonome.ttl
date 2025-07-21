@@ -1,0 +1,55 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Vehicule_Autonome a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+VA
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "VA" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "564f9685-1a1a-1c49-fa05-fad4f8e3b2a8" ;
+        dcat:downloadURL_distribution <https://fr.wikipedia.org/wiki/V%25C3%25A9hicule_autonome> ;
+    ] ;
+    foaf:page <https://fr.wikipedia.org/wiki/V%C3%A9hicule_autonome> ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "VA" ;
+    dct:description_main """
+VA
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    dcat:theme "life_sciences" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:gourram.s@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Sa"^^xsd:string ;
+     foaf:Cmbox <mailto:gourram.s@gmail.com> ; 
+ .
+

@@ -1,0 +1,80 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:jp-textbook a dcat:Dataset ;
+    foaf:depiction <https://jp-textbook.github.io/textbookLOD-logo.png> ;
+    foaf:page <https://w3id.org/jp-textbook/> ;
+    dcat:keyword "textbook" ;
+    dct:title_main "Japanese_Textbook_LOD" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle;_charset=utf-8" ;
+        dct:description_distribution """
+Version 10.1
+""" ;
+        dcat:downloadURL_distribution <https://jp-textbook.github.io/all-20180825.ttl> ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "all-20180825.ttl" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "4d9ff66d-d9c8-566e-d0ec-706d5cdd6d23" ;
+    ] ;
+    dct:description_main """
+Japanese Textbook LOD project provides a LOD dataset for textbooks published in Japan up to now since the 7th curriculum guideline enforced in 1992, as well as the related information such as the subject areas, the subjects, and the curriculum guidelines. As of March 2018, the dataset contains bibliographic information for 7,257 textbook titles.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <https://w3id.org/jp-textbook/> ;
+    void:triples "177410"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:exampleResource [
+        dcat:mediaType_exampleResource "text/turtle;_charset=utf-8" ;
+        dct:description_exampleResource """
+
+""" ;
+        adms:status_exampleResource """
+OK
+""" ;
+        dct:title_exampleResource "Ebata_Yoshio,_et_al._Eds._Japanese_Expression,_2nd_Edition._Daiichi_Gakushusha,_192p." ;
+        dcat:accessURL_exampleResource <https://w3id.org/jp-textbook/%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1/2017/%E5%9B%BD%E8%A1%A8/308> ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:national-diet-library-authorities a void:Linkset ;
+    void:target :jp-textbook ;
+    void:triples "739"^^xsd:integer ;
+ .
+
+:dbpedia-ja a void:Linkset ;
+    void:target :jp-textbook ;
+    void:triples "634"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:Oname "Masao_Takaku"^^xsd:string ;
+     foaf:Ombox <mailto:tk.masao@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Masao_Takaku"^^xsd:string ;
+     foaf:Cmbox <mailto:masao@slis.tsukuba.ac.jp> ; 
+ .
+

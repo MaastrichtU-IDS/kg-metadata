@@ -1,0 +1,93 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bpr a dcat:Dataset ;
+    dcat:keyword "bibliographic_data", "bibliography", "country-italy", "library", "lod", "lodcloud-diagram-2014-08-30", "lodlam", "rdf", "rdf-format" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "BPR_?_Bibliography_of_the_Italian_Parliament_and_electoral_studies" ;
+    void:exampleResource [
+        dct:title "Example_resource" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://dati.camera.it/ocd/bpr/monografia.rdf/1745> ;
+        adms:status """
+FAIL (500)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "main_sparql_EndPoint" ;
+        dcat:endpointDescription """
+it's possible to use the GRAPH http:/dati.camera.it/ocd/bpr/
+""" ;
+        dcat:accessURL <http://dati.camera.it/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "dump_download_page" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://dati.camera.it/it/download/bpr.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/plain;_charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "VOID_description_" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://dati.camera.it/void.ttl#BPR> ;
+    ] ;
+    dct:description """
+**dati.camera.it - Linked Open Data della Camera dei deputati**  
+**The BPR - Bibliografia del Parlamento italiano e degli studi elettorali**  (Bibliography of the Italian Parliament and Electoral Studies) is a database of bibliographic references of books and articles in periodical journals addressing the history of the Italian Parliament and the history of elections. In particular the BPR provides references to studies on:  
+
+* the Italian Parliament, from the concession of the Statuto Albertino (Albertine Statute) in 1848, the National Consultative Assembly and the Constituent Assembly;
+* elections (laws, procedures, results), with reference to general elections as from 1848.  
+
+The BPR addresses primarily studies in law, plus studies in political science, organisational science, political sociology, as well as related historiographical literature. In 2002 the BPR started reporting documents posted on the leading juridical websites.  
+Each bibliographic reference is assigned one or more classification codes, which are taken from a directory of over 100 classifications organized into seven major fields.  
+The BPR is also a digital library updated non-stop. By using documents in the public domain or available thanks to agreements with private publishers, it provides a selection of full-text documents (monographs, judgements, articles from periodicals, contributions to miscellaneous works) attached to the bibliographic reference.  
+"""@en ;
+
+    void:triples "366800"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://dati.camera.it/ocd/bpr/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:viaf a void:Linkset ;
+    void:target :bpr ;
+    void:triples "54"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Library_of_the_Italian_Chamber_of_Deputies"^^xsd:string ;
+     foaf:mbox <mailto:bib_segreteria@camera.it> ; 
+ .
+

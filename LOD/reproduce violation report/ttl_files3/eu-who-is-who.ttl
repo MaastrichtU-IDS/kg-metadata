@@ -1,0 +1,85 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:eu-who-is-who a dcat:Dataset ;
+    dcat:keyword "eu", "eu-institution", "format-dct", "format-foaf", "government", "latc", "lod", "no-deref-vocab", "no-license-metadata", "politics", "provenance-metadata", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-pddl> ;
+    dct:title_main "EU_Who_Is_Who" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "NTriples_Data_Dump" ;
+        dct:mirror_distribution "[]" ;
+        dcat:downloadURL_distribution <http://whoiswho.publicdata.eu/dump/whoiswho.nt> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Group_of_the_Progressive_Alliance_of_Socialist_and_Democrats_in_the_European_Parliament" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+        dct:description_exampleResource """
+This is an example resource (a political party) from the EU Whoiswho dataset.
+""" ;
+        dcat:accessURL_exampleResource <http://whoiswho.publicdata.eu/data/institutions/1063.rdf> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://api.talis.com/stores/whoiswho/services/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='api.talis.com', port=80): Max retries exceeded with url: /stores/whoiswho/services/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fef20>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "VoID_Dataset_URI" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://whoiswho.publicdata.eu/void.ttl> ;
+    ] ;
+    dct:description_main """
+Data scraped from [EU Whoiswho](http://europa.eu/whoiswho/public/index.cfm?lang=en), the official directory of the European Union. The dataset contains people, organisations and organisational hierarchy.
+"""@en ;
+
+    foaf:page <http://whoiswho.publicdata.eu/> ;
+    void:triples "198786"^^xsd:integer ;
+    void:uriSpace <http://whoiswho.publicdata.eu/data/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:eu-institutions a void:Linkset ;
+    void:target :eu-who-is-who ;
+    void:triples "3260"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Keith_Alexander"^^xsd:string ;
+     foaf:Cmbox <mailto:keithalexander@keithalexander.co.uk> ; 
+ .
+

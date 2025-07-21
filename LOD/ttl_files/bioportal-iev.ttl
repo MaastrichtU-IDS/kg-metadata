@@ -1,0 +1,214 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bioportal-iev a dcat:Dataset ;
+    dcat:keyword "biomedicine", "bioportal", "format-obo", "format-rdf", "lod", "ontology", "published-by-third-party" ;
+    dct:title "Event_(INOH_pathway_ontology)" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+REST API Wiki Documentation
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+SPARQL endpoint
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://sparql.bioontology.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+Download link, BioPortal API KEY is required
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://rest.bioontology.org/bioportal/ontologies/download/45404?apikey=BP_API_KEY> ;
+    ] ;
+    dct:description """
+A structured controlled vocabulary of pathway centric biological processes. This ontology is a INOH pathway annotation ontology, one of a set of ontologies intended to be used in pathway data annotation to ease data integration. This ontology is used to annotate biological processes, pathways, sub-pathways in the INOH pathway data.<br>INOH is part of the BioPAX working group.
+"""@en ;
+
+    foaf:page <http://bioportal.bioontology.org/ontologies/1011> ;
+    void:triples "43375"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-apo a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-bao a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-bootstrep a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "37"^^xsd:integer ;
+ .
+
+:bioportal-canco a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:bioportal-cco a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "117"^^xsd:integer ;
+ .
+
+:bioportal-chem2bio2owl a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "18"^^xsd:integer ;
+ .
+
+:bioportal-csp a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "90"^^xsd:integer ;
+ .
+
+:bioportal-galen a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:bioportal-go_x1 a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "292"^^xsd:integer ;
+ .
+
+:bioportal-go_x2 a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "290"^^xsd:integer ;
+ .
+
+:bioportal-gro_x2 a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "37"^^xsd:integer ;
+ .
+
+:bioportal-idomal a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-ino a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "56"^^xsd:integer ;
+ .
+
+:bioportal-ixno a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-lnc a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "26"^^xsd:integer ;
+ .
+
+:bioportal-mesh-owl a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "188"^^xsd:integer ;
+ .
+
+:bioportal-mi a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "65"^^xsd:integer ;
+ .
+
+:bioportal-msh a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "82"^^xsd:integer ;
+ .
+
+:bioportal-ncit a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "218"^^xsd:integer ;
+ .
+
+:bioportal-nif a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "196"^^xsd:integer ;
+ .
+
+:bioportal-nigo a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "122"^^xsd:integer ;
+ .
+
+:bioportal-npo a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-phare a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-pw a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-rcd a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:bioportal-rex a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-sbo a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+:bioportal-snomedct a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "48"^^xsd:integer ;
+ .
+
+:bioportal-ypo a void:Linkset ;
+    void:target :bioportal-iev ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Event_Administrators"^^xsd:string ;
+ .
+

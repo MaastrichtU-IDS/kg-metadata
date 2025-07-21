@@ -1,0 +1,92 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:prelex a dcat:Dataset ;
+    dcat:keyword "latc", "legal", "lod", "lodcloud" ;
+    dct:title "PreLex" ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://prelex.publicdata.eu/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "RDF/XML_Dump" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://prelex.publicdata.eu/model/export/?m=http%253A%252F%252Fprelex.publicdata.eu%252F&f=rdfxml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Example_Resource_(RDF/XML)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://prelex.publicdata.eu/resource/export/f/rdfxml?r=http%253A%252F%252Fprelex.publicdata.eu%252Fr%252Forganization%252FDG%252BFisheries> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Example_Resource_(HTML)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://prelex.publicdata.eu/r/organization/DG%2BFisheries> ;
+    ] ;
+    dct:description """
+PreLex provides access to documents regarding inter-institutional law of the European Union. The original website provides only access to the documents via search, whereas the extracted data also contains metadata for better filtering and querying possibilities. The data that was published as Linked Data in this task was not extracted from the original source, but from an already existing API for European Union legislation. If you want to browse the data, please use the links in the "navigation box" on the left side. Furthermore, it is possible to create your own SPARQL queries for obtaining lists of combined information.
+This dataset (http://prelex.publicdata.eu/) was triplified and published by the research group AKSW (Agile Knowledge Engineering and Semantic Web). For further information about AKSW please visit our website.
+"""@en ;
+
+    foaf:page <http://prelex.publicdata.eu/> ;
+    void:triples "1051352"^^xsd:integer ;
+    dcat:theme "government" ;
+    void:uriSpace <http://prelex.publicdata.eu/r/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :prelex ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:eur-lex-rdf a void:Linkset ;
+    void:target :prelex ;
+    void:triples "11637"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Philipp_Frischmuth"^^xsd:string ;
+     foaf:mbox <mailto:frischmuth@inform@ik.uni-leipzig.de> ; 
+ .
+

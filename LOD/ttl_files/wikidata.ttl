@@ -1,0 +1,467 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:wikidata a dcat:Dataset ;
+    foaf:depiction <https://upload.wikimedia.org/wikipedia/commons/6/66/Wikidata-logo-en.svg> ;
+    dcat:keyword "wikimedia", "wikipedia" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "Wikidata" ;
+    dcat:distribution [
+        dcat:mediaType "application/octet-stream" ;
+        dct:description """
+The latest full dump of all Wikidata entity data, in Turtle format, compressed with bzip2. Dumps are generated on a weekly basis.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Latest_full_dump,_bzip2_compressed" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.ttl.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/octet-stream" ;
+        dct:description """
+The latest full dump of all Wikidata entity data, in Turtle format, compressed with gzip. Dumps are generated on a weekly basis.
+""" ;
+        dcat:downloadURL <https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.ttl.gz> ;
+        adms:status """
+OK
+""" ;
+        dct:title "Latest_full_dump,_gzip_compressed" ;
+        dct:mirror "[]" ;
+        dct:identifier "59748656-8636-972a-4b06-442d7077620e" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/octet-stream" ;
+        dct:description """
+The latest “truthy” dump of all Wikidata entity data, in N-Triples format, compressed with bzip2. This contains only “truthy” or “best” statements, without qualifiers or references. Dumps are generated on a weekly basis.
+""" ;
+        dcat:downloadURL <https://dumps.wikimedia.org/wikidatawiki/entities/latest-truthy.nt.bz2> ;
+        adms:status """
+OK
+""" ;
+        dct:title "Latest_truthy_dump,_bzip2_compressed" ;
+        dct:mirror "[]" ;
+        dct:identifier "a1431906-76e5-021b-a55f-21b0fec4f37a" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/octet-stream" ;
+        dct:description """
+The latest “truthy” dump of all Wikidata entity data, in N-Triples format, compressed with gzip. This contains only “truthy” or “best” statements, without qualifiers or references. Dumps are generated on a weekly basis.
+""" ;
+        dcat:downloadURL <https://dumps.wikimedia.org/wikidatawiki/entities/latest-truthy.nt.gz> ;
+        adms:status """
+OK
+""" ;
+        dct:title "Latest_truthy_dump,_gzip_compressed" ;
+        dct:mirror "[]" ;
+        dct:identifier "b38b980b-ed07-d4ef-c371-027cf7e083cd" ;
+    ] ;
+    void:exampleResource [
+        dct:title "entity_node_for_Nelson_Mandela" ;
+        dcat:mediaType "application/ld+json;_charset=UTF-8" ;
+        dct:description """
+The canonical URI for the concept of Nelson Mandela, the South African anti-apartheid activist and later President, as represented on Wikidata. Using content negotiation, the URI redirects to different pages depending on how it is accessed; when opened in a browser, it will usually redirect to the Wikidata page for the item, showing its terms, statements and sitelinks, while other clients may be served the data in JSON or RDF formats instead.
+""" ;
+        dcat:accessURL <http://www.wikidata.org/entity/Q8023> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dcat:mediaType "application/ld+json;_charset=UTF-8" ;
+        dct:description """
+The data node for Wikidata’s concept of Nelson Mandela. In the linked data interface, this node is the subject of triples describing metadata about the entity record on Wikidata. (In the Wikidata Query Service, the data node is merged into the entity node.) This is the URI that actually implements content negotiation depending on the client’s Accept headers; the entity URI, when accessed, unconditionally redirects to this one.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "data_node_for_Nelson_Mandela" ;
+        dcat:accessURL <https://www.wikidata.org/wiki/Special:EntityData/Q8023> ;
+    ] ;
+    void:exampleResource [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+The Wikidata wiki page for Nelson Mandela, showing the terms, statements and sitelinks of the item. This is what the data node URI redirects to when opened in a browser, and the main way for humans to interact with the item.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "wiki_page_for_Nelson_Mandela" ;
+        dcat:accessURL <https://www.wikidata.org/wiki/Q8023> ;
+    ] ;
+    void:exampleResource [
+        dcat:mediaType "application/json;_charset=UTF-8" ;
+        dct:description """
+The Wikibase-specific representation of Wikidata’s information about Nelson Mandela in JSON format. This is what the data node URI redirects to when the client does not send any Accept headers.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "JSON_data_for_Nelson_Mandela" ;
+        dcat:accessURL <https://www.wikidata.org/wiki/Special:EntityData/Q8023.json> ;
+    ] ;
+    void:exampleResource [
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+Wikidata’s data relating to the concept of Nelson Mandela, in RDF/XML format. This is what the data node URI redirects to when the client accepts the RDF/XML format.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "RDF/XML_data_for_Nelson_Mandela" ;
+        dcat:accessURL <https://www.wikidata.org/wiki/Special:EntityData/Q8023.rdf> ;
+    ] ;
+    void:exampleResource [
+        dcat:mediaType "text/turtle;_charset=UTF-8" ;
+        dct:description """
+Wikidata’s data relating to the concept of Nelson Mandela, in Turtle format. This is what the data node URI redirects to when the client accepts the Turtle format.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Turtle_data_for_Nelson_Mandela" ;
+        dcat:accessURL <https://www.wikidata.org/wiki/Special:EntityData/Q8023.ttl> ;
+    ] ;
+    void:exampleResource [
+        dcat:mediaType "application/n-triples;_charset=UTF-8" ;
+        dct:description """
+Wikidata’s data relating to the concept of Nelson Mandela, in N-Triples format. This is what the data node URI redirects to when the client accepts the N-Triples format.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "N-Triples_data_for_Nelson_Mandela" ;
+        dcat:accessURL <https://www.wikidata.org/wiki/Special:EntityData/Q8023.nt> ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "Wikidata_Query_Service" ;
+        dcat:endpointDescription """
+The Wikidata Query Service generally contains the full data of Wikidata, modulo a slight delay in updating (usually no more than a few seconds), a handful of spurious synchronization errors (requests are routed to a randomly selected server from the pool, and the different servers may be slightly out of sync), and a few differences between the RDF dump format and the WDQS version (see https://www.mediawiki.org/wiki/Wikibase/Indexing/RDF_Dump_Format#WDQS_data_differences).
+""" ;
+        dcat:accessURL <https://query.wikidata.org/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+The Web UI of the Wikidata Query Service offers a convenient interface for authoring or editing SPARQL queries against the Wikidata Query Service and viewing the results in various formats.
+""" ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Wikidata_Query_Service,_Web_UI" ;
+        dct:identifier "4df74a37-bb58-c0d2-e0f6-d871af40e071" ;
+        dcat:accessURL <https://query.wikidata.org/> ;
+    ] ;
+    dct:description """
+free knowledge database project hosted by Wikimedia and edited by volunteers
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://www.wikidata.org/> ;
+    void:triples "12500000000"^^xsd:integer ;
+    dcat:theme "user_generated" ;
+    void:uriSpace <http://www.wikidata.org/entity/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:doi a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "27367486"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "3747452"^^xsd:integer ;
+ .
+
+:viaf a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "6148897"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "4397020"^^xsd:integer ;
+ .
+
+:dnb-gemeinsame-normdatei a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "1918745"^^xsd:integer ;
+ .
+
+:lcsh a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "1338101"^^xsd:integer ;
+ .
+
+:data-bnf-fr a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "895058"^^xsd:integer ;
+ .
+
+:idreffr a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "528040"^^xsd:integer ;
+ .
+
+:oclc-fast a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "502221"^^xsd:integer ;
+ .
+
+:national-diet-library-authorities a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "124052"^^xsd:integer ;
+ .
+
+:chembl-rdf a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "100223"^^xsd:integer ;
+ .
+
+:libris a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "258242"^^xsd:integer ;
+ .
+
+:babelnet a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "65942"^^xsd:integer ;
+ .
+
+:getty-tgn a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "29226"^^xsd:integer ;
+ .
+
+:getty-aat a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "25080"^^xsd:integer ;
+ .
+
+:gemeenschappelijke-thesaurus-audiovisuele-archieven a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "39556"^^xsd:integer ;
+ .
+
+:lexvo a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "8300"^^xsd:integer ;
+ .
+
+:ocd a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "12881"^^xsd:integer ;
+ .
+
+:pleiades a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "5625"^^xsd:integer ;
+ .
+
+:bbc-programmes a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "4202"^^xsd:integer ;
+ .
+
+:stw-thesaurus-for-economics a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "2663"^^xsd:integer ;
+ .
+
+:hungarian-national-library-catalog a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "6825"^^xsd:integer ;
+ .
+
+:uniprotkb a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "2537481"^^xsd:integer ;
+ .
+
+:open-library a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "271983"^^xsd:integer ;
+ .
+
+:datos-bne-es a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "207362"^^xsd:integer ;
+ .
+
+:data-persee-fr a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "34064"^^xsd:integer ;
+ .
+
+:gutenberg a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "19945"^^xsd:integer ;
+ .
+
+:bluk-bnb a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "42519"^^xsd:integer ;
+ .
+
+:glottolog a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "10800"^^xsd:integer ;
+ .
+
+:sandrart-net a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "5172"^^xsd:integer ;
+ .
+
+:thesesfr a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "4370"^^xsd:integer ;
+ .
+
+:msc a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "210"^^xsd:integer ;
+ .
+
+:iptc-newscodes a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "782"^^xsd:integer ;
+ .
+
+:uniprot a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "2537481"^^xsd:integer ;
+ .
+
+:zitgist-musicbrainz a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "490029"^^xsd:integer ;
+ .
+
+:libris a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "258242"^^xsd:integer ;
+ .
+
+:eunis a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "179098"^^xsd:integer ;
+ .
+
+:swedish-open-cultural-heritage a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "164146"^^xsd:integer ;
+ .
+
+:europeana-sparql a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "160460"^^xsd:integer ;
+ .
+
+:bioportal-msh a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "77724"^^xsd:integer ;
+ .
+
+:bioportal-mesh-owl a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "77714"^^xsd:integer ;
+ .
+
+:bag a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "61218"^^xsd:integer ;
+ .
+
+:rism a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "27329"^^xsd:integer ;
+ .
+
+:BVMC a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "16483"^^xsd:integer ;
+ .
+
+:yso a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "14180"^^xsd:integer ;
+ .
+
+:clld-glottolog a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "10800"^^xsd:integer ;
+ .
+
+:linked-open-numbers a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "10327"^^xsd:integer ;
+ .
+
+:eurovoc a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "3068"^^xsd:integer ;
+ .
+
+:nomisma_org a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "1801"^^xsd:integer ;
+ .
+
+:bioportal-snomedct a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "801"^^xsd:integer ;
+ .
+
+:bioportal-unitsontology a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "610"^^xsd:integer ;
+ .
+
+:cpv-2008 a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "422"^^xsd:integer ;
+ .
+
+:naics-2012 a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "45"^^xsd:integer ;
+ .
+
+:warsampo a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:lucas.werkmeister@wikimedia.de> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Lucas_Werkmeister"^^xsd:string ;
+     foaf:mbox <mailto:wikid@a@wikimedia.de> ; 
+ .
+

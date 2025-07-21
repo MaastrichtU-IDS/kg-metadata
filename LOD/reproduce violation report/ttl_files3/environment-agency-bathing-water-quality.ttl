@@ -1,0 +1,154 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:environment-agency-bathing-water-quality a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "environment", "format-admingeo", "format-foaf", "format-skos", "government", "license-metadata", "lod", "lodcloud-diagram-2014-08-30", "no-vocab-mappings", "provenance-metadata", "published-by-producer" ;
+    dct:license <http://reference.data.gov.uk/id/open-government-licence> ;
+    dct:title_main "Environment_Agency_Bathing_Water_Quality" ;
+    void:exampleResource [
+        dct:title_exampleResource "In-Season_Sample_Assessments_(10)_(RDF/XML)" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://environment.data.gov.uk/doc/bathing-water-quality/in-season/sample.rdf> ;
+        adms:status_exampleResource """
+FAIL (400)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "In-Season_Sample_Assessments_(10)_(TTL)" ;
+        dcat:mediaType_exampleResource "example/turtle" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://environment.data.gov.uk/doc/bathing-water-quality/in-season/sample.ttl> ;
+        adms:status_exampleResource """
+FAIL (400)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "In-Season_Sample_Assessments_(10)_(HTML)" ;
+        dcat:mediaType_exampleResource "example/html" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://environment.data.gov.uk/doc/bathing-water-quality/in-season/sample.html> ;
+        adms:status_exampleResource """
+FAIL (400)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "Environment_Agency_Bathing_Water_Quality_Data_SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://environment.data.gov.uk/sparql/bwq/query> ;
+        adms:status_sparqlEndpoint """
+FAIL (405)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+Bathing Water Quality Assessment (England and Wales)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Environment_Agency_Bathing_Water_Quality_Compliance_Dataset" ;
+        dct:mirror_distribution "['ipfs:QmSZ2iPSBis4LDdCG24mHm6fDL85s9ErmQrpDrDjPsz4oK']" ;
+        dcat:accessURL_distribution <http://environment.data.gov.uk/data/bathing-water-quality.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+Compressed ntriple dump of in-season sample assessment baseline
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Baseline_In-Season_Sample_Assessments_Dump" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://environment.data.gov.uk/sources/bwq/output/in-season_2011_BWQ_BASELINE.nt.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+Compressed ntriple dump of annual compliance assessment baseline
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Baseline_Annual_Compliance_Assessments_Dump" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://environment.data.gov.uk/sources/bwq/output/annual-compliance_2011_BWQ_BASELINE.nt.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+Cube DSDs, Class and property definitions for bathing water quality dataset
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Bathing_Water_Quality_Vocabulary_(RDF/XML_Source)" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://environment.data.gov.uk/sources/def/bathing-water-quality.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+Cube DSDs, Class and property definitions for bathing water quality dataset
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Bathing_Water_Quality_Vocabulary_(TTL_Source)" ;
+        dct:mirror_distribution "['ipfs:QmQ3V7ic4PxL3m1H8demp8PNML3EssfpMcmtD5CCUf5cxC']" ;
+        dcat:accessURL_distribution <http://environment.data.gov.uk/sources/def/bathing-water-quality.ttl> ;
+    ] ;
+    dct:description_main """
+Bathing water quality assessment data for England and Wales from the Environment Agency.
+"""@en ;
+
+    foaf:page <http://environment.data.gov.uk/lab> ;
+    void:triples "8735962"^^xsd:integer ;
+    dcat:theme "government" ;
+    void:uriSpace <http://environment.data.gov.uk/data/bathing-water-quality/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:ordnance-survey-linked-data a void:Linkset ;
+    void:target :environment-agency-bathing-water-quality ;
+    void:triples "1010"^^xsd:integer ;
+ .
+
+:reference-data-gov-uk a void:Linkset ;
+    void:target :environment-agency-bathing-water-quality ;
+    void:triples "400000"^^xsd:integer ;
+ .
+
+:statistics-data-gov-uk a void:Linkset ;
+    void:target :environment-agency-bathing-water-quality ;
+    void:triples "505"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Environment_Agency"^^xsd:string ;
+     foaf:Cmbox <mailto:Alex.Coley@environment-agency.gov.uk> ; 
+ .
+

@@ -1,0 +1,130 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:biblioteca-escolar-digital-cita a dcat:Dataset ;
+    dcat:keyword "Biblioteca_Escolar_Digital", "CITA", "Centro_Internacional_de_Tecnologías_Avanzadas", "alumnos", "corporate_excellence", "country-spain", "country.es", "dc", "foaf", "format-dc", "format-dcam", "format-foaf", "format-rdfg", "format-sioc", "format-skos", "format-wot", "gnoss", "laboratorio_de_ideas", "language-spa", "license-metadata", "lod", "no-proprietary-vocab", "no-vocab-mappings", "padres", "pedagogos", "profesores", "provenance-metadata", "published-by-third-party", "recursos_educativos", "schemata", "sioc", "skos", "socialweb", "spain", "usergeneratedcontent", "wrapper" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title_main "Biblioteca_Escolar_Digital_CITA" ;
+    void:exampleResource [
+        dct:title_exampleResource "RDF/XML_resource_example" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+        dct:description_exampleResource """
+This is an RDF/XML example link of one of the resources published in the Biblioteca Escolar Digital (CITA) community. 
+""" ;
+        dcat:accessURL_exampleResource <http://bibliotecaescolardigital.es/comunidad/BibliotecaEscolarDigital/recurso/las-funciones-cerebrales-superiores/f37772c7-cdcb-400a-aba4-53f5091152bf?rdf> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "RDF/XML_resource_example_2" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+        dct:description_exampleResource """
+This is an RDF/XML example link of one of the resources published in the Biblioteca Escolar Digital (CITA) community. 
+""" ;
+        dcat:accessURL_exampleResource <http://bibliotecaescolardigital.es/comunidad/BibliotecaEscolarDigital/busqueda?search=caracol%2520serafin> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "RDF/XML_resource_example" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+This is an RDF/XML example link of a search results.
+""" ;
+        dcat:accessURL_exampleResource <http://red.gnoss.com/en/community/Biblioteca-Escolar-Digital/advanced-search/tag/clase?rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+Gnoss Ontology
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Gnoss_Ontology" ;
+        dct:mirror_distribution "['ipfs:QmbDWiHLbnjJ2vGnaViALUEZFtCGu3hgUVhsSZjQ5xwpki']" ;
+        dcat:accessURL_distribution <http://gnoss.com/gnoss.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD description
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "voiD_description" ;
+        dct:mirror_distribution "['ipfs:QmVo9HbR2W5pvKwyzDW9wmSQ3uaBbiWr9t83n61xTZEs3U']" ;
+        dcat:accessURL_distribution <http://red.gnoss.com/voidCITA.n3> ;
+    ] ;
+    dct:description_main """
+<p>
+<a href="http://bibliotecaescolardigital.es">Biblioteca Escolar Digital</a> is an educational tool for teachers, students, parents, educators and researchers in the world of education created by the <a href="http://cita.fundaciongsr.com/">Centro Internacional de Tecnologías Avanzadas (CITA)</a> of the foundation in Peñaranda de Bracamonte (Salamanca, España).
+</p>
+<p>
+The Biblioteca Escolar Digital’s repository works with <a href="http://products.gnoss.com/">GNOSS software (RIAM Intelearning Lab)</a>. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. The project includes a faceted-based search engine and enriched contexts. Both are developments by GNOSS.
+</p>
+
+<p>
+La <a href="http://bibliotecaescolardigital.es">Biblioteca Escolar Digital</a> es una herramienta didáctica para profesores, alumnos, padres, pedagogos e investigadores del mundo de la educación creada por el <a href="http://cita.fundaciongsr.com/">Centro Internacional de Tecnologías Avanzadas (CITA)</a> de la Fundación en Peñaranda de Bracamonte (Salamanca, España).
+</p>
+<p>
+El repositorio trabaja con <a href="http://products.gnoss.com/">software de GNOSS (RIAM Intelearning Lab)</a>. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. El proyecto incluye un buscador facetado y contextos enriquecidos.
+</p>
+"""@en ;
+
+    foaf:page <http://red.gnoss.com/comunidad/Biblioteca-Escolar-Digital> ;
+    void:triples "930765"^^xsd:integer ;
+    dcat:theme "user_generated" ;
+    void:uriSpace <http://bibliotecaescolardigital.es> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :biblioteca-escolar-digital-cita ;
+    void:triples "4367"^^xsd:integer ;
+ .
+
+:didactalia a void:Linkset ;
+    void:target :biblioteca-escolar-digital-cita ;
+    void:triples "30000"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :biblioteca-escolar-digital-cita ;
+    void:triples "12355"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :biblioteca-escolar-digital-cita ;
+    void:triples "96"^^xsd:integer ;
+ .
+
+:nytimes-linked-open-data a void:Linkset ;
+    void:target :biblioteca-escolar-digital-cita ;
+    void:triples "4148"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "GNOSS_Team"^^xsd:string ;
+     foaf:Cmbox <mailto:gnoss@gnoss.com> ; 
+ .
+

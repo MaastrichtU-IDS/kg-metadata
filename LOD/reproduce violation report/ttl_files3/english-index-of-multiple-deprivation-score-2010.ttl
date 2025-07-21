@@ -1,0 +1,100 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:english-index-of-multiple-deprivation-score-2010 a dcat:Dataset ;
+    dcat:keyword "crime", "department-of-infrastructure-transport-regional-development-and-local-government", "deprivation", "deref-vocab", "education", "employment", "environment", "geographic", "government", "health", "housing", "imd", "license-metadata", "linkeddata", "lod", "no-vocab-mappings", "provenance-metadata", "published-by-third-party" ;
+    dct:license <http://reference.data.gov.uk/id/open-government-licence> ;
+    dct:title_main "English_Index_of_Multiple_Deprivation_Score_2010" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/turtle" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://opendatacommunities.org/doc/IMD/2010/IMD-score/LSOA/E01000001.ttl> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "None" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://opendatacommunities.org/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+RDF data dump in Turtle format (zipped)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://opendatacommunities-downloads.s3.amazonaws.com/imd-2010-imd-score.ttl.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+Dataset metadata
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://opendatacommunities.org/datasets/imd-score-2010.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+downloadable ontology
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://opendatacommunities.org/def/IMD> ;
+    ] ;
+    dct:description_main """
+This dataset contains the main Index of Multiple Deprivation scores for 2010. It was created from data provided by the Department of Communities and Local Government. See <a href="http://www.communities.gov.uk/publications/corporate/statistics/indices2010">here</a> for details.
+
+194892 triples.
+"""@en ;
+
+    foaf:page <http://opendatacommunities.org/datasets/imd-score-2010> ;
+    void:triples "194892"^^xsd:integer ;
+    dcat:theme "government" ;
+    void:uriSpace <http://opendatacommunities.org/id/IMD/2010/IMD-score/LSOA/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:odc-lsoa a void:Linkset ;
+    void:target :english-index-of-multiple-deprivation-score-2010 ;
+    void:triples "32482"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Bill_Roberts"^^xsd:string ;
+     foaf:Cmbox <mailto:bill@swirrl.com> ; 
+ .
+

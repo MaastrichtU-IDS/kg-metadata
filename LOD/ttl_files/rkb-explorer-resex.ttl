@@ -1,0 +1,167 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:rkb-explorer-resex a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-akt", "format-dc", "format-rdf", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-vocab-mappings", "provenance-metadata", "publications", "published-by-third-party", "void-sparql-endpoint" ;
+    dct:title "ReSIST_Resilience_Mechanisms_(RKBExplorer.com)" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL <http://resex.rkbexplorer.com/id/resilience-mechanism-65b5cef4> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='resex.rkbexplorer.com', port=80): Max retries exceeded with url: /id/resilience-mechanism-65b5cef4 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fe8c0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://resex.rkbexplorer.com/sparql/> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='resex.rkbexplorer.com', port=80): Max retries exceeded with url: /sparql/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843ff010>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/xml" ;
+        dct:description """
+XML Sitemap
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='resex.rkbexplorer.com', port=80): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fd330>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://resex.rkbexplorer.com/sitemap.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD file
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmbXJzWfm2rGfuLm87o83iMKak4jdaQpKNxSGgm9wCkTms']" ;
+        dcat:accessURL <http://resex.rkbexplorer.com/models/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-gzip" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='resex.rkbexplorer.com', port=80): Max retries exceeded with url: /models/dump.tgz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fec20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title "Download_(tar_gzip_of_RDF)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://resex.rkbexplorer.com/models/dump.tgz> ;
+    ] ;
+    dct:description """
+
+"""@en ;
+
+    foaf:page <http://resex.rkbexplorer.com> ;
+    void:triples "55582"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://resex.rkbexplorer.com/id/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :rkb-explorer-resex ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:rkb-explorer-acm a void:Linkset ;
+    void:target :rkb-explorer-resex ;
+    void:triples "291"^^xsd:integer ;
+ .
+
+:rkb-explorer-budapest a void:Linkset ;
+    void:target :rkb-explorer-resex ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:rkb-explorer-citeseer a void:Linkset ;
+    void:target :rkb-explorer-resex ;
+    void:triples "6"^^xsd:integer ;
+ .
+
+:rkb-explorer-dblp a void:Linkset ;
+    void:target :rkb-explorer-resex ;
+    void:triples "28"^^xsd:integer ;
+ .
+
+:rkb-explorer-dotac a void:Linkset ;
+    void:target :rkb-explorer-resex ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:rkb-explorer-eprints a void:Linkset ;
+    void:target :rkb-explorer-resex ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:rkb-explorer-ibm a void:Linkset ;
+    void:target :rkb-explorer-resex ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:rkb-explorer-ieee a void:Linkset ;
+    void:target :rkb-explorer-resex ;
+    void:triples "6"^^xsd:integer ;
+ .
+
+:rkb-explorer-kisti a void:Linkset ;
+    void:target :rkb-explorer-resex ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:rkb-explorer-laas a void:Linkset ;
+    void:target :rkb-explorer-resex ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:rkb-explorer-newcastle a void:Linkset ;
+    void:target :rkb-explorer-resex ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:rkb-explorer-oai a void:Linkset ;
+    void:target :rkb-explorer-resex ;
+    void:triples "7"^^xsd:integer ;
+ .
+
+:rkb-explorer-pisa a void:Linkset ;
+    void:target :rkb-explorer-resex ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:rkb-explorer-rae2001 a void:Linkset ;
+    void:target :rkb-explorer-resex ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Hugh_Glaser"^^xsd:string ;
+     foaf:mbox <mailto:hg@ecs.soton.ac.uk> ; 
+ .
+

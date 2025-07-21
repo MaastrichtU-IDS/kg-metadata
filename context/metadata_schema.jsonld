@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "identifier": "https://schema.org/identifier",
+    "name": "https://schema.org/name",
+    "alternateName": "https://schema.org/alternateName",
+    "termCode": "https://schema.org/termCode",
+    "description": "https://schema.org/description",
+    "url": "https://schema.org/url",
+    "relatedLink": "https://schema.org/relatedLink",
+    "creator": "https://schema.org/creator",
+    "publisher": "https://schema.org/publisher",
+    "dateCreated": "https://schema.org/dateCreated",
+    "datePublished": "https://schema.org/datePublished",
+    "dateModified": "https://schema.org/dateModified",
+    "subjectOf": "https://schema.org/subjectOf",
+    "image": "https://schema.org/image",
+    "distribution": "https://schema.org/distribution",
+    "encodingFormat": "https://schema.org/encodingFormat",
+    "contentUrl": "https://schema.org/contentUrl",
+    "mainEntityOfPage": "https://schema.org/mainEntityOfPage",
+    "contentURL": "https://schema.org/contentUrl",  
+    "version": "https://schema.org/version",
+    "license": "https://schema.org/license",
+    "keywords": "https://schema.org/keywords",
+    "publication": "https://schema.org/publication",
+    "inLanguage": "https://schema.org/inLanguage"
+  }
+}

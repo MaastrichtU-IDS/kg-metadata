@@ -1,0 +1,100 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:upper-ontology a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://sonika-malik.github.io/super-ontology/sup_proton.xml> ;
+    void:triples "1274"^^xsd:integer ;
+    dcat:distribution [
+        dct:identifier_distribution "fd1b82f8-610b-4ada-505c-babe5b434161" ;
+        dct:title_distribution "Super_Ontology" ;
+        dct:description_distribution """
+This is an upper ontology that is based on the Unit of knowledge. The unit of knowledge has 6 operators. 
+""" ;
+        dcat:mediaType_distribution "application/xml" ;
+        dcat:downloadURL_distribution <http://sonika-malik.github.io/super-ontology/sup_proton.xml> ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:keyword "Matter", "space", "time", "1-sensed", "2-sensed", "3-sensed", "4-sensed", "5-sensed", "reasoning", "knowledge_base", "ontology", "intelligent_systems", "domain_ontologies", "knowledge_representation" ;
+    dct:description_main """
+The super ontology as is the theme of this paper describes the structure of the universe and 
+defines the concept of reality. Reality is defined to have an existence that is known as truth.  All objects existing in this world come under the purview of this ontology. All entities belonging to this universe are permanent but undergo countless changes continuously. No destruction takes place during these changes. This ontology is a high-level and Domain independent upper ontology. This ontology is based on a unit of knowledge.
+"""@en ;
+
+    dct:title_main "Super_Ontology" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dcat:distribution [
+        dct:identifier_distribution "c5c8ac11-e41e-39de-9fbf-6dc3f74714b1" ;
+        dct:title_distribution "Sup_Ont.rdf" ;
+        dct:description_distribution """
+The same ontology is in another format i.e. rdf.
+""" ;
+        dcat:accessURL_distribution <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+        dcat:mediaType_distribution "rdf" ;
+        dct:mirror_distribution "['ipfs:QmbCDqDXc9G1akWmszjTirVeYmfhJrxCno4TFmTiDwKk8z']" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "1ce70461-ef3c-e5fa-af12-db2523784677" ;
+        dct:title_distribution "Super_ontology_in_turtle" ;
+        dct:description_distribution """
+same ontology in turtle format i.e. .ttl
+""" ;
+        dcat:accessURL_distribution <http://www.semanticweb.org/viva/ontologies/2017/4/untitled-ontology-82> ;
+        dcat:mediaType_distribution "ttl" ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='semanticweb.org', port=80): Max retries exceeded with url: /viva/ontologies/2017/4/untitled-ontology-82 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686da0790>, 'Connection to semanticweb.org timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:theme "user_generated" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] ;
+    foaf:depiction <https://sonika-malik.github.io/super-ontology/sup_proton.jpg> .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :upper-ontology ;
+    void:triples "37"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :upper-ontology ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:opencyc a void:Linkset ;
+    void:target :upper-ontology ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:sonika.malik@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Sonika_Malik"^^xsd:string ;
+     foaf:Cmbox <mailto:sonika.malik@gmail.com> ; 
+ .
+

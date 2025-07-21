@@ -1,0 +1,86 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:courts-thesaurus a dcat:Dataset ;
+    dcat:keyword "courts", "eu", "format-dcterms", "format-skos", "format-vcard", "germany", "license-metadata", "lod", "lodcloud-diagram-2014-08-30", "media", "no-proprietary-vocab", "provenance-metadata", "published-by-producer", "united_nations" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Courts_thesaurus" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_of_Bundesfinanzhof" ;
+        dcat:mediaType_exampleResource "application/rdf+xml;charset=UTF-8" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://vocabulary.wolterskluwer.de/court/10017.rdf> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='vocabulary.wolterskluwer.de', port=80): Max retries exceeded with url: /court/10017.rdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686db68f0>, 'Connection to vocabulary.wolterskluwer.de timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL-Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://vocabulary.wolterskluwer.de/PoolParty/sparql/court> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='vocabulary.wolterskluwer.de', port=80): Max retries exceeded with url: /PoolParty/sparql/court (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686db5540>, 'Connection to vocabulary.wolterskluwer.de timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='vocabulary.wolterskluwer.de', port=80): Max retries exceeded with url: /court/export/court.rdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684302020>, 'Connection to vocabulary.wolterskluwer.de timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "RDF/XML_File" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://vocabulary.wolterskluwer.de/court/export/court.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='vocabulary.wolterskluwer.de', port=80): Max retries exceeded with url: /court.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684300130>, 'Connection to vocabulary.wolterskluwer.de timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "voiD_description" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://vocabulary.wolterskluwer.de/court.html> ;
+    ] ;
+    dct:description_main """
+Courts thesaurus is structuring German and European courts in a hierarchical fashion and includes e.g. address information. This thesaurus is not only dedicated to parties interested in legal matters, but also to developers developing geo data applications. Information concerning courts and their roles and responsibilities can become an interesting aspect of many applications in the future.
+"""@en ;
+
+    foaf:page <http://vocabulary.wolterskluwer.de/> ;
+    void:triples "30387"^^xsd:integer ;
+    dcat:theme "government" ;
+    void:uriSpace <http://vocabulary.wolterskluwer.de/court> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :courts-thesaurus ;
+    void:triples "997"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Wolters_Kluwer_Deutschland_GmbH"^^xsd:string ;
+     foaf:Cmbox <mailto:cdirschl@wolterskluwer.de> ; 
+ .
+

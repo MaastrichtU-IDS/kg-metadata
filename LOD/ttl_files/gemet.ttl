@@ -1,0 +1,115 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:gemet a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "environment", "european", "format-rdf", "format-skos", "format-xhtml", "license-metadata", "lld", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "provenance-metadata", "published-by-third-party", "schemata", "thesaurus" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "GEneral_Multilingual_Environmental_Thesaurus" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "application/octet-stream" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://www.eionet.europa.eu/gemet/gemet-backbone.rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://rdfdata.eionet.europa.eu/eea/languages/fi> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://cr3.eionet.europa.eu/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='cr3.eionet.europa.eu', port=80): Max retries exceeded with url: /sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fcbb0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Download for RDF/XML and simple HTML formats
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.eionet.europa.eu/gemet/rdf?langcode=en> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD description
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmeaxJn7MKJYCYraimwrkrNqMRKqfvvfhVmKJriPuMdsiz']" ;
+        dcat:accessURL <http://www.eionet.europa.eu/gemet/void.rdf> ;
+    ] ;
+    dct:description """
+### About
+
+A thesaurus in 20+ languages for terms related to the environment and environmental data. Published by the European Environment Agency.
+
+Available in RDF without reuse constraints. 
+
+### Openness
+
+ No explicit information found.
+"""@en ;
+
+    foaf:page <http://www.eionet.europa.eu/gemet/> ;
+    void:triples "20229105"^^xsd:integer ;
+    dcat:theme "government" ;
+    void:uriSpace <http://www.eionet.europa.eu/gemet/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:agrovoc-skos a void:Linkset ;
+    void:target :gemet ;
+    void:triples "1199"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :gemet ;
+    void:triples "3005"^^xsd:integer ;
+ .
+
+:umthes a void:Linkset ;
+    void:target :gemet ;
+    void:triples "3483"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "European_Environment_Agency"^^xsd:string ;
+     foaf:mbox <mailto:gemet@eea.europa.eu> ; 
+ .
+

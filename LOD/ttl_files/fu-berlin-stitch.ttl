@@ -1,0 +1,72 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:fu-berlin-stitch a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-rdf", "lifesciences", "lod", "lodcloud-diagram-2011-09-19", "no-license-metadata", "no-provenance-metadata", "published-by-third-party", "vocab-mappings" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "STITCH:_Chemical-Protein_Interactions" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://www4.wiwiss.fu-berlin.de/stitch/resource/organisms/Aeropyrum_pernix> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "None" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://www4.wiwiss.fu-berlin.de/stitch/sparql> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dct:description """
+Linked Data version of STITCH which contains information on chemicals and proteins as well as their interactions and links. The links were derived from experiments, databases and the literature. STITCH contains interactions for over 68,000 chemicals and over 1.5 million proteins in 373 species.
+"""@en ;
+
+    foaf:page <http://www4.wiwiss.fu-berlin.de/stitch/> ;
+    void:triples "55099700"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    void:uriSpace <http://www4.wiwiss.fu-berlin.de/stitch/resource/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bio2rdf-chebi a void:Linkset ;
+    void:target :fu-berlin-stitch ;
+    void:triples "6882"^^xsd:integer ;
+ .
+
+:bio2rdf-pubchem a void:Linkset ;
+    void:target :fu-berlin-stitch ;
+    void:triples "9840"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :fu-berlin-stitch ;
+    void:triples "123"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Anja_Jentzsch"^^xsd:string ;
+     foaf:mbox <mailto:anja@anjeve.de> ; 
+ .
+

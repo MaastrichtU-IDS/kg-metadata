@@ -1,0 +1,49 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:steak a dcat:Dataset ;
+    dcat:keyword "format-owl", "format-rdf", "format-rdfs", "format-skos", "linked-open-data", "lod", "semantic", "semantic-web", "terminology", "thesaurus", "vocab-mappings" ;
+    dct:title_main "Super_Terminology_System(STEAK)Linked_Open_Data" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Concepts(SKOS)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Concepts(SKOS)_:_download_file" ;
+        dct:mirror_distribution "['ipfs:QmPvY7RpoyAYwQGwNziZAfGMkBq2NEwhKKRsmWubwstxm3']" ;
+        dcat:accessURL_distribution <http://steak.kisti.re.kr/steak2skos/STEAK2SKOS_dump.rdf> ;
+    ] ;
+    dct:description_main """
+### About
+
+From website:
+
+>STEAK (Super Terminology system for the Evaluation and Analysis of Knowledge) is an integrated management tool for multilingual lexical resources. To accomplish this goal, semantic text mining techniques and resource convergence techniques which extract meaningful data from big data resources are implemented as fundamental functions. Moreover, in order to give data readability, an intelligent interface including concept navigation and visualization is additionally provided. The main processes of the STEAK are collecting multilingual lexical resources, extracting patterns appropriate for the resources, explicitly constructing semantic relations, and expressing these outcomes based on SKOS (Simple Knowledge Organization System) type for information sharing and reusability.
+"""@en ;
+
+    foaf:page <http://steak.kisti.re.kr/steak/project.html> ;
+    void:triples "333714"^^xsd:integer ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Do-Heon_Jeong"^^xsd:string ;
+     foaf:Cmbox <mailto:heon@kisti.re.kr> ; 
+ .
+

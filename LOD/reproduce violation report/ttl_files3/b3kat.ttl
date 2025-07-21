@@ -1,0 +1,177 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:b3kat a dcat:Dataset ;
+    dcat:keyword "bavaria", "berlin", "bibliographic", "brandenburg", "format-bibo", "format-dc", "format-dcterms", "germany", "government", "library", "license-metadata", "lld", "lod", "lodcloud-diagram-2014-08-30", "no-proprietary-vocab", "no-provenance-metadata", "published-by-producer", "publications" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "B3KatLibrary_Union_Catalogues_of_Bavaria,_Berlin_and_Brandenburg" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_Resource" ;
+        dcat:mediaType_exampleResource "example/turtle" ;
+        dct:description_exampleResource """
+Link to an example resource in Turtle format
+""" ;
+        dcat:accessURL_exampleResource <http://lod.b3kat.de/data/title/BV000023809> ;
+        adms:status_exampleResource """
+FAIL (500)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "B3Kat_SPARQL-Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://lod.b3kat.de/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "HTML" ;
+        dct:description_distribution """
+Data Dump: Download the complete dataset in Turtle-Format. 
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "B3KatDataset_Download-Page_" ;
+        dct:mirror_distribution "['ipfs:QmY4U648Av6bgF6MmAMHtVYFRzrJpQud2oU2sAkAE1GZhY']" ;
+        dcat:accessURL_distribution <http://lod.b3kat.de/download> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+VoiD dataset description for B3Kat
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "voiD_description" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://lod.b3kat.de/.well-known/void> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "DownloadPart_0" ;
+        dct:mirror_distribution "['ipfs:QmQhCrCqS4YiCzs4JQoyYTujGHNPzqTiouV42QuUo5XGQE']" ;
+        dcat:accessURL_distribution <http://lod.b3kat.de/download/lod.b3kat.de.part0.ttl.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "DownloadPart_1" ;
+        dct:mirror_distribution "['ipfs:QmSHLNsgeCq9jncxbXMa4T1X6SvbRPzDyuspxhvQyKpbBB']" ;
+        dcat:accessURL_distribution <http://lod.b3kat.de/download/lod.b3kat.de.part1.ttl.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "DownloadPart_2" ;
+        dct:mirror_distribution "['ipfs:QmakJHWekBXSiQFhqAxJzpmDrjbt8iBZKKzn4dVNFoGeRx']" ;
+        dcat:accessURL_distribution <http://lod.b3kat.de/download/lod.b3kat.de.part2.ttl.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "DownloadPart_3" ;
+        dct:mirror_distribution "['ipfs:QmRwXx4P1agG1cRBi7mYFRK2t2tDdwJ3mfUMWCQ54ioxa2']" ;
+        dcat:accessURL_distribution <http://lod.b3kat.de/download/lod.b3kat.de.part3.ttl.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "DownloadPart_4" ;
+        dct:mirror_distribution "['ipfs:QmWg76usQ2cLMpqLLYA8tapDpERr2qti8GoMqU5WDtmAev']" ;
+        dcat:accessURL_distribution <http://lod.b3kat.de/download/lod.b3kat.de.part4.ttl.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "DownloadPart_5" ;
+        dct:mirror_distribution "['ipfs:QmQLSHSXijUhALmsXD4jqnQKPyr5vbgtf5wiRPoJurXxdR']" ;
+        dcat:accessURL_distribution <http://lod.b3kat.de/download/lod.b3kat.de.part5.ttl.gz> ;
+    ] ;
+    dct:description_main """
+Joint Union Catalogue of 200 academic libraries in the german states of Bavaria, Berlin and Brandenburg. The data contains descriptions of 28Mio. titles and 69Mio. holdings available in these libraries. The available data dump in Turtle is approx. 9GB. 
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://lod.b3kat.de> ;
+    void:triples "1022898443"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://lod.b3kat.de/title/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dewey_decimal_classification a void:Linkset ;
+    void:target :b3kat ;
+    void:triples "3655789"^^xsd:integer ;
+ .
+
+:dnb-gemeinsame-normdatei a void:Linkset ;
+    void:target :b3kat ;
+    void:triples "74722718"^^xsd:integer ;
+ .
+
+:lobid-resources a void:Linkset ;
+    void:target :b3kat ;
+    void:triples "34624"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:bsb.it.allg@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Bavarian_State_Library,_Bavarian_Library_Union,_Cooperative_Library_Network_Berlin-Brandenburg"^^xsd:string ;
+     foaf:Cmbox <mailto:lod@bsb-muenchen.de> ; 
+ .
+

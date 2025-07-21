@@ -1,0 +1,62 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:riese a dcat:Dataset ;
+    dcat:keyword "europe", "format-rdf", "geographic", "lod", "lodcloud-diagram-2011-09-19", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "no-vocab-mappings", "published-by-third-party", "statistics" ;
+    dct:title "RDFizing_and_Interlinking_the_EuroStat_Data_Set_Effort" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Download
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmaW3RixvxEXLRu3RTLWb8EaS46HovMjPn9vw4jt5Xh4JA']" ;
+        dcat:downloadURL <http://riese.joanneum.at/dump/> ;
+    ] ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://riese.joanneum.at/data/bp010/2007m01_ea> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='riese.joanneum.at', port=80): Max retries exceeded with url: /data/bp010/2007m01_ea (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dad750>, 'Connection to riese.joanneum.at timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dct:description """
+The statistical data published on riese was originally published by Eurostat. 
+
+### Openness: Open (?)
+
+[About page](http://riese.joanneum.at/about.html) has cc-by on page but not clear whether this applies to data. Page also states:
+
+> The statistical data published on riese was originally published by Eurostat. Provided that the source is acknowledged, Eurostat data may be reproduced under the conditions specified in the general copyright notice.
+"""@en ;
+
+    foaf:page <http://riese.joanneum.at/data/> ;
+    void:triples "5000000"^^xsd:integer ;
+    void:uriSpace <http://riese.joanneum.at/data/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames-semantic-web a void:Linkset ;
+    void:target :riese ;
+    void:triples "100000"^^xsd:integer ;
+ .
+

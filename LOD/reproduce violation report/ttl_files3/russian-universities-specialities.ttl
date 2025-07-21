@@ -1,0 +1,61 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:russian-universities-specialities a dcat:Dataset ;
+    dcat:keyword "education", "format-rdfs", "lod", "lodcloud.nolinks", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "published-by-producer", "russian", "speciality", "university", "vocab-mappings" ;
+    dct:license <http://www.opendefinition.org/licenses/gfdl> ;
+    dct:title_main "Russian_Universities_Specialities" ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://sparql.sstu.ru:3030/speciality-vocabulary/query> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='sparql.sstu.ru', port=3030): Max retries exceeded with url: /speciality-vocabulary/query (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684302170>, 'Connection to sparql.sstu.ru timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+xml" ;
+        dct:description_distribution """
+This ontology describes a degree of higher education and the direction of bachelor's and master's degrees in the Russian Federation and their compliance with the various official lists. It is assumed that a given ontology can be used in various applications of the Semantic Web in Russian higher education.
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='datahub.ckan.io', port=443): Max retries exceeded with url: /dataset/c8bb2280-5919-4fbb-85b1-52d03d403e21/resource/38b05231-715e-411e-9c04-4752d08dfa6d/download/specialitydatahub.rdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3684301ae0>, 'Connection to datahub.ckan.io timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "Russian_University_Specialities" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://datahub.ckan.io/dataset/c8bb2280-5919-4fbb-85b1-52d03d403e21/resource/38b05231-715e-411e-9c04-4752d08dfa6d/download/specialitydatahub.rdf> ;
+    ] ;
+    dct:description_main """
+This ontology describes a degree of higher education and the direction of bachelor's and master's degrees in the Russian Federation and their compliance with the various official lists. It is assumed that a given ontology can be used in various applications of the Semantic Web in Russian higher education.
+"""@en ;
+
+    foaf:page <http://sparql.sstu.ru:3030/speciality-vocabulary/query> ;
+    void:triples "17376"^^xsd:integer ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:rdfs a void:Linkset ;
+    void:target :russian-universities-specialities ;
+    void:triples "10000"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Alexey_Dmitriev"^^xsd:string ;
+     foaf:Cmbox <mailto:aleks23041996@gmail.com> ; 
+ .
+

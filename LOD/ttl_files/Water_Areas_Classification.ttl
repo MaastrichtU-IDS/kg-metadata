@@ -1,0 +1,57 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Water_Areas_Classification a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint_in_Virtuoso" ;
+        dct:identifier "c5e4f974-4661-9fd5-4282-fa50eff26730" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <https://www.foodie-cloud.org/sparql> ;
+        adms:status """
+FAIL (502)
+""" ;
+    ] ;
+    foaf:depiction <https://box.psnc.pl/f/263eddb24b/?raw=1> ;
+    foaf:page <https://www.foodie-cloud.org/fct/> ;
+    dcat:keyword "FAO", "water_areas", "marine", "inland" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "FAO_water_areas_classification_as_linked_data_@PSNC" ;
+    dct:description """
+FAO water areas classification, including inland and marine codes, published as linked data.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <http://www.fao.org/aims/aos/fi/water_FAO_areas/> ;
+    void:triples "22697"^^xsd:integer ;
+    dcat:theme "geography" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:soumya.put.poznan@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Raul_Palma,_Soumya_Brahma"^^xsd:string ;
+     foaf:mbox <mailto:rpalma@man.poznan.pl> ; 
+ .
+

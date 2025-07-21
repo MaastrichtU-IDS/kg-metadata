@@ -1,0 +1,56 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Corine_linked_dataset a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint_in_Virtuoso" ;
+        dct:identifier_sparqlEndpoint "6ee82c43-fc47-7d82-5968-6aa66376db40" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <https://www.foodie-cloud.org/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (502)
+""" ;
+    ] ;
+    foaf:page <https://www.foodie-cloud.org/fct/> ;
+    dcat:keyword "corine", "landuse", "Czech_Republic", "Poland", "Spain" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "Corine_linked_dataset_@PSNC" ;
+    dct:description_main """
+this dataset contains linked data from agriculture related lands (hilucs_code<200) & for main cities in Czech Republic (centers of NUTS3 regions), Poland (agglomeration areas from Urban Atlas) and Spain (agglomeration areas from Urban Atlas).
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <http://w3id.org/foodie/corine/> ;
+    void:triples "16777595"^^xsd:integer ;
+    dcat:theme "government" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:soumya.put.poznan@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Raul_Palma,_Soumya_Brahma"^^xsd:string ;
+     foaf:Cmbox <mailto:rpalma@man.poznan.pl> ; 
+ .
+

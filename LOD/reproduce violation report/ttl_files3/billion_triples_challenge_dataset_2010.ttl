@@ -1,0 +1,64 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:billion_triples_challenge_dataset_2010 a dcat:Dataset ;
+    dcat:keyword "crossdomain", "format-gr", "format-rdf", "linkeddata", "lod", "lodcloud.nolinks", "lodcloud.unconnected", "no-proprietary-vocab", "published-by-third-party" ;
+    dct:title_main "Billion_Triples_Challenge_Dataset_2010" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html" ;
+        dct:description_distribution """
+The dataset is split into multiple download files
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:downloadURL_distribution <http://km.aifb.kit.edu/projects/btc-2010/> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://products.semweb.bestbuy.com/company.rdf#BusinessEntity_BestBuy> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='products.semweb.bestbuy.com', port=80): Max retries exceeded with url: /company.rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684372fb0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dct:description_main """
+Dataset that was used for the Billion Triples Challenge 2010:
+
+See: http://challenge.semanticweb.org/
+
+The major part of the dataset was crawled from the Web of Linked Data during March/April 2010 based on datasets provided by Falcon-S, Sindice, Swoogle, SWSE, and Watson using the MultiCrawler/SWSE framework. We also included partial data from data.gov and data.gov.uk. 
+
+The downloaded content was parsed using the Redland toolkit with the rdfxml parser. We rewrote blank node identifiers to include the data source in order to provide unique blank nodes for each data source, and appended the data source to the output file. The data is encoded in NQuads format and split into chunks of 10m statements each. 
+
+The datasets of the Billion Triples Challenges 2008 and 2009 are also still available.
+"""@en ;
+
+    foaf:page <http://km.aifb.kit.edu/projects/btc-2010/> ;
+    void:triples "3200000000"^^xsd:integer ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Andreas_Harth"^^xsd:string ;
+     foaf:Cmbox <mailto:chris@bizer.de> ; 
+ .
+

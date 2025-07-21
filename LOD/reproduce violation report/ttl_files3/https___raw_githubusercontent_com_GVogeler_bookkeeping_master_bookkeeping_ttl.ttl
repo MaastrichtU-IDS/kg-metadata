@@ -1,0 +1,67 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:https___raw_githubusercontent_com_GVogeler_bookkeeping_master_bookkeeping_ttl a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://gams.uni-graz.at/> ;
+    dcat:distribution [
+        dct:identifier_distribution "617963e2-8a22-92b3-dfbe-0c84f87ec382" ;
+        dct:title_distribution "Bookkeeping" ;
+        dct:description_distribution """
+Bookkeeping
+""" ;
+        dcat:mediaType_distribution "text/plain;_charset=utf-8" ;
+        dcat:downloadURL_distribution <https://raw.githubusercontent.com/GVogeler/bookkeeping/master/bookkeeping.ttl> ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:keyword "bookkeeping" ;
+    dct:description_main """
+Bookkeeping.  --- Warning: educational upload since vacuum about accounting data on LOD web.  I'm trying this resource...
+"""@en ;
+
+    dct:title_main "Bookkeeping" ;
+    dct:license <https://opendefinition.org/licenses/against-drm> ;
+    dcat:theme "cross_domain" ;
+    void:sparqlEndpoint [
+        dct:identifier_sparqlEndpoint "437eca42-0111-0c82-2349-282be597ca5c" ;
+        dct:title_sparqlEndpoint "bookkeeping" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <https://raw.githubusercontent.com/GVogeler/bookkeeping/master/bookkeeping.ttl> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:etienneodetje@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "zim"^^xsd:string ;
+     foaf:Cmbox <mailto:zim@uni-graz.@> ; 
+ .
+

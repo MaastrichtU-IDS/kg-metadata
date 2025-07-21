@@ -1,0 +1,57 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Soil_maps a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint_in_Virtuoso" ;
+        dct:identifier "251a209e-8806-ae21-afb3-261b158ce44c" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <https://www.foodie-cloud.org/sparql> ;
+        adms:status """
+FAIL (502)
+""" ;
+    ] ;
+    foaf:depiction <https://box.psnc.pl/f/9d90b08c2c/?raw=1> ;
+    foaf:page <https://www.foodie-cloud.org/fct/> ;
+    dcat:keyword "soil_erosion", "erosion_zones", "agriculture" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "Erosion-endangered_soil_zones_dataset_from_Czech_Republic_@PSNC" ;
+    dct:description """
+This data contains the erosion endangered soil maps from Czech republic. The source data was in shapefiles which is transformed into linked data.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <http://w3id.org/foodie/open/cz/Soil_maps_BPEJ_WGSc/> ;
+    void:triples "8746240"^^xsd:integer ;
+    dcat:theme "geography" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:soumya.put.poznan@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Raul_Palma,_Soumya_Brahma"^^xsd:string ;
+     foaf:mbox <mailto:rpalma@man.poznan.pl> ; 
+ .
+

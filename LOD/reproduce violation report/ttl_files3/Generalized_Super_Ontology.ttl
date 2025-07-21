@@ -1,0 +1,56 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Generalized_Super_Ontology a dcat:Dataset ;
+    void:uriSpace <wdq> ;
+    dcat:keyword "Concept_of_realityUpper_OntologyEHCPRSuper_OntologyLivingMatterSpaceTimeMedium_of_restMedium_of_motion." ;
+    dct:license <https://opendefinition.org/licenses/fal> ;
+    dct:title_main "Super_Ontology" ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "Big_Data_End_Point" ;
+        dct:identifier_sparqlEndpoint "470f22ae-0b57-76c3-0ccc-4483257cb661" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <https://query.wikidata.org/bigdata/namespace/wdq/sparql?query=%7BSPARQL%7D> ;
+        adms:status_sparqlEndpoint """
+FAIL (400)
+""" ;
+    ] ;
+    dct:description_main """
+Concept of realityUpper OntologyEHCPRSuper OntologyLivingMatterSpaceTimeMedium of restMedium of motion.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://dataset.ga/tanay/new.owl> ;
+    void:triples "45"^^xsd:integer ;
+    dcat:theme "cross_domain" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:aggarwalnaman54@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Tanay_Aggarwal"^^xsd:string ;
+     foaf:Cmbox <mailto:tanayaggarwal@outlook.com> ; 
+ .
+

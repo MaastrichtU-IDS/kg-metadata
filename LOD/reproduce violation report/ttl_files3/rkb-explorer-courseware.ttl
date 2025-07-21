@@ -1,0 +1,192 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:rkb-explorer-courseware a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-dc", "format-rdf", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-vocab-mappings", "provenance-metadata", "publications", "published-by-third-party", "void-sparql-endpoint" ;
+    dct:title_main "Resilient_Computing_Courseware_(RKBExplorer)" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://courseware.rkbexplorer.com/id/assessment-method/Oral-Examination> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='courseware.rkbexplorer.com', port=80): Max retries exceeded with url: /id/assessment-method/Oral-Examination (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dad3f0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://courseware.rkbexplorer.com/sparql/> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='courseware.rkbexplorer.com', port=80): Max retries exceeded with url: /sparql/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dad570>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/xml" ;
+        dct:description_distribution """
+XML Sitemap
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='courseware.rkbexplorer.com', port=80): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dade70>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://courseware.rkbexplorer.com/sitemap.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD file
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "['ipfs:QmYRJaPBmXp9LemTCEiqn9LbettmuKpNgFswBWFmKHj5Dx']" ;
+        dcat:accessURL_distribution <http://courseware.rkbexplorer.com/models/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-gzip" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='courseware.rkbexplorer.com', port=80): Max retries exceeded with url: /models/dump.tgz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dac820>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title_distribution "Download_(tar_gzip_of_RDF)" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://courseware.rkbexplorer.com/models/dump.tgz> ;
+    ] ;
+    dct:description_main """
+
+"""@en ;
+
+    foaf:page <http://courseware.rkbexplorer.com> ;
+    void:triples "45780"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://courseware.rkbexplorer.com/id/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "41"^^xsd:integer ;
+ .
+
+:lingvoj a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "42"^^xsd:integer ;
+ .
+
+:opencyc a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "39"^^xsd:integer ;
+ .
+
+:rkb-explorer-acm a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "19"^^xsd:integer ;
+ .
+
+:rkb-explorer-budapest a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:rkb-explorer-citeseer a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:rkb-explorer-cordis a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:rkb-explorer-curriculum a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:rkb-explorer-dblp a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "53"^^xsd:integer ;
+ .
+
+:rkb-explorer-dotac a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-eprints a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:rkb-explorer-irit a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:rkb-explorer-laas a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-newcastle a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:rkb-explorer-oai a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:rkb-explorer-rae2001 a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-southampton a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:rkb-explorer-wordnet a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "38"^^xsd:integer ;
+ .
+
+:southampton-ecs-eprints a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:w3c-wordnet a void:Linkset ;
+    void:target :rkb-explorer-courseware ;
+    void:triples "38"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Hugh_Glaser"^^xsd:string ;
+     foaf:Cmbox <mailto:hg@ecs.soton.ac.uk> ; 
+ .
+

@@ -1,0 +1,557 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:personal-homepages a dcat:Dataset ;
+    dcat:keyword "LinkedDataCrawl2014", "crawledLinkedDataCloud2014", "dataset-level-metadata", "deref-vocab", "dump", "format-admin", "format-airport", "format-ann", "format-b2bo", "format-bibo", "format-bio", "format-book", "format-c4dm", "format-cal", "format-cc", "format-cert", "format-content", "format-coun", "format-cs", "format-cv", "format-daml", "format-dcat", "format-dcterm", "format-dctypes", "format-doap", "format-doc", "format-flow", "format-foaf", "format-frbrcore", "format-gn", "format-gr", "format-hcard", "format-icaltzd", "format-label", "format-link", "format-log", "format-mo", "format-oo", "format-open", "format-org", "format-owl", "format-pingback", "format-pos", "format-prov", "format-psych", "format-rdf", "format-rdfs", "format-re", "format-ref", "format-rsa", "format-rss", "format-sioc", "format-skos", "format-swc", "format-time", "format-tsioc", "format-vann", "format-vcard2006", "format-visit", "format-voaf", "format-void", "format-vs", "format-w3con", "format-wdr", "format-wdrs", "format-wn", "format-wordmap", "format-wot", "format-xhv", "format-xtypes", "license-metadata", "lodcloud-diagram-2014-08-30", "non-deref-vocab", "part-deref-vocab", "provenance-metadata", "social_web", "sparql" ;
+    dct:title_main "Personal_Homepages" ;
+    dct:description_main """
+Contains data from personal homepages, such as foaf profiles etc. 
+
+A list of files can be found in the appended text file
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:apache a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "89"^^xsd:integer ;
+ .
+
+:archiveshub-linkeddata a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:aspire-manchester a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:b3kat a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "480"^^xsd:integer ;
+ .
+
+:bbc-music a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:berlios a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:bibsonomy a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:bio2rdf-geneid a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:bootsnall a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:clean-energy-data-reegle a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:codehaus a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1111"^^xsd:integer ;
+ .
+
+:dbpedia-de a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:dbpedia-el a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:dbpedia-it a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:dbpedia-lite a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:dbtune-musicbrainz a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:dcs-sheffield a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:debian-package-tracking-system a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "7"^^xsd:integer ;
+ .
+
+:deutsche-nationalbibliografie-dnb a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:enipedia a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:fao-geopolitical-ontology a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "335"^^xsd:integer ;
+ .
+
+:gnu-licenses a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "34"^^xsd:integer ;
+ .
+
+:greek-administrative-geography a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:gutenberg a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:hellenic-fire-brigade a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "9"^^xsd:integer ;
+ .
+
+:hellenic-police a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "6"^^xsd:integer ;
+ .
+
+:indymedia a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:jamendo-dbtune a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:jugem a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:l3s-dblp a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "52"^^xsd:integer ;
+ .
+
+:lcsh a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:lexvo a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:lingvoj a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "110"^^xsd:integer ;
+ .
+
+:linked-crunchbase a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:linked-edgar a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:linked-eurostat a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:linked-railway-data-project a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:linked-stockindex a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:linkedct a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:linkedgeodata a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:linkedmdb a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:livejournal-com a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "35"^^xsd:integer ;
+ .
+
+:lod2-project-wiki a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:my-experiment a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:myopenlink-dataspaces a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "28"^^xsd:integer ;
+ .
+
+:nalt a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "56"^^xsd:integer ;
+ .
+
+:nhs-jargon a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:nuts-geovocab a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:nytimes-linked-open-data a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:open-library a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:openlinksw-dataspaces a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "37"^^xsd:integer ;
+ .
+
+:ordnance-survey-linked-data a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:oreilly a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:planetdata-project-wiki a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:princeton-library-findingaids a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:rdfize-lastfm a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:rdfohloh a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "26"^^xsd:integer ;
+ .
+
+:revyu a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "8"^^xsd:integer ;
+ .
+
+:semantic-web-dog-food a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "88"^^xsd:integer ;
+ .
+
+:semanticweb-org a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "87"^^xsd:integer ;
+ .
+
+:southampton-ac-uk a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:statusnet-1w6-org a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-bka-li a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:statusnet-chickenkiller-com a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:statusnet-chromic-org a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:statusnet-davidhaberthuer-ch a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-fcac-com a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-fragdev-com a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "221"^^xsd:integer ;
+ .
+
+:statusnet-freelish-us a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-gegeweb-org a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-gomertronic-com a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:statusnet-jonkman-ca a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:statusnet-linuxwrangling-com a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:statusnet-lydiastench-com a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-macno-org a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:statusnet-morphtown-de a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "38"^^xsd:integer ;
+ .
+
+:statusnet-mrblog-nl a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-opensim-chat-eu a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-ourcoffs-org-au a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-piana-eu a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "8"^^xsd:integer ;
+ .
+
+:statusnet-postblue-info a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "18"^^xsd:integer ;
+ .
+
+:statusnet-progval-net a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-qdnx-org a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "9"^^xsd:integer ;
+ .
+
+:statusnet-quitter-se a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "376"^^xsd:integer ;
+ .
+
+:statusnet-rainbowdash-net a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "54"^^xsd:integer ;
+ .
+
+:statusnet-russwurm-org a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:statusnet-samnoble-org a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-scoffoni-net a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-skilledtests-com a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "61"^^xsd:integer ;
+ .
+
+:statusnet-somsants-net a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-soucy-cc a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:statusnet-ssweeny-net a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "9"^^xsd:integer ;
+ .
+
+:statusnet-status-cat a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-status-net a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "39"^^xsd:integer ;
+ .
+
+:statusnet-sweetiebelle-net a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:statusnet-tekk-com-ar a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:statusnet-thelovebug-org a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:statusnet-timttmy-co-uk a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:tekord a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:umbel a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:vivo-university-of-florida a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:w3c a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "565"^^xsd:integer ;
+ .
+
+:w3c-wordnet a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:wordpress a void:Linkset ;
+    void:target :personal-homepages ;
+    void:triples "3"^^xsd:integer ;
+ .
+

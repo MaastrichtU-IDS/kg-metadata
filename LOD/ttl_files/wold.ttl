@@ -1,0 +1,130 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:wold a dcat:Dataset ;
+    dcat:keyword "LOD", "crossdomain", "format-dcterms", "format-gold", "format-kml", "format-lexvo", "format-skos", "format-wn", "linguistic", "linguistics", "lod", "no-proprietary-vocab", "provenance-metadata", "published-by-producer", "typology" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "World_Loanword_Database" ;
+    void:exampleResource [
+        dct:title "Vocabulary" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+A list of words in a language
+""" ;
+        dcat:accessURL <http://wold.livingsources.org/vocabulary/19.rdf> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='wold.livingsources.org', port=80): Max retries exceeded with url: /vocabulary/19.rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db6110>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://mlode.nlp2rdf.org/sparql> ;
+        adms:status """
+FAIL (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+A language about which WOLD has information. Linked to WALS
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='wold.livingsources.org', port=80): Max retries exceeded with url: /language/19.rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db4bb0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Language" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://wold.livingsources.org/language/19.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+a word in a language with its borrowing status
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='wold.livingsources.org', port=80): Max retries exceeded with url: /word/71312352339070606.rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db7e50>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "word" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://wold.livingsources.org/word/71312352339070606.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+A meaning/concept
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='wold.livingsources.org', port=80): Max retries exceeded with url: /meaning/1.58.rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db5720>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Meaning" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://wold.livingsources.org/meaning/1.58.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/n3" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+""" ;
+        dct:title "RDF_dump" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://mlode.nlp2rdf.org/datasets/wold.nt.gz> ;
+    ] ;
+    dct:description """
+The World Loanword Database, edited by Martin Haspelmath and Uri Tadmor, is a scientific publication by the Max Planck Digital Library, Munich (2009). 
+
+It provides vocabularies (mini-dictionaries of about 1000-2000 entries) of 41 languages from around the world, with comprehensive information about the loanword status of each word. It allows users to find loanwords, source words and donor languages in each of the 41 languages, but also makes it easy to compare loanwords across languages. 
+
+Each vocabulary was contributed by an expert on the language and its history. An accompanying book is being published by Mouton de Gruyter (Loanwords in the World's Languages: A Comparative Handbook, edited by Martin Haspelmath & Uri Tadmor). 
+
+The World Loanword Database 2009 consists of vocabularies contributed by 41 different authors or author teams. When citing material from the database, please cite the corresponding vocabulary (or vocabularies). 
+
+The database can be accessed by language, by meaning, by author, or by reference. 
+
+The World Loanword Database 2009 is the result of a collaborative project coordinated by Uri Tadmor and Martin Haspelmath between 2004 and 2008, called the Loanword Typology Project (LWT). Most of the contributors took part in workshops at which the procedures for selecting and annotating words were discussed extensively. The list of 1460 meanings on which the vocabularies are based is called the Loanword Typology meaning list, and it is in turn based on the list of the Intercontinental Dictionary Series., LOD
+"""@en ;
+
+    foaf:page <http://wold.livingsources.org/> ;
+    void:triples "1000000"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    void:uriSpace <wold.livingsources.org> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :wold ;
+    void:triples "16362"^^xsd:integer ;
+ .
+
+:iso-639-3 a void:Linkset ;
+    void:target :wold ;
+    void:triples "244"^^xsd:integer ;
+ .
+
+:wals a void:Linkset ;
+    void:target :wold ;
+    void:triples "202"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Hans-Jörg_Bibiko"^^xsd:string ;
+     foaf:mbox <mailto:bibiko@eva.mpg.de> ; 
+ .
+

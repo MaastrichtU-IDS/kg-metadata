@@ -1,0 +1,61 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:desaparecidos a dcat:Dataset ;
+    dct:title_main "Projeto_Desaparecidos" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='desaparecidos.ice.ufjf.br', port=80): Max retries exceeded with url: /index.php/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fe0b0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "Sparql_endpoint" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://desaparecidos.ice.ufjf.br/index.php/sparql> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html" ;
+        dct:description_distribution """
+An application that consumes facebook's timeline and identifies posts about unmissing people,
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='desaparecidos.ice.ufjf.br', port=80): Max retries exceeded with url: /index.php/aplicacao (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fd4e0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "Facebook_application" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://desaparecidos.ice.ufjf.br/index.php/aplicacao> ;
+    ] ;
+    dct:description_main """
+This project shows the use of linked data to provide a way to represent and consume information about unmissing people retrieved from non-governamental organization's sites. A tool was created to mark as spam messages about unmissing people on Facebook, using a database that implements the linked data principles.
+"""@en ;
+
+    foaf:page <http://desaparecidos.ice.ufjf.br/> ;
+    dcat:theme "cross_domain" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia-pt a void:Linkset ;
+    void:target :desaparecidos ;
+    void:triples "2450"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Adriano_Delvoux;_Jairo_Francisco_de_Souza"^^xsd:string ;
+     foaf:Cmbox <mailto:jairo.souza@ice.ufjf.br> ; 
+ .
+

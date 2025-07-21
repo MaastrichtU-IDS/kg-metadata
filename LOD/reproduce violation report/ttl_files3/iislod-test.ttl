@@ -1,0 +1,55 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:iislod-test a dcat:Dataset ;
+    dcat:keyword "format-cc", "format-dc", "format-dct", "format-foaf", "format-org", "format-prov", "format-r4r", "format-rdfs", "format-schema", "format-skos", "format-wde", "format-xsd", "license-metadata", "lod", "lodcloud.nolinks", "lodcloud.unconnected", "no-deref-vocab", "no-vocab-mappings", "provenance-metadata", "publications", "published-by-third-party", "vocab-mappings" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Test_Site,_LOD_Lab_317" ;
+    void:exampleResource [
+        dct:title_exampleResource "DL_001_0001,_His_Holiness_the_14th_Dalai_Lama_on_Dzong-ka-ba,_Medium_Exposition_of_the_Stages_of_the_Path_to_Enlightenment_略論" ;
+        dcat:mediaType_exampleResource "text/turtle;_charset=utf-8" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://data.odw.tw/record/d3108593.ttl> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://sparql.odw.tw> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dct:description_main """
+Sample linked data converted from Union Catalog of Digital Archives Taiwan.
+"""@en ;
+
+    void:triples "5188"^^xsd:integer ;
+    void:uriSpace <http://data.odw.tw/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Institute_of_Information_Science,_Academia_Sinica"^^xsd:string ;
+     foaf:Cmbox <mailto:cjlee@iis.sinica.edu.tw> ; 
+ .
+

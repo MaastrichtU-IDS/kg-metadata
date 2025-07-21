@@ -1,0 +1,46 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Sherry_Wine_ a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://www.semanticweb.org/jaime/ontologies/2022/0/untitled-ontology-3> ;
+    void:triples "15"^^xsd:integer ;
+    dct:description_main """
+Se trata de un vocabulario diseñado para conocer y exponer los vinos y sus principales características de la Denominación de Origen de Jerez (Sherry Wine).
+
+
+"""@en ;
+
+    dct:title_main "Sherry_Wine" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dcat:theme "geography" ;
+    void:uriSpace <https://purl.org/sherrywine/elementos/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:100471234@alumnos.uc3m.es> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Jaime"^^xsd:string ;
+     foaf:Cmbox <mailto:100471234@alumnos.uc3m.es> ; 
+ .
+

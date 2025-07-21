@@ -1,0 +1,235 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bio2rdf-ncbigene a dcat:Dataset ;
+    dcat:keyword "bio2rdf", "deref-vocab", "format-dc", "format-rdf", "format-rdfs", "license-metadata", "lifesciences", "lod", "lodcloud-diagram-2014-08-30", "provenance-metadata", "published-by-third-party", "vocab-mappings" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "Bio2RDF::Ncbigene" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download gene2accession.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/ncbigene/gene2accession.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download gene2ensembl.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/ncbigene/gene2ensembl.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download gene2go.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/ncbigene/gene2go.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download gene2pubmed.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/ncbigene/gene2pubmed.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download gene2sts.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/ncbigene/gene2sts.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download gene2unigene.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/ncbigene/gene2unigene.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download gene2vega.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/ncbigene/gene2vega.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download geneinfo.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/ncbigene/geneinfo.nq.gz> ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_resource_(RDF)" ;
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+Example resource (RDF)
+""" ;
+        dcat:accessURL <http://bio2rdf.org/ncbigene:1> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://ncbigene.bio2rdf.org/sparql> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='ncbigene.bio2rdf.org', port=443): Max retries exceeded with url: /sparql (Caused by SSLError(CertificateError("hostname 'ncbigene.bio2rdf.org' doesn't match either of 'bio2rdf.org', 'openlifedata.org', 'search.openlifedata.org', 'sparql.openlifedata.org', 'virtuoso.openlifedata.org'"))))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "" ;
+        dct:description """
+Download
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_page_(n-quads,_gz_compressed)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/current/ncbigene/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "HTML" ;
+        dct:description """
+Dataset description (HTML)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Dataset_description_(HTML)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/current/ncbigene/ncbigene.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+Dataset description (RDF)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Dataset_description_(RDF)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/current/ncbigene/bio2rdf-ncbigene.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+OWL Schema
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "OWL_Schema" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/release/3/ncbigene/ncbigene.schema.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "mapping/owl" ;
+        dct:description """
+Mappings (SIO)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Mappings_(SIO)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/ncbigene/bio2rdf_ncbigene_sio_mapping.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/sitemap" ;
+        dct:description """
+Semantic Web Sitemap
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Semantic_Web_Sitemap" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/release/3/ncbigene/sitemap.xml> ;
+    ] ;
+    dct:description """
+NCBI Gene provides information for genes from a wide range of species. A record may include nomenclature, Reference Sequences (RefSeqs), maps, pathways, variations, phenotypes, and links to genome-, phenotype-, and locus-specific resources worldwide.
+"""@en ;
+
+    foaf:page <http://ncbigene.bio2rdf.org/> ;
+    void:triples "1164672432"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    void:uriSpace <http://bio2rdf.org/ncbigene:> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bio2rdf-pubmed a void:Linkset ;
+    void:target :bio2rdf-ncbigene ;
+    void:triples "858399"^^xsd:integer ;
+ .
+
+:bio2rdf-taxonomy a void:Linkset ;
+    void:target :bio2rdf-ncbigene ;
+    void:triples "12374"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Bio2RDF"^^xsd:string ;
+     foaf:mbox <mailto:bio2rdf@googlegroups.com> ; 
+ .
+

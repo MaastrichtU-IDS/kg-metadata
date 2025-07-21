@@ -1,0 +1,55 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:university-sussex-reading-lists a dcat:Dataset ;
+    dcat:keyword "education", "format-dc", "format-rdf", "format-sioc", "higher-education", "lld", "lod", "lodcloud-diagram-2011-09-19", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "no-vocab-mappings", "publications", "published-by-producer", "talis" ;
+    dct:title_main "University_of_Sussex_Reading_Lists" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://liblists.sussex.ac.uk/lists/0B9D65E5-BB0B-F4CD-7BD9-E55B18BF7400> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    dct:description_main """
+To find and access your readings:
+Search using the course title or course code
+Follow the links through to a reading list provided for your course
+Click on individual items to show library availability and/or full text of online resources
+Sign in with your ITS username and password to add personal study notes to items in your list
+If your reading list is not available, check your Study Direct course site.
+"""@en ;
+
+    foaf:page <http://liblists.sussex.ac.uk> ;
+    void:triples "1762492"^^xsd:integer ;
+    void:uriSpace <http://liblists.sussex.ac.uk/items/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:openlibrary a void:Linkset ;
+    void:target :university-sussex-reading-lists ;
+    void:triples "27751"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Ian_Davis"^^xsd:string ;
+     foaf:Cmbox <mailto:ian.davis@talis.com> ; 
+ .
+

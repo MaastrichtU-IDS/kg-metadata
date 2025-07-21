@@ -1,0 +1,68 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:l3s-dblp a dcat:Dataset ;
+    dcat:keyword "format-dc", "format-foaf", "format-rdf", "format-swrc", "lod", "lodcloud.nolinks", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "no-vocab-mappings", "publications", "published-by-third-party" ;
+    dct:title "DBLP_in_RDF_(L3S)" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Download
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmamEs6J1dWbF75fLCYJw7F495nmKxPanRBkDTrb2r3ASB']" ;
+        dcat:downloadURL <http://dblp.l3s.de/dblp.rdf.gz> ;
+    ] ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://dblp.l3s.de/d2r/resource/authors/Chris_Bizer> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='dblp.l3s.de', port=443): Max retries exceeded with url: /d2r/resource/authors/Chris_Bizer (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:997)'))))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "None" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://dblp.l3s.de/d2r/sparql> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='dblp.l3s.de', port=443): Max retries exceeded with url: /d2r/sparql (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:997)'))))
+""" ;
+    ] ;
+    dct:description """
+D2R Server publishing the DBLP Bibliography Database, hosted at L3S Research Center
+"""@en ;
+
+    foaf:page <http://dblp.l3s.de/d2r/> ;
+    void:triples "57674239"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://dblp.l3s.de/d2r/resource/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:name "Jörg_Diederich"^^xsd:string ;
+     foaf:mbox <mailto:diederich@l3s.de> ; 
+ .
+

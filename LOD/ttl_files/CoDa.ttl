@@ -1,0 +1,130 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:CoDa a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_API" ;
+        dct:identifier "09b69b65-1e75-6456-e2d4-29b3b4fded0a" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <https://api.cooperationdatabank.org/datasets/coda/databank/services/databank/sparql> ;
+        adms:status """
+FAIL (400)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/trig" ;
+        dct:description """
+
+""" ;
+        dcat:downloadURL <https://data.cooperationdatabank.org/coda/databank/download.trig.gz> ;
+        adms:status """
+OK
+""" ;
+        dct:identifier "fed2b5bc-bb51-00a8-f004-df1be6246ac1" ;
+        dct:mirror "[]" ;
+        dct:title "Download_graphs_here" ;
+    ] ;
+    dcat:keyword "Psychology", "Sociology", "Economics", "Cooperation_research", "Prisoners_dilemma", "Public_Goods_Game", "Resource_Dilemma", "social_dilemmas" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "Cooperation_Databank" ;
+    void:exampleResource [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+A datastory showing how to make use of the databank.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Whats_in_the_Databank?" ;
+        dcat:accessURL <https://data.cooperationdatabank.org/coda/-/stories/overview> ;
+    ] ;
+    void:exampleResource [
+        dct:title "Paper_ENG00013" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <https://data.cooperationdatabank.org/id/ENG00013> ;
+        adms:status """
+OK
+""" ;
+        dcat:mediaType "text/turtle" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Study_ENG01818_1" ;
+        dct:description """
+Participants were asked to pick a strategy first (C or D)
+to be applied for all 36 faces of potential partners depicted in photographs.
+""" ;
+        dcat:accessURL <https://data.cooperationdatabank.org/id/ENG01818_1> ;
+        adms:status """
+OK
+""" ;
+        dcat:mediaType "text/turtle" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Effect_size_no._ENG01818_1.1.1.2.d_" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <https://data.cooperationdatabank.org/id/ENG01818_1.1.1.2.d> ;
+        adms:status """
+OK
+""" ;
+        dcat:mediaType "text/turtle" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Treatment_ENG01818_1.1.1" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <https://data.cooperationdatabank.org/id/ENG01818_1.1.1> ;
+        adms:status """
+OK
+""" ;
+        dcat:mediaType "text/turtle" ;
+    ] ;
+    dct:description """
+An annotated history of empirical studies on human cooperation in social dilemmas. Social Dilemmas are situations that involve a conflict of interests and people must choose between a behavior that is best for themselves and a behavior that is best for the collective. Cooperation is choosing to do a behavior that is best for the collective. CoDa contains six decades of studies on individual decision making in dyads and groups facing social dilemmas.The databank contains studies on human cooperation published in Chinese, English, and Japanese. Experts annotated these studies for 275 variables, including the quantitative results (effect sizes). We developed an ontology that defines and relates concepts in cooperation research and that can represent the relationships between individual study results. We have created an application that allows users to search the databank, and enables users to retrieve studies that test the relation of variables with cooperation, visualize these study results, and perform (1) meta-analyses, (2) meta-regressions, (3) estimates of publication bias, and (4) statistical power analyses for future studies.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://data.cooperationdatabank.org/> ;
+    void:triples "795849"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    void:uriSpace <https://data.cooperationdatabank.org/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:doi a void:Linkset ;
+    void:target :CoDa ;
+    void:triples "1645"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:thomas.de.groot@triply.cc> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Benny_Markovitch"^^xsd:string ;
+     foaf:mbox <mailto:benny.markovitch@triply.cc> ; 
+ .
+

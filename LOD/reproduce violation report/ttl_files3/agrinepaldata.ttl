@@ -1,0 +1,103 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:agrinepaldata a dcat:Dataset ;
+    dcat:keyword "aksw", "lod" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title_main "AgriNepalData" ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "Sparql_End_Point" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://agrinepaldata.com/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='agrinepaldata.com', port=80): Max retries exceeded with url: /sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fdcc0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "" ;
+        dct:description_distribution """
+agrinepaldata web site
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='agrinepaldata.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fc550>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "agrinepaldata_web_site" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://agrinepaldata.com/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "rdf-turtle" ;
+        dct:description_distribution """
+Dataset dump
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='agrinepaldata.com', port=80): Max retries exceeded with url: /downloads/agrinepal.zip (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fedd0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "Dataset_dump" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://agrinepaldata.com/downloads/agrinepal.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/owl" ;
+        dct:description_distribution """
+agrinepaldata ontology
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "agrinepaldata_ontology" ;
+        dct:mirror_distribution "['ipfs:QmS62CbFgM8ym1UZgC78aWZjuJr7JvmNetbZ6shVzdYG8z']" ;
+        dcat:accessURL_distribution <http://agrinepaldata.com/download/agrinepaldataont.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+metadata void
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "metadata_void" ;
+        dct:mirror_distribution "['ipfs:QmTq1MWdjMJ6Qt58urEPtHDB18WcsjoaCFJ7KDZtwM3kua']" ;
+        dcat:accessURL_distribution <http://agrinepaldata.com/download/void.ttl> ;
+    ] ;
+    dct:description_main """
+Ontology Based Data Access and Integration for Improving the Effectiveness of Farming in Nepal
+"""@en ;
+
+    void:triples "1433631"^^xsd:integer ;
+    dcat:theme "government" ;
+    void:uriSpace <http://agrinepaldata.com/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:agrovoc a void:Linkset ;
+    void:target :agrinepaldata ;
+    void:triples "32294"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :agrinepaldata ;
+    void:triples "38469"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Mohamed_Sherif"^^xsd:string ;
+     foaf:Cmbox <mailto:sherif@inform@ic.uni-leipzig.de> ; 
+ .
+

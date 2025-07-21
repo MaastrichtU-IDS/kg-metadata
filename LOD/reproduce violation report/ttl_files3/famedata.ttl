@@ -1,0 +1,78 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:famedata a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://famedata.org> ;
+    void:triples "2400"^^xsd:integer ;
+    dcat:keyword "miraheze", "famepedia", "famedata" ;
+    dct:description_main """
+free knowledge database project hosted by Miraheze and edited by volunteers
+"""@en ;
+
+    dct:title_main "FAMEData" ;
+    void:exampleResource [
+        dct:title_exampleResource "entity_node_for_Nelson_Mandela" ;
+        dct:description_exampleResource """
+The canonical URI for the concept of Nelson Mandela, the South African anti-apartheid activist and later President, as represented on Famedata. Using content negotiation, the URI redirects to different pages depending on how it is accessed; when opened in a browser, it will usually redirect to the Famedata page for the item, showing its terms, statements and sitelinks, while other clients may be served the data in JSON or RDF formats instead.
+""" ;
+        dcat:accessURL_exampleResource <http://famedata.org/entity/Q2030> ;
+        adms:status_exampleResource """
+OK
+""" ;
+        dcat:mediaType_exampleResource "application/ld+json;_charset=UTF-8" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "data_node_for_Nelson_Mandela" ;
+        dct:description_exampleResource """
+The data node for Famedata’s concept of Nelson Mandela. In the linked data interface, this node is the subject of triples describing metadata about the entity record on Famedata. (In the Famedata Query Service, the data node is merged into the entity node.) This is the URI that actually implements content negotiation depending on the client’s Accept headers; the entity URI, when accessed, unconditionally redirects to this one.
+""" ;
+        dcat:accessURL_exampleResource <https://famedata.org/wiki/Special:EntityData/Q2030> ;
+        adms:status_exampleResource """
+OK
+""" ;
+        dcat:mediaType_exampleResource "application/ld+json;_charset=UTF-8" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "famedata_page_for_Nelson_Mandela" ;
+        dct:description_exampleResource """
+The Fmedata page for Nelson Mandela, showing the terms, statements and sitelinks of the item. This is what the data node URI redirects to when opened in a browser, and the main way for humans to interact with the item.
+""" ;
+        dcat:accessURL_exampleResource <https://famedata.org/wiki/Q2030> ;
+        adms:status_exampleResource """
+FAIL (500)
+""" ;
+    ] ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dcat:theme "user_generated" ;
+    void:uriSpace <https://famedata.org/entity/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] ;
+    foaf:depiction <https://upload.wikimedia.org/wikipedia/commons/c/ca/FAMEData_official_logo.jpg> .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:sunilbutolia@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Sunil_Butolia"^^xsd:string ;
+     foaf:Cmbox <mailto:sunil@famed@a.org> ; 
+ .
+

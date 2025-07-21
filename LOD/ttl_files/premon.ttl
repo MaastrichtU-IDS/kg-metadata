@@ -1,0 +1,157 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:premon a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title "PreMOn_Sparql_Endpoint" ;
+        dct:identifier "16e1ee61-f637-ee93-ecb1-ffc4ed9aedee" ;
+        dcat:endpointDescription """
+PreMOn data can be programmatically queried using the SPARQL endpoint publicly available at http://premon.fbk.eu/sparql.
+""" ;
+        dcat:accessURL <http://premon.fbk.eu/sparql> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='premon.fbk.eu', port=443): Max retries exceeded with url: /sparql (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:997)'))))
+""" ;
+    ] ;
+    foaf:depiction <https://premon.fbk.eu/images/premon-big.png> ;
+    foaf:page <http://premon.fbk.eu> ;
+    dcat:keyword "predicate_models", "framenet", "verbnet", "propbank", "nombank", "semlink", "predicate_matrix", "frames", "framebase", "eso", "linked_data", "nif", "premon" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "PreMOn" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Each single component of the PreMOn Dataset can be downloaded independently. 
+""" ;
+        dcat:downloadURL <https://premon.fbk.eu/download.html> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='premon.fbk.eu', port=443): Max retries exceeded with url: /download.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:997)'))))
+""" ;
+        dct:title "Dataset_Download_(2018a_version)" ;
+        dct:mirror "[]" ;
+        dct:identifier "80950477-c359-b626-52a7-af73c4e73948" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/pdf" ;
+        dct:description """
+The paper where we introduced PreMOn (predicate model for ontologies), a linguistic resource for exposing predicate models (PropBank, NomBank, VerbNet, and FrameNet) and mappings between them (e.g, SemLink, PredicateMatrix) as Linked Open Data.
+""" ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Introductory_paper_(LREC-16)" ;
+        dct:identifier "6596267d-93a2-8e6a-630f-2db9675d2b92" ;
+        dcat:accessURL <http://www.lrec-conf.org/proceedings/lrec2016/pdf/854_Paper.pdf> ;
+    ] ;
+    dcat:distribution [
+        dct:identifier "711fbb3d-f279-f57f-8980-c6a060e916d3" ;
+        dct:title "Extended_paper_(LRE_Journal,_2019)" ;
+        dct:description """
+A more detailed description of the resource, including latest updates and use cases)
+""" ;
+        dcat:accessURL <https://link.springer.com/article/10.1007/s10579-018-9437-8> ;
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dct:description """
+Predicate Model For Ontologies (2018a version)
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <pm> ;
+    void:triples "32611819"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    void:exampleResource [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Many examples available here
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='premon.fbk.eu', port=443): Max retries exceeded with url: /browse.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:997)'))))
+""" ;
+        dct:title "Examples" ;
+        dcat:accessURL <https://premon.fbk.eu/browse.html> ;
+    ] ;
+    void:exampleResource [
+        dct:title "Link_to_an_example_Linked_Data_entry_[Look.01_roleset_in_PropBank_1.7]" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://premon.fbk.eu/resource/pb17-look.01> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='premon.fbk.eu', port=443): Max retries exceeded with url: /resource/pb17-look.01 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:997)'))))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Link_to_an_example_data_item_within_the_dataset_(RDF/XML)_[Look.01_roleset_in_PropBank_1.7]" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <https://premon.fbk.eu/resource/pb17-look.01.rdf> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='premon.fbk.eu', port=443): Max retries exceeded with url: /resource/pb17-look.01.rdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:997)'))))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Link_to_an_example_data_item_within_the_dataset_(Turtle)_[Look.01_roleset_in_PropBank_1.7]" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <https://premon.fbk.eu/resource/pb17-look.01.n3> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='premon.fbk.eu', port=443): Max retries exceeded with url: /resource/pb17-look.01.n3 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:997)'))))
+""" ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:lexinfo a void:Linkset ;
+    void:target :premon ;
+    void:triples "62805"^^xsd:integer ;
+ .
+
+:lexvo a void:Linkset ;
+    void:target :premon ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:lime a void:Linkset ;
+    void:target :premon ;
+    void:triples "48080"^^xsd:integer ;
+ .
+
+:wordnet-rdf a void:Linkset ;
+    void:target :premon ;
+    void:triples "123565"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:rospocher.marco.work@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Marco_Rospocher"^^xsd:string ;
+     foaf:mbox <mailto:marco.rospocher@univr.it> ; 
+ .
+

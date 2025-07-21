@@ -1,0 +1,229 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bioportal-jerm a dcat:Dataset ;
+    dcat:keyword "biomedicine", "bioportal", "format-owl", "format-rdf", "lod", "ontology", "published-by-third-party" ;
+    dct:title_main "SysMO-JERM" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+REST API Wiki Documentation
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+SPARQL endpoint
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://sparql.bioontology.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;charset=utf-8" ;
+        dct:description_distribution """
+Download link, BioPortal API KEY is required
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://rest.bioontology.org/bioportal/ontologies/download/46047?apikey=BP_API_KEY> ;
+    ] ;
+    dct:description_main """
+an ontology to describe the entities and relationships in SysMO-DB, a Systems Biology environment for the sharing and exchange of data and models.
+"""@en ;
+
+    foaf:page <http://bioportal.bioontology.org/ontologies/1488> ;
+    void:triples "1533"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-acgt a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-bao a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:bioportal-bootstrep a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:bioportal-bro_x1 a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-canco a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "51"^^xsd:integer ;
+ .
+
+:bioportal-cco a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-csp a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "44"^^xsd:integer ;
+ .
+
+:bioportal-ddi a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:bioportal-efo a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+:bioportal-ep a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-ero a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "34"^^xsd:integer ;
+ .
+
+:bioportal-flu a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-galen a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "18"^^xsd:integer ;
+ .
+
+:bioportal-go_x1 a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-go_x2 a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-gro_x2 a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:bioportal-lnc a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "40"^^xsd:integer ;
+ .
+
+:bioportal-mesh-owl a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "71"^^xsd:integer ;
+ .
+
+:bioportal-mi a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-mo a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-ms a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:bioportal-msh a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "49"^^xsd:integer ;
+ .
+
+:bioportal-ncit a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "135"^^xsd:integer ;
+ .
+
+:bioportal-nif a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "42"^^xsd:integer ;
+ .
+
+:bioportal-npo a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:bioportal-obi a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "34"^^xsd:integer ;
+ .
+
+:bioportal-oboe-sbc a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-rcd a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "19"^^xsd:integer ;
+ .
+
+:bioportal-sio a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "18"^^xsd:integer ;
+ .
+
+:bioportal-snomedct a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "43"^^xsd:integer ;
+ .
+
+:bioportal-sopharm a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:bioportal-tmo a void:Linkset ;
+    void:target :bioportal-jerm ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Katy_Wolstencroft"^^xsd:string ;
+ .
+

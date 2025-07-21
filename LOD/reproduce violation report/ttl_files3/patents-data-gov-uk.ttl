@@ -1,0 +1,99 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:patents-data-gov-uk a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-dc", "format-rdf", "government", "lod", "lodcloud-diagram-2011-09-19", "patents", "published-by-producer" ;
+    dct:title_main "patents.data.gov.uk" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-ntriples" ;
+        dct:description_distribution """
+Download (N-Triples)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "['ipfs:QmYrM2dffEnNPKXYtywej5gqSMoQo8tsuAGYry6c6KgEg9']" ;
+        dcat:downloadURL_distribution <http://source.data.gov.uk/data/patents/bis-research-explorer/2010-03-04/patents.data.gov.uk.nt> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example patent application (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://patents.data.gov.uk/doc/application/GB2315698> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='patents.data.gov.uk', port=80): Max retries exceeded with url: /doc/application/GB2315698 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fdb40>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "None" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://services.data.gov.uk/patents/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='services.data.gov.uk', port=80): Max retries exceeded with url: /patents/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fc760>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "api/search" ;
+        dct:description_distribution """
+Search API
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='services.data.gov.uk', port=80): Max retries exceeded with url: /patents/search (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843ff310>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://services.data.gov.uk/patents/search> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD description (partial)
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='patents.data.gov.uk', port=80): Max retries exceeded with url: /doc/application (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fefe0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://patents.data.gov.uk/doc/application> ;
+    ] ;
+    dct:description_main """
+[Namespace for patent applications](http://patents.data.gov.uk/doc/application) from data.gov.uk. This data comes from the BIS dataset.
+
+Part of package:data-gov-uk
+"""@en ;
+
+    foaf:page <http://patents.data.gov.uk/> ;
+    void:triples "11627"^^xsd:integer ;
+    dcat:theme "government" ;
+    void:uriSpace <http://patents.data.gov.uk/id/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:research-data-gov-uk a void:Linkset ;
+    void:target :patents-data-gov-uk ;
+    void:triples "491"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Data.gov.uk_Team"^^xsd:string ;
+     foaf:Cmbox <mailto:team@d@a.gov.uk> ; 
+ .
+

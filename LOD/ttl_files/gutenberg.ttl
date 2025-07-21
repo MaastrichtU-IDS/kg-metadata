@@ -1,0 +1,111 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:gutenberg a dcat:Dataset ;
+    dcat:keyword "access-bulk", "access-ftp", "access-http", "access-rsync", "bibliographic", "book", "ebook", "format-dcmit", "format-rdf", "lod", "lodcloud-diagram-2014-08-30" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "Project_Gutenberg" ;
+    void:exampleResource [
+        dct:title "Link_to_an_example_item" ;
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://www.gutenberg.org/ebooks/12345.rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.gutenberg.org/wiki/Gutenberg:Information_About_Robot_Access_to_our_Pages#Getting_All_EBook_Files> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.gutenberg.cc> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+the complete metadata dump in RDF XML 
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "metadata_dump_in_RDFXML" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.gutenberg.org/feeds/catalog.rdf.bz2> ;
+    ] ;
+    dct:description """
+Overview: 
+
+Project Gutenberg is the first and largest single collection of free electronic books, or eBooks.
+
+Statistics: 
+Over 100,000 titles, some duplication, of course.
+
+License:
+Majority of works in public domain. Works posted with permission from copyright holders are licensed under the Project Gutenberg license.
+
+Formats:
+Most Project Gutenberg eBooks are available in plain text,
+just so they can be used with nearly any hardware/software,
+and many are also available in a variety of other formats.
+
+Over 30,000 eBooks in over 50 languages at gutenberg.org
+
+Over 75,000 eBooks in over 100 languages at gutenberg.cc
+
+
+This is my first attempt to rewrite this little blurb,
+so I will keep it brief for now to see what happens.
+
+
+Michael S. Hart
+Founder
+Project Gutenberg,
+Inventor of eBooks
+http://www.gutenberg.org/wiki/Michael_S._Hart
+"""@en ;
+
+    foaf:page <http://www.gutenberg.org/> ;
+    void:triples "5450115"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://www.gutenberg.org/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:name "Project_Gutenberg"^^xsd:string ;
+     foaf:mbox <mailto:http://www.gutenberg.org/wiki/Gutenberg:Contact_Inform@ion> ; 
+ .
+

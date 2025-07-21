@@ -1,0 +1,134 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:srcmf a dcat:Dataset ;
+    dcat:keyword "corpus", "linguistics", "llod", "lod", "lrec-2014", "old-french", "syntax" ;
+    dct:title_main "Syntactic_Reference_Corpus_of_Medieval_French_(SRCMF)" ;
+    void:exampleResource [
+        dct:title_exampleResource "Vie_de_Saint_Alexis_(1050)" ;
+        dcat:mediaType_exampleResource "application/zip" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://srcmf.org/public/alexis-rdf.zip> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Chanson_de_Roland_(1100)" ;
+        dcat:mediaType_exampleResource "application/zip" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://srcmf.org/public/roland-rdf.zip> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Tristan_de_Beroul_(11651200)" ;
+        dcat:mediaType_exampleResource "application/zip" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://srcmf.org/public/beroul-rdf.zip> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Aucassin_et_Nicolete_(fin_12e/déb._13e)" ;
+        dcat:mediaType_exampleResource "application/zip" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://srcmf.org/public/aucassin-rdf.zip> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "La_Conqueste_de_Constantinople_de_R._de_Clari_(1205)" ;
+        dcat:mediaType_exampleResource "application/zip" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://srcmf.org/public/clari-rdf.zip> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Queste_del_Saint_Graal_	(1220)" ;
+        dcat:mediaType_exampleResource "application/zip" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://srcmf.org/public/qgraal-rdf.zip> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "description" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://srcmf.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "licensing" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://srcmf.org/#sec%3Aaccess> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Yvain_de_Chretien_de_Troyes_(1177-1181)" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://srcmf.org/public/yvainku-rdf.zip> ;
+    ] ;
+    dct:description_main """
+The SRCMF contains the 15 Old French texts with about 280000 words. It has a high-quality manual annotation, based on a linguistically adequate dependency grammar. Annotation data is provided as RDF/XML. Available export formats are CONLL and TigerXML. The final revision of the texts is ongoing and will be finished by the end of 2013. The project was funded by the Agence Nationale de la Recherche (ANR, France) and the Deutsche Forschungsgemeinschaft (DFG, Germany) 2009-2012.
+"""@en ;
+
+    void:triples "690000"^^xsd:integer ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Sophie_Prévost,_Achim_Stein"^^xsd:string ;
+     foaf:Cmbox <mailto:http://www.l@tice.cnrs.fr/Sophie-Prevost,229?lang=fr,http://www.uni-stuttgart.de/lingrom/stein> ; 
+ .
+

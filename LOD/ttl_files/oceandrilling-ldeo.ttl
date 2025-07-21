@@ -1,0 +1,62 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:oceandrilling-ldeo a dcat:Dataset ;
+    dcat:keyword "drilling", "geographic", "lod", "lodcloud.nolinks", "lodcloud.unconnected", "no-deref-vocab", "ocean", "published-by-producer" ;
+    dct:title "Ocean_DrillingLDEO_log_files_as_data_(TEST_leg_218_only)" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdfa" ;
+        dct:description """
+example ressource (xhtml+rdfa)
+""" ;
+        dcat:accessURL <http://data.oceandrilling.org/codices/drillsite/209/1275> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.oceandrilling.org', port=80): Max retries exceeded with url: /codices/drillsite/209/1275 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f36843017e0>, 'Connection to data.oceandrilling.org timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "None" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://data.oceandrilling.org/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.oceandrilling.org', port=80): Max retries exceeded with url: /sparql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f36843fcf70>, 'Connection to data.oceandrilling.org timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dct:description """
+LDEO log files as data (TEST leg 218 only)
+
+
+We are still in a development mode and working in particular and the namespace URI's and their hosting. So some elements here will change as we tweak responsibility for maintaining namespaces and curating them. You are welcome (encouraged) to explore our sparql endpoint (http://data.oceandrilling.org/sparql) and engage us, comment and criticize. (Doug)
+
+This site is guided by the linked data pattern (http://linkeddata.org/). Information on this effort and the steps being taken to expose data in this approach are described here.
+
+This data represents only a small percentage of the data available but is sufficient for testing at this time. Additional data related to log files from LDEO, timescales from CHRONOS and data from TAMU are yet to be loaded. 
+"""@en ;
+
+    foaf:page <http://data.oceandrilling.org/linkeddata.html> ;
+    void:triples "24489366"^^xsd:integer ;
+    void:uriSpace <http://data.oceandrilling.org/source/ldeo/dataset/logs/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:name "Consortium_for_Ocean_Leadership"^^xsd:string ;
+     foaf:mbox <mailto:dfils@oceanleadership.org> ; 
+ .
+

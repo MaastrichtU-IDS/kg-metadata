@@ -1,0 +1,96 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:omwn-jpn a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+Download of data with LMF and Lemon files
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='compling.hss.ntu.edu.sg', port=80): Max retries exceeded with url: /omw/wns/jpn+xml.zip (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f36843fe800>, 'Connection to compling.hss.ntu.edu.sg timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "Full_Download" ;
+        dct:mirror_distribution "[]" ;
+        dcat:downloadURL_distribution <http://compling.hss.ntu.edu.sg/omw/wns/jpn%2Bxml.zip> ;
+    ] ;
+    dcat:keyword "lexicon", "wordnet", "lemon" ;
+    dct:license <https://wordnet.princeton.edu/license-and-commercial-use> ;
+    dct:title_main "Japanese_WordNet_(as_part_of_Open_Multilingual_WordNet)" ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dct:identifier_sparqlEndpoint "36c3ff61-e38c-fc76-7243-ef5a6207d70c" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://omwn.linguistic-lod.org/sparql/> ;
+        adms:status_sparqlEndpoint """
+FAIL (503)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+Download of tab separated values for data
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='compling.hss.ntu.edu.sg', port=80): Max retries exceeded with url: /omw/wns/jpn.zip (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684300400>, 'Connection to compling.hss.ntu.edu.sg timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "TSV_files" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://compling.hss.ntu.edu.sg/omw/wns/jpn.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/x-bibtex" ;
+        dct:description_distribution """
+Citation for using this work
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='compling.hss.ntu.edu.sg', port=80): Max retries exceeded with url: /omw/wns/jpn/citation.bib (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686aef7f0>, 'Connection to compling.hss.ntu.edu.sg timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "Citation" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://compling.hss.ntu.edu.sg/omw/wns/jpn/citation.bib> ;
+    ] ;
+    dct:description_main """
+The Japanese wordnet as published as part of the Open Multilingual WordNet. The goal of Open Multilingual WordNet is to make it easy to use wordnets in multiple languages. The individual wordnets have been made by many different projects and vary greatly in size and accuracy. We have (i) extracted and normalized the data, (ii) linked it to Princeton WordNet 3.0 and (iii) put it in one place. The Open Multilingual Wordnet and its components are open: they can be freely used, modified, and shared by anyone for any purpose. 
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:triples "1007643"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    foaf:page <http://compling.hss.ntu.edu.sg/omw/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:wordnet-rdf a void:Linkset ;
+    void:target :omwn-jpn ;
+    void:triples "169234"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:john.mccrae@insight-centre.org> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Francis_Bond"^^xsd:string ;
+     foaf:Cmbox <mailto:bond@ieee.org> ; 
+ .
+

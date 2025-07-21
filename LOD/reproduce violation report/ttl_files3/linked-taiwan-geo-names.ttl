@@ -1,0 +1,74 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:linked-taiwan-geo-names a dcat:Dataset ;
+    dcat:keyword "Taiwan", "format-geonames", "geographic_name", "geography", "place_name" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-odbl> ;
+    dct:title_main "Linked_Taiwan_Geo-Names" ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://geoname.linkedopendata.tw/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Linked_Taiwan_Geographic_Names" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://geoname.linkedopendata.tw> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "n-triples" ;
+        dct:description_distribution """
+Linked Taiwanese geographic names established via using open data.
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='linkedopendata.tw', port=80): Max retries exceeded with url: /geonames/tw-geo-names.nt (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dac7f0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')))
+""" ;
+        dct:title_distribution "Linked_Taiwan_Geo-Names_dataset" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://linkedopendata.tw/geonames/tw-geo-names.nt> ;
+    ] ;
+    dct:description_main """
+Taiwan geographic name (台灣地名) is obtained from Taiwanese Open Data Platform. The dataset links are http://data.gov.tw/node/40281, http://data.gov.tw/node/40456, http://data.gov.tw/node/40454. This service aims to provide unique IDs for referencing Taiwan place names
+"""@en ;
+
+    foaf:page <http://geoname.linkedopendata.tw> ;
+    void:triples "1365654"^^xsd:integer ;
+    void:uriSpace <tgn> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames-semantic-web: a void:Linkset ;
+    void:target :linked-taiwan-geo-names ;
+    void:triples "8905"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Dongpo_Deng"^^xsd:string ;
+     foaf:Cmbox <mailto:dongpo.deng@gmail.com> ; 
+ .
+

@@ -1,0 +1,126 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:red-uno-internacional-santillana a dcat:Dataset ;
+    dcat:keyword "contenidos_educativos", "contenidos_educativos_digitales", "corporate_excellence", "country-spain", "country.es", "dc", "educación", "foaf", "format-dc", "format-dcam", "format-foaf", "format-rdfg", "format-sioc", "format-skos", "format-wot", "gnoss", "laboratorio_de_ideas", "language-spa", "license-metadata", "lod", "no-proprietary-vocab", "no-vocab-mappings", "provenance-metadata", "published-by-third-party", "schemata", "sioc", "sistema_uno", "skos", "socialweb", "sp", "spain", "usergeneratedcontent", "wrapper" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title "Red_Uno_Internacional_(Santillana)" ;
+    void:exampleResource [
+        dct:title "RDF/XML_resource_example" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+This is an RDF/XML example link of one of the resources published in the Red UNO Internacional community. 
+""" ;
+        dcat:accessURL <http://reduno-internacional.com/en/community/UNOi/resource/Origen-de-la-tierra/77c8cc5e-b8a0-4692-99f0-789b31e83d62?rdf> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='reduno-internacional.com', port=80): Max retries exceeded with url: /en/community/UNOi/resource/Origen-de-la-tierra/77c8cc5e-b8a0-4692-99f0-789b31e83d62?rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843ff040>: Failed to establish a new connection: [Errno -5] No address associated with hostname')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "RDF/XML_resource_example_2" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+This is an RDF/XML example link of one of the resources published in the Red UNO Internacional community. 
+""" ;
+        dcat:accessURL <http://reduno-internacional.com/en/community/UNOi/resource/Healthy-Food/480414e9-7989-4b12-9ce9-20a76a44ebf0?rdf> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='reduno-internacional.com', port=80): Max retries exceeded with url: /en/community/UNOi/resource/Healthy-Food/480414e9-7989-4b12-9ce9-20a76a44ebf0?rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843feb30>: Failed to establish a new connection: [Errno -5] No address associated with hostname')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "RDF/XML_search_example_" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+This is an RDF/XML example link of a search results.
+""" ;
+        dcat:accessURL <http://reduno-internacional.com/en/community/UNOi/advanced-search/tag/clase?rdf> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='reduno-internacional.com', port=80): Max retries exceeded with url: /en/community/UNOi/advanced-search/tag/clase?rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843ff2e0>: Failed to establish a new connection: [Errno -5] No address associated with hostname')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/owl" ;
+        dct:description """
+Gnoss Ontology
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Gnoss_Ontology" ;
+        dct:mirror "['ipfs:QmbDWiHLbnjJ2vGnaViALUEZFtCGu3hgUVhsSZjQ5xwpki']" ;
+        dcat:accessURL <http://gnoss.com/gnoss.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD description
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "voiD_description" ;
+        dct:mirror "['ipfs:QmdtiSmvHRDZrdAijEgB4PEt5Yv2GHZYmtUETn4NEcFmTg']" ;
+        dcat:accessURL <http://ineverycrea.net/voidUnoi.n3> ;
+    ] ;
+    dct:description """
+<p>
+<a href="http://reduno-internacional.com/comunidad/unoi">Red UNO Internacional (Santillana) </a> is a support community for teachers of Sistema UNO, an educational project that manages the digitization of school, the training of the entire school community and the evaluation of their actions. The proposal provides everything needed to satisfy the standard parameters set by UNESCO and achieves the highest levels of educational quality indicators as PISA ranking.
+</p>
+<p>
+Red Uno Internacional (Grupo Santillana) works with <a href="http://gnoss.com/">GNOSS software (RIAM Intelearning Lab)</a>. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. Red Uno Internacional (Santillana) offers a selection of 69 resources (November 2012). It includes a facet-based search engine and enriched contexts. Both are developments by GNOSS.
+</p>
+
+<p>
+<a href="http://reduno-internacional.com/comunidad/unoi">Red UNO Internacional (Santillana)</a>
+es un comunidad de apoyo a los docentes que participan en <a href="http://www.sistemauno.com">Sistema UNO</a>, proyecto educativo que gestiona la digitalización de la escuela, la formación permanente de toda la comunidad educativa y la evaluación constante de sus acciones. La propuesta provee de todo lo necesario para cumplir con los parámetros establecidos por la UNESCO y alcanzar los más altos niveles de calidad educativa que marcan los indicadores internacionales como PISA.
+</p>
+<p>
+Red Uno Internacional (Santillana) trabaja con <a href="http://gnoss.com/">software de GNOSS (RIAM Intelearning Lab)</a>. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. Red Uno Internacional (Santillana) ofrece en este caso una selección de 69 recursos (Noviembre 2012). Incluye un buscador facetado y contextos enriquecidos. Ambos son desarrollos de GNOSS.
+</p>
+"""@en ;
+
+    foaf:page <http://reduno-internacional.com/en/community/unoi> ;
+    void:triples "6759"^^xsd:integer ;
+    dcat:theme "user_generated" ;
+    void:uriSpace <http://reduno-internacional.com/en/community/unoi> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :red-uno-internacional-santillana ;
+    void:triples "1768"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :red-uno-internacional-santillana ;
+    void:triples "128"^^xsd:integer ;
+ .
+
+:gnoss a void:Linkset ;
+    void:target :red-uno-internacional-santillana ;
+    void:triples "194"^^xsd:integer ;
+ .
+
+:nytimes-linked-open-data a void:Linkset ;
+    void:target :red-uno-internacional-santillana ;
+    void:triples "1614"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "GNOSS_Team"^^xsd:string ;
+     foaf:mbox <mailto:gnoss@gnoss.com> ; 
+ .
+

@@ -1,0 +1,182 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:semanlink a dcat:Dataset ;
+    dcat:keyword "LinkedDataCrawl2014", "crawledLinkedDataCloud2014", "format-dcterm", "format-foaf", "format-rdf", "format-rdfs", "format-skos", "lodcloud-diagram-2014-08-30", "non-deref-vocab", "usergeneratedcontent" ;
+    dct:title "semanlink" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "application/rdf+xml;charset=UTF-8" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://www.semanlink.net/tag/mp3.rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dct:description """
+None
+"""@en ;
+
+    dcat:theme "user_generated" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:apache a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "47"^^xsd:integer ;
+ .
+
+:bbc-music a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:bbc-wildlife-finder a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:codehaus a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:data-bnf-fr a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:datahub a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "7"^^xsd:integer ;
+ .
+
+:dbpedia-fr a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:eea a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:eea-rod a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "8"^^xsd:integer ;
+ .
+
+:eunis a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:gnu-licenses a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:linked-open-vocabularies-lov a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:nytimes-linked-open-data a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "73"^^xsd:integer ;
+ .
+
+:openlinksw-dataspaces a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "81"^^xsd:integer ;
+ .
+
+:personal-homepages a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "796"^^xsd:integer ;
+ .
+
+:prefix-cc a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:princeton-library-findingaids a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:productdb a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:productontology a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:pub-bielefeld a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:semantic-web-dog-food a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:semanticweb-org a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:southampton-ecs-eprints a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "9"^^xsd:integer ;
+ .
+
+:stw-thesaurus-for-economics a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "7"^^xsd:integer ;
+ .
+
+:typepad a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:umbel a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:w3c a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "560"^^xsd:integer ;
+ .
+
+:wordpress a void:Linkset ;
+    void:target :semanlink ;
+    void:triples "32"^^xsd:integer ;
+ .
+

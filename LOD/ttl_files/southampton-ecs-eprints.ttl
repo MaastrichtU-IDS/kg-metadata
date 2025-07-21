@@ -1,0 +1,76 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:southampton-ecs-eprints a dcat:Dataset ;
+    dcat:keyword "computer-science", "deref-vocab", "electronics", "eprints", "format-bibo", "format-cc", "format-dc", "format-ecs", "format-event", "format-foaf", "format-geo", "format-owl", "format-rdf", "format-rdfs", "format-skos", "format-void", "format-xsd", "license-metadata", "lld", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-vocab-mappings", "provenance-metadata", "publications", "published-by-producer", "southampton" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "ECS_Southampton_EPrints" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://eprints.ecs.soton.ac.uk/id/eprint/22587> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='eprints.ecs.soton.ac.uk', port=80): Max retries exceeded with url: /id/eprint/22587 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686daf3d0>, 'Connection to eprints.ecs.soton.ac.uk timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voID Description
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmQD6izrPPviUk8bEf3T8TKyvETcptxyqHYvNSPFrCzd41']" ;
+        dcat:accessURL <http://eprints.ecs.soton.ac.uk/id/repository> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download (RDF/XML)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:Qma6jaFUsDrKKE12MJ6kt1b46T4Effi2aPiDG1e4kQ3fh2']" ;
+        dcat:accessURL <http://eprints.ecs.soton.ac.uk/id/dump> ;
+    ] ;
+    dct:description """
+This is live data produced by the EPrints server since its upgrade to EPrints v3.2.1 and is distinct from the service provided by RKB Explorer.
+"""@en ;
+
+    foaf:page <http://eprints.ecs.soton.ac.uk/> ;
+    void:triples "1000000"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://eprints.ecs.soton.ac.uk/id/eprint/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:ecs a void:Linkset ;
+    void:target :southampton-ecs-eprints ;
+    void:triples "24000"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "ECS_/__Southampton_University"^^xsd:string ;
+     foaf:mbox <mailto:webmaster@ecs.soton.ac.uk> ; 
+ .
+

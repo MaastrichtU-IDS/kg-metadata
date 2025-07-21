@@ -1,0 +1,73 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:SDG a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://metadata.un.org/sdg/> ;
+    dcat:distribution [
+        dct:identifier "7a7d2f22-5f9c-0781-7412-0853e6f6ab5d" ;
+        dct:title "SDG_Taxonomy_and_Ontology_" ;
+        dct:description """
+SDG Taxonomy and Ontology 
+""" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dcat:downloadURL <https://github.com/UNStats/LOD4Stats/blob/master/sdg-data/sdg-ontology-with-taxonomy.ttl> ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:keyword "Sustainable_Development", "SDG", "United_Nations" ;
+    dct:description """
+In December 2017, an informal working group led by the Department of Economic and Social Affairs and the Secretariat of the United Nations High Level Committee on Management, and composed by technical experts from across the UN System, started working on a proposal to developed a system of Internationalized Resource Identifiers (IRIs) for Sustainable Development Goals, Targets, Indicators and related statistical series to support the development of a United Nations system-wide ecosystem of machine-readable data and documents based on Linked Open Data (LOD) principles.
+
+In order to ensure their fullest possible use, the Identifiers and a formal Statement of Adoption were presented at the second regular session of the UN System Chief Executives Board for Coordination (CEB), in November 2019. At the CEB, the Secretary-General invited all UN organizations to use them to map their SDG-related resources and sign the Statement.
+
+Unique Identifiers for the sustainable development goals, targets and indicators
+
+The system of Internationalized Resource Identifiers (IRIs) for Sustainable Development Goals, Targets, Indicators and related statistical series is now part of the Semantic Web infrastructure that the UN Dag Hammarskjold Library makes available to IT developers and the public at large under http://metadata.un.org/sdg/?lang=en.  It formalizes links between the goals, targets, indicators and series, and two other crucial elements in the Linked Open Data infrastructure maintained by the United Nation System, namely: (1) the UN Bibliographic Information System maintained by the UN Dag Hammarskjold Library, and (2) the SDG Interface Ontology, maintained by UN Environment. 
+
+The identifiers allow the use of Semantic Web technologies to:
+
+•             Provide a web-based mechanism to make SDG-related data and information assets accessible, inter-operable and re-usable,
+
+•             Organically discover relevant and authoritative SDG data and information among the multitude of available sources on the web
+
+•             Enable the development of applications that integrate authoritative data, concepts and definitions from a large number of formerly unknown sources.
+
+Metadata about the SDG Ontology/KOS in a machine-accessible VoID/LIME file is available at http://metadata.un.org/sdg/void.ttl
+"""@en ;
+
+    dct:title "A_Knowledge_Organization_System_for_the_United_Nations_Sustainable_Development_Goals" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-pddl> ;
+    dcat:theme "government" ;
+    void:uriSpace <http://metadata.un.org/sdg/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:stell@o@uniroma2.it> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Armando_Stellato"^^xsd:string ;
+     foaf:mbox <mailto:stell@o@uniroma2.it> ; 
+ .
+

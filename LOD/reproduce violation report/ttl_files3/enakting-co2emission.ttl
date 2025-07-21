@@ -1,0 +1,64 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:enakting-co2emission a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-rdf", "format-xhtml", "government", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "published-by-third-party", "statistics" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "EnAKTing_CO2_Emission_Dataset" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://co2emission.psi.enakting.org/def/NUTS4Area> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD file
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "['ipfs:QmSNSCauRaEJvbL9a9Affs7yysr1aVdaSqz6Abaj9cYZpW']" ;
+        dcat:accessURL_distribution <http://co2emission.psi.enakting.org/id/void> ;
+    ] ;
+    dct:description_main """
+UK CO2 Emission data extracted from the spreadsheet 'Local and Regional CO2 Emissions Estimates for 2005-2007', produced by the UK's Department of Energy and Climate Change.
+"""@en ;
+
+    foaf:page <http://co2emission.psi.enakting.org/> ;
+    void:triples "2316868"^^xsd:integer ;
+    dcat:theme "government" ;
+    void:uriSpace <http://co2emission.psi.enakting.org/id/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:ordnance-survey-linked-data a void:Linkset ;
+    void:target :enakting-co2emission ;
+    void:triples "377"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Tope_Omitola"^^xsd:string ;
+     foaf:Cmbox <mailto:t.omitola@ecs.soton.ac.uk> ; 
+ .
+

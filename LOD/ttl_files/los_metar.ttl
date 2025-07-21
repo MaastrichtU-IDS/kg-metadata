@@ -1,0 +1,92 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:los_metar a dcat:Dataset ;
+    dcat:keyword "geographic", "iata", "icao", "lod", "lodcloud-diagram-2011-09-19", "metar", "no-deref-vocab", "published-by-third-party" ;
+    dct:title "Weather_Stations" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://www.linkedopenservices.org/services/geo/SpatialResources/point/ICAO/PADK> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Data dump
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.linkedopenservices.org/data/METARStations.rdf.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF/XML,_Turtle,_HTML" ;
+        dct:description """
+ICAO resources
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.linkedopenservices.org/services/geo/SpatialResources/point/ICAO/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF/XML,_Turtle,_HTML" ;
+        dct:description """
+IATA resources
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.linkedopenservices.org/services/geo/SpatialResources/point/IATA/> ;
+    ] ;
+    dct:description """
+Airports producing METAR weather reports with URI scheme based on (pseudo-)ICAO (and IATA) codes (with raw original codes as skos:notation) interlinked with OurAirports, Geonames and DBPedia airports
+"""@en ;
+
+    foaf:page <http://www.linkedopenservices.org/services/geo/SpatialResources/point/ICAO/> ;
+    void:triples "75184"^^xsd:integer ;
+    dcat:theme "geography" ;
+    void:uriSpace <http://www.linkedopenservices.org/services/geo/SpatialResources/point/ICAO/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :los_metar ;
+    void:triples "1123"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :los_metar ;
+    void:triples "107"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Barry_Norton"^^xsd:string ;
+     foaf:mbox <mailto:barry.norton@kit.edu> ; 
+ .
+

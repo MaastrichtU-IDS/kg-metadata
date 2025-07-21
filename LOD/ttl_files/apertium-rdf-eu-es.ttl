@@ -1,0 +1,116 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:apertium-rdf-eu-es a dcat:Dataset ;
+    dcat:keyword "Apertium", "Basque", "Spanish", "bilingual", "dictionary", "lemon", "lexicon", "linguistic_lod", "linguistics", "llod", "lod", "multilingual", "rdf", "translation" ;
+    dct:title "Apertium_RDF_EU-ES" ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+It contains two lexicons (EU, ES) and the Translation Set EU-ES, as well as the metadata file.
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "Zipped_Dump" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-27T13:51:07.416Z/apertium-eu-es-rdf.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+This online lexicon not only contains the EU lexical entries from the EU-ES bilingual dictionary (that can be found in the zipped dump) but also aggregates the lexical entries in EU coming from all the published Apertium RDF dictionaries.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Basque_lexicon_URI" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://linguistic.linkeddata.es/id/apertium/lexiconEU> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+This online lexicon not only contains the ES lexical entries from the EU-ES bilingual dictionary (that can be found in the zipped dump) but also aggregates the lexical entries in ES coming from all the published Apertium RDF dictionaries.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Spanish_lexicon_URI" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://linguistic.linkeddata.es/id/apertium/lexiconES> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "EU-ES_translation_set_URI" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://linguistic.linkeddata.es/id/apertium/tranSetEU-ES> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "SPARQL_endpoint" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://linguistic.linkeddata.es/sparql/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+This extends the metadata in http://datahub.io/dataset/apertium-rdf-eu-es.rdf with licence and provenance
+
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "Dataset_description_in_DCAT" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-27T13:53:20.254Z/apertium-eu-es-dataset-metadata.rdf> ;
+    ] ;
+    dct:description """
+RDF version of the Apertium bilingual dictionary EU-ES. The original dataset (in LMF) comes from <http://hdl.handle.net/10230/17095> . The RDF version of the lexica is modelled using lemon (http://lemon-model.net/) and the translation module (http://purl.org/net/translation). More about the Apertium RDF dictionaries at http://linguistic.linkeddata.es/apertium/
+
+"""@en ;
+
+    void:triples "262336"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:babelnet a void:Linkset ;
+    void:target :apertium-rdf-eu-es ;
+    void:triples "9707"^^xsd:integer ;
+ .
+
+:lexinfo a void:Linkset ;
+    void:target :apertium-rdf-eu-es ;
+    void:triples "20563"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Universitat_Pompeu_Fabra._Institut_Universitari_de_Lingüística_Aplicada_(IULA)_;_Euskal_Herriko_Unibertsitatea._IXA_Taldea_;_Prompsit_Language_Engineering,_S.L_;_Universitat_Politècnica_de_Catalunya._TALP_Research_Center_;__Universitat_dAlacant._Grup_Transducens"^^xsd:string ;
+ .
+

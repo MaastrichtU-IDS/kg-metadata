@@ -1,0 +1,66 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:universal-dependencies-treebank-dutch a dcat:Dataset ;
+    dcat:keyword "corpus", "linguistics", "lod" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "Universal_Dependencies_Treebank_Dutch" ;
+    dcat:distribution [
+        dcat:mediaType "application/zip" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "UD_Dutch_Treebank" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://github.com/UniversalDependencies/UD_Dutch/archive/master.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+Converted test.conllu using ACoLi's conll-rdf converter
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='datahub.ckan.io', port=443): Max retries exceeded with url: /dataset/781f6ad5-3fa5-4063-a4f6-1c8e5dd9fa5e/resource/35c5d6cb-44c5-49a6-bdca-1c687d1891b1/download/uddutch.rdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3686da3c10>, 'Connection to datahub.ckan.io timed out. (connect timeout=30)')))
+""" ;
+        dct:title "UD_Dutch_RDF_Example" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://datahub.ckan.io/dataset/781f6ad5-3fa5-4063-a4f6-1c8e5dd9fa5e/resource/35c5d6cb-44c5-49a6-bdca-1c687d1891b1/download/uddutch.rdf> ;
+    ] ;
+    dct:description """
+Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).
+
+This dataset refers to UD's Dutch treebank.
+
+"""@en ;
+
+    foaf:page <https://github.com/UniversalDependencies/UD_Dutch> ;
+    void:triples "209411"^^xsd:integer ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:olia a void:Linkset ;
+    void:target :universal-dependencies-treebank-dutch ;
+    void:triples "72"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Zeman,_Daniel;_Žabokrtský,_Zdeněk"^^xsd:string ;
+     foaf:mbox <mailto:zeman@ufal.mff.cuni.cz> ; 
+ .
+

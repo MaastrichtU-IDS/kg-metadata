@@ -1,0 +1,91 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:the-drug-interaction-knowledge-base a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "drug-drug-interactions", "license-metadata", "lifesciences", "lod", "lodcloud-diagram-2014-08-30", "medications-safety", "no-proprietary-vocab", "pharmacoepidemiology", "provenance-metadata", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "The_Drug_Interaction_Knowledge_Base" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_URI" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example URI
+""" ;
+        dcat:accessURL_exampleResource <https://dbmi-icode-01.dbmi.pitt.edu/dikb/page/DDIPredictions/1> ;
+        adms:status_exampleResource """
+FAIL (HTTPSConnectionPool(host='dbmi-icode-01.dbmi.pitt.edu', port=443): Max retries exceeded with url: /dikb/page/DDIPredictions/1 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:997)'))))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_endpoint_to_the_DIKB" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint to the DIKB
+""" ;
+        dcat:accessURL_sparqlEndpoint <https://dbmi-icode-01.dbmi.pitt.edu/dikb/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPSConnectionPool(host='dbmi-icode-01.dbmi.pitt.edu', port=443): Max retries exceeded with url: /dikb/sparql (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:997)'))))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/rdf+n3" ;
+        dct:description_distribution """
+Sparql endpoint
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='dbmi-icode-01.dbmi.pitt.edu', port=443): Max retries exceeded with url: /dikb/sparql (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:997)'))))
+""" ;
+        dct:title_distribution "The_Linked-data_version_of_the_Drug_Interaction_Knowledge_Base" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://dbmi-icode-01.dbmi.pitt.edu/dikb/sparql> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "HTML" ;
+        dct:description_distribution """
+Home page for the evidence-base component of the DIKB
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Home_page_for_the_evidence-base_component_of_the_DIKB" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://dbmi-icode-01.dbmi.pitt.edu/dikb-evidence/front-page.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/rdf+n3" ;
+        dct:description_distribution """
+Example URI
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='dbmi-icode-01.dbmi.pitt.edu', port=443): Max retries exceeded with url: /dikb/page/DDIObservations1 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:997)'))))
+""" ;
+        dct:title_distribution "Example_URI" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://dbmi-icode-01.dbmi.pitt.edu/dikb/page/DDIObservations1> ;
+    ] ;
+    dct:description_main """
+The Drug Interaction Knowledge Base (DIKB) is clinically-oriented, evidence-based, knowledge base designed to support pharmacoepidemiology and clinical decision support. It contains quantitative and qualitative assertions about drug mechanisms and pharmacokinetic drug-drug interactions for over 60 drugs; primarily psychotropics and HMG-CoA reductase inhibitors (statins). The linked-data version of the DIKB was implemented using emerging practices from the W3C HCLS SIG Linking Open Drug Data and Scientific Discource task forces.
+"""@en ;
+
+    foaf:page <http://dbmi-icode-01.dbmi.pitt.edu/dikb-evidence/front-page.html> ;
+    void:triples "39992"^^xsd:integer ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Richard_D_Boyce"^^xsd:string ;
+     foaf:Cmbox <mailto:rdb20@pitt.edu> ; 
+ .
+

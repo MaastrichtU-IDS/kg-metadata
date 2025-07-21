@@ -1,0 +1,77 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:PGxLOD a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title "PGxLOD_SPARQL_Endpoint" ;
+        dct:identifier "6773297d-2312-384f-c4d9-c290ff9ecc0e" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <https://pgxlod.loria.fr/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    foaf:page <https://pgxlod.loria.fr/> ;
+    dcat:keyword "pharmacogenomics", "pharmacogenetics", "PGx", "life_sciences", "lod", "linked_data", "ontology", "provenance", "metadata", "gene", "genetic_factor", "drug", "drug_response", "phenotype" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "PGxLOD" ;
+    dct:description """
+PGxLOD groups data related to pharmacogenomics (PGx) from various sources such as PharmGKB, DrugBank, ClinVar, DisGeNET, but also the scientific literature. Central elements of PGxLOD are pharmacogenomic relationships, which are n-ary relationships linking drugs, genetic factors and drug-response phenotypes. Such relationships state the atomic elements of knowledge in PGx, i.e., a patient with a specified genetic factor and being treated with a specified drug is likely to experience the specified drug-response phenotypes (such as an adverse effect, no effect, etc.). PGxLOD is developed in the ANR PractiKPharma project (http://practikpharma.loria.fr/).
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <http://pgxlod.loria.fr/resource/> ;
+    void:triples "5262721"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    void:exampleResource [
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+Relationship extracted from the biomedical literature and stating that mithramycin A decreases the transcription of xiap gene.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Example_of_a_pharmacogenomic_relationship" ;
+        dcat:accessURL <http://pgxlod.loria.fr/resource/literature_PGxCorpusGold_v2_relation_1> ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bio2rdf-pharmgkb a void:Linkset ;
+    void:target :PGxLOD ;
+    void:triples "69015"^^xsd:integer ;
+ .
+
+:bio2rdf-ncbigene a void:Linkset ;
+    void:target :PGxLOD ;
+    void:triples "26144"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:pier.monn@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "PGxLOD_staff"^^xsd:string ;
+     foaf:mbox <mailto:pgxlod-contact@inria.fr> ; 
+ .
+

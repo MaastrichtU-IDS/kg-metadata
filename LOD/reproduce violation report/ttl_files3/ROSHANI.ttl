@@ -1,0 +1,55 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ROSHANI a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "https://drive.google.com/file/d/13BxztYE_p5n3EZhyLpiU30J8EoRdvH10/view" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "918495db-2e8b-8359-cdc3-ac11ea4b6635" ;
+        dcat:downloadURL_distribution <https://drive.google.com/file/d/13BxztYE_p5n3EZhyLpiU30J8EoRdvH10/view> ;
+    ] ;
+    foaf:page <https://drive.google.com/open?id=13BxztYE_p5n3EZhyLpiU30J8EoRdvH10> ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "ontology_terrorist_attack" ;
+    dct:description_main """
+ONTOLOGY OF TERRORIST ATTACK
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    dcat:theme "user_generated" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:lordcueca6@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "ROSHANI_"^^xsd:string ;
+     foaf:Cmbox <mailto:roshani2203@gmail.com> ; 
+ .
+

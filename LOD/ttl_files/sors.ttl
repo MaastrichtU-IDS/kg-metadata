@@ -1,0 +1,44 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:sors a dcat:Dataset ;
+    dcat:keyword "LinkedDataCrawl2014", "crawledLinkedDataCloud2014", "format-cube", "format-dcterm", "format-rdf", "format-rdfs", "format-sdmxa", "government", "lodcloud-diagram-2014-08-30", "non-deref-vocab", "provenance-metadata" ;
+    dct:title "SORS" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://elpo.stat.gov.rs/lod2/RS-DATA/National_accounts/GDP_usage_Collective_consumption_expenditure/data_2011_12_28> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='elpo.stat.gov.rs', port=80): Max retries exceeded with url: /lod2/RS-DATA/National_accounts/GDP_usage_Collective_consumption_expenditure/data_2011_12_28 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686aef4f0>, 'Connection to elpo.stat.gov.rs timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dct:description """
+Statistical Office of the Republic of Serbia
+
+"""@en ;
+
+    foaf:page <http://stat.gov.rs> ;
+    dcat:theme "government" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:personal-homepages a void:Linkset ;
+    void:target :sors ;
+    void:triples "1"^^xsd:integer ;
+ .
+

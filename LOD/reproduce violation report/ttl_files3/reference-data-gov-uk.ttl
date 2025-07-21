@@ -1,0 +1,153 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:reference-data-gov-uk a dcat:Dataset ;
+    dcat:keyword "broken_link", "country-uk", "deref-vocab", "format-dc", "format-foaf", "format-org", "format-skos", "government", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "published-by-producer", "uk", "ukgov" ;
+    dct:title_main "reference.data.gov.uk" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example: David Cameron (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://reference.data.gov.uk/id/mp/witney/david-cameron> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='reference.data.gov.uk', port=80): Max retries exceeded with url: /id/mp/witney/david-cameron (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843009d0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example: Department for Education (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://reference.data.gov.uk/id/department/dfe> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='reference.data.gov.uk', port=80): Max retries exceeded with url: /id/department/dfe (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684300f40>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://services.data.gov.uk/reference/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='services.data.gov.uk', port=80): Max retries exceeded with url: /reference/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843012a0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+RDF Schema
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "['ipfs:QmaN8tQAWZrrsLGLDiyGCev4QnYr487zzzRMsqZxY9ZhVP']" ;
+        dcat:accessURL_distribution <http://reference.data.gov.uk/def/central-government> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "" ;
+        dct:description_distribution """
+Downloads
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='source.data.gov.uk', port=80): Max retries exceeded with url: /data/reference/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843030d0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://source.data.gov.uk/data/reference/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "api/search" ;
+        dct:description_distribution """
+Search API
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='services.data.gov.uk', port=80): Max retries exceeded with url: /reference/search (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843006d0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://services.data.gov.uk/reference/search> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "api/linked-data" ;
+        dct:description_distribution """
+Linked Data API for MPs
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='reference.data.gov.uk', port=80): Max retries exceeded with url: /doc/mp (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684302bc0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://reference.data.gov.uk/doc/mp> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "api/linked-data" ;
+        dct:description_distribution """
+Linked Data API for departments
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='reference.data.gov.uk', port=80): Max retries exceeded with url: /doc/department (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684302350>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://reference.data.gov.uk/doc/department> ;
+    ] ;
+    dct:description_main """
+Reference data for linked UK government data:
+
+* People
+* Departments
+* Namespace for various time intervals (separate sub-package package:data-gov-uk-time-intervals)
+
+### Linked Data API
+
+Roots:
+
+http://reference.data.gov.uk/doc/department
+http://reference.data.gov.uk/doc/mp
+"""@en ;
+
+    foaf:page <http://reference.data.gov.uk/> ;
+    void:triples "45809"^^xsd:integer ;
+    dcat:theme "government" ;
+    void:uriSpace <http://reference.data.gov.uk/id/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:data-gov-uk-time-intervals a void:Linkset ;
+    void:target :reference-data-gov-uk ;
+    void:triples "1518"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :reference-data-gov-uk ;
+    void:triples "22"^^xsd:integer ;
+ .
+
+:london-gazette a void:Linkset ;
+    void:target :reference-data-gov-uk ;
+    void:triples "1405"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Data.gov.uk_Team"^^xsd:string ;
+     foaf:Cmbox <mailto:team@d@a.gov.uk> ; 
+ .
+

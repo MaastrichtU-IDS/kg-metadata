@@ -1,0 +1,110 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:sanskrit-english-lexicon a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-owl", "format-rdfs", "geographic", "license-metadata", "llod", "lod", "lodcloud.nolinks", "lodcloud.unconnected", "provenance-metadata", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "Sanskrit_English_Lexicon" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+Example RDF
+""" ;
+        dcat:accessURL_exampleResource <http://data.kasabi.com/dataset/sanskrit-english-lexicon/monier-williams/e0.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://api.kasabi.com/dataset/sanskrit-english-lexicon/apis/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Void Description
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://data.kasabi.com/dataset/sanskrit-english-lexicon> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+language OWL
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='rdf.ontosema.org', port=80): Max retries exceeded with url: /lang/language.owl (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684302b30>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://rdf.ontosema.org/lang/language.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+OWL
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "['ipfs:QmUAphtEqEuH4MudQ9pXxormvin7Th9tbko61SwxTq47XW']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2002/07/owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+RDF syntax NS
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "['ipfs:QmbCDqDXc9G1akWmszjTirVeYmfhJrxCno4TFmTiDwKk8z']" ;
+        dcat:accessURL_distribution <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+RDFS
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dct:mirror_distribution "['ipfs:QmSAukqNUbLECMEnd9EjrJGchmZHjypaAqpnxwoKfqJuAc']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2000/01/rdf-schema> ;
+    ] ;
+    dct:description_main """
+A Lexicon of Sanskrit to English
+"""@en ;
+
+    foaf:page <http://kasabi.com/dataset/sanskrit-english-lexicon> ;
+    void:triples "832177"^^xsd:integer ;
+    void:uriSpace <http://data.kasabi.com/dataset/sanskrit-english-lexicon> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 

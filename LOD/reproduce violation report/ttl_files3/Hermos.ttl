@@ -1,0 +1,57 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Hermos a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://mcbu-semanticweb-lab.github.io/hermos/> ;
+    void:triples "115320"^^xsd:integer ;
+    dcat:distribution [
+        dct:identifier_distribution "2b1b594b-195b-7ff7-a901-a1618c7d2530" ;
+        dct:title_distribution "hermos.owl" ;
+        dct:description_distribution """
+
+""" ;
+        dcat:mediaType_distribution "text/plain;_charset=utf-8" ;
+        dcat:downloadURL_distribution <https://raw.githubusercontent.com/mcbu-semanticweb-lab/hermos/gh-pages/hermos.owl> ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:keyword "grape_leaf_disease", "dataset", "deep_learning", "image_classification" ;
+    dct:description_main """
+Vineyard powdery mildew (Uncinula necator), dead arm (Phomopsis viticola) and vineyard downy mildew (Plasmopara viticola) diseases are frequently seen in the vineyards in the Gediz River Basin, West Anatolia of Turkey and cause significant damage to the crop. These diseases can be detected early using artificial intelligence- based systems that can contribute to crop yields and also reduce the labor of the farmer and the amount of pesticides used. This article presents a dataset, namely Hermos, for use in such AI-based systems. The dataset, namely Hermos, contains four classes of grapevine images; leaves with dead root, leaves with powdery mildew, leaves with downy mildew and healthy leaves. 
+"""@en ;
+
+    dct:title_main "Hermos" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dcat:theme "life_sciences" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:ovuncozturk@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Ovunc_Ozturk"^^xsd:string ;
+     foaf:Cmbox <mailto:ovunc.ozturk@gmail.com> ; 
+ .
+

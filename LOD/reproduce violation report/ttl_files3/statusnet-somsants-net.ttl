@@ -1,0 +1,117 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:statusnet-somsants-net a dcat:Dataset ;
+    dcat:keyword "LinkedDataCrawl2014", "crawledLinkedDataCloud2014", "format-bio", "format-foaf", "format-pos", "format-rdf", "format-rdfs", "format-sioc", "lodcloud-diagram-2014-08-30", "social_web" ;
+    dct:title_main "statusnet-somsants-net" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://somsants.net/maulet1714/foaf> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='somsants.net', port=80): Max retries exceeded with url: /maulet1714/foaf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dae320>: Failed to establish a new connection: [Errno -5] No address associated with hostname')))
+""" ;
+    ] ;
+    dct:description_main """
+StatusNet instance hosted at http://somsants.net
+"""@en ;
+
+    dcat:theme "social_networking" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:personal-homepages a void:Linkset ;
+    void:target :statusnet-somsants-net ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:statusnet-1w6-org a void:Linkset ;
+    void:target :statusnet-somsants-net ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:statusnet-chromic-org a void:Linkset ;
+    void:target :statusnet-somsants-net ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-fragdev-com a void:Linkset ;
+    void:target :statusnet-somsants-net ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:statusnet-gomertronic-com a void:Linkset ;
+    void:target :statusnet-somsants-net ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-hackerposse-com a void:Linkset ;
+    void:target :statusnet-somsants-net ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-legadolibre-com-ar a void:Linkset ;
+    void:target :statusnet-somsants-net ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-morphtown-de a void:Linkset ;
+    void:target :statusnet-somsants-net ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-ourcoffs-org-au a void:Linkset ;
+    void:target :statusnet-somsants-net ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-postblue-info a void:Linkset ;
+    void:target :statusnet-somsants-net ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-quitter-se a void:Linkset ;
+    void:target :statusnet-somsants-net ;
+    void:triples "27"^^xsd:integer ;
+ .
+
+:statusnet-russwurm-org a void:Linkset ;
+    void:target :statusnet-somsants-net ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-skilledtests-com a void:Linkset ;
+    void:target :statusnet-somsants-net ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:statusnet-soucy-cc a void:Linkset ;
+    void:target :statusnet-somsants-net ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-status-cat a void:Linkset ;
+    void:target :statusnet-somsants-net ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:wordpress a void:Linkset ;
+    void:target :statusnet-somsants-net ;
+    void:triples "4"^^xsd:integer ;
+ .
+

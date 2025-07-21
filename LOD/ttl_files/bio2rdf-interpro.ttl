@@ -1,0 +1,236 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bio2rdf-interpro a dcat:Dataset ;
+    dcat:keyword "bio2rdf", "deref-vocab", "format-dc", "format-rdf", "format-rdfs", "license-metadata", "lifesciences", "lod", "lodcloud-diagram-2011-09-19", "provenance-metadata", "published-by-third-party", "vocab-mappings" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "Bio2RDF::Interpro" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download interpro.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/interpro/interpro.nq.gz> ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_resource_(RDF)" ;
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+Example resource (RDF)
+""" ;
+        dcat:accessURL <http://bio2rdf.org/interpro:IPR000100> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://interpro.bio2rdf.org/sparql> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='interpro.bio2rdf.org', port=443): Max retries exceeded with url: /sparql (Caused by SSLError(CertificateError("hostname 'interpro.bio2rdf.org' doesn't match either of 'bio2rdf.org', 'openlifedata.org', 'search.openlifedata.org', 'sparql.openlifedata.org', 'virtuoso.openlifedata.org'"))))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "" ;
+        dct:description """
+Download
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_page_(n-quads,_gz_compressed)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/current/interpro/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "HTML" ;
+        dct:description """
+Dataset description (HTML)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Dataset_description_(HTML)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/current/interpro/interpro.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+Dataset description (RDF)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Dataset_description_(RDF)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/current/interpro/bio2rdf-interpro.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+OWL Schema
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "OWL_Schema" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/release/3/interpro/interpro.schema.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/plain;_charset=utf-8" ;
+        dct:description """
+Mappings (SIO)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Mappings_(SIO)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/interpro/bio2rdf_interpro_sio_mapping.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/sitemap" ;
+        dct:description """
+Semantic Web Sitemap
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Semantic_Web_Sitemap" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/release/3/interpro/sitemap.xml> ;
+    ] ;
+    dct:description """
+InterPro is an integrated database of predictive protein 'signatures' used for the classification and automatic annotation of proteins and genomes. InterPro classifies sequences at superfamily, family and subfamily levels, predicting the occurrence of functional domains, repeats and important sites.
+"""@en ;
+
+    foaf:page <http://interpro.bio2rdf.org/> ;
+    void:triples "2323345"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    void:uriSpace <http://bio2rdf.org/interpro:> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bio2rdf-blocks a void:Linkset ;
+    void:target :bio2rdf-interpro ;
+    void:triples "5787"^^xsd:integer ;
+ .
+
+:bio2rdf-cath a void:Linkset ;
+    void:target :bio2rdf-interpro ;
+    void:triples "2582"^^xsd:integer ;
+ .
+
+:bio2rdf-cazy a void:Linkset ;
+    void:target :bio2rdf-interpro ;
+    void:triples "87"^^xsd:integer ;
+ .
+
+:bio2rdf-come a void:Linkset ;
+    void:target :bio2rdf-interpro ;
+    void:triples "194"^^xsd:integer ;
+ .
+
+:bio2rdf-ec a void:Linkset ;
+    void:target :bio2rdf-interpro ;
+    void:triples "1523"^^xsd:integer ;
+ .
+
+:bio2rdf-interpro a void:Linkset ;
+    void:target :bio2rdf-interpro ;
+    void:triples "26010"^^xsd:integer ;
+ .
+
+:bio2rdf-iuphar a void:Linkset ;
+    void:target :bio2rdf-interpro ;
+    void:triples "173"^^xsd:integer ;
+ .
+
+:bio2rdf-kegg a void:Linkset ;
+    void:target :bio2rdf-interpro ;
+    void:triples "1754"^^xsd:integer ;
+ .
+
+:bio2rdf-merops a void:Linkset ;
+    void:target :bio2rdf-interpro ;
+    void:triples "161"^^xsd:integer ;
+ .
+
+:bio2rdf-metacyc a void:Linkset ;
+    void:target :bio2rdf-interpro ;
+    void:triples "370"^^xsd:integer ;
+ .
+
+:bio2rdf-msd a void:Linkset ;
+    void:target :bio2rdf-interpro ;
+    void:triples "1241"^^xsd:integer ;
+ .
+
+:bio2rdf-pandit a void:Linkset ;
+    void:target :bio2rdf-interpro ;
+    void:triples "7242"^^xsd:integer ;
+ .
+
+:bio2rdf-pdb a void:Linkset ;
+    void:target :bio2rdf-interpro ;
+    void:triples "53625"^^xsd:integer ;
+ .
+
+:bio2rdf-priam a void:Linkset ;
+    void:target :bio2rdf-interpro ;
+    void:triples "823"^^xsd:integer ;
+ .
+
+:bio2rdf-prosite a void:Linkset ;
+    void:target :bio2rdf-interpro ;
+    void:triples "1383"^^xsd:integer ;
+ .
+
+:bio2rdf-pubmed a void:Linkset ;
+    void:target :bio2rdf-interpro ;
+    void:triples "26957"^^xsd:integer ;
+ .
+
+:bio2rdf-scop a void:Linkset ;
+    void:target :bio2rdf-interpro ;
+    void:triples "4045"^^xsd:integer ;
+ .
+
+:bio2rdf-swissprot a void:Linkset ;
+    void:target :bio2rdf-interpro ;
+    void:triples "38706"^^xsd:integer ;
+ .
+
+:bio2rdf-trembl a void:Linkset ;
+    void:target :bio2rdf-interpro ;
+    void:triples "3882"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Bio2RDF"^^xsd:string ;
+     foaf:mbox <mailto:bio2rdf@googlegroups.com> ; 
+ .
+

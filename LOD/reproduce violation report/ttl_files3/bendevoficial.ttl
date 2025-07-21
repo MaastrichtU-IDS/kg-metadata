@@ -1,0 +1,97 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bendevoficial a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://bendevoficial.com> ;
+    dcat:distribution [
+        dct:identifier_distribution "9e393284-2a44-36b4-aacd-8eb2f998a81c" ;
+        dct:title_distribution "Bendev_Junior_RDF" ;
+        dct:description_distribution """
+RDF for bendev junior
+""" ;
+        dcat:mediaType_distribution "application/rdf+xml" ;
+        dcat:downloadURL_distribution <https://bendevoficial.com/bendev.rdf> ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:keyword "bendev", "bendev_junior", "bendevoficial", "tech_influencer" ;
+    dct:description_main """
+dataset of bendev junior
+"""@en ;
+
+    dct:title_main "Bendev_Junior" ;
+    dct:license <https://opensource.org/licenses/MIT> ;
+    dcat:distribution [
+        dct:identifier_distribution "5f658421-241b-b193-fc7d-58e913af5c96" ;
+        dct:title_distribution "Bendev_Junior" ;
+        dct:description_distribution """
+RDF for person bendev junior
+""" ;
+        dcat:accessURL_distribution <https://bendevoficial.com/bendev.rdf> ;
+        dcat:mediaType_distribution "application/rdf+xml" ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "81a0b568-e21c-b0fa-0683-59639fef526d" ;
+        dct:title_distribution "Bendev_Junior" ;
+        dct:description_distribution """
+N-triples For Bendev Junior
+""" ;
+        dcat:accessURL_distribution <https://bendevoficial.com/bendev.nt> ;
+        dcat:mediaType_distribution "application/n-triples" ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "fd441b1a-5688-5ebd-0a5e-da463a7dde8b" ;
+        dct:title_distribution "Bendev_Junior_" ;
+        dct:description_distribution """
+
+""" ;
+        dcat:accessURL_distribution <https://bendevoficial.com/bendev.trig> ;
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:theme "cross_domain" ;
+    void:uriSpace <Bendev_Junior> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] ;
+    foaf:depiction <https://bendevoficial.com/fotos/bendev.jpg> .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:bendevoficial@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Bendev"^^xsd:string ;
+     foaf:Cmbox <mailto:bendevoficial@gmail.com> ; 
+ .
+

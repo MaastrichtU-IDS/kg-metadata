@@ -1,0 +1,880 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:twc-ieeevis a dcat:Dataset ;
+    dcat:keyword "crossdomain", "datafaqs", "deref-vocab", "format-bibo", "format-coin", "format-con", "format-conv", "format-datafaqs", "format-dbpedia", "format-dc", "format-dcat", "format-doap", "format-event", "format-foaf", "format-geo", "format-graffle", "format-grddl", "format-irw", "format-nfo", "format-oboro", "format-opm", "format-ov", "format-owl", "format-pml", "format-pmlj", "format-pmlp", "format-prov", "format-prv", "format-qb", "format-rdf", "format-rdfs", "format-sio", "format-sioc", "format-skos", "format-tag", "format-vann", "format-void", "format-vsr", "lod", "lodcloud-diagram-2014-08-30", "no-license-metadata", "prizms", "provenance-metadata", "published-by-third-party", "vocab-mappings" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "IEEE_VIS_Source_Data" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-ntriples" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "N-Triples_Download" ;
+        dct:mirror_distribution "['ipfs:QmWXextNEEyAQNDP2tB2Y1FaPLBoeZox7TYAb2JkFWX1gM']" ;
+        dcat:downloadURL_distribution <http://ieeevis.tw.rpi.edu/source/ieeevis-tw-rpi-edu/file/cr-full-dump/version/latest/conversion/ieeevis-tw-rpi-edu.nt.gz> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_URI" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://ieeevis.tw.rpi.edu/source/ieeevis-tw-rpi-edu/dataset/movie-characters/version/2013-May-22/r2-d2> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='ieeevis.tw.rpi.edu', port=80): Max retries exceeded with url: /source/ieeevis-tw-rpi-edu/dataset/movie-characters/version/2013-May-22/r2-d2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686aef9a0>, 'Connection to ieeevis.tw.rpi.edu timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_URI" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://ieeevis.tw.rpi.edu/source/eagereyes-org/dataset/acceptance-rates/venue/eurovis/year/1999/submitted> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='ieeevis.tw.rpi.edu', port=80): Max retries exceeded with url: /source/eagereyes-org/dataset/acceptance-rates/venue/eurovis/year/1999/submitted (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684300940>, 'Connection to ieeevis.tw.rpi.edu timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_URI" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://dx.doi.org/10.1109/TVCG.2010.181> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://ieeevis.tw.rpi.edu/nosparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='ieeevis.tw.rpi.edu', port=80): Max retries exceeded with url: /nosparql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684302320>, 'Connection to ieeevis.tw.rpi.edu timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+Listing of all RDF datasets available, using the Vocabulary of Interlinked Datasets (VoID)
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='ieeevis.tw.rpi.edu', port=80): Max retries exceeded with url: /novoid.ttl (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f36843fd450>, 'Connection to ieeevis.tw.rpi.edu timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "VoID_Listing" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://ieeevis.tw.rpi.edu/novoid.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/sitemap" ;
+        dct:description_distribution """
+Listing of all RDF datasets available.
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='ieeevis.tw.rpi.edu', port=80): Max retries exceeded with url: /source/ieeevis-tw-rpi-edu/file/cr-sitemap/version/latest/conversion/sitemap.xml.hide (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684302f80>, 'Connection to ieeevis.tw.rpi.edu timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "Sitemap" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://ieeevis.tw.rpi.edu/source/ieeevis-tw-rpi-edu/file/cr-sitemap/version/latest/conversion/sitemap.xml.hide> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "mapping/twc-conversion" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Conversion_Enhancement_Parameters" ;
+        dct:mirror_distribution "['ipfs:QmZDXv4bEWyiwaXjYzaSjGw4HcjBL8UJdF8Pt4nqC9HFuq']" ;
+        dcat:accessURL_distribution <http://ieeevis.tw.rpi.edu/source/ieeevis-tw-rpi-edu/file/cr-aggregated-params/version/latest/conversion/ieeevis-tw-rpi-edu-cr-aggregated-params-latest.ttl.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "sioc_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmVNDKnvXmJmfQTtEuWXPAbkeqJH3p5SchwzzLshkUbAcM']" ;
+        dcat:accessURL_distribution <http://rdfs.org/sioc/ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "prv_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmdJJW2hptxL4TefCCM1PcnjxoUrSZQde9ZTwXZhpiQXY3']" ;
+        dcat:accessURL_distribution <http://purl.org/net/provenance/ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "dc_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmSQLZddg8vL7gsJPTDaR1dzEcvKR2Nao6NzUMXxPS93JX']" ;
+        dcat:accessURL_distribution <http://purl.org/dc/terms/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "vann_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmWR7JcUQ6WQsesWD9MvEnn2fQcYweFRpTf338pAZ2ThdM']" ;
+        dcat:accessURL_distribution <http://purl.org/vocab/vann/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "dcat_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmNUREjAcw4CXBJeseXsfgLDGPu7dicFgfNouDQWb2Ut7t']" ;
+        dcat:accessURL_distribution <http://www.w3.org/ns/dcat> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "graffle_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmNsLAHwx6fDA5RDpY5nLzNvJ3NZTXiwYkUrjTRmUfDKKD']" ;
+        dcat:accessURL_distribution <http://purl.org/twc/vocab/vsr/graffle> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "nfo_RDF_Schema" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://www.semanticdesktop.org/ontologies/nfo/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='sparql.tw.rpi.edu', port=80): Max retries exceeded with url: /vocab/datafaqs (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686bdff70>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "datafaqs_RDF_Schema" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://purl.org/twc/vocab/datafaqs> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "owl_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmUAphtEqEuH4MudQ9pXxormvin7Th9tbko61SwxTq47XW']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2002/07/owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (403)
+""" ;
+        dct:title_distribution "sio_RDF_Schema" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://semanticscience.org/resource/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "bibo_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmfHEffjG7eWcxaeW7mpKuszYDeGgFsSRYaumXiAfNoutN']" ;
+        dcat:accessURL_distribution <http://purl.org/ontology/bibo/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "pmlj_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmdKZq4L1xYMnVDRQnhdipk22ujsyvZMKEuk7NSDAYdJ21']" ;
+        dcat:accessURL_distribution <http://inference-web.org/2.0/pml-justification.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "prov_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmUzz1Z8nRvSfoZBntrHu4XihYEMSHWnV4h9tNo5RpCN5y']" ;
+        dcat:accessURL_distribution <http://www.w3.org/ns/prov> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "tag_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmPRSH2VWey2S9yYvL35tQ5782v915wo8tDN8MkAPPSq5a']" ;
+        dcat:accessURL_distribution <http://www.holygoat.co.uk/owl/redwood/0.1/tags/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "doap_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmXcK6sGhaGqZAL8bygjfkVHavUddGZifHquDBz3bDabgA']" ;
+        dcat:accessURL_distribution <http://usefulinc.com/ns/doap> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='open.vocab.org', port=443): Max retries exceeded with url: /terms/ (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997)'))))
+""" ;
+        dct:title_distribution "ov_RDF_Schema" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://open.vocab.org/terms/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "rdf_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmbCDqDXc9G1akWmszjTirVeYmfhJrxCno4TFmTiDwKk8z']" ;
+        dcat:accessURL_distribution <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "opm_RDF_Schema" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://openprovenance.org/ontology> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "grddl_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmZmw7ZYq6Y3pp6XP2rQkyjbYNyLbib4Ua1wUWBqQTLFHQ']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2003/g/data-view> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "oboro_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmRbuVpm1KSoEZHT4KMyGzRapacnJP648kyonckzo4PEia']" ;
+        dcat:accessURL_distribution <http://obofoundry.org/ro/ro.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "conv_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmZSmZm2wqd3j47Eovmmep5n2hVAAxTWsekk9tyMJeFqQw']" ;
+        dcat:accessURL_distribution <http://purl.org/twc/vocab/conversion/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "vsr_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmaPU357bQmfVeWhgXLBFYgPmH92DdJxgytsZg4xumbE1G']" ;
+        dcat:accessURL_distribution <http://purl.org/twc/vocab/vsr> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "geo_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:Qme86e6JHZ1JRs6T53nqP7NZRmh5RcsQk2JA8kfoq7jayY']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2003/01/geo/wgs84_pos> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "rdfs_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmSAukqNUbLECMEnd9EjrJGchmZHjypaAqpnxwoKfqJuAc']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2000/01/rdf-schema> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "con_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmYBLNDKX6SWrY6KNhfaG5ifkpTo2KABbEZUvnQTWJ9kYw']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2000/10/swap/pim/contact> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "pml_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmYZc4Es3oRXJNw5hc4p3bw1pJgcZskArkU2dRH9pfBQCE']" ;
+        dcat:accessURL_distribution <http://provenanceweb.org/ns/pml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "qb_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmbCAXp8T44Yjs1VmMoQYvWQH4gPkFTt8EKgeTEcRFVFYh']" ;
+        dcat:accessURL_distribution <http://purl.org/linked-data/cube> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "skos_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmbhdymXhcrBbS6GadLd61ayorGy5CbtaQPNmNhAtuuXZZ']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2004/02/skos/core> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "void_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmScZ3nsKvCpwiQDcDULgKYqoVEaZ43YsCXfrmD1zCJmq9']" ;
+        dcat:accessURL_distribution <http://rdfs.org/ns/void> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "pmlp_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmUY4yRWAXdG9VSxThVLv8uU1d46qHVELP4gAdd6dm8kzD']" ;
+        dcat:accessURL_distribution <http://inference-web.org/2.0/pml-provenance.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "foaf_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmXTmGjkei19mbhkXLHHFAQqgAqhSPvVv4gHXFBzVTTxko']" ;
+        dcat:accessURL_distribution <http://xmlns.com/foaf/0.1/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "irw_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmPt6pC4CPwmRi4xfToYrBQmP1kD9XJdxYvA4AA8h9YM4U']" ;
+        dcat:accessURL_distribution <http://www.ontologydesignpatterns.org/ont/web/irw.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "coin_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmYbTsC6kh3Q6nYNrt55wwirhagvGPxVNHzJxtvCKmSC7R']" ;
+        dcat:accessURL_distribution <http://purl.org/court/def/2009/coin> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "graffle_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmXDKzHEJAmD6q6uzHS5nugQrKxwBs4K85iVShgqAsCZwp']" ;
+        dcat:accessURL_distribution <http://purl.org/twc/vocab/vsr/graffle> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "dcat_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmTo9AhvWcEtMWnesnZLuwJGN1LvBavu1KJBpRJVbPZSi3']" ;
+        dcat:accessURL_distribution <http://www.w3.org/ns/dcat> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='sparql.tw.rpi.edu', port=80): Max retries exceeded with url: /vocab/datafaqs (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686bdd8a0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "datafaqs_RDF_Schema" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://purl.org/twc/vocab/datafaqs> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "geo_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmUknMr6bGBadPgPZaeRw5sPfpqaQZNzjFnbcXTU493vDe']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2003/01/geo/wgs84_pos> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "sioc_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmYX7qAiJrm16HPovqSCcyAyrV4ZjhEAEZB8onFFwcNQ6F']" ;
+        dcat:accessURL_distribution <http://rdfs.org/sioc/ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "vsr_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmYiW58HLAaYcXz7z6JsaRdt7uLE7Buhu3RQBLUmAfiQaV']" ;
+        dcat:accessURL_distribution <http://purl.org/twc/vocab/vsr> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "coin_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmfAv8tKH2LKNXq2nCvNu9yDWK64fTiYKZmAUsMju1yg9k']" ;
+        dcat:accessURL_distribution <http://purl.org/court/def/2009/coin> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "owl_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmWJ8maTa1PfLdfM17wvXh6nzuZG6CD4fGiZcb1GSB6Kxf']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2002/07/owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "doap_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmZn7wXHpgSrGFEP32zAfKQYRFNoyGrYoJXUYPZDBwyg4R']" ;
+        dcat:accessURL_distribution <http://usefulinc.com/ns/doap> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "prv_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmSPVZpJP4FJV9y8VeYURMKQnwAaiHmq7cFamnbJXo3xVc']" ;
+        dcat:accessURL_distribution <http://purl.org/net/provenance/ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "con_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmVXinE7W8zud343FMXJUqEXS43xnjirTuLHFTyHmfun9j']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2000/10/swap/pim/contact> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "irw_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmcnPVscubhUz88BYDRPm57K8K6BcprFiS6rMDhe1rT4gp']" ;
+        dcat:accessURL_distribution <http://www.ontologydesignpatterns.org/ont/web/irw.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "grddl_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmVkmnc3onANFaZV8zR9noaU7RmyYPGHneUzD9kUCZAwzq']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2003/g/data-view> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "pmlp_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmVc8XGJZYr2dhh3RPJk2Kjnu1TdAdo7fHuPdVjigAtYRV']" ;
+        dcat:accessURL_distribution <http://inference-web.org/2.0/pml-provenance.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "rdf_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:Qmc12LrbUifW7U3PyFpQ55TDxGXgfkEPRYhexMA6E24iQR']" ;
+        dcat:accessURL_distribution <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "skos_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmbrBjNbm32hJUodBGGpiRazJpa1SSbPgrJAFzDTUgbmdN']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2004/02/skos/core> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "pmlj_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmS97AnjACRGiFQZHBTSgVb2We7kvQ44Cp2X5n36e7Jvkz']" ;
+        dcat:accessURL_distribution <http://inference-web.org/2.0/pml-justification.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "qb_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmaYtTLjGMTz1i4ay5npu5p6kNovECrAWRcnDGHXYiaM2M']" ;
+        dcat:accessURL_distribution <http://purl.org/linked-data/cube> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "prov_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmQ2KLCuzHEM6EBXKgmgE1ZRhTsxouzSwFq2FYxKHxDDJF']" ;
+        dcat:accessURL_distribution <http://www.w3.org/ns/prov> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "rdfs_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmNuJDKL5WBEEy1NBxQqTLWXysDQ21TFHb8iaHN1yNV91o']" ;
+        dcat:accessURL_distribution <http://www.w3.org/2000/01/rdf-schema> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "oboro_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmevCZhEftbZ9Mmbw5kEJ9JAJVuSNCkVvdfCBrTXjetu3X']" ;
+        dcat:accessURL_distribution <http://obofoundry.org/ro/ro.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "pml_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmbAnynAh3sT48N6EhJ2ZKsrSTtHDi2Yr29Gwd33xxuLiv']" ;
+        dcat:accessURL_distribution <http://provenanceweb.org/ns/pml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "void_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmPKEQdP9ZDzrRmsLVywkAR4cew2EePAg82g9WDYBDtxxZ']" ;
+        dcat:accessURL_distribution <http://rdfs.org/ns/void> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "opm_RDF_Schema" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://openprovenance.org/ontology> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "dbpedia_RDF_Schema" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://dbpedia.org/resource/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "event_RDF_Schema" ;
+        dct:mirror_distribution "['ipfs:QmaLER68AbmbPnLNPjUDwyntWiTWPKgdUKy2cUCf2Fxpod']" ;
+        dcat:accessURL_distribution <http://purl.org/NET/c4dm/event.owl> ;
+    ] ;
+    dct:description_main """
+Collection of the datasets used by papers published in [IEEE VIS](http://ieeevis.org/) and related conferences, provided as [Linked Open Data](http://linkeddata.org/). This dataset is derived from the individual datasets listed in the [ieee-vis](http://datahub.io/group/ieee-vis) group. (Note that this LOD bubble should be connected to http://datahub.io/dataset/rkb-explorer-ieee/related)
+"""@en ;
+
+    foaf:page <http://ieeevis.tw.rpi.edu> ;
+    void:triples "19935340"^^xsd:integer ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://ieeevis.tw.rpi.edu/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :twc-ieeevis ;
+    void:triples "28"^^xsd:integer ;
+ .
+
+:dcs-sheffield a void:Linkset ;
+    void:target :twc-ieeevis ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :twc-ieeevis ;
+    void:triples "9"^^xsd:integer ;
+ .
+
+:l3s-dblp a void:Linkset ;
+    void:target :twc-ieeevis ;
+    void:triples "26"^^xsd:integer ;
+ .
+
+:linkedmdb a void:Linkset ;
+    void:target :twc-ieeevis ;
+    void:triples "19"^^xsd:integer ;
+ .
+
+:semantic-web-dog-food a void:Linkset ;
+    void:target :twc-ieeevis ;
+    void:triples "27400"^^xsd:integer ;
+ .
+
+:semanticweb-org a void:Linkset ;
+    void:target :twc-ieeevis ;
+    void:triples "299"^^xsd:integer ;
+ .
+
+:twc-logd a void:Linkset ;
+    void:target :twc-ieeevis ;
+    void:triples "101"^^xsd:integer ;
+ .
+
+:viaf a void:Linkset ;
+    void:target :twc-ieeevis ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Timothy_Lebo"^^xsd:string ;
+     foaf:Cmbox <mailto:lebot@rpi.edu> ; 
+ .
+

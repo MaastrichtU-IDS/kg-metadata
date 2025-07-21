@@ -1,0 +1,78 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:fu-berlin-medicare a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-rdf", "lifesciences", "lod", "lodcloud-diagram-2011-09-19", "no-license-metadata", "no-provenance-metadata", "published-by-third-party", "vocab-mappings" ;
+    dct:title_main "MediCare" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-ntriples" ;
+        dct:description_distribution """
+Download
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "None" ;
+        dct:mirror_distribution "[]" ;
+        dcat:downloadURL_distribution <http://www4.wiwiss.fu-berlin.de/medicare/medicare_dump.nt.bz2> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://www4.wiwiss.fu-berlin.de/medicare/resource/drugs/10001> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "None" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://www4.wiwiss.fu-berlin.de/medicare/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (404)
+""" ;
+    ] ;
+    dct:description_main """
+
+"""@en ;
+
+    foaf:page <http://www4.wiwiss.fu-berlin.de/medicare/> ;
+    void:triples "44500"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    void:uriSpace <http://www4.wiwiss.fu-berlin.de/medicare/resource/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:fu-berlin-dailymed a void:Linkset ;
+    void:target :fu-berlin-medicare ;
+    void:triples "3302"^^xsd:integer ;
+ .
+
+:fu-berlin-drugbank a void:Linkset ;
+    void:target :fu-berlin-medicare ;
+    void:triples "1657"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Anja_Jentzsch"^^xsd:string ;
+     foaf:Cmbox <mailto:anja@anjeve.de> ; 
+ .
+

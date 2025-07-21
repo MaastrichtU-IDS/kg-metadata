@@ -1,0 +1,134 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:iptc-newscodes a dcat:Dataset ;
+    foaf:depiction <http://www.iptc.org/download/forweb/newscodes_logo.jpg> ;
+    dcat:keyword "lod", "lodcloud.nolinks", "lodcloud.unconnected", "media", "news", "published-by-producer", "subject", "_" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "IPTC_NewsCodes" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+xml" ;
+        dct:description_distribution """
+Indicates a nature, journalistic or intellectual characteristic of an item.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Genre" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://cv.iptc.org/newscodes/genre/?lang=en-GB&format=rdfxml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+xml" ;
+        dct:description_distribution """
+The Media Topic NewsCodes has been IPTC's primary subject taxonomy since 2010, with a focus on classification of text. The development started with our previous Subject Codes taxonomy and extended the tree to 5 levels and reused the same 17 top level terms. The terms below the top level have been revised and rearranged. Most Media Topic concepts provide a mapping back to one of the Subject Codes, and many provide a mapping to Wikidata.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Media_Topic" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://cv.iptc.org/newscodes/mediatopic/?lang=en-GB&format=rdfxml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+xml" ;
+        dct:description_distribution """
+Indicates a type of scene covered by an item.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Scene" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://cv.iptc.org/newscodes/scene/?lang=en-GB&format=rdfxml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+xml" ;
+        dct:description_distribution """
+The Subject Codes is IPTC 's original subject taxonomy, with a focus on text. It consists of about 1400 terms organized into 3 levels.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Subject_Code" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://cv.iptc.org/newscodes/subjectcode/?lang=en-GB&format=rdfxml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+xml" ;
+        dct:description_distribution """
+Indicates a narrower attribute-like context for a Subject Code, e.g. for sports: the gender of participants, indoor/outdoor competition etc. Intended to be used with the Subject Codes.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Subject_Qualifier" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://cv.iptc.org/newscodes/subjectqualifier/?lang=en-GB&format=rdfxml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+xml" ;
+        dct:description_distribution """
+Indicates a region of the world.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "World_Region" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://cv.iptc.org/newscodes/worldregion/?lang=en-GB&format=rdfxml> ;
+    ] ;
+    dct:description_main """
+The IPTC not only provides news exchange formats to the news industry but also creates and maintains sets of concepts to be assigned as metadata values to news objects like text, photographs, graphics, audio- and video files and streams. This allows for a consistent coding of news metadata over the course of time - that's the reason why we call them IPTC NewsCodes.
+
+The universe of NewsCodes is currently split into many different sets - taxonomies - for increased manageability as topics usually relate to a specific area. A taxonomy is also likely to be used exclusively in a specific metadata property of a news exchange format.
+
+To provide an easy overview of our taxonomies further we grouped them into four main areas:
+
+* Descriptive NewsCodes: This is a group of taxonomies to describe the content of news items, including the key subject classification, IPTC Media Topics (which takes over from the previous IPTC Subject Codes).
+* Administrative NewsCodes: This is a group of taxonomies for proper administration of news items.
+* Transmission NewsCodes: This is a group of taxonomies with controlled values for the transmission process.
+* Exchange Format NewsCodes: This is a group of taxonomies with values to support specific functionalities of the different IPTC news exchange format standards. NewsML 1.x, NewsML-G2, EventsML-G2 and SportsML-G2 make use of this feature. 
+
+Each NewsCodes vocabulary can be referenced via our site, downloaded as a NewsML-G2 Knowledge Item, or downloaded in SKOS format (with IKOS extensions) in RDF/XML , RDF/Turtle and JSON-LD.
+
+Find more details about our taxonomies on the [Overview page](https://iptc.org/standards/newscodes/).
+
+Any NewsCode provided by the IPTC can be used at any stage of a news workflow without any royalty fee. But if one includes IPTC NewsCodes into an application the intellectual property and the copyright of the IPTC must be explicitly included.
+
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://newscodes.org> ;
+    void:triples "3000"^^xsd:integer ;
+    dcat:theme "media" ;
+    void:uriSpace <cv.iptc.org> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:brendanquinnoz@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "International_Press_Telecommunications_Council"^^xsd:string ;
+     foaf:Cmbox <mailto:office@iptc.org> ; 
+ .
+

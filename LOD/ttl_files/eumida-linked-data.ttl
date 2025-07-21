@@ -1,0 +1,105 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:eumida-linked-data a dcat:Dataset ;
+    dcat:keyword "eu-institution", "format-dcterm", "format-ov", "government", "latc", "lod", "no-deref-vocab", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "EUMIDA_as_Linked_Data" ;
+    void:exampleResource [
+        dct:title "Numbers_of_Doctorates_Awarded_by_Higher_Education_Institutions" ;
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Example Resource (a dataset)
+""" ;
+        dcat:accessURL <http://eumida.publicdata.eu/data/dataset/doctorates-awarded.rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Federal_Ministry_of_Defence" ;
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Example Resource (an institution)
+""" ;
+        dcat:accessURL <http://eumida.publicdata.eu/data/institution/AT055.rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "i_s_c_e_d6-_students-enrolled" ;
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Example Resource (an observation)
+""" ;
+        dcat:accessURL <http://eumida.publicdata.eu/data/institution/AT055/ISCED6-Students-enrolled.rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://api.talis.com/stores/eumida/services/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='api.talis.com', port=80): Max retries exceeded with url: /stores/eumida/services/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684302c80>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+VoID Dataset URI
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "VoID_Dataset_URI" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://eumida.publicdata.eu/void.ttl> ;
+    ] ;
+    dct:description """
+Data about European Higher Education Institutions, including statistics from 2008 regarding numbers of students, foreign students, PhD students etc. Based on the EUMIDA report.
+"""@en ;
+
+    foaf:page <http://eumida.publicdata.eu/> ;
+    void:triples "133085"^^xsd:integer ;
+    void:uriSpace <http://eumida.publicdata.eu/data/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:eurostat-linked-data a void:Linkset ;
+    void:target :eumida-linked-data ;
+    void:triples "27"^^xsd:integer ;
+ .
+
+:linked-nuts a void:Linkset ;
+    void:target :eumida-linked-data ;
+    void:triples "286"^^xsd:integer ;
+ .
+
+:nuts-geovocab a void:Linkset ;
+    void:target :eumida-linked-data ;
+    void:triples "286"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Keith_Alexander"^^xsd:string ;
+     foaf:mbox <mailto:ckan@keithalexander.co.uk> ; 
+ .
+

@@ -1,0 +1,160 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:mlsa a dcat:Dataset ;
+    dcat:keyword "crossdomain", "linguistics", "lod", "sentiment" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "MLSAA_Multi-layered_Reference_Corpus_for_German_Sentiment_Analysis" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_sentence_resource" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://mlode.nlp2rdf.org/sparql?default-graph-uri=http%253A%252F%252Fmlode.nlp2rdf.org&query=DESCRIBE%2B%253Chttp%253A%252F%252Fasv.informatik.uni-leipzig.de%252Fmlsa%252Fsentence%252F1%253E&format=text%252Fturtle> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://mlode.nlp2rdf.org/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "PNG" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Diagram_of_the_MLSA_linked_data_model" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://dl.dropbox.com/u/65483422/mlsa-model-diagram.png> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-gzip" ;
+        dct:description_distribution """
+2 layers of MLSA corpus, languages linked to wals, glottolog and lexvo, words linked to wiktionary
+""" ;
+        adms:status_distribution """
+FAIL (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+""" ;
+        dct:title_distribution "RDF_dump" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://mlode.nlp2rdf.org/datasets/mlsa.nt.gz> ;
+    ] ;
+    dct:description_main """
+Sentence-layer annotation represents the most coarse-grained annotation in this
+corpus. We adhere to definitions of objectivity and subjectivity introduced in
+(Wiebe et al., 2005). Additionally, we followed guidelines drawn from (Balahur &
+Steinberger, 2009). Their clarifications proved to be quite effective, raising
+inter-annotator agreement in a sentence-layer polarity annotation task from
+about 50% to >80%. All sentences were annotated in two dimensions.
+
+The first dimension covers the factual nature of the sentence, i.e. whether it
+provides objective information or if it is intended to express an opinion,
+belief or subjective argument. Therefore, it is either objective or subjective.
+The second dimension covers the semantic orientation of the sentence, i.e. its
+polarity. Thus, it is either positive, negative or neutral.
+
+In the second layer, we model the contextually interpreted sentiments on the
+levels of words and NP/PP phrases. That is, the annotation decisions
+are based on the meaning of the words in the context of the sentence.
+
+Word sentiment markers:
+The sentiments on the level of individual words are expressed by
+single character markers added at the end of the words.
+
+A word might be positive (+), negative(-), neutral(empty), a shifter
+(~), an intensifier (^), or a diminisher (%).
+
+If a word ends with a hyphen (e.g., "auf beziehungs-_ bzw.
+partnerschaftliche Probleme-", an underscore is added to the word in
+order to prevent missinterpretations of the hyphen as a negative
+marker.
+
+Currently, only words that are part of an NP/PP are marked with
+sentiment markers. Annotated words are nouns, adjectives, negation
+particles, prepositions, adverbs.
+
+The world level annotation was done by 3 persons individually. The
+individual results were harmonized into a single reference annotation.
+
+
+Phrase level markers:
+
+Each phrase is marked up textually by brackets, e.g. "[auf
+beziehungs-_ bzw. partnerschaftliche Probleme-]". The type of a phrase
+(NP/PP) is not written to the brackets. We follow largely the
+annotation model of TIGER for structuring embedded NPs and PPs.
+
+Currently, the following limitations with regard to TIGER exist: (1)
+Adjectival phrases are not marked up (2) Relative or infinitival
+sentences are not included in NPs/PPs if they appear at the end of a
+phrase or if the are discontiguous. We do not only annotate the
+phrases which immediately contain words that are marked up as polar.
+Any dependent subphrase (NP/PP) is integrated into all its dominating
+NPs/PPs, e.g. "[Die tieferen Ursachen [der Faszination+]]". Dependent
+subphrases without any polar words are also included, however, there
+is no internal bracketing for them, e.g. "[hohe+ Ansprüche an Qualität
+und Lage]"
+
+At the level of phrases, we distinguish the following markers:
+positive (+), negative (-), neutral(0), bipolar (#). The category
+'bipolar' is used mainly for coordinations where negative and positive
+sentiments of something are kept in balance by the writer. This is
+quite common for a lot of binomial constructions as "Krieg und
+Frieden".
+"""@en ;
+
+    foaf:page <http://iggsa.sentimental.li/index.php/downloads/> ;
+    void:triples "21000"^^xsd:integer ;
+    dcat:theme "linguistics" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:glottolog-langdoc a void:Linkset ;
+    void:target :mlsa ;
+    void:triples "2373"^^xsd:integer ;
+ .
+
+:lexvo a void:Linkset ;
+    void:target :mlsa ;
+    void:triples "2373"^^xsd:integer ;
+ .
+
+:wals a void:Linkset ;
+    void:target :mlsa ;
+    void:triples "2373"^^xsd:integer ;
+ .
+
+:wiktionary-dbpedia-org a void:Linkset ;
+    void:target :mlsa ;
+    void:triples "1371"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "__Interest_Group_on_German_Sentiment_Analysis_(IGGSA)"^^xsd:string ;
+     foaf:Cmbox <mailto:iggsa@sentimental.li> ; 
+ .
+

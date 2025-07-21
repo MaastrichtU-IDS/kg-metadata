@@ -1,0 +1,226 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bio2rdf-omim a dcat:Dataset ;
+    dcat:keyword "bio2rdf", "deref-vocab", "format-dc", "format-rdf", "format-rdfs", "license-metadata", "lifesciences", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "provenance-metadata", "published-by-third-party", "vocab-mappings" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Bio2RDF::Omim" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-nquads" ;
+        dct:description_distribution """
+Download omim.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Download_(n-quads,_gzipped)" ;
+        dct:mirror_distribution "[]" ;
+        dcat:downloadURL_distribution <http://download.bio2rdf.org/current/omim/omim.nq.gz> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_resource_(RDF)" ;
+        dcat:mediaType_exampleResource "application/rdf+xml;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Example resource (RDF)
+""" ;
+        dcat:accessURL_exampleResource <http://bio2rdf.org/omim:603903> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://omim.bio2rdf.org/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPSConnectionPool(host='omim.bio2rdf.org', port=443): Max retries exceeded with url: /sparql (Caused by SSLError(CertificateError("hostname 'omim.bio2rdf.org' doesn't match either of 'bio2rdf.org', 'openlifedata.org', 'search.openlifedata.org', 'sparql.openlifedata.org', 'virtuoso.openlifedata.org'"))))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "" ;
+        dct:description_distribution """
+Download
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Download_page_(n-quads,_gz_compressed)" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://download.bio2rdf.org/current/omim/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "HTML" ;
+        dct:description_distribution """
+Dataset description (HTML)
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Dataset_description_(HTML)" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://download.bio2rdf.org/current/omim/omim.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+Dataset description (RDF)
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Dataset_description_(RDF)" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://download.bio2rdf.org/current/omim/bio2rdf-omim.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+OWL Schema
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "OWL_Schema" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://download.bio2rdf.org/release/3/omim/omim.schema.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/plain;_charset=utf-8" ;
+        dct:description_distribution """
+Mappings (SIO)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Mappings_(SIO)" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/omim/bio2rdf_omim_sio_mapping.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/sitemap" ;
+        dct:description_distribution """
+Semantic Web Sitemap
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Semantic_Web_Sitemap" ;
+        dct:mirror_distribution "[]" ;
+        dcat:accessURL_distribution <http://download.bio2rdf.org/release/3/omim/sitemap.xml> ;
+    ] ;
+    dct:description_main """
+OMIM is a comprehensive, authoritative, and timely compendium of human genes and genetic phenotypes. The full-text, referenced overviews in OMIM contain information on all known mendelian disorders and over 12,000 genes. OMIM focuses on the relationship between phenotype and genotype.
+"""@en ;
+
+    foaf:page <http://omim.bio2rdf.org/> ;
+    void:triples "7980621"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    void:uriSpace <http://bio2rdf.org/omim:> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bio2rdf-dbsnp a void:Linkset ;
+    void:target :bio2rdf-omim ;
+    void:triples "8501"^^xsd:integer ;
+ .
+
+:bio2rdf-do a void:Linkset ;
+    void:target :bio2rdf-omim ;
+    void:triples "902"^^xsd:integer ;
+ .
+
+:bio2rdf-eom a void:Linkset ;
+    void:target :bio2rdf-omim ;
+    void:triples "45"^^xsd:integer ;
+ .
+
+:bio2rdf-gi a void:Linkset ;
+    void:target :bio2rdf-omim ;
+    void:triples "576766"^^xsd:integer ;
+ .
+
+:bio2rdf-hp a void:Linkset ;
+    void:target :bio2rdf-omim ;
+    void:triples "4835"^^xsd:integer ;
+ .
+
+:bio2rdf-hprd a void:Linkset ;
+    void:target :bio2rdf-omim ;
+    void:triples "12915"^^xsd:integer ;
+ .
+
+:bio2rdf-icd10 a void:Linkset ;
+    void:target :bio2rdf-omim ;
+    void:triples "1022"^^xsd:integer ;
+ .
+
+:bio2rdf-icd9 a void:Linkset ;
+    void:target :bio2rdf-omim ;
+    void:triples "820"^^xsd:integer ;
+ .
+
+:bio2rdf-img a void:Linkset ;
+    void:target :bio2rdf-omim ;
+    void:triples "45"^^xsd:integer ;
+ .
+
+:bio2rdf-mgi a void:Linkset ;
+    void:target :bio2rdf-omim ;
+    void:triples "12869"^^xsd:integer ;
+ .
+
+:bio2rdf-ncbigene a void:Linkset ;
+    void:target :bio2rdf-omim ;
+    void:triples "15738"^^xsd:integer ;
+ .
+
+:bio2rdf-omim a void:Linkset ;
+    void:target :bio2rdf-omim ;
+    void:triples "95397"^^xsd:integer ;
+ .
+
+:bio2rdf-ordr a void:Linkset ;
+    void:target :bio2rdf-omim ;
+    void:triples "2954"^^xsd:integer ;
+ .
+
+:bio2rdf-orphanet a void:Linkset ;
+    void:target :bio2rdf-omim ;
+    void:triples "7026"^^xsd:integer ;
+ .
+
+:bio2rdf-pubmed a void:Linkset ;
+    void:target :bio2rdf-omim ;
+    void:triples "121566"^^xsd:integer ;
+ .
+
+:bio2rdf-snomedct a void:Linkset ;
+    void:target :bio2rdf-omim ;
+    void:triples "4833"^^xsd:integer ;
+ .
+
+:bio2rdf-umls a void:Linkset ;
+    void:target :bio2rdf-omim ;
+    void:triples "29602"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Bio2RDF"^^xsd:string ;
+     foaf:Cmbox <mailto:bio2rdf@googlegroups.com> ; 
+ .
+

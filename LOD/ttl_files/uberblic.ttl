@@ -1,0 +1,85 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:uberblic a dcat:Dataset ;
+    dcat:keyword "crossdomain", "format-rdf", "format-rdfs", "lod", "lodcloud-diagram-2011-09-19", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "no-vocab-mappings", "published-by-third-party" ;
+    dct:title "Uberblic.org" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL <http://uberblic.org/resource/55c53674-2ac1-4070-8e56-3fd780ab9aa1#thing> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='uberblic.org', port=80): Max retries exceeded with url: /resource/55c53674-2ac1-4070-8e56-3fd780ab9aa1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684300130>, 'Connection to uberblic.org timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "None" ;
+        dcat:endpointDescription """
+Sparql endpoint
+""" ;
+        dcat:accessURL <http://platform.uberblic.org/api/v1/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='platform.uberblic.org', port=80): Max retries exceeded with url: /api/v1/sparql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686aef520>, 'Connection to platform.uberblic.org timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "" ;
+        dct:description """
+Download
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='platform.uberblic.org', port=80): Max retries exceeded with url: /dumps/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686aef640>, 'Connection to platform.uberblic.org timed out. (connect timeout=30)')))
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://platform.uberblic.org/dumps/> ;
+    ] ;
+    dct:description """
+### SPARQL access
+
+According to [this page](http://uberblic.org/developers/apis/sparql/), there should be a SPARQL endpoint at [this location](http://platform.uberblic.org/api/v1/sparql), but it refuses any request with a 403 Not Authorized error.
+"""@en ;
+
+    foaf:page <http://platform.uberblic.org> ;
+    void:triples "100000000"^^xsd:integer ;
+    dcat:theme "cross_domain" ;
+    void:uriSpace <http://uberblic.org/resource/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :uberblic ;
+    void:triples "1196"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :uberblic ;
+    void:triples "155193"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :uberblic ;
+    void:triples "135132"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Uberblic_Labs"^^xsd:string ;
+     foaf:mbox <mailto:contact@uberblic.com> ; 
+ .
+

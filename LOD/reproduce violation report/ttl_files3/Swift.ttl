@@ -1,0 +1,100 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Swift a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "ALMA_SPARQL" ;
+        dct:identifier_sparqlEndpoint "b8a97f64-c8d8-91b6-481b-bd66a66e8888" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <https://alma.uni.lu/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+xml" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "RDF" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "113759c0-fa3b-a950-cc3a-3ffccf2087f1" ;
+        dcat:downloadURL_distribution <https://alma.uni.lu/ontology/swift/5.2/swift.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "TTL" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "6881d7b1-bd70-889d-9b7b-5cc1e4b2ed84" ;
+        dcat:downloadURL_distribution <https://alma.uni.lu/ontology/swift/5.2/swift.ttl> ;
+    ] ;
+    foaf:page <http://purl.org/lu/uni/alma/swift> ;
+    dcat:keyword "swift", "programming_language" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "Swift_Vocabulary" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+
+""" ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "GitHub" ;
+        dct:identifier_distribution "87d03250-311c-457c-bbb8-268e58bdf4b6" ;
+        dcat:accessURL_distribution <https://github.com/cgrevisse/swift-vocabulary> ;
+    ] ;
+    dct:description_main """
+The Swift Vocabulary is an SKOS-based vocabulary about the Swift programming language.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <http://purl.org/lu/uni/alma/swift> ;
+    void:triples "1226"^^xsd:integer ;
+    dcat:theme "user_generated" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :Swift ;
+    void:triples "98"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:mustafa.sepehrian@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Christian_Grévisse"^^xsd:string ;
+     foaf:Cmbox <mailto:christian.grevisse@uni.lu> ; 
+ .
+

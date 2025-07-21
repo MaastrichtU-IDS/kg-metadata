@@ -1,0 +1,66 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:https___orcid_org_0000-0002-6194-9354 a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://www.embrapa.br/> ;
+    dcat:distribution [
+        dct:identifier_distribution "088e47db-0a59-a901-dcd8-52728f38e776" ;
+        dct:title_distribution "Diretrizes_organizacionais_de_métodos_quantitativos_e_computação_científica" ;
+        dct:description_distribution """
+O projeto está inserido no Plano Ação 3 - Bases estruturantes para constituição de uma Rede de MQCC na Embrapa,
+do Projeto Governança do Arranjo AgroMQCC. Este estudo tem o objetivo de estabelecer diretrizes organizacionais
+de métodos quantitativos e computação científica (MQCC) para a Empresa Brasileira de Pesquisa Agropecuária
+(Embrapa), uma instituição pública vinculada ao Ministério da Agricultura, Pecuária e Abastecimento (MAPA), do
+governo federal brasileiro. O estudo será realizado a partir de uma perspectiva estratégica e sistêmica e co.ntribuirá
+para viabilizar a governança da área de pesquisa,, desenvolvimento e inovaçaão (PD&I) da Empresa.
+""" ;
+        dcat:mediaType_distribution "text/html;charset=UTF-8" ;
+        dcat:downloadURL_distribution <https://www.embrapa.br/equipe/-/empregado/192789/marcia-izabel-fugisawa-souza> ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:keyword "Data_management;_Quantitative_method;_Scientific_computation;_Governance" ;
+    dct:description_main """
+O projeto está inserido no Plano Ação 3 - Bases estruturantes para constituição de uma Rede de MQCC na Embrapa,
+do Projeto Governança do Arranjo AgroMQCC. Este estudo tem o objetivo de estabelecer diretrizes organizacionais
+de métodos quantitativos e computação científica (MQCC) para a Empresa Brasileira de Pesquisa Agropecuária
+(Embrapa), uma instituição pública vinculada ao Ministério da Agricultura, Pecuária e Abastecimento (MAPA), do
+governo federal brasileiro. O estudo será realizado a partir de uma perspectiva estratégica e sistêmica e co.ntribuirá
+para viabilizar a governança da área de pesquisa,, desenvolvimento e inovaçaão (PD&I) da Empresa.
+"""@en ;
+
+    dct:title_main "Diretrizes_organizacionais_de_métodos_quantitativos_e_computação_científica" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dcat:theme "government" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:marcia.fugisawa@embrapa.br> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "MARCIA_IZABEL_FUGISAWA_SOUZA"^^xsd:string ;
+     foaf:Cmbox <mailto:marcia.fugisawa@gmail.com> ; 
+ .
+

@@ -1,0 +1,152 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:greekchildrensartmuseum a dcat:Dataset ;
+    void:uriSpace <https://www.childrensartmuseum.gr/LD-project/> ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+Turtle Description of Children Art Museum Dataset
+""" ;
+        dcat:downloadURL <https://www.childrensartmuseum.gr/LD-project/children_artworks.ttl> ;
+        dct:mirror "[]" ;
+        dct:title "children_artworks.ttl" ;
+        dct:identifier "4c1df3cc-bb3c-5c47-4e7c-3dd41269862f" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+RDF Description of Children Art Museum Dataset
+""" ;
+        dcat:downloadURL <https://www.childrensartmuseum.gr/LD-project/children_artworks.rdf> ;
+        dct:mirror "[]" ;
+        dct:title "children_artworks.rdf" ;
+        dct:identifier "b9dd6506-7b1f-5f13-2796-113ffc954ef4" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dct:identifier "10.5281/zenodo.4425440" ;
+    dcat:keyword "Painting", "Child_Art", "Creative_Work", "Museum" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "Greek_Children_Art__Museum_dataset" ;
+    void:sparqlEndpoint [
+        dct:identifier "25f8ceac-7213-4927-b0b5-569d091d9a57" ;
+        dct:title "GCAM_sparql_endpoint" ;
+        dcat:endpointDescription """
+Fuseki2 Server
+""" ;
+        dcat:accessURL <http://ct-linkdata.aegean.gr/gcam/sparql> ;
+        adms:status """
+FAIL (405)
+""" ;
+    ] ;
+    foaf:depiction <https://www.childrensartmuseum.gr/LD-project/mept.png> ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+DCAT Description: https://www.childrensartmuseum.gr/LD-project/
+""" ;
+        dct:mirror "[]" ;
+        dct:title "DCAT_Description" ;
+        dct:identifier "7af58d70-499a-fae4-47fd-b69cf85e0bb2" ;
+        adms:status """
+OK
+""" ;
+        dcat:accessURL <https://www.childrensartmuseum.gr/LD-project/dcat.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+
+""" ;
+        dct:mirror "[]" ;
+        dct:title "dcat_zenodo.rdf" ;
+        dct:identifier "87a18c9f-9c66-8748-8d00-a2a1286411e2" ;
+        adms:status """
+OK
+""" ;
+        dcat:accessURL <https://www.childrensartmuseum.gr/LD-project/dcat_zenodo.rdf> ;
+    ] ;
+    dct:description """
+The "LD-project" deals with the creation of cultural Open Linked Data (LOD), based on the artifacts of Greek Children Art Museum, in Greece, Athens. It was created in the frame of Master Thesis of MSc. students, Marini Efstathia and Chondrogianni Maria, in Cultural Informatics postgraduate program at the Department of Cultural Technology and Communication of the University of the Aegean.
+
+Links to published datasets : 
+Wikidata: 151 links,
+DBpedia: 489 links,
+WikiArt: 17 links,
+MoMA: 2 links,
+Others (Wikimedia Commons, Benaki Museum, SearchCulture.org, etc.) with 1 link each: 15 links,
+Total 674,
+
+DCAT Description: https://www.childrensartmuseum.gr/LD-project/
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://www.childrensartmuseum.gr/LD-project/> ;
+    void:triples "2211"^^xsd:integer ;
+    dcat:theme "user_generated" ;
+    void:exampleResource [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+Painting Description
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Example" ;
+        dcat:accessURL <https://www.childrensartmuseum.gr/LD-project/example.ttl> ;
+    ] ;
+    void:exampleResource [
+        dct:title "Query_Examples_" ;
+        dct:description """
+Query Examples using our SPARQL query GUI
+""" ;
+        dcat:accessURL <http://ct-linkdata.aegean.gr/query/gcam> ;
+        adms:status """
+FAIL (Exceeded 30 redirects.)
+""" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:wikidata a void:Linkset ;
+    void:target :greekchildrensartmuseum ;
+    void:triples "151"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :greekchildrensartmuseum ;
+    void:triples "489"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:kotis.kostas@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Sotiris_Angelis"^^xsd:string ;
+     foaf:mbox <mailto:sotiris@aegean.gr> ; 
+ .
+

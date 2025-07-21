@@ -1,0 +1,42 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:opendatacommunities-households-accommodated-per-1000 a dcat:Dataset ;
+    dcat:keyword "LinkedDataCrawl2014", "crawledLinkedDataCloud2014", "dataset-level-metadata", "dump", "format-dcat", "format-dcterm", "format-rdf", "format-rdfs", "format-void", "government", "license-metadata", "lodcloud-diagram-2014-08-30", "provenance-metadata", "sparql" ;
+    dct:title "opendatacommunities-households-accommodated-per-1000" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://opendatacommunities.org/data/households-accommodated-per-1000> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dct:description """
+None
+"""@en ;
+
+    dcat:theme "government" ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:reference-data-gov-uk a void:Linkset ;
+    void:target :opendatacommunities-households-accommodated-per-1000 ;
+    void:triples "1"^^xsd:integer ;
+ .
+

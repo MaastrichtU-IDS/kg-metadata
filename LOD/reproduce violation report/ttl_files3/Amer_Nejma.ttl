@@ -1,0 +1,44 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Amer_Nejma a dcat:Dataset ;
+    foaf:page <https://eldistronetwork.com/amer-nejma/> ;
+    dcat:keyword "Amer_Nejma", "El_Distro_Network", "Irish_Producer", "Tunisian_producer" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Amer_Nejma" ;
+    dct:description_main """
+Amer Nejma (born November 13,1989) is an Irish-Tunisian Record Producer Based in Ireland. Amer is also known as founder of El Distro Network, Records and Publishing Inc.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    dcat:theme "media" ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:Oname "El_Distro_Network"^^xsd:string ;
+     foaf:Ombox <mailto:info@eldistro.co.uk> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "El_Distro_Network"^^xsd:string ;
+     foaf:Cmbox <mailto:contact@eldistro.co.uk> ; 
+ .
+

@@ -1,0 +1,95 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:epa-srs a dcat:Dataset ;
+    dcat:keyword "environmental", "government", "lod" ;
+    dct:title "EPA-SRS" ;
+    void:exampleResource [
+        dct:title "Example_SRS_chemical" ;
+        dcat:mediaType "text/html;charset=UTF-8" ;
+        dct:description """
+Description of Naphthalene
+""" ;
+        dcat:accessURL <https://opendata.epa.gov/data/substance/48273.ttl> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=UTF-8" ;
+        dct:description """
+Platform for accessing all EPA Linked Data sets using query tools, services, applications, URI resolution, mapping and more.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "EPA_Linked_Data_Services" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://opendata.epa.gov> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=UTF-8" ;
+        dct:description """
+RDF schema in TTL format describing the classes and predicates in the data.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "SRS_Schema" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://opendata.epa.gov/meta/srs/schema.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=UTF-8" ;
+        dct:description """
+VoID is an RDF Schema vocabulary for expressing metadata about RDF datasets
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "VoID_description" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://opendata.epa.gov/meta/srs/void.ttl> ;
+    ] ;
+    dct:description """
+Substance Registry Services (SRS) is the Environmental Protection Agency's (EPA) central system for information about substances that are tracked or regulated by EPA or other sources. It is the authoritative resource for basic information about chemicals, biological organisms, and other substances of interest to EPA and its state and tribal partners.
+"""@en ;
+
+    foaf:page <https://opendata.epa.gov> ;
+    void:triples "10549000"^^xsd:integer ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:chemidplus a void:Linkset ;
+    void:target :epa-srs ;
+    void:triples "202991"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :epa-srs ;
+    void:triples "197"^^xsd:integer ;
+ .
+
+:geospecies a void:Linkset ;
+    void:target :epa-srs ;
+    void:triples "21754"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "EPA_Office_of_Environmental_Information"^^xsd:string ;
+     foaf:mbox <mailto:admin@3roundstones.com> ; 
+ .
+

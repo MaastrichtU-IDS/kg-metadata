@@ -1,0 +1,80 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:dbpedia-eu a dcat:Dataset ;
+    dcat:keyword "access-api", "basque", "crossdomain", "dbpedia", "deref-vocab", "format-foaf", "format-rdf", "format-rdfs", "format-xhtml", "lod", "lodcloud-diagram-2014-08-30", "no-licence-metadata", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "published-by-producer", "wikipedia" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "DBpedia_in_Basque" ;
+    void:exampleResource [
+        dct:title "RDF/XML_example" ;
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://eu.dbpedia.org/data/Euskal_Herria.rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://eu.dbpedia.org/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+The resource will be resolved via content negotiation to either: http://eudbpedia.deusto.es/page/Euskal_Herria or http://eudbpedia.deusto.es/data/Euskal_Herria.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Resource_example" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://eu.dbpedia.org/resource/Euskal_Herria> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "voID_description" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://eu.dbpedia.org/sparql?default-graph-uri=http%253A%252F%252Feu.dbpedia.org%252Fvoid&query=select%2B%2A%2BWHERE%2B%7B%253Fs%2B%253Fp%2B%253Fo%7D&should-sponge=&format=text%252Fhtml&timeout=0&debug=on> ;
+    ] ;
+    dct:description """
+Basque chapter of DBpedia. DBpedia is a "community effort to extract structured information from Wikipedia and to make this information available on the Web. DBpedia allows you to ask sophisticated queries against Wikipedia, and to link other data sets on the Web to Wikipedia data. We hope this will make it easier for the amazing amount of information in Wikipedia to be used in new and interesting ways, and that it might inspire new mechanisms for navigating, linking and improving the encyclopedia itself."
+"""@en ;
+
+    foaf:page <http://eudbpedia.deusto.es> ;
+    void:triples "7113378"^^xsd:integer ;
+    void:uriSpace <http://eudbpedia.deusto.es/resource/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:name "Jon_Lazaro"^^xsd:string ;
+     foaf:mbox <mailto:jlazaro@deusto.es> ; 
+ .
+

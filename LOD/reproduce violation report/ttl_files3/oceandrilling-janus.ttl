@@ -1,0 +1,64 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:oceandrilling-janus a dcat:Dataset ;
+    dcat:keyword "drilling", "geographic", "lod", "lodcloud.nolinks", "lodcloud.unconnected", "no-deref-vocab", "ocean", "published-by-producer" ;
+    dct:title_main "Ocean_DrillingJanus_LOD" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://data.oceandrilling.org/januslod/parameter/core_images_count/201/1225> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='data.oceandrilling.org', port=80): Max retries exceeded with url: /januslod/parameter/core_images_count/201/1225 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f36843004f0>, 'Connection to data.oceandrilling.org timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "None" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL Endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://data.oceandrilling.org/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='data.oceandrilling.org', port=80): Max retries exceeded with url: /sparql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684303f70>, 'Connection to data.oceandrilling.org timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dct:description_main """
+Janus LOD is a test of exposing Janus data using a linked data application.
+
+http://data.oceandrilling.org/januslod/
+
+Data in Janus comes from the Deep Sea Drilling Program and Ocean Drilling Program.  Authority for this data is at Texas A&M implementing organization  (ref: http://www-odp.tamu.edu/database/)
+"""@en ;
+
+    foaf:page <http://data.oceandrilling.org/linkeddata.html> ;
+    void:triples "11800000"^^xsd:integer ;
+    void:uriSpace <http://data.oceandrilling.org/januslod/> ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:coreref a void:Linkset ;
+    void:target :oceandrilling-janus ;
+    void:triples "100000"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Douglas_Fils"^^xsd:string ;
+     foaf:Cmbox <mailto:dfils@oceanleadership.org> ; 
+ .
+

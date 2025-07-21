@@ -1,0 +1,77 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:EUSL-Research-Data-Sri_Lanka a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://192.248.64.53:8080/vivo/> ;
+    dcat:distribution [
+        dct:identifier "0127e6e3-8458-6ee5-747e-6558224f3e2e" ;
+        dct:title "EUSL_Research_Data" ;
+        dct:description """
+
+""" ;
+        dcat:mediaType "application/rdf+xml;charset=UTF-8" ;
+        dcat:downloadURL <http://192.248.64.53:8080/vivo/listrdf?vclass=http%253A%252F%252Fpurl.org%252Fontology%252Fbibo%252Fwos> ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dct:description """
+Research outputs of Eastern University Sri Lanka
+"""@en ;
+
+    dct:title "Research_outputs_of_Eastern_University_Sri_Lanka" ;
+    void:exampleResource [
+        dct:title "Photo_addplaceholder_image_A_case_report_of_dengue_hemorrhagic_fever_complicated_with_diabetic_ketoacidosis_in_a_child:_challenges_in_clinical_management_" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://192.248.64.53:8080/vivo/display/n7740> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dcat:theme "publications" ;
+    void:uriSpace <http://192.248.64.53:8080/vivo/> ;
+    void:sparqlEndpoint [
+        dct:identifier "259209f8-bccf-eff4-dea2-4827933d6f2f" ;
+        dct:title "EUSL_Research_Data_SPARQL" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://192.248.64.53:8080/vivo/admin/sparqlquery> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:mjeya81@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "M.Jayakananthan"^^xsd:string ;
+     foaf:mbox <mailto:mjeya81@gmail.com> ; 
+ .
+

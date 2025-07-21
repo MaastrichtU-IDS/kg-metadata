@@ -1,0 +1,92 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:gipuzkoademografia a dcat:Dataset ;
+    dcat:keyword "format-rdf", "government", "license-metadata", "lod" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "Gipuzkoa_Demografia" ;
+    void:exampleResource [
+        dct:title "RDF/XML_example_link" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://datos.eurohelp.es/PruebasFinales/resource/ataun_2014_urtekojaiotzenestatistika_1> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='datos.eurohelp.es', port=80): Max retries exceeded with url: /PruebasFinales/resource/ataun_2014_urtekojaiotzenestatistika_1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dad450>: Failed to establish a new connection: [Errno 113] No route to host')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://ckan.eurohelp.es:8890/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='ckan.eurohelp.es', port=8890): Max retries exceeded with url: /sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dad330>: Failed to establish a new connection: [Errno 113] No route to host')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='lod.eurohelp.es', port=80): Max retries exceeded with url: /engimu/rdf/?project=PruebasFinales&file=ataun2014.csv (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686daffa0>: Failed to establish a new connection: [Errno 113] No route to host')))
+""" ;
+        dct:title "RDF/XML_download" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://lod.eurohelp.es/engimu/rdf/?project=PruebasFinales&file=ataun2014.csv> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='lod.eurohelp.es', port=80): Max retries exceeded with url: /engimu/?project=PruebasFinales&file=ataun2014.csv (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686daf7c0>: Failed to establish a new connection: [Errno 113] No route to host')))
+""" ;
+        dct:title "Download_page" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://lod.eurohelp.es/engimu/?project=PruebasFinales&file=ataun2014.csv> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='lod.eurohelp.es', port=80): Max retries exceeded with url: /engimu/void/?project=PruebasFinales&file=ataun2014.csv (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dacd90>: Failed to establish a new connection: [Errno 113] No route to host')))
+""" ;
+        dct:title "voiD_file" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://lod.eurohelp.es/engimu/void/?project=PruebasFinales&file=ataun2014.csv> ;
+    ] ;
+    dct:description """
+Gipuzkoako zenbait herriren populazioaren jatorria
+"""@en ;
+
+    foaf:page <http://datahub.io/dataset/GipuzkoaDemografia> ;
+    void:triples "1711"^^xsd:integer ;
+    void:uriSpace <http://datos.eurohelp.es/PruebasFinales/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:name "GipuzkoaIrekia"^^xsd:string ;
+     foaf:mbox <mailto:megana@eurohelp.es> ; 
+ .
+

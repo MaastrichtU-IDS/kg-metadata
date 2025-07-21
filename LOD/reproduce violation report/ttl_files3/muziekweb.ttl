@@ -1,0 +1,201 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:muziekweb a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "YASGUI_interface" ;
+        dct:identifier_sparqlEndpoint "57fa0e00-82e9-3e09-b359-0521ef3ce954" ;
+        dcat:endpointDescription_sparqlEndpoint """
+YASGUI interface to the SPARQL service. 
+""" ;
+        dcat:accessURL_sparqlEndpoint <https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb/sparql/Muziekweb> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "API_path" ;
+        dct:identifier_sparqlEndpoint "e19d7d22-01c3-2ded-cb44-1d8a5adcdbe6" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <https://api.data.muziekweb.nl/datasets/muziekweborganization/Muziekweb/services/Muziekweb/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (400)
+""" ;
+    ] ;
+    foaf:depiction <https://data.muziekweb.nl/imgs/logos/logo.svg?v=9> ;
+    foaf:page <https://data.muziekweb.nl/> ;
+    dcat:keyword "Music", "Dutch", "Media", "Records" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-by> ;
+    dct:title_main "Muziekweb" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/trig" ;
+        dct:description_distribution """
+Gzipped full download of the .trig file. 
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Full_download_trig" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "cfeceaa3-8e96-b6ed-9c45-c69902782c43" ;
+        dcat:downloadURL_distribution <https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb/download.trig.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/n-triples" ;
+        dct:description_distribution """
+Gzipped full download of the .nt file. 
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Full_download_ntriples" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "7b580698-eb1f-0d81-78f2-00e432b21c47" ;
+        dcat:downloadURL_distribution <https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb/download.nt.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/n-quads" ;
+        dct:description_distribution """
+Gzipped full download of the .nq file. 
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Full_download_nquads" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "52985287-7ebe-4651-7910-135e465461ab" ;
+        dcat:downloadURL_distribution <https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb/download.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+Gzipped full download of the .ttl file. 
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Full_download_turtle" ;
+        dct:mirror_distribution "[]" ;
+        dct:identifier_distribution "b93694da-895d-f902-9603-4f8a6ca5a2c4" ;
+        dcat:downloadURL_distribution <https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb/download.ttl.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/trig" ;
+        dct:description_distribution """
+Mirror for the gzipped full download of the .trig file. 
+""" ;
+        dct:mirror_distribution "[]" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Mirror_1" ;
+        dct:identifier_distribution "dd1d1d48-7083-3170-9915-29d60a701f36" ;
+        dcat:accessURL_distribution <https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb/assets/5e96feb56ac1c3036f26eaa4> ;
+    ] ;
+    dct:description_main """
+Muziekweb is the music library of the Netherlands. Musicweb aims to offer music and the information about music accessible to everyone. Muziekweb has since 1961 built a collection of 600,000 CDs, 300,000 LPs and 30,000 music DVDs. The site is a source of information about music that has been released in the Netherlands during the past fifty years, and an ideal place to get to know more music.
+
+On Muziekweb you will find:
+Information about pop, classical, jazz and world music. 
+Links to streaming services to fully listen to music.                                                                                                                                                                                          
+Objective and reliable descriptions of albums, artists and music styles.                                                                                                                                                                        
+Collections of historical value made accessible digitally via the special collections page.                                                                              
+In-depth and accessible pieces on numerous musical topics, written by experts.                                                                                                                                                                                        
+
+
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <https://data.muziekweb.nl/Link/> ;
+    void:triples "31579141"^^xsd:integer ;
+    dcat:theme "media" ;
+    void:exampleResource [
+        dcat:mediaType_exampleResource "text/turtle" ;
+        dct:description_exampleResource """
+
+""" ;
+        adms:status_exampleResource """
+OK
+""" ;
+        dct:title_exampleResource "Whos_that_girl_:_Original_motion_picture_soundtrack" ;
+        dcat:accessURL_exampleResource <https://data.muziekweb.nl/Link/HFX0244> ;
+    ] ;
+    void:exampleResource [
+        dcat:mediaType_exampleResource "text/turtle" ;
+        dct:description_exampleResource """
+
+""" ;
+        adms:status_exampleResource """
+OK
+""" ;
+        dct:title_exampleResource "Confessions_on_a_dancefloor" ;
+        dcat:accessURL_exampleResource <https://data.muziekweb.nl/Link/JK132334> ;
+    ] ;
+    void:exampleResource [
+        dcat:mediaType_exampleResource "text/turtle" ;
+        dct:description_exampleResource """
+
+""" ;
+        adms:status_exampleResource """
+OK
+""" ;
+        dct:title_exampleResource "Chansons_de_la_belle_epoque_;_vol.1" ;
+        dcat:accessURL_exampleResource <https://data.muziekweb.nl/Link/HBX0637> ;
+    ] ;
+    void:exampleResource [
+        dcat:mediaType_exampleResource "text/turtle" ;
+        dct:description_exampleResource """
+
+""" ;
+        adms:status_exampleResource """
+OK
+""" ;
+        dct:title_exampleResource "Madonna" ;
+        dcat:accessURL_exampleResource <https://data.muziekweb.nl/Link/M00000023349> ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:wikidata a void:Linkset ;
+    void:target :muziekweb ;
+    void:triples "39067"^^xsd:integer ;
+ .
+
+:data-incubator-discogs a void:Linkset ;
+    void:target :muziekweb ;
+    void:triples "482265"^^xsd:integer ;
+ .
+
+:dbtune-musicbrainz a void:Linkset ;
+    void:target :muziekweb ;
+    void:triples "391073"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:Ombox <mailto:thomas.de.groot@triply.cc> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:Cname "Muziekweb"^^xsd:string ;
+     foaf:Cmbox <mailto:info@muziekweb.nl> ; 
+ .
+

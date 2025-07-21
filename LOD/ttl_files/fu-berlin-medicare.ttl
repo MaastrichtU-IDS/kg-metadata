@@ -1,0 +1,78 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:fu-berlin-medicare a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-rdf", "lifesciences", "lod", "lodcloud-diagram-2011-09-19", "no-license-metadata", "no-provenance-metadata", "published-by-third-party", "vocab-mappings" ;
+    dct:title "MediCare" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Download
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://www4.wiwiss.fu-berlin.de/medicare/medicare_dump.nt.bz2> ;
+    ] ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://www4.wiwiss.fu-berlin.de/medicare/resource/drugs/10001> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "None" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://www4.wiwiss.fu-berlin.de/medicare/sparql> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dct:description """
+
+"""@en ;
+
+    foaf:page <http://www4.wiwiss.fu-berlin.de/medicare/> ;
+    void:triples "44500"^^xsd:integer ;
+    dcat:theme "life_sciences" ;
+    void:uriSpace <http://www4.wiwiss.fu-berlin.de/medicare/resource/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:fu-berlin-dailymed a void:Linkset ;
+    void:target :fu-berlin-medicare ;
+    void:triples "3302"^^xsd:integer ;
+ .
+
+:fu-berlin-drugbank a void:Linkset ;
+    void:target :fu-berlin-medicare ;
+    void:triples "1657"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Anja_Jentzsch"^^xsd:string ;
+     foaf:mbox <mailto:anja@anjeve.de> ; 
+ .
+
