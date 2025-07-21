@@ -29,8 +29,7 @@ jobs:
 
     - name: Validate embedded JSON-LD
       run: |
-        python3 -c "
-import re, json
+        python3 -c "import re, json
 with open('index.html') as f:
     html = f.read()
 match = re.search(r'<script type=\"application/ld\\+json\">(.*?)</script>', html, re.DOTALL)
@@ -38,5 +37,4 @@ if not match:
     raise ValueError('No JSON-LD block found')
 json_text = match.group(1).strip()
 json.loads(json_text)
-print('✅ JSON-LD is valid')
-"
+print('✅ JSON-LD is valid')"
