@@ -1,0 +1,33 @@
+name: Validate HTML and JSON-LD
+
+on:
+  push:
+    paths:
+      - 'index.html'
+  pull_request:
+    paths:
+      - 'index.html'
+
+jobs:
+  validate-html:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install htmlhint and jsonlint
+      run: |
+        npm install -g htmlhint jsonlint
+
+    - name: Validate HTML syntax
+      run: htmlhint index.html
+
+    - name: Extract and validate JSON-LD
+      run: |
+        grep -Pozo '<script type="application/ld+json">\K.*?(?=</script>)' index.html | tr -d '\0' > extracted.json
+        jsonlint extracted.json
