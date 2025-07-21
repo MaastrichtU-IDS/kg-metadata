@@ -20,14 +20,27 @@ jobs:
       with:
         node-version: '18'
 
-    - name: Install htmlhint and jsonlint
+    - name: Install tools
       run: |
-        npm install -g htmlhint jsonlint
+        npm install -g htmlhint jsonlint cheerio
 
     - name: Validate HTML syntax
       run: htmlhint index.html
 
-    - name: Extract and validate JSON-LD
+    - name: Extract JSON-LD
       run: |
-        grep -Pozo '<script type="application/ld+json">\K.*?(?=</script>)' index.html | tr -d '\0' > extracted.json
-        jsonlint extracted.json
+        node -e "
+        const fs = require('fs');
+        const cheerio = require('cheerio');
+        const html = fs.readFileSync('index.html', 'utf-8');
+        const $ = cheerio.load(html);
+        const jsonld = $('script[type=\"application/ld+json\"]').first().html();
+        if (!jsonld) {
+          console.error('No JSON-LD block found.');
+          process.exit(1);
+        }
+        fs.writeFileSync('extracted.json', jsonld);
+        "
+
+    - name: Validate JSON-LD syntax
+      run: jsonlint extracted.json
