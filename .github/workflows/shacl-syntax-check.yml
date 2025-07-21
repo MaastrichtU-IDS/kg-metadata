@@ -1,0 +1,23 @@
+name: Validate SHACL Syntax
+
+on:
+  push:
+    paths:
+      - 'shacl/**'
+  pull_request:
+    paths:
+      - 'shacl/**'
+
+jobs:
+  syntax-check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    - name: Check SHACL syntax
+      run: |
+        pip install rdflib
+        python -c "import rdflib; rdflib.Graph().parse('shacl/full-hcls_shacl.ttl', format='turtle')"
