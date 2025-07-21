@@ -62,6 +62,13 @@
         sh:description "To specify a second, or alternative title to the primary title." ;
         sh:example "Wikidata"^^xsd:string ;
     ];
+
+        # Acronym
+        sh:property [
+        sh:path schema:termCode ;
+        sh:datatype xsd:string;
+        sh:description "To specify an acronym for the KG." ;
+    ];
             
     #description        
     sh:property [
@@ -69,7 +76,7 @@
         sh:minCount 1 ;
         sh:datatype xsd:string;
         sh:description """To provide a human readable description of the KG. Minimally, the description should be in English, and ideally, there would be descriptions available in other languages.""" ;
-         sh:example """Wikidata is a free and open knowledge base that can be read and edited by both humans and machines. 
+        sh:example """Wikidata is a free and open knowledge base that can be read and edited by both humans and machines. 
         Wikidata acts as central storage for the structured data of its Wikimedia sister projects including Wikipedia, Wikivoyage, Wiktionary, Wikisource, and others. Wikidata also provides support to many other sites and services beyond just Wikimedia projects! The content of Wikidata is available under a free license, exported using standard formats, and can be interlinked to other open data sets on the linked data web."""^^xsd:string ;            # Example with a language tag
 ] ;
 
@@ -110,7 +117,7 @@
 
     # [0,∞]	Publisher	dct:publisher	IRI	schema:publisher	schema:Organization or schema:Person	The publisher of the KG, typically as a ROR id of the insitution which the authors below to
     sh:property [
-        sh:path schema::publisher ;
+        sh:path schema:publisher ;
         sh:nodeKind sh:IRI ;
         sh:description "The publisher of the KG, typically as a ROR id of the insitution which the authors below to." ;
         sh:example "https://wikimediafoundation.org"^^xsd:anyURI ;
@@ -118,7 +125,7 @@
 
     # [0,∞]	Funded by 	foaf:fundedBy	IRI	schema:funding		The organism that funded the KG bulding and/or publication
     sh:property [
-        sh:path schema::funding ;
+        sh:path schema:funding ;
         sh:nodeKind sh:IRI ;
         sh:description "The organisation(s) that funded the construction/maintenance of the KG." ;
         sh:example "https://wikimediafoundation.org"^^xsd:anyURI ;
@@ -278,16 +285,10 @@
     # [1,∞]	Language	dct:language	IETF language tag (bcp-47)	schema:language	schema:Language	Languages represented in the knowledge graph.	multiple languages
 # [1,∞] Language
     sh:property [
-        sh:path schema:language ;
-        sh:or (
-            [ sh:class schema:Language ]  # Allows structured Language objects
-            [ sh:datatype rdf:langString ]   # Allows language tags like "en"@en
-              ) ;
+        sh:path schema:inLanguage;
+        sh:datatype rdfs:Literal;
         sh:minCount 1 ;
         sh:description "Languages represented in the knowledge graph." ;
         sh:example "en"@en 
     ] ;
 .
-
-
- #[0,∞]	publication/references	dct:references	IRI	"schema:publication, 
