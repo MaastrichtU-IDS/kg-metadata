@@ -1,6 +1,7 @@
-![Metadata_Validation](https://github.com/marmhm/kg-metadata/actions/workflows/validate-metadata.yml/badge.svg) 
-![SHACL Syntax Check](https://github.com/marmhm/kg-metadata/actions/workflows/shacl-syntax-check.yml/badge.svg)
-![HTML+JSON-LD Validation](https://github.com/marmhm/kg-metadata/actions/workflows/validate-html.yml/badge.svg)
+[![Metadata Validation](https://github.com/marmhm/kg-metadata/actions/workflows/validate-metadata.yml/badge.svg)](https://github.com/marmhm/kg-metadata/actions/workflows/validate-metadata.yml)
+[![SHACL Syntax Check](https://github.com/marmhm/kg-metadata/actions/workflows/shacl-syntax-check.yml/badge.svg)](https://github.com/marmhm/kg-metadata/actions/workflows/shacl-syntax-check.yml)
+[![HTML+JSON-LD Validation](https://github.com/marmhm/kg-metadata/actions/workflows/validate-html.yml/badge.svg)](https://github.com/marmhm/kg-metadata/actions/workflows/validate-html.yml)
+
 
 # Knowledge Graph Metadata Specification and Validation
 
