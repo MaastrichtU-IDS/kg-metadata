@@ -174,7 +174,7 @@
   
     sh:property [
         sh:path mod:sampleQueries   ;
-        sh : nodeKind sh : IRIOrLiteral;
+        sh:nodeKind sh:IRIOrLiteral;
         sh:description "To provide an exemplar query against the KG" ;
         sh:example "https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples"^^xsd:anyURI ;
     ] ;   
