@@ -12,35 +12,35 @@ jobs:
   validate-html:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
 
-    - name: Install tools
-      run: |
-        npm install -g htmlhint jsonlint cheerio
+      - name: Install tools
+        run: |
+          npm install -g htmlhint jsonlint cheerio
 
-    - name: Validate HTML syntax
-      run: htmlhint index.html
+      - name: Validate HTML syntax
+        run: htmlhint index.html
 
-    - name: Extract JSON-LD
-      run: |
-        node -e "
-        const fs = require('fs');
-        const cheerio = require('cheerio');
-        const html = fs.readFileSync('index.html', 'utf-8');
-        const $ = cheerio.load(html);
-        const jsonld = $('script[type=\"application/ld+json\"]').first().html();
-        if (!jsonld) {
-          console.error('No JSON-LD block found.');
-          process.exit(1);
-        }
-        fs.writeFileSync('extracted.json', jsonld);
-        "
+      - name: Extract JSON-LD
+        run: |
+          node <<EOF
+          const fs = require('fs');
+          const cheerio = require('cheerio');
+          const html = fs.readFileSync('index.html', 'utf-8');
+          const $ = cheerio.load(html);
+          const jsonld = $('script[type="application/ld+json"]').first().html();
+          if (!jsonld) {
+            console.error('No JSON-LD block found.');
+            process.exit(1);
+          }
+          fs.writeFileSync('extracted.json', jsonld);
+          EOF
 
-    - name: Validate JSON-LD syntax
-      run: jsonlint extracted.json
+      - name: Validate JSON-LD syntax
+        run: jsonlint extracted.json
