@@ -1,16 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Food Health Claims Knowledge Graph</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Embedded JSON-LD using schema.org and dcat -->
+
+  <!-- Embedded JSON-LD with updated context and servesDataset -->
   <script type="application/ld+json">
   {
     "@context": {
       "@vocab": "https://schema.org/",
-      "dcat": "http://www.w3.org/ns/dcat#"
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "servesDataset": "dcat:servesDataset"
     },
     "@type": "Dataset",
     "identifier": "Food Health Claims metadata",
@@ -46,10 +48,9 @@
     "keywords": ["personalised nutrition", "food health claim", "knowledge graph", "FAIR data", "RDF", "EFSA"],
     "publication": "https://github.com/MaastrichtU-IDS/food-claims-kg",
     "inLanguage": "English",
-    "dcat:servesDataset": {
+    "servesDataset": {
       "@type": "Dataset",
-      "name": "EFSA Claims Dataset",
-      "url": "https://data.efsa.europa.eu/claims-dataset"
+      "name": "Food Health Claims Knowledge Graph"
     }
   }
   </script>
