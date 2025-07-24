@@ -5,10 +5,13 @@
   <title>Food Health Claims Knowledge Graph</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <!-- Embedded JSON-LD using your custom context -->
+  <!-- Embedded JSON-LD using schema.org and dcat -->
   <script type="application/ld+json">
   {
-    "@context":  "https://schema.org",
+    "@context": {
+      "@vocab": "https://schema.org/",
+      "dcat": "http://www.w3.org/ns/dcat#"
+    },
     "@type": "Dataset",
     "identifier": "Food Health Claims metadata",
     "name": "Food Health Claims Knowledge Graph",
@@ -42,7 +45,12 @@
     "license": "https://opensource.org/licenses/MIT",
     "keywords": ["personalised nutrition", "food health claim", "knowledge graph", "FAIR data", "RDF", "EFSA"],
     "publication": "https://github.com/MaastrichtU-IDS/food-claims-kg",
-    "inLanguage": "English"
+    "inLanguage": "English",
+    "dcat:servesDataset": {
+      "@type": "Dataset",
+      "name": "EFSA Claims Dataset",
+      "url": "https://data.efsa.europa.eu/claims-dataset"
+    }
   }
   </script>
 
@@ -72,8 +80,7 @@
     <tr><td>Date Published</td><td>2024-02-26</td></tr>
     <tr><td>Date Modified</td><td>2024-06-01</td></tr>
     <tr><td>Subject Of</td><td><a href="https://github.com/MaastrichtU-IDS/food-claims-kg">Documentation</a></td></tr>
-    <tr><td>Image</td><td><img src="https://raw.githubusercontent.com/MaastrichtU-IDS/food-claims-kg/master/food-claims-kg.jpg
-" width="100" /></td></tr>
+    <tr><td>Image</td><td><img src="https://raw.githubusercontent.com/MaastrichtU-IDS/food-claims-kg/master/food-claims-kg.jpg" width="100" /></td></tr>
     <tr><td>Data Download</td><td><a href="https://raw.githubusercontent.com/MaastrichtU-IDS/food-claims-kg/main/data/food-claims.ttl">Turtle file</a></td></tr>
     <tr><td>SPARQL Endpoint</td><td><a href="https://graphdb.dumontierlab.com/repositories/FoodHealthClaimsKG">GraphDB</a></td></tr>
     <tr><td>API</td><td><a href="http://grlc.io/api-git/MaastrichtU-IDS/food-claims-kg">grlc</a></td></tr>
