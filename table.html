@@ -11,7 +11,7 @@
             background-color: #f9f9f9;
         }
         table {
-            width: 65%;
+            width: 95%;
             border-collapse: collapse;
             margin: 10px auto;
             background-color: #fff;
@@ -37,6 +37,13 @@
             text-align: center;
             font-size: 15px;
         }
+        code {
+            font-family: Consolas, monospace;
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
     </style>
 </head>
 <body>
@@ -50,16 +57,18 @@
                 <th>Schema.org Term</th>
                 <th>Schema Datatype</th>
                 <th>Purpose</th>
+                <th>Wikidata Example</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>[0, ∞]</td>
-                <td>dct:identifier</td>
-                <td>rdfs:Literal or IRI</td>
-                <td>schema:identifier</td>
-                <td>schema:Text or schema:URL</td>
-                <td>The identifier for KG metadata.</td>
+                <td>[1, ∞]</td>
+                <td>dct:title</td>
+                <td>rdf:LangString or xsd:string</td>
+                <td>schema:name</td>
+                <td>schema:Text</td>
+                <td>The name or formal title for the KG.</td>
+                <td>Wikidata@en</code></td>
             </tr>
         </tbody>
     </table>
