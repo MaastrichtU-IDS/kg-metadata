@@ -1,6 +1,8 @@
-[![Metadata Validation](https://github.com/marmhm/kg-metadata/actions/workflows/validate-metadata.yml/badge.svg)](https://github.com/marmhm/kg-metadata/actions/workflows/validate-metadata.yml)
+[![Wikidata Metadata Validation](https://github.com/marmhm/kg-metadata/actions/workflows/validate-metadata.yml/badge.svg)](https://github.com/marmhm/kg-metadata/actions/workflows/validate-metadata.yml)
 [![SHACL Syntax Check](https://github.com/marmhm/kg-metadata/actions/workflows/shacl-syntax-check.yml/badge.svg)](https://github.com/marmhm/kg-metadata/actions/workflows/shacl-syntax-check.yml)
-[![HTML+JSON-LD Validation](https://github.com/marmhm/kg-metadata/actions/workflows/validate-html.yml/badge.svg)](https://github.com/marmhm/kg-metadata/actions/workflows/validate-html.yml)
+[![HTML syntax Validation](https://github.com/marmhm/kg-metadata/actions/workflows/validate-html.yml/badge.svg)](https://github.com/marmhm/kg-metadata/actions/workflows/validate-html.yml)
+![Food KG metadata Validation](https://github.com/<your-username>/<your-repo>/actions/workflows/jsonld-validate.yml/badge.svg)
+
 
 
 # Knowledge Graph Metadata Specification and Validation

@@ -1,0 +1,111 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+######################################################################
+# Shape for schema:Dataset
+######################################################################
+
+schema:DatasetShape
+  a sh:NodeShape ;
+  sh:targetClass schema:Dataset ;
+
+  sh:property [
+    sh:path schema:name ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path schema:description ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path schema:url ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path schema:creator ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class schema:Organization ;
+    sh:minCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path schema:publisher ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class schema:Organization ;
+    sh:minCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path schema:distribution ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class schema:DataDownload ;
+    sh:minCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path schema:license ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path schema:version ;
+    sh:datatype xsd:string ;
+  ] ;
+
+  sh:property [
+    sh:path schema:keywords ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path schema:inLanguage ;
+    sh:datatype xsd:string ;
+  ] .
+
+######################################################################
+# Shape for schema:WebAPI
+######################################################################
+
+schema:WebAPIShape
+  a sh:NodeShape ;
+  sh:targetClass schema:WebAPI ;
+
+  sh:property [
+    sh:path schema:name ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path schema:description ;
+    sh:datatype xsd:string ;
+  ] ;
+
+  sh:property [
+    sh:path schema:url ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path schema:provider ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class schema:Organization ;
+    sh:minCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path dcat:servesDataset ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
+  ] .
