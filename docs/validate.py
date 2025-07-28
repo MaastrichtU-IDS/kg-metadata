@@ -3,7 +3,7 @@ from pyshacl import validate
 
 # Load the JSON-LD metadata
 g = Graph()
-g.parse("extracted.jsonld", format="json-ld")
+g.parse("docs/extracted.jsonld", format="json-ld")
 
 # Load the SHACL shapes
 shacl_graph = Graph()
