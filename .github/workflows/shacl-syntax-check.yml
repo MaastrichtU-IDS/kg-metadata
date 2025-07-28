@@ -1,4 +1,4 @@
-name: Validate SHACL Syntax
+name: SHACL Syntax Validation
 
 on:
   push:

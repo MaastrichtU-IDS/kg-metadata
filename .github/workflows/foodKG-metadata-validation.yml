@@ -1,4 +1,4 @@
-name: Validate JSON-LD from HTML in docs/
+name: Food KG metadata Validation
 
 on:
   push:

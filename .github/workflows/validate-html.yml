@@ -1,4 +1,4 @@
-name: Validate HTML and JSON-LD
+name: HTML syntax Validation
 
 on:
   push:

@@ -1,8 +1,7 @@
-[![Wikidata Metadata Validation](https://github.com/marmhm/kg-metadata/actions/workflows/validate-metadata.yml/badge.svg?v=2)](https://github.com/marmhm/kg-metadata/actions/workflows/validate-metadata.yml)
-[![SHACL Syntax Check](https://github.com/marmhm/kg-metadata/actions/workflows/shacl-syntax-check.yml/badge.svg?v=2)](https://github.com/marmhm/kg-metadata/actions/workflows/shacl-syntax-check.yml)
-[![HTML syntax Validation](https://github.com/marmhm/kg-metadata/actions/workflows/validate-html.yml/badge.svg?v=2)](https://github.com/marmhm/kg-metadata/actions/workflows/validate-html.yml)
-[![Food KG metadata Validation](https://github.com/marmhm/kg-metadata/actions/workflows/foodKG-metadata-validation.yml/badge.svg?v=2)](https://github.com/marmhm/kg-metadata/actions/workflows/jfoodKG-metadata-validation.yml)
-
+[![Wikidata Metadata Validation](https://github.com/marmhm/kg-metadata/actions/workflows/validate-metadata.yml/badge.svg)](https://github.com/marmhm/kg-metadata/actions/workflows/validate-metadata.yml)
+[![SHACL Syntax Validation](https://github.com/marmhm/kg-metadata/actions/workflows/shacl-syntax-check.yml/badge.svg)](https://github.com/marmhm/kg-metadata/actions/workflows/shacl-syntax-check.yml)
+[![HTML syntax Validation](https://github.com/marmhm/kg-metadata/actions/workflows/validate-html.yml/badge.svg)](https://github.com/marmhm/kg-metadata/actions/workflows/validate-html.yml)
+[![Food KG metadata Validation](https://github.com/marmhm/kg-metadata/actions/workflows/foodKG-metadata-validation.yml/badge.svg)](https://github.com/marmhm/kg-metadata/actions/workflows/foodKG-metadata-validation.yml)
 
 
 

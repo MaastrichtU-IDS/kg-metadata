@@ -1,4 +1,4 @@
-name: Validate KG Metadata
+name: Wikidata Metadata Validation
 
 on:
   push:
