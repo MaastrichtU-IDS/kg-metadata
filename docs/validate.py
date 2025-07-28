@@ -7,7 +7,7 @@ g.parse("docs/extracted.jsonld", format="json-ld")
 
 # Load the SHACL shapes
 shacl_graph = Graph()
-shacl_graph.parse("jsonld-shacl.ttl", format="turtle")
+shacl_graph.parse("docs/jsonld-shacl.ttl", format="turtle")
 
 # Validate it
 conforms, results_graph, results_text = validate(
