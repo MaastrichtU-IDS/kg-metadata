@@ -1,0 +1,46 @@
+name: Validate JSON-LD from HTML in docs/
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  validate-jsonld:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        pip install pyshacl
+
+    - name: Extract JSON-LD from docs/index.html
+      run: |
+        echo "🔍 Extracting JSON-LD from docs/index.html"
+        python3 <<EOF
+import re, json
+with open("docs/index.html", "r") as f:
+    html = f.read()
+match = re.search(r'<script type="application/ld\\+json">\\s*(\\{.*?\\})\\s*</script>', html, re.DOTALL)
+if not match:
+    print("❌ No JSON-LD found in index.html")
+    exit(1)
+data = json.loads(match.group(1))
+with open("docs/extracted.jsonld", "w") as out:
+    json.dump(data, out, indent=2)
+print("✅ Saved extracted JSON-LD to docs/extracted.jsonld")
+EOF
+
+    - name: Run SHACL Validation
+      run: |
+        echo "🧪 Validating docs/extracted.jsonld against docs/jsonld-shacl.ttl"
+        python3 docs/validate.py -d docs/extracted.jsonld -s docs/jsonld-shacl.ttl
