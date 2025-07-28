@@ -26,7 +26,7 @@ jobs:
     - name: Extract JSON-LD from docs/index.html
       run: |
         echo "🔍 Extracting JSON-LD from docs/index.html"
-        python3 scripts/extract_jsonld.py
+        python3 docs/extract_jsonld.py
 
     - name: Run SHACL Validation
       run: |
