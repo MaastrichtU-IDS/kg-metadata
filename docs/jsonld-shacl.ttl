@@ -28,7 +28,7 @@
             [ sh:datatype xsd:string ]         # Accepts text (schema:Text)
             [ sh:datatype xsd:anyURI ]         # Accepts a URL (schema:URL)
                 ) ;
-        sh:description "The identifier for KG metadata. This is valuable for lexical search systems." ;
+        sh:description "The Identifier for KG metadata. This is valuable for lexical search systems." ;
         sh:example "https://www.wikidata.org"^^xsd:string ;
     ];
     

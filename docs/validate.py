@@ -9,7 +9,7 @@ g.parse("metadata_complete.jsonld", format="json-ld")
 shacl_graph = Graph()
 shacl_graph.parse("schema_shacl.ttl", format="turtle")
 
-# Validate
+# Validate it
 conforms, results_graph, results_text = validate(
     data_graph=g,
     shacl_graph=shacl_graph,
