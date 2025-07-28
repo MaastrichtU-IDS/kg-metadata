@@ -6,59 +6,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <script type="application/ld+json">
-  {
-    "@context": {
-      "@vocab": "https://schema.org/",
-      "dcat": "http://www.w3.org/ns/dcat#",
-      "servesDataset": "dcat:servesDataset"
-    },
-    "@graph": [
-      {
-        "@id": "https://maastrichtu-ids.github.io/food-claims-kg",
-        "@type": "Dataset",
-        "name": "Food Health Claims Knowledge Graph",
-        "alternateName": ["Food Claims KG", "FCKG"],
-        "description": "A FAIR RDF knowledge graph based on 260 EU-authorized health claims, structured across food, health effect, target group, and supporting scientific evidence.",
-        "identifier": "Food Health Claims metadata",
-        "url": "https://maastrichtu-ids.github.io/food-claims-kg/",
-        "creator": {
-          "@type": "Organization",
-          "name": "Maastricht University Institute of Data Science",
-          "url": "https://www.maastrichtuniversity.nl/research/institute-data-science"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Maastricht University"
-        },
-        "dateCreated": "2024-01-01",
-        "datePublished": "2024-02-26",
-        "dateModified": "2024-06-01",
-        "image": "https://raw.githubusercontent.com/MaastrichtU-IDS/food-claims-kg/master/food-claims-kg.jpg",
-        "distribution": {
-          "@type": "DataDownload",
-          "encodingFormat": "text/turtle",
-          "contentUrl": "https://raw.githubusercontent.com/MaastrichtU-IDS/food-claims-kg/main/data/food-claims.ttl"
-        },
-        "license": "https://opensource.org/licenses/MIT",
-        "version": "1.0",
-        "keywords": ["personalised nutrition", "food health claim", "knowledge graph", "FAIR data", "RDF", "EFSA"],
-        "inLanguage": "English"
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "void": "http://rdfs.org/ns/void#",
+    "mod": "https://w3id.org/mod#",
+    "adms": "http://www.w3.org/ns/adms#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://foodkg.org",
+      "rdf:type": "dcat:Dataset",
+      "schema:identifier": "https://github.com/MaastrichtU-IDS/food-claims-kg",
+      "schema:name": "FoodKG",
+      "schema:alternateName": "Food Claims Knowledge Graph",
+      "schema:termCode": "FKG",
+      "schema:description": "FoodKG is a structured knowledge graph curated from 260 authorised EU food health claims, covering ingredients, effects, target populations, and scientific evidence, designed to support personalised nutrition and health applications.",
+      "schema:url": { "@id": "https://github.com/MaastrichtU-IDS/food-claims-kg" },
+      "schema:relatedLink": { "@id": "https://graphdb.dumontierlab.com/repositories/FoodHealthClaimsKG" },
+      "schema:creator": [
+        { "@id": "https://orcid.org/0000-0001-7769-4272" },
+        { "@id": "https://orcid.org/0000-0001-8381-1252" },
+        { "@id": "https://orcid.org/0000-0002-6500-4649" },
+        { "@id": "https://orcid.org/0000-0003-4727-9435" }
+      ],
+      "schema:dateCreated": {
+        "@value": "2023-12-01T00:00:00Z",
+        "@type": "xsd:dateTime"
       },
-      {
-        "@type": "WebAPI",
-        "name": "Wikidata REST API",
-        "url": "https://www.wikidata.org/wiki/Q42722531",
-        "description": "A REST API for accessing and querying the Food Health Claims KG.",
-        "provider": {
-          "@type": "Organization",
-          "name": "Maastricht University Institute of Data Science"
+      "schema:publisher": [
+        { "@id": "https://ror.org/03yrm5c26" }
+      ],
+      "schema:funding": [
+        { "@id": "https://www.luf.nl/" },
+        { "@id": "https://www.limburg.nl/" }
+      ],
+      "schema:dateModified": {
+        "@value": "2024-07-01T00:00:00Z",
+        "@type": "xsd:dateTime"
+      },
+      "schema:datePublished": {
+        "@value": "2024-02-29T00:00:00Z",
+        "@type": "xsd:dateTime"
+      },
+      "schema:maintainer": {
+        "@type": "schema:Organization",
+        "schema:name": "Remzi Celebi",
+        "schema:email": "remzi.celebi@maastrichtuniversity.nl"
+      },
+      "schema:subjectOf": { "@id": "https://ceur-ws.org/Vol-XXX/SWAT4HCLS_FoodKG.pdf" },
+      "schema:image": { "@id": "https://raw.githubusercontent.com/MaastrichtU-IDS/food-claims-kg/master/SIO_for_food_health_claim.png" },
+      "schema:distribution": {
+        "@type": "schema:DataDownload",
+        "@id": "https://github.com/MaastrichtU-IDS/food-claims-kg/blob/master/data/output/foodkg.nt"
+      },
+      "schema:mainEntityOfPage": {
+        "@type": "schema:WebAPI",
+        "@id": "http://grlc.io/api-git/MaastrichtU-IDS/food-claims-kg"
+      },
+      "schema:contentURL": {
+        "@id": "https://graphdb.dumontierlab.com/repositories/FoodHealthClaimsKG"
+      },
+      "schema:version": "1.0",
+      "schema:license": { "@id": "https://creativecommons.org/licenses/by/4.0/" },
+      "schema:keywords": "food, nutrition, health claims, knowledge graph, FAIR, RDF",
+      "schema:publication": [
+        { "@id": "https://ceur-ws.org/Vol-XXX/SWAT4HCLS_FoodKG.pdf" }
+      ],
+      "schema:inLanguage": [ "en" ],
+      "void:triples": 8939,
+      "dct:conformsTo": { "@id": "https://w3id.org/foodkg/metadata-profile" },
+      "mod:sampleQueries": { "@id": "http://grlc.io/api-git/MaastrichtU-IDS/food-claims-kg" },
+      "void:uriRegexPattern": "https://foodkg.org/entity/{id}",
+      "void:exampleResource": {
+        "dct:title": "Vitamin D Claim",
+        "dct:description": "Example claim describing how vitamin D contributes to the maintenance of normal bones.",
+        "dcat:mediaType": {
+          "@value": "application/n-triples",
+          "@type": "xsd:string"
         },
-        "servesDataset": {
-          "@id": "https://maastrichtu-ids.github.io/food-claims-kg"
+        "adms:status": {
+          "@value": "stable",
+          "@type": "xsd:string"
+        },
+        "dcat:accessURL": {
+          "@id": "https://graphdb.dumontierlab.com/resource/VitaminDClaim"
         }
-      }
-    ]
-  }
+      },
+      "dct:accessRights": { "@id": "https://foodkg.org/access" },
+      "prov:hadPrimarySource": {
+        "@id": "https://ec.europa.eu/food/food-feed-portal/screen/health-claims/eu-register"
+      },
+      "void:uriSpace": { "@id": "https://foodkg.org/entity/" }
+    },
+    {
+      "@id": "https://foodkg.org/linksets/wikidata",
+      "@type": "void:Linkset",
+      "void:subjectsTarget": { "@id": "https://foodkg.org" },
+      "void:target": { "@id": "https://www.wikidata.org" },
+      "void:triples": 3068
+    }
+  ]
+}
   </script>
 
   <style>
@@ -74,24 +130,85 @@
 
   <table>
     <tr><th>Property</th><th>Value</th></tr>
-    <tr><td>Identifier</td><td>Food Health Claims metadata</td></tr>
-    <tr><td>Name</td><td>Food Health Claims Knowledge Graph</td></tr>
-    <tr><td>Alternate Names</td><td>Food Claims KG, FCKG</td></tr>
-    <tr><td>Description</td><td>A FAIR RDF knowledge graph based on 260 EU-authorized health claims...</td></tr>
-    <tr><td>URL</td><td><a href="https://maastrichtu-ids.github.io/food-claims-kg/">Project Page</a></td></tr>
-    <tr><td>GitHub</td><td><a href="https://github.com/MaastrichtU-IDS/food-claims-kg">Repository</a></td></tr>
-    <tr><td>Creator</td><td><a href="https://www.maastrichtuniversity.nl/research/institute-data-science">Maastricht University Institute of Data Science</a></td></tr>
-    <tr><td>Publisher</td><td>Maastricht University</td></tr>
-    <tr><td>REST API</td><td><a href="https://www.wikidata.org/wiki/Q42722531">Wikidata REST API</a></td></tr>
-    <tr><td>Image</td><td><img src="https://raw.githubusercontent.com/MaastrichtU-IDS/food-claims-kg/master/food-claims-kg.jpg" width="100"/></td></tr>
-    <tr><td>Data Download</td><td><a href="https://raw.githubusercontent.com/MaastrichtU-IDS/food-claims-kg/main/data/food-claims.ttl">Download TTL</a></td></tr>
-    <tr><td>SPARQL Endpoint</td><td><a href="https://graphdb.dumontierlab.com/repositories/FoodHealthClaimsKG">GraphDB</a></td></tr>
-    <tr><td>REST API</td><td><a href="https://www.wikidata.org/wiki/Q42722531">Wikidata REST API</a></td></tr>
-    <tr><td>License</td><td><a href="https://opensource.org/licenses/MIT">MIT License</a></td></tr>
+    <tr><td>@id</td><td><a href="https://foodkg.org">https://foodkg.org</a></td></tr>
+    <tr><td>Type</td><td>dcat:Dataset</td></tr>
+    <tr><td>Identifier</td><td><a href="https://github.com/MaastrichtU-IDS/food-claims-kg">https://github.com/MaastrichtU-IDS/food-claims-kg</a></td></tr>
+    <tr><td>Name</td><td>FoodKG</td></tr>
+    <tr><td>Alternate Name</td><td>Food Claims Knowledge Graph</td></tr>
+    <tr><td>Term Code</td><td>FKG</td></tr>
+    <tr><td>Description</td><td>FoodKG is a structured knowledge graph curated from 260 authorised EU food health claims, covering ingredients, effects, target populations, and scientific evidence, designed to support personalised nutrition and health applications.</td></tr>
+    <tr><td>URL</td><td><a href="https://github.com/MaastrichtU-IDS/food-claims-kg">GitHub Repository</a></td></tr>
+    <tr><td>Related Link</td><td><a href="https://graphdb.dumontierlab.com/repositories/FoodHealthClaimsKG">GraphDB Repository</a></td></tr>
+    <tr><td>Creators</td>
+      <td>
+        <ul>
+          <li><a href="https://orcid.org/0000-0001-7769-4272">0000-0001-7769-4272</a></li>
+          <li><a href="https://orcid.org/0000-0001-8381-1252">0000-0001-8381-1252</a></li>
+          <li><a href="https://orcid.org/0000-0002-6500-4649">0000-0002-6500-4649</a></li>
+          <li><a href="https://orcid.org/0000-0003-4727-9435">0000-0003-4727-9435</a></li>
+        </ul>
+      </td>
+    </tr>
+    <tr><td>Date Created</td><td>2023-12-01T00:00:00Z</td></tr>
+    <tr><td>Publisher</td><td><a href="https://ror.org/03yrm5c26">https://ror.org/03yrm5c26</a></td></tr>
+    <tr><td>Funding</td>
+      <td>
+        <ul>
+          <li><a href="https://www.luf.nl/">https://www.luf.nl/</a></li>
+          <li><a href="https://www.limburg.nl/">https://www.limburg.nl/</a></li>
+        </ul>
+      </td>
+    </tr>
+    <tr><td>Date Modified</td><td>2024-07-01T00:00:00Z</td></tr>
+    <tr><td>Date Published</td><td>2024-02-29T00:00:00Z</td></tr>
+    <tr><td>Maintainer</td>
+      <td>
+        Remzi Celebi<br>
+        <a href="mailto:remzi.celebi@maastrichtuniversity.nl">remzi.celebi@maastrichtuniversity.nl</a>
+      </td>
+    </tr>
+    <tr><td>Subject Of</td><td><a href="https://ceur-ws.org/Vol-XXX/SWAT4HCLS_FoodKG.pdf">Publication PDF</a></td></tr>
+    <tr><td>Image</td>
+      <td>
+        <img src="https://raw.githubusercontent.com/MaastrichtU-IDS/food-claims-kg/master/SIO_for_food_health_claim.png" alt="KG Image" style="max-width:100%;height:auto;" />
+      </td>
+    </tr>
+    <tr><td>Distribution</td><td><a href="https://github.com/MaastrichtU-IDS/food-claims-kg/blob/master/data/output/foodkg.nt">foodkg.nt</a></td></tr>
+    <tr><td>Main Entity of Page (API)</td><td><a href="http://grlc.io/api-git/MaastrichtU-IDS/food-claims-kg">API Endpoint</a></td></tr>
+    <tr><td>Content URL</td><td><a href="https://graphdb.dumontierlab.com/repositories/FoodHealthClaimsKG">GraphDB Repository</a></td></tr>
     <tr><td>Version</td><td>1.0</td></tr>
-    <tr><td>Keywords</td><td>personalised nutrition, food health claim, knowledge graph, FAIR data, RDF, EFSA</td></tr>
-    <tr><td>Language</td><td>English</td></tr>
+    <tr><td>License</td><td><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></td></tr>
+    <tr><td>Keywords</td><td>food, nutrition, health claims, knowledge graph, FAIR, RDF</td></tr>
+    <tr><td>Publication</td><td><a href="https://ceur-ws.org/Vol-XXX/SWAT4HCLS_FoodKG.pdf">CEUR WS Paper</a></td></tr>
+    <tr><td>Language</td><td>en</td></tr>
+    <tr><td>Number of Triples</td><td>8939</td></tr>
+    <tr><td>Conforms To</td><td><a href="https://w3id.org/foodkg/metadata-profile">Metadata Profile</a></td></tr>
+    <tr><td>Sample Queries</td><td><a href="http://grlc.io/api-git/MaastrichtU-IDS/food-claims-kg">grlc.io API</a></td></tr>
+    <tr><td>URI Regex Pattern</td><td>https://foodkg.org/entity/{id}</td></tr>
+    <tr><td>Example Resource</td>
+      <td>
+        Title: Vitamin D Claim<br>
+        Description: Example claim describing how vitamin D contributes to the maintenance of normal bones.<br>
+        Media Type: application/n-triples<br>
+        Status: stable<br>
+        Access URL: <a href="https://graphdb.dumontierlab.com/resource/VitaminDClaim">Vitamin D Claim</a>
+      </td>
+    </tr>
+    <tr><td>Access Rights</td><td><a href="https://foodkg.org/access">https://foodkg.org/access</a></td></tr>
+    <tr><td>Primary Source</td><td><a href="https://ec.europa.eu/food/food-feed-portal/screen/health-claims/eu-register">EU Register</a></td></tr>
+    <tr><td>URI Space</td><td><a href="https://foodkg.org/entity/">https://foodkg.org/entity/</a></td></tr>
+  </table>
+
+  <h2>Linkset: foodkg.org → Wikidata</h2>
+  <table>
+    <tr><th>Property</th><th>Value</th></tr>
+    <tr><td>@id</td><td><a href="https://foodkg.org/linksets/wikidata">https://foodkg.org/linksets/wikidata</a></td></tr>
+    <tr><td>Type</td><td>void:Linkset</td></tr>
+    <tr><td>Subjects Target</td><td><a href="https://foodkg.org">https://foodkg.org</a></td></tr>
+    <tr><td>Target</td><td><a href="https://www.wikidata.org">https://www.wikidata.org</a></td></tr>
+    <tr><td>Triples</td><td>3068</td></tr>
   </table>
 
 </body>
+
 </html>

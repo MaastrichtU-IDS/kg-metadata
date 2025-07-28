@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Food Health Claims Knowledge Graph</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <script type="application/ld+json">
+  {
+    "@context": {
+      "@vocab": "https://schema.org/",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "servesDataset": "dcat:servesDataset"
+    },
+    "@graph": [
+      {
+        "@id": "https://maastrichtu-ids.github.io/food-claims-kg",
+        "@type": "Dataset",
+        "name": "Food Health Claims Knowledge Graph",
+        "alternateName": ["Food Claims KG", "FCKG"],
+        "description": "A FAIR RDF knowledge graph based on 260 EU-authorized health claims, structured across food, health effect, target group, and supporting scientific evidence.",
+        "identifier": "Food Health Claims metadata",
+        "url": "https://maastrichtu-ids.github.io/food-claims-kg/",
+        "creator": {
+          "@type": "Organization",
+          "name": "Maastricht University Institute of Data Science",
+          "url": "https://www.maastrichtuniversity.nl/research/institute-data-science"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Maastricht University"
+        },
+        "dateCreated": "2024-01-01",
+        "datePublished": "2024-02-26",
+        "dateModified": "2024-06-01",
+        "image": "https://raw.githubusercontent.com/MaastrichtU-IDS/food-claims-kg/master/food-claims-kg.jpg",
+        "distribution": {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "https://raw.githubusercontent.com/MaastrichtU-IDS/food-claims-kg/main/data/food-claims.ttl"
+        },
+        "license": "https://opensource.org/licenses/MIT",
+        "version": "1.0",
+        "keywords": ["personalised nutrition", "food health claim", "knowledge graph", "FAIR data", "RDF", "EFSA"],
+        "inLanguage": "English"
+      },
+      {
+        "@type": "WebAPI",
+        "name": "Wikidata REST API",
+        "url": "https://www.wikidata.org/wiki/Q42722531",
+        "description": "A REST API for accessing and querying the Food Health Claims KG.",
+        "provider": {
+          "@type": "Organization",
+          "name": "Maastricht University Institute of Data Science"
+        },
+        "servesDataset": {
+          "@id": "https://maastrichtu-ids.github.io/food-claims-kg"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    body { font-family: sans-serif; padding: 2em; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background-color: #f0f0f0; }
+  </style>
+</head>
+<body>
+
+  <h1>Food Health Claims Knowledge Graph Metadata</h1>
+
+  <table>
+    <tr><th>Property</th><th>Value</th></tr>
+    <tr><td>Identifier</td><td>Food Health Claims metadata</td></tr>
+    <tr><td>Name</td><td>Food Health Claims Knowledge Graph</td></tr>
+    <tr><td>Alternate Names</td><td>Food Claims KG, FCKG</td></tr>
+    <tr><td>Description</td><td>A FAIR RDF knowledge graph based on 260 EU-authorized health claims...</td></tr>
+    <tr><td>URL</td><td><a href="https://maastrichtu-ids.github.io/food-claims-kg/">Project Page</a></td></tr>
+    <tr><td>GitHub</td><td><a href="https://github.com/MaastrichtU-IDS/food-claims-kg">Repository</a></td></tr>
+    <tr><td>Creator</td><td><a href="https://www.maastrichtuniversity.nl/research/institute-data-science">Maastricht University Institute of Data Science</a></td></tr>
+    <tr><td>Publisher</td><td>Maastricht University</td></tr>
+    <tr><td>REST API</td><td><a href="https://www.wikidata.org/wiki/Q42722531">Wikidata REST API</a></td></tr>
+    <tr><td>Image</td><td><img src="https://raw.githubusercontent.com/MaastrichtU-IDS/food-claims-kg/master/food-claims-kg.jpg" width="100"/></td></tr>
+    <tr><td>Data Download</td><td><a href="https://raw.githubusercontent.com/MaastrichtU-IDS/food-claims-kg/main/data/food-claims.ttl">Download TTL</a></td></tr>
+    <tr><td>SPARQL Endpoint</td><td><a href="https://graphdb.dumontierlab.com/repositories/FoodHealthClaimsKG">GraphDB</a></td></tr>
+    <tr><td>REST API</td><td><a href="https://www.wikidata.org/wiki/Q42722531">Wikidata REST API</a></td></tr>
+    <tr><td>License</td><td><a href="https://opensource.org/licenses/MIT">MIT License</a></td></tr>
+    <tr><td>Version</td><td>1.0</td></tr>
+    <tr><td>Keywords</td><td>personalised nutrition, food health claim, knowledge graph, FAIR data, RDF, EFSA</td></tr>
+    <tr><td>Language</td><td>English</td></tr>
+  </table>
+
+</body>
+</html>
