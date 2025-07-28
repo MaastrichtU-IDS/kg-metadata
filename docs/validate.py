@@ -3,11 +3,11 @@ from pyshacl import validate
 
 # Load the JSON-LD metadata
 g = Graph()
-g.parse("metadata_complete.jsonld", format="json-ld")
+g.parse("extracted.jsonld", format="json-ld")
 
 # Load the SHACL shapes
 shacl_graph = Graph()
-shacl_graph.parse("schema_shacl.ttl", format="turtle")
+shacl_graph.parse("jsonld-shacl.ttl", format="turtle")
 
 # Validate it
 conforms, results_graph, results_text = validate(
