@@ -12,18 +12,20 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix qudt: <http://qudt.org/schema/qudt/>.
 @prefix mod: <https://w3id.org/mod#>.
-@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix adms:<http://www.w3.org/ns/adms#>.
 @prefix cito: <http://purl.org/spar/cito> .
 :DCATDatasetShape
     a sh:NodeShape ;
     sh:targetClass dcat:Dataset ;
-    sh:targetClass dcat:Resource;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+
     
     sh:property [
         sh:path dct:identifier ;
         sh:nodeKind sh:IRIOrLiteral;
         sh:description "The identifier for KG metadata." ;
-        sh:example "https://www.wikidata.org"^^xsd:string ;
+        sh:example "https://www.wikidata.org/entity/Q2013"^^xsd:string ;
     ];
     
     sh:property [
@@ -32,7 +34,7 @@
         sh:minCount 1 ;
     
         sh:description "To specify the type of object in the description." ;
-        sh:example "dcat:Dataset"^^xsd:IRI ;        
+        sh:example dcat:Dataset;        
         # sh:class dcat:Dataset;
     ];
 
@@ -143,7 +145,7 @@
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:description "To specify the vocabularies used in the knowledge." ;
-        sh:example "";
+        
     ];   
             
                    
@@ -232,7 +234,7 @@
           
     sh:property [
         sh:path void:uriRegexPattern ;
-        sh:datatype rdfs:Literal;
+        sh:datatype xsd:string;
         sh:description "To provide 0..* IRI Templates, following RFC 6570, that individuals are typically identified by" ;
         sh:example "https://www.wikidata.org/wiki/{id}"^^xsd:string ;
     ];
@@ -245,12 +247,12 @@
         sh:node [
             sh:property [
                 sh:path dct:title;
-                sh:datatype rdfs:Literal ;
+                sh:datatype xsd:string ;
                 sh:description "A name." ;
             ] ;
             sh:property [
                 sh:path dct:description ;
-                sh:datatype rdfs:Literal ; 
+                sh:datatype xsd:string ; 
                 sh:description "A free-text account of the example." ;
             ];
             sh:property [
@@ -300,12 +302,12 @@
         sh:node [
 			sh:property [
 				sh:path dct:title;
-                sh:datatype rdfs:Literal ;
+                sh:datatype xsd:string ;
                 sh:description "A name given to the data service." ;
                  ] ;
                 sh:property [
                 sh:path dcat:endpointDescription ;
-                sh:datatype rdfs:Literal ; 
+                sh:datatype xsd:string ; 
                 sh:description "A description of the services available via the end-points, including their operations, parameters etc." ;
             ];
             sh:property [
@@ -335,13 +337,13 @@
             sh:property [
                 sh:path dct:title;
                 sh:minCount 1 ;
-                sh:datatype rdfs:Literal ;
+                sh:datatype xsd:string ;
                 sh:description "A name given to the distribution." ;
             ] ;
             sh:property [
                 sh:path dct:description ;
                 sh:minCount 1 ;
-                sh:datatype rdfs:Literal ; 
+                sh:datatype xsd:string ; 
                 sh:description "A free-text account of the distribution." ;
             ];
             sh:property [
@@ -413,10 +415,6 @@
                 sh:path dcat:temporalResolution;
                 sh:datatype xsd:duration ;
                 sh:description "The temporal resolution of the distribution." ;
-            ] ;
-            sh:property [
-                sh:path dct:title;
-                sh:description "An additional title for the distribution." ;
             ] ;
             sh:property [
                 sh:path dct:modified;
