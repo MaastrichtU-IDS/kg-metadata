@@ -26,4 +26,4 @@ jobs:
 
     - name: Run SHACL validation
       run: |
-        python validate.py -i wikidata_hcls_metadata.ttl -s shacl/full-hcls_shacl.ttl
+        python scripts/validate.py -i data/wikidata_hcls_metadata.ttl -s shacl/full-hcls_shacl.ttl
