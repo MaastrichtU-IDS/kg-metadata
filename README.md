@@ -6,8 +6,8 @@
 
 This project helps you:
 
-- Describe your Knowledge Graph (KG) using [our metadata schema] (docs/KG_Metadata_schema_V1.0.xlsx) 
-- Validate your KG metadata using [our SHACL shapes] (schacl/full-hcls_shacl.ttl) 
+- Describe your Knowledge Graph (KG) using [our metadata schema](docs/KG_Metadata_schema_V1.0.xlsx) 
+- Validate your KG metadata using [our SHACL shapes](schacl/full-hcls_shacl.ttl) 
 - Publish your KG and make it discoverable by Google (instructions below)
 
 ## Example Usage 
@@ -75,7 +75,7 @@ Visit  [Google Rich Results Test](https://search.google.com/test/rich-results), 
   - Upload a provided HTML verification file to the root directory.
 - Complete the verification process.
 
-### Step 7: Submit for Indexing
+### Step 6: Submit for Indexing
 
 Use the URL Inspection Tool in Google Search Console to request indexing.  
 Optionally, submit a `sitemap.xml` file to improve crawlability.
