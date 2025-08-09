@@ -30,7 +30,7 @@ The flickr wrappr extends DBpedia with RDF links to photos posted on flickr. For
 
     foaf:page <http://www4.wiwiss.fu-berlin.de/flickrwrappr> ;
     void:triples "56100000"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

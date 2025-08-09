@@ -55,7 +55,7 @@ We built an ontology to help the systematic review and meta-analysis process of 
 
     foaf:page <http://bioportal.bioontology.org/ontologies/3012> ;
     void:triples "1502"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

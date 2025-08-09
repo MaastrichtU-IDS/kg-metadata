@@ -38,7 +38,7 @@ Japanese Textbook LOD project provides a LOD dataset for textbooks published in 
     ] ;
     void:uriSpace <https://w3id.org/jp-textbook/> ;
     void:triples "177410"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:exampleResource [
         dcat:mediaType "text/turtle;_charset=utf-8" ;
         dct:description """

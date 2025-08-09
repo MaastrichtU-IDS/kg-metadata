@@ -125,7 +125,7 @@ OMIM is a comprehensive, authoritative, and timely compendium of human genes and
 
     foaf:page <http://omim.bio2rdf.org/> ;
     void:triples "7980621"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/omim:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

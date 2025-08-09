@@ -55,7 +55,7 @@ This version is the first update to Normative RIM, Release 3. It is based on cha
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1343> ;
     void:triples "100848"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

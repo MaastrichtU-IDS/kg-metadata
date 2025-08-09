@@ -70,7 +70,7 @@ The Romanian wordnet as published as part of the Open Multilingual WordNet. The 
         dcat:hadRole :owner ;
     ] ;
     void:triples "516915"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     foaf:page <http://compling.hss.ntu.edu.sg/omw/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -179,7 +179,7 @@ This resource provides 3 groups of RDF datasets. 1. Esoteric subjects such as ta
 
     foaf:page <http://data.totl.net/> ;
     void:triples "10000"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://data.totl.net/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

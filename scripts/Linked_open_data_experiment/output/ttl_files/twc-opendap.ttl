@@ -495,7 +495,7 @@ Linked Data Provenance for OPeNDAP data processing.
 """@en ;
 
     void:triples "6437058"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://opendap.tw.rpi.edu/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

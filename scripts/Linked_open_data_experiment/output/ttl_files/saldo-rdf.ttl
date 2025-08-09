@@ -52,7 +52,7 @@ FAIL (403)
 SALDO, the Swedish Associative Thesaurus, a semantic lexicon in RDF.
 """@en ;
 
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

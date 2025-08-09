@@ -28,7 +28,7 @@ FAIL (404)
 None
 """@en ;
 
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

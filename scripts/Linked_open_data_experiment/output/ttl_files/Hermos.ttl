@@ -37,7 +37,7 @@ Vineyard powdery mildew (Uncinula necator), dead arm (Phomopsis viticola) and vi
 
     dct:title "Hermos" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -67,7 +67,7 @@ links:bio2rdf-symbol 1533
 
     foaf:page <http://www4.wiwiss.fu-berlin.de/drugbank/> ;
     void:triples "765936"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://www4.wiwiss.fu-berlin.de/drugbank/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -69,7 +69,7 @@ Notes: Creative Commons with Attributions
 
     foaf:page <http://code.google.com/p/junsbriefcase/wiki/TGDdataset> ;
     void:triples "117643"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://purl.org/net/tcm/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

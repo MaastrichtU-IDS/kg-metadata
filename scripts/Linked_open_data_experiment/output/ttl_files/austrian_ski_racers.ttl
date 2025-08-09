@@ -41,7 +41,7 @@ Austrian top-skiers active in world cup.
 
     foaf:page <http://vocabulary.semantic-web.at/AustrianSkiTeam> ;
     void:triples "4183"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

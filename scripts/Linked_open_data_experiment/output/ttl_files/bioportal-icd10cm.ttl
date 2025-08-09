@@ -55,7 +55,7 @@ International Classification of Diseases, 10th Edition, Clinical Modification, 2
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1553> ;
     void:triples "1119554"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

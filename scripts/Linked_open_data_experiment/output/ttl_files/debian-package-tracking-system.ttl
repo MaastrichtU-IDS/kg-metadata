@@ -33,7 +33,7 @@ More background in [this blog post](http://www-public.telecom-sudparis.eu/~berge
 
     foaf:page <http://packages.qa.debian.org/common/RDF.html> ;
     void:triples "1500000"^^xsd:integer ;
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     void:uriSpace <http://packages.qa.debian.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

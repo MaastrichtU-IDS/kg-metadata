@@ -55,7 +55,7 @@ Gene Ontology Extension
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1506> ;
     void:triples "807473"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

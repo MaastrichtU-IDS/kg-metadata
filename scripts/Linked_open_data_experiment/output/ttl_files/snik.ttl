@@ -51,7 +51,7 @@ Licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Interna
     ] ;
     void:uriSpace <http://www.snik.eu/ontology/> ;
     void:triples "81499"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:exampleResource [
         dct:title "CEO" ;
         dct:description """

@@ -43,7 +43,7 @@ This datasource seems to be permanently down. A potential pointer might be this 
 
     foaf:page <http://cb.semsol.org> ;
     void:triples "955676"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

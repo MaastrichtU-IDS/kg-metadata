@@ -83,7 +83,7 @@ Webpage of ASCDC LODDatasets for downloads of entire published LOD-based dataset
 FAIL (400)
 """ ;
     ] ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://data.ascdc.tw/uc/bio/nmmba/> ;
     void:sparqlEndpoint [
         dct:identifier "ed1654cc-b914-0fd2-2efd-92111c06a1f5" ;

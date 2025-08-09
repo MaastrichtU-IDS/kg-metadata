@@ -57,7 +57,7 @@ Covid-on-the-Web Dataset is an initiative of the Wimmics team, I3S laboratory, U
     ] ;
     void:uriSpace <http://ns.inria.fr/covid19/> ;
     void:triples "1361451364"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:exampleResource [
         dcat:mediaType "text/html;_charset=utf-8" ;
         dct:description """

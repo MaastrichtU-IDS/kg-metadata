@@ -120,7 +120,7 @@ DBpedia in French dataset. Part of the DBpedia internationalisation effort. Data
 
     foaf:page <http://fr.dbpedia.org> ;
     void:triples "131000000"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://fr.dbpedia.org/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

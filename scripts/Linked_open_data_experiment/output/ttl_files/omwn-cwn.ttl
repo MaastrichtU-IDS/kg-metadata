@@ -58,7 +58,7 @@ The Chinese wordnet as published as part of the Open Multilingual WordNet. The g
         dcat:hadRole :owner ;
     ] ;
     void:triples "45753"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     foaf:page <http://compling.hss.ntu.edu.sg/omw/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

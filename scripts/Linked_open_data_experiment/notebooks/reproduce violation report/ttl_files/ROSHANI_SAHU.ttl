@@ -1,0 +1,47 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ROSHANI_SAHU a dcat:Dataset ;
+    foaf:page <http://www.iraj.in/journal/journal_file/journal_pdf/14-407-151143893990-95.pdf> ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "TERRORIST_ATTACK_ONTOLOGY" ;
+    dct:description_main """
+ontology
+"""@en ;
+
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    dcat:theme  <user_generated> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:Terrorist_attack a void:Linkset ;
+    void:target :ROSHANI_SAHU ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:amanijy01@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "ROSHANI_SAHU"^^xsd:string ;
+     foaf:Cmbox <mailto:sahutwins1997@gmail.com> ; 
+ .
+

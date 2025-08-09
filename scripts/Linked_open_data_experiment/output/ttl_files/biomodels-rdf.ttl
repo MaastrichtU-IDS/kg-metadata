@@ -54,7 +54,7 @@ BioModels Linked Dataset captures the content of the models in BioModels Databas
 """@en ;
 
     void:triples "18955329"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://identifiers.org/biomodels.db/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

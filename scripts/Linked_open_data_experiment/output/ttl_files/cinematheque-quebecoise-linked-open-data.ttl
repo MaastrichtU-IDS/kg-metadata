@@ -166,7 +166,7 @@ The Web UI of the Query Service offers a convenient interface for authoring or e
 OK
 """ ;
     ] ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <https://data.cinematheque.qc.ca/resource> ;
     void:sparqlEndpoint [
         dct:identifier "9ae13732-d351-d313-d9f7-65a1c5dc7435" ;

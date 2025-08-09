@@ -99,7 +99,7 @@ The JITA Classification Schema has been developed starting from a merger of News
 
     foaf:page <http://www.destin-informatique.com/ASKOSI/Wiki.jsp?page=JITA%20Maintenance> ;
     void:triples "3500"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://aims.fao.org/aos/jita/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

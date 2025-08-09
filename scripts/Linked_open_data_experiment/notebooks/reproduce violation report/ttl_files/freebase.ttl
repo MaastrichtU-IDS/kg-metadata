@@ -1,0 +1,153 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:freebase a dcat:Dataset ;
+    dcat:keyword "access-api", "access-bulk", "access-www", "broken_link", "crossdomain", "deref-vocab", "encylopaedia", "format-dcterms", "format-rdf", "license-metadata", "lld", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-vocab-mappings", "provenance-metadata", "published-by-producer", "rdf", "size-large" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Freebase" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+Example RDF resource
+""" ;
+        dcat:accessURL_exampleResource <http://rdf.freebase.com/ns/en.blade_runner> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Directory containing all downloads
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://download.freebase.com/datadumps/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+A full dump of Freebase assertions as tab separated utf8 text size:3.9GB
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://download.freebase.com/datadumps/latest/freebase-datadump-quadruples.tsv.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+A tab-separated file for each type in Freebase size:1.3GB
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://download.freebase.com/datadumps/latest/freebase-datadump-tsv.tar.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Directory of browseable subsets by domain
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://download.freebase.com/datadumps/latest/browse/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Topic dump with basic info for each topic Size:1.0 GB
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://download.freebase.com/datadumps/latest/freebase-simple-topic-dump.tsv.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Search api for freebase
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://freebase.com/api/service/search> ;
+    ] ;
+    dct:description_main """
+### Description
+
+"Freebase is an open database of the world?s information. It is built by the community and for the community?free for anyone to query, contribute to, built applications on top of, or integrate into their websites."
+
+### Openness: OPEN
+
+  * License: CC-BY for data.  Variety of open source licenses (or PD) for text blurbs & images.
+  * Access: API + bulk.<http://www.freebase.com/view/allDomains>
+    * bulk: yes. <http://download.freebase.com/>
+    * api: yes. <http://www.freebase.com/view/freebase/api>
+
+Triple count and link statistics provided by Freebase contributor Tom Morris
+
+### RDF data and URIs
+
+Freebase has [an RDF service](http://rdf.freebase.com/) that exposes URIs and generates RDF descriptions for all Freebase topics.
+"""@en ;
+
+    foaf:page <http://freebase.com/> ;
+    void:triples "337203427"^^xsd:integer ;
+    dcat:theme  <cross_domain> ;
+    void:uriSpace <http://rdf.freebase.com/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bbc-music a void:Linkset ;
+    void:target :freebase ;
+    void:triples "350110"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :freebase ;
+    void:triples "3348530"^^xsd:integer ;
+ .
+
+:geospecies a void:Linkset ;
+    void:target :freebase ;
+    void:triples "100000"^^xsd:integer ;
+ .
+
+:nytimes-linked-open-data a void:Linkset ;
+    void:target :freebase ;
+    void:triples "9930"^^xsd:integer ;
+ .
+
+:sec-rdfabout a void:Linkset ;
+    void:target :freebase ;
+    void:triples "120626"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Google"^^xsd:string ;
+     foaf:Cmbox <mailto:freebase-discuss@freebase.com> ; 
+ .
+

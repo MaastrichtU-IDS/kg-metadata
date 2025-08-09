@@ -305,7 +305,7 @@ The data set and related vocabularies have been changed as of June 11, 2013. See
 
     foaf:page <http://lod.taxonconcept.org/> ;
     void:triples "34394994"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://lod.taxonconcept.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

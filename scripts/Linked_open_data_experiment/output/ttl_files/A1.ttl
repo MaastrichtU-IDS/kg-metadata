@@ -36,7 +36,7 @@ HELLO EVERONE
 
     dct:title "ITS_TEST_DATASET" ;
     dct:license <https://opendefinition.org/licenses/fal> ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

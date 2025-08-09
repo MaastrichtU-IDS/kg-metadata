@@ -92,7 +92,7 @@ AGROVOC is widely used in specialized libraries as well as digital libraries and
     ] ;
     void:uriSpace <http://aims.fao.org/aos/agrovoc/> ;
     void:triples "5878468"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -30,7 +30,7 @@ A dataset of the natural numbers. Published on April 1st, 2010.
 
     foaf:page <http://km.aifb.kit.edu/projects/numbers/> ;
     void:triples "140000000"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://km.aifb.kit.edu/projects/numbers/web/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

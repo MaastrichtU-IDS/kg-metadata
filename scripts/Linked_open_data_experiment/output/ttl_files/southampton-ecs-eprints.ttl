@@ -55,7 +55,7 @@ This is live data produced by the EPrints server since its upgrade to EPrints v3
 
     foaf:page <http://eprints.ecs.soton.ac.uk/> ;
     void:triples "1000000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://eprints.ecs.soton.ac.uk/id/eprint/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

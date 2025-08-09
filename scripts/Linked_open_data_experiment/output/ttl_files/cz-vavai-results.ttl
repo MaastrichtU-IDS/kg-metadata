@@ -88,7 +88,7 @@ Results of R&D.
 
     foaf:page <http://linked.opendata.cz/resource/dataset/vavai/results> ;
     void:triples "42176844"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://linked.opendata.cz/resource/domain/vavai/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

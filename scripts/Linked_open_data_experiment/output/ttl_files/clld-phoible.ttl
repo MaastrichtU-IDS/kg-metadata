@@ -44,7 +44,7 @@ PHOIBLE Online published by the CLLD project
 
     foaf:page <http://phoible.org> ;
     void:triples "1664872"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

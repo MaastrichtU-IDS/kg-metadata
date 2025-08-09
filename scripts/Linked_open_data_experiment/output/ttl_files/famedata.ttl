@@ -56,7 +56,7 @@ FAIL (500)
 """ ;
     ] ;
     dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <https://famedata.org/entity/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -24,7 +24,7 @@ A knowledge forest is a domain-specific knowledge graph, describing the learning
 
     dct:title "Knowledge_Forest" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://kfm.skyclass.net/rdf/xjtu> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

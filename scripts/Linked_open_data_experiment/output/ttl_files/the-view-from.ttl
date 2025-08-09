@@ -64,7 +64,7 @@ A set of data about photos of the view from various places
 
     foaf:page <http://theviewfrom.org/> ;
     void:triples "368"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://theviewfrom.org/things/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

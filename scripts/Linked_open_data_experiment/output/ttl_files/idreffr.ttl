@@ -53,7 +53,7 @@ Licensing : not yet, but will be as open as possible
 
     foaf:page <http://punktokomo.abes.fr/2011/07/05/idref-des-pages-html-et-rdf-plus-riches/> ;
     void:triples "20000000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://www.idref.fr/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

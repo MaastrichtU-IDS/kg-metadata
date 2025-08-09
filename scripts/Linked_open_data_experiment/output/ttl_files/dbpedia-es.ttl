@@ -65,7 +65,7 @@ These data correspond to the ontology DBpedia version 2014.
 
     foaf:page <http://es.dbpedia.org> ;
     void:triples "169101647"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://es.dbpedia.org/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -93,7 +93,7 @@ IneveryCREA (Santillana) trabaja con <a href="http://gnoss.com/">software de GNO
 
     foaf:page <http://ineverycrea.net/> ;
     void:triples "3494839"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://ineverycrea.net/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

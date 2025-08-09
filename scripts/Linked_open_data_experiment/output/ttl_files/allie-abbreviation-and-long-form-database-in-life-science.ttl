@@ -75,7 +75,7 @@ A database of abbreviations and long forms utilized in Lifesciences. It provides
 
     foaf:page <http://allie.dbcls.jp/> ;
     void:triples "94420988"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://purl.org/allie/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -35,7 +35,7 @@ This is a dataset that represents triples in a videogame domain. It connects a g
 
     dct:title "Game_Ontology" ;
     dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -124,7 +124,7 @@ The Greek DBpedia is the first step towards Linked Data Internationalization and
 
     foaf:page <http://wiki.el.dbpedia.org> ;
     void:triples "4399898"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://el.dbpedia.org/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

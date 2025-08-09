@@ -66,7 +66,7 @@ Original data comes from the National Statistical Institute of Italy (ISTAT, dat
 
     foaf:page <http://www.linkedopendata.it/datasets/istat-immigration> ;
     void:triples "3024396"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

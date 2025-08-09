@@ -55,7 +55,7 @@ Physician Data Query (PDQ) Terminology is part of NCI's comprehensive cancer inf
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1349> ;
     void:triples "124212"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

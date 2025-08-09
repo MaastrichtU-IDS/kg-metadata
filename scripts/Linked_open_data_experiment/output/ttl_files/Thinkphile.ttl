@@ -25,7 +25,7 @@ ThinkPhilecom is an online publishing Blog ,Content ,News and Media Platform . H
     ] ;
     foaf:page <http://www.thinkphile.com> ;
     foaf:depiction <https://ibb.co/mS5RbJG> ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

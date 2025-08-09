@@ -68,7 +68,7 @@ SPARQL endpoints for this data are made available by third parties. [Geonames at
 
     foaf:page <http://www.geonames.org/ontology/> ;
     void:triples "93896732"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://sws.geonames.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

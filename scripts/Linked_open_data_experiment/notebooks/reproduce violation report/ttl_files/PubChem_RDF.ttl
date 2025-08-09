@@ -1,0 +1,73 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:PubChem_RDF a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        dcat:downloadURL_distribution <https://ftp.ncbi.nlm.nih.gov/pubchem/RDF/> ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:identifier_distribution "bf174135-2c5c-d0b8-69d0-a7f94951c638" ;
+        dct:title_distribution "RDF_Download_folder" ;
+    ] ;
+    dcat:keyword "chemistry" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "PubChem_RDF" ;
+    dct:identifier "10.1186/s13321-015-0084-4" ;
+    void:exampleResource [
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        adms:status_exampleResource """
+OK
+""" ;
+        dct:title_exampleResource "(3r,5r)-7-[3-(anilinocarbonyl)-5-(4-fluorophenyl)-2-isopropyl-4-phenyl-1h-pyrrol-1-yl]-3,5-dihydroxyheptanoic_acid" ;
+        dcat:accessURL_exampleResource <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID60823> ;
+    ] ;
+    dct:description_main """
+RDF version of the PubChem database.
+"""@en ;
+
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    foaf:page <https://pubchem.ncbi.nlm.nih.gov/> ;
+    void:triples "80535498217"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-chebi a void:Linkset ;
+    void:target :PubChem_RDF ;
+    void:triples "97853"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:egon.willighagen@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Evan_Bolton"^^xsd:string ;
+     foaf:Cmbox <mailto:bolton@ncbi.nlm.nih.gov> ; 
+ .
+

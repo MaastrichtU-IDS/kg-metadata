@@ -70,7 +70,7 @@ Resource descriptions collected at each participating institution are freely ava
 
     foaf:page <http://harvard.eagle-i.net> ;
     void:triples "335000"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://harvard.eagle-i.net/i/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

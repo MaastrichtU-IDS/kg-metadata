@@ -140,7 +140,7 @@ This project was funded by NSF SciSIP Award #1238469, NIH grants 8UL1TR000170 an
 """@en ;
 
     void:triples "7073060"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://lod.hackerceo.org/ANGEL/VIVO2DOI/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

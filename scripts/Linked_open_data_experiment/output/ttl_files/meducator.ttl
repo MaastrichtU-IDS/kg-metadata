@@ -53,7 +53,7 @@ The "mEducator - Linked Educational Resources" exposes linked data about publicl
 
     foaf:page <http://linkededucation.org/meducator> ;
     void:triples "30294"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://purl.org/meducator/resources/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

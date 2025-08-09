@@ -43,7 +43,7 @@ RDF-ized controlled vocabulary of Norwegian terms with Universal Decimal Classif
 
     foaf:page <http://www.ntnu.no/ub/data/tekord/about> ;
     void:triples "100000"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://www.ntnu.no/ub/data/tekord> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

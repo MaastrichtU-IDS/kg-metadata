@@ -154,7 +154,7 @@ All metadata can be used, in accordance with Creative Commons Attribution 4.0 li
     ] ;
     void:uriSpace <http://thes.bncf.firenze.sbn.it> ;
     void:triples "786062"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:exampleResource [
         dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
         dct:description """

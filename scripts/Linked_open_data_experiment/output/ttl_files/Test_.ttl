@@ -22,7 +22,7 @@ Test Präsi
         dcat:hadRole :owner ;
     ] ;
     foaf:page <https://de.wikipedia.org/wiki/SPARQL> ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

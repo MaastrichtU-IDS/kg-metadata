@@ -161,7 +161,7 @@ The “publingspending” initiative is a free, open, neutral and objective web 
 """@en ;
 
     foaf:page <http://publicspending.medialab.ntua.gr/en/index.php> ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://publicspending.medialab.ntua.gr/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

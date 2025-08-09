@@ -158,7 +158,7 @@ Despite being in the Linked Data part of data.gov.uk, the data cannot be accesse
 
     foaf:page <http://environment.data.gov.uk/> ;
     void:triples "185338"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

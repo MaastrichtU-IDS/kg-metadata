@@ -77,7 +77,7 @@ Bundesamt für Statistik - Swiss Federal Statistical Office data. Currently cont
 
     foaf:page <http://bfs.270a.info/> ;
     void:triples "1050000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://bfs.270a.info/dataset/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

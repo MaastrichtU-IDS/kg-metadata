@@ -29,7 +29,7 @@ Use this site to explore descriptions of our unique holdings at the Princeton Un
 """@en ;
 
     foaf:page <http://findingaids.princeton.edu/> ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

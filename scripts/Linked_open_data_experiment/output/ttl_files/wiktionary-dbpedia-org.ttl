@@ -85,7 +85,7 @@ We aim to provide a open-source framework (based on DBpedia) to extract semantic
 """@en ;
 
     foaf:page <http://wiktionary.dbpedia.org> ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

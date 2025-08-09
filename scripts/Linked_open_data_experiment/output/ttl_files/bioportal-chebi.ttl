@@ -55,7 +55,7 @@ A structured classification of chemical compounds of biological relevance.
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1007> ;
     void:triples "1573682"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

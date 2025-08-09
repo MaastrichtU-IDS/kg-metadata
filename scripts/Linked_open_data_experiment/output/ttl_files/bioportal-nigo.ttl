@@ -55,7 +55,7 @@ The Neural-Immune Gene Ontology (NIGO) is a subset of GO directed for neurologic
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1539> ;
     void:triples "81702"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

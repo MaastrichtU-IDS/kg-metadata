@@ -141,7 +141,7 @@ http://www.hebis.de/eng/englisch_index.php
 
     foaf:page <http://www.hebis.de> ;
     void:triples "267038676"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://lod.hebis.de/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -45,7 +45,7 @@ Swedish Union Catalogue. Swedish National Bibliography and authority data. The N
     ] ;
     foaf:page <http://libris.kb.se> ;
     void:triples "50000000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://libris.kb.se/bib/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

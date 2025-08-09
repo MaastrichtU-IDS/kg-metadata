@@ -55,7 +55,7 @@ Provides structured controlled vocabularies for the annotation of gene products 
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1070> ;
     void:triples "853791"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

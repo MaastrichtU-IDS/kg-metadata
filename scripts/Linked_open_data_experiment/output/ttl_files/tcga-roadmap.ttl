@@ -114,7 +114,7 @@ Only entities of type ``tcga:File`` have the following properties.
 
     foaf:page <http://tcga.github.com/Roadmap/> ;
     void:triples "6000000"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://purl.org/tcga/core#> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

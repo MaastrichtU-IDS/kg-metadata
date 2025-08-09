@@ -38,7 +38,7 @@ The triple count and MusicBrainz link count are based on estimates of total user
 
     foaf:page <http://dbtune.org/last-fm/> ;
     void:triples "600000000"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://dbtune.org/last-fm/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

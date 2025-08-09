@@ -59,7 +59,7 @@ The resource has been created according to the WN2.0 specification, http://www.w
 """@en ;
 
     void:triples "515816"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

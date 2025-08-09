@@ -22,7 +22,7 @@ test-svu
 
     dct:title "test-svu" ;
     dct:license <http://www.opendefinition.org/licenses/odc-odbl> ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:sparqlEndpoint [
         dct:identifier "8a47623c-4b11-0010-2711-53183ddfc381" ;
         dct:title "test-svu" ;

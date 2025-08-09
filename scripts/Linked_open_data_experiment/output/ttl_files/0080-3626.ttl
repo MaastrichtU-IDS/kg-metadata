@@ -38,7 +38,7 @@ Zapis korespondencji między Emilem Szramką a Janem Kuderą.
     ] ;
     foaf:page <http://rocznikibiblioteczne.ibi.uni.wroc.pl/wp-content/uploads/2019/04/reiter.pdf> ;
     void:triples "8939"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

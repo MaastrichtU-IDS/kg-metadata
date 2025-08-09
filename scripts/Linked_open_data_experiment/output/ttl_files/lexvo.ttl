@@ -76,7 +76,7 @@ The web service additionally provides some parts that are not fully open, e.g. E
 
     foaf:page <http://www.lexvo.org> ;
     void:triples "353815"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     void:uriSpace <http://lexvo.org/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

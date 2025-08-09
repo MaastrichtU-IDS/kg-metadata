@@ -1,0 +1,316 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bioportal-nigo a dcat:Dataset ;
+    dcat:keyword "biomedicine", "bioportal", "format-obo", "format-rdf", "lod", "ontology", "published-by-third-party" ;
+    dct:title_main "Neural-Immune_Gene_Ontology" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+REST API Wiki Documentation
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+SPARQL endpoint
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://sparql.bioontology.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;charset=utf-8" ;
+        dct:description_distribution """
+Download link, BioPortal API KEY is required
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://rest.bioontology.org/bioportal/ontologies/download/44724?apikey=BP_API_KEY> ;
+    ] ;
+    dct:description_main """
+The Neural-Immune Gene Ontology (NIGO) is a subset of GO directed for neurological and immunological systems. NIGO was created by clipping those GO terms that are not associated to any gene in human, rat and mouse, and by clipping terms not found to be relevant to the neural and/or immune domains.
+"""@en ;
+
+    foaf:page <http://bioportal.bioontology.org/ontologies/1539> ;
+    void:triples "81702"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-apo a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-bao a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-bdo a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-biomodels a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "139"^^xsd:integer ;
+ .
+
+:bioportal-birnlex a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-bootstrep a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "63"^^xsd:integer ;
+ .
+
+:bioportal-canco a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+:bioportal-cco a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "2743"^^xsd:integer ;
+ .
+
+:bioportal-csp a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "160"^^xsd:integer ;
+ .
+
+:bioportal-efo a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-ep a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-fbbt a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+:bioportal-flu a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-fypo a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "95"^^xsd:integer ;
+ .
+
+:bioportal-galen a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "53"^^xsd:integer ;
+ .
+
+:bioportal-go_x1 a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "4837"^^xsd:integer ;
+ .
+
+:bioportal-go_x2 a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "4559"^^xsd:integer ;
+ .
+
+:bioportal-gro_x2 a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "63"^^xsd:integer ;
+ .
+
+:bioportal-hpio a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-icnp a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-ido a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "24"^^xsd:integer ;
+ .
+
+:bioportal-idobru a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "26"^^xsd:integer ;
+ .
+
+:bioportal-idomal a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "61"^^xsd:integer ;
+ .
+
+:bioportal-iev a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "122"^^xsd:integer ;
+ .
+
+:bioportal-lnc a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "35"^^xsd:integer ;
+ .
+
+:bioportal-mccl_x1 a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "186"^^xsd:integer ;
+ .
+
+:bioportal-mdr a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-mego a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+:bioportal-mesh-owl a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "359"^^xsd:integer ;
+ .
+
+:bioportal-mp a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "40"^^xsd:integer ;
+ .
+
+:bioportal-msh a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "234"^^xsd:integer ;
+ .
+
+:bioportal-nbo a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "50"^^xsd:integer ;
+ .
+
+:bioportal-ncit a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "312"^^xsd:integer ;
+ .
+
+:bioportal-ndfrt a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "38"^^xsd:integer ;
+ .
+
+:bioportal-nif a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "3849"^^xsd:integer ;
+ .
+
+:bioportal-nif_cell a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-nif_dysfunction a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-npo a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "56"^^xsd:integer ;
+ .
+
+:bioportal-obi a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "37"^^xsd:integer ;
+ .
+
+:bioportal-pato a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-pr a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "62"^^xsd:integer ;
+ .
+
+:bioportal-rcd a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:bioportal-sao a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "80"^^xsd:integer ;
+ .
+
+:bioportal-sio a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-snomedct a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "162"^^xsd:integer ;
+ .
+
+:bioportal-spo a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:bioportal-syn a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "93"^^xsd:integer ;
+ .
+
+:bioportal-uberon a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "18"^^xsd:integer ;
+ .
+
+:bioportal-vt a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "65"^^xsd:integer ;
+ .
+
+:bioportal-ypo a void:Linkset ;
+    void:target :bioportal-nigo ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Eitan_Rubin"^^xsd:string ;
+ .
+

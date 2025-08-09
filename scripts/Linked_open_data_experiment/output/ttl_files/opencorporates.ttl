@@ -60,7 +60,7 @@ See <http://opencorporates.com/info/licence>. However, should note that most dat
 
     foaf:page <http://opencorporates.com/> ;
     void:triples "750000000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://opencorporates.com/companies> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

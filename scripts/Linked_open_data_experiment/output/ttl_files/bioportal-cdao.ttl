@@ -55,7 +55,7 @@ A formalization of concepts and relations relevant to evolutionary comparative a
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1128> ;
     void:triples "2565"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

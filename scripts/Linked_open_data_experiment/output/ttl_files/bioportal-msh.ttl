@@ -55,7 +55,7 @@ Medical Subject Headings (MeSH);National Library of Medicine; 2011
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1351> ;
     void:triples "7970325"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

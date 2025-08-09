@@ -101,7 +101,7 @@ List of laws used in inspection reports of the Supreme Audit Office of the Czech
 
     foaf:page <http://data.nku.cz/resource/dataset/check-actions-law> ;
     void:triples "9940"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://data.nku.cz/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

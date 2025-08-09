@@ -55,7 +55,7 @@ A structured controlled vocabulary for the annotation of experiments concerned w
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1040> ;
     void:triples "18499"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

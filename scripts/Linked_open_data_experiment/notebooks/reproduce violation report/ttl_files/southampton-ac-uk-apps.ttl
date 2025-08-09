@@ -1,0 +1,82 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:southampton-ac-uk-apps a dcat:Dataset ;
+    dcat:keyword "crossdomain", "format-rdf", "lod", "lodcloud.nolinks", "lodcloud.unconnected", "no-deref-vocab", "published-by-producer" ;
+    dct:license <http://reference.data.gov.uk/id/open-government-licence> ;
+    dct:title_main "Apps_using_our_data_(University_of_Southampton)" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "text/turtle;charset=UTF-8" ;
+        dct:description_exampleResource """
+Example Application Resource
+""" ;
+        dcat:accessURL_exampleResource <http://id.southampton.ac.uk/app/soton-map-embed> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "None" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL Endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://sparql.data.southampton.ac.uk/> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+HTML
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://data.southampton.ac.uk/apps.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+RDF (in XML)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://id.southampton.ac.uk/dataset/apps/latest.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+RDF (in Turtle)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://id.southampton.ac.uk/dataset/apps/latest.ttl> ;
+    ] ;
+    dct:description_main """
+Dataset from University of Southampton Open Data Service. A catalog of known websites, web widgets, phone apps and other tools using our datasets.
+"""@en ;
+
+    foaf:page <http://data.southampton.ac.uk/> ;
+    void:triples "200"^^xsd:integer ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 

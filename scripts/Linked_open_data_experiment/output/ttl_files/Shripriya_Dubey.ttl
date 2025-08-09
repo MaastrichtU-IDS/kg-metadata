@@ -23,7 +23,7 @@ An ontology showing ah hierarchy of persons in a university and subjects. It spe
         prov:agent  :OwnerAgent ;
         dcat:hadRole :owner ;
     ] ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

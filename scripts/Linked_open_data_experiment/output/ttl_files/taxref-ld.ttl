@@ -100,7 +100,7 @@ TAXREF-LD is a joint initiative of the National Museum of Natural History (http:
     ] ;
     foaf:page <https://github.com/frmichel/taxref-ld/> ;
     void:triples "35353007"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://taxref.mnhn.fr/lod/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

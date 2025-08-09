@@ -70,7 +70,7 @@ In addition, aggregate statistics have been computed for each crime type at Ward
 
     foaf:page <http://crime.rkbexplorer.com/> ;
     void:triples "7780271"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://crime.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -100,7 +100,7 @@ DCAT Description: https://www.childrensartmuseum.gr/LD-project/
     ] ;
     foaf:page <https://www.childrensartmuseum.gr/LD-project/> ;
     void:triples "2211"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:exampleResource [
         dcat:mediaType "text/turtle" ;
         dct:description """

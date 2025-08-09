@@ -30,7 +30,7 @@ This dataset contains the MASC 3.0 corpus, a large English corpus covering a wid
 """@en ;
 
     void:triples "5620229"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -57,7 +57,7 @@ FAIL (203)
 """ ;
     ] ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://norpark.ml/> ;
     void:sparqlEndpoint [
         dct:identifier "7a91cca7-f648-b623-997d-75a7638353ad" ;

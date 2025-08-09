@@ -55,7 +55,7 @@ The BioAssay Ontology (BAO) describes chemical biology screening assays and thei
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1533> ;
     void:triples "9939"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -23,7 +23,7 @@
 
     dct:title "GUTSTOK_" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

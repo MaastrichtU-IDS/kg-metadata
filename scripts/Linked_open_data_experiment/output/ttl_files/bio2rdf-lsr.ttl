@@ -125,7 +125,7 @@ The Resource Registry is a curated collection of datasets and terminologies used
 
     foaf:page <http://lsr.bio2rdf.org/> ;
     void:triples "55914"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/lsr:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

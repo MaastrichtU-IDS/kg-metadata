@@ -53,7 +53,7 @@ The Open Data Thesaurus is a collection of key concepts and entities, their defi
 
     foaf:page <http://vocabulary.semantic-web.at/PoolParty/wiki/OpenData> ;
     void:triples "8000"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://vocabulary.semantic-web.at/OpenData/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

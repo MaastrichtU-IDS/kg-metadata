@@ -55,7 +55,7 @@ Cell lines are key experimental models to understand protein interactions and si
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1245> ;
     void:triples "1065437"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

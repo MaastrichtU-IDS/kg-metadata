@@ -125,7 +125,7 @@ SABIO-RK is a database for biochemical reactions, their kinetic equations with t
 
     foaf:page <http://sabiork.bio2rdf.org/> ;
     void:triples "2716421"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/sabiork:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

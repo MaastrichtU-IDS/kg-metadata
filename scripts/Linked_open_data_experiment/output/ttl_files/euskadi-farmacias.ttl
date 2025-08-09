@@ -46,7 +46,7 @@ Farmacias existentes en Euskadi. Los datos incluyen, entre otros, dirección, da
 
     foaf:page <http://opendata.euskadi.net/w79-contdata/es/contenidos/ds_localizaciones/farmacias_de_euskadi/es_farmacia/farmacias.html> ;
     void:triples "35"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

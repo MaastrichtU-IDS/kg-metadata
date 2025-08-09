@@ -101,7 +101,7 @@ EUNIS consists of information on species, habitat types and sites.
 
     foaf:page <http://eunis.eea.europa.eu> ;
     void:triples "20229105"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://eunis.eea.europa.eu/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

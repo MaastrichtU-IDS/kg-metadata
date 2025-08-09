@@ -83,7 +83,7 @@ Labor law thesaurus covers all main areas of labor law, like the roles of employ
 
     foaf:page <http://vocabulary.wolterskluwer.de/> ;
     void:triples "106891"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://vocabulary.wolterskluwer.de/arbeitsrecht> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

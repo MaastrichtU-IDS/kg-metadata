@@ -156,7 +156,7 @@ Special Case: In circumstances where providing the full attribution statement ab
         dcat:hadRole :owner ;
     ] ;
     foaf:page <https://altawil.my.opendatasoft.com> ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

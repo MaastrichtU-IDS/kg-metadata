@@ -1,0 +1,68 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:psh-subject-headings a dcat:Dataset ;
+    dcat:keyword "czech", "format-rdf", "format-skos", "format-xhtml", "library", "lld", "lod", "lodcloud-diagram-2011-09-19", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "no-vocab-mappings", "publications", "published-by-producer" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Polythematic_Structured_Subject_Heading_System" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://psh.ntkcz.cz/skos/PSH320/> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html" ;
+        dct:description_distribution """
+Download
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://pshmanager.techlib.cz/static/skos/psh-skos.zip> ;
+    ] ;
+    dct:description_main """
+Polythematic Structured Subject Headings System (PSH) is a bilingual (Czech/English) structured subject heading system.
+"""@en ;
+
+    foaf:page <http://psh.ntkcz.cz/skos/home/html/en> ;
+    void:triples "100000"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://psh.ntkcz.cz/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :psh-subject-headings ;
+    void:triples "3000"^^xsd:integer ;
+ .
+
+:lcsh a void:Linkset ;
+    void:target :psh-subject-headings ;
+    void:triples "3000"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "National_Technical_Library,_Czech_Republic"^^xsd:string ;
+     foaf:Cmbox <mailto:jindrich.mynarz@techlib.cz> ; 
+ .
+

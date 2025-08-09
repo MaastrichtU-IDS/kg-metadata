@@ -37,7 +37,7 @@ FADN is an instrument for evaluating the income of agricultural holdings and the
     ] ;
     void:uriSpace <http://ec.europa.eu/agriculture/FADN/> ;
     void:triples "25640703"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

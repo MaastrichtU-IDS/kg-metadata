@@ -37,7 +37,7 @@ RoLEX  is a Romanian lexicon in which for each entry there is information about 
 
     dct:title "RoLEX" ;
     dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:sparqlEndpoint [
         dct:identifier "83691e19-323e-7786-21a1-26e2b88af548" ;
         dct:title "RoLEX_SPARQL_endpoint" ;

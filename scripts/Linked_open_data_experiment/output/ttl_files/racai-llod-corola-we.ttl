@@ -37,7 +37,7 @@ Word embeddings from the representative corpus of contemporary Romanian language
 
     dct:title "Romanian_CoRoLa_Word_Embeddings" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     void:uriSpace <http://corolaws.racai.ro/word_embeddings/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

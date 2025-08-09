@@ -253,7 +253,7 @@ The Thesaurus of the Geological Survey of Austria is a bilingual (de/en) control
 
     foaf:page <http://resource.geolba.ac.at/> ;
     void:triples "40912"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://resource.geolba.ac.at/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

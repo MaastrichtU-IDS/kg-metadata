@@ -55,7 +55,7 @@ Metathesaurus CPT Hierarchical Terms
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1510> ;
     void:triples "7302"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

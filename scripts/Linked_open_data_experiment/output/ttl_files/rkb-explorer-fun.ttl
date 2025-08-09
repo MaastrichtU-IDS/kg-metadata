@@ -52,7 +52,7 @@ None
 """@en ;
 
     foaf:page <http://fun.rkbexplorer.com> ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://fun.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

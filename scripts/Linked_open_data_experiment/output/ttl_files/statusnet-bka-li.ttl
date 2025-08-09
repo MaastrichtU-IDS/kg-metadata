@@ -28,7 +28,7 @@ FAIL (403)
 StatusNet instance hosted at http://bka.li
 """@en ;
 
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -53,7 +53,7 @@ The NUTS (Nomenclature of Territorial Units for Statistics)  is a classification
 
     foaf:page <http://nuts.geovocab.org/> ;
     void:triples "300000"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -42,7 +42,7 @@ Whisky Circle dataset, built with WordLift for the https://www.whisky-circle.inf
     ] ;
     foaf:page <https://www.whisky-circle.info/> ;
     void:triples "6690"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

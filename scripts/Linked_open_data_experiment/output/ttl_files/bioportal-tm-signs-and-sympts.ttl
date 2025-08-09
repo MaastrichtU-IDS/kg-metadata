@@ -55,7 +55,7 @@ The value set for the Signs and Symptoms property of the International Classific
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1572> ;
     void:triples "2697"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -76,7 +76,7 @@ This repository contains data supplied from Vytautas Magnus University.
 
     foaf:page <http://kaunas.rkbexplorer.com> ;
     void:triples "32940"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://kaunas.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

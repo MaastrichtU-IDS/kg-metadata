@@ -1,0 +1,72 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:im_sparql a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "Endpoint" ;
+        dct:identifier_sparqlEndpoint "2336f56a-befd-ad62-f24f-40388101b2ab" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <https://sparql.crssnky.xyz/spql/imas/query?query=> ;
+        adms:status_sparqlEndpoint """
+FAIL (405)
+""" ;
+    ] ;
+    foaf:depiction <https://sparql.crssnky.xyz/imas/css/img/top.png> ;
+    foaf:page <https://sparql.crssnky.xyz/imas/> ;
+    dct:license <https://opensource.org/licenses/MIT> ;
+    dct:title_main "im@sparql" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Dataset:RDF
+schema:Turtle
+""" ;
+        dcat:downloadURL_distribution <https://github.com/imas/imasparql> ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Linked_RDF" ;
+        dct:identifier_distribution "cabe3f0f-ece2-a500-3dc6-979f9ba51a4d" ;
+    ] ;
+    dct:description_main """
+im@s + sparql = im@sparql
+
+広がるアイマスワールドをオープンデータ化
+WebやアプリからSPARQLで検索・利用可能なエンドポイント
+"""@en ;
+
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    void:triples "78728"^^xsd:integer ;
+    dcat:theme  <media> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Oname "jun_katai"^^xsd:string ;
+     foaf:Ombox <mailto:vindicare28@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "crssnky"^^xsd:string ;
+     foaf:Cmbox <mailto:vindicare28@yahoo.co.jp> ; 
+ .
+

@@ -76,7 +76,7 @@ FAIL (HTTPConnectionPool(host='risks.rkbexplorer.com', port=80): Max retries exc
 
     foaf:page <http://risks.rkbexplorer.com> ;
     void:triples "322913"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://risks.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

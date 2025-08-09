@@ -76,7 +76,7 @@ OK
 """@en ;
 
     void:triples "490000000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://dati.camera.it/ocd/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -52,7 +52,7 @@ D2R Server publishing the DBLP Bibliography Database, hosted at L3S Research Cen
 
     foaf:page <http://dblp.l3s.de/d2r/> ;
     void:triples "57674239"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://dblp.l3s.de/d2r/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -56,7 +56,7 @@ Version 1.22 reshapes the "parasite organism" section.
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1311> ;
     void:triples "35586"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

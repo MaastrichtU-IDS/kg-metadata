@@ -174,7 +174,7 @@ Comprehensive set of linked clean energy data including:
 
     foaf:page <http://data.reegle.info/> ;
     void:triples "334049"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://reegle.info> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

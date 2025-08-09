@@ -559,7 +559,7 @@ A dataset that provides metadata information about anime.
     ] ;
     void:uriSpace <https://betweenourworlds.org/> ;
     void:triples "4338673"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

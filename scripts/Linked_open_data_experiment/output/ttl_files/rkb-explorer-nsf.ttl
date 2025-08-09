@@ -76,7 +76,7 @@ FAIL (HTTPConnectionPool(host='nsf.rkbexplorer.com', port=80): Max retries excee
 
     foaf:page <http://nsf.rkbexplorer.com> ;
     void:triples "11822283"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://nsf.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

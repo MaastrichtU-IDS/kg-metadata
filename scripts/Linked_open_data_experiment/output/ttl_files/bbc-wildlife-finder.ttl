@@ -66,7 +66,7 @@ Data includes:
 
     foaf:page <http://www.bbc.co.uk/wildlifefinder/> ;
     void:triples "23861"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://www.bbc.co.uk/nature/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -125,7 +125,7 @@ The Saccharomyces Genome Database (SGD) collects and organizes information about
 
     foaf:page <http://sgd.bio2rdf.org/> ;
     void:triples "12494945"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/sgd:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

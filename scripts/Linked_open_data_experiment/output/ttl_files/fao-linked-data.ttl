@@ -77,7 +77,7 @@ Food and Agriculture Organization of the United Nations datasets and classificat
 
     foaf:page <http://fao.270a.info/> ;
     void:triples "52861175"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://fao.270a.info/dataset/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

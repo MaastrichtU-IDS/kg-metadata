@@ -76,7 +76,7 @@ File with all Czech business entity names and their identification numbers
 
     foaf:page <https://linked.opendata.cz/zdroj/datová-sada/seznam-ič> ;
     void:triples "45780110"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <https://linked.opendata.cz/zdroj/ekonomický-subjekt/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

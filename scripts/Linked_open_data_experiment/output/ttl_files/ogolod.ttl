@@ -78,7 +78,7 @@ Data and to discover new information in the cloud, related to orthologs and huma
 
     foaf:page <http://miuras.inf.um.es/~ogo/ogolod.html> ;
     void:triples "38035102"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http:miuras.inf.um.es/ogolod/resource/Gene/67440> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -35,7 +35,7 @@ The Semantic Quran dataset is a multilingual RDF representation of translations 
 
     foaf:page <http://aksw.org/Projects/SemanticQuran> ;
     void:triples "15741399"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

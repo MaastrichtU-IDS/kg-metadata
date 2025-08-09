@@ -104,7 +104,7 @@ An annotated history of empirical studies on human cooperation in social dilemma
     ] ;
     foaf:page <https://data.cooperationdatabank.org/> ;
     void:triples "795849"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <https://data.cooperationdatabank.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

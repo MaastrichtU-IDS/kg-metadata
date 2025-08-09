@@ -36,7 +36,7 @@ This dataset  includes all the summer Olympics medalists from 1896-2014 and info
 
     dct:title "SummerOlympics" ;
     dct:license <http://www.opendefinition.org/licenses/odc-odbl> ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:sparqlEndpoint [
         dct:identifier "bf02d2ca-6ebe-b951-b992-df3cedc1ad76" ;
         dct:title "Dbpedia" ;

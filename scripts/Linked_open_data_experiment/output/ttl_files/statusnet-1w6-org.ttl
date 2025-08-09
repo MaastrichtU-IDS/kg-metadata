@@ -28,7 +28,7 @@ OK
 StatusNet instance hosted at http://1w6.org
 """@en ;
 
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

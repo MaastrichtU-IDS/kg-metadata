@@ -28,7 +28,7 @@ FAIL (500)
 None
 """@en ;
 
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

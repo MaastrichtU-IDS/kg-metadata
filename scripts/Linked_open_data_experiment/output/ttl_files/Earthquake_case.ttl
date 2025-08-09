@@ -37,7 +37,7 @@ Past Earthquake case detail
 
     dct:title "ESO" ;
     dct:license <http://www.opendefinition.org/licenses/odc-by> ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:sparqlEndpoint [
         dct:identifier "cacea04d-67b1-da0a-2792-e79407f25aee" ;
         dct:title "Sparql_endpoint" ;

@@ -116,7 +116,7 @@ The GTAA contains approximately 160.000 terms: ~3800 Subjects, ~97.000 Persons, 
 
     foaf:page <http://data.beeldengeluid.nl/gtaa/GTAA> ;
     void:triples "992797"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://data.beeldengeluid.nl/gtaa/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

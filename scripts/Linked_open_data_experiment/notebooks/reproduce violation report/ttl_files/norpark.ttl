@@ -1,0 +1,93 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:norpark a dcat:Dataset ;
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    foaf:page <http://norpark.ml> ;
+    void:triples "244325"^^xsd:integer ;
+    dcat:distribution [
+        dct:identifier_distribution "eb20c6a6-ad10-8164-9a2d-e11d6d27cd8a" ;
+        dct:title_distribution "Full_Download" ;
+        dct:description_distribution """
+Dump RDF/XML
+""" ;
+        dcat:mediaType_distribution "application/rdf+xml" ;
+        dcat:downloadURL_distribution <http://raw.norpark.ml/parking.rdf> ;
+        adms:status_distribution """
+FAIL (203)
+""" ;
+    ] ;
+    dcat:keyword "Norwegian", "Parking" ;
+    dct:description_main """
+Norwegian parking in RDF form.
+"""@en ;
+
+    dct:title_main "NorPark" ;
+    void:exampleResource [
+        dct:title_exampleResource "Skedsmo_senter" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://norpark.ml/F7124.html> ;
+        adms:status_exampleResource """
+FAIL (203)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "SECURITY_PARK_AS" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://norpark.ml/C984524455.html> ;
+        adms:status_exampleResource """
+FAIL (203)
+""" ;
+    ] ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dcat:theme  <geography> ;
+    void:uriSpace <http://norpark.ml/> ;
+    void:sparqlEndpoint [
+        dct:identifier_sparqlEndpoint "7a91cca7-f648-b623-997d-75a7638353ad" ;
+        dct:title_sparqlEndpoint "NorPark_SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+Public SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://query.norpark.ml> ;
+        adms:status_sparqlEndpoint """
+FAIL (203)
+""" ;
+    ] ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:wikidata a void:Linkset ;
+    void:target :norpark ;
+    void:triples "31938"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:kentodde89@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "NorPark_Group"^^xsd:string ;
+     foaf:Cmbox <mailto:mail@feqzz.no> ; 
+ .
+

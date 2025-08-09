@@ -71,7 +71,7 @@ http://opendatacommunities-downloads.s3.amazonaws.com/lsoa.ttl.zip
 
     foaf:page <http://opendatacommunities.org/datasets/geography> ;
     void:triples "341894"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://opendatacommunities.org/id/geography/lsoa/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

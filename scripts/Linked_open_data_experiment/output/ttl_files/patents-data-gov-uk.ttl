@@ -78,7 +78,7 @@ Part of package:data-gov-uk
 
     foaf:page <http://patents.data.gov.uk/> ;
     void:triples "11627"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://patents.data.gov.uk/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -71,7 +71,7 @@ The OLiA ontologies were originally developed as part of an infrastructure for t
 
     foaf:page <http://purl.org/olia> ;
     void:triples "43775"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

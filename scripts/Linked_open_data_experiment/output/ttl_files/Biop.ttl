@@ -35,7 +35,7 @@ Covid19 Impact on Banking Ontology (Covid19-IBO) provides semantic information a
 
     dct:title "Covid19_Impact_on_Banking_ontology_(Covid19-IBO_1.5)" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:sparqlEndpoint [
         dct:identifier "d168c989-2202-e1aa-1562-cc3aff08935d" ;
         dct:title "Covid19-IBO_1.5" ;

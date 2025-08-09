@@ -30,7 +30,7 @@ SemanticTweet is a simple web service that generates a FOAF RDF document for you
 
     foaf:page <http://semantictweet.com/> ;
     void:triples "500000"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://semantictweet.com/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -38,7 +38,7 @@ Analiza pracy Lelewela poświęconej bibliotekoznawstwu i porównanie jej do wsp
     ] ;
     foaf:page <http://rocznikibiblioteczne.ibi.uni.wroc.pl/wp-content/uploads/2019/04/treichel.pdf> ;
     void:triples "81800"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

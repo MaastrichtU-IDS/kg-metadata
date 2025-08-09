@@ -78,7 +78,7 @@ The corpus was converted to NLP Interchange Format (NIF).
 """@en ;
 
     void:triples "1410"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

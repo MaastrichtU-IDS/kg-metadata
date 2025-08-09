@@ -1,0 +1,110 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:nytimes-linked-open-data a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-rdf", "format-skos", "format-time", "linked-open-data", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "media", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "publications", "published-by-producer", "semantic", "semanticweb" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "New_York_TimesLinked_Open_Data" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example URI
+""" ;
+        dcat:accessURL_exampleResource <http://data.nytimes.com/57525341647327480183> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='data.nytimes.com', port=80): Max retries exceeded with url: /57525341647327480183 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686aef4f0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+People (SKOS)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://data.nytimes.com/people.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Organizations (SKOS)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://data.nytimes.com/organizations.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Locations (SKOS)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://data.nytimes.com/locations.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Subject descriptors (SKOS)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://data.nytimes.com/descriptors.rdf> ;
+    ] ;
+    dct:description_main """
+### About
+
+From website:
+
+> For the last 150 years, The New York Times  has maintained  one of the most  authoritative news vocabularies  ever developed. In 2009, we began to publish this vocabulary as linked open data.
+"""@en ;
+
+    foaf:page <http://data.nytimes.com/> ;
+    void:triples "345889"^^xsd:integer ;
+    dcat:theme  <media> ;
+    void:uriSpace <http://data.nytimes.com/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :nytimes-linked-open-data ;
+    void:triples "10359"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :nytimes-linked-open-data ;
+    void:triples "10302"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :nytimes-linked-open-data ;
+    void:triples "3039"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Evan_Sandhaus,_Rob_Larson"^^xsd:string ;
+     foaf:Cmbox <mailto:evan@nytimes.com> ; 
+ .
+

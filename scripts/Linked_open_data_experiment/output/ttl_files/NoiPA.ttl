@@ -35,7 +35,7 @@ Open Data NoiPA is a project created to make available, transparent and fully us
         dcat:hadRole :owner ;
     ] ;
     void:triples "340000000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

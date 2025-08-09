@@ -55,7 +55,7 @@ Application ontology for entities related to insecticide resistance in mosquitos
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1077> ;
     void:triples "58954"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

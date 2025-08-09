@@ -76,7 +76,7 @@ FAIL (HTTPConnectionPool(host='ibm.rkbexplorer.com', port=80): Max retries excee
 
     foaf:page <http://ibm.rkbexplorer.com> ;
     void:triples "44721"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://ibm.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

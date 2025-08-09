@@ -75,7 +75,7 @@ OK
 OK
 """ ;
     ] ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <Bendev_Junior> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

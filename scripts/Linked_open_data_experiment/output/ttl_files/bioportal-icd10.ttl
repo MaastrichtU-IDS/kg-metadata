@@ -55,7 +55,7 @@ International Statistical Classification of Diseases and Related Health Problems
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1516> ;
     void:triples "87925"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

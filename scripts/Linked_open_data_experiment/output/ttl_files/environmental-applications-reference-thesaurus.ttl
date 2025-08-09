@@ -68,7 +68,7 @@ EARTh has been firstly made available as linked data as an activity within the E
 
     foaf:page <http://thesaurus.iia.cnr.it/index.php/vocabularies/earth> ;
     void:triples "133315"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://linkeddata.ge.imati.cnr.it/resource/EARTh/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

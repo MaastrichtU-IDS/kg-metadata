@@ -23,7 +23,7 @@ Amer Nejma (born November 13,1989) is an Irish-Tunisian Record Producer Based in
         prov:agent  :OwnerAgent ;
         dcat:hadRole :owner ;
     ] ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

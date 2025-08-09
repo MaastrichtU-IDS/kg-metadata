@@ -55,7 +55,7 @@ The Portfolio Management Application (PMA) is a system for tracking grants and p
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1497> ;
     void:triples "12544"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

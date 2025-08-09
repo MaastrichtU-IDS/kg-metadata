@@ -52,7 +52,7 @@ Additionally it offers GEONAMES codes for the named entities annotated as locati
 
     dct:title "Romanian_Named_Entity_Recognition_in_the_Legal_domain_(LegalNERo)" ;
     dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://racai.ro/legalnero> ;
     void:sparqlEndpoint [
         dct:identifier "d6b5db13-e6c9-c546-f962-4cb759473ff8" ;

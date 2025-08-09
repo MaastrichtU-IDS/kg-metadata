@@ -1,0 +1,141 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bioportal-rex a dcat:Dataset ;
+    dcat:keyword "biomedicine", "bioportal", "format-obo", "format-rdf", "lod", "ontology", "published-by-third-party" ;
+    dct:title_main "Physico-chemical_process" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+REST API Wiki Documentation
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+SPARQL endpoint
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://sparql.bioontology.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;charset=utf-8" ;
+        dct:description_distribution """
+Download link, BioPortal API KEY is required
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://rest.bioontology.org/bioportal/ontologies/download/45248?apikey=BP_API_KEY> ;
+    ] ;
+    dct:description_main """
+REX is an ontology of physico-chemical processes, i.e. physico-chemical changes occurring in course of time. REX includes both microscopic processes (involving molecular entities or subatomic particles) and macroscopic processes. Some biochemical processes from Gene Ontology (GO Biological process) can be described as instances of REX.
+"""@en ;
+
+    foaf:page <http://bioportal.bioontology.org/ontologies/1043> ;
+    void:triples "5046"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-bao a void:Linkset ;
+    void:target :bioportal-rex ;
+    void:triples "19"^^xsd:integer ;
+ .
+
+:bioportal-csp a void:Linkset ;
+    void:target :bioportal-rex ;
+    void:triples "42"^^xsd:integer ;
+ .
+
+:bioportal-go_x1 a void:Linkset ;
+    void:target :bioportal-rex ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-go_x2 a void:Linkset ;
+    void:target :bioportal-rex ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-iev a void:Linkset ;
+    void:target :bioportal-rex ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-ino a void:Linkset ;
+    void:target :bioportal-rex ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:bioportal-mesh-owl a void:Linkset ;
+    void:target :bioportal-rex ;
+    void:triples "120"^^xsd:integer ;
+ .
+
+:bioportal-mi a void:Linkset ;
+    void:target :bioportal-rex ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-msh a void:Linkset ;
+    void:target :bioportal-rex ;
+    void:triples "48"^^xsd:integer ;
+ .
+
+:bioportal-ncit a void:Linkset ;
+    void:target :bioportal-rex ;
+    void:triples "60"^^xsd:integer ;
+ .
+
+:bioportal-nif a void:Linkset ;
+    void:target :bioportal-rex ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:bioportal-rcd a void:Linkset ;
+    void:target :bioportal-rex ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-sbo a void:Linkset ;
+    void:target :bioportal-rex ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-sio a void:Linkset ;
+    void:target :bioportal-rex ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-snomedct a void:Linkset ;
+    void:target :bioportal-rex ;
+    void:triples "53"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Chebi_Administrators"^^xsd:string ;
+ .
+

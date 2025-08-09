@@ -58,7 +58,7 @@ The version 1.0.1 of IMGT-ONTOLOGY, edited with Protégé (v4.2.0), includes the
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1491> ;
     void:triples "8283"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

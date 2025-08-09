@@ -35,7 +35,7 @@ this is a test dataset
 
     dct:title "SATAR_test_" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

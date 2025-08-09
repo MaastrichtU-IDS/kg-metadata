@@ -113,7 +113,7 @@ PubMed is a service of the U.S. National Library of Medicine that includes citat
 
     foaf:page <http://pubmed.bio2rdf.org/> ;
     void:triples "5005343905"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/pubmed:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -1,0 +1,94 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:eu-institutions a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "eu-institution", "government", "license-metadata", "lod", "lodcloud-diagram-2011-09-19", "provenance-metadata", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-pddl> ;
+    dct:title_main "Institutions_and_Bodies_of_the_European_Union" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Example (HTML+RDFa)
+""" ;
+        dcat:accessURL_exampleResource <http://institutions.publicdata.eu/#ec> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDFa" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Download_(RDFa)" ;
+        dcat:accessURL_distribution <http://institutions.publicdata.eu/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "Turtle" ;
+        dct:description_distribution """
+Download (Turtle)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://institutions.publicdata.eu/all.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+VoID description
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://institutions.publicdata.eu/.well-known/void> ;
+    ] ;
+    dct:description_main """
+This site defines Linked Data compatible URIs for major institutions and bodies of the European Union that can be used as identifiers in EU-related datasets. 
+
+http://institutions.publicdata.eu/
+
+
+"""@en ;
+
+    foaf:page <http://institutions.publicdata.eu/> ;
+    void:triples "643"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://institutions.publicdata.eu/#> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :eu-institutions ;
+    void:triples "154"^^xsd:integer ;
+ .
+
+:eu-agencies-bodies a void:Linkset ;
+    void:target :eu-institutions ;
+    void:triples "38"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Michael_Hausenblas"^^xsd:string ;
+     foaf:Cmbox <mailto:michael.hausenblas@deri.org> ; 
+ .
+

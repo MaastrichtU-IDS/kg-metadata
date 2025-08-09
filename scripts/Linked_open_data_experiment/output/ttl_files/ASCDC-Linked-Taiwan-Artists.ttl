@@ -96,7 +96,7 @@ Webpage of ASCDC LODDatasets for downloads of entire published LOD-based dataset
 FAIL (400)
 """ ;
     ] ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://linkedart.ascdc.tw/lod/> ;
     void:sparqlEndpoint [
         dct:identifier "eaae596c-1157-1ead-6e79-3bbb2dcfe9c6" ;

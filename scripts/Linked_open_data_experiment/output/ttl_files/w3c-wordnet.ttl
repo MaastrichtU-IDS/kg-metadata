@@ -59,7 +59,7 @@ Guus Schreiber, Vrije Universiteit Amsterdam
 
     foaf:page <http://www.w3.org/TR/wordnet-rdf> ;
     void:triples "710000"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     void:uriSpace <http://www.w3.org/2006/03/wn/wn20/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

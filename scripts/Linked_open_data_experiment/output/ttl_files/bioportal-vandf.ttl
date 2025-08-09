@@ -55,7 +55,7 @@ Veterans Health Administration National Drug File
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1527> ;
     void:triples "667272"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

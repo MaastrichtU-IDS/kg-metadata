@@ -125,7 +125,7 @@ The dbSNP database is a repository for both single base nucleotide subsitutions 
 
     foaf:page <http://dbsnp.bio2rdf.org/> ;
     void:triples "8801487"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/dbsnp:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

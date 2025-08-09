@@ -71,7 +71,7 @@ See: http://www.eagle-i.net/
 
     foaf:page <http://tsu.eagle-i.net> ;
     void:triples "2000"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://tsu.eagle-i.net/i/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

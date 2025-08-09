@@ -99,7 +99,7 @@ The editors have not acted in behalf of any of the license issuers, do not claim
 """@en ;
 
     void:triples "1975"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://purl.org/NET/rdflicense> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -88,7 +88,7 @@ FAIL (HTTPConnectionPool(host='wiki.rkbexplorer.com', port=80): Max retries exce
 
     foaf:page <http://wiki.rkbexplorer.com> ;
     void:triples "44379"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://wiki.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

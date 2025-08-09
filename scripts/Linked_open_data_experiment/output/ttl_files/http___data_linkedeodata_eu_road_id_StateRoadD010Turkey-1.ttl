@@ -35,7 +35,7 @@ Road
         prov:agent  :OwnerAgent ;
         dcat:hadRole :owner ;
     ] ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

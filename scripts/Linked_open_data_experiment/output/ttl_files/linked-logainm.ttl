@@ -40,7 +40,7 @@ OK
 Linked Logainm is a collaborative project undertaken by the Digital Repository of Ireland (DRI), the Digital Enterprise Research Institute (DERI), Fiontar at Dublin City University, the National Library of Ireland and the Place names Branch of the Department of Arts, Heritage and the Gaeltacht. The Linked Logainm project has created a new open dataset, which allows Irish place names to be linked across the world by cutting edge technologies developed in Ireland. The new Linked Data version of the authoritative bilingual database of Irish place names logainm.ie, is an open resource to be widely used by web developers, computer scientists, researchers, the heritage community and librarians and archivists.
 """@en ;
 
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

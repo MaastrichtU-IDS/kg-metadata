@@ -57,7 +57,7 @@ links:ontologycentral-eurostat: 424
 
     foaf:page <http://www4.wiwiss.fu-berlin.de/eurostat/> ;
     void:triples "8850"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://www4.wiwiss.fu-berlin.de/eurostat/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

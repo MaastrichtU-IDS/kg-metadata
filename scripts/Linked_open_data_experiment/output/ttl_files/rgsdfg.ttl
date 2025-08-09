@@ -33,7 +33,7 @@ dsfsdfsdf
         dcat:hadRole :owner ;
     ] ;
     foaf:page <http://mtimo.de> ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

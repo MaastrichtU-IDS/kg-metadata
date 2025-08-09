@@ -28,7 +28,7 @@ FAIL (HTTPConnectionPool(host='status.kaimi.cc', port=80): Max retries exceeded 
 StatusNet instance hosted at http://kaimi.cc
 """@en ;
 
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

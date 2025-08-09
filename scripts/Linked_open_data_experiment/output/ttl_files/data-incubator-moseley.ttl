@@ -81,7 +81,7 @@ Artist information for the [Moseley Folk Festival](http://www.moseleyfolk.co.uk/
 
     foaf:page <http://moseley.dataincubator.org/> ;
     void:triples "1268"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://moseley.dataincubator.org/artist/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

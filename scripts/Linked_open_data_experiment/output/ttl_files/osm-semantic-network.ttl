@@ -80,7 +80,7 @@ Author & Maintaner: [Andrea Ballatore](https://sites.google.com/site/andreaballa
 
     foaf:page <http://wiki.openstreetmap.org/wiki/OSM_Semantic_Network> ;
     void:triples "126621"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://spatial.ucd.ie/lod/osn> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -22,7 +22,7 @@ praca poświęcona przedstawieniu i omówieniu poglądów i spostrzeżeń Joachi
         dcat:hadRole :owner ;
     ] ;
     foaf:page <http://rocznikibiblioteczne.ibi.uni.wroc.pl/woluminy/tom-i-zeszyty-1-2-1957/> ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

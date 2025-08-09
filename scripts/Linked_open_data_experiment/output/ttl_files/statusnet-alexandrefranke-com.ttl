@@ -28,7 +28,7 @@ FAIL (500)
 StatusNet instance hosted at http://alexandrefranke.com
 """@en ;
 
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

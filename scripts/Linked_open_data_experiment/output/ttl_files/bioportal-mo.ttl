@@ -55,7 +55,7 @@ Concepts, definitions, terms, and resources for standardized description of a mi
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1131> ;
     void:triples "5492"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

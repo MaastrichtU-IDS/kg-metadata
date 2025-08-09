@@ -28,7 +28,7 @@ FAIL (HTTPConnectionPool(host='o.mrblog.nl', port=80): Max retries exceeded with
 StatusNet instance hosted at http://mrblog.nl
 """@en ;
 
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

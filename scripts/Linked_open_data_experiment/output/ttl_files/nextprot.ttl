@@ -35,7 +35,7 @@ neXtProt is an innovative knowledge platform dedicated to human proteins. This r
     ] ;
     foaf:page <https://www.nextprot.org/> ;
     void:triples "1384908234"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <nextprot.org> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

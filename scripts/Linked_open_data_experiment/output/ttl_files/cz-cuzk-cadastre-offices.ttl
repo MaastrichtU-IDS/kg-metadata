@@ -89,7 +89,7 @@ Cadastre offices from Czech land registry
 
     foaf:page <http://ruian.linked.opendata.cz/resource/dataset/cuzk/pracoviste-resortu> ;
     void:triples "14781"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://ruian.linked.opendata.cz/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

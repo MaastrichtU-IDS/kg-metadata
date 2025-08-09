@@ -24,7 +24,7 @@ Taxonomic classification of biological entities, data is maintained in ASFIS, by
     ] ;
     void:uriSpace <http://www.fao.org/aims/aos/fi/taxonomic/> ;
     void:triples "318359"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

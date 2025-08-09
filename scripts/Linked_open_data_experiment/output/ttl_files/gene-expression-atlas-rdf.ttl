@@ -51,7 +51,7 @@ The Gene Expression Atlas RDF provides information on gene expression patterns u
 """@en ;
 
     void:triples "447149547"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://rdf.ebi.ac.uk/resource/atlas/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -56,7 +56,7 @@ API access to UK primary and secondary legislation. The API provides access to l
 
     foaf:page <http://www.legislation.gov.uk/> ;
     void:triples "1900000000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://www.legislation.gov.uk/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -54,7 +54,7 @@ FAIL (404)
 
     foaf:page <http://chem2bio2rdf.org> ;
     void:triples "82925998"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://chem2bio2rdf.org/bindingdb/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

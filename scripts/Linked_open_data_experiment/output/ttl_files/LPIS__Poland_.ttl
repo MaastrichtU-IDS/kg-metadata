@@ -37,7 +37,7 @@ Polish Land Parcel Information System (LPIS) data (land parcel and cadastral dat
     ] ;
     void:uriSpace <http://w3id.org/foodie/open/pl/LPIS/> ;
     void:triples "727517039"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

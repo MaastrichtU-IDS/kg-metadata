@@ -62,7 +62,7 @@ Part of an ongoing research project, this ontology is developed to support edito
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1586> ;
     void:triples "367109"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

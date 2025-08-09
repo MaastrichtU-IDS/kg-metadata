@@ -44,7 +44,7 @@ AfBo: A world-wide survey of affix borrowing published by the CLLD project
 
     foaf:page <http://afbo.info> ;
     void:triples "12453"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

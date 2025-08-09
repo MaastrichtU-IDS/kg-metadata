@@ -55,7 +55,7 @@ GFO-Bio is a biological core ontology built on the General Formal Ontology.
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1440> ;
     void:triples "1369"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

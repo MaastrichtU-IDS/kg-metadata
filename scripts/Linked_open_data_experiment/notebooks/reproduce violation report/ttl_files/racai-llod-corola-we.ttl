@@ -1,0 +1,57 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:racai-llod-corola-we a dcat:Dataset ;
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    foaf:page <https://racai.ro/p/llod/> ;
+    void:triples "1254723"^^xsd:integer ;
+    dcat:distribution [
+        dct:identifier_distribution "a568181b-b0eb-73ab-71b5-d2adb881fd9e" ;
+        dct:title_distribution "CoRoLa_word_embeddings_converted_to_LLOD_format" ;
+        dct:description_distribution """
+Downloadable file with word embeddings in Turtle format
+""" ;
+        dcat:mediaType_distribution "text/turtle" ;
+        dcat:downloadURL_distribution <http://www.racai.ro/p/llod/resources/corola.300.20.vec.ttl> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:keyword "Romanian", "word_embeddings" ;
+    dct:description_main """
+Word embeddings from the representative corpus of contemporary Romanian language (CoRoLa)
+"""@en ;
+
+    dct:title_main "Romanian_CoRoLa_Word_Embeddings" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dcat:theme  <linguistics> ;
+    void:uriSpace <http://corolaws.racai.ro/word_embeddings/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:vergi@racai.ro> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Verginica_Mititelu"^^xsd:string ;
+     foaf:Cmbox <mailto:vergi@racai.ro> ; 
+ .
+

@@ -55,7 +55,7 @@ Ontologies provide a common platform of controlled vocabulary for researchers wh
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1541> ;
     void:triples "20689"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

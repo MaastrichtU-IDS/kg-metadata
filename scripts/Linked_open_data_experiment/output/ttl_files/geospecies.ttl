@@ -107,7 +107,7 @@ Size of dump and data set: 6.7 MB gzip
 
     foaf:page <http://lod.geospecies.org/> ;
     void:triples "2163922"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://lod.geospecies.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

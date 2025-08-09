@@ -76,7 +76,7 @@ The dataset is a German-English financial ontology-lexicon with 728 bilingual an
 """@en ;
 
     void:triples "246522"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

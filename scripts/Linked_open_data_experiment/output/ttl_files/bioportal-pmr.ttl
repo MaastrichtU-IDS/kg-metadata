@@ -55,7 +55,7 @@ Knowledge representation related to computer-based decision support in rehabilit
 
     foaf:page <http://bioportal.bioontology.org/ontologies/3015> ;
     void:triples "481"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

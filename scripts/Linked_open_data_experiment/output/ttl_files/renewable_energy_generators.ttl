@@ -139,7 +139,7 @@ The Renewable Energy Federation maintains an online database of renewable energy
 
     foaf:page <http://kasabi.com/dataset/renewable-energy-generators> ;
     void:triples "99917"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://data.kasabi.com/dataset/renewable-energy-generators> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

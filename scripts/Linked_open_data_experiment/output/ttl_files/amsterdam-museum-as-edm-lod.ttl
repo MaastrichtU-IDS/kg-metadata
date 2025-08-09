@@ -58,7 +58,7 @@ The metadata was retrieved from an XML Web API of the museum's Adlib collection 
 
     foaf:page <http://semanticweb.cs.vu.nl/lod/am/> ;
     void:triples "5000000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://purl.org/collections/nl/am/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

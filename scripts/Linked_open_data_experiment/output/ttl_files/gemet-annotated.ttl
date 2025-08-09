@@ -31,7 +31,7 @@ Details about how this dataset was built are described in the article: Are SKOS 
 """@en ;
 
     void:triples "231297"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

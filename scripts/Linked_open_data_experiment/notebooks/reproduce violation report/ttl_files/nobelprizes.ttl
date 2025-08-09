@@ -1,0 +1,131 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:nobelprizes a dcat:Dataset ;
+    dcat:keyword "crossdomain", "deref-vocab", "format-dbpedia", "format-foaf", "laureate", "lod", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-vocab-mappings", "nobel", "nobelmedia", "nobelprize", "provenance-metadata", "published-by-producer", "rdf", "sparql", "sweden" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "Nobel_Prizes" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-ntriples" ;
+        dct:description_distribution """
+Complete dump of the whole dataset. Always updated with the most recent data.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "RDF_dump" ;
+        dcat:downloadURL_distribution <http://data.nobelprize.org/dump.nt> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_URI" ;
+        dcat:mediaType_exampleResource "text/html" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://data.nobelprize.org/resource/laureate/1> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://data.nobelprize.org/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "LOD_entry_point" ;
+        dcat:accessURL_distribution <http://data.nobelprize.org> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Dataset_description_(VoID)" ;
+        dcat:accessURL_distribution <http://data.nobelprize.org/dataset> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Schema" ;
+        dcat:accessURL_distribution <http://www.nobelprize.org/nobel_organizations/nobelmedia/nobelprize_org/developer/manual-linkeddata/terms.rdf> ;
+    ] ;
+    dct:description_main """
+Linked Open Data about every Nobel Prize since 1901, including information about the Nobel Prizes, the Nobel Laureates and related documentation.
+"""@en ;
+
+    foaf:page <http://www.nobelprize.org/nobel_organizations/nobelmedia/nobelprize_org/developer/manual-linkeddata/terms.html> ;
+    void:triples "88792"^^xsd:integer ;
+    dcat:theme  <cross_domain> ;
+    void:uriSpace <http://data.nobelprize.org/resource/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bio2rdf a void:Linkset ;
+    void:target :nobelprizes ;
+    void:triples "8"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :nobelprizes ;
+    void:triples "1889"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :nobelprizes ;
+    void:triples "557"^^xsd:integer ;
+ .
+
+:linked-life-data a void:Linkset ;
+    void:target :nobelprizes ;
+    void:triples "309"^^xsd:integer ;
+ .
+
+:viaf a void:Linkset ;
+    void:target :nobelprizes ;
+    void:triples "163"^^xsd:integer ;
+ .
+
+:yago a void:Linkset ;
+    void:target :nobelprizes ;
+    void:triples "549"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Hannes_Ebner"^^xsd:string ;
+     foaf:Cmbox <mailto:hannes@metasolutions.se> ; 
+ .
+

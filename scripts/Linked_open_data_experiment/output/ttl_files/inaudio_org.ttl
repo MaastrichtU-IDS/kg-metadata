@@ -37,7 +37,7 @@ Unlimited Access. Search for amazing Non Copyright Music. World-class royalty fr
 
     dct:title "Royalty-free_music" ;
     dct:license <https://creativecommons.org/licenses/by/3.0/> ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

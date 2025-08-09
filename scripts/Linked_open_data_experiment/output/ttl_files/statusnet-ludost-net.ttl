@@ -28,7 +28,7 @@ FAIL (('Connection aborted.', RemoteDisconnected('Remote end closed connection w
 StatusNet instance hosted at http://ludost.net
 """@en ;
 
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

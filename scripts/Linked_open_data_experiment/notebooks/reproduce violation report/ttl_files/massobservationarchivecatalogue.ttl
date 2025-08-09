@@ -1,0 +1,83 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:massobservationarchivecatalogue a dcat:Dataset ;
+    dcat:keyword "archives", "crossdomain", "deref-vocab", "format-xhtml", "history", "jisc", "lod", "lodcloud.nolinks", "lodcloud.unconnected", "published-by-producer", "war" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-pddl> ;
+    dct:title_main "Mass_Observation_Archive_catalogue" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://data.lib.sussex.ac.uk/archive/id/archivalresource/gb181SxMOA1> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='data.lib.sussex.ac.uk', port=80): Max retries exceeded with url: /archive/id/archivalresource/gb181SxMOA1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fefe0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://api.talis.com/stores/massobservation/services/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='api.talis.com', port=80): Max retries exceeded with url: /stores/massobservation/services/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843ff9d0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "HTML" ;
+        dct:description_distribution """
+html interface to collection
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='data.lib.sussex.ac.uk', port=80): Max retries exceeded with url: /archive/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fe1a0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://data.lib.sussex.ac.uk/archive/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Download the data in rdf xml/turtle and n-triples (and also as Encoded Archival Description formatted data) 
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='data.lib.sussex.ac.uk', port=80): Max retries exceeded with url: /files/massobservation/rdf/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843ff2e0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "Download" ;
+        dcat:accessURL_distribution <http://data.lib.sussex.ac.uk/files/massobservation/rdf/> ;
+    ] ;
+    dct:description_main """
+The data is the catalogue records of the Mass Observation Archive, a Designated collection. The Mass Observation Archive is a written record of everyday life in Britain 1937-55. It's a unique insight in to life during the Second World War. 
+
+http://data.lib.sussex.ac.uk/data/mass-observation/
+
+http://www.massobs.org.uk/a_brief_history.htm
+
+The conversion to Linked Data was carried out as part of the JISC funded SALDA project by the University of Sussex Library with key support from Eduserv.
+"""@en ;
+
+    foaf:page <http://specialcollections.lib.sussex.ac.uk/CalmView/Record.aspx?src=Catalog&id=SxMOA1> ;
+    void:triples "428035"^^xsd:integer ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Karen_Watson"^^xsd:string ;
+     foaf:Cmbox <mailto:K.L.W@son@sussex.ac.uk> ; 
+ .
+

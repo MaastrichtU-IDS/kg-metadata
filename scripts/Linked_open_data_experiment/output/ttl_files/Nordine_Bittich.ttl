@@ -22,7 +22,7 @@ curriculum vitae
 
     dct:title "Curriculum_Vitae" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     void:uriSpace <https://bittich.be/graphs/public> ;
     void:sparqlEndpoint [
         dct:identifier "95f89cb3-ef68-a4de-9644-85b64de75ce7" ;

@@ -55,7 +55,7 @@ The Human Phenotype Ontology is being developed to provide a structured and cont
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1125> ;
     void:triples "107770"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

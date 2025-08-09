@@ -75,7 +75,7 @@ Nomisma.org is an international collaborative project to define the intellectual
         dcat:hadRole :owner ;
     ] ;
     void:uriSpace <http://nomisma.org/> ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:exampleResource [
         dct:title "Rome" ;
         dct:description """

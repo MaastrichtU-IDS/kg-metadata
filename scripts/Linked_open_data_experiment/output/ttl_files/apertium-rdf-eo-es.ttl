@@ -93,7 +93,7 @@ RDF version of the Apertium bilingual dictionary EO-ES. The original dataset (in
 """@en ;
 
     void:triples "380198"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

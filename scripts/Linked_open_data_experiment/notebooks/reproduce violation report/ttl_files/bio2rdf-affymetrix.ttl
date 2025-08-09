@@ -1,0 +1,269 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bio2rdf-affymetrix a dcat:Dataset ;
+    dcat:keyword "bio2rdf", "deref-vocab", "format-dc", "format-rdf", "format-rdfs", "license-metadata", "lifesciences", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "provenance-metadata", "published-by-third-party", "vocab-mappings" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Bio2RDF::Affymetrix" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-nquads" ;
+        dct:description_distribution """
+Download affymetrix.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Download_(n-quads,_gzipped)" ;
+        dcat:downloadURL_distribution <http://download.bio2rdf.org/current/affymetrix/affymetrix.nq.gz> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_resource_(RDF)" ;
+        dcat:mediaType_exampleResource "application/rdf+xml;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Example resource (RDF)
+""" ;
+        dcat:accessURL_exampleResource <http://bio2rdf.org/affymetrix:185061_at> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://affymetrix.bio2rdf.org/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "" ;
+        dct:description_distribution """
+Download
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Download_page_(n-quads,_gz_compressed)" ;
+        dcat:accessURL_distribution <http://download.bio2rdf.org/current/affymetrix/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "HTML" ;
+        dct:description_distribution """
+Dataset description (HTML)
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Dataset_description_(HTML)" ;
+        dcat:accessURL_distribution <http://download.bio2rdf.org/current/affymetrix/affymetrix.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+Dataset description (RDF)
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Dataset_description_(RDF)" ;
+        dcat:accessURL_distribution <http://download.bio2rdf.org/current/affymetrix/bio2rdf-affymetrix.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+OWL Schema
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "OWL_Schema" ;
+        dcat:accessURL_distribution <http://download.bio2rdf.org/release/3/affymetrix/affymetrix.schema.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/plain;_charset=utf-8" ;
+        dct:description_distribution """
+Mappings (SIO)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Mappings_(SIO)" ;
+        dcat:accessURL_distribution <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/affymetrix/bio2rdf_affymetrix_sio_mapping.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/sitemap" ;
+        dct:description_distribution """
+Semantic Web Sitemap
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Semantic_Web_Sitemap" ;
+        dcat:accessURL_distribution <http://download.bio2rdf.org/release/3/affymetrix/sitemap.xml> ;
+    ] ;
+    dct:description_main """
+This dataset contains the probesets used in the Affymetrix microarrays.
+"""@en ;
+
+    foaf:page <http://affymetrix.bio2rdf.org/> ;
+    void:triples "86942371"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    void:uriSpace <http://bio2rdf.org/affymetrix:> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bio2rdf-affymetrix a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "1398264"^^xsd:integer ;
+ .
+
+:bio2rdf-ec a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "1860"^^xsd:integer ;
+ .
+
+:bio2rdf-ensembl a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "889620"^^xsd:integer ;
+ .
+
+:bio2rdf-flybase a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "40886"^^xsd:integer ;
+ .
+
+:bio2rdf-gb a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "34181"^^xsd:integer ;
+ .
+
+:bio2rdf-genbank a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "1202769"^^xsd:integer ;
+ .
+
+:bio2rdf-gi a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "10107"^^xsd:integer ;
+ .
+
+:bio2rdf-go a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "22806"^^xsd:integer ;
+ .
+
+:bio2rdf-interpro a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "5999"^^xsd:integer ;
+ .
+
+:bio2rdf-lncrna a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "107"^^xsd:integer ;
+ .
+
+:bio2rdf-mgi a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "18818"^^xsd:integer ;
+ .
+
+:bio2rdf-mirbase a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "235"^^xsd:integer ;
+ .
+
+:bio2rdf-ncbigene a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "400798"^^xsd:integer ;
+ .
+
+:bio2rdf-omim a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "17078"^^xsd:integer ;
+ .
+
+:bio2rdf-pmrna a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "3238"^^xsd:integer ;
+ .
+
+:bio2rdf-pseudocap a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "5529"^^xsd:integer ;
+ .
+
+:bio2rdf-pseudomonas a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "72"^^xsd:integer ;
+ .
+
+:bio2rdf-rapdb a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "12037"^^xsd:integer ;
+ .
+
+:bio2rdf-refseq a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "910251"^^xsd:integer ;
+ .
+
+:bio2rdf-rgap a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "45570"^^xsd:integer ;
+ .
+
+:bio2rdf-rgd a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:bio2rdf-sgd a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "6122"^^xsd:integer ;
+ .
+
+:bio2rdf-tair a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "22216"^^xsd:integer ;
+ .
+
+:bio2rdf-tigr a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "42311"^^xsd:integer ;
+ .
+
+:bio2rdf-unigene a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "587164"^^xsd:integer ;
+ .
+
+:bio2rdf-uniprot a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "650640"^^xsd:integer ;
+ .
+
+:bio2rdf-wormbase a void:Linkset ;
+    void:target :bio2rdf-affymetrix ;
+    void:triples "14768"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Bio2RDF"^^xsd:string ;
+     foaf:Cmbox <mailto:bio2rdf@googlegroups.com> ; 
+ .
+

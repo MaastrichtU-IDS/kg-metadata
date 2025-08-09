@@ -55,7 +55,7 @@ The ontology for the original papers investigating the relations between genetic
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1086> ;
     void:triples "3851"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

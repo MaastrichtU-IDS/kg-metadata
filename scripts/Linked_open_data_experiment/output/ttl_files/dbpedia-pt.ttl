@@ -44,7 +44,7 @@ http://pt.dbpedia.org
 
     foaf:page <http://pt.dbpedia.org> ;
     void:triples "24607332"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://pt.dbpedia.org/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

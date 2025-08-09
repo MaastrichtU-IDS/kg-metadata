@@ -52,7 +52,7 @@ None
 """@en ;
 
     foaf:page <http://photos.rkbexplorer.com> ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://photos.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

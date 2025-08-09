@@ -40,7 +40,7 @@ The Community Research and Development Information Service (CORDIS) contains inf
 
     foaf:page <http://www4.wiwiss.fu-berlin.de/cordis/> ;
     void:triples "7107144"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://www4.wiwiss.fu-berlin.de/cordis/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

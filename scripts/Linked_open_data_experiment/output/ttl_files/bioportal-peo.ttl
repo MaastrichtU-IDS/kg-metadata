@@ -57,7 +57,7 @@ The PEO (v 1.0) includes Proteome, Microarray, Gene Knockout, and Strain Creatio
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1335> ;
     void:triples "1175"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

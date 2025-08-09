@@ -60,7 +60,7 @@ No information found.
 
     foaf:page <http://data.semanticweb.org> ;
     void:triples "191391"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://data.semanticweb.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

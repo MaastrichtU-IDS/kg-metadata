@@ -68,7 +68,7 @@ GeoLinkedData (.es) is an open initiative whose aim is to enrich the Web of Data
     ] ;
     foaf:page <http://geo.linkeddata.es/> ;
     void:triples "21564199"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://geo.linkeddata.es/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

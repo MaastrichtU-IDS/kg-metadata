@@ -52,7 +52,7 @@ BBC Music is a team working in the department of Audio and Music Interactive at 
 
     foaf:page <http://www.bbc.co.uk/music> ;
     void:triples "20000000"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://www.bbc.co.uk/music/artist/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -42,7 +42,7 @@ Sears (sears.com) has GoodRelations markup in all > 15,000,000 item pages
 
     foaf:page <http://www.sears.com/> ;
     void:triples "75000000"^^xsd:integer ;
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

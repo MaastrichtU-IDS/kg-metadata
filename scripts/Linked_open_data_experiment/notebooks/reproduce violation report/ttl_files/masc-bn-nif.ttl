@@ -1,0 +1,49 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:masc-bn-nif a dcat:Dataset ;
+    dcat:keyword "annotation", "babelnet", "format-nif", "linguistic", "llod", "masc", "nif" ;
+    dct:title_main "MASC-BN-NIF" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "MASC_3.0_with_BabelNet_annotations_in_NIF_format" ;
+        dcat:accessURL_distribution <http://lcl.uniroma1.it/MASC-NEWS/> ;
+    ] ;
+    dct:description_main """
+This dataset contains the MASC 3.0 corpus, a large English corpus covering a wide range of genres of written and spoken text, enhanced with semantic annotations, both word senses and named entities. Annotations are drawn from the sense/entity inventory derived from BabelNet 2.0, a multilingual semantic network which integrates both lexicographic and  encyclopedic knowledge.
+"""@en ;
+
+    void:triples "5620229"^^xsd:integer ;
+    dcat:theme  <linguistics> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:babelnet a void:Linkset ;
+    void:target :masc-bn-nif ;
+    void:triples "286416"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Roberto_Navigli"^^xsd:string ;
+     foaf:Cmbox <mailto:navigli@di.uniroma1.it> ; 
+ .
+

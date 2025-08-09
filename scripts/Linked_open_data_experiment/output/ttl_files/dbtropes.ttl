@@ -43,7 +43,7 @@ DBTropes.org is a Linked Data wrapper for the TVTropes.org community wiki. It co
 
     foaf:page <http://dbtropes.org/> ;
     void:triples "8000000"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://dbtropes.org/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

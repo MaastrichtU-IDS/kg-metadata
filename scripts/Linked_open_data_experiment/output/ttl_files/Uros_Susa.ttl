@@ -26,7 +26,7 @@ U ime Legije
     ] ;
     void:uriSpace <Americka_Foka> ;
     void:triples "10"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -89,7 +89,7 @@ GovWILD integrates Open Government Data about politicians, parties, government a
 
     foaf:page <http://govwild.hpi-web.de/project/govwild-sources.html> ;
     void:triples "42773056"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://govwild.org/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

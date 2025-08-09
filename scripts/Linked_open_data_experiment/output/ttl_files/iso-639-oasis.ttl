@@ -47,7 +47,7 @@ The list was last updated in 2005 and was considered experimental at that time.
 
     foaf:page <http://psi.oasis-open.org/iso/639/> ;
     void:triples "2546"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     void:uriSpace <http://psi.oasis-open.org/iso/639/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

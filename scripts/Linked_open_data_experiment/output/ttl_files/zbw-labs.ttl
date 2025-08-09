@@ -44,7 +44,7 @@ ZBW Labs gives you insight into some of the latest software developments of ZBW 
 """@en ;
 
     void:triples "1000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://zbw.eu/labs/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -76,7 +76,7 @@ BIS data and metadata
 """@en ;
 
     void:triples "54200000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://bis.270a.info/dataset/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

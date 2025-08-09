@@ -59,7 +59,7 @@ COSTART was last updated in the Metathesaurus in 1999.
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1341> ;
     void:triples "22035"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

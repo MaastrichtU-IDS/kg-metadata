@@ -49,7 +49,7 @@ Each page is available in an RDF version. There is a SPARQL endpoint (although i
 
     foaf:page <http://zhishi.me> ;
     void:triples "125000000"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     void:uriSpace <http://zhishi.me/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

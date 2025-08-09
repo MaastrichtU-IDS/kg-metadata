@@ -119,7 +119,7 @@ This dataset contains the geographical resource, geonames, in a wordnet-like pic
 Also a lemonization (lemon model) 
 """@en ;
 
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

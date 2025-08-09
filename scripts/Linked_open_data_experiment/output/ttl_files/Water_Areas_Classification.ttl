@@ -37,7 +37,7 @@ FAO water areas classification, including inland and marine codes, published as 
     ] ;
     void:uriSpace <http://www.fao.org/aims/aos/fi/water_FAO_areas/> ;
     void:triples "22697"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

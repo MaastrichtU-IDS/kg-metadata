@@ -41,7 +41,7 @@ Standard controlled vocabularies used within the UK public sector.
 
     foaf:page <http://standards.esd.org.uk/> ;
     void:triples "234230"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://id.esd.org.uk/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

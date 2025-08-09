@@ -54,7 +54,7 @@ Note: The number of triple is a wild guess based on the 2600 RDF documents found
 
     foaf:page <http://id.ecs.soton.ac.uk/docs/> ;
     void:triples "50000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://rdf.ecs.soton.ac.uk/ontology/ecs#> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

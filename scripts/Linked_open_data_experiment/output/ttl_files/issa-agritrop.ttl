@@ -47,7 +47,7 @@ OK
         dcat:mediaType "text/html;_charset=utf-8" ;
     ] ;
     dct:license <http://www.opendefinition.org/licenses/odc-by> ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://data-issa.cirad.fr/> ;
     void:sparqlEndpoint [
         dct:identifier "193cf8a8-3f78-c99b-955a-11734237bf4d" ;

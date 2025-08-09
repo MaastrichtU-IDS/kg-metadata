@@ -102,7 +102,7 @@ A secondary but equally important goal is to encourage additional contributions 
 
     foaf:page <http://greek-lod.math.auth.gr/fire-brigade/> ;
     void:triples "4134837"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://greek-lod.math.auth.gr/fire-brigade/resource> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

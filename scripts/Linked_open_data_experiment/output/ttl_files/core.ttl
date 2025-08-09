@@ -100,7 +100,7 @@ The data about the similarities are represented using the  MuSIM ontology (http:
     ] ;
     foaf:page <http://core-project.kmi.open.ac.uk/> ;
     void:triples "101526714"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://core.kmi.open.ac.uk/data/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

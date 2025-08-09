@@ -26,7 +26,7 @@ The data model is slightly different than that of the Open Library's native RDF 
     ] ;
     foaf:page <http://api.talis.com/stores/openlibrary> ;
     void:triples "541396055"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://api.talis.com/stores/openlibrary> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

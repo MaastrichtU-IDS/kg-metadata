@@ -25,7 +25,7 @@ U ime Legije
     ] ;
     void:uriSpace <Moje_Ime_je_Legija> ;
     void:triples "5"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

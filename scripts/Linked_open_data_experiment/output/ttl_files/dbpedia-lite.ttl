@@ -36,7 +36,7 @@ This project is not affiliated with DBpedia.
 
     foaf:page <http://dbpedialite.org/> ;
     void:triples "200000000"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://dbpedialite.org/things/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

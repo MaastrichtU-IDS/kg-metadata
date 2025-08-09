@@ -46,7 +46,7 @@ para viabilizar a governança da área de pesquisa,, desenvolvimento e inovaça�
 
     dct:title "Diretrizes_organizacionais_de_métodos_quantitativos_e_computação_científica" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

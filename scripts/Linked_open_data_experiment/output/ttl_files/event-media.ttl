@@ -127,7 +127,7 @@ This dataset is composed of events and media descriptions associated with these 
 
     foaf:page <http://eventmedia.eurecom.fr/> ;
     void:triples "36274454"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://data.linkedevents.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

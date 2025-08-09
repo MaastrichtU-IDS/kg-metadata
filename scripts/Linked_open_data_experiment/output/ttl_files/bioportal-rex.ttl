@@ -55,7 +55,7 @@ REX is an ontology of physico-chemical processes, i.e. physico-chemical changes 
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1043> ;
     void:triples "5046"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

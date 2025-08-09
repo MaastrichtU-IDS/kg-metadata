@@ -97,7 +97,7 @@ con un buscador facetado y contextos enriquecidos. Ambos son desarrollos de GNOS
 
     foaf:page <http://products.garnicaplywood.com/comunidad/garnicacatalogo> ;
     void:triples "6527"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://products.garnicaplywood.com/comunidad/garnicacatalogo> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

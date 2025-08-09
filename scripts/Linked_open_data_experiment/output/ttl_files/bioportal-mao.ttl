@@ -55,7 +55,7 @@ An ontology for data retrieval and exchange in the fields of multiple DNA/RNA  a
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1026> ;
     void:triples "1754"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

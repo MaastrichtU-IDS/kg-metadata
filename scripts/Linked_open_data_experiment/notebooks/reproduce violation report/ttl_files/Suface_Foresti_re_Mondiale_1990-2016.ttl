@@ -1,0 +1,126 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Suface_Foresti_re_Mondiale_1990-2016 a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "https://mmisw.org/ont/sparql" ;
+        dct:identifier_sparqlEndpoint "f165dbc1-0271-8a3c-e500-ea0a3a80f0bf" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <https://mmisw.org/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    foaf:depiction <https://cdn.pixabay.com/photo/2015/10/05/15/37/forest-972792_960_720.jpg> ;
+    foaf:page <https://data.world/mhoangvslev/suface-forestire-mondiale-1990-2016> ;
+    dcat:keyword "surface_forestiere" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "Suface_Forestière_Mondiale_1990-2016" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+xml;charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='mmisw.org', port=443): Read timed out. (read timeout=30))
+""" ;
+        dct:title_distribution "RDF/XML" ;
+        dct:identifier_distribution "74706803-63fa-436b-35dc-a1d5ccceea89" ;
+        dcat:downloadURL_distribution <https://mmisw.org/ont/api/v0/ont?format=rdf&iri=https%3A%2F%2Fmmisw.org%2Font%2F~mhoangvslev%2Fsurface_forestiere> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/json+ld;charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='mmisw.org', port=443): Read timed out. (read timeout=30))
+""" ;
+        dct:title_distribution "JSON-LD" ;
+        dct:identifier_distribution "7e96157a-0d0a-f239-019f-4a885945de28" ;
+        dcat:downloadURL_distribution <https://mmisw.org/ont/api/v0/ont?format=jsonld&iri=https%3A%2F%2Fmmisw.org%2Font%2F~mhoangvslev%2Fsurface_forestiere> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle;charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='mmisw.org', port=443): Read timed out. (read timeout=30))
+""" ;
+        dct:title_distribution "Turtle" ;
+        dct:identifier_distribution "4861594c-7d5b-f8fe-50a5-a30eeb16a4bd" ;
+        dcat:downloadURL_distribution <https://mmisw.org/ont/api/v0/ont?format=ttl&iri=https%3A%2F%2Fmmisw.org%2Font%2F~mhoangvslev%2Fsurface_forestiere> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/plain;charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='mmisw.org', port=443): Read timed out. (read timeout=30))
+""" ;
+        dct:title_distribution "N-Triples" ;
+        dct:identifier_distribution "7d135d09-e484-c33e-2fe3-3461580b0fe3" ;
+        dcat:downloadURL_distribution <https://mmisw.org/ont/api/v0/ont?format=nt&iri=https%3A%2F%2Fmmisw.org%2Font%2F~mhoangvslev%2Fsurface_forestiere> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+json;charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='mmisw.org', port=443): Read timed out. (read timeout=30))
+""" ;
+        dct:title_distribution "N-Quads" ;
+        dct:identifier_distribution "88575002-d68b-7bf7-e520-69ebb7776ed6" ;
+        dcat:downloadURL_distribution <https://mmisw.org/ont/api/v0/ont?format=rj&iri=https%3A%2F%2Fmmisw.org%2Font%2F~mhoangvslev%2Fsurface_forestiere> ;
+    ] ;
+    dct:description_main """
+Surface boisée de chaque pays (ou groupe de pays, e.g UE ou continents), en pourcentage de leur superficie totale, entre 1990 et 2016. Les régions boisées sont des terres naturelles ou plantées abritant des arbres d’au moins 5 mètres in situ, qu’elles soient productives ou pas, et excluent les zones boisées des systèmes de production agricole (par exemple, dans les plantations fruitières et les systèmes d’agrosylviculture) et les arbres des parcs et jardins urbains.
+"""@en ;
+
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    void:triples "34875"^^xsd:integer ;
+    dcat:theme  <cross_domain> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :Suface_Foresti_re_Mondiale_1990-2016 ;
+    void:triples "4024"^^xsd:integer ;
+ .
+
+:w3c a void:Linkset ;
+    void:target :Suface_Foresti_re_Mondiale_1990-2016 ;
+    void:triples "9389"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:minhhoangdang@hotmail.com> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Minh-Hoang_DANG"^^xsd:string ;
+     foaf:Cmbox <mailto:minhhoangdang@hotmail.com> ; 
+ .
+

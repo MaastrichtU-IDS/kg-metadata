@@ -67,7 +67,7 @@ Project representatives confirmed [via email](http://lists.w3.org/Archives/Publi
 
     foaf:page <http://en.openei.org/> ;
     void:triples "16384698"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://en.openei.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

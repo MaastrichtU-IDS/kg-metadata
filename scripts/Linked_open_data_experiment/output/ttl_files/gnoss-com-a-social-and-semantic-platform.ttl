@@ -121,7 +121,7 @@ es una sociedad en la Red: permite a personas, empresas y a cualquier colectivo 
 
     foaf:page <http://gnoss.com/en/home> ;
     void:triples "4535606"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://gnoss.com/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

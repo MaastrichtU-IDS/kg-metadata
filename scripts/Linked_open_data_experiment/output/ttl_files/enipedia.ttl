@@ -65,7 +65,7 @@ Enipedia is an active exploration into the applications of wikis and the semanti
 
     foaf:page <http://enipedia.tudelft.nl> ;
     void:triples "4180734"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://enipedia.tudelft.nl/wiki/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

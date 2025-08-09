@@ -1,0 +1,52 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:acadonto a dcat:Dataset ;
+    dcat:keyword "english", "information-extraction", "llod", "lod", "lrec-2014", "ontology" ;
+    dct:title_main "AcadOnto" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-gzip" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "LREC_Share_your_resources_data_submission" ;
+        dcat:accessURL_distribution <http://www.resourcebook.eu/shareyourlr/data/LREC_251_res_1.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-gzip" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "LREC_Share_your_resources_data_submission" ;
+        dcat:accessURL_distribution <http://www.resourcebook.eu/shareyourlr/data/LREC_251_res_1.gz> ;
+    ] ;
+    dct:description_main """
+An academic domain ontology populated using IIT Bombay organization corpus, web and the linked open data. 
+
+Usage: Information Extraction, Information Retrieval	
+
+Availability: Freely Avalable	
+"""@en ;
+
+    void:triples "150000"^^xsd:integer ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 

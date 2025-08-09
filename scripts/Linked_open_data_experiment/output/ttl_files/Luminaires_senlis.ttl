@@ -24,7 +24,7 @@ Linked rules description
         dcat:hadRole :owner ;
     ] ;
     void:triples "40369"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

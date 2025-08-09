@@ -37,7 +37,7 @@ This is a medical corpus annotated morphologically, syntactically and with 4 typ
 
     dct:title "SiMoNERothe_Romanian_medical_treebank" ;
     dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:sparqlEndpoint [
         dct:identifier "fe611fda-f95f-4bc9-6c7f-f508fd27031c" ;
         dct:title "SiMoNERo_SPARQL_endpoint" ;

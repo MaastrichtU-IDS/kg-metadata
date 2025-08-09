@@ -37,7 +37,7 @@ A mapping that was created between WordNet and DBpedia
         dcat:hadRole :owner ;
     ] ;
     void:triples "7702"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

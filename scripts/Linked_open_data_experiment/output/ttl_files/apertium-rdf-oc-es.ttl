@@ -93,7 +93,7 @@ RDF version of the Apertium bilingual dictionary OC-ES. The original dataset (in
 """@en ;
 
     void:triples "317162"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

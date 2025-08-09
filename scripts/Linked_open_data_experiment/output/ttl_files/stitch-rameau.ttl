@@ -84,7 +84,7 @@ As of February 2012, URIs of the RAMEAU concepts redirect to equivalent descript
 
     foaf:page <http://stitch.cs.vu.nl/rameau/> ;
     void:triples "1619918"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://stitch.cs.vu.nl/vocabularies/rameau/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

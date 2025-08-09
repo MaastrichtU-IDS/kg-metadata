@@ -60,7 +60,7 @@ Free for academic and research use.
 """@en ;
 
     void:triples "830"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

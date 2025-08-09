@@ -36,7 +36,7 @@ The first dataset submitted by the philosopher, writer and inventor Luigi Usai.
 
     dct:title "Writer_Luigi_Usai" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

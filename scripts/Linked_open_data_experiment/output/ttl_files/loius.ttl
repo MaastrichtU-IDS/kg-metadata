@@ -76,7 +76,7 @@ The LOIUS project represents an attempt towards the adoption of semantic standar
 
     foaf:page <http://sw.unime.it/loius/info.html> ;
     void:triples "586000000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://sw.unime.it/loius/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

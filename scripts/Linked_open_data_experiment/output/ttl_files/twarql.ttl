@@ -60,7 +60,7 @@ This dataset is an example created for a brand tracking scenario involving the A
 
     foaf:page <http://wiki.knoesis.org/index.php/Twarql> ;
     void:triples "4990776"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://twarql.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

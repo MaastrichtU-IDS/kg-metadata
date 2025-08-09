@@ -53,7 +53,7 @@ This dataset aims at publishing the contents of Hungarian archives as Linked Ope
 
     foaf:page <http://lod.sztaki.hu/> ;
     void:triples "11000000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://lod.sztaki.hu/data/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

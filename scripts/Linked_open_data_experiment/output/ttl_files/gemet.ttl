@@ -84,7 +84,7 @@ Available in RDF without reuse constraints.
 
     foaf:page <http://www.eionet.europa.eu/gemet/> ;
     void:triples "20229105"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://www.eionet.europa.eu/gemet/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

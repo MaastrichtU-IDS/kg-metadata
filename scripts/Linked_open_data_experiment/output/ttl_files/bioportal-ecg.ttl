@@ -55,7 +55,7 @@ The Electrocardiography (ECG) Ontology is a Driving Biological Project of the NC
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1146> ;
     void:triples "8543"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

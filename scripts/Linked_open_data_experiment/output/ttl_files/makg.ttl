@@ -47,7 +47,7 @@ We provide the Microsoft Academic Knowledge Graph (MAKG), a large RDF data set w
         dcat:hadRole :owner ;
     ] ;
     foaf:page <http://ma-graph.org> ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

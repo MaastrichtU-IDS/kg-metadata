@@ -82,7 +82,7 @@ Webpage of ASCDC LODDatasets for downloads of entire published LOD-based dataset
 FAIL (400)
 """ ;
     ] ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://data.ascdc.tw/uc/art/ntue/> ;
     void:sparqlEndpoint [
         dct:identifier "968f8e7a-07fa-24c4-6e17-635de326ccef" ;

@@ -29,7 +29,7 @@ Information about people and publications from the Research Group Data and Web S
 """@en ;
 
     foaf:page <http://dws.informatik.uni-mannheim.de/> ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -24,7 +24,7 @@ This DataSet is Taken from UCI Machine Learning  Repository. It's domain is Spor
 
     dct:title "Grand_Slam_Knowledge_Graph" ;
     dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://www.fateh_fahad_adeel.com/grandSlam> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -95,7 +95,7 @@ The dataset is derived from the data aggregated by The European Library. It is c
     ] ;
     foaf:page <https://lod-cloud.net/edit-dataset/the-european-library-open-dataset> ;
     void:triples "4418628287"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://data.theeuropeanlibrary.org/BibliographicResource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

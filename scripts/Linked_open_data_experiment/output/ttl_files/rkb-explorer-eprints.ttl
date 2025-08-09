@@ -76,7 +76,7 @@ Linked Data version of a number of eprints3 archives.
 
     foaf:page <http://eprints.rkbexplorer.com/> ;
     void:triples "8417840"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://eprints.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

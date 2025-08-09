@@ -83,7 +83,7 @@ La <a href="http://red.gnoss.com/comunidad/OpenData">comunidad de Trabajo Open D
 
     foaf:page <http://red.gnoss.com/comunidad/OpenData> ;
     void:triples "150203"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://red.gnoss.com/comunidad/OpenData> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -55,7 +55,7 @@ The goal of SHR project is to develop an ontology for the description of student
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1665> ;
     void:triples "1327"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

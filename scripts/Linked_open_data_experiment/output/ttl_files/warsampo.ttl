@@ -71,7 +71,7 @@ This dataset includes harmonized data of different kinds concerning the Second W
     ] ;
     foaf:page <http://www.ldf.fi/dataset/warsa> ;
     void:triples "14280903"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

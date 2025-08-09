@@ -87,7 +87,7 @@ FAIL (HTTPConnectionPool(host='pisa.rkbexplorer.com', port=80): Max retries exce
 
     foaf:page <http://pisa.rkbexplorer.com> ;
     void:triples "43219"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://pisa.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

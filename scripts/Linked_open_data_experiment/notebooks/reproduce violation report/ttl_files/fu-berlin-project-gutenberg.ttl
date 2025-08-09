@@ -1,0 +1,58 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:fu-berlin-project-gutenberg a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-dcmit", "format-rdf", "lod", "lodcloud-diagram-2007-05-01", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "lodcloud.nolinks", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "publications", "published-by-third-party" ;
+    dct:title_main "Project_Gutenberg_in_RDF_(FU_Berlin)" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://www4.wiwiss.fu-berlin.de/gutendata/resource/etext10128> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "None" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://www4.wiwiss.fu-berlin.de/gutendata/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (404)
+""" ;
+    ] ;
+    dct:description_main """
+Metadata about public domain works available at Project Gutenberg.
+
+Data last updated in 2007.
+"""@en ;
+
+    foaf:page <http://www4.wiwiss.fu-berlin.de/gutendata/> ;
+    void:triples "10000"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://www4.wiwiss.fu-berlin.de/gutendata/resource/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Christian_Bizer"^^xsd:string ;
+     foaf:Cmbox <mailto:chris@bizer.de> ; 
+ .
+

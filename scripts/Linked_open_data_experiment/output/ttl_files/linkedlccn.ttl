@@ -53,7 +53,7 @@ A wrapper for the Library of Congress' LCCN Permalink service which models the M
 
     foaf:page <http://purl.org/NET/lccn/> ;
     void:triples "1573663"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://purl.org/NET/lccn/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

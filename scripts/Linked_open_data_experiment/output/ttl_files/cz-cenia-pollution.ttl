@@ -100,7 +100,7 @@ Data about business entities that pollute the environment.
 
     foaf:page <http://linked.opendata.cz/resource/dataset/cenia.cz/irz> ;
     void:triples "379372"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://linked.opendata.cz/resource/domain/cenia.cz/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

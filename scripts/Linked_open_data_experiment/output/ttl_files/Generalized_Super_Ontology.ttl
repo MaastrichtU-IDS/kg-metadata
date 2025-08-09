@@ -36,7 +36,7 @@ Concept of realityUpper OntologyEHCPRSuper OntologyLivingMatterSpaceTimeMedium o
     ] ;
     foaf:page <http://dataset.ga/tanay/new.owl> ;
     void:triples "45"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

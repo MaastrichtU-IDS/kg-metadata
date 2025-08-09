@@ -55,7 +55,7 @@ A biomedical ontology in the vaccine domain
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1172> ;
     void:triples "129325"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

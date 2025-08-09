@@ -41,7 +41,7 @@ The Kalikratis municipalities project represents an attempt to retrieve useful i
 
     foaf:page <http://greek-lod.math.auth.gr/kalikratis/> ;
     void:triples "31068"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://greek-lod.math.auth.gr/kalikratis/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

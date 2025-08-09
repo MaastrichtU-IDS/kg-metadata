@@ -1,0 +1,157 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:renewable_energy_generators a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-foaf", "format-rdf", "geodata", "geographic", "government", "lodcloud-diagram-2011-09-19", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "Renewable_Energy_Generators" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+Example RDF for Renewable Energy Generators dataset
+""" ;
+        dcat:accessURL_exampleResource <http://data.kasabi.com/dataset/renewable-energy-generators/generator/R00001NANI.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint for Renewable Energy Generators
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://api.kasabi.com/dataset/renewable-energy-generators/apis/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Kasabi Homepage for Renewable Energy Generators dataset
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://kasabi.com/dataset/renewable-energy-generators/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Kasabi page for Renewable Energy Generators Search API
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://kasabi.com/dataset/renewable-energy-generators/apis/search> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Kasabi page for Renewable Energy Generators SPARQL Endpoint
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://kasabi.com/dataset/renewable-energy-generators/apis/sparql> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Kasabi page for Renewable Energy Generators Lookup API
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://kasabi.com/dataset/renewable-energy-generators/apis/lookup> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Kasabi page for Renewable Energy Generators Reconciliation API
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://kasabi.com/dataset/renewable-energy-generators/apis/reconciliation> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Kasabi page for Renewable Energy Generators Augmentation API
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://kasabi.com/dataset/renewable-energy-generators/apis/augmentation> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Void description of Renewable Energy Generators dataset
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://data.kasabi.com/dataset/renewable-energy-generators> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+Dump of the dataset uploaded to internet archive
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Dataset_export" ;
+        dcat:accessURL_distribution <http://archive.org/download/kasabi/renewable-energy-generators.gz> ;
+    ] ;
+    dct:description_main """
+The Renewable Energy Federation maintains an online database of renewable energy generators located in the United Kingdom. The dataset consists of over 5500 generators around the UK, including both on-shore and off-shore installations. The generators have all been categorized based on type and many of them include details of their address, geographic location, and details of the organizations that developed, operate, or own the site. Some wind turbine installations also include details on the number, size and type of turbines.
+
+*Note* this dataset is no longer updated, it was taken off-line during the shutdown of Kasabi. A dump of the dataset has been [uploaded to the Internet Archive](http://archive.org/details/kasabi)
+"""@en ;
+
+    foaf:page <http://kasabi.com/dataset/renewable-energy-generators> ;
+    void:triples "99917"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://data.kasabi.com/dataset/renewable-energy-generators> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:ordnance-survey-linked-data a void:Linkset ;
+    void:target :renewable_energy_generators ;
+    void:triples "991"^^xsd:integer ;
+ .
+
+:statistics-data-gov-uk a void:Linkset ;
+    void:target :renewable_energy_generators ;
+    void:triples "5539"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Leigh_Dodds"^^xsd:string ;
+     foaf:Cmbox <mailto:leigh@ldodds.com> ; 
+ .
+

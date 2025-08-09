@@ -78,7 +78,7 @@ Firstly, we must collect the data from the three web-reputed security-specialize
 
     foaf:page <http://minsky.gsi.dit.upm.es/semanticwiki/index.php/Main_Page> ;
     void:triples "14000"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://minsky.gsi.dit.upm.es/semanticwiki/index.php/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

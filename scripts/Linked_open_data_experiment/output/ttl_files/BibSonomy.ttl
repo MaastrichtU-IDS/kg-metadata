@@ -26,7 +26,7 @@ BibSonomy is a social bookmarking system. The dataset contains user-generated me
     ] ;
     void:uriSpace <https://bibsonomy.org/> ;
     void:triples "8929782"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:exampleResource [
         dcat:mediaType "application/xml;charset=UTF-8" ;
         dct:description """

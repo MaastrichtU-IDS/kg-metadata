@@ -92,7 +92,7 @@ The  lingvoj-to-lexvo RDF file provides the mappings and equivalence between lin
 
     foaf:page <http://www.lingvoj.org/> ;
     void:triples "22442"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     void:uriSpace <http://www.lingvoj.org> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

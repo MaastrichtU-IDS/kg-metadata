@@ -80,7 +80,7 @@ Note: this dataset is no longer available.
     ] ;
     foaf:page <http://musicbrainz.dataincubator.org/> ;
     void:triples "178775789"^^xsd:integer ;
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     void:uriSpace <http://musicbrainz.dataincubator.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -1,0 +1,280 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:rkb-explorer-dblp a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-akt", "format-dc", "format-rdf", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-vocab-mappings", "provenance-metadata", "publications", "published-by-third-party", "void-sparql-endpoint" ;
+    dct:title_main "DBLP_Computer_Science_Bibliography_(RKBExplorer)" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/xml" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://dblp.rkbexplorer.com/id/conf/otm/JaffriGM07> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='dblp.rkbexplorer.com', port=80): Max retries exceeded with url: /id/conf/otm/JaffriGM07 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684300130>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://dblp.rkbexplorer.com/id/conf/otm/JaffriGM07> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='dblp.rkbexplorer.com', port=80): Max retries exceeded with url: /id/conf/otm/JaffriGM07 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843017e0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://dblp.rkbexplorer.com/sparql/> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='dblp.rkbexplorer.com', port=80): Max retries exceeded with url: /sparql/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684302f20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/xml" ;
+        dct:description_distribution """
+XML Sitemap
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='dblp.rkbexplorer.com', port=80): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684301c90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://dblp.rkbexplorer.com/sitemap.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD file
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://dblp.rkbexplorer.com/models/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-gzip" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='dblp.rkbexplorer.com', port=80): Max retries exceeded with url: /models/dump.tgz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684302f20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title_distribution "Download_(tar_gzip_of_RDF)" ;
+        dcat:accessURL_distribution <http://dblp.rkbexplorer.com/models/dump.tgz> ;
+    ] ;
+    dct:description_main """
+
+"""@en ;
+
+    foaf:page <http://dblp.rkbexplorer.com> ;
+    void:triples "24112294"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://dblp.rkbexplorer.com/id/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:john-goodwins-family-tree a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:l3s-dblp a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "1196418"^^xsd:integer ;
+ .
+
+:rkb-explorer-acm a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "1148679"^^xsd:integer ;
+ .
+
+:rkb-explorer-budapest a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "105"^^xsd:integer ;
+ .
+
+:rkb-explorer-citeseer a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "301497"^^xsd:integer ;
+ .
+
+:rkb-explorer-cordis a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:rkb-explorer-courseware a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:rkb-explorer-curriculum a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+:rkb-explorer-deepblue a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-deploy a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "67"^^xsd:integer ;
+ .
+
+:rkb-explorer-dotac a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "63083"^^xsd:integer ;
+ .
+
+:rkb-explorer-eprints a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "111963"^^xsd:integer ;
+ .
+
+:rkb-explorer-epsrc a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:rkb-explorer-eurecom a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "117"^^xsd:integer ;
+ .
+
+:rkb-explorer-ft a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:rkb-explorer-ibm a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "312"^^xsd:integer ;
+ .
+
+:rkb-explorer-ieee a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "5049"^^xsd:integer ;
+ .
+
+:rkb-explorer-irit a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "3053"^^xsd:integer ;
+ .
+
+:rkb-explorer-kisti a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "80997"^^xsd:integer ;
+ .
+
+:rkb-explorer-laas a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "290"^^xsd:integer ;
+ .
+
+:rkb-explorer-newcastle a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "1440"^^xsd:integer ;
+ .
+
+:rkb-explorer-nsf a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:rkb-explorer-oai a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "254854"^^xsd:integer ;
+ .
+
+:rkb-explorer-pisa a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "157"^^xsd:integer ;
+ .
+
+:rkb-explorer-rae2001 a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "6122"^^xsd:integer ;
+ .
+
+:rkb-explorer-resex a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "33"^^xsd:integer ;
+ .
+
+:rkb-explorer-risks a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "32"^^xsd:integer ;
+ .
+
+:rkb-explorer-roma a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "360"^^xsd:integer ;
+ .
+
+:rkb-explorer-southampton a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "5587"^^xsd:integer ;
+ .
+
+:rkb-explorer-ulm a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "64"^^xsd:integer ;
+ .
+
+:rkb-explorer-wiki a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "46"^^xsd:integer ;
+ .
+
+:semantic-web-dog-food a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "654"^^xsd:integer ;
+ .
+
+:semanticweb-org a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:southampton-ecs-eprints a void:Linkset ;
+    void:target :rkb-explorer-dblp ;
+    void:triples "167"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Hugh_Glaser"^^xsd:string ;
+     foaf:Cmbox <mailto:hg@ecs.soton.ac.uk> ; 
+ .
+

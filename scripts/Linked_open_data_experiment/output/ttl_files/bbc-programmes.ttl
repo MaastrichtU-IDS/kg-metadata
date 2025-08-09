@@ -65,7 +65,7 @@ TV & Radio programme broadcasted by the BBC
 
     foaf:page <http://www.bbc.co.uk/programmes> ;
     void:triples "60000000"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://www.bbc.co.uk/programmes> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

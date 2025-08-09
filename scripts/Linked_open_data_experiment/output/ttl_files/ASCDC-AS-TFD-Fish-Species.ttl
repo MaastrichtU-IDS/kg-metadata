@@ -85,7 +85,7 @@ Webpage of ASCDC LODDatasets for downloads of entire published LOD-based dataset
 FAIL (400)
 """ ;
     ] ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://data.ascdc.tw/uc/bio/> ;
     void:sparqlEndpoint [
         dct:identifier "2b551ad8-9af5-ea71-0847-15ab061649c9" ;

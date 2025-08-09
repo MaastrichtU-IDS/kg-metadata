@@ -78,7 +78,7 @@ Publishes Linked Data in RDF.
 
     foaf:page <http://data.dcs.shef.ac.uk/> ;
     void:triples "8596"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://www.dcs.shef.ac.uk/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

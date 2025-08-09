@@ -233,7 +233,7 @@ The GOA (Gene Ontology Annotation) project provides high-quality Gene Ontology (
 
     foaf:page <http://goa.bio2rdf.org/> ;
     void:triples "97520151"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/goa:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

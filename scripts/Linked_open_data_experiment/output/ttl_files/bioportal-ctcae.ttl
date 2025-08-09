@@ -55,7 +55,7 @@ A coding system for reporting adverse events that occur in the course of cancer 
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1415> ;
     void:triples "50880"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

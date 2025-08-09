@@ -37,7 +37,7 @@ PARSEME-Ro corpus is the v.1.2 Romanian corpus annotated with verbal multiword e
 
     dct:title "PARSEME-Ro_corpus" ;
     dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:sparqlEndpoint [
         dct:identifier "753545b0-a9df-5c9b-c14a-a5ee9736e2ee" ;
         dct:title "PARSEME-Ro_SPARQL_endpoint" ;

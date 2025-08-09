@@ -50,7 +50,7 @@ For more details see https://www.cooperativepatentclassification.org/
     ] ;
     void:uriSpace <http://data.epo.org/linked-data/def/cpc/> ;
     void:triples "3450000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:exampleResource [
         dct:title "Example_of_CPC_symbol_in_ttl" ;
         dct:description """

@@ -139,7 +139,7 @@ This is a Linked Data version of the publically available data dumps from the Ya
 
     foaf:page <http://kasabi.com/dataset/yahoo-geoplanet> ;
     void:triples "49734022"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://data.kasabi.com/dataset/yahoo-geoplanet> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

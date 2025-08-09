@@ -1,0 +1,74 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:reactome-rdf a dcat:Dataset ;
+    dcat:keyword "bioinformatics", "lifesciences", "linked_data", "lod", "lodcloud-diagram-2014-08-30", "pathways", "provenance-metadata", "published-by-producer", "rdf", "reactions", "vocab-mappings" ;
+    dct:title_main "Reactome_RDF" ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "Reactome_SPARQL_endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <https://www.ebi.ac.uk/rdf/services/reactome/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (500)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+xml;charset=utf-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='rdf.ebi.ac.uk', port=443): Max retries exceeded with url: /dataset/reactome/49/dataset-void.ttl (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:997)'))))
+""" ;
+        dct:title_distribution "Reactome_VoID_description" ;
+        dcat:accessURL_distribution <http://rdf.ebi.ac.uk/dataset/reactome/49/dataset-void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (No connection adapters were found for 'ftp://ftp.ebi.ac.uk/pub/databases/RDF/reactome/')
+""" ;
+        dct:title_distribution "Reactome_RDF_FTP_download" ;
+    ] ;
+    dct:description_main """
+BioPAX representation of the Reactome database
+"""@en ;
+
+    void:triples "14285698"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    void:uriSpace <http://identifiers.org/reactome/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:identifiers.org a void:Linkset ;
+    void:target :reactome-rdf ;
+    void:triples "469870"^^xsd:integer ;
+ .
+
+:uniprotkb a void:Linkset ;
+    void:target :reactome-rdf ;
+    void:triples "100793"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Reactome_Consortium"^^xsd:string ;
+ .
+

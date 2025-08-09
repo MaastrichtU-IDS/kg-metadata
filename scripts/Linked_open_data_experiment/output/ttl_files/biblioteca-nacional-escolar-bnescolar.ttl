@@ -75,7 +75,7 @@ Elle est divisée en trois sections : Art, Dessins des enfants de la guerre et A
 """@en ;
 
     void:triples "426746"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

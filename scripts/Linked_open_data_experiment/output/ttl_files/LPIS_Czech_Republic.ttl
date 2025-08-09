@@ -37,7 +37,7 @@ This dataset contains land parcel and cadastral data collected from czech republ
     ] ;
     void:uriSpace <https://w3id.org/foodie/open/cz/pLPIS_180616_WGS/> ;
     void:triples "24491282"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

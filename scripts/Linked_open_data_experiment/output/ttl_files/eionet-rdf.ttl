@@ -45,7 +45,7 @@ An overview of available datasets can be obtained from the [VoID file](http://rd
 
     foaf:page <http://rdfdata.eionet.europa.eu/> ;
     void:triples "26729925"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://rdfdata.eionet.europa.eu/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

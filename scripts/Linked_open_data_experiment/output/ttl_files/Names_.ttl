@@ -23,7 +23,7 @@ Hidden
         prov:agent  :OwnerAgent ;
         dcat:hadRole :owner ;
     ] ;
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

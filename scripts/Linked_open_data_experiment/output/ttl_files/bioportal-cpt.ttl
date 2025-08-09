@@ -55,7 +55,7 @@ Current Procedural Terminology
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1504> ;
     void:triples "76229"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -55,7 +55,7 @@ MedlinePlus Health Topics;National Library of Medicine;June 14, 2008;Bethesda, M
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1347> ;
     void:triples "94291"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

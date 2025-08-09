@@ -108,7 +108,7 @@ The CNR ontology can be queried through the SPARQL Endpoint by selecting http://
 
     foaf:page <http://data.cnr.it/site/> ;
     void:triples "2762278"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://www.cnr.it/ontology/cnr/individuo/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

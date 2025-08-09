@@ -52,7 +52,7 @@ http://klappstuhlclub.de/sparql
 
     foaf:page <http://klappstuhlclub.de> ;
     void:triples "1032"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -173,7 +173,7 @@ WormBase is an online bioinformatics database of the biology and genome of the m
 
     foaf:page <http://wormbase.bio2rdf.org/> ;
     void:triples "22682002"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/wormbase:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

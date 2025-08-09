@@ -1,0 +1,65 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:university-plymouth-reading-lists a dcat:Dataset ;
+    dcat:keyword "education", "format-dc", "format-rdf", "format-sioc", "higher-education", "lod", "lodcloud-diagram-2011-09-19", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "no-vocab-mappings", "publications", "published-by-producer", "talis" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title_main "University_of_Plymouth_Reading_Lists" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://lists.lib.plymouth.ac.uk/lists/marn304> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://lists.lib.plymouth.ac.uk/lists/eoe3217> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    dct:description_main """
+Search for lists, modules & courses
+
+  
+Browse hierarchy | Recent changes
+"""@en ;
+
+    foaf:page <http://lists.lib.plymouth.ac.uk/> ;
+    void:triples "441476"^^xsd:integer ;
+    void:uriSpace <http://lists.lib.plymouth.ac.uk/lists/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:openlibrary a void:Linkset ;
+    void:target :university-plymouth-reading-lists ;
+    void:triples "5675"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Ian_Davis"^^xsd:string ;
+     foaf:Cmbox <mailto:ian.davis@talis.com> ; 
+ .
+

@@ -29,7 +29,7 @@ Semantic Wiki of PlanetData Project
 """@en ;
 
     foaf:page <http://planet-data.eu> ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

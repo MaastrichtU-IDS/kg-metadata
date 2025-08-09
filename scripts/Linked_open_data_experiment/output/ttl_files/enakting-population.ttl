@@ -45,7 +45,7 @@ Dates from mid 2001 to mid 2007.
 
     foaf:page <http://population.psi.enakting.org/> ;
     void:triples "2316831"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://population.psi.enakting.org/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

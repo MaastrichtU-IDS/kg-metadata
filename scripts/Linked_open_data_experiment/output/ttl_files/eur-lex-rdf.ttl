@@ -55,7 +55,7 @@ EUR-Lex provides access to documents published in the Official Journal of the Eu
 
     foaf:page <http://eur-lex.publicdata.eu/> ;
     void:triples "3412252"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://eur-lex.publicdata.eu/ontology/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

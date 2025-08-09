@@ -67,7 +67,7 @@ OK
 """@en ;
 
     void:triples "69033"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://n2t.net/ark:/99152/p0> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

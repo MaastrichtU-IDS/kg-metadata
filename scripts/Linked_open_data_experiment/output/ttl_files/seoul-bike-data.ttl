@@ -48,7 +48,7 @@ This dataset contains data from the seoul, Korea about bike rental et al.
     ] ;
     void:uriSpace <http://ec2-13-125-246-132.ap-northeast-2.compute.amazonaws.com/DAV/home/takheekim/rdf_sink/bike.ttl> ;
     void:triples "15746"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

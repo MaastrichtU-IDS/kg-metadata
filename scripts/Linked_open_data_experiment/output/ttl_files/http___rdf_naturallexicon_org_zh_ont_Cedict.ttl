@@ -52,7 +52,7 @@ Original source: https://www.mdbg.net/chinese/export/cedict/cedict_1_0_ts_utf-8_
         dcat:hadRole :owner ;
     ] ;
     void:triples "2353589"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     void:exampleResource [
         dcat:mediaType "text/html;_charset=utf-8" ;
         dct:description """

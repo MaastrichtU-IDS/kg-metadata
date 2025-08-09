@@ -101,7 +101,7 @@ Data cube containing statistical data about social service facilities and nursin
 
     foaf:page <http://data.czso.cz/resource/dataset/social-service-facilities> ;
     void:triples "5794"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://data.czso.cz/resource/observation/social-service-facilities/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

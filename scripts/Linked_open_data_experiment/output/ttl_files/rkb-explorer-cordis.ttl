@@ -76,7 +76,7 @@ FAIL (HTTPConnectionPool(host='cordis.rkbexplorer.com', port=80): Max retries ex
 
     foaf:page <http://cordis.rkbexplorer.com> ;
     void:triples "3519823"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://cordis.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

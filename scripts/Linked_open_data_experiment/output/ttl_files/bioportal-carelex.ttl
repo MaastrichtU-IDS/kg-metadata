@@ -55,7 +55,7 @@ Categories and terms used to classify content (documents, images, etc) in electr
 
     foaf:page <http://bioportal.bioontology.org/ontologies/3008> ;
     void:triples "4140"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

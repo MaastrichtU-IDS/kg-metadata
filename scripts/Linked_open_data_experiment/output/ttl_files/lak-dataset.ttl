@@ -76,7 +76,7 @@ The LAK dataset provides access to structured fulltext and metadata from key res
 
     foaf:page <http://www.solaresearch.org/resources/lak-dataset/> ;
     void:triples "27843"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://data.linkededucation.org/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

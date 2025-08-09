@@ -55,7 +55,7 @@ A controlled vocabulary to describe phenotypic traits in plants. Each trait is a
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1037> ;
     void:triples "13219"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

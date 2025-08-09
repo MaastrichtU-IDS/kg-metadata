@@ -55,7 +55,7 @@ The Software Ontology (SWO) has the scope of describing types of software used i
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1413> ;
     void:triples "18153"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

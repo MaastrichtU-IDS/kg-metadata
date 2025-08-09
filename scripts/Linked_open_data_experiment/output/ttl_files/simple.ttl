@@ -237,7 +237,7 @@ This dataset contains the conversion of the Italian SIMPLE lexicon in different 
 """@en ;
 
     void:triples "372294"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

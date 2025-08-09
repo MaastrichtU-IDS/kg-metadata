@@ -85,7 +85,7 @@ RDF representation of the Geological Timescale, as described in the Internationa
     ] ;
     foaf:page <https://github.com/CGI-IUGS/timescale-data> ;
     void:triples "15421"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://resource.geosciml.org/classifier/ics/ischart/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

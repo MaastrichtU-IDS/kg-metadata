@@ -28,7 +28,7 @@ FAIL (HTTPConnectionPool(host='sn.chromic.org', port=80): Max retries exceeded w
 StatusNet instance hosted at http://chromic.org
 """@en ;
 
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

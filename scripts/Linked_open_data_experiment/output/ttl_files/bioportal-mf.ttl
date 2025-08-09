@@ -57,7 +57,7 @@ The project is being developed with full involvement of all relevant communities
 
     foaf:page <http://bioportal.bioontology.org/ontologies/3002> ;
     void:triples "2766"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

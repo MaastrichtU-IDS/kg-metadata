@@ -101,7 +101,7 @@ Individuals and legal entities audited by Supreme Audit Office of the Czech Repu
 
     foaf:page <http://data.nku.cz/resource/dataset/audited-subjects> ;
     void:triples "42588"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://data.nku.cz/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

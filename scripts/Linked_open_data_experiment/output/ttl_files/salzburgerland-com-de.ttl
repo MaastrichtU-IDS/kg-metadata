@@ -42,7 +42,7 @@ Salzburgerland dataset for German resources, built with WordLift from the websit
     ] ;
     foaf:page <https://www.salzburgerland.com/de/> ;
     void:triples "28833"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

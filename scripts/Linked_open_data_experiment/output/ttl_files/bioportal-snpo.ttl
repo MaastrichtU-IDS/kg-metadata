@@ -55,7 +55,7 @@ SNP-Ontology is a domain ontology that provides a formal representation (OWL-DL)
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1058> ;
     void:triples "42131"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

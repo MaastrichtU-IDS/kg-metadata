@@ -53,7 +53,7 @@ SmartLink exposes Linked Data about publicly available Web services and Web APIs
 
     foaf:page <http://purl.org/smartlink> ;
     void:triples "2829"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://smartlink.open.ac.uk/smartlink/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

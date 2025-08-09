@@ -116,7 +116,7 @@ Hoa Thịnh Phát là đơn vị đi đầu trong lĩnh vực cung cấp và thi
 
     dct:title "Hoa_Thịnh_Phát" ;
     dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     void:uriSpace <Hoa_Thịnh_Phát> ;
     void:sparqlEndpoint [
         dct:identifier "2aed2592-2c6b-003f-3592-c0b266eb9e30" ;

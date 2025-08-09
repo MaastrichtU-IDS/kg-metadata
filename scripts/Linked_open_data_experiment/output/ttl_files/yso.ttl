@@ -51,7 +51,7 @@ General Finnish Ontology YSO is a trilingual ontology consisting mainly of gener
     ] ;
     void:uriSpace <http://www.yso.fi/onto/yso/> ;
     void:triples "570000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:exampleResource [
         dcat:mediaType "application/rdf+xml;_charset=utf-8" ;
         dct:description """

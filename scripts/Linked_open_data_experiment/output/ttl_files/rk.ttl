@@ -22,7 +22,7 @@ it is the ontology of equipment
         prov:agent  :OwnerAgent ;
         dcat:hadRole :owner ;
     ] ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

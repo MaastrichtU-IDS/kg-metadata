@@ -58,7 +58,7 @@ If you have any comments, questions or suggestions, please contact Yann Le Franc
 
     foaf:page <http://bioportal.bioontology.org/ontologies/3003> ;
     void:triples "3363"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

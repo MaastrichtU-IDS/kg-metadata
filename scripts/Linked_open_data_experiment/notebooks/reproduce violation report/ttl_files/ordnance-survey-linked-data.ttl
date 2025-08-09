@@ -1,0 +1,116 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ordnance-survey-linked-data a dcat:Dataset ;
+    dcat:keyword "country-uk", "deref-vocab", "format-admingeo", "format-dc", "format-foaf", "format-owl", "format-rdf", "format-spacerel", "geo", "geographic", "license-metadata", "lod", "lodcloud.nolinks", "no-vocab-mappings", "ordnance-survey", "postcode", "provenance-metadata", "published-by-producer", "sparql" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Ordnance_Survey_Linked_Data" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/turtle" ;
+        dct:description_exampleResource """
+The City of Southampton example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://data.ordnancesurvey.co.uk/id/7000000000037256> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Postcode example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://data.ordnancesurvey.co.uk/id/postcodeunit/SO164GU> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://api.talis.com/stores/ordnance-survey/services/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='api.talis.com', port=80): Max retries exceeded with url: /stores/ordnance-survey/services/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686c9c730>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://api.talis.com/stores/ordnance-survey/services/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='api.talis.com', port=80): Max retries exceeded with url: /stores/ordnance-survey/services/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686c9c5b0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "" ;
+        dct:description_distribution """
+Linked Data starting point
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://data.ordnancesurvey.co.uk/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD description
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://data.ordnancesurvey.co.uk/> ;
+    ] ;
+    dct:description_main """
+See also package:ordnance_survey.
+
+### Published data
+
+* Geographical data about England, Wales, and Scotland
+* Provides identifiers for counties, cities, wards, census areas
+* Provides identifiers for postcodes
+* Relationships between geographical areas (containment, borders)
+
+### Licence
+
+OS Open Data Licence
+
+> The following attribution statement applies to this licence:
+> Contains Ordnance Survey data © Crown copyright and database right 2010
+> These terms have been aligned to be interoperable with any Creative Commons Attribution 3.0
+Licence.
+
+"""@en ;
+
+    foaf:page <http://data.ordnancesurvey.co.uk/> ;
+    void:triples "2788872"^^xsd:integer ;
+    dcat:theme  <geography> ;
+    void:uriSpace <http://data.ordnancesurvey.co.uk/doc/postcodeunit/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Ordnance_Survey"^^xsd:string ;
+ .
+

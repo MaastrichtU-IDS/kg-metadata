@@ -88,7 +88,7 @@ Tenders in R&D from http://www.isvav.cz/ .
 
     foaf:page <http://linked.opendata.cz/resource/dataset/vavai/tenders> ;
     void:triples "39122"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://linked.opendata.cz/resource/domain/vavai/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

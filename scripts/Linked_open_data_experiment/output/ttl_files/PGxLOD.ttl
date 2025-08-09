@@ -36,7 +36,7 @@ PGxLOD groups data related to pharmacogenomics (PGx) from various sources such a
     ] ;
     void:uriSpace <http://pgxlod.loria.fr/resource/> ;
     void:triples "5262721"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:exampleResource [
         dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
         dct:description """

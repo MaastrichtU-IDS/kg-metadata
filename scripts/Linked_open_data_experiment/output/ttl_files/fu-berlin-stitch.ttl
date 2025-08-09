@@ -41,7 +41,7 @@ Linked Data version of STITCH which contains information on chemicals and protei
 
     foaf:page <http://www4.wiwiss.fu-berlin.de/stitch/> ;
     void:triples "55099700"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://www4.wiwiss.fu-berlin.de/stitch/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

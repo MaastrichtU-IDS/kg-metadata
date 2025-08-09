@@ -1,0 +1,128 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:gesis-thesoz a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-dc", "format-rdf", "format-skos", "format-skosxl", "germany", "library", "license-metadata", "linkeddata", "lld", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "provenance-metadata", "publications", "published-by-producer", "social", "socialsciences", "thesaurus", "vocab-mappings", "void-sparql-endpoint" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title_main "TheSoz_Thesaurus_for_the_Social_Sciences_(GESIS)" ;
+    void:exampleResource [
+        dct:title_exampleResource "TheSoz_Example_Concept" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+Example Concept (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://lod.gesis.org/thesoz/concept/10041741> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "TheSoz_SPARQL_endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://lod.gesis.org/thesoz/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD file
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "voiD_file" ;
+        dcat:accessURL_distribution <http://lod.gesis.org/thesoz/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+Vocabulary Extensions
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Vocabulary_Extensions" ;
+        dcat:accessURL_distribution <http://lod.gesis.org/thesoz/ext/thesoz_ext.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Link to download page
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Download_RDF/XML" ;
+        dcat:accessURL_distribution <http://www.gesis.org/en/services/research/thesauri-und-klassifikationen/social-science-thesaurus/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+Link to RDF/Turtle download file
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Download_RDF/Turtle" ;
+        dcat:accessURL_distribution <http://www.etracker.de/lnkcnt.php?et=qPKGYV&url=http%3A%2F%2Fwww.gesis.org%2Ffileadmin%2Fupload%2Fdienstleistung%2Ftools_standards%2Fthesoz_skos_turtle.zip&lnkname=fileadmin%2Fupload%2Fdienstleistung%2Ftools_standards%2Fthesoz_skos_turtle.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "mapping/rdfs" ;
+        dct:description_distribution """
+Vocabulary Mappings to SKOS and SKOS-XL
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Vocabulary_Mappings" ;
+        dcat:accessURL_distribution <http://lod.gesis.org/thesoz/vocabulary-mappings.ttl> ;
+    ] ;
+    dct:description_main """
+The Thesaurus for the Social Sciences (Thesaurus Sozialwissenschaften) contains about 12,000 entries, of which more than 8,000 are descriptors (authorised keywords) and about 4,000 non-descriptors. Topics in all of the social science disciplines are included. This SKOS version of the thesaurus uses also SKOS-XL and additionally defined extensions.
+
+"""@en ;
+
+    foaf:page <http://lod.gesis.org/thesoz/> ;
+    void:triples "438901"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://lod.gesis.org/thesoz/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:agrovoc-skos a void:Linkset ;
+    void:target :gesis-thesoz ;
+    void:triples "846"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :gesis-thesoz ;
+    void:triples "5024"^^xsd:integer ;
+ .
+
+:stw-thesaurus-for-economics a void:Linkset ;
+    void:target :gesis-thesoz ;
+    void:triples "5294"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "GESISLeibniz_Institute_for_the_Social_Sciences"^^xsd:string ;
+     foaf:Cmbox <mailto:http://www.gesis.org/> ; 
+ .
+

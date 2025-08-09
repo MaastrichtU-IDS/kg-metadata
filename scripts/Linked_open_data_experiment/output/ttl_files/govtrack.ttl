@@ -64,7 +64,7 @@ U.S. Congress data including all Members of Congress since the beginning of the 
 
     foaf:page <http://www.govtrack.us> ;
     void:triples "13000000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://www.rdfabout.com/rdf/usgov/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

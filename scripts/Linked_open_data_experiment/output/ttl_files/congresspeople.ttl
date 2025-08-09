@@ -30,7 +30,7 @@ The 2011 US congress people data, with ntriples format. Could benefit from conne
 """@en ;
 
     foaf:page <http://www.contactingthecongress.org/> ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://logd.tw.rpi.edu/source/contactingthecongress/dataset/directory-for-the-112th-congress/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -46,7 +46,7 @@ My ontology test
         dcat:hadRole :owner ;
     ] ;
     foaf:page <http://example.org> ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

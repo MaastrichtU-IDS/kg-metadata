@@ -49,7 +49,7 @@ No dereferenceable URIs found.
 
     foaf:page <http://knoesis.wright.edu/library/ontologies/swetodblp/> ;
     void:triples "11000000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://lsdis.cs.uga.edu/projects/semdis/opus#> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

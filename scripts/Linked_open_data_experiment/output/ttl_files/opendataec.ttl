@@ -42,7 +42,7 @@ Nelson Piedra @nopiedra
 """@en ;
 
     void:triples "1276020"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://data.utpl.edu.ec/ecuadorresearch/lod/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

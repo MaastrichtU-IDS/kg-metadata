@@ -55,7 +55,7 @@ The Interaction Network Ontology (INO) is an ontology in the domain of interacti
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1515> ;
     void:triples "6107"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

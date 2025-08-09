@@ -25,7 +25,7 @@ SudershanTech is a Multinational Educational Technology Company, Headquarters in
     ] ;
     foaf:page <http://sudershantech.com/> ;
     void:triples "0"^^xsd:integer ;
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

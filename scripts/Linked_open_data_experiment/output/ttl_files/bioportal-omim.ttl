@@ -55,7 +55,7 @@ Online Mendelian Inheritance in Man, OMIM (TM). McKusick-Nathans Institute for G
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1348> ;
     void:triples "754767"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

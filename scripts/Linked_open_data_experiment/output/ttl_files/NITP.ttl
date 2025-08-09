@@ -63,7 +63,7 @@ This dataset contains information about National Institute of Technology, Patna
 OK
 """ ;
     ] ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <foaf,_rdf,_rdfs,_dct,_dbo,_dbr> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

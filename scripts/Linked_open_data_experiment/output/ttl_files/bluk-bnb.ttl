@@ -184,7 +184,7 @@ Current release of approximately 3.9 million descriptions (146,901,135 triples) 
 
     foaf:page <http://bnb.data.bl.uk> ;
     void:triples "146901135"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://bnb.data.bl.uk/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

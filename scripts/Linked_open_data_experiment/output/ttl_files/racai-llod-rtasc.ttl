@@ -49,7 +49,7 @@ RTASC is a Romanian bi-modal corpus (text and speech) of read sentences, contain
 
     dct:title "ROBIN_Technical_Acquisition_Speech_Corpus" ;
     dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:sparqlEndpoint [
         dct:identifier "6ddc57eb-def0-85fe-acff-14903705e4a9" ;
         dct:title "RTASC_SPARQL_endpoint" ;

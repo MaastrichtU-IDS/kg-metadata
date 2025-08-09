@@ -49,7 +49,7 @@ RDF version of the PubChem database.
     ] ;
     foaf:page <https://pubchem.ncbi.nlm.nih.gov/> ;
     void:triples "80535498217"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

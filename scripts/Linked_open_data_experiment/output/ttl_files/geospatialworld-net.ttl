@@ -36,7 +36,7 @@ Geo Spatial World dataset for English resources, built with WordLift from the we
 
     foaf:page <https://www.geospatialworld.net/> ;
     void:triples "27017"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

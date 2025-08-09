@@ -44,7 +44,7 @@ The Ontos News Portal extracts facts (objects as e. g. persons or organizations 
 
     foaf:page <http://news.ontos.com> ;
     void:triples "2677965"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://www.ontosearch.com/2008/01/identification#> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

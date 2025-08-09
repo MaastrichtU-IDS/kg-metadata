@@ -64,7 +64,7 @@ Monthly published data on expenditure over £500 including VAT of Lichfield Dist
 
     foaf:page <http://spending.lichfielddc.gov.uk> ;
     void:triples "93839"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

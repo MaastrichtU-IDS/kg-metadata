@@ -123,7 +123,7 @@ Bathing water quality assessment data for England and Wales from the Environment
 
     foaf:page <http://environment.data.gov.uk/lab> ;
     void:triples "8735962"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://environment.data.gov.uk/data/bathing-water-quality/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

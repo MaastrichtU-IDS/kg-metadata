@@ -28,7 +28,7 @@ FAIL (HTTPConnectionPool(host='somsants.net', port=80): Max retries exceeded wit
 StatusNet instance hosted at http://somsants.net
 """@en ;
 
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

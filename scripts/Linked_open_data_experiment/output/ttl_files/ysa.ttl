@@ -48,7 +48,7 @@ YSA is a general thesaurus in Finnish which covers all fields of research and kn
     ] ;
     foaf:page <http://finto.fi/ysa/> ;
     void:triples "390000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://www.yso.fi/onto/ysa/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

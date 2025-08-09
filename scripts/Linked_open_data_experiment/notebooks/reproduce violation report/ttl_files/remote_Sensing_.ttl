@@ -1,0 +1,81 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:remote_Sensing_ a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html" ;
+        dct:description_distribution """
+
+""" ;
+        dcat:downloadURL_distribution <http://weegee.vision.ucmerced.edu/datasets/landuse.html> ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:identifier_distribution "b553a227-a1fe-aa84-78d9-a416416bc1b9" ;
+        dct:title_distribution "This_is_a_21_class_land_use_image_dataset_meant_for_research_purposes.__There_are_100_images_for_each_of_the_following_classes:__agricultural_airplane_baseballdiamond_beach_buildings_chaparral_denseresidential_forest_freeway_golfcourse_harbor_intersection_mediumresidential_mobilehomepark_overpass_parkinglot_river_runway_sparseresidential_storagetanks_tenniscourt_Each_image_measures_256x256_pixels.__The_images_were_manually_extracted_from_large_images_from_the_USGS_National_Map_Urban_Area_Imagery_collection_for_various_urban_areas_around_the_country._The_pixel_resolution_of_this_public_domain_imagery_is_1_foot." ;
+    ] ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Land_use_merced_dataset" ;
+    dct:description_main """
+This is a 21 class land use image dataset meant for research purposes.
+
+There are 100 images for each of the following classes:
+
+agricultural
+airplane
+baseballdiamond
+beach
+buildings
+chaparral
+denseresidential
+forest
+freeway
+golfcourse
+harbor
+intersection
+mediumresidential
+mobilehomepark
+overpass
+parkinglot
+river
+runway
+sparseresidential
+storagetanks
+tenniscourt
+Each image measures 256x256 pixels.
+
+The images were manually extracted from large images from the USGS National Map Urban Area Imagery collection for various urban areas around the country. The pixel resolution of this public domain imagery is 1 foot.
+"""@en ;
+
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    foaf:page <http://weegee.vision.ucmerced.edu/datasets/landuse.html> ;
+    dcat:theme  <geography> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:946039836@qq.com> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "陈影"^^xsd:string ;
+     foaf:Cmbox <mailto:946039836@qq.com> ; 
+ .
+

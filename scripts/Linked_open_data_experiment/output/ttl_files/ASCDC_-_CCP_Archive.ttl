@@ -84,7 +84,7 @@ Webpage of ASCDC LODDatasets for downloads of entire published LOD-based dataset
 FAIL (400)
 """ ;
     ] ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://data.ascdc.tw/archive/ith/ccp/> ;
     void:sparqlEndpoint [
         dct:identifier "49e22211-1138-662a-197a-5f633e918c06" ;

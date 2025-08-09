@@ -54,7 +54,7 @@ El premio anual "Edublogs" pretende valorar la importancia y repercusión de los
 """@en ;
 
     void:triples "286653"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

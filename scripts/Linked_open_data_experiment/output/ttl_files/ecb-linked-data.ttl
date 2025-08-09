@@ -77,7 +77,7 @@ ECB data and metadata
 
     foaf:page <http://ecb.270a.info/> ;
     void:triples "242000000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://ecb.270a.info/dataset/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

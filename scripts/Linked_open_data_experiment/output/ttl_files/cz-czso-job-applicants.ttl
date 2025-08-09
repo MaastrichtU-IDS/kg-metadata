@@ -101,7 +101,7 @@ Data cube containing statistical data about job applicants in regions of Czech r
 
     foaf:page <http://data.czso.cz/resource/dataset/job-applicants> ;
     void:triples "12978"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://data.czso.cz/resource/observation/job-applicants/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

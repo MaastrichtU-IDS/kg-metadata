@@ -66,7 +66,7 @@ Information about Indiana University faculty and staff across, available as RDF 
 
     foaf:page <http://vivo.iu.edu> ;
     void:triples "500000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://vivo.iu.edu/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

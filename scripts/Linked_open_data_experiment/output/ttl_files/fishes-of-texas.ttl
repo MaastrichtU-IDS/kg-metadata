@@ -47,7 +47,7 @@ A SPARQL endpoint is planned here: [http://data.fishesoftexas.org/sparql](http:/
 
     foaf:page <http://data.fishesoftexas.org> ;
     void:triples "528897"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://data.fishesoftexas.org:8080/fish/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

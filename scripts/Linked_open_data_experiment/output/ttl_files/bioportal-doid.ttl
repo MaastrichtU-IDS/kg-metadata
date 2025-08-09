@@ -55,7 +55,7 @@ Creating a comprehensive hierarchical controlled vocabulary for human disease re
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1009> ;
     void:triples "179543"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

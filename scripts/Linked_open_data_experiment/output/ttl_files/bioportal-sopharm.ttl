@@ -55,7 +55,7 @@ SO-Pharm (Suggested Ontology for Pharmacogenomics) is a domain ontology implemen
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1061> ;
     void:triples "358171"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -55,7 +55,7 @@ an ontology to describe the entities and relationships in SysMO-DB, a Systems Bi
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1488> ;
     void:triples "1533"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

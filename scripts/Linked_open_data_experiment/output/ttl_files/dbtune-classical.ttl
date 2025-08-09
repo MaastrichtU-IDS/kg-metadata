@@ -44,7 +44,7 @@ This resource provides inter-linking via owl:sameAs to appropriate resources in 
 
     foaf:page <http://dbtune.org/classical/> ;
     void:triples "390845"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://dbtune.org/classical/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

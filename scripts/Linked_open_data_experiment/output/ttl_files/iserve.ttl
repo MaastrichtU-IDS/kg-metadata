@@ -66,7 +66,7 @@ iServe is the place on the Web where linked data meets services. In a nutshell, 
 
     foaf:page <http://iserve.kmi.open.ac.uk/> ;
     void:triples "2239738"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://iserve.kmi.open.ac.uk/iserve/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

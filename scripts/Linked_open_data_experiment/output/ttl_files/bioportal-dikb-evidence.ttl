@@ -57,7 +57,7 @@ Boyce R, Collins C, Horn J, Kalet I. Computing with evidence Part I: A drug-mech
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1672> ;
     void:triples "2278"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

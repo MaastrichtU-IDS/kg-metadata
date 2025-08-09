@@ -101,7 +101,7 @@ This dataset contains numbers of inhabitants in districts of Czech Republic in a
 
     foaf:page <http://data.czso.cz/resource/dataset/demography-in-regions-czech-republic-age-categories> ;
     void:triples "158464"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://data.czso.cz/resource/observation/demography-in-regions-czech-republic-age-categories/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

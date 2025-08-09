@@ -348,7 +348,7 @@ The objective of the GND is to form a modern, web-compatible authority file whic
     ] ;
     foaf:page <https://www.dnb.de/lds> ;
     void:triples "165639860"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <https://d-nb.info/gnd/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

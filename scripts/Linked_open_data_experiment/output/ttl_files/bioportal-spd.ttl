@@ -55,7 +55,7 @@ An ontology for spider comparative biology including anatomical parts (e.g. leg,
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1091> ;
     void:triples "6606"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

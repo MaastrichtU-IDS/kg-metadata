@@ -99,7 +99,7 @@ Dataset contains linked data version of the registry of territorial identificati
 
     foaf:page <https://ruian.linked.opendata.cz/zdroj/datová-sada/rúian> ;
     void:triples "869506642"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <https://ruian.linked.opendata.cz/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

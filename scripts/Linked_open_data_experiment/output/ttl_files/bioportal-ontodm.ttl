@@ -55,7 +55,7 @@ OntoDM is a generic ontology for the domain of data mining. The ontology include
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1638> ;
     void:triples "7425"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

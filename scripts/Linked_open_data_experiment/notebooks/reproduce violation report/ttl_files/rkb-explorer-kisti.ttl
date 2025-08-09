@@ -1,0 +1,224 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:rkb-explorer-kisti a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-dc", "format-foaf", "format-rdf", "format-scovo", "format-void", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-vocab-mappings", "provenance-metadata", "publications", "published-by-third-party", "test", "void-sparql-endpoint" ;
+    dct:title_main "Korean_Institute_of_Science_Technology_and_Information_(RKBExplorer)" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://kisti.rkbexplorer.com/id/PER_00000000000000131417> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='kisti.rkbexplorer.com', port=80): Max retries exceeded with url: /id/PER_00000000000000131417 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db4fd0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://kisti.rkbexplorer.com/sparql/> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='kisti.rkbexplorer.com', port=80): Max retries exceeded with url: /sparql/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db7190>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/xml" ;
+        dct:description_distribution """
+XML Sitemap
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='kisti.rkbexplorer.com', port=80): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db7040>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://kisti.rkbexplorer.com/sitemap.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD file
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://kisti.rkbexplorer.com/models/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-gzip" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='kisti.rkbexplorer.com', port=80): Max retries exceeded with url: /models/dump.tgz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db5840>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title_distribution "Download_(tar_gzip_of_RDF)" ;
+        dcat:accessURL_distribution <http://kisti.rkbexplorer.com/models/dump.tgz> ;
+    ] ;
+    dct:description_main """
+
+"""@en ;
+
+    foaf:page <http://kisti.rkbexplorer.com> ;
+    void:triples "12815726"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://kisti.rkbexplorer.com/id/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:rkb-explorer-acm a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "63800"^^xsd:integer ;
+ .
+
+:rkb-explorer-budapest a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "31"^^xsd:integer ;
+ .
+
+:rkb-explorer-citeseer a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "183945"^^xsd:integer ;
+ .
+
+:rkb-explorer-cordis a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:rkb-explorer-curriculum a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-dblp a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "106009"^^xsd:integer ;
+ .
+
+:rkb-explorer-dotac a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:rkb-explorer-eprints a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "43"^^xsd:integer ;
+ .
+
+:rkb-explorer-eurecom a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:rkb-explorer-ft a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-ibm a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "101"^^xsd:integer ;
+ .
+
+:rkb-explorer-ieee a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "561"^^xsd:integer ;
+ .
+
+:rkb-explorer-irit a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "155"^^xsd:integer ;
+ .
+
+:rkb-explorer-italy a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:rkb-explorer-jisc a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-laas a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:rkb-explorer-lisbon a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-newcastle a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "239"^^xsd:integer ;
+ .
+
+:rkb-explorer-oai a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "6"^^xsd:integer ;
+ .
+
+:rkb-explorer-pisa a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:rkb-explorer-rae2001 a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:rkb-explorer-resex a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:rkb-explorer-roma a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:rkb-explorer-southampton a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "695"^^xsd:integer ;
+ .
+
+:rkb-explorer-ulm a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:rkb-explorer-wiki a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:semantic-web-dog-food a void:Linkset ;
+    void:target :rkb-explorer-kisti ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Hugh_Glaser"^^xsd:string ;
+     foaf:Cmbox <mailto:hg@ecs.soton.ac.uk> ; 
+ .
+

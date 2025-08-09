@@ -55,7 +55,7 @@ Including the disease names. phenotypes and their classifications involved in Gl
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1085> ;
     void:triples "530"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -37,7 +37,7 @@ This is the Basque EuroWordNet-Lemon lexicon. The lexicon was created from the S
 """@en ;
 
     void:triples "1215583"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

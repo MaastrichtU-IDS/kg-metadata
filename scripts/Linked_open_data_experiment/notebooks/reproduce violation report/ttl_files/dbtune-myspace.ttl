@@ -1,0 +1,61 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:dbtune-myspace a dcat:Dataset ;
+    dcat:keyword "dbtune", "format-rdf", "lod", "lodcloud.needsfixing", "media", "music", "myspace", "no-deref-vocab", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "published-by-third-party", "socialnetwork" ;
+    dct:title_main "DBTune.org_MySpace_RDF_Service" ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "None" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://dbtune.org/myspace/sparql/> ;
+        adms:status_sparqlEndpoint """
+FAIL (404)
+""" ;
+    ] ;
+    dct:description_main """
+This service provides a live RDF representation of [Myspace](http://myspace.com/) users. If the user is also an artist, then the corresponding tracks in the streaming audio cache are included in the RDF. Note that only the top friends of the target Myspace user are included in the RDF.
+
+This representations is designed using the Music Ontology, FOAF, and a small Myspace Ontology.
+
+### Issues
+
+Triple count is a wild guess based on assumption of 10 triples for each of the 66M MySpace users.
+
+All the links are down, marking for removal.
+
+As of July 21, 2011:
+Unfortunately due to changes in the MySpace pages, the DBtune MySpace service will be down indefinitely. Sorry for inconvenience. If you have time to help fix the service you can join the MoTools project of SF or email kurtjx at gmail.
+"""@en ;
+
+    foaf:page <http://dbtune.org/myspace/> ;
+    void:triples "660000000"^^xsd:integer ;
+    dcat:theme  <social_networking> ;
+    void:uriSpace <http://dbtune.org/myspace/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames-semantic-web a void:Linkset ;
+    void:target :dbtune-myspace ;
+    void:triples "232"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Kurt_Jacobson"^^xsd:string ;
+     foaf:Cmbox <mailto:kurtjx@gmail.com> ; 
+ .
+

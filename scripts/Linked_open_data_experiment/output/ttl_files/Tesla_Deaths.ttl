@@ -49,7 +49,7 @@ Tesla Deaths is a digital record of Tesla accidents that involved a driver, occu
 OK
 """ ;
     ] ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

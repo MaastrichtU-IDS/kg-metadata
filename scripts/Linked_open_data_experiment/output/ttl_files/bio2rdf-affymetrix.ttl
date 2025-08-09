@@ -125,7 +125,7 @@ This dataset contains the probesets used in the Affymetrix microarrays.
 
     foaf:page <http://affymetrix.bio2rdf.org/> ;
     void:triples "86942371"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/affymetrix:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

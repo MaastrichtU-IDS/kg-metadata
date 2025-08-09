@@ -37,7 +37,7 @@ Stock data from Norway, transformed and published as Linked Data. Data source wa
     ] ;
     void:uriSpace <http://standardgraphs.ices.dk/stocks/> ;
     void:triples "1270280"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

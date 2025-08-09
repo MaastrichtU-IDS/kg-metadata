@@ -37,7 +37,7 @@ Indian Publishing  Website
 
     dct:title "Prior_Panel" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <Prior_Panel> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

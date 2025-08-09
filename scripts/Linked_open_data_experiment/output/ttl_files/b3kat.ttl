@@ -141,7 +141,7 @@ Joint Union Catalogue of 200 academic libraries in the german states of Bavaria,
     ] ;
     foaf:page <http://lod.b3kat.de> ;
     void:triples "1022898443"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://lod.b3kat.de/title/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

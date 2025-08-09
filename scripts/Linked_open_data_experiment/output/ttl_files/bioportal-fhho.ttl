@@ -55,7 +55,7 @@ The FHHO facilitates representing the family health histories of persons related
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1126> ;
     void:triples "6639"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

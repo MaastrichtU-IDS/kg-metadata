@@ -123,7 +123,7 @@ More detail is provided at: <http://www.bne.es/es/Catalogos/DatosEnlazados/Fuent
 
     foaf:page <http://datos.bne.es> ;
     void:triples "58053215"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://datos.bne.es/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

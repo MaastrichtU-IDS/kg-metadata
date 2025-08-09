@@ -173,7 +173,7 @@ The NCBI taxonomy database contains the names of all organisms that are represen
 
     foaf:page <http://taxonomy.bio2rdf.org/> ;
     void:triples "21310356"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/taxonomy:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

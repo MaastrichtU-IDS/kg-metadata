@@ -55,7 +55,7 @@ A comprehensive proteomics data and process provenance ontology.
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1039> ;
     void:triples "2807"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

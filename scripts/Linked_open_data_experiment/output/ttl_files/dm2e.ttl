@@ -30,7 +30,7 @@ OK
 Metadata about digitalised manuscripts coming from the DM2E project (http://dm2e.eu). 
 """@en ;
 
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://dm2e.eu/data> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

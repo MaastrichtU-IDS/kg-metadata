@@ -76,7 +76,7 @@ This is one of several semantic repositories that contains and publishes RDF lin
 
     foaf:page <http://webconf.rkbexplorer.com> ;
     void:triples "167923"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://webconf.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

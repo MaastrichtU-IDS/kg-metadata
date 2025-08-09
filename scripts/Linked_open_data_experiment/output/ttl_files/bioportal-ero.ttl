@@ -55,7 +55,7 @@ This ontology models research resources such instruments. protocols, reagents, a
 
     foaf:page <http://bioportal.bioontology.org/ontologies/3016> ;
     void:triples "25228"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

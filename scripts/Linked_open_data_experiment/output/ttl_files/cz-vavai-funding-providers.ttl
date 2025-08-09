@@ -88,7 +88,7 @@ State funding providers for R&D from http://www.isvav.cz/ .
 
     foaf:page <http://linked.opendata.cz/resource/dataset/vavai/funding-providers> ;
     void:triples "315"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://linked.opendata.cz/resource/domain/vavai/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

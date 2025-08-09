@@ -71,7 +71,7 @@ See: http://www.eagle-i.net/
 
     foaf:page <http://utsa.eagle-i.net> ;
     void:triples "2300"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://utsa.eagle-i.net/i/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

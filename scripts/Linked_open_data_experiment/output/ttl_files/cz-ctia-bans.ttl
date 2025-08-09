@@ -88,7 +88,7 @@ Basic information about bans issued by the Czech Trade Inspection Authority
 
     foaf:page <http://linked.opendata.cz/resource/dataset/coi.cz/zakazy> ;
     void:triples "458039"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://linked.opendata.cz/resource/domain/coi.cz/ban/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

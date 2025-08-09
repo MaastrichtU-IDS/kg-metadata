@@ -57,7 +57,7 @@ Source: <a href="http://www.who.int/classifications/icf/en/">http://www.who.int/
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1411> ;
     void:triples "28475"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

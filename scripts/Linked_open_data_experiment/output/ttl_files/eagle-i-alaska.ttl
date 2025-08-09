@@ -71,7 +71,7 @@ See: http://www.eagle-i.net/
 
     foaf:page <http://alaska.eagle-i.net> ;
     void:triples "15000"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://alaska.eagle-i.net/i/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

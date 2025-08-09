@@ -49,7 +49,7 @@ English WordNet is a new wordnet for English based on the Princeton WordNet, but
         prov:agent  :OwnerAgent ;
         dcat:hadRole :owner ;
     ] ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     void:exampleResource [
         dcat:mediaType "text/turtle" ;
         dct:description """

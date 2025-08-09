@@ -59,7 +59,7 @@ SBO is a project of the BioModels.net effort and is developed through community 
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1046> ;
     void:triples "4572"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

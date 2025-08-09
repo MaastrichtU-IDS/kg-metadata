@@ -55,7 +55,7 @@ A taxonomic classification of living organisms and associated artifacts for thei
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1132> ;
     void:triples "4154130"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

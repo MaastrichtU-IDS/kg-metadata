@@ -55,7 +55,7 @@ The VIVO ontology represents researchers in the context of their experience, out
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1699> ;
     void:triples "4988"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

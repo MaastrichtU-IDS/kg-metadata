@@ -77,7 +77,7 @@ FAIL (HTTPConnectionPool(host='deepblue.rkbexplorer.com', port=80): Max retries 
 
     foaf:page <http://deepblue.rkbexplorer.com> ;
     void:triples "39421"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://deepblue.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

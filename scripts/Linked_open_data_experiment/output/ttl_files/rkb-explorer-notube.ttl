@@ -52,7 +52,7 @@ This co-reference store has been provided for use by the NoTube semantic televis
 """@en ;
 
     foaf:page <http://notube.rkbexplorer.com> ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

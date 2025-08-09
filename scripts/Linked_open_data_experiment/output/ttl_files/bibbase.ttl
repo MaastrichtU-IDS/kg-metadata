@@ -65,7 +65,7 @@ BibBase.org facilitates the dissemination of scientific publications over the In
 
     foaf:page <http://data.bibbase.org> ;
     void:triples "200000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://data.bibbase.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -87,7 +87,7 @@ es un directorio que permite realizar búsquedas facetadas sobre una colección 
 
     foaf:page <http://museos.gnoss.com/comunidad/mismuseos/> ;
     void:triples "79065"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://museos.gnoss.com/comunidad/mismuseos/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

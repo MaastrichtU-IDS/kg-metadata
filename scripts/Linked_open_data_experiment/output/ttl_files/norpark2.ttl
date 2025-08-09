@@ -70,7 +70,7 @@ Original data source in JSON format
 FAIL (203)
 """ ;
     ] ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://norpark.ml/> ;
     void:sparqlEndpoint [
         dct:identifier "94799d9b-380c-c3ec-38d7-90d7e004e1fa" ;

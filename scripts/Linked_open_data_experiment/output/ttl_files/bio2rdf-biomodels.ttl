@@ -125,7 +125,7 @@ BioModels Database is a data resource that allows biologists to store, search an
 
     foaf:page <http://biomodels.bio2rdf.org/> ;
     void:triples "2380009"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/biomodels:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

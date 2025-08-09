@@ -1,0 +1,55 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ISSN__0080-3626_ a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        dcat:downloadURL_distribution <http://rocznikibiblioteczne.ibi.uni.wroc.pl/woluminy/tom-i-zeszyty-1-2-1957/> ;
+        dct:title_distribution "Aktualne_zagadnienia_klasyfikacji_map" ;
+        dct:identifier_distribution "ec759eb0-eff0-87e8-67a0-0f76409d47f8" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+    ] ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "Aktualne_zagadnienia_klasyfikacji_map" ;
+    dct:description_main """
+Rozprawa Mikołaja Dzikowskiego na temat typów oraz katalogów dotyczących map
+"""@en ;
+
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    foaf:page <http://rocznikibiblioteczne.ibi.uni.wroc.pl/woluminy/tom-i-zeszyty-1-2-1957/> ;
+    void:triples "1"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:bar199741@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Instytut_Informacji_Naukowej_i_Bibliotekoznawstwa_Uniwersytetu_Wrocławskiego"^^xsd:string ;
+     foaf:Cmbox <mailto:roczniki.biblioteczne@uwr.edu.pl> ; 
+ .
+

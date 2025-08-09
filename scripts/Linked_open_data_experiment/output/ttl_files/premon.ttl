@@ -76,7 +76,7 @@ Predicate Model For Ontologies (2018a version)
     ] ;
     void:uriSpace <pm> ;
     void:triples "32611819"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     void:exampleResource [
         dcat:mediaType "text/html;_charset=UTF-8" ;
         dct:description """

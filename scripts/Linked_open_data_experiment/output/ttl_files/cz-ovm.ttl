@@ -76,7 +76,7 @@ This dataset contains detailed information about every institution of public pow
 
     foaf:page <https://linked.opendata.cz/zdroj/datová-sada/ovm> ;
     void:triples "1351432"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <https://linked.opendata.cz/zdroj/ovm/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

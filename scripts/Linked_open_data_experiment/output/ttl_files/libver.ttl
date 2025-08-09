@@ -89,7 +89,7 @@ Public Library of Veroia Linked Open Data Project. This is the first effort of a
 
     foaf:page <http://libver.math.auth.gr> ;
     void:triples "1285417"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://libver.math.auth.gr/resource> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

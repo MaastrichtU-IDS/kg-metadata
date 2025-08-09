@@ -45,7 +45,7 @@ Please note: Data is not yet complete.
 
     foaf:page <http://ta.sandrart.net/edition-information/services/linked-open-data-rdf/> ;
     void:triples "140000"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -28,7 +28,7 @@ FAIL (500)
 Providing information on market indices as Linked Data. 
 """@en ;
 
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

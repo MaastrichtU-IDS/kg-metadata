@@ -55,7 +55,7 @@ Links to DBpedia and Wikipedia are also provided for the municipalities.
 
     foaf:page <http://onki.fi/en/browser/overview/kunnat> ;
     void:triples "11380"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://www.yso.fi/onto/kunnat/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

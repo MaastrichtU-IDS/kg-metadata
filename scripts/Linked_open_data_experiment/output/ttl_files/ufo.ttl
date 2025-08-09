@@ -62,7 +62,7 @@ This dataset contains Unified Foundational Ontology (UFO), a top-level ontology 
     ] ;
     void:uriSpace <http://onto.fel.cvut.cz/ontologies/ufo/> ;
     void:triples "1000"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:exampleResource [
         dct:title "KindAn_example_of_a_UFO_vocabulary_term." ;
         dct:description """

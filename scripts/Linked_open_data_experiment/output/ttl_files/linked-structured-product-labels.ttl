@@ -103,7 +103,7 @@ NOTE: This resource shows content present in the Structured Product Labels provi
 
     foaf:page <http://purl.org/net/linkedSPLs> ;
     void:triples "13"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

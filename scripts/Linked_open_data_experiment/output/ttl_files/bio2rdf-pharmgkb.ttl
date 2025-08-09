@@ -185,7 +185,7 @@ PharmGKB curates primary genotype and phenotype data, annotates gene variants an
 
     foaf:page <http://pharmgkb.bio2rdf.org/> ;
     void:triples "278049209"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/pharmgkb:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

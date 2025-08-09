@@ -1,0 +1,82 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:http___rdf_naturallexicon_org_zh_ont_Cedict a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+The contents of the original https://www.mdbg.net/chinese/export/cedict/cedict_1_0_ts_utf-8_mdbg.txt.gz, translated to RDF.
+""" ;
+        dcat:downloadURL_distribution <https://github.com/ont-app/cedict/blob/master/data/cedict_1_0_ts_utf-8_mdbg.ttl.gz> ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "cedict_1_0_ts_utf-8_mdbg" ;
+        dct:identifier_distribution "658513da-b9b2-0301-3072-6008d28f7054" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Defines the schema informing cedict_1_0_ts_utf-8_mdbg. Aligned to Ontolex.
+""" ;
+        dcat:downloadURL_distribution <https://github.com/ont-app/cedict/blob/master/data/cedict-schema.ttl> ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "cedict-schema" ;
+        dct:identifier_distribution "ff69a7f9-1fdc-6edd-f2ae-a6d539ceadf7" ;
+    ] ;
+    foaf:page <https://github.com/ont-app/cedict> ;
+    dcat:keyword "Chinese", "Chinese-English", "bilingual_dictionary" ;
+    dct:license <https://creativecommons.org/licenses/by-sa/3.0/> ;
+    dct:title_main "CEDICT" ;
+    dct:description_main """
+An RDF translation of the original CEDICT , which is written in
+  its own tabular format.
+Original source: https://www.mdbg.net/chinese/export/cedict/cedict_1_0_ts_utf-8_mdbg.txt.gz, from https://www.mdbg.net/chinese/dictionary?page=cedict
+"""@en ;
+
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    void:triples "2353589"^^xsd:integer ;
+    dcat:theme  <linguistics> ;
+    void:exampleResource [
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+An excerpt relating to the entry for "王" in CEDICT
+""" ;
+        adms:status_exampleResource """
+OK
+""" ;
+        dct:title_exampleResource "CEDICT_test_sample" ;
+        dcat:accessURL_exampleResource <https://github.com/ont-app/cedict/blob/master/data/test-sample.ttl> ;
+    ] ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Oname "Eric_Scott"^^xsd:string ;
+     foaf:Ombox <mailto:eric.scott@acm.org> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Eric_Scott"^^xsd:string ;
+     foaf:Cmbox <mailto:cedict@ericdscott.com> ; 
+ .
+

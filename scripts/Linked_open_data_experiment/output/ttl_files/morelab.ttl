@@ -54,7 +54,7 @@ Data is available in RDF format through resolvable URIs and a SPARQL endpoint.
 
     foaf:page <http://www.morelab.deusto.es> ;
     void:triples "3561"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://www.morelab.deusto.es/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

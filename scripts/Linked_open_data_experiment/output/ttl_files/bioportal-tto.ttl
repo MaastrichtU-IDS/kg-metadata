@@ -55,7 +55,7 @@ The Teleost taxonomy ontology is being used to facilitate annotation of phenotyp
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1081> ;
     void:triples "611539"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

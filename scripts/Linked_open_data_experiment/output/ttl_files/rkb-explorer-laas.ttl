@@ -76,7 +76,7 @@ FAIL (HTTPConnectionPool(host='laas.rkbexplorer.com', port=80): Max retries exce
 
     foaf:page <http://laas.rkbexplorer.com> ;
     void:triples "52312"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://laas.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

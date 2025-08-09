@@ -55,7 +55,7 @@ Logical Observation Identifier Names and Codes (LOINC);Version 2.26;January 2, 2
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1350> ;
     void:triples "4037280"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

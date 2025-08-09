@@ -33,7 +33,7 @@ It is ontology based dataset. developed by Ronak Panchal
         dcat:hadRole :owner ;
     ] ;
     foaf:page <http://www.ronuphdswaishe.org/> ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

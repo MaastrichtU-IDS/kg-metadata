@@ -36,7 +36,7 @@ Freeyork dataset, built with WordLift from the website https://freeyork.org/
 
     foaf:page <https://freeyork.org/> ;
     void:triples "118183"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

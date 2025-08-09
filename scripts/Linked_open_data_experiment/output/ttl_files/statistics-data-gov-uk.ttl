@@ -70,7 +70,7 @@ The various areas are typed using classes in the following namespaces:
 
     foaf:page <http://statistics.data.gov.uk/> ;
     void:triples "343733"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://statistics.data.gov.uk/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

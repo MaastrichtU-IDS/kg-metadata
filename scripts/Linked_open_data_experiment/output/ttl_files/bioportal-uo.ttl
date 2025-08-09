@@ -55,7 +55,7 @@ Metrical units for use in conjunction with PATO
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1112> ;
     void:triples "5038"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

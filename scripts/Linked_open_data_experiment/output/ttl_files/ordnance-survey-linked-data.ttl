@@ -103,7 +103,7 @@ Licence.
 
     foaf:page <http://data.ordnancesurvey.co.uk/> ;
     void:triples "2788872"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://data.ordnancesurvey.co.uk/doc/postcodeunit/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

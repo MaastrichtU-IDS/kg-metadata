@@ -77,7 +77,7 @@ A lexical database documenting translations among lexemes of language varieties.
 
     foaf:page <http://panlex.org> ;
     void:triples "786205297"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     void:uriSpace <http://ld.panlex.org/plx/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

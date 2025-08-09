@@ -122,7 +122,7 @@ Open linked data from the Museum of Fine Arts Budapest
 
     foaf:page <http://www.szepmuveszeti.hu> ;
     void:triples "334699"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://data.szepmuveszeti.hu/id/collections/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

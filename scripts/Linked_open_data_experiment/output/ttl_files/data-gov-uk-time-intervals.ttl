@@ -77,7 +77,7 @@ Part of package:reference-data-gov-uk
 
     foaf:page <http://www.epimorphics.com/web/wiki/using-interval-set-uris-statistical-data> ;
     void:triples "1000000000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://reference.data.gov.uk/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

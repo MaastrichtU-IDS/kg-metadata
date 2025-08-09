@@ -101,7 +101,7 @@ DBpedia Japanese is a part of the DBpedia internationzation effort. Datasets of 
 
     foaf:page <http://ja.dbpedia.org/> ;
     void:triples "70790371"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://ja.dbpedia.org/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

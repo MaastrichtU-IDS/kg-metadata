@@ -130,7 +130,7 @@ We use SKOS, FOAF, DC and RDA vocabularies, in a FRBR model.
 
     foaf:page <http://data.bnf.fr> ;
     void:triples "409712948"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://data.bnf.fr/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

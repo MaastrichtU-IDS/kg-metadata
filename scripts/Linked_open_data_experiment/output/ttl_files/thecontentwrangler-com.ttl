@@ -36,7 +36,7 @@ The Content Wrangler dataset, built with WordLift from the website https://theco
 
     foaf:page <https://thecontentwrangler.com/> ;
     void:triples "3914"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

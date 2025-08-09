@@ -135,7 +135,7 @@ ASJP collects 40 words from 5500 languages in a simplified phonetic representati
 
     foaf:page <cldbstest.eva.mpg.de/asjp> ;
     void:triples "5000000"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

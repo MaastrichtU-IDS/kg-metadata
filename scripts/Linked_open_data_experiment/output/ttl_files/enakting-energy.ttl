@@ -44,7 +44,7 @@ UK's Road Transportation consumption data provided by the UK Department for Busi
 
     foaf:page <http://energy.psi.enakting.org/> ;
     void:triples "2316831"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://energy.psi.enakting.org/def/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

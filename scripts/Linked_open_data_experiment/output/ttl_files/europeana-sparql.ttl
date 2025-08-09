@@ -87,7 +87,7 @@ Continuing development as part of @eCreativeEU
 """@en ;
 
     void:triples "3798446742"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://data.europeana.eu/item/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

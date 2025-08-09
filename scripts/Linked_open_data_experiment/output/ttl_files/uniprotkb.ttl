@@ -48,7 +48,7 @@ UniProtKB is the central hub for the collection of functional information on pro
     ] ;
     foaf:page <https://www.uniprot.org/uniprot/> ;
     void:triples "55343596553"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://purl.uniprot.org/uniprot/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

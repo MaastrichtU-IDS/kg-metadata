@@ -1,0 +1,94 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:googleart-wrapper a dcat:Dataset ;
+    dcat:keyword "art", "crossdomain", "format-dbp", "format-dc", "format-foaf", "format-rdf", "latc", "lod", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "opendatachallenge", "published-by-third-party" ;
+    dct:title_main "GoogleArt_wrapper" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-ntriples" ;
+        dct:description_distribution """
+Data dump
+""" ;
+        adms:status_distribution """
+FAIL (403)
+""" ;
+        dct:title_distribution "" ;
+        dcat:downloadURL_distribution <https://github.com/downloads/cgueret/GoogleArt-wrapper/gartwrapper.nq.gz> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource (Night Watch)
+""" ;
+        dcat:accessURL_exampleResource <http://linkeddata.few.vu.nl/googleart/museums/rijks/night-watch> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='linkeddata.few.vu.nl', port=80): Max retries exceeded with url: /googleart/museums/rijks/night-watch (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db64d0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource (The birth of Venus)
+""" ;
+        dcat:accessURL_exampleResource <http://linkeddata.few.vu.nl/googleart/museums/uffizi/the-birth-of-venus> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='linkeddata.few.vu.nl', port=80): Max retries exceeded with url: /googleart/museums/uffizi/the-birth-of-venus (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db7370>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource (Rijks Museum)
+""" ;
+        dcat:accessURL_exampleResource <http://linkeddata.few.vu.nl/googleart/museums/rijks> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='linkeddata.few.vu.nl', port=80): Max retries exceeded with url: /googleart/museums/rijks (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db68c0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource (Uffizi Gallery)
+""" ;
+        dcat:accessURL_exampleResource <http://linkeddata.few.vu.nl/googleart/museums/uffizi> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='linkeddata.few.vu.nl', port=80): Max retries exceeded with url: /googleart/museums/uffizi (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db7f70>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dct:description_main """
+The GoogleArtProject is a place to explore museums from around the world, seeing and learning about the artwork they contain. It is a cool service, offering very high res images of the paintings, but not providing a machine-friendly access to the data shown. This server provides a wrapper around the HTML page for paintings and museums. It exposes part of the information using FOAF and Dublin Core ontologies and links the resource to DBpedia
+"""@en ;
+
+    foaf:page <http://linkeddata.few.vu.nl/googleart/> ;
+    void:triples "37717"^^xsd:integer ;
+    void:uriSpace <http://linkeddata.few.vu.nl/googleart/museums/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :googleart-wrapper ;
+    void:triples "1632"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Christophe_Guéret"^^xsd:string ;
+     foaf:Cmbox <mailto:c.d.m.gueret@vu.nl> ; 
+ .
+

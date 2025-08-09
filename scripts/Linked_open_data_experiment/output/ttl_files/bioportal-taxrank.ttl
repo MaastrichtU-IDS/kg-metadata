@@ -55,7 +55,7 @@ A vocabulary of taxonomic ranks intended to replace the sets of rank terms found
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1419> ;
     void:triples "384"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

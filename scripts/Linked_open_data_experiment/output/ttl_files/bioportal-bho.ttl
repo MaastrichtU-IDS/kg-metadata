@@ -55,7 +55,7 @@ An application ontology devoted to the standardized recording of phenotypic data
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1116> ;
     void:triples "6526"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

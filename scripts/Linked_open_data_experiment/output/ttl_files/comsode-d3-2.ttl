@@ -135,7 +135,7 @@ Requirements on the COMSODE project based on selected datasets
 
     foaf:page <http://comsode.eu/resource/dataset/COMSODE_D3.2> ;
     void:triples "27572"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://comsode.eu/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

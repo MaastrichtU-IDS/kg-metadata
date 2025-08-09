@@ -76,7 +76,7 @@ Currently, Lark contains about 22.4K SPARQL query patterns for 2.7K adjectives o
     ] ;
     foaf:page <http://ws.nju.edu.cn/adj2sp/> ;
     void:triples "145596"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

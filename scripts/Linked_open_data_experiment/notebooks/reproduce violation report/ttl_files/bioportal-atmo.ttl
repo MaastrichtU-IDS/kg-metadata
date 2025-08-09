@@ -1,0 +1,161 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bioportal-atmo a dcat:Dataset ;
+    dcat:keyword "biomedicine", "bioportal", "format-obo", "format-rdf", "lod", "ontology", "published-by-third-party" ;
+    dct:title_main "African_Traditional_Medicine" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+REST API Wiki Documentation
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+SPARQL endpoint
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://sparql.bioontology.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;charset=utf-8" ;
+        dct:description_distribution """
+Download link, BioPortal API KEY is required
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://rest.bioontology.org/bioportal/ontologies/download/40223?apikey=BP_API_KEY> ;
+    ] ;
+    dct:description_main """
+African Traditional Medicine Ontology (ATMO) describes the actors' function (healer, fetishist or soothsayer); the different types of proposed process treatment, the symptom's roles and the disease consideration.
+"""@en ;
+
+    foaf:page <http://bioportal.bioontology.org/ontologies/1099> ;
+    void:triples "1460"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-canco a void:Linkset ;
+    void:target :bioportal-atmo ;
+    void:triples "24"^^xsd:integer ;
+ .
+
+:bioportal-csp a void:Linkset ;
+    void:target :bioportal-atmo ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-doid a void:Linkset ;
+    void:target :bioportal-atmo ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-efo a void:Linkset ;
+    void:target :bioportal-atmo ;
+    void:triples "18"^^xsd:integer ;
+ .
+
+:bioportal-ehda a void:Linkset ;
+    void:target :bioportal-atmo ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-gaz a void:Linkset ;
+    void:target :bioportal-atmo ;
+    void:triples "46"^^xsd:integer ;
+ .
+
+:bioportal-hl7 a void:Linkset ;
+    void:target :bioportal-atmo ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-lnc a void:Linkset ;
+    void:target :bioportal-atmo ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:bioportal-mccl_x1 a void:Linkset ;
+    void:target :bioportal-atmo ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-mcv a void:Linkset ;
+    void:target :bioportal-atmo ;
+    void:triples "41"^^xsd:integer ;
+ .
+
+:bioportal-mesh-owl a void:Linkset ;
+    void:target :bioportal-atmo ;
+    void:triples "108"^^xsd:integer ;
+ .
+
+:bioportal-msh a void:Linkset ;
+    void:target :bioportal-atmo ;
+    void:triples "82"^^xsd:integer ;
+ .
+
+:bioportal-natpro a void:Linkset ;
+    void:target :bioportal-atmo ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-ncit a void:Linkset ;
+    void:target :bioportal-atmo ;
+    void:triples "100"^^xsd:integer ;
+ .
+
+:bioportal-nif a void:Linkset ;
+    void:target :bioportal-atmo ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:bioportal-pma a void:Linkset ;
+    void:target :bioportal-atmo ;
+    void:triples "44"^^xsd:integer ;
+ .
+
+:bioportal-rcd a void:Linkset ;
+    void:target :bioportal-atmo ;
+    void:triples "89"^^xsd:integer ;
+ .
+
+:bioportal-rs a void:Linkset ;
+    void:target :bioportal-atmo ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-snomedct a void:Linkset ;
+    void:target :bioportal-atmo ;
+    void:triples "138"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Ghislain_Atemezing"^^xsd:string ;
+ .
+

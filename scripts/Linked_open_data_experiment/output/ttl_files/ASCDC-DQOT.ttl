@@ -85,7 +85,7 @@ Webpage of ASCDC LODDatasets for downloads of entire published LOD-based dataset
 FAIL (400)
 """ ;
     ] ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://data.ascdc.tw/OfficialPosition/DQOT/> ;
     void:sparqlEndpoint [
         dct:identifier "30b6c86d-655e-11dc-29cd-65bc3bf17d3d" ;

@@ -55,7 +55,7 @@ Human Genome Organisation (HUGO) Gene Nomenclature Committee at the European Bio
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1528> ;
     void:triples "898855"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

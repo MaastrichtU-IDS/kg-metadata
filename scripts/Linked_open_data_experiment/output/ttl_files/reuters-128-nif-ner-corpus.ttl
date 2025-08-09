@@ -64,7 +64,7 @@ cause those are always preceded by the full company name respectively a personâ€
 """@en ;
 
     void:triples "6967"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

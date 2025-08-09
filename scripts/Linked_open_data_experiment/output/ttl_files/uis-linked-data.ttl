@@ -76,7 +76,7 @@ UIS  data and metadata
 """@en ;
 
     void:triples "10400000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://uis.270a.info/dataset/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

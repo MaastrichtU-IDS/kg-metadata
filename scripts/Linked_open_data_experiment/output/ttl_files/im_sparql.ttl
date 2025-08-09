@@ -52,7 +52,7 @@ WebやアプリからSPARQLで検索・利用可能なエンドポイント
         dcat:hadRole :owner ;
     ] ;
     void:triples "78728"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -83,7 +83,7 @@ From website:
 
     foaf:page <http://data.nytimes.com/> ;
     void:triples "345889"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://data.nytimes.com/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

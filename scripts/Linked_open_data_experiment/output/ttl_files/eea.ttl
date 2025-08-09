@@ -66,7 +66,7 @@ The dataset contains metadata for various items published on the portal; reports
 
     foaf:page <http://www.eea.europa.eu/> ;
     void:triples "1137236"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://www.eea.europa.eu/publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

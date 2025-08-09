@@ -58,7 +58,7 @@ http://linkedlifedata.com/sparql
 
     foaf:page <http://linkedlifedata.com/> ;
     void:triples "5120886447"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://linkedlifedata.com/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

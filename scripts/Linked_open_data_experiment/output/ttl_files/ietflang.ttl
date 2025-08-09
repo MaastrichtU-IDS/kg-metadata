@@ -30,7 +30,7 @@ Mapping from IETF language tags (aka. RFC 4646 or BCP 47) to Lexvo, Glottolog, W
 """@en ;
 
     void:triples "100000"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

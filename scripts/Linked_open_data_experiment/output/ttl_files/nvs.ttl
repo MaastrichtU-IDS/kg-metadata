@@ -127,7 +127,7 @@ All of the vocabularies are fully versioned and a permanent record is kept of al
 
     foaf:page <http://vocab.nerc.ac.uk/> ;
     void:triples "1122000"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://vocab.nerc.ac.uk/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

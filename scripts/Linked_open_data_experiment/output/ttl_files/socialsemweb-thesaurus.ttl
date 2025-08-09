@@ -65,7 +65,7 @@ People, organisations, applications and technologies etc. relevant for the area 
 
     foaf:page <http://vocabulary.semantic-web.at/PoolParty/wiki/semweb> ;
     void:triples "20000"^^xsd:integer ;
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     void:uriSpace <http://vocabulary.semantic-web.at/semweb/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

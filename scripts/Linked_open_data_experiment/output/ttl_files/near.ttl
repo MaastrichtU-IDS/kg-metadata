@@ -57,7 +57,7 @@ The Near dataset provides "near" links connecting points of interest that are ge
 
     foaf:page <http://beta.kasabi.com/dataset/near> ;
     void:triples "335022481"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

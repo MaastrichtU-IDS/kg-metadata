@@ -68,7 +68,7 @@ Linked data on all Pokemon in the [Pokedex](http://www.upokecenter.com/dex/)
 
     foaf:page <http://pokedex.dataincubator.org/> ;
     void:triples "26134"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://pokedex.dataincubator.org/pokemon/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

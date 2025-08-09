@@ -153,7 +153,7 @@ Thorough statistics can be found on the DBpedia website and general information 
 
     foaf:page <http://dbpedia.org/> ;
     void:triples "9500000000"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://dbpedia.org/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

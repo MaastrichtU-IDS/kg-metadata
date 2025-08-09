@@ -122,7 +122,7 @@ http://reference.data.gov.uk/doc/mp
 
     foaf:page <http://reference.data.gov.uk/> ;
     void:triples "45809"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://reference.data.gov.uk/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

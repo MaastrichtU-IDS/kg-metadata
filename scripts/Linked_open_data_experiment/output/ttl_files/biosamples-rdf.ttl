@@ -51,7 +51,7 @@ The BioSamples database aggregates sample information for reference samples (e.g
 """@en ;
 
     void:triples "136323595"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://rdf.ebi.ac.uk/resource/biosamples/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

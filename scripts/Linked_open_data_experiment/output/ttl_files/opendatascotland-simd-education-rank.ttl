@@ -28,7 +28,7 @@ FAIL (HTTPConnectionPool(host='data.opendatascotland.org', port=80): Max retries
 None
 """@en ;
 
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

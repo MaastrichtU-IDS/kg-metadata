@@ -28,7 +28,7 @@ FAIL (HTTPConnectionPool(host='statusnet.glou.org', port=80): Max retries exceed
 StatusNet instance hosted at http://glou.org
 """@en ;
 
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

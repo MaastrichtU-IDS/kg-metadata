@@ -53,7 +53,7 @@ FAIL (HTTPConnectionPool(host='data.mmlab.be', port=80): Max retries exceeded wi
 Linked Open Data from Multimedia Lab, a research group of Ghent University ? iMinds, Belgium.
 """@en ;
 
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -76,7 +76,7 @@ IMF data and metadata
 """@en ;
 
     void:triples "36000000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://imf.270a.info/dataset/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

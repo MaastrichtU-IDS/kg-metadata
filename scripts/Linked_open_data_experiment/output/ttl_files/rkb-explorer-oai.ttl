@@ -76,7 +76,7 @@ OK
 
     foaf:page <http://oai.rkbexplorer.com> ;
     void:triples "24206591"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://oai.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

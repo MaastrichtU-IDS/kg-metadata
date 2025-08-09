@@ -100,7 +100,7 @@ All Eurostat statistics, converted to RDF and re-published using [Linked Data pr
 
     foaf:page <http://eurostat.linked-statistics.org/> ;
     void:triples "8000000000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://eurostat.linked-statistics.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

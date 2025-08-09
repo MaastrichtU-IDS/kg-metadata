@@ -87,7 +87,7 @@ Part of package:data-gov-uk
 
     foaf:page <http://research.data.gov.uk/> ;
     void:triples "43334"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://research.data.gov.uk/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

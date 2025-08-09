@@ -87,7 +87,7 @@ FAIL (HTTPConnectionPool(host='unlocode.rkbexplorer.com', port=80): Max retries 
 
     foaf:page <http://unlocode.rkbexplorer.com> ;
     void:triples "371549"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://unlocode.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

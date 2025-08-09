@@ -55,7 +55,7 @@ The Time Event Ontology (TEO) is an ontology for representing events, time, and 
 
     foaf:page <http://bioportal.bioontology.org/ontologies/3042> ;
     void:triples "9032"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

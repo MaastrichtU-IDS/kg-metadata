@@ -59,7 +59,7 @@ The data is the usage catalogue for the Gunnerus Library Special Collections, an
 
     foaf:page <http://api.talis.com/stores/gunnbib-digitalmanuskripter> ;
     void:triples "3569"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://www.ntnu.no/ub/digital/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

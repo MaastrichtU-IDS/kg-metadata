@@ -819,7 +819,7 @@ Collection of the datasets used by papers published in [IEEE VIS](http://ieeevis
 
     foaf:page <http://ieeevis.tw.rpi.edu> ;
     void:triples "19935340"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://ieeevis.tw.rpi.edu/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

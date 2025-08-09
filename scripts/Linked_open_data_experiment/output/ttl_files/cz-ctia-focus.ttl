@@ -76,7 +76,7 @@ Focus of the Czech Trade Inspection Authority's inspections
 
     foaf:page <http://linked.opendata.cz/resource/dataset/coi.cz/zamereni> ;
     void:triples "470924"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://linked.opendata.cz/resource/domain/coi.cz/check-action/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -123,7 +123,7 @@ AemetLinked Data (.es) is an open initiative of the Ontology Engineering Group (
 
     foaf:page <http://aemet.linkeddata.es/> ;
     void:triples "62932032"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://aemet.linkeddata.es/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

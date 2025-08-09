@@ -40,7 +40,7 @@ Unfortunately due to changes in the MySpace pages, the DBtune MySpace service wi
 
     foaf:page <http://dbtune.org/myspace/> ;
     void:triples "660000000"^^xsd:integer ;
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     void:uriSpace <http://dbtune.org/myspace/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

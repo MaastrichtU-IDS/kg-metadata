@@ -55,7 +55,7 @@ FYPO is a formal ontology of phenotypes observed in fission yeast. FYPO is being
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1689> ;
     void:triples "33885"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

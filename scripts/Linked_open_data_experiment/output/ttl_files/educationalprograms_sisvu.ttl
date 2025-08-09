@@ -88,7 +88,7 @@ Semantic ISVU (SISVU) aims to thoroughly describe study programmes offered by IS
 
     foaf:page <http://kent.zpr.fer.hr:8080/educationalProgram/> ;
     void:triples "2373863"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://kent.zpr.fer.hr:8080/educationalProgram/resource> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

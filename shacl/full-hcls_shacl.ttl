@@ -14,11 +14,15 @@
 @prefix mod: <https://w3id.org/mod#>.
 @prefix adms:<http://www.w3.org/ns/adms#>.
 @prefix cito: <http://purl.org/spar/cito> .
+
 :DCATDatasetShape
     a sh:NodeShape ;
     sh:targetClass dcat:Dataset ;
     sh:closed true ;
-    sh:ignoredProperties ( rdf:type ) ;
+    sh:ignoredProperties (
+       rdf:type
+       void:target
+              ) ;
 
     
     sh:property [
@@ -218,6 +222,13 @@
     ];
 
     sh:property [
+        sh:path dcat:theme;
+        sh:nodeKind sh:IRI ;
+        sh:description "The main category of the resource. A resource can have multiple themes." ;
+        sh:example <open-knowledge-graph>;
+    ];
+
+    sh:property [
         sh:path dct:references ;
         sh:nodeKind sh:IRI ;
         sh:description "To provide references for the KG." ;
@@ -340,6 +351,14 @@
                 sh:datatype xsd:string ;
                 sh:description "A name given to the distribution." ;
             ] ;
+            
+            sh:property [
+                sh:path dct:identifier ;
+                sh:nodeKind sh:IRIOrLiteral;
+                sh:description "The identifier for distribution." ;
+                sh:example "d06f074b-0ac7-b28a-b835-2939a443395d"^^xsd:string ;
+             ];
+
             sh:property [
                 sh:path dct:description ;
                 sh:minCount 1 ;

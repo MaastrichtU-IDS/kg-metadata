@@ -64,7 +64,7 @@ duplicate:national-diet-library-authorities
 
     foaf:page <http://id.ndl.go.jp/auth/ndlsh> ;
     void:triples "1294669"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://id.ndl.go.jp/auth/ndlsh/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

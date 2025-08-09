@@ -1,0 +1,91 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:traditional-korean-medicine a dcat:Dataset ;
+    dcat:keyword "format-ncbitaxon", "lifesciences", "linked-data", "lod", "medicines", "no-deref-vocab", "no-provenance-metadata", "no-vocab-mappings", "published-by-producer" ;
+    dct:license <http://www.opendefinition.org/licenses/gfdl> ;
+    dct:title_main "Traditional_Korean_Medicine_Ontology" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_(Panax_ginseng)_(file)" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://ontology.kiom.re.kr/ontology/ginseng_example.rdf> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='ontology.kiom.re.kr', port=80): Max retries exceeded with url: /ontology/ginseng_example.rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db7070>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_(Panax_ginseng)_(RDF/XML)" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://tkm.kiom.re.kr/ontology/get?query=MM%25E4%25BA%25BA%25E8%2594%2598> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='tkm.kiom.re.kr', port=80): Max retries exceeded with url: /ontology/get?query=MM%E4%BA%BA%E8%94%98 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db5ab0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://tkm.kiom.re.kr/ontology/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='tkm.kiom.re.kr', port=80): Max retries exceeded with url: /ontology/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db6200>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "RDF/XML_file_download" ;
+        dcat:accessURL_distribution <http://ontology.kiom.re.kr/ontology/lod.rdf> ;
+    ] ;
+    dct:description_main """
+Traditional Korean medicine (Hangul: 한의학, Hanja: 韓醫學) developed with the influence of other traditional medicine. Its techniques in treatment and diagnosis are both similar and unique to other traditional medicine. (Visit Wikipedia, http://en.wikipedia.org/wiki/Traditional_Korean_medicine.)
+
+"Ontology-based Traditional Korean Medicine Knowledge Framework" project is systematization of core knowledge of TKM and enhancing the applicability of the knowledge. This project is supported by Korean government and Korea Institute of Oriental Medicine is pursuing this project since 2009.
+
+To achieve this, our group is constructing ontology for TKM, in particular, patient status and medicinal treatment for them. The center is conceptualizing disease, pattern, symptom and medical test result to define patient status and medicinal materials, formulas, acupuncture and moxibustion for treatment method.
+
+For information about terms of traditional medicine in the area of East Asia, read this WHO standard, http://tkm.kiom.re.kr/ontology/doc/WHO-IST.pdf. This paper can be found at http://www.wpro.who.int/publications/PUB_9789290612487.htm. (Last check: Dec. 17th, 2009)
+
+As a first step for construction, the center is focusing on medicinal materials including biological materials (plants and animals), minerals (stone and metal resources).
+"""@en ;
+
+    foaf:page <http://tkm.kiom.re.kr> ;
+    void:triples "51932"^^xsd:integer ;
+    void:uriSpace <http://tkm.kiom.re.kr/tkmedicine> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-ncbitaxon a void:Linkset ;
+    void:target :traditional-korean-medicine ;
+    void:triples "2119"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Hyunchul_Jang"^^xsd:string ;
+     foaf:Cmbox <mailto:hcjang@kiom.re.kr> ; 
+ .
+

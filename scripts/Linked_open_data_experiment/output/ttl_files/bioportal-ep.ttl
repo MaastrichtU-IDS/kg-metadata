@@ -55,7 +55,7 @@ The Cardiac Electrophysiology Ontology contains terms describing single-channel 
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1142> ;
     void:triples "31827"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

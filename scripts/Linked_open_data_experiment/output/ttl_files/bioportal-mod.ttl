@@ -55,7 +55,7 @@ PSI-MOD is an ontology consisting of terms that describe protein chemical modifi
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1041> ;
     void:triples "49779"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

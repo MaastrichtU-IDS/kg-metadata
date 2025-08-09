@@ -55,7 +55,7 @@ National Drug File - Reference Terminology Public Inferred Edition, 2008_03_11
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1352> ;
     void:triples "1166537"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

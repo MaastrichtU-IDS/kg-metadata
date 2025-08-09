@@ -122,7 +122,7 @@ Open linked data from the Library and Museum of ARTIUM
 
     foaf:page <http://biblioteca.artium.org> ;
     void:triples "20055"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://aliada.scanbit.net:8891/id/collections/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

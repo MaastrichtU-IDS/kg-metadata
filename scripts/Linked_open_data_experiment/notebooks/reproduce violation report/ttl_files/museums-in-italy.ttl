@@ -1,0 +1,90 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:museums-in-italy a dcat:Dataset ;
+    dcat:keyword "country-italy", "crossdomain", "deref-vocab", "format-rdf", "format-vcard", "license-metadata", "linked-open-data", "linkeddata", "lod", "lodcloud-diagram-2011-09-19", "media", "museum", "provenance-metadata", "published-by-producer", "rdf", "void-sparql-endpoint" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "Italian_Museums" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://data.linkedopendata.it/musei/resource/Musei_Vaticani_Collezione_d%2527arte_religiosa_Moderna-Roma> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='data.linkedopendata.it', port=80): Max retries exceeded with url: /musei/resource/Musei_Vaticani_Collezione_d%27arte_religiosa_Moderna-Roma (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fc4f0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL enpdoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://sparql.linkedopendata.it/musei> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='sparql.linkedopendata.it', port=80): Max retries exceeded with url: /musei (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843ff100>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "rdf+xml" ;
+        dct:description_distribution """
+Download dump
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='dump.linkedopendata.it', port=80): Max retries exceeded with url: /musei (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fce50>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://dump.linkedopendata.it/musei> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD description
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='void.linkedopendata.it', port=80): Max retries exceeded with url: /musei (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fcbb0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://void.linkedopendata.it/musei> ;
+    ] ;
+    dct:description_main """
+List of geo-referenced italian museums. Places are linked to Geonames. Museum categories are linked to dbpedia.
+More info at [http://www.linkedopendata.it/datasets/musei](http://www.linkedopendata.it/datasets/musei)
+"""@en ;
+
+    foaf:page <http://www.linkedopendata.it/datasets/musei> ;
+    void:triples "49897"^^xsd:integer ;
+    dcat:theme  <cross_domain> ;
+    void:uriSpace <http://data.linkedopendata.it/data/musei/resource/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :museums-in-italy ;
+    void:triples "2894"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :museums-in-italy ;
+    void:triples "1570"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "linkedopendata.it"^^xsd:string ;
+     foaf:Cmbox <mailto:info@linkedopend@a.it> ; 
+ .
+

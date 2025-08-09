@@ -43,7 +43,7 @@ UK CO2 Emission data extracted from the spreadsheet 'Local and Regional CO2 Emis
 
     foaf:page <http://co2emission.psi.enakting.org/> ;
     void:triples "2316868"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://co2emission.psi.enakting.org/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

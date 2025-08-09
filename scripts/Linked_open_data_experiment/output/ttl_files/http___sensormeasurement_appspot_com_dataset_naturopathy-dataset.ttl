@@ -47,7 +47,7 @@ OK
         dcat:mediaType "application/octet-stream" ;
     ] ;
     dct:license <http://www.opendefinition.org/licenses/gfdl> ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://sensormeasurement.appspot.com/dataset/naturopathy-dataset> ;
     void:sparqlEndpoint [
         dct:identifier "fadaa0aa-72c2-d140-2518-1e735e0881c4" ;

@@ -55,7 +55,7 @@ AI/RHEUM is used for the diagnosis of rheumatologic diseases. AI/RHEUM contains 
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1430> ;
     void:triples "5528"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

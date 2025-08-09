@@ -36,7 +36,7 @@ SciGraph is the Springer Nature Linked Data platform that collates information f
 
     foaf:page <https://www.springernature.com/scigraph> ;
     void:triples "979658882"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

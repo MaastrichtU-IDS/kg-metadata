@@ -52,7 +52,7 @@ Data appears to be in public domain. [Disclaimer](http://www.ncbi.nlm.nih.gov/Ab
 
     foaf:page <http://www.ncbi.nlm.nih.gov/gene> ;
     void:triples "1327212"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -70,7 +70,7 @@ Please note: The ontology metrics displayed by BioPortal are incorrect as of 8/1
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1092> ;
     void:triples "7370"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

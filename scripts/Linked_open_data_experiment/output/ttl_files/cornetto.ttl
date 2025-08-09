@@ -48,7 +48,7 @@ Vossen, P., Maks, I., Segers, R., van der Vliet, H.: Integrating lexical units, 
 
     foaf:page <http://www2.let.vu.nl/oz/cltl/cornetto/> ;
     void:triples "792747"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     void:uriSpace <http://purl.org/vocabularies/cornetto/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

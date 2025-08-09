@@ -58,7 +58,7 @@ This is part of package:dbtune.
 
     foaf:page <http://dbtune.org/jamendo/> ;
     void:triples "1100000"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://dbtune.org/jamendo/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

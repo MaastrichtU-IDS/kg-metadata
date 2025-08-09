@@ -28,7 +28,7 @@ FAIL (HTTPConnectionPool(host='statusnet.mamalibre.com.ar', port=80): Max retrie
 StatusNet instance hosted at http://mamalibre.com.ar
 """@en ;
 
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -157,7 +157,7 @@ Good news, but no explicit license or complete dumps freely available without as
 
     foaf:page <http://viaf.org/viaf/data/> ;
     void:triples "200000000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://viaf.org/viaf/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

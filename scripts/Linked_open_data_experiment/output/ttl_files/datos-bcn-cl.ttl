@@ -81,7 +81,7 @@ Linked Open Data about Chile and the political environment of the country. Some 
     ] ;
     foaf:page <https://datos.bcn.cl/es/> ;
     void:triples "8285886"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://datos.bcn.cl/recurso/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

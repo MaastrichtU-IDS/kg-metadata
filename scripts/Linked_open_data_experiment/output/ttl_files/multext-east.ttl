@@ -45,7 +45,7 @@ From the web site: Version 4 of the MULTEXT-East resources, a multilingual datas
 
     foaf:page <http://nl.ijs.si/ME/V4/> ;
     void:triples "127651"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

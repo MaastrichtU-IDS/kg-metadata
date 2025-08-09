@@ -62,7 +62,7 @@ Different Creative Commons licenses are used for different datasets in SOCH. The
     ] ;
     foaf:page <http://www.ksamsok.se/in-english/> ;
     void:triples "1000000000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://kulturarvsdata.se/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

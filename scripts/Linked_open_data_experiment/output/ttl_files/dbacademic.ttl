@@ -48,7 +48,7 @@ academic dataset of educational institution
         dcat:hadRole :owner ;
     ] ;
     void:uriSpace <http://www.dbacademic.tech/resource> ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

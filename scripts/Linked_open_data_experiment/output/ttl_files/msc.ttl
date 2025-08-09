@@ -68,7 +68,7 @@ The license is CC-BY-NC-SA.
 
     foaf:page <http://msc2010.org/mscwork/> ;
     void:triples "14359"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://msc2010.org/resources/MSC/2010/msc2010/_> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

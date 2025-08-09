@@ -65,7 +65,7 @@ AGRIS is one of the most important world-wide information systems in the area of
 
     foaf:page <http://agris.fao.org/aos/records/info.html> ;
     void:triples "239565943"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

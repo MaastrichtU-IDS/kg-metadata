@@ -121,7 +121,7 @@ Contains descriptions of a variety of photographic images, using properties defi
 """@en ;
 
     void:triples "1011804"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

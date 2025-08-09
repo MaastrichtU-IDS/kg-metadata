@@ -55,7 +55,7 @@ This ontology contains the former BIRNLex-Disease, version 1.3.2. -- The BIRN Pr
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1381> ;
     void:triples "37171"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

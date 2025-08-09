@@ -76,7 +76,7 @@ From home page:
 
     foaf:page <http://www.rdfabout.com/demo/census/> ;
     void:triples "1002848918"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://www.rdfabout.com/rdf/usgov/geo/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

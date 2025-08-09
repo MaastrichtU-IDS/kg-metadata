@@ -52,7 +52,7 @@ Metadata about the SDG Ontology/KOS in a machine-accessible VoID/LIME file is av
 
     dct:title "A_Knowledge_Organization_System_for_the_United_Nations_Sustainable_Development_Goals" ;
     dct:license <http://www.opendefinition.org/licenses/odc-pddl> ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://metadata.un.org/sdg/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

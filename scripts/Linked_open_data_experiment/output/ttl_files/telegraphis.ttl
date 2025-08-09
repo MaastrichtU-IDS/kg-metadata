@@ -110,7 +110,7 @@ Sounds like the project is currently trying to resolve licensing issues:
 
     foaf:page <http://telegraphis.net/data/> ;
     void:triples "15257"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://telegraphis.net/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

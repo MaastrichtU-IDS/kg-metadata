@@ -55,7 +55,7 @@ Brucellosis Ontology is a biomedical ontology in the domain of zoonotic disease 
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1537> ;
     void:triples "17365"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

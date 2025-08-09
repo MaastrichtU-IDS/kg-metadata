@@ -71,7 +71,7 @@ Most of the data is accessible as XML, JSON and RDF through a simple API (just a
 
     foaf:page <http://openlylocal.com/> ;
     void:triples "10000000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://openlylocal.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

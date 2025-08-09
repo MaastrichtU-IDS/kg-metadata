@@ -95,7 +95,7 @@ Mapas interactivos trabaja con
 
     foaf:page <http://mapasinteractivos.didactalia.net/comunidad/mapasflashinteractivos> ;
     void:triples "90226"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://mapasinteractivos.didactalia.net/comunidad/mapasflashinteractivos> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

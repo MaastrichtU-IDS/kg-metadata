@@ -37,7 +37,7 @@ The Open Transport Map displays a road network which – is suitable for routing
     ] ;
     void:uriSpace <http://w3id.org/foodie/otm#> ;
     void:triples "154340785"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

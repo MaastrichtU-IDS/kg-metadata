@@ -90,7 +90,7 @@ Some links to DBPedia, with various levels of validity.
 
     foaf:page <http://data.open.ac.uk/> ;
     void:triples "1600000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://data.open.ac.uk/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

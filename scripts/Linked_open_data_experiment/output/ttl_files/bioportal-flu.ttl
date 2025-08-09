@@ -57,7 +57,7 @@ Consolidated influenza sequence and surveillance terms from resources such as th
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1417> ;
     void:triples "5425"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

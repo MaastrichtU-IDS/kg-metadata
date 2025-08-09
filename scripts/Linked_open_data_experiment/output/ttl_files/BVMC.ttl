@@ -39,7 +39,7 @@ The database content has been later mapped to RDF triples which employ mainly th
     ] ;
     void:uriSpace <http://data.cervantesvirtual.com/> ;
     void:triples "13000000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:exampleResource [
         dcat:mediaType "text/html;charset=UTF-8" ;
         dct:description """

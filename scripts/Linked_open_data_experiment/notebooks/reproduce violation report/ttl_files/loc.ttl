@@ -1,0 +1,62 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:loc a dcat:Dataset ;
+    dcat:keyword "aprilfools", "crossdomain", "ctic", "format-rdf", "lod", "no-proprietary-vocab", "published-by-third-party" ;
+    dct:title_main "Linked_Open_Colors" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_(red)" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example (red)
+""" ;
+        dcat:accessURL_exampleResource <http://purl.org/colors/rgb/ff0000> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "void" ;
+        dcat:accessURL_distribution <http://linkedopencolors.appspot.com/void.rdf> ;
+    ] ;
+    dct:description_main """
+Linked Open Colors, dataset created for the April Fools' Day of 2011 as an informal initiative for promoting Linked Data. 
+http://lists.w3.org/Archives/Public/public-lod/2011Apr/0003.html
+"""@en ;
+
+    foaf:page <http://linkedopencolors.appspot.com/> ;
+    void:triples "160000000"^^xsd:integer ;
+    void:uriSpace <http://purl.org/colors/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :loc ;
+    void:triples "16000000"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Sergio_Fernández"^^xsd:string ;
+     foaf:Cmbox <mailto:sergio.fernandez@fundacionctic.org> ; 
+ .
+

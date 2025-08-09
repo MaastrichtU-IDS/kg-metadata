@@ -38,7 +38,7 @@ This dataset contains agriculture related lands (hilucs_code<200) & for main cit
     ] ;
     void:uriSpace <http://w3id.org/foodie/atlas/> ;
     void:triples "19606088"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

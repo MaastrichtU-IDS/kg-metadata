@@ -37,7 +37,7 @@ own Semantic Web data.
 
     foaf:page <http://www4.wiwiss.fu-berlin.de/bizer/bookmashup/> ;
     void:triples "100000000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://www4.wiwiss.fu-berlin.de/bookmashup/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

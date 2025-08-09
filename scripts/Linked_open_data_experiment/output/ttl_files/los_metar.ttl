@@ -66,7 +66,7 @@ Airports producing METAR weather reports with URI scheme based on (pseudo-)ICAO 
 
     foaf:page <http://www.linkedopenservices.org/services/geo/SpatialResources/point/ICAO/> ;
     void:triples "75184"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://www.linkedopenservices.org/services/geo/SpatialResources/point/ICAO/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

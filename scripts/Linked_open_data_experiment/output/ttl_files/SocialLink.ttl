@@ -64,7 +64,7 @@ We present SocialLink, a publicly available Linked Open Data dataset that matche
     ] ;
     void:uriSpace <http://sociallink.futuro.media/ontology> ;
     void:triples "80101425"^^xsd:integer ;
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

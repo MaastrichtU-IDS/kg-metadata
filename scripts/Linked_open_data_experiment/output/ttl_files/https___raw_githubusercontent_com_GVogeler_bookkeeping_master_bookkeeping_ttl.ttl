@@ -36,7 +36,7 @@ Bookkeeping.  --- Warning: educational upload since vacuum about accounting data
 
     dct:title "Bookkeeping" ;
     dct:license <https://opendefinition.org/licenses/against-drm> ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:sparqlEndpoint [
         dct:identifier "437eca42-0111-0c82-2349-282be597ca5c" ;
         dct:title "bookkeeping" ;

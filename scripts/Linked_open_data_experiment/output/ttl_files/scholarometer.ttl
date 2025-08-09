@@ -42,7 +42,7 @@ Scholarometer is a social tool for citation analysis, which provides a service t
 
     foaf:page <http://scholarometer.indiana.edu/data.html> ;
     void:triples "900000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://scholarometer.indiana.edu/namespaces/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

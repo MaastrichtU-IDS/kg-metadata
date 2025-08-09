@@ -106,7 +106,7 @@ Licensing information can be found at http://webopac0.hwwa.de/digiview/digi_eige
 
     foaf:page <http://zbw.eu/beta/p20> ;
     void:triples "12000000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://zbw.eu/beta/p20/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -31,7 +31,7 @@ Ontology of lexical categories
 
     foaf:page <http://lexinfo.net/> ;
     void:triples "4374"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

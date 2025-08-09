@@ -1,0 +1,75 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:alpino-rdf a dcat:Dataset ;
+    dcat:keyword "llod", "lod", "lodcloud-diagram-2014-08-30" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "ALPINO_RDF_Treebank" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_file" ;
+        dcat:mediaType_exampleResource "example/rdf" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://lexinfo.net/corpora/alpino/cdb/123.rdf> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://lexinfo.net/corpora/alpino/query.php> ;
+        adms:status_sparqlEndpoint """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "HTML" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Welcome_page" ;
+        dcat:accessURL_distribution <http://lexinfo.net/corpora/alpino/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "ZIP" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Dump_of_files" ;
+        dcat:accessURL_distribution <http://lexinfo.net/corpora/alpino/alpino-rdf.zip> ;
+    ] ;
+    dct:description_main """
+Export of the ALPINO Dutch Treebank to RDF.
+"""@en ;
+
+    void:triples "1799901"^^xsd:integer ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:lexinfo a void:Linkset ;
+    void:target :alpino-rdf ;
+    void:triples "466794"^^xsd:integer ;
+ .
+

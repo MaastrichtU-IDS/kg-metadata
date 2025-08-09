@@ -76,7 +76,7 @@ This repository contains data supplied from Fundação da Faculdade de Ciencas d
 
     foaf:page <http://lisbon.rkbexplorer.com> ;
     void:triples "32737"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://lisbon.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

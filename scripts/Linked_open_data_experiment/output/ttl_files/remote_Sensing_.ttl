@@ -62,7 +62,7 @@ The images were manually extracted from large images from the USGS National Map 
         dcat:hadRole :owner ;
     ] ;
     foaf:page <http://weegee.vision.ucmerced.edu/datasets/landuse.html> ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

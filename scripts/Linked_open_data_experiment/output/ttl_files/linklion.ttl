@@ -33,7 +33,7 @@ LinkLion is an open-source central repository for the storage of links among res
 """@en ;
 
     void:triples "63020609"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://www.linklion.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

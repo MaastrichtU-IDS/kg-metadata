@@ -70,7 +70,7 @@ The FinnWordNet wordnet as published as part of the Open Multilingual WordNet. T
         dcat:hadRole :owner ;
     ] ;
     void:triples "1221878"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     foaf:page <http://compling.hss.ntu.edu.sg/omw/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

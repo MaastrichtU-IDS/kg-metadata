@@ -1,0 +1,129 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:dbpedia-es a dcat:Dataset ;
+    dcat:keyword "crossdomain", "linguistic", "lod", "lodcloud-diagram-2014-08-30", "no-proprietary-vocab", "published-by-producer", "wikipedia" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "DBpedia_in_Spanish" ;
+    void:exampleResource [
+        dct:title_exampleResource "N-Triples_Example" ;
+        dcat:mediaType_exampleResource "application/n-triples;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Link to an example data item within the dataset The actual URI is http://es.dbpedia.org/resource/Madrid, which redirect via 303
+""" ;
+        dcat:accessURL_exampleResource <http://es.dbpedia.org/data/Madrid.ntriples> ;
+        adms:status_exampleResource """
+FAIL (503)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_EndPoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+DBpedia in Spanish dataset. Part of the DBpedia internationalisation effort. Data are extracted here from Spanish language pages of wikipedia (es.wikipedia.org).
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://es.dbpedia.org/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (503)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf+schema" ;
+        dct:description_distribution """
+DBpedia in Spanish dataset. Part of the DBpedia internationalisation effort.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "DBpedia_ontology_2014_version" ;
+        dcat:accessURL_distribution <http://data.dws.informatik.uni-mannheim.de/dbpedia/2014/dbpedia_2014.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "HTML" ;
+        dct:description_distribution """
+DBpedia in Spanish dataset. Part of the DBpedia internationalisation effort. Data are extracted here from Spanish language pages of wikipedia.
+""" ;
+        adms:status_distribution """
+FAIL (503)
+""" ;
+        dct:title_distribution "Download" ;
+        dcat:accessURL_distribution <http://es.dbpedia.org/DBpediaESdata> ;
+    ] ;
+    dct:description_main """
+These data correspond to the ontology DBpedia version 2014. 
+"""@en ;
+
+    foaf:page <http://es.dbpedia.org> ;
+    void:triples "169101647"^^xsd:integer ;
+    dcat:theme  <cross_domain> ;
+    void:uriSpace <http://es.dbpedia.org/resource/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :dbpedia-es ;
+    void:triples "837609"^^xsd:integer ;
+ .
+
+:dbpedia-cs a void:Linkset ;
+    void:target :dbpedia-es ;
+    void:triples "161377"^^xsd:integer ;
+ .
+
+:dbpedia-de a void:Linkset ;
+    void:target :dbpedia-es ;
+    void:triples "425511"^^xsd:integer ;
+ .
+
+:dbpedia-el a void:Linkset ;
+    void:target :dbpedia-es ;
+    void:triples "66175"^^xsd:integer ;
+ .
+
+:dbpedia-fr a void:Linkset ;
+    void:target :dbpedia-es ;
+    void:triples "538425"^^xsd:integer ;
+ .
+
+:dbpedia-it a void:Linkset ;
+    void:target :dbpedia-es ;
+    void:triples "457626"^^xsd:integer ;
+ .
+
+:dbpedia-ja a void:Linkset ;
+    void:target :dbpedia-es ;
+    void:triples "257732"^^xsd:integer ;
+ .
+
+:dbpedia-ko a void:Linkset ;
+    void:target :dbpedia-es ;
+    void:triples "169592"^^xsd:integer ;
+ .
+
+:dbpedia-nl a void:Linkset ;
+    void:target :dbpedia-es ;
+    void:triples "429827"^^xsd:integer ;
+ .
+
+:dbpedia-pt a void:Linkset ;
+    void:target :dbpedia-es ;
+    void:triples "440350"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Mariano_Rico"^^xsd:string ;
+     foaf:Cmbox <mailto:mariano.rico@fi.upm.es> ; 
+ .
+

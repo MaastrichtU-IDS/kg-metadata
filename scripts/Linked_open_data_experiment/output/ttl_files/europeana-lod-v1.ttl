@@ -353,7 +353,7 @@ The project has been described in a [paper](http://dcevents.dublincore.org/index
 
     foaf:page <http://data.europeana.eu/> ;
     void:triples "117000000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://data.europeana.eu> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

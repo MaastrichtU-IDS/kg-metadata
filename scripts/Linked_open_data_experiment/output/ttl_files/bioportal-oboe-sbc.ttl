@@ -55,7 +55,7 @@ OBOE Extension for SBC-LTER
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1523> ;
     void:triples "7059"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

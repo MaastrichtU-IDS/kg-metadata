@@ -48,7 +48,7 @@ Related to emergency response
     ] ;
     foaf:page <https://raw.githubusercontent.com/sonia04021991/Ontology> ;
     void:triples "3000"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -1,0 +1,77 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ravensburg-local-shopping-graph a dcat:Dataset ;
+    dcat:keyword "commerce", "ecommerce", "goodrelations", "lodcloud.nolinks", "no-deref-vocab", "opendatachallenge", "published-by-third-party", "ravensburg" ;
+    dct:title_main "Ravensburg_Local_Shopping_Graph" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Example
+""" ;
+        dcat:accessURL_exampleResource <http://www.wifo-rv.de/rdf/semanticweb12.rdf> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "None" ;
+        dcat:endpointDescription_sparqlEndpoint """
+Linked Open Commerce SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://linkedopencommerce.com/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (406)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "XML" ;
+        dct:description_distribution """
+Sitemap file
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://www.wifo-ravensburg.de/rdf/sitemap.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Utility vocabulary
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://www.wifo-ravensburg.de/rdf/semanticweb.rdf> ;
+    ] ;
+    dct:description_main """
+The complete (99% of all points of interest), quality-controlled (60% updated within the last 4 weeks) GoodRelations-based description of shopping and trade in a major German city, with a unique data density.
+
+
+"""@en ;
+
+    foaf:page <http://www.lieber-ravensburg.de/developer/> ;
+    void:triples "100000"^^xsd:integer ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "die-welfenburg.de,_at_data_Software_GmbH,_Aulendorf,_Hepp_Research_GmbH,_Ravensburg"^^xsd:string ;
+ .
+

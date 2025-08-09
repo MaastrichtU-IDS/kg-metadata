@@ -222,7 +222,7 @@ The European Pollutant Release and Transfer Register (E-PRTR) is a Europe-wide r
 
     foaf:page <http://prtr.ec.europa.eu/> ;
     void:triples "14500000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://prtr.ec.europa.eu/rdf/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

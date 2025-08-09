@@ -55,7 +55,7 @@ BFO grows out of a philosophical orientation which overlaps with that of DOLCE a
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1332> ;
     void:triples "467"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

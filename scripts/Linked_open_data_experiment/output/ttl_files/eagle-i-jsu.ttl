@@ -75,7 +75,7 @@ Resource descriptions collected at each participating institution are freely ava
     ] ;
     foaf:page <http://jsu.eagle-i.net> ;
     void:triples "10200"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://jsu.eagle-i.net/i/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

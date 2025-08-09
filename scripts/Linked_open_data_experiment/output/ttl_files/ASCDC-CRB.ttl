@@ -96,7 +96,7 @@ Webpage of ASCDC LODDatasets for downloads of entire published LOD-based dataset
 FAIL (400)
 """ ;
     ] ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://data.ascdc.tw/Book/crb/_> ;
     void:sparqlEndpoint [
         dct:identifier "a13d0ef5-2430-052f-b2f4-cf0870f68233" ;

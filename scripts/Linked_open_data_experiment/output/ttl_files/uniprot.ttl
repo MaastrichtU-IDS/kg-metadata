@@ -85,7 +85,7 @@ Copyright 2007-2012 UniProt Consortium. We have chosen to apply the Creative Com
 
     foaf:page <http://www.uniprot.org/> ;
     void:triples "13081788247"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://purl.uniprot.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

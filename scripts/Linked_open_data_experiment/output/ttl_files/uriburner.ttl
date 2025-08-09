@@ -57,7 +57,7 @@ The linking information is incomplete and the numbers are guesswork.
 
     foaf:page <http://uriburner.com/> ;
     void:triples "486089121"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://linkeddata.uriburner.com/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

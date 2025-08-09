@@ -59,7 +59,7 @@ http://data.archiveshub.ac.uk/
 
     foaf:page <http://data.archiveshub.ac.uk> ;
     void:triples "431088"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://data.archiveshub.ac.uk/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

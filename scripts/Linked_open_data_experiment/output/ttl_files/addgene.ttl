@@ -41,7 +41,7 @@ However hard to work out what these mean ...
 
     foaf:page <http://www.addgene.org/> ;
     void:triples "16610"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://purl.org/science/plasmid/addgene/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

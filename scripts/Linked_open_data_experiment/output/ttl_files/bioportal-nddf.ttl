@@ -55,7 +55,7 @@ National Drug Data File Plus Source Vocabulary
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1424> ;
     void:triples "490514"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

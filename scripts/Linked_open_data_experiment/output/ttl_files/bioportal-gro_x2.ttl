@@ -55,7 +55,7 @@ The Gene Regulation Ontology (GRO) is a conceptual model for the domain of gene 
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1082> ;
     void:triples "5210"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

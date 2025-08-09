@@ -42,7 +42,7 @@ Ontology contains over 70.000 lexical entries of Croatian language. The ontology
 
     foaf:page <http://www.ss-framework.com> ;
     void:triples "70366"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

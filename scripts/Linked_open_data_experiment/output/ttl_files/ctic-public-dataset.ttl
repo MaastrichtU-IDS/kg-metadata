@@ -64,7 +64,7 @@ Overview of worldwide data catalogues.
 
     foaf:page <http://datos.fundacionctic.org/en/> ;
     void:triples "535230"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://data.fundacionctic.org/dataset-catalog/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

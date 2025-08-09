@@ -1,0 +1,90 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:zhishi-lemon a dcat:Dataset ;
+    dcat:keyword "babelnet", "dbpedia", "lemon", "llod", "lod", "zhishi.me" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "zhishi.lemon" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "DUMP_(N-TRIPLE)" ;
+        dcat:accessURL_distribution <https://drive.google.com/file/d/0B8VUbXki5Q0ibEIzbkUxSnQ5Ulk/view?usp=sharing> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+xml" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='datahub.ckan.io', port=443): Max retries exceeded with url: /dataset/3132a738-4714-4036-ae11-843af152dba5/resource/d4337c93-ada3-4978-9154-740b1f8e6b1e/download/meta.rdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f36843fcc40>, 'Connection to datahub.ckan.io timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "Dataset_description_in_DCAT" ;
+        dcat:accessURL_distribution <https://datahub.ckan.io/dataset/3132a738-4714-4036-ae11-843af152dba5/resource/d4337c93-ada3-4978-9154-740b1f8e6b1e/download/meta.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/n-triples" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='datahub.ckan.io', port=443): Max retries exceeded with url: /dataset/3132a738-4714-4036-ae11-843af152dba5/resource/7837b0ab-b0bd-494d-8dc7-b520a15a531a/download/example.nt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3686c9fc40>, 'Connection to datahub.ckan.io timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "Example" ;
+        dcat:accessURL_distribution <https://datahub.ckan.io/dataset/3132a738-4714-4036-ae11-843af152dba5/resource/7837b0ab-b0bd-494d-8dc7-b520a15a531a/download/example.nt> ;
+    ] ;
+    dct:description_main """
+[Zhishi.me](http://zhishi.me/) is an effort to build Chinese Linking Open Data. Currently, it covers three largest Chinese encyclopedias: Baidu Baike, Hudong Baike and Chinese Wikipedia. Additional information about Zhishi.me can be found in this [published paper](http://iswc2011.semanticweb.org/fileadmin/iswc/Papers/In-Use/70320209.pdf)
+
+[Zhishi.lemon](http://lemon.zhishi.me/) is a newly developed dataset based on the lemon model that constitutes the lexical realization of Zhishi.me. It combines the [lemon core](http://www.lemon-model.net/) with the [lemon translation module](http://linguistic.linkeddata.es/def/translation-content/index.html) in order to build a linked data lexicon in Chinese with translations into Spanish and English. Links to BabelNet (a vast multilingual encyclopedic resource) have been provided as well. The license of the dataset is CC-BY.
+
+We also present a [SPARQL endpoint](http://lemon.zhishi.me/sparql.html) for user to query our dataset. For more information, we provide two detailed schema diagrams with several instance examples to help users better understand the dataset and create more valuable SPARQL queries. You can download them from the following two dois: [Chinese Lexicalization Module](https://dx.doi.org/10.6084/m9.figshare.3438545.v1), [Multilingual Translation Module](https://dx.doi.org/10.6084/m9.figshare.3438548.v1).
+"""@en ;
+
+    void:triples "7036338"^^xsd:integer ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:babelnet a void:Linkset ;
+    void:target :zhishi-lemon ;
+    void:triples "16424"^^xsd:integer ;
+ .
+
+:dbpedia-en a void:Linkset ;
+    void:target :zhishi-lemon ;
+    void:triples "218654"^^xsd:integer ;
+ .
+
+:dbpedia-es a void:Linkset ;
+    void:target :zhishi-lemon ;
+    void:triples "77392"^^xsd:integer ;
+ .
+
+:zhishi-me a void:Linkset ;
+    void:target :zhishi-lemon ;
+    void:triples "229606"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "East_China_University_of_Science_and_Technology"^^xsd:string ;
+     foaf:Cmbox <mailto:whfcarter@ecust.edu.cn> ; 
+ .
+

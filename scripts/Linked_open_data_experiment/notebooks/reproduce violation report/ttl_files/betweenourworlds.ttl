@@ -1,0 +1,543 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:betweenourworlds a dcat:Dataset ;
+    foaf:depiction <https://betweenourworlds.org/img/logo.png> ;
+    foaf:page <https://betweenourworlds.org> ;
+    dcat:keyword "anime", "episode", "season", "character", "trailer", "stream", "movie", "series", "article" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "Between_Our_Worlds" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2018-09 release.
+""" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2018-09.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Release_2018-09" ;
+        dct:identifier_distribution "9922c2c4-5d32-3120-a2f1-b8201da19a62" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2018-10 release.
+""" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2018-10.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Release_2018-10" ;
+        dct:identifier_distribution "a762c256-01af-5052-0311-44aeefe93a22" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2018-11 release.
+""" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2018-11.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Release_2018-11" ;
+        dct:identifier_distribution "54a2efd4-dd1d-62ca-6382-55170839060b" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2018-12 release.
+""" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2018-12.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Release_2018-12" ;
+        dct:identifier_distribution "bd4331bd-eeb8-653b-f8ca-89577338ca9f" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2019-01 release.
+""" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2019-01.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Release_2019-01" ;
+        dct:identifier_distribution "e2124816-2eca-8869-f1b2-7efc6db03147" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2019-06 release.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Release_2019-06" ;
+        dct:identifier_distribution "6c3571e7-b6ea-c68e-da27-da7e1f15c453" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2019-06.hdt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2019-07 release.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Release_2019-07" ;
+        dct:identifier_distribution "98d57078-fade-6370-89a2-f9329b91d4c1" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2019-07.hdt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2019-08 release.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Release_2019-08" ;
+        dct:identifier_distribution "5697f832-f0b1-5882-6ac0-ca3fd3925c16" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2019-08.hdt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2019-09 release.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Release_2019-09" ;
+        dct:identifier_distribution "a109e18a-5722-6255-d850-76d54f086167" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2019-09.hdt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2019-10 release.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Release_2019-10" ;
+        dct:identifier_distribution "a4e74a82-ac5e-2eb7-0384-6b9df7cf751d" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2019-10.hdt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2019-11 release.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Release_2019-11" ;
+        dct:identifier_distribution "75248555-130b-4e24-5e8a-f9ba14ea7567" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2019-11.hdt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2019-12 release.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Release_2019-12" ;
+        dct:identifier_distribution "2d55f56a-9084-b3a6-9687-5c84783d0d3c" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2019-12.hdt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2020-01 release.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Release_2020-01" ;
+        dct:identifier_distribution "338aec0b-3e30-686c-e0f6-0e57b39c9897" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2020-01.hdt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2020-02 release.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Release_2020-02" ;
+        dct:identifier_distribution "8b8e06d8-11b7-6b94-ea03-4f49e251fdc0" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2020-02.hdt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2020-03 release.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Release_2020-03" ;
+        dct:identifier_distribution "d07a9558-e0f9-2225-a451-3d38e5bd5d34" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2020-03.hdt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2020-04 release.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Release_2020-04" ;
+        dct:identifier_distribution "17e83fae-49c0-883b-e464-ea846f076f9b" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2020-04.hdt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2020-05 release.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Release_2020-05" ;
+        dct:identifier_distribution "9f29d1f6-14f8-57b8-a662-982a59840966" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2020-05.hdt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2020-06 release.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Release_2020-06" ;
+        dct:identifier_distribution "30960d69-fd9b-e4dd-d940-2388109903e4" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2020-06.hdt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2020-07 release.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Release_2020-07" ;
+        dct:identifier_distribution "6d8733cf-878c-6586-fac5-54431c6cbc2f" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2020-07.hdt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2020-08 release.
+""" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2020-08.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:identifier_distribution "8442cf3e-512d-41ac-7f7d-8e665f878bf8" ;
+        dct:title_distribution "Release_2020-08" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2020-09 release.
+""" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2020-09.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:identifier_distribution "38f7494b-209f-bfc1-bf3f-e4c4906f7da9" ;
+        dct:title_distribution "Release_2020-09" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2020-10 release.
+""" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2020-10.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:identifier_distribution "60b60f6a-ed77-65d0-03ed-8ad9279ee4e7" ;
+        dct:title_distribution "Release_2020-10" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2020-11 release.
+""" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2020-11.hdt> ;
+        dct:title_distribution "Release_2020-11" ;
+        dct:identifier_distribution "00d62962-e1c6-1648-7e4f-e551d3dc600c" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2020-12 release.
+""" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2020-12.hdt> ;
+        dct:title_distribution "Release_2020-12" ;
+        dct:identifier_distribution "00e362a4-e824-cddd-dc17-bb9a97ffc6b5" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+The HDT file of the 2021-01 release.
+""" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2021-01.hdt> ;
+        dct:title_distribution "Release_2021-01" ;
+        dct:identifier_distribution "988ebd89-374b-4555-e37e-bd172c3dff50" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "03cdd704-7587-895d-be34-01bb0939eed6" ;
+        dct:title_distribution "Release_2021-02" ;
+        dct:description_distribution """
+The HDT file of the 2021-02 release.
+""" ;
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2021-02.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "633f9c3e-01f2-7e2b-c77b-641bedd93e7e" ;
+        dct:title_distribution "Release_2021-03" ;
+        dct:description_distribution """
+The HDT file of the 2021-03 release.
+""" ;
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2021-03.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "47e282b0-fe41-cb01-0875-a101fbf3b377" ;
+        dct:title_distribution "Release_2021-04" ;
+        dct:description_distribution """
+The HDT file of the 2021-04 release.
+""" ;
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2021-04.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "5abc12bd-e1b0-5a9f-a310-58998d6e82dd" ;
+        dct:title_distribution "Release_2021-05" ;
+        dct:description_distribution """
+The HDT file of the 2021-05 release.
+""" ;
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2021-05.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "50f666ad-7ace-989b-154b-8bebf76e9354" ;
+        dct:title_distribution "Release_2021-06" ;
+        dct:description_distribution """
+The HDT file of the 2021-06 release.
+""" ;
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2021-06.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "1037c4db-1812-a587-82f8-118c881ec65b" ;
+        dct:title_distribution "Release_2021-07" ;
+        dct:description_distribution """
+The HDT file of the 2021-07 release.
+""" ;
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2021-07.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "183adea0-6a0c-c061-a859-7921568a593d" ;
+        dct:title_distribution "Release_2021-08" ;
+        dct:description_distribution """
+The HDT file of the 2021-08 release.
+""" ;
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2021-08.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "1d0f01da-48da-15a9-9b49-07f69fb51b9c" ;
+        dct:title_distribution "Release_2021-09" ;
+        dct:description_distribution """
+The HDT file of the 2021-09 release.
+""" ;
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2021-09.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "4a4b7784-ac98-4094-d0ce-1f9ec6db5e8c" ;
+        dct:title_distribution "Release_2021-10" ;
+        dct:description_distribution """
+The HDT file of the 2021-10 release.
+""" ;
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2021-10.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "e9e5ec1b-388c-15a0-753d-81ce7a710b87" ;
+        dct:title_distribution "Release_2021-11" ;
+        dct:description_distribution """
+The HDT file of the 2021-11 release.
+""" ;
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2021-11.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "7cfe19e9-c723-0bce-62a7-33e3f4a2f95f" ;
+        dct:title_distribution "Release_2021-12" ;
+        dct:description_distribution """
+The HDT file of the 2021-12 release.
+""" ;
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2021-12.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "31b9e5e3-7dd3-e222-088a-6bf5e95e264a" ;
+        dct:title_distribution "Release_2022-01" ;
+        dct:description_distribution """
+The HDT file of the 2022-01 release.
+""" ;
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2022-01.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "77aab8e3-a875-4c9b-3d00-f685f62866dc" ;
+        dct:title_distribution "Release_2022-02" ;
+        dct:description_distribution """
+The HDT file of the 2022-02 release.
+""" ;
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2022-02.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "dba8abd8-a093-193c-88cd-3ed50f8786dd" ;
+        dct:title_distribution "Release_2022-03" ;
+        dct:description_distribution """
+The HDT file of the 2022-03 release.
+""" ;
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2022-03.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "c767bba6-f88d-8e76-af27-0f3e09126ef1" ;
+        dct:title_distribution "Release_2022-04" ;
+        dct:description_distribution """
+The HDT file of the 2022-04 release.
+""" ;
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2022-04.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "3b34bf50-5c8a-0e8d-90ba-aa6af4ff13e4" ;
+        dct:title_distribution "Release_2022-05" ;
+        dct:description_distribution """
+The HDT file of the 2022-05 release.
+""" ;
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dcat:downloadURL_distribution <https://datadump.betweenourworlds.org/2022-05.hdt> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dct:description_main """
+A dataset that provides metadata information about anime.
+"""@en ;
+
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    void:uriSpace <https://betweenourworlds.org/> ;
+    void:triples "4338673"^^xsd:integer ;
+    dcat:theme  <media> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :betweenourworlds ;
+    void:triples "3443"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:pheyvaer.heyvaert@ugent.be> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Pieter_Heyvaert"^^xsd:string ;
+     foaf:Cmbox <mailto:pieterheyvaert@gmail.com> ; 
+ .
+

@@ -53,7 +53,7 @@ Authority data used in the ([RISM catalogue](https://opac.rism.info "RISM Opac")
 """@en ;
 
     void:triples "1154325"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <https://data.rism.info/id/rismauthorities/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

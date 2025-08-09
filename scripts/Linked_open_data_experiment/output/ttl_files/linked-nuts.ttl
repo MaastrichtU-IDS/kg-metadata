@@ -61,7 +61,7 @@ The number of triples is estimated as 15 triples for each of the 2000 NUTS codes
 
     foaf:page <http://nuts.psi.enakting.org/> ;
     void:triples "40000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://nuts.psi.enakting.org/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

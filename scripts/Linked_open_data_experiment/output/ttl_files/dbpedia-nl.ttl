@@ -107,7 +107,7 @@ DBpedia is a "community effort to extract structured information from Wikipedia 
 
     foaf:page <http://nl.dbpedia.org> ;
     void:triples "79674010"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://nl.dbpedia.org/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

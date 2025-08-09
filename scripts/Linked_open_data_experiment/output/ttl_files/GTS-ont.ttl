@@ -38,7 +38,7 @@ OWL ontology for the RDF representation of the Geologic Timescale.
     ] ;
     foaf:page <https://github.com/CGI-IUGS/timescale-ont> ;
     void:triples "785"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://resource.geosciml.org/ontology/timescale/gts#> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

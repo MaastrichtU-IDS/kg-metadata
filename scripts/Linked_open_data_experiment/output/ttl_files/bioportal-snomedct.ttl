@@ -55,7 +55,7 @@ SNOMED Clinical Terms
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1353> ;
     void:triples "13644855"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

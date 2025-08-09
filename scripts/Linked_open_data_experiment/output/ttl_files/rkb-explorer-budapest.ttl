@@ -76,7 +76,7 @@ Linked Data version of the data supplied from Budapest University of Technology 
 
     foaf:page <http://budapest.rkbexplorer.com/> ;
     void:triples "42378"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://budapest.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

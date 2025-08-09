@@ -55,7 +55,7 @@ NIF Standard ontology (NIFSTD) is a core component of Neuroscience Information F
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1084> ;
     void:triples "1975611"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

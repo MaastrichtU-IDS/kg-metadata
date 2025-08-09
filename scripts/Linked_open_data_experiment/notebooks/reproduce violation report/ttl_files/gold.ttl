@@ -1,0 +1,50 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:gold a dcat:Dataset ;
+    dcat:keyword "linguistics", "llod", "lod", "ontology" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "General_Ontology_of_Linguistic_Description" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "OWL" ;
+        dct:description_distribution """
+GOLD is an ontology for descriptive linguistics.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Gold" ;
+        dcat:accessURL_distribution <http://linguistics-ontology.org/gold-2010.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "OWL" ;
+        dct:description_distribution """
+Mirror of the GOLD ontology OWL file, retrieved from web.archive.org, November 18th snapshot at http://web.archive.org/web/20131118135345/http://linguistics-ontology.org/gold-2010.owl
+""" ;
+        adms:status_distribution """
+FAIL (403)
+""" ;
+        dct:title_distribution "GOLD_OWL_file" ;
+        dcat:accessURL_distribution <https://ckannet-storage.commondatastorage.googleapis.com/2014-10-19T09:35:54.447Z/gold-2010.owl> ;
+    ] ;
+    dct:description_main """
+GOLD is an ontology for descriptive linguistics.
+"""@en ;
+
+    void:triples "3000"^^xsd:integer ;
+    dcat:theme  <linguistics> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 

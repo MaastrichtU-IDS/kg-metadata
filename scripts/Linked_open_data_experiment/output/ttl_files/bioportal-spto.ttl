@@ -55,7 +55,7 @@ Solanaceae crop phenotypes and traits, developed in collaboration with the resea
 
     foaf:page <http://bioportal.bioontology.org/ontologies/3029> ;
     void:triples "4089"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

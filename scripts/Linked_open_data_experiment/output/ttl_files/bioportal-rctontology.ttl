@@ -56,7 +56,7 @@ specifically for Randomized Controlled Trials in order to facilitate the product
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1676> ;
     void:triples "2091"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

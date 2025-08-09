@@ -55,7 +55,7 @@ An ontology representing a causal model of smoking behavior risk, including gene
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1249> ;
     void:triples "738"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

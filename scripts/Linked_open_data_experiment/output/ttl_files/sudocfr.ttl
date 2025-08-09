@@ -75,7 +75,7 @@ Licensing : Licence ouverte / Open licence (http://www.etalab.gouv.fr/pages/Lice
 
     foaf:page <http://punktokomo.abes.fr/2011/07/04/le-sudoc-sur-le-web-de-donnees/> ;
     void:triples "350000000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://www.sudoc.fr/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

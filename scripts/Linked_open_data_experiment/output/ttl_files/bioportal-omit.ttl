@@ -55,7 +55,7 @@ The purpose of the OMIT ontology is to facilitate the identification and charact
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1505> ;
     void:triples "1610"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

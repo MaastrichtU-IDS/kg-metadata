@@ -1,0 +1,97 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ids a dcat:Dataset ;
+    dcat:keyword "LOD", "crossdomain", "linguistic", "linguistics", "lod", "published-by-producer", "typology" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "Intercontinental_Dictionary_Series" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_entry_mind" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://mlode.nlp2rdf.org/resource/data/ids/entry/e110-c17?output=ttl> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://mlode.nlp2rdf.org/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "PNG" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Diagram_of_the_IDS_linked_data_model" ;
+        dcat:accessURL_distribution <https://dl.dropbox.com/u/65483422/ids-model-diagram.png> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/n3" ;
+        dct:description_distribution """
+File was converted for MLODE by M. Brümmer
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "RDF_conversion" ;
+        dcat:accessURL_distribution <http://mlode.nlp2rdf.org/datasets/ids.nt.gz> ;
+    ] ;
+    dct:description_main """
+1200 words in 200 languages
+"""@en ;
+
+    foaf:page <http://lingweb.eva.mpg.de/ids/> ;
+    void:triples "2000000"^^xsd:integer ;
+    dcat:theme  <linguistics> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:glottolog-langdoc a void:Linkset ;
+    void:target :ids ;
+    void:triples "216"^^xsd:integer ;
+ .
+
+:lexvo a void:Linkset ;
+    void:target :ids ;
+    void:triples "217"^^xsd:integer ;
+ .
+
+:wals a void:Linkset ;
+    void:target :ids ;
+    void:triples "216"^^xsd:integer ;
+ .
+
+:wiktionary-dbpedia-org a void:Linkset ;
+    void:target :ids ;
+    void:triples "1832"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Bernard_Comrie"^^xsd:string ;
+ .
+

@@ -65,7 +65,7 @@ US Embassy cables from Wikileaks
 
     foaf:page <http://www.wikileaks.ch/cablegate.html> ;
     void:triples "9162"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

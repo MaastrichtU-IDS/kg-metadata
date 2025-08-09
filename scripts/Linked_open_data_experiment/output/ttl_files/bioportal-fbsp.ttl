@@ -55,7 +55,7 @@ The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli) and of o
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1064> ;
     void:triples "36207"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

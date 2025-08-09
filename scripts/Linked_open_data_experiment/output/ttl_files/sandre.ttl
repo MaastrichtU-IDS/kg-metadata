@@ -40,7 +40,7 @@ Taxons of the French Water Information System (SIE)
 
     foaf:page <http://sandre.eaufrance.fr/> ;
     void:triples "104907"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

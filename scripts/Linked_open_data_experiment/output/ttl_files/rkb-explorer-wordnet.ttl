@@ -123,7 +123,7 @@ If you have any enquiries, please email the administrator of this repository.
 
     foaf:page <http://wordnet.rkbexplorer.com> ;
     void:triples "2727001"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     void:uriSpace <http://wordnet.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

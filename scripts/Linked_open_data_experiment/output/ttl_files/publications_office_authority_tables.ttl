@@ -111,7 +111,7 @@ Contributions to the Language authority table are accepted following a review ma
 OK
 """ ;
     ] ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://publications.europa.eu/resource/authority/> ;
     void:sparqlEndpoint [
         dct:identifier "8a274c06-ad68-b689-8825-91c78ad8abc4" ;

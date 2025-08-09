@@ -54,7 +54,7 @@ LCSH has been actively maintained since 1898 to catalog materials held at the Li
 
     foaf:page <http://id.loc.gov/authorities/> ;
     void:triples "7332816"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://id.loc.gov/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -40,7 +40,7 @@ Presents some of the results of the LOD2 PUBLINK activity in cooperation with th
 
     foaf:page <http://www.deutsche-biographie.de/> ;
     void:triples "100000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

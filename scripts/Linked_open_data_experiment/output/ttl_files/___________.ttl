@@ -36,7 +36,7 @@ OK
         dcat:hadRole :owner ;
     ] ;
     void:triples "135"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

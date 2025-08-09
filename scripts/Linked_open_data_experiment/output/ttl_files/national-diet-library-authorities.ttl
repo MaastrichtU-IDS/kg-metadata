@@ -64,7 +64,7 @@ Name authorities and subject headings of Japan's National Library are provided a
 
     foaf:page <http://id.ndl.go.jp/auth/ndla> ;
     void:triples "15000000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://id.ndl.go.jp/auth/ndlna/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -40,7 +40,7 @@ Linked Crowdsourced Data is - as the name implies - a crowdsourced dataset for r
 """@en ;
 
     void:triples "17043"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://www.contextdatacloud.org/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -1,0 +1,72 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:john-goodwins-family-tree a dcat:Dataset ;
+    dcat:keyword "format-bio", "format-event", "format-foaf", "format-owl", "format-rdf", "format-rel", "genealogy", "lod", "lodcloud-diagram-2011-09-19", "no-license-metadata", "no-proprietary-vocab", "no-vocab-mappings", "provenance-metadata", "published-by-producer", "usergeneratedcontent" ;
+    dct:title_main "John_Goodwins_Family_Tree" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://www.johngoodwin.me.uk/family/I0243> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://api.talis.com/stores/jgoodwin-genealogy/services/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='api.talis.com', port=80): Max retries exceeded with url: /stores/jgoodwin-genealogy/services/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684301ea0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html" ;
+        dct:description_distribution """
+voiD description
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://www.johngoodwin.me.uk/family/?&_output=turtle> ;
+    ] ;
+    dct:description_main """
+Data about John Goodwin's family tree.
+"""@en ;
+
+    foaf:page <http://www.johngoodwin.me.uk/family/> ;
+    void:triples "177867"^^xsd:integer ;
+    dcat:theme  <user_generated> ;
+    void:uriSpace <http://www.johngoodwin.me.uk/family/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :john-goodwins-family-tree ;
+    void:triples "500"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "John_Goodwin"^^xsd:string ;
+     foaf:Cmbox <mailto:John.Goodwin@ordnancesurvey.co.uk> ; 
+ .
+

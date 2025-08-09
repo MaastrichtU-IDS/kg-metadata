@@ -36,7 +36,7 @@ this dataset contains linked data from agriculture related lands (hilucs_code<20
     ] ;
     void:uriSpace <http://w3id.org/foodie/corine/> ;
     void:triples "16777595"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

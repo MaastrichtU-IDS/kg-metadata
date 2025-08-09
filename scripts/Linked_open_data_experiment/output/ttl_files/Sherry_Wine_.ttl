@@ -25,7 +25,7 @@ Se trata de un vocabulario diseñado para conocer y exponer los vinos y sus prin
 
     dct:title "Sherry_Wine" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <https://purl.org/sherrywine/elementos/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -53,7 +53,7 @@ LinkedMarkMail is a simple Linked Data interface for accessing the MarkMail arch
 
     foaf:page <http://linkedmarkmail.wikier.org/> ;
     void:triples "416732232"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://linkedmarkmail.wikier.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -30,7 +30,7 @@ RDF version of WordNet from Princeton
 """@en ;
 
     void:triples "8903374"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

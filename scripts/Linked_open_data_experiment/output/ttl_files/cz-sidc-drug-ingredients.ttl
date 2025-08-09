@@ -77,7 +77,7 @@ This dataset provides data about active ingredients contained in medicinal produ
 
     foaf:page <http://linked.opendata.cz/resource/dataset/sukl/drug-ingredients> ;
     void:triples "210870"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://linked.opendata.cz/resource/sukl/active-ingredient/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

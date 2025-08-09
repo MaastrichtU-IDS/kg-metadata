@@ -56,7 +56,7 @@ http://bmir.stanford.edu/publications/view.php/pushing_the_envelope_challenges_i
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1053> ;
     void:triples "1714653"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -125,7 +125,7 @@ The National Drug Code (NDC) is a unique product identifier used in the United S
 
     foaf:page <http://ndc.bio2rdf.org/> ;
     void:triples "6199488"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/ndc:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

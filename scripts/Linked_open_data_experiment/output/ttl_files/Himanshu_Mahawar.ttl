@@ -23,7 +23,7 @@ Himanshu Mahawar is a business magnate, Digital Marketer, and Web Developer. He 
 
     dct:title "Himanshu_Mahawar" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

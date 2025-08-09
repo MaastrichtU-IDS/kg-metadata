@@ -28,7 +28,7 @@ FAIL (HTTPConnectionPool(host='my-status.tk', port=80): Max retries exceeded wit
 StatusNet instance hosted at http://my-status.tk
 """@en ;
 
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -1,0 +1,68 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:calames a dcat:Dataset ;
+    dcat:keyword "abes", "archives", "ead", "france", "lld", "lod", "lodcloud-diagram-2011-09-19", "manuscripts", "no-license-metadata", "no-proprietary-vocab", "provenance-metadata", "publications", "published-by-producer", "rdfa" ;
+    dct:title_main "Calames" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+Example
+""" ;
+        dcat:accessURL_exampleResource <http://www.calames.abes.fr/pub/ms/Calames-2010914119419211> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/sitemap" ;
+        dct:description_distribution """
+Sitemap
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://www.calames.abes.fr/sitemap.xml> ;
+    ] ;
+    dct:description_main """
+Source : [Calames](http://www.calames.abes.fr)
+
+Calames is the French academic union catalogue of archives and manuscripts, maintained by ABES
+
+Licensing : not yet, but will be as open as possible
+
+NB : in order to extract the RDFa, please use the URL as it is given in the following example, not as it is resolved by the application and displayed in the address bar. (Ajax trick)
+"""@en ;
+
+    foaf:page <http://www.calames.abes.fr/> ;
+    void:triples "2000000"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://www.calames.abes.fr/pub/ms/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:idreffr a void:Linkset ;
+    void:target :calames ;
+    void:triples "10000"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "ABES"^^xsd:string ;
+     foaf:Cmbox <mailto:apisudoc@abes.fr> ; 
+ .
+

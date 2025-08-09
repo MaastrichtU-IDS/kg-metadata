@@ -55,7 +55,7 @@ A vocabulary for clinical care, translational and basic research, and public inf
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1032> ;
     void:triples "1594625"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

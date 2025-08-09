@@ -68,7 +68,7 @@ The semanticscience integrated ontology (SIO) provides a simple, integrated uppe
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1532> ;
     void:triples "8123"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://semanticscience.org/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

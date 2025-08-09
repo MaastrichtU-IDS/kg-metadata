@@ -67,7 +67,7 @@ The RDF conversion from GrAF is still in preparation. Below, you can find a prel
 
     foaf:page <http://www.anc.org/MASC/Home.html> ;
     void:triples "1000000"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

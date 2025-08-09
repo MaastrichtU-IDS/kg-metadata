@@ -37,7 +37,7 @@ The Smart Points of Interest dataset (SPOI) is the seamless and open resource of
     ] ;
     void:uriSpace <http://www.sdi4apps.eu/poi.rdf> ;
     void:triples "407628622"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

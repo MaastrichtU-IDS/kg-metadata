@@ -30,7 +30,7 @@ FAIL (404)
 """@en ;
 
     foaf:page <http://aplikace.mvcr.cz/adresy/> ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -46,7 +46,7 @@ Official Verified media file
 FAIL (406)
 """ ;
     ] ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <Cine_Figure> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

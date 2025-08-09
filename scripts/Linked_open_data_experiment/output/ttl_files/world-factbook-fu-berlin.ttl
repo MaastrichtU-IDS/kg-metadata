@@ -52,7 +52,7 @@ A partial RDF conversion of the CIA World Factbook, package:cia-world-factbook.
 
     foaf:page <http://www4.wiwiss.fu-berlin.de/factbook/> ;
     void:triples "38640"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://www4.wiwiss.fu-berlin.de/factbook/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

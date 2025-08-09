@@ -107,7 +107,7 @@ More user-bookmark are being currently annotated.
 
     foaf:page <http://disi.unitn.it/~knowdive/dataset/delicious/> ;
     void:triples "85908"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://disi.unitn.it/~knowdive/dataset/delicious/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

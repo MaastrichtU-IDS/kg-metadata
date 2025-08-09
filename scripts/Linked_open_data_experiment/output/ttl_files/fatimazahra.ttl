@@ -23,7 +23,7 @@ The ontology I4.0-Onto, is built to represents knowledge in a standard process t
 
     dct:title "I4.0-Onto" ;
     dct:license <http://www.opendefinition.org/licenses/odc-by> ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://www.semanticweb.org/fatimazahra/ontologies/2022/9/I4.0-Onto#> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

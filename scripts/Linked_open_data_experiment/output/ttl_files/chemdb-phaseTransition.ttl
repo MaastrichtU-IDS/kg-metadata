@@ -24,7 +24,7 @@ This dataset collects information on the entropy, enthalpy, temperature, pressur
 
     dct:title "chemdb_phase_transition_dataset" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:sparqlEndpoint [
         dct:identifier "f0664589-57ad-363b-ec69-113ec3e7dfc6" ;
         dct:title "SPARQL_Endpoint" ;

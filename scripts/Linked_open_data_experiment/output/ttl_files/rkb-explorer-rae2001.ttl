@@ -76,7 +76,7 @@ FAIL (HTTPConnectionPool(host='rae2001.rkbexplorer.com', port=80): Max retries e
 
     foaf:page <http://rae2001.rkbexplorer.com> ;
     void:triples "2718105"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://rae2001.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -81,7 +81,7 @@ It was created from data provided by the Department of Communities and Local Gov
 
     foaf:page <http://opendatacommunities.org/data/imd-rank-2010> ;
     void:triples "194892"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <ttp://opendatacommunities.org/id/IMD/2010/IMD-rank/LSOA/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -32,7 +32,7 @@ Please, introduce here your project/user information:
 
     foaf:page <http://rdfohloh.wikier.org> ;
     void:triples "700000"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <ttp://rdfohloh.wikier.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

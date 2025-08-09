@@ -100,7 +100,7 @@ A dataset with Norwegian Administrative Divisions and their administrative cente
 
     foaf:page <http://data.lenka.no/> ;
     void:triples "8399"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://data.lenka.no/geo> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

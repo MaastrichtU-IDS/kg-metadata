@@ -25,7 +25,7 @@ Au nom Legion Etrangere
     ] ;
     void:uriSpace <Legija_Stranaca> ;
     void:triples "5"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

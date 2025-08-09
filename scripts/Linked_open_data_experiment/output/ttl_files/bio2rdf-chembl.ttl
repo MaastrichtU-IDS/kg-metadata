@@ -233,7 +233,7 @@ ChEMBL is a database of bioactive compounds, their quantitative properties and b
 
     foaf:page <http://chembl.bio2rdf.org/> ;
     void:triples "409942525"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/chembl:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

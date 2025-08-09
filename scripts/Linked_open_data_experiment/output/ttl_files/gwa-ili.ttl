@@ -37,7 +37,7 @@ The collaborative interlingual index maintains the data for a single interlingua
         dcat:hadRole :owner ;
     ] ;
     void:triples "352995"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     void:exampleResource [
         dcat:mediaType "text/html;_charset=utf-8" ;
         dct:description """

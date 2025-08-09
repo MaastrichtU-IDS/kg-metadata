@@ -35,7 +35,7 @@ This is the Ontology that defines the structure of universe and concept of reali
     ] ;
     foaf:page <https://sonika-malik.github.io/super-ontology/sup_proton.xml> ;
     void:triples "120"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

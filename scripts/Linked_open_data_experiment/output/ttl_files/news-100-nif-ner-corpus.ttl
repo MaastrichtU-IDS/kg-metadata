@@ -62,7 +62,7 @@ One researcher annotated the documents manually. Another researcher resolved occ
 """@en ;
 
     void:triples "12289"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

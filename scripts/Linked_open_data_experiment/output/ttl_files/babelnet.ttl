@@ -76,7 +76,7 @@ BabelNet is both a multilingual encyclopedic dictionary, with lexicographic and 
 """@en ;
 
     void:triples "1971744856"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     void:uriSpace <http://babelnet.org/rdf/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

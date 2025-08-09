@@ -55,7 +55,7 @@ A demonstration of ontology construction as a general technique for coding ethog
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1024> ;
     void:triples "2623"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

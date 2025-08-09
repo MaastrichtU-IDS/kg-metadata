@@ -95,7 +95,7 @@ http://www.gutenberg.org/wiki/Michael_S._Hart
 
     foaf:page <http://www.gutenberg.org/> ;
     void:triples "5450115"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://www.gutenberg.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

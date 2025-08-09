@@ -60,7 +60,7 @@ NB : The RDFa of theses.fr is being tested and will be be fixed in next days.
 
     foaf:page <http://www.theses.fr> ;
     void:triples "300000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://www.theses.fr/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -125,7 +125,7 @@ ClinicalTrials.gov is a registry and results database of publicly and privately 
 
     foaf:page <http://clinicaltrials.bio2rdf.org/> ;
     void:triples "8323598"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/clinicaltrials:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -23,7 +23,7 @@ It is an ontology for engineering equipment
         dcat:hadRole :owner ;
     ] ;
     void:triples "143"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

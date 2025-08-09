@@ -1,0 +1,92 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:marc-codes a dcat:Dataset ;
+    dcat:keyword "format-dc", "format-geo", "format-mo", "format-rdf", "format-skos", "format-xhtml", "library", "lld", "lod", "lodcloud-diagram-2011-09-19", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "no-vocab-mappings", "publications", "published-by-third-party" ;
+    dct:title_main "MARC_Codes_List" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/ntriples" ;
+        dct:description_exampleResource """
+N-Triples example
+""" ;
+        dcat:accessURL_exampleResource <http://purl.org/NET/marccodes/languages/bel.txt> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='marccodes.heroku.com', port=80): Max retries exceeded with url: /languages/bel.txt (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686c9c5e0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+RDF/XML example
+""" ;
+        dcat:accessURL_exampleResource <http://purl.org/NET/marccodes/gacs/a-bx.rdf> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='marccodes.heroku.com', port=80): Max retries exceeded with url: /gacs/a-bx.rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684302230>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdfa" ;
+        dct:description_exampleResource """
+HTML RDFa example
+""" ;
+        dcat:accessURL_exampleResource <http://purl.org/NET/marccodes/muscomp/fg.html> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='marccodes.heroku.com', port=80): Max retries exceeded with url: /muscomp/fg.html (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684303d00>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dct:description_main """
+Currently provides the MARC codes (http://www.loc.gov/standards/valuelist/) for languages, geographic areas, countries and forms of musical composition.
+"""@en ;
+
+    foaf:page <http://purl.org/NET/marccodes/> ;
+    void:triples "8816"^^xsd:integer ;
+    void:uriSpace <http://purl.org/NET/marccodes/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :marc-codes ;
+    void:triples "599"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :marc-codes ;
+    void:triples "534"^^xsd:integer ;
+ .
+
+:lcsh a void:Linkset ;
+    void:target :marc-codes ;
+    void:triples "2232"^^xsd:integer ;
+ .
+
+:lingvoj a void:Linkset ;
+    void:target :marc-codes ;
+    void:triples "421"^^xsd:integer ;
+ .
+
+:wikipedia a void:Linkset ;
+    void:target :marc-codes ;
+    void:triples "136"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Ross_Singer"^^xsd:string ;
+     foaf:Cmbox <mailto:rossfsinger@gmail.com> ; 
+ .
+

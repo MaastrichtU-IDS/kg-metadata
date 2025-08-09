@@ -44,7 +44,7 @@ APiCS Online published by the CLLD project
 
     foaf:page <http://apics-online.info> ;
     void:triples "463009"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -104,7 +104,7 @@ The triple count is a wild guess based on the numbers of 13 million records and 
 
     foaf:page <http://openlibrary.org/> ;
     void:triples "400000000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://openlibrary.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

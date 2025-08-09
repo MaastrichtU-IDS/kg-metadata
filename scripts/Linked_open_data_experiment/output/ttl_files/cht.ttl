@@ -49,7 +49,7 @@ Concepts that cover the cultural heritage field in the Netherlands.
     ] ;
     void:uriSpace <https://data.cultureelerfgoed.nl/term/id/cht/> ;
     void:triples "645403"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

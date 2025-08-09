@@ -161,7 +161,7 @@ SIDER contains information on marketed medicines and their recorded adverse drug
 
     foaf:page <http://sider.bio2rdf.org/> ;
     void:triples "17627864"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/sider:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

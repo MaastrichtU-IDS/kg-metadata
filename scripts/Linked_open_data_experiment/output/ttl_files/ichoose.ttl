@@ -385,7 +385,7 @@ SUNY Albany Center for Technology in Government I-Choose project
 """@en ;
 
     void:triples "99411"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://ichoose.tw.rpi.edu/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

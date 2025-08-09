@@ -209,7 +209,7 @@ NCBI Gene provides information for genes from a wide range of species. A record 
 
     foaf:page <http://ncbigene.bio2rdf.org/> ;
     void:triples "1164672432"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/ncbigene:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

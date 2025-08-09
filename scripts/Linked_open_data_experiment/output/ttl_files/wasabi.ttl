@@ -70,7 +70,7 @@ OK
         dcat:mediaType "text/html;_charset=utf-8" ;
     ] ;
     dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://ns.inria.fr/wasabi/> ;
     void:sparqlEndpoint [
         dct:identifier "c48c3e94-f33a-c750-9c4f-c57fccf4e7fb" ;

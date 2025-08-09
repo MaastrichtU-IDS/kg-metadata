@@ -137,7 +137,7 @@ GenAge is a database of human and model organism genes related to longevity and 
 
     foaf:page <http://genage.bio2rdf.org/> ;
     void:triples "73048"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/genage:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

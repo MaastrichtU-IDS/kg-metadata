@@ -52,7 +52,7 @@ Greek lexical database. Links to package:vu-wordnet and package:w3c-wordnet .
 """@en ;
 
     void:triples "356595"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     void:uriSpace <http://wordnet.okfn.gr/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

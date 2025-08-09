@@ -66,7 +66,7 @@ The dataset uses GoodRelations and vcard and includes addresses, contact informa
 
     foaf:page <http://www.linkedopendata.it/datasets/grrt> ;
     void:triples "434714"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://data.linkedopendata.it/grrt/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

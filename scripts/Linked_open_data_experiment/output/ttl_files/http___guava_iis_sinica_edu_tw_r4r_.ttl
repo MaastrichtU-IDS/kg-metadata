@@ -49,7 +49,7 @@ R4R is a light-weight ontology for representing general relationships of resourc
         dcat:hadRole :owner ;
     ] ;
     void:triples "131"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:exampleResource [
         dcat:mediaType "text/html" ;
         dct:description """

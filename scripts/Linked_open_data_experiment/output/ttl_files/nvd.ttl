@@ -53,7 +53,7 @@ Norwegian classification of scientific disciplines as linked data (2003 edition)
 
     foaf:page <http://www.ntnu.no/ub/data/nvd/about> ;
     void:triples "2114"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://www.ntnu.no/ub/data/nvd/2003/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

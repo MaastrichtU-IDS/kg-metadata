@@ -400,7 +400,7 @@ Linked Data provenance and explanation.
 """@en ;
 
     void:triples "2548861"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://provenanceweb.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

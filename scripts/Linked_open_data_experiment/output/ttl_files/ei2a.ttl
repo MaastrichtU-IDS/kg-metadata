@@ -49,7 +49,7 @@ EI2A  emerges as the framework in which the open data and in general the informa
     ] ;
     void:uriSpace <ei2av2> ;
     void:triples "435391731"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:exampleResource [
         dct:title "Aragon_Open_Data_EI2A,_entities_Places" ;
         dct:description """

@@ -55,7 +55,7 @@ OCRe is an ontology designed to support systematic description of, and interoper
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1076> ;
     void:triples "5139"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

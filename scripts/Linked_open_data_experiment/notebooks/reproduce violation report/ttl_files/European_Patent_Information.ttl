@@ -1,0 +1,100 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:European_Patent_Information a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint_for_European_Patent_Information" ;
+        dct:identifier_sparqlEndpoint "d836cf8b-55c6-9b2a-5e08-88bd60f780ef" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL form is available in https://data.epo.org/linked-data/sparql.html
+""" ;
+        dcat:accessURL_sparqlEndpoint <https://data.epo.org/linked-data/query> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html" ;
+        dct:description_distribution """
+The full data contains complete and up to date patent data, CPC taxonomy and vocabulary files. 
+Updates are weekly.
+""" ;
+        dcat:downloadURL_distribution <https://data.epo.org/linked-data/download/> ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Download_of_European_Patent_Information" ;
+        dct:identifier_distribution "d10296da-73d0-b5d5-5aa3-e2b86f4e1c1a" ;
+    ] ;
+    foaf:page <https://www.epo.org/linked-data/> ;
+    dcat:keyword "bibliographic_data", "patents", "patent_applications", "patent_publication", "technical_classifications", "IPC", "CPC", "patent_priorities", "citations", "non-patent_literature", "applicants", "inventors", "agents", "legal_representatives" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "EPO_patents" ;
+    dct:description_main """
+This data set contains information about all EP patents, like applications, publications, technical classifications, citations, patent families and related non-EP patents.
+The data set is updated weekly
+"""@en ;
+
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    void:uriSpace <http://data.epo.org/linked-data/def/patent/> ;
+    void:triples "600000000"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_EP_publication_as_ttl" ;
+        dct:description_exampleResource """
+European patent publication "EP 125371 9 B1"
+""" ;
+        dcat:accessURL_exampleResource <http://data.epo.org/linked-data/data/publication/EP/1253719/B1/-.ttl> ;
+        adms:status_exampleResource """
+FAIL (400)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_EP_application_as_ttl" ;
+        dct:description_exampleResource """
+European patent application  "EP 01903571"
+""" ;
+        dcat:accessURL_exampleResource <http://data.epo.org/linked-data/id/application/EP/01903571.ttl> ;
+        adms:status_exampleResource """
+FAIL (400)
+""" ;
+    ] ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:marc-codes a void:Linkset ;
+    void:target :European_Patent_Information ;
+    void:triples "18000000"^^xsd:integer ;
+ .
+
+:CPC a void:Linkset ;
+    void:target :European_Patent_Information ;
+    void:triples "19300000"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:mkracker@epo.org> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Martin_Kracker_/_European_Patent_Office"^^xsd:string ;
+     foaf:Cmbox <mailto:mkracker@epo.org> ; 
+ .
+

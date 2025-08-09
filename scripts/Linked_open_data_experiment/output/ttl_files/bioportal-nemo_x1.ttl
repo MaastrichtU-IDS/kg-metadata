@@ -55,7 +55,7 @@ Neural ElectroMagnetic Ontologies (NEMO) describe classes of event-related brain
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1321> ;
     void:triples "37248"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

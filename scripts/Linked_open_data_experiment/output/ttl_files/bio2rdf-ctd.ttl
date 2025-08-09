@@ -233,7 +233,7 @@ CTD includes manually curated data describing cross-species chemical-gene/protei
 
     foaf:page <http://ctd.bio2rdf.org/> ;
     void:triples "326720894"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/ctd:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

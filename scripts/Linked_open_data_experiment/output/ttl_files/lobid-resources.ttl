@@ -95,7 +95,7 @@ You can find additional information about this data [here](https://wiki1.hbz-nrw
 
     foaf:page <http://lobid.org/resource> ;
     void:triples "702686189"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://lobid.org/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -55,7 +55,7 @@ The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1065> ;
     void:triples "9121"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

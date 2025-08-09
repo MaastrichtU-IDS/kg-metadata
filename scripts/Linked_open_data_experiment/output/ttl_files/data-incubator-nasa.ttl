@@ -87,7 +87,7 @@ Currently the data consists of all of the Spacecraft from the NSSDC database whi
 
     foaf:page <http://kasabi.com/dataset/nasa> ;
     void:triples "97974"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://data.kasabi.com/dataset/nasa> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

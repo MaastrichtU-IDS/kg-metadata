@@ -22,7 +22,7 @@ Stammbuch
 
     dct:title "Stammbuch" ;
     dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

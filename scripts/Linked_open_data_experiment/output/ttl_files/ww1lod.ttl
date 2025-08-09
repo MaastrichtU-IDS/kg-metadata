@@ -65,7 +65,7 @@ This dataset contains strictly quality-controlled rich information on events, ac
 """@en ;
 
     void:triples "40160"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://ldf.fi/ww1lod/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

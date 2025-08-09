@@ -55,7 +55,7 @@ The Mammalian Phenotype Ontology is under development as a community effort to p
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1025> ;
     void:triples "117067"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

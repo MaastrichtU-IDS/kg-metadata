@@ -115,7 +115,7 @@ The Clarity program introduces for the first time in Greece the obligation to pu
 
     foaf:page <http://opendata.diavgeia.gov.gr/?lang=en> ;
     void:triples "48051108"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://diavgeia.math.auth.gr/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

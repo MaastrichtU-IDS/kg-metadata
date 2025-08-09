@@ -123,7 +123,7 @@ The Food and Agriculture Organization of the United Nations (FAO) leads internat
 
     foaf:page <http://www.fao.org/countryprofiles/geoinfo.asp?lang=en> ;
     void:triples "22495"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://www.fao.org/countryprofiles/geoinfo/geopolitical/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -81,7 +81,7 @@ The statistics below are complete guesses. Link information is incomplete.
 
     foaf:page <http://chroniclingamerica.loc.gov/about/api/> ;
     void:triples "20000000"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://chroniclingamerica.loc.gov/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

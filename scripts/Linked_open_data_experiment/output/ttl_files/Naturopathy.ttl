@@ -78,7 +78,7 @@ The latest use case is to boost the immune system with food because of the COVID
 OK
 """ ;
     ] ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://sensormeasurement.appspot.com/dataset/naturopathy-dataset> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

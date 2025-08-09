@@ -88,7 +88,7 @@ The KUPKB is a collection of omics datasets that have been extracted from scient
 """@en ;
 
     void:triples "7000000"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://www.kupkb.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

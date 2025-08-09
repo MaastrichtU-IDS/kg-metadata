@@ -55,7 +55,7 @@ WHO Adverse Reaction Terminology, 1997
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1354> ;
     void:triples "247707"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

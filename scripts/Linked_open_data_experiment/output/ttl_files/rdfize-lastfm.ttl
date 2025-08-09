@@ -42,7 +42,7 @@ A Linked Data wrapper around some of the last.fm API.
 
     foaf:page <http://lastfm.rdfize.com> ;
     void:triples "400000000"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://lastfm.rdfize.com/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

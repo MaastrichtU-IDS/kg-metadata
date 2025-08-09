@@ -73,7 +73,7 @@ According to OKD (http://www.opendefinition.org/okd/) the data is not considered
 
     foaf:page <http://linkedct.org/> ;
     void:triples "24653008"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://linkedct.org/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -75,7 +75,7 @@ Semantic repository that contains and publishes co-reference information, formin
 """@en ;
 
     foaf:page <http://ecs.rkbexplorer.com> ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://ecs.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

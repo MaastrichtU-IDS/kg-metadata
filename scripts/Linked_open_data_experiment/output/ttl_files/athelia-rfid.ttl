@@ -85,7 +85,7 @@ of the company.
 
     foaf:page <http://athelia.com> ;
     void:triples "253440"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://athelia.com> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

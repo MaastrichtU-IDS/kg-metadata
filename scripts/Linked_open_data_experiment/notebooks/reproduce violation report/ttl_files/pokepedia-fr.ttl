@@ -1,0 +1,68 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:pokepedia-fr a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-rdf", "lod", "media", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "pokemon", "pokémon", "published-by-producer", "smw", "wiki" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title_main "Poképédia" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-gzip" ;
+        dct:description_distribution """
+Full dataset download
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://data.pokepedia.fr/dumps/pokepedia-fr_rdfdump.tar.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/xml;_charset=UTF-8" ;
+        dct:description_distribution """
+Example (RDF/XML)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://www.pokepedia.fr/Sp%C3%A9cial:ExportRDF/Bulbizarre> ;
+    ] ;
+    dct:description_main """
+Linked data on all Pokemon franchise
+"""@en ;
+
+    foaf:page <http://www.pokepedia.fr> ;
+    void:triples "115150"^^xsd:integer ;
+    dcat:theme  <media> ;
+    void:uriSpace <http://www.pokepedia.fr/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:data-incubator-pokedex a void:Linkset ;
+    void:target :pokepedia-fr ;
+    void:triples "510"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :pokepedia-fr ;
+    void:triples "493"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Poképédia"^^xsd:string ;
+     foaf:Cmbox <mailto:misdre@pokepedia.misdre.info> ; 
+ .
+

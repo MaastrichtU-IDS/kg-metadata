@@ -78,7 +78,7 @@ Ontology metadata properties and classes only: <a href="http://purl.obolibrary.o
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1393> ;
     void:triples "2160"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

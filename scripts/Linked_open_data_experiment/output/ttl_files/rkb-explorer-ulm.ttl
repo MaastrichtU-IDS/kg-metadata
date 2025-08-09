@@ -76,7 +76,7 @@ FAIL (HTTPConnectionPool(host='ulm.rkbexplorer.com', port=80): Max retries excee
 
     foaf:page <http://ulm.rkbexplorer.com> ;
     void:triples "40044"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://ulm.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

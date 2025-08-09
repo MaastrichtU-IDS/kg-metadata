@@ -53,7 +53,7 @@ The books are those listed in the English language section of Dutch printed book
 
     foaf:page <http://keithalexander.co.uk/pbac> ;
     void:triples "55214"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://keithalexander.co.uk/pbac> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

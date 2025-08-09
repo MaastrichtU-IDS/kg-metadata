@@ -68,7 +68,7 @@ A German-centric thesaurus about environmental protection, maintained by the Fed
     ] ;
     foaf:page <https://sns.uba.de/umthes/> ;
     void:triples "300000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <https://sns.uba.de/umthes/scheme> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

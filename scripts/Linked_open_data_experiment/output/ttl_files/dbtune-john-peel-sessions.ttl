@@ -64,7 +64,7 @@ RDF conversion of a dataset released by the BBC, about the [John Peel sessions](
 
     foaf:page <http://dbtune.org/bbc/peel/> ;
     void:triples "277000"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://dbtune.org/bbc/peel/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

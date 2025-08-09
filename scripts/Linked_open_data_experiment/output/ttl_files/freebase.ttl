@@ -118,7 +118,7 @@ Freebase has [an RDF service](http://rdf.freebase.com/) that exposes URIs and ge
 
     foaf:page <http://freebase.com/> ;
     void:triples "337203427"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://rdf.freebase.com/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

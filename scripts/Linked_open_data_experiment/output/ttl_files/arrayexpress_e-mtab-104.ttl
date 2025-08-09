@@ -63,7 +63,7 @@ Rat bladder cancer cells (AY-27 cell line) were inoculated intravesically into s
 """@en ;
 
     void:triples "2613"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://purl.org/twc/arrayexpress/E-MTAB-104/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

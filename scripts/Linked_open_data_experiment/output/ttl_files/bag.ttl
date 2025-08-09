@@ -49,7 +49,7 @@ De gegevens bestaan uit BAG-panden en een deelselectie van BAG-gegevens van deze
     ] ;
     void:uriSpace <http://bag.basisregistraties.overheid.nl/def/bag#identificatiecode> ;
     void:triples "1000000000"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:exampleResource [
         dcat:mediaType "application/rdf+xml;charset=utf-8" ;
         dct:description """

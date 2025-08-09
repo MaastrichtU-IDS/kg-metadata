@@ -76,7 +76,7 @@ FAIL (HTTPConnectionPool(host='courseware.rkbexplorer.com', port=80): Max retrie
 
     foaf:page <http://courseware.rkbexplorer.com> ;
     void:triples "45780"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://courseware.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

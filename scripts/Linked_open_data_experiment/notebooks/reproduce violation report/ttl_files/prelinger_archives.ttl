@@ -1,0 +1,150 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:prelinger_archives a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-dcmit", "format-foaf", "format-rdf", "license-metadata", "media", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-pddl> ;
+    dct:title_main "Prelinger_Archives" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+Example RDF for Prelinger Archives
+""" ;
+        dcat:accessURL_exampleResource <http://data.kasabi.com/dataset/prelinger-archives/film//1935_comedy_mallinckrodt.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint for Prelinger Archives
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://api.kasabi.com/dataset/prelinger-archives/apis/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Kasabi Homepage for Prelinger Archives dataset
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://kasabi.com/dataset/prelinger-archives> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Kasabi page for Prelinger Archives Search API
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://kasabi.com/dataset/prelinger-archives/apis/search> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Kasabi page for Prelinger Archives SPARQL Endpoint
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://kasabi.com/dataset/prelinger-archives/apis/sparql> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Kasabi page for Prelinger Archives Lookup API
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://kasabi.com/dataset/prelinger-archives/apis/lookup> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Kasabi page for Prelinger Archives Reconciliation API
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://kasabi.com/dataset/prelinger-archives/apis/reconciliation> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Kasabi page for Prelinger Archives Augmentation API
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://kasabi.com/dataset/prelinger-archives/apis/augmentation> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Void description of Prelinger Archives dataset
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://data.kasabi.com/dataset/prelinger-archives> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+Dump of the dataset uploaded to the internet archive
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Dataset_export" ;
+        dcat:accessURL_distribution <http://archive.org/download/kasabi/prelinger-archives.gz> ;
+    ] ;
+    dct:description_main """
+The Prelinger Archives is a collection of films relating to U.S. cultural history, the evolution of the American landscape, everyday life and social history. It was physically located in New York City from 1982-2002 and is now in San Francisco.
+
+The Archives was founded by Rick Prelinger in 1982 in order to preserve what he calls "ephemeral" films: films sponsored by corporations and organizations, educational films, and amateur and home movies. Typically, ephemeral films were produced to fulfill specific purposes at specific times, and many exist today only by chance or accident. About 65% of the Archive's holdings are in the public domain because their copyrights have expired, or because they were U.S. productions that were published without proper copyright notice.
+
+This dataset consists of metadata about more than 2,000 public domain films that the Prelinger Archives have made available for unrestricted use via the Internet Archive.
+
+*Note* this dataset is no longer updated, it was taken off-line during the shutdown of Kasabi. A dump of the dataset has been [uploaded to the Internet Archive](http://archive.org/details/kasabi)
+"""@en ;
+
+    foaf:page <http://kasabi.com/dataset/prelinger-archives> ;
+    void:triples "454904"^^xsd:integer ;
+    void:uriSpace <http://data.kasabi.com/dataset/prelinger-archives> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Leigh_Dodds"^^xsd:string ;
+     foaf:Cmbox <mailto:leigh@ldodds.com> ; 
+ .
+

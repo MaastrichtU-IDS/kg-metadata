@@ -51,7 +51,7 @@ BioPAX representation of the Reactome database
 """@en ;
 
     void:triples "14285698"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://identifiers.org/reactome/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

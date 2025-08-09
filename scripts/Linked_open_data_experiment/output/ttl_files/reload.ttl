@@ -172,7 +172,7 @@ ReLoad project will foster experimentation with the technology and methods of li
 """@en ;
 
     void:triples "10455463"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://lod.xdams.org/reload/oad/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

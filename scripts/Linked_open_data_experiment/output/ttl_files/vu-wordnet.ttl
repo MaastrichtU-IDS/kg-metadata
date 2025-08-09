@@ -80,7 +80,7 @@ RDF conversion of Princeton's package:wordnet, version 3.0. With many links to p
 
     foaf:page <http://semanticweb.cs.vu.nl/lod/wn30/> ;
     void:triples "4573749"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     void:uriSpace <http://purl.org/vocabularies/princeton/wn30> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

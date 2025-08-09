@@ -55,7 +55,7 @@ thesaurus alternativa
 
     foaf:page <http://bioportal.bioontology.org/ontologies/3034> ;
     void:triples "799"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

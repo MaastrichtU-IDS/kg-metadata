@@ -166,7 +166,7 @@ Go to <a href="http://www.pdbj.org/index.html">source site</a>.
 
     foaf:page <http://biolod.org/database/ria1i/Protein_Data_Bank> ;
     void:triples "362823"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -70,7 +70,7 @@ Resource descriptions collected at each participating institution are freely ava
 
     foaf:page <http://eagle-i.ea.vanderbilt.edu> ;
     void:triples "10057"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://eagle-i/ea/vanderbilt.edu/i/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

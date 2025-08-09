@@ -55,7 +55,7 @@ CAOontology is designed for supporting the COG enrichment study by using Fisher'
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1582> ;
     void:triples "2752"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

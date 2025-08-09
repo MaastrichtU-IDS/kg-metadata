@@ -55,7 +55,7 @@ assigns a grade to a tumor starting from the 3 criteria of the NGS
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1304> ;
     void:triples "3780"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

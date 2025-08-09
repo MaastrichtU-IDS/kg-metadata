@@ -103,7 +103,7 @@ ROD is part of Reportnet. Reportnet is group of web applications and processes d
 
     foaf:page <http://rod.eionet.europa.eu/> ;
     void:triples "28000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://rod.eionet.europa.eu> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

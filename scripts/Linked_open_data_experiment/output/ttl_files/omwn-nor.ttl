@@ -58,7 +58,7 @@ The Norwegian wordnet as published as part of the Open Multilingual WordNet. The
         dcat:hadRole :owner ;
     ] ;
     void:triples "31467"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     foaf:page <http://compling.hss.ntu.edu.sg/omw/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

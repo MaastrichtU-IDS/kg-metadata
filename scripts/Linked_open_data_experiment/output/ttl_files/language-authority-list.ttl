@@ -59,7 +59,7 @@ The Languages NAL is part of the Core Metadata (CM) used in the data exchange be
     ] ;
     void:uriSpace <http://publications.europa.eu/resource/authority/language> ;
     void:triples "423313"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

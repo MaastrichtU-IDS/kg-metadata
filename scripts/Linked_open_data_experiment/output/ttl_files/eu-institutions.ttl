@@ -71,7 +71,7 @@ http://institutions.publicdata.eu/
 
     foaf:page <http://institutions.publicdata.eu/> ;
     void:triples "643"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://institutions.publicdata.eu/#> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

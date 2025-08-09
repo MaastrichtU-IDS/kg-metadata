@@ -59,7 +59,7 @@ This dataset was developed within the BEST project at the VU University Amsterda
 
     foaf:page <http://www.best-project.nl> ;
     void:triples "1931860"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://linkeddata.few.vu.nl/rechtspraak/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

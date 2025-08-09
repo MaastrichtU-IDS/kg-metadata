@@ -42,7 +42,7 @@ Data last updated in 2007.
 
     foaf:page <http://www4.wiwiss.fu-berlin.de/gutendata/> ;
     void:triples "10000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://www4.wiwiss.fu-berlin.de/gutendata/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

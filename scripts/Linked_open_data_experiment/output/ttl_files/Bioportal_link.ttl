@@ -35,7 +35,7 @@ Creating the largest comprehensive knowledge base of terrorism and related activ
 
     dct:title "Indian_Terrorism_Ontology_(InTO)" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

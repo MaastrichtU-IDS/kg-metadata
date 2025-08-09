@@ -93,7 +93,7 @@ There is a total of 46,173 external data links.
 
     foaf:page <http://umbel.org> ;
     void:triples "478585"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://umbel.org/umbel/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

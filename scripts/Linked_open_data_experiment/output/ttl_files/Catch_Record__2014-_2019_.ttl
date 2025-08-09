@@ -36,7 +36,7 @@ Catch records data from Norway (2014-2019), transformed and published as Linked 
     ] ;
     void:uriSpace <http://w3id.org/foodie/open/catchrecord/norway/> ;
     void:triples "192867166"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -37,7 +37,7 @@ Universal Dependencies Treebank Romanian in Turtle-RDF and CONLL-U format.
 
     dct:title "Universal_Dependencies_Treebank_Romanian" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

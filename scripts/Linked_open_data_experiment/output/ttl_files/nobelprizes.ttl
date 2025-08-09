@@ -89,7 +89,7 @@ Linked Open Data about every Nobel Prize since 1901, including information about
 
     foaf:page <http://www.nobelprize.org/nobel_organizations/nobelmedia/nobelprize_org/developer/manual-linkeddata/terms.html> ;
     void:triples "88792"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://data.nobelprize.org/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

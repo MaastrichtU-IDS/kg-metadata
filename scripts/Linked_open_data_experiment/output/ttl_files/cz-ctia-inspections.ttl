@@ -75,7 +75,7 @@ Basic information about inspections of the Czech Trade Inspection Authority
 """@en ;
 
     foaf:page <http://linked.opendata.cz/resource/dataset/coi.cz/kontroly> ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://linked.opendata.cz/resource/domain/coi.cz/check-action/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

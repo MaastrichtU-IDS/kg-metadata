@@ -151,7 +151,7 @@ published as RDFa pages, RDF/XML, NT and Turtle dataset, licensed under Creative
 
     foaf:page <http://zbw.eu/stw> ;
     void:triples "112000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://zbw.eu/stw/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

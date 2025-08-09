@@ -77,7 +77,7 @@ Business entities from ARES - business registry
 
     foaf:page <http://linked.opendata.cz/resource/dataset/ares/or> ;
     void:triples "13700270"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <_http://linked.opendata.cz/resource/business-entity/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -148,7 +148,7 @@ The aim of this project, called DATATURCYL, is to reuse and redistribute open da
 """@en ;
 
     void:triples "332991"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

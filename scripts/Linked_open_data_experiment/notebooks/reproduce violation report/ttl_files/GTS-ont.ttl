@@ -1,0 +1,58 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:GTS-ont a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle;_charset=utf-8" ;
+        dct:description_distribution """
+Download TTL from GitHub
+""" ;
+        dcat:downloadURL_distribution <https://raw.githack.com/CGI-IUGS/timescale-ont/master/rdf/gts.ttl> ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:identifier_distribution "ec8cda65-6bf0-833c-5c61-20f8af4c5237" ;
+        dct:title_distribution "Geological_Timescale_OntologyTTL" ;
+    ] ;
+    dcat:keyword "ontology", "geology", "stratigraphy", "timescale", "owl-time" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "Geological_Timescale_Ontology" ;
+    dct:identifier "10.25919/5f051113e2e2e" ;
+    dct:description_main """
+OWL ontology for the RDF representation of the Geologic Timescale.
+"""@en ;
+
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    foaf:page <https://github.com/CGI-IUGS/timescale-ont> ;
+    void:triples "785"^^xsd:integer ;
+    dcat:theme  <geography> ;
+    void:uriSpace <http://resource.geosciml.org/ontology/timescale/gts#> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:dr.shorthair@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Simon_Cox"^^xsd:string ;
+     foaf:Cmbox <mailto:simon.cox@csiro.au> ; 
+ .
+

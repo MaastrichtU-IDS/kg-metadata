@@ -143,7 +143,7 @@ RDF version of the CC-SA-BY ChEMBL database by the team of John Overington at th
 
     foaf:page <https://github.com/egonw/chembl.rdf> ;
     void:triples "25111377"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://rdf.farmbio.uu.se/chembl/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

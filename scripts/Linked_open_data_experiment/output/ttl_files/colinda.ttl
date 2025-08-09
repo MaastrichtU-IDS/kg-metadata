@@ -67,7 +67,7 @@ Includes information about scientific conferences and their location including s
 
     foaf:page <http://colinda.org> ;
     void:triples "149020"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://colinda.org/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

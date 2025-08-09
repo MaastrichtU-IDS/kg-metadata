@@ -55,7 +55,7 @@ The Cognitive Atlas is a collaborative knowledge building project that aims to d
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1633> ;
     void:triples "25779"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

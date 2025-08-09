@@ -1,0 +1,78 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:dbpedia-eu a dcat:Dataset ;
+    dcat:keyword "access-api", "basque", "crossdomain", "dbpedia", "deref-vocab", "format-foaf", "format-rdf", "format-rdfs", "format-xhtml", "lod", "lodcloud-diagram-2014-08-30", "no-licence-metadata", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "published-by-producer", "wikipedia" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "DBpedia_in_Basque" ;
+    void:exampleResource [
+        dct:title_exampleResource "RDF/XML_example" ;
+        dcat:mediaType_exampleResource "application/rdf+xml;_charset=UTF-8" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://eu.dbpedia.org/data/Euskal_Herria.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://eu.dbpedia.org/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+The resource will be resolved via content negotiation to either: http://eudbpedia.deusto.es/page/Euskal_Herria or http://eudbpedia.deusto.es/data/Euskal_Herria.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Resource_example" ;
+        dcat:accessURL_distribution <http://eu.dbpedia.org/resource/Euskal_Herria> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "voID_description" ;
+        dcat:accessURL_distribution <http://eu.dbpedia.org/sparql?default-graph-uri=http%253A%252F%252Feu.dbpedia.org%252Fvoid&query=select%2B%2A%2BWHERE%2B%7B%253Fs%2B%253Fp%2B%253Fo%7D&should-sponge=&format=text%252Fhtml&timeout=0&debug=on> ;
+    ] ;
+    dct:description_main """
+Basque chapter of DBpedia. DBpedia is a "community effort to extract structured information from Wikipedia and to make this information available on the Web. DBpedia allows you to ask sophisticated queries against Wikipedia, and to link other data sets on the Web to Wikipedia data. We hope this will make it easier for the amazing amount of information in Wikipedia to be used in new and interesting ways, and that it might inspire new mechanisms for navigating, linking and improving the encyclopedia itself."
+"""@en ;
+
+    foaf:page <http://eudbpedia.deusto.es> ;
+    void:triples "7113378"^^xsd:integer ;
+    void:uriSpace <http://eudbpedia.deusto.es/resource/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Jon_Lazaro"^^xsd:string ;
+     foaf:Cmbox <mailto:jlazaro@deusto.es> ; 
+ .
+

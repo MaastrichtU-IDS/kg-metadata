@@ -71,7 +71,7 @@ See: http://www.eagle-i.net/
 
     foaf:page <http://famu.eagle-i.net> ;
     void:triples "3000"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://famu.eagle-i.net/i/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

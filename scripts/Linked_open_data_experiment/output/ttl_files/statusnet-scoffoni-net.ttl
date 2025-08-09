@@ -28,7 +28,7 @@ FAIL (HTTPConnectionPool(host='status.scoffoni.net', port=80): Max retries excee
 StatusNet instance hosted at http://scoffoni.net
 """@en ;
 
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

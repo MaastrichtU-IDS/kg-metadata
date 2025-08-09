@@ -76,7 +76,7 @@ This repository contains data supplied from diverse Italian institutions.
 
     foaf:page <http://italy.rkbexplorer.com> ;
     void:triples "32901"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://italy.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

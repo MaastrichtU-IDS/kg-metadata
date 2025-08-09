@@ -85,7 +85,7 @@ Webpage of ASCDC LODDatasets for downloads of entire published LOD-based dataset
 FAIL (400)
 """ ;
     ] ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://data.ascdc.tw/uc/anth/ntm/> ;
     void:sparqlEndpoint [
         dct:identifier "8242abab-1d62-cb6b-4676-da41bb251b5b" ;

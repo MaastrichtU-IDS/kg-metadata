@@ -47,7 +47,7 @@ started in 2005 by the National Cancer Institute (NCI) and the National Human Ge
 """@en ;
 
     void:triples "20400000000"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

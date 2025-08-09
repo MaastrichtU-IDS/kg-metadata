@@ -68,7 +68,7 @@ by https://scraperwiki.com/scrapers/biographical_directory_usc/#
 
     foaf:page <http://bioguide.congress.gov/biosearch/biosearch.asp> ;
     void:triples "2042215"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://logd.tw.rpi.edu/source/congress-gov/dataset/biographical-directory-of-the-united-states-congress/version/2012-Jan-04/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

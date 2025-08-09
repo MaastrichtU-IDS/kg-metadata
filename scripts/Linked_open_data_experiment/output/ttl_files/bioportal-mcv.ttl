@@ -55,7 +55,7 @@ Controlled vocabularies for the MIxS family of metadata checklists. See http://g
 
     foaf:page <http://bioportal.bioontology.org/ontologies/3000> ;
     void:triples "3121"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -76,7 +76,7 @@ FAIL (HTTPConnectionPool(host='darmstadt.rkbexplorer.com', port=80): Max retries
 
     foaf:page <http://darmstadt.rkbexplorer.com> ;
     void:triples "35325"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://darmstadt.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

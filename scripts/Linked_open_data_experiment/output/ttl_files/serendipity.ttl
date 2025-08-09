@@ -38,7 +38,7 @@ Serendipity Linked Open Data includes data about OpenCourseWare and Open Educati
 """@en ;
 
     void:triples "800522"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://serendipity.utpl.edu.ec/lod/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

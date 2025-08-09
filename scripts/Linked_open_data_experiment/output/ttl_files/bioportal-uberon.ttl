@@ -55,7 +55,7 @@ Uberon is a multi-species anatomy ontology created to facilitate comparison of p
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1404> ;
     void:triples "284209"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

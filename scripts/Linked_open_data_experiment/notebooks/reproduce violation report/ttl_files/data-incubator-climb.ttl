@@ -1,0 +1,103 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:data-incubator-climb a dcat:Dataset ;
+    dcat:keyword "climbing", "deref-vocab", "format-climb", "format-dc", "format-foaf", "format-geo", "format-rdf", "format-rdfs", "geographic", "lod", "lodcloud-diagram-2011-09-19", "mountaineering", "no-license-metadata", "no-vocab-mappings", "provenance-metadata", "published-by-third-party", "sport" ;
+    dct:title_main "Climb_Dataincubator" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource (Venue)
+""" ;
+        dcat:accessURL_exampleResource <http://climb.dataincubator.org/venues/Buachaille_etive_mor_rannoch_wall_%28argyll_and_bute%29> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='climb.dataincubator.org', port=80): Max retries exceeded with url: /venues/Buachaille_etive_mor_rannoch_wall_(argyll_and_bute) (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684303fa0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+example resource (Route)
+""" ;
+        dcat:accessURL_exampleResource <http://climb.dataincubator.org/venues/Buachaille_etive_mor_rannoch_wall_%28argyll_and_bute%29/A_game_of_dice> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='climb.dataincubator.org', port=80): Max retries exceeded with url: /venues/Buachaille_etive_mor_rannoch_wall_(argyll_and_bute)/A_game_of_dice (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684301450>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "None" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://api.talis.com/stores/climb/services/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='api.talis.com', port=80): Max retries exceeded with url: /stores/climb/services/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684301060>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD description
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='climb.dataincubator.org', port=80): Max retries exceeded with url: /dataset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684300370>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://climb.dataincubator.org/dataset> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+Climb Vocabulary
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='climb.dataincubator.org', port=80): Max retries exceeded with url: /vocabs/climb/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684301120>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://climb.dataincubator.org/vocabs/climb/> ;
+    ] ;
+    dct:description_main """
+A collection of data about climbing routes, crags, and mountains, screen-scraped from UKClimbing.com
+"""@en ;
+
+    foaf:page <http://climb.dataincubator.org/> ;
+    void:triples "174120"^^xsd:integer ;
+    void:uriSpace <http://climb.dataincubator.org/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:data-incubator-metoffice a void:Linkset ;
+    void:target :data-incubator-climb ;
+    void:triples "1047"^^xsd:integer ;
+ .
+
+:data-incubator-smcjournals a void:Linkset ;
+    void:target :data-incubator-climb ;
+    void:triples "43"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :data-incubator-climb ;
+    void:triples "300"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Keith_Alexander"^^xsd:string ;
+     foaf:Cmbox <mailto:k.j.w.alexander@gmail.com> ; 
+ .
+

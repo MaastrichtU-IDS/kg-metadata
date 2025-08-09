@@ -1,0 +1,78 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:masc a dcat:Dataset ;
+    dcat:keyword "american-english", "annotation", "corpus", "crossdomain", "english", "llod", "lod" ;
+    dct:title_main "Manually_Annotated_Sub-Corpus_(MASC)_of_the_Open_American_National_Corpus" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-gzip" ;
+        dct:description_distribution """
+original formats and GrAF XML
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='www.anc.org', port=443): Max retries exceeded with url: /MASC/download/MASC-3.0.0.tgz (Caused by SSLError(CertificateError("hostname 'www.anc.org' doesn't match 'anc.org'"))))
+""" ;
+        dct:title_distribution "MASC_v._3.0.0" ;
+        dcat:downloadURL_distribution <http://www.anc.org/MASC/download/MASC-3.0.0.tgz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-gzip" ;
+        dct:description_distribution """
+provisional conversion of the PTB-annotated MASC subsection, 60.000 tokens, generated from original format (not GrAF/XML)
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "MASC_v._3.0.0_(PTB_syntax_only),_OWL2/DL" ;
+        dcat:downloadURL_distribution <http://acoli.cs.uni-frankfurt.de/resources/powla/data/masc/MASC-3.0.0_PTB/MASC-3.0.0_PTB.owl.tgz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+MASC1 data and annotations (v 1.0.3), ANC (GrAF) format
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='www.anc.org', port=443): Max retries exceeded with url: /MASC/download/MASC-1.0.3.zip (Caused by SSLError(CertificateError("hostname 'www.anc.org' doesn't match 'anc.org'"))))
+""" ;
+        dct:title_distribution "MASC_v._1.0.3" ;
+        dcat:accessURL_distribution <http://www.anc.org/MASC/download/MASC-1.0.3.zip> ;
+    ] ;
+    dct:description_main """
+The Manually Annotated Sub-Corpus (MASC) consists of approximately 500,000 words of contemporary American English written and spoken data drawn from the OPEN AMERICAN NATIONAL CORPUS (OANC).
+
+
+All of MASC includes manually validated annotations for sentence boundaries, token, lemma and POS; noun and verb chunks; and named entities (person, location, organization, date). Additional manually produced or validated annotations have been produced by the MASC project for portions of the sub-corpus, including full-text annotation for FrameNet frame elements, WordNet sense tags, and Penn Treebank syntactic annotation. Annotations of all or portions of the sub-corpus for a wide variety of other linguistic phenomena have been contributed by other projects.
+
+
+Unlike most freely available corpora including a wide variety of linguistic annotations, MASC contains texts from a broad range of genres.
+
+
+MASC is an OPEN LANGUAGE DATA resource that can be downloaded by anyone for any purpose. At the same time, it is a resource that will be enhanced by the community, through its contributions of annotations and derived data.
+
+The RDF conversion from GrAF is still in preparation. Below, you can find a preliminary OWL2/DL representation of the PennTreebank syntax (60.000 tok) in OWL, generated out of the original annotations, instead. Triple counts and links refer to this fragment. The conversion follows POWLA specifications (http://sourceforge.net/projects/powla/) and includes links to OLiA Annotation Models for PTB morphosyntax and syntax.
+
+"""@en ;
+
+    foaf:page <http://www.anc.org/MASC/Home.html> ;
+    void:triples "1000000"^^xsd:integer ;
+    dcat:theme  <linguistics> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:olia a void:Linkset ;
+    void:target :masc ;
+    void:triples "67000"^^xsd:integer ;
+ .
+

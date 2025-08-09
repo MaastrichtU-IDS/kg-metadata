@@ -55,7 +55,7 @@ The International Classification of Primary Care (ICPC). Denmark: World Organisa
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1344> ;
     void:triples "8581"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -108,7 +108,7 @@ Giunchiglia, Fausto and Maltese, Vincenzo and Farazi, Feroz and Dutta, Biswanath
 
     foaf:page <http://geowordnet.semanticmatching.org/> ;
     void:triples "53390969"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://geowordnet.semanticmatching.org/3.0/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

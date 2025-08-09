@@ -52,7 +52,7 @@ Data about John Goodwin's family tree.
 
     foaf:page <http://www.johngoodwin.me.uk/family/> ;
     void:triples "177867"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://www.johngoodwin.me.uk/family/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

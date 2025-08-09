@@ -65,7 +65,7 @@ A social network of active Lotico Semantic Web community members, provided as RD
 
     foaf:page <http://www.lotico.com/> ;
     void:triples "4248758"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://www.lotico.com/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

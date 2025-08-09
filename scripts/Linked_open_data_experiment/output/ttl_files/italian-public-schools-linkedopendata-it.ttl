@@ -69,7 +69,7 @@ More information at [http://www.linkedopendata.it/datasets/scuole](http://www.li
 
     foaf:page <http://www.linkedopendata.it/datasets/scuole> ;
     void:triples "168638"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://data.linkedopendata.it/scuole/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

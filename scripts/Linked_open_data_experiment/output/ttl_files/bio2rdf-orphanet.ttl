@@ -173,7 +173,7 @@ Orphanet is a database of information on rare diseases and orphan drugs for all 
 
     foaf:page <http://orphanet.bio2rdf.org/> ;
     void:triples "377947"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/orphanet:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

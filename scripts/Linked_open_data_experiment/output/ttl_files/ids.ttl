@@ -65,7 +65,7 @@ OK
 
     foaf:page <http://lingweb.eva.mpg.de/ids/> ;
     void:triples "2000000"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

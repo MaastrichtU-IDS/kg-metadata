@@ -40,7 +40,7 @@ Foram data from the planktonic foram working group.  Hosted at chronos.org.
 
     foaf:page <http://data.oceandrilling.org/linkeddata.html> ;
     void:triples "24489366"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://chronos.org/taxa/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

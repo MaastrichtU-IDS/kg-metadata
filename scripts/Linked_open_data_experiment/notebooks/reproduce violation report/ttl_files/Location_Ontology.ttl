@@ -1,0 +1,55 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Location_Ontology a dcat:Dataset ;
+    foaf:depiction <https://drive.google.com/file/d/1BU75PMsgVYnr88wFnkDN2cqxTIVWPKPA/view?usp=sharing> ;
+    foaf:page <https://drive.google.com/file/d/1iUuw6VXE5on5xxRnYlJiCyz2bZsEY5t8/view?usp=sharing> ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "Location_Ontology" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Location_Ontology" ;
+        dct:identifier_distribution "01c5bc60-a357-e320-c3c7-f22caeae6baa" ;
+        dcat:downloadURL_distribution <https://drive.google.com/file/d/1iUuw6VXE5on5xxRnYlJiCyz2bZsEY5t8/view?usp=sharing> ;
+    ] ;
+    dct:description_main """
+Can find out location of any place.
+"""@en ;
+
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    dcat:theme  <user_generated> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:nehadhanotiya1612@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Neha_Dhanotiya"^^xsd:string ;
+     foaf:Cmbox <mailto:nehadhanotiya1612@gmail.com> ; 
+ .
+

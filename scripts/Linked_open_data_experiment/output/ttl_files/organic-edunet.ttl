@@ -147,7 +147,7 @@ Organic Edunet Linked Open Data currently contains the metadata of collection of
 
     foaf:page <http://data.organic-edunet.eu/> ;
     void:triples "11091"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://data.organic-edunet.eu/directory/identifier> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

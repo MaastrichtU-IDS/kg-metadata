@@ -101,7 +101,7 @@ Surface boisée de chaque pays (ou groupe de pays, e.g UE ou continents), en pou
         dcat:hadRole :owner ;
     ] ;
     void:triples "34875"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

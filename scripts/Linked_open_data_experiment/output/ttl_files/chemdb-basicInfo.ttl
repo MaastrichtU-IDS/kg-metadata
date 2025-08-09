@@ -24,7 +24,7 @@ This dataset collects information on the commonly used chemical identifiers (e.g
 
     dct:title "chemdb__dataset" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:sparqlEndpoint [
         dct:identifier "47e38590-9136-77c9-9f5f-43bd814816e2" ;
         dct:title "chemdb-basicInfo_SPARQL_endpoint" ;

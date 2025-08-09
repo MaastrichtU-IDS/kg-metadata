@@ -54,7 +54,7 @@ Besides the unified search form (which is not very useful for extraction purpose
 
     foaf:page <http://n-lex.publicdata.eu/> ;
     void:triples "1792054"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://n-lex.publicdata.eu/ontology> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

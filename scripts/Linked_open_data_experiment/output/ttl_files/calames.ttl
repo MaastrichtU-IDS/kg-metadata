@@ -48,7 +48,7 @@ NB : in order to extract the RDFa, please use the URL as it is given in the foll
 
     foaf:page <http://www.calames.abes.fr/> ;
     void:triples "2000000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://www.calames.abes.fr/pub/ms/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

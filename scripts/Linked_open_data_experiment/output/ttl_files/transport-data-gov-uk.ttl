@@ -91,7 +91,7 @@ Transport-related linked data from data.gov.uk.
 
     foaf:page <http://transport.data.gov.uk/> ;
     void:triples "329527661"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://transport.data.gov.uk/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

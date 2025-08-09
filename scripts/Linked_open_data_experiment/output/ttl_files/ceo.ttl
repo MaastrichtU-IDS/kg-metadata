@@ -38,7 +38,7 @@ Archis contains data on archaeological sites and sites in the Netherlands. The N
     ] ;
     void:uriSpace <https://linkeddata.cultureelerfgoed.nl/def/ceo> ;
     void:triples "65048765"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

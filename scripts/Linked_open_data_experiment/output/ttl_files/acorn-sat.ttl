@@ -167,7 +167,7 @@ ACORN-SAT, the Australian Climate Observations Reference Network - Surface Air T
 
     foaf:page <http://lab.environment.data.gov.au> ;
     void:triples "61406503"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

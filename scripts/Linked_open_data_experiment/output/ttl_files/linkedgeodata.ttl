@@ -53,7 +53,7 @@ LinkedGeoData is an effort to add a spatial dimension to the Web of Data / Seman
 
     foaf:page <http://linkedgeodata.org/> ;
     void:triples "3000000000"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://linkedgeodata.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

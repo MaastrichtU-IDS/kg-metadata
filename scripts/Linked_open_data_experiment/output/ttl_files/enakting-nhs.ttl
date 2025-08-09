@@ -43,7 +43,7 @@ National Health Service (waiting times) performance data  published by the UK De
 
     foaf:page <http://nhs.psi.enakting.org/> ;
     void:triples "23828953"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://nhs.psi.enakting.org/id/nhs/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

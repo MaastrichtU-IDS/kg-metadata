@@ -55,7 +55,7 @@ SAO describes structures from the dimensional range encompassing cellular and su
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1068> ;
     void:triples "11036"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

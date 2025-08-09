@@ -76,7 +76,7 @@ FRB data and metadata
 """@en ;
 
     void:triples "185300000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://frb.270a.info/dataset/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

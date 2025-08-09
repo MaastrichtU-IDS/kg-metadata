@@ -70,7 +70,7 @@ Resource descriptions collected at each participating institution are freely ava
 
     foaf:page <http://montana.eagle-i.net> ;
     void:triples "24000"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://montana.eagle-i.net/i/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

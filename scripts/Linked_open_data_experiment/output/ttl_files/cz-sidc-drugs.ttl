@@ -100,7 +100,7 @@ Medicinal products marketed in Czech Republic according to the State Institute f
 
     foaf:page <http://linked.opendata.cz/resource/dataset/sukl/drugs> ;
     void:triples "1144314"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://linked.opendata.cz/resource/sukl/medicinal-product-packaging/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

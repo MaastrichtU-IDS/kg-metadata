@@ -65,7 +65,7 @@ Courts thesaurus is structuring German and European courts in a hierarchical fas
 
     foaf:page <http://vocabulary.wolterskluwer.de/> ;
     void:triples "30387"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://vocabulary.wolterskluwer.de/court> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -1,0 +1,88 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:foodpedia a dcat:Dataset ;
+    dcat:keyword "food", "format-rdf", "ingredients", "lod" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "FOODpediaLinked_Data_Dataset_about_Food_Products_and_Ingredients" ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://foodpedia.tk/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Example_food_product_(Turtle)" ;
+        dcat:accessURL_distribution <http://foodpedia.tk/resource/4601242311914?output=ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Homepage" ;
+        dcat:accessURL_distribution <http://foodpedia.tk/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Example_food_product_(HTML)" ;
+        dcat:accessURL_distribution <http://foodpedia.tk/page/4601242311914> ;
+    ] ;
+    dct:description_main """
+At this moment FOODpedia contains information about only Russian food products and ingredients that was crawled from [GoodsMatrix](http://goodsmatrix.ru/) web site. Also it has links to ingredients from [AGROVOC](http://datahub.io/dataset/agrovoc-skos).
+"""@en ;
+
+    foaf:page <http://foodpedia.tk> ;
+    void:triples "888223"^^xsd:integer ;
+    void:uriSpace <http://foodpedia.tk/resource/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:agrovoc a void:Linkset ;
+    void:target :foodpedia ;
+    void:triples "426"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :foodpedia ;
+    void:triples "823"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Maxim_Kolchin"^^xsd:string ;
+     foaf:Cmbox <mailto:kolchinmax@gmail.com> ; 
+ .
+

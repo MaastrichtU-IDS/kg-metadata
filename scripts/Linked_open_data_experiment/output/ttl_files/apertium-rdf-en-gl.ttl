@@ -91,7 +91,7 @@ RDF version of the Apertium bilingual dictionary EN-GL. The original dataset (in
 """@en ;
 
     void:triples "425117"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

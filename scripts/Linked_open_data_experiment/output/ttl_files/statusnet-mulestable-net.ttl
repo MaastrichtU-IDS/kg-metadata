@@ -28,7 +28,7 @@ OK
 StatusNet instance hosted at http://mulestable.net
 """@en ;
 
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

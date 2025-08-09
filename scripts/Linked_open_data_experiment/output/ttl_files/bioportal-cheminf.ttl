@@ -56,7 +56,7 @@ Includes terms for the descriptors commonly used in cheminformatics software app
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1444> ;
     void:triples "5931"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

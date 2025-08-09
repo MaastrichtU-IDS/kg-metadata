@@ -65,7 +65,7 @@ List of accommodations in Piedmont, Italy. The dataset uses GoodRelations and vc
 
     foaf:page <http://www.linkedopendata.it/datasets/grrp> ;
     void:triples "153935"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

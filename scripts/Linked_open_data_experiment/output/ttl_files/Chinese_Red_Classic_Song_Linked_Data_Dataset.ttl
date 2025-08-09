@@ -139,7 +139,7 @@ Red songs are precious historical materials, reflecting the face of Chinese peop
         dcat:hadRole :owner ;
     ] ;
     void:triples "5828"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:exampleResource [
         dcat:mediaType "text/html;_charset=utf-8" ;
         dct:description """

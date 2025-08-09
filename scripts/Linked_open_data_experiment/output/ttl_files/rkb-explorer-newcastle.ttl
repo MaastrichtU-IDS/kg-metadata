@@ -77,7 +77,7 @@ FAIL (HTTPConnectionPool(host='newcastle.rkbexplorer.com', port=80): Max retries
 
     foaf:page <http://newcastle.rkbexplorer.com> ;
     void:triples "87505"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://newcastle.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

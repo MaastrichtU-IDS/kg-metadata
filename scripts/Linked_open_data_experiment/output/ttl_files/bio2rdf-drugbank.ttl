@@ -137,7 +137,7 @@ The DrugBank database is a bioinformatics and chemoinformatics resource that com
 
     foaf:page <http://drugbank.bio2rdf.org/> ;
     void:triples "3672531"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/drugbank:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

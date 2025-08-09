@@ -122,7 +122,7 @@ In-depth and accessible pieces on numerous musical topics, written by experts.
     ] ;
     void:uriSpace <https://data.muziekweb.nl/Link/> ;
     void:triples "31579141"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:exampleResource [
         dcat:mediaType "text/turtle" ;
         dct:description """

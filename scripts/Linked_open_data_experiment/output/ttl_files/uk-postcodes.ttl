@@ -35,7 +35,7 @@ Content is licensed under the [OS OpenData License](http://www.ordnancesurvey.co
 
     foaf:page <http://www.uk-postcodes.com/> ;
     void:triples "27137408"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://www.uk-postcodes.com/postcode/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

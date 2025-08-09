@@ -170,7 +170,7 @@ Open linked data from the Library and Museum of ARTIUM
 
     foaf:page <http://biblioteca.artium.org> ;
     void:triples "4436657"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://datos.artium.org/id/collections/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

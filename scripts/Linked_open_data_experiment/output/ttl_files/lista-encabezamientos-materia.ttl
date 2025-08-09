@@ -119,7 +119,7 @@ The list is also presented in a zipped MARC file of subject authorities (those b
 
     foaf:page <http://id.sgcb.mcu.es> ;
     void:triples "193865"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://id.sgcb.mcu.es/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

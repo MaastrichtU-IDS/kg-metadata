@@ -87,7 +87,7 @@ FAIL (HTTPConnectionPool(host='dblp.rkbexplorer.com', port=80): Max retries exce
 
     foaf:page <http://dblp.rkbexplorer.com> ;
     void:triples "24112294"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://dblp.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

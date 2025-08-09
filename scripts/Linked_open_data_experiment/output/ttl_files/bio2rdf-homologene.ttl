@@ -125,7 +125,7 @@ HomoloGene is a system for automated detection of homologs among the annotated g
 
     foaf:page <http://homologene.bio2rdf.org/> ;
     void:triples "7189769"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/homologene:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

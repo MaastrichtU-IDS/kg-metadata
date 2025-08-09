@@ -65,7 +65,7 @@ Please note: The ontology metrics displayed by BioPortal are incorrect as of 5/1
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1123> ;
     void:triples "73908"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

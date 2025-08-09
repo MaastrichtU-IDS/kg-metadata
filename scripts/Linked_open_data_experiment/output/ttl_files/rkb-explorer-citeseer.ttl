@@ -76,7 +76,7 @@ FAIL (HTTPConnectionPool(host='citeseer.rkbexplorer.com', port=80): Max retries 
 
     foaf:page <http://citeseer.rkbexplorer.com/> ;
     void:triples "8146852"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://citeseer.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -89,7 +89,7 @@ Code lists of the legal relationships and documents in the Land register informa
 
     foaf:page <http://ruian.linked.opendata.cz/resource/dataset/cuzk/pravni-vztahy-listiny> ;
     void:triples "11867"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://ruian.linked.opendata.cz/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -55,7 +55,7 @@ A structured controlled vocabulary of stage-specific anatomical structures of th
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1022> ;
     void:triples "75000"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

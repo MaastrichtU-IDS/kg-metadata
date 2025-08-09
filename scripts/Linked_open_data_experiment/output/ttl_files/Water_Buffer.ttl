@@ -37,7 +37,7 @@ This data contains the water buffer and water body related data from Czech repub
     ] ;
     void:uriSpace <http://w3id.org/foodie/open/cz/water_buffer25/> ;
     void:triples "3978517"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

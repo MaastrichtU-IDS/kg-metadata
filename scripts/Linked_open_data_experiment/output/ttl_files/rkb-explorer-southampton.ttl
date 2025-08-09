@@ -76,7 +76,7 @@ FAIL (HTTPConnectionPool(host='southampton.rkbexplorer.com', port=80): Max retri
 
     foaf:page <http://southampton.rkbexplorer.com> ;
     void:triples "298067"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://southampton.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

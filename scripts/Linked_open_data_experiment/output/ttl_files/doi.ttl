@@ -113,7 +113,7 @@ Detailed information about journals, pages, authors can be found in the data, as
 
     foaf:page <http://dx.doi.org> ;
     void:triples "1000000000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -29,7 +29,7 @@ Controlled lists for the public sector in Europe
 """@en ;
 
     foaf:page <http://standards.esd-toolkit.eu/EuOverview.aspx> ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

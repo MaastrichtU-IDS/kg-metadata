@@ -58,7 +58,7 @@ The GHI captures three dimensions of hunger: insufficient availability of calori
 
     foaf:page <http://www.ifpri.org/publication/2011-global-hunger-index> ;
     void:triples "19369"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://data.kasabi.com/dataset/global-hunger-index> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -125,7 +125,7 @@ Frieden".
 
     foaf:page <http://iggsa.sentimental.li/index.php/downloads/> ;
     void:triples "21000"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

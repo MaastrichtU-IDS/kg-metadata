@@ -55,7 +55,7 @@ The Measurement Method Ontology is designed to represent the variety of methods 
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1584> ;
     void:triples "2018"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

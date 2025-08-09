@@ -60,7 +60,7 @@ Mixture of material from Wikipedia, Freebase and Geonames and states on http://w
 
     foaf:page <http://linkedmdb.org/> ;
     void:triples "6148121"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://data.linkedmdb.org/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

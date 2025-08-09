@@ -1,0 +1,92 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Earthquake a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/plain;_charset=utf-8" ;
+        dct:description_distribution """
+https://raw.githubusercontent.com/sonia04021991/Ontology
+""" ;
+        dcat:downloadURL_distribution <https://raw.githubusercontent.com/sonia04021991/Ontology/main/eso.rdf> ;
+        dct:title_distribution "Emergency_ontology" ;
+        dct:identifier_distribution "ba9261f2-69b9-d911-ecc6-0cd42897bffb" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:keyword "natural_disaster", "emergency_response", "search_and_rescue", "Earthquake", "Flood" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-by> ;
+    dct:title_main "Emergency_situation" ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "Sparql_endpoint" ;
+        dct:identifier_sparqlEndpoint "99a6f17e-db3b-7c75-2d8e-e273f866897d" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <https://www.orpha.net/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dct:description_main """
+Related to emergency response
+"""@en ;
+
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    foaf:page <https://raw.githubusercontent.com/sonia04021991/Ontology> ;
+    void:triples "3000"^^xsd:integer ;
+    dcat:theme  <geography> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:Terrorist_Attack_1 a void:Linkset ;
+    void:target :Earthquake ;
+    void:triples "60"^^xsd:integer ;
+ .
+
+:linked-open-vocabularies-lov a void:Linkset ;
+    void:target :Earthquake ;
+    void:triples "80"^^xsd:integer ;
+ .
+
+:SocialLink a void:Linkset ;
+    void:target :Earthquake ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:Face_Link a void:Linkset ;
+    void:target :Earthquake ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:bioportal-bfo a void:Linkset ;
+    void:target :Earthquake ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:soniamehla_6160014@nitkkr.ac.in> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "sonia"^^xsd:string ;
+     foaf:Cmbox <mailto:soniamehla_6160014@nitkkr.ac.in> ; 
+ .
+

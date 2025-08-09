@@ -93,7 +93,7 @@ There is a [list of the 190 repositories](http://foreign.rkbexplorer.com/models/
 We can't provide a typical URI to resolve, as none of the URIs are ours. You can use this URI to do a SPARQL query: http://researchrepository.napier.ac.uk/id/eprint/1615
 """@en ;
 
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

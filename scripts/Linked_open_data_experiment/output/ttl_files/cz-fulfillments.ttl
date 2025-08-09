@@ -77,7 +77,7 @@ This dataset contains data from the registry of contracts of the Czech Republic 
 
     foaf:page <http://linked.opendata.cz/resource/dataset/seznam.gov.cz/rejstriky/plneni> ;
     void:triples "20163"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://linked.opendata.cz/resource/domain/seznam.gov.cz/rejstriky/plneni/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

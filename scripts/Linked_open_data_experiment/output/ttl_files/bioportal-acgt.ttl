@@ -55,7 +55,7 @@ The intention of the ACGT Master Ontology (MO) is to represent the domain of can
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1130> ;
     void:triples "13274"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

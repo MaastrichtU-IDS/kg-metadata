@@ -75,7 +75,7 @@ http://data.oceandrilling.org/linkeddata.html
 
     foaf:page <http://data.oceandrilling.org/codices/> ;
     void:triples "24489366"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://data.oceandrilling.org/codices/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

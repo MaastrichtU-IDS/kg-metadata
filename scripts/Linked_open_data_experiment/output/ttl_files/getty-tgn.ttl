@@ -140,7 +140,7 @@ Special Case: In circumstances where providing the full attribution statement ab
 """@en ;
 
     foaf:page <http://www.getty.edu/research/tools/vocabularies/tgn/> ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

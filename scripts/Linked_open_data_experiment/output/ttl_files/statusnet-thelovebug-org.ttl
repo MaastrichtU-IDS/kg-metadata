@@ -28,7 +28,7 @@ FAIL (HTTPConnectionPool(host='micro.thelovebug.org', port=80): Max retries exce
 StatusNet instance hosted at http://thelovebug.org
 """@en ;
 
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

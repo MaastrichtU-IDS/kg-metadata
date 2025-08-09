@@ -43,7 +43,7 @@ Polythematic Structured Subject Headings System (PSH) is a bilingual (Czech/Engl
 
     foaf:page <http://psh.ntkcz.cz/skos/home/html/en> ;
     void:triples "100000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://psh.ntkcz.cz/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

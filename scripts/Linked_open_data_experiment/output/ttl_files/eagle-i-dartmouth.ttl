@@ -71,7 +71,7 @@ See: http://www.eagle-i.net/
 
     foaf:page <http://dartmouth.eagle-i.net> ;
     void:triples "440000"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://dartmouth.eagle-i.net/i/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

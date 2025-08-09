@@ -97,7 +97,7 @@ Individual packages are available:
 
     foaf:page <http://vivoweb.org/> ;
     void:triples "4514025"^^xsd:integer ;
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     void:uriSpace <http://vivo.cornell.edu/individual/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

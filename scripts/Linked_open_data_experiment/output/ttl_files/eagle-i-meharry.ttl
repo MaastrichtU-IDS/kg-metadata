@@ -70,7 +70,7 @@ Resource descriptions collected at each participating institution are freely ava
 
     foaf:page <http://meharry.eagle-i.net> ;
     void:triples "220"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

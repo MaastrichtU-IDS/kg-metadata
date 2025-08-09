@@ -53,7 +53,7 @@ The LOV dataset contains the description of RDFS vocabularies or OWL ontologies 
 
     foaf:page <http://lov.okfn.org/dataset/lov/index.html> ;
     void:triples "18659"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://lov.okfn.org/dataset/lov/lov#> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

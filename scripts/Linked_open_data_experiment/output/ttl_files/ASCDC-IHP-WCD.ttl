@@ -85,7 +85,7 @@ Webpage of ASCDC LODDatasets for downloads of entire published LOD-based dataset
 FAIL (400)
 """ ;
     ] ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://data.ascdc.tw/WoodenSlips/WCD/IHP/> ;
     void:sparqlEndpoint [
         dct:identifier "95ba4df0-2fb8-372a-9871-a0a8791ead2d" ;

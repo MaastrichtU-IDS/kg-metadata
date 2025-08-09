@@ -31,7 +31,7 @@ A corpus resulting from an object arrangement game using a computer-mediated set
 """@en ;
 
     void:triples "15750"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

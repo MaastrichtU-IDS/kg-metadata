@@ -97,7 +97,7 @@ Next Web trabaja con <a href="http://gnoss.com/">software de GNOSS (RIAM Intelea
 
     foaf:page <http://gnoss.com/comunidad/nextweb> ;
     void:triples "125694"^^xsd:integer ;
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     void:uriSpace <http://gnoss.com/comunidad/nextweb> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

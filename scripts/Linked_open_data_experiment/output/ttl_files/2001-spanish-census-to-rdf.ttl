@@ -125,7 +125,7 @@ This site offers information of the conversion process of a 5% sampling of the 2
 
     foaf:page <http://dataweb.infor.uva.es/census2001> ;
     void:triples "93325760"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

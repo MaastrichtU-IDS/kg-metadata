@@ -55,7 +55,7 @@ bacteriophage and plasmid reproduction and maintenance processes
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1257> ;
     void:triples "4696"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

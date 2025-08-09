@@ -55,7 +55,7 @@ An ontology for animal life history and natural history characteristics suitable
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1530> ;
     void:triples "2151"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -35,7 +35,7 @@ Vocabulary about Sherry Wine
 
     dct:title "Sherry_Wine_Vocabulary" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://metadataregistry.org/schema/show/id/223.html> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

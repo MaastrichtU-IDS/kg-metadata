@@ -112,7 +112,7 @@ Information about chemicals reported to the Integrated register of pollution and
 
     foaf:page <http://linked.opendata.cz/resource/dataset/cenia-irz-chemicals> ;
     void:triples "4155"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://linked.opendata.cz/resource/domain/irz/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

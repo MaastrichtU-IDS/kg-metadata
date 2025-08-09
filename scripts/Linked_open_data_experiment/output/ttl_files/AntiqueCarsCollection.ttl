@@ -38,7 +38,7 @@ Created by Markopoulos Athanasios, student of the University of the Aegean, Dept
 
     dct:title "Antique_Cars_Collection_(Linked_Cars)" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

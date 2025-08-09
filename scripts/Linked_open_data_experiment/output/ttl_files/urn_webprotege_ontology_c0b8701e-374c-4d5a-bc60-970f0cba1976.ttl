@@ -22,7 +22,7 @@ Vocabularios de los Códigos de Derecho de la Ciberseguridad en España
         dcat:hadRole :owner ;
     ] ;
     foaf:page <https://archive.org/details/urn_webprotege_ontology_c0b8701e-374c-4d5a-bc60-970f0cba1976> ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -88,7 +88,7 @@ Data cube containing data about evaluation of results in VaVaI for 2013.
 
     foaf:page <http://linked.opendata.cz/resource/dataset/vavai/evaluation/2013> ;
     void:triples "8150258"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://linked.opendata.cz/resource/domain/vavai/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

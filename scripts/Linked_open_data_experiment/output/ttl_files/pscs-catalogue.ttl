@@ -105,7 +105,7 @@ WESO-University of Oviedo
 
     foaf:page <http://www.josemalvarez.es/web/2011/11/16/product-scheme-classifications/> ;
     void:triples "1842053"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://purl.org/weso/pscs/resource> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

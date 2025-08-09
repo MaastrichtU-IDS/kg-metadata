@@ -55,7 +55,7 @@ Master Drug Data Base, 2009_08_05
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1426> ;
     void:triples "76883"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

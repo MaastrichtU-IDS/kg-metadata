@@ -38,7 +38,7 @@ NSZL also supports the HTML link auto-discovery.
     ] ;
     foaf:page <http://nektar.oszk.hu/wiki/Semantic_web> ;
     void:triples "19300000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://nektar.oszk.hu/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

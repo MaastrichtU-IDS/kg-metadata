@@ -125,7 +125,7 @@ The HGNC gives unique and meaningful names to every human gene. For each known h
 
     foaf:page <http://hgnc.bio2rdf.org/> ;
     void:triples "3628205"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/hgnc:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

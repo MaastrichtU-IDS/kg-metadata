@@ -37,7 +37,7 @@ Open Land Use Map is a composite map that is intended to create detailed land-us
     ] ;
     void:uriSpace <http://w3id.org/foodie/olu/> ;
     void:triples "127926060"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

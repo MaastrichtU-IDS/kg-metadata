@@ -76,7 +76,7 @@ FAIL (HTTPConnectionPool(host='era.rkbexplorer.com', port=80): Max retries excee
 
     foaf:page <http://era.rkbexplorer.com> ;
     void:triples "157376"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://era.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

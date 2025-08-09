@@ -59,7 +59,7 @@ Phonetics Information Base and Lexicon (PHOIBLE) is a data set of phonological i
 
     foaf:page <http://phoible.org> ;
     void:triples "133076"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -233,7 +233,7 @@ BioPortal is an open repository of biomedical ontologies that provides access vi
 
     foaf:page <http://bioportal.bio2rdf.org/> ;
     void:triples "19920395"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/bioportal:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

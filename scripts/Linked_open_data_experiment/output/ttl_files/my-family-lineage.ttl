@@ -165,7 +165,7 @@ which provides information about vocabularies used, licensing, example resources
 
     foaf:page <http://my-family-lineage.com/wiki/Main_Page> ;
     void:triples "3000000"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://my-family-lineage.com/wiki/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

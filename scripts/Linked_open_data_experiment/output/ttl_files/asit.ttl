@@ -76,7 +76,7 @@ Dialectal data stored in the ASIt were gathered during a twenty-year-long survey
     ] ;
     foaf:page <http://purl.org/asit/alld> ;
     void:triples "420000"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

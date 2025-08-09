@@ -82,7 +82,7 @@ Deusto Entrepreneurship works with <a href="http://gnoss.com/">GNOSS software (R
 
     foaf:page <http://deusto.gnoss.com/en/community/deustoEntrepreneurship> ;
     void:triples "20873"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://deusto.gnoss.com/en/community/deustoEntrepreneurship> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

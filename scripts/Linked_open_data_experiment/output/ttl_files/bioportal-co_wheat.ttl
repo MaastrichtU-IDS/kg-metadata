@@ -55,7 +55,7 @@ This ontology defines traits of the International Wheat Information System (IWIS
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1545> ;
     void:triples "2647"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

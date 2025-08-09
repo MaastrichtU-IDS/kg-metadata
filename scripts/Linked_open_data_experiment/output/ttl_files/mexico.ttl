@@ -42,7 +42,7 @@ MExiCo (short for "Multimodal Experiment Corpora") is a data model for data coll
 """@en ;
 
     void:triples "305"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

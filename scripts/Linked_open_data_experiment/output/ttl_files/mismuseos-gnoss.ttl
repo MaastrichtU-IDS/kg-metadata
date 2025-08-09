@@ -84,7 +84,7 @@ Museos, Obras de Arte y Artistas componen la colección de <a href="http://mismu
 
     foaf:page <http://mismuseos.net/> ;
     void:triples "1235894"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://mismuseos.net/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

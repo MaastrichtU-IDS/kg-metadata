@@ -49,7 +49,7 @@ NITP_PROFESSORS_DATA
 
     dct:title "NITP" ;
     dct:license <http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/> ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

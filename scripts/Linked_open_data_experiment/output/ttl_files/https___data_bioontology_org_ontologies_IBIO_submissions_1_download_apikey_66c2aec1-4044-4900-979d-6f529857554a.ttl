@@ -22,7 +22,7 @@ Indian Biodiversity
 
     dct:title "Indian_Biodiversity" ;
     dct:license <http://www.opendefinition.org/licenses/gfdl> ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <https://data.bioontology.org/ontologies/IBIO/submissions/1/download?apikey=66c2aec1-4044-4900-979d-6f529857554a> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -112,7 +112,7 @@ Direct link to catalogue http://opendata.euskadi.net/w79-buscador/es/contenidos/
 
     foaf:page <http://opendata.euskadi.net/w79-home/es> ;
     void:triples "700"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -54,7 +54,7 @@ Size of dump and data set: ~1.6 million triples, ~150MB uncompressed
 
     foaf:page <http://sw.opencyc.org/> ;
     void:triples "1600000"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://sw.opencyc.org/concept/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

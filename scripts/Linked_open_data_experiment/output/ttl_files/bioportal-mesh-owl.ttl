@@ -55,7 +55,7 @@ Medical Subjects Headings Thesaurus 2012, OWL version
 
     foaf:page <http://bioportal.bioontology.org/ontologies/3019> ;
     void:triples "1262119"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

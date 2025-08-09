@@ -37,7 +37,7 @@ This data contains the erosion endangered soil maps from Czech republic. The sou
     ] ;
     void:uriSpace <http://w3id.org/foodie/open/cz/Soil_maps_BPEJ_WGSc/> ;
     void:triples "8746240"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

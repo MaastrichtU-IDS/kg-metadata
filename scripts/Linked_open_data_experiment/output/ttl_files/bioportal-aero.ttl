@@ -56,7 +56,7 @@ The Adverse Event Reporting Ontology (AERO) is an ontology aimed at supporting c
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1580> ;
     void:triples "5154"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

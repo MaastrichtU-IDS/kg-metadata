@@ -46,7 +46,7 @@ This is an experimantal RDF data of radioactivity statistics, observed at 47 pre
 
     foaf:page <http://www.kanzaki.com/works/2011/stat/ra/> ;
     void:triples "1648890"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://www.kanzaki.com/works/2011/stat/ra/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

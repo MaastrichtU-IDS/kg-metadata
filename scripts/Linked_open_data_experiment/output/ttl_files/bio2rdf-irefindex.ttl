@@ -125,7 +125,7 @@ IrefIndex (Interaction Reference Index) provides an index of protein interaction
 
     foaf:page <http://irefindex.bio2rdf.org/> ;
     void:triples "48781511"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/irefindex:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

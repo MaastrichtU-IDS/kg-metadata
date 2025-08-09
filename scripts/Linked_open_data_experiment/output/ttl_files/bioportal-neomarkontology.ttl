@@ -55,7 +55,7 @@ Ontology that describes the medical information necessary for early detection of
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1501> ;
     void:triples "6243"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

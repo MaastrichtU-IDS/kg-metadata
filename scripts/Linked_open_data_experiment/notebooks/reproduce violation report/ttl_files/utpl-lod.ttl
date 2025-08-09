@@ -1,0 +1,81 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:utpl-lod a dcat:Dataset ;
+    dcat:keyword "Ecuador", "Latin_American_Linked_Data_Association", "Linked_data", "Open_data", "RDF", "University", "format-dc", "format-foaf", "format-org", "format-schema", "format-skos", "lod", "no-proprietary-vocab", "published-by-producer", "semantic_web", "sparql-endpoint", "structure", "university" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "Universidad_Técnica_Particular_de_LojaLinked_Open_Data" ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "Sparql_EndPoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+Data about the structure and organization of UTPL
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://data.utpl.edu.ec/utpl/lod/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (404)
+""" ;
+    ] ;
+    dct:description_main """
+Linked Open Data from the Universidad Técnica Particular de Loja (UTPL), Loja, Ecuador includes data about its academic structure. The data was published in RDF format according to the design issues of Linked Open Data. Data can be accessed from a SPARQL endpoint. 
+## Data: ##
+* Institution: 1
+* Person: 19
+* Campus: 86
+* skos:Concept: 395
+* School: 31
+* Faculty: 7
+* Research Group: 59
+* Department: 17
+* Course: 1749
+* Programme: 233
+* Organizational Unit: 17
+* Study Program: 101
+##Collaborators:##
+* Elizabeth Cadme
+* Janneth Chicaiza
+* Eduardo Encalada
+* Jorge Landacay
+* Jorge Lopez-Vargas
+* Diana Torres
+
+"""@en ;
+
+    void:triples "21198"^^xsd:integer ;
+    dcat:theme  <user_generated> ;
+    void:uriSpace <http://data.utpl.edu.ec/utpl/lod/resource/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :utpl-lod ;
+    void:triples "689"^^xsd:integer ;
+ .
+
+:es.dbpedia a void:Linkset ;
+    void:target :utpl-lod ;
+    void:triples "73"^^xsd:integer ;
+ .
+
+:yago a void:Linkset ;
+    void:target :utpl-lod ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Nelson_Piedra"^^xsd:string ;
+     foaf:Cmbox <mailto:nopiedra@utpl.edu.ec> ; 
+ .
+

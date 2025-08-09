@@ -44,7 +44,7 @@ WOLD published by the CLLD project
 
     foaf:page <http://wold.clld.org> ;
     void:triples "1764648"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

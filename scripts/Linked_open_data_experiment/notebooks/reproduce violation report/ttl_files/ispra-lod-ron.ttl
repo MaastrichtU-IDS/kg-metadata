@@ -1,0 +1,82 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ispra-lod-ron a dcat:Dataset ;
+    dcat:keyword "boa", "buoy", "country-italy", "format-rdf", "lod", "mediterraneansea", "nazionale", "network", "ocean_waves", "oceanografia", "oceanography", "onda", "ondametria", "ondametrica", "ondametrico", "onde", "onde_marine", "rdf", "rdf-format", "rete", "ron", "waves" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "ISPRAThe_Italian_Data_Buoy_Network_(RON)" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_ResourceCrotone_WavesJuly_2013" ;
+        dcat:mediaType_exampleResource "text/html;charset=UTF-8" ;
+        dct:description_exampleResource """
+Crotone Waves with graphics - July 2013
+""" ;
+        dcat:accessURL_exampleResource <http://dati.isprambiente.it/id/collection/ron/crotone/wave.201307/html> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "main_sparql_EndPoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+main sparql EndPoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://dati.isprambiente.it/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-gzip" ;
+        dct:description_distribution """
+RDF (N-Triples) Distribution (metadata) of dataset of Italian Data Buoy Network (RON) 
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "RDF_(N-Triples)_Distribution_(metadata)_of_dataset_of_Italian_Data_Buoy_Network_(RON)_" ;
+        dcat:accessURL_distribution <http://dati.isprambiente.it/downloads/ron.nt.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-gzip" ;
+        dct:description_distribution """
+RDF (N-Triples) Distribution (data) of dataset of Italian Data Buoy Network (RON)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "RDF_(N-Triples)_Distribution_(data)_of_dataset_of_Italian_Data_Buoy_Network_(RON)" ;
+        dcat:accessURL_distribution <http://dati.isprambiente.it/downloads/ron-data.nt.gz> ;
+    ] ;
+    dct:description_main """
+#### dati.isprambiente.it - ISPRA Linked Open Data - The Italian Data Buoy Network (Rete Ondametrica Nazionale - RON) 
+
+"""@en ;
+
+    foaf:page <http://dati.isprambiente.it/id/website/ronRmn/html> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:codes.wmo.int a void:Linkset ;
+    void:target :ispra-lod-ron ;
+    void:triples "338"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Italian_National_Institute_for_Environmental_Protection_and_Research,_ISPRA"^^xsd:string ;
+     foaf:Cmbox <mailto:assistenza-lod@isprambiente.it> ; 
+ .
+

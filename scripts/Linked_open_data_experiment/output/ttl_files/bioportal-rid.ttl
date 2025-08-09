@@ -55,7 +55,7 @@ RadLex is a controlled terminology for radiology-a single unified source of radi
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1057> ;
     void:triples "373165"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

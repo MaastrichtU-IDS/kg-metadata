@@ -76,7 +76,7 @@ FAIL (HTTPConnectionPool(host='curriculum.rkbexplorer.com', port=80): Max retrie
 
     foaf:page <http://curriculum.rkbexplorer.com> ;
     void:triples "37789"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://curriculum.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -99,7 +99,7 @@ The World Loanword Database 2009 is the result of a collaborative project coordi
 
     foaf:page <http://wold.livingsources.org/> ;
     void:triples "1000000"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     void:uriSpace <wold.livingsources.org> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

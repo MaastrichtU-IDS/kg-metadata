@@ -125,7 +125,7 @@ InterPro is an integrated database of predictive protein 'signatures' used for t
 
     foaf:page <http://interpro.bio2rdf.org/> ;
     void:triples "2323345"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/interpro:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

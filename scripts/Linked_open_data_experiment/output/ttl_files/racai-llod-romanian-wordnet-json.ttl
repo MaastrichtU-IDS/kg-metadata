@@ -36,7 +36,7 @@ The Romanian Wordnet in JSON format
 
     dct:title "JSON_Romanian_Wordnet" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

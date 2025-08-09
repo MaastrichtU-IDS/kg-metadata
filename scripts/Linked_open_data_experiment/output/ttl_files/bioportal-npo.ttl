@@ -55,7 +55,7 @@ An ontology that represents the basic knowledge of physical, chemical and functi
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1083> ;
     void:triples "37796"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

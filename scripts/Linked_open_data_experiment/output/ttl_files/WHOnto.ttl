@@ -61,7 +61,7 @@ Ontology for Corona virus infected cases according to WHO. It is open-source ont
     ] ;
     foaf:page <https://purl.org/whonto/onto> ;
     void:triples "257"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <https://purl.org/whonto/onto> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

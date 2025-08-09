@@ -126,7 +126,7 @@ LODAC BDLS (Building Dictionary for Life Sciense) provides two types of datasets
 
     foaf:page <http://lod.ac/wiki/LODAC_BDLS> ;
     void:triples "5764962"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://lod.ac/bdls/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

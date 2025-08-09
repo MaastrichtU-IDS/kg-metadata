@@ -57,7 +57,7 @@ LOGD replaces the old TWC Data-gov Corpus published in May 2010.
 
     foaf:page <http://logd.tw.rpi.edu> ;
     void:triples "9803142573"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://logd.tw.rpi.edu/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

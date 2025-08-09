@@ -1,0 +1,352 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:the-living-lod-cloud a dcat:Dataset ;
+    dcat:keyword "datafaqs", "format-con", "format-conv", "format-datafaqs", "format-dc", "format-dcat", "format-doap", "format-foaf", "format-irw", "format-oboro", "format-opm", "format-ov", "format-owl", "format-pml", "format-pmlj", "format-pmlp", "format-prov", "format-rdf", "format-rdfs", "format-sd", "format-sio", "format-sioc", "format-skos", "format-vann", "format-void", "linked_data" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "The_Living_LOD_Cloud" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-ntriples" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='lodcloud.tw.rpi.edu', port=80): Max retries exceeded with url: /source/tw-rpi-edu/file/cr-full-dump/version/latest/conversion/purl-org-twc-lodcloud.nt.gz (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dac190>, 'Connection to lodcloud.tw.rpi.edu timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "N-Triples_Download" ;
+        dcat:downloadURL_distribution <http://purl.org/twc/lodcloud/source/tw-rpi-edu/file/cr-full-dump/version/latest/conversion/purl-org-twc-lodcloud.nt.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "HTML" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='lodcloud.tw.rpi.edu', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dad3c0>, 'Connection to lodcloud.tw.rpi.edu timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "Web_site" ;
+        dcat:accessURL_distribution <http://purl.org/twc/lodcloud> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "GitHub_Repository" ;
+        dcat:accessURL_distribution <https://github.com/timrdf/lodcloud> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "pml_RDF_Schema" ;
+        dcat:accessURL_distribution <http://provenanceweb.org/ns/pml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "void_RDF_Schema" ;
+        dcat:accessURL_distribution <http://rdfs.org/ns/void> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "rdf_RDF_Schema" ;
+        dcat:accessURL_distribution <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "foaf_RDF_Schema" ;
+        dcat:accessURL_distribution <http://xmlns.com/foaf/0.1/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "skos_RDF_Schema" ;
+        dcat:accessURL_distribution <http://www.w3.org/2004/02/skos/core> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "owl_RDF_Schema" ;
+        dcat:accessURL_distribution <http://www.w3.org/2002/07/owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "sd_RDF_Schema" ;
+        dcat:accessURL_distribution <http://www.w3.org/ns/sparql-service-description> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "prov_RDF_Schema" ;
+        dcat:accessURL_distribution <http://www.w3.org/ns/prov> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "pmlp_RDF_Schema" ;
+        dcat:accessURL_distribution <http://inference-web.org/2.0/pml-provenance.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "irw_RDF_Schema" ;
+        dcat:accessURL_distribution <http://www.ontologydesignpatterns.org/ont/web/irw.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='open.vocab.org', port=443): Max retries exceeded with url: /terms/ (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997)'))))
+""" ;
+        dct:title_distribution "ov_RDF_Schema" ;
+        dcat:accessURL_distribution <http://open.vocab.org/terms/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "oboro_RDF_Schema" ;
+        dcat:accessURL_distribution <http://obofoundry.org/ro/ro.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "prov_RDF_Schema" ;
+        dcat:accessURL_distribution <http://purl.org/net/provenance/ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "opm_RDF_Schema" ;
+        dcat:accessURL_distribution <http://openprovenance.org/ontology> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "con_RDF_Schema" ;
+        dcat:accessURL_distribution <http://www.w3.org/2000/10/swap/pim/contact> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (403)
+""" ;
+        dct:title_distribution "sio_RDF_Schema" ;
+        dcat:accessURL_distribution <http://semanticscience.org/resource/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "rdfs_RDF_Schema" ;
+        dcat:accessURL_distribution <http://www.w3.org/2000/01/rdf-schema> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "doap_RDF_Schema" ;
+        dcat:accessURL_distribution <http://usefulinc.com/ns/doap> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "conv_RDF_Schema" ;
+        dcat:accessURL_distribution <http://purl.org/twc/vocab/conversion/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "pmlj_RDF_Schema" ;
+        dcat:accessURL_distribution <http://inference-web.org/2.0/pml-justification.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "dcat_RDF_Schema" ;
+        dcat:accessURL_distribution <http://www.w3.org/ns/dcat> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "dc_RDF_Schema" ;
+        dcat:accessURL_distribution <http://purl.org/dc/terms/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='sparql.tw.rpi.edu', port=80): Max retries exceeded with url: /vocab/datafaqs (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686da0d90>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title_distribution "datafaqs_RDF_Schema" ;
+        dcat:accessURL_distribution <http://purl.org/twc/vocab/datafaqs> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "sioc_RDF_Schema" ;
+        dcat:accessURL_distribution <http://rdfs.org/sioc/ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "vann_RDF_Schema" ;
+        dcat:accessURL_distribution <http://purl.org/vocab/vann/> ;
+    ] ;
+    dct:description_main """
+A lodcloud diagram, automatically. Based on quality standards.
+"""@en ;
+
+    void:triples "3639"^^xsd:integer ;
+    dcat:theme  <user_generated> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :the-living-lod-cloud ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:twc-logd a void:Linkset ;
+    void:target :the-living-lod-cloud ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Timothy_Lebo"^^xsd:string ;
+     foaf:Cmbox <mailto:lebot@rpi.edu> ; 
+ .
+

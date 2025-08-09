@@ -94,7 +94,7 @@ RDF version of the Apertium bilingual dictionary ES-AN. The original dataset (in
 """@en ;
 
     void:triples "71997"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

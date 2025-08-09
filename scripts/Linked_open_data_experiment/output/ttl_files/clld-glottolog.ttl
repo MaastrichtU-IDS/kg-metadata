@@ -43,7 +43,7 @@ Glottolog 2.7 published by the CLLD project
 
     foaf:page <http://glottolog.org> ;
     void:triples "8322839"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

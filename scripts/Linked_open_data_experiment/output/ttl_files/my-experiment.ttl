@@ -88,7 +88,7 @@ myExperiment has three sister projects:
 
     foaf:page <http://www.myexperiment.org> ;
     void:triples "660342"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

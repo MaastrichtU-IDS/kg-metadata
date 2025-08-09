@@ -67,7 +67,7 @@ This dataset contains data obtained through an automatic extraction process from
         dcat:hadRole :owner ;
     ] ;
     foaf:page <https://opendata.aragon.es> ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

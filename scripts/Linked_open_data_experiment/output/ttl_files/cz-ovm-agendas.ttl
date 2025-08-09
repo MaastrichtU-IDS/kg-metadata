@@ -77,7 +77,7 @@ Agendas of institutions of public power
 
     foaf:page <http://linked.opendata.cz/resource/dataset/seznam.gov.cz/agendy> ;
     void:triples "81695"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://linked.opendata.cz/resource/domain/seznam.gov.cz/agendy/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

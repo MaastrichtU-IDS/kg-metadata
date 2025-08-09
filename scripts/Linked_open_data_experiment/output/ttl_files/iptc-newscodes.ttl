@@ -113,7 +113,7 @@ Any NewsCode provided by the IPTC can be used at any stage of a news workflow wi
     ] ;
     foaf:page <http://newscodes.org> ;
     void:triples "3000"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <cv.iptc.org> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

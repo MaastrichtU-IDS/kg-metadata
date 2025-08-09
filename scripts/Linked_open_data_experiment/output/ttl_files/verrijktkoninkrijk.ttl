@@ -59,7 +59,7 @@ There are 15 main files/named graphs that make up 3 categories of data:
 
     foaf:page <http://semanticweb.cs.vu.nl/verrijktkoninkrijk/> ;
     void:triples "5196639"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

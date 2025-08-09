@@ -76,7 +76,7 @@ FAIL (HTTPConnectionPool(host='ieee.rkbexplorer.com', port=80): Max retries exce
 
     foaf:page <http://ieee.rkbexplorer.com> ;
     void:triples "91564"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://ieee.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

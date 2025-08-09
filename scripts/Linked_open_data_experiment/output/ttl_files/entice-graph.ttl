@@ -37,7 +37,7 @@ Knowledge Graph of the Erasmus+ funded project ENTICE (https://entice.eu)
 FAIL (HTTPSConnectionPool(host='data.entice.eu', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3686dac610>: Failed to establish a new connection: [Errno 111] Connection refused')))
 """ ;
     ] ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:sparqlEndpoint [
         dct:identifier "d0ec8997-e23f-2ef8-6ae1-90d4b5121612" ;
         dct:title "SPARQL_endpoint" ;

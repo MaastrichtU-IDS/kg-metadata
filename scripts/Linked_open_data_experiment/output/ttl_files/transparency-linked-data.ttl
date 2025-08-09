@@ -77,7 +77,7 @@ Transparency International data published using the Linked Data design principle
 
     foaf:page <http://transparency.270a.info/> ;
     void:triples "41592"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://transparency.270a.info/dataset/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

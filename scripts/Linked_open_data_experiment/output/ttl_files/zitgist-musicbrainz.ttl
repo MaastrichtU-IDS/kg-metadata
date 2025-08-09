@@ -34,7 +34,7 @@ RDF for artists, records, performances etc., generated from package:musicbrainz.
     ] ;
     foaf:page <http://fgiasson.com/blog/index.php/2007/05/22/browsing-musicbrainzs-dataset-via-uri-dereferencing/> ;
     void:triples "60000000"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://zitgist.com/music> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -55,7 +55,7 @@ This ontology was designed to help integrate species concepts with species occur
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1247> ;
     void:triples "9616"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

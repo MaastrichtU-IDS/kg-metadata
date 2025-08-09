@@ -90,7 +90,7 @@ works with
 
     foaf:page <http://researchgroups.gnoss.com> ;
     void:triples "222375855"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://researchgroups.gnoss.com> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

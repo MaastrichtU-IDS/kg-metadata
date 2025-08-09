@@ -38,7 +38,7 @@ The Global Agricultural Concept Space (GACS) is a hub for concepts related to ag
     ] ;
     void:uriSpace <id.agrisemantics.org/gacs> ;
     void:triples "2699098"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

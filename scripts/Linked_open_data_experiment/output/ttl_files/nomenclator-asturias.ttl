@@ -109,7 +109,7 @@ The dataset has been transformed by WESO Research Group at the University of Ovi
 
     foaf:page <http://www.josemalvarez.es/web/2011/11/01/nomenclator-asturias-2010/> ;
     void:triples "4508050"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://purl.org/weso/nomenclator/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

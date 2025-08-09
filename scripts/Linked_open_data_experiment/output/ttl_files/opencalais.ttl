@@ -64,7 +64,7 @@ OpenCalais is a web service that extracts semantic metadata from text content, s
 
     foaf:page <http://www.opencalais.com/> ;
     void:triples "4500000"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://d.opencalais.com/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

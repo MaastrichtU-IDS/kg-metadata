@@ -37,7 +37,7 @@ EO metadata collected from the public Lesproject Micka registry (https://micka.l
     ] ;
     void:uriSpace <http://micka.lesprojekt.cz/catalog/dataset/> ;
     void:triples "10456676"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

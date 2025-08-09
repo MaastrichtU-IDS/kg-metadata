@@ -63,7 +63,7 @@ OK
 The Dataset describing the Shoah domain aims to formally describe concepts and relationships that characterize the process of persecution and deportation of Jews from Italy between 1943 and 1945.
 """@en ;
 
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://cdec.opendams.org/lod/shoah/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

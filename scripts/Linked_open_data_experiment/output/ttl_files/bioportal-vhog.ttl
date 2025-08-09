@@ -58,7 +58,7 @@ This mapping represents homology-strict relationships, in the sense of HOM:00000
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1574> ;
     void:triples "14059"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

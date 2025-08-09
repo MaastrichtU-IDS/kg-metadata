@@ -161,7 +161,7 @@ The Mouse Genome Database (MGD) project includes data on gene characterization, 
 
     foaf:page <http://mgi.bio2rdf.org/> ;
     void:triples "8206813"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/mgi:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

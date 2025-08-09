@@ -53,7 +53,7 @@ The OpenMobileNetwork is a dataset for mobile networks and devices, which is sem
 
     foaf:page <http://www.openmobilenetwork.org> ;
     void:triples "19048586"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://www.openmobilenetwork.org/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

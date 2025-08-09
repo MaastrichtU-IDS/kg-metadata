@@ -47,7 +47,7 @@ A sensor based Health Care Ontology
         dcat:hadRole :owner ;
     ] ;
     void:triples "48"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

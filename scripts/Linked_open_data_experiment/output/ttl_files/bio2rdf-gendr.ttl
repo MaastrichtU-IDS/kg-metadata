@@ -137,7 +137,7 @@ GenDR is a database of genes associated with dietary restriction (DR). GenDR inc
 
     foaf:page <http://gendr.bio2rdf.org/> ;
     void:triples "11663"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/gendr:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

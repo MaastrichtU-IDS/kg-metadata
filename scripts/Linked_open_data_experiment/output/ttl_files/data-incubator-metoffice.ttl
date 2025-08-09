@@ -100,7 +100,7 @@ New forecasts for every area in the UK are scraped every hour (the metoffice upd
 
     foaf:page <http://metoffice.dataincubator.org> ;
     void:triples "26000000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://metoffice.dataincubator.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

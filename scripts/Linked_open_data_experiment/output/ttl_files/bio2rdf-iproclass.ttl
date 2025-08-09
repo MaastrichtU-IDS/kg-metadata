@@ -233,7 +233,7 @@ The iProClass database provides value-added information reports for UniProtKB an
 
     foaf:page <http://iproclass.bio2rdf.org/> ;
     void:triples "3306107223"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/iproclass:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

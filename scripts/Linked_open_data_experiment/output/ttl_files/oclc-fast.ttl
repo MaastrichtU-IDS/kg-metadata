@@ -59,7 +59,7 @@ The triple count (30M) is a rough estimate based on the number of authority reco
 
     foaf:page <http://id.worldcat.org/fast/> ;
     void:triples "30000000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://id.worldcat.org/fast/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

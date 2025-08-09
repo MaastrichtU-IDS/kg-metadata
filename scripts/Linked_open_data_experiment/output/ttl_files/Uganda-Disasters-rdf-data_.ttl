@@ -38,7 +38,7 @@ A data set containing all disasters recorded to have occurred in Uganda. Created
     ] ;
     void:uriSpace <http://w3id.org/gicentre/onto/ugdom#> ;
     void:triples "155993"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -1,0 +1,141 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:fu-berlin-drugbank a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-rdf", "lifesciences", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-provenance-metadata", "published-by-third-party", "vocab-mappings", "void-sparql-endpoint" ;
+    dct:title_main "DrugBank" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-bzip2" ;
+        dct:description_distribution """
+N-Triples, bz2 packed
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "None" ;
+        dcat:downloadURL_distribution <http://www4.wiwiss.fu-berlin.de/drugbank/drugbank_dump.nt.bz2> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00001> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "None" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://www4.wiwiss.fu-berlin.de/drugbank/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/xml" ;
+        dct:description_distribution """
+XML Sitemap
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://www4.wiwiss.fu-berlin.de/drugbank/sitemap.xml> ;
+    ] ;
+    dct:description_main """
+The Linked Data version of DrugBank which is a repository of almost 5000 FDA-approved small molecule and biotech drugs. It contains detailed information about drugs including chemical, pharmacological and pharmaceutical data; along with comprehensive drug target data such as sequence, structure, and pathway information
+
+links:bio2rdf-kegg 913
+links:bio2rdf-symbol 1533
+"""@en ;
+
+    foaf:page <http://www4.wiwiss.fu-berlin.de/drugbank/> ;
+    void:triples "765936"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    void:uriSpace <http://www4.wiwiss.fu-berlin.de/drugbank/resource/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bio2rdf-cas a void:Linkset ;
+    void:target :fu-berlin-drugbank ;
+    void:triples "2240"^^xsd:integer ;
+ .
+
+:bio2rdf-chebi a void:Linkset ;
+    void:target :fu-berlin-drugbank ;
+    void:triples "736"^^xsd:integer ;
+ .
+
+:bio2rdf-hgnc a void:Linkset ;
+    void:target :fu-berlin-drugbank ;
+    void:triples "1675"^^xsd:integer ;
+ .
+
+:bio2rdf-kegg-compound a void:Linkset ;
+    void:target :fu-berlin-drugbank ;
+    void:triples "1331"^^xsd:integer ;
+ .
+
+:bio2rdf-pdb a void:Linkset ;
+    void:target :fu-berlin-drugbank ;
+    void:triples "3379"^^xsd:integer ;
+ .
+
+:bio2rdf-pfam a void:Linkset ;
+    void:target :fu-berlin-drugbank ;
+    void:triples "19028"^^xsd:integer ;
+ .
+
+:bio2rdf-pubmed a void:Linkset ;
+    void:target :fu-berlin-drugbank ;
+    void:triples "96"^^xsd:integer ;
+ .
+
+:bio2rdf-uniprot a void:Linkset ;
+    void:target :fu-berlin-drugbank ;
+    void:triples "4660"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :fu-berlin-drugbank ;
+    void:triples "4220"^^xsd:integer ;
+ .
+
+:fu-berlin-dailymed a void:Linkset ;
+    void:target :fu-berlin-drugbank ;
+    void:triples "1597"^^xsd:integer ;
+ .
+
+:linkedct a void:Linkset ;
+    void:target :fu-berlin-drugbank ;
+    void:triples "6064"^^xsd:integer ;
+ .
+
+:tcmgenedit_dataset a void:Linkset ;
+    void:target :fu-berlin-drugbank ;
+    void:triples "385"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Anja_Jentzsch"^^xsd:string ;
+     foaf:Cmbox <mailto:anja@anjeve.de> ; 
+ .
+

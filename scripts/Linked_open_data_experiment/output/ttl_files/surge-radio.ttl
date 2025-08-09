@@ -30,7 +30,7 @@ Has RDF descriptions of featured artists and tracks, derived from package:musicb
 
     foaf:page <http://www.surgeradio.co.uk/> ;
     void:triples "218000"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://www.surgeradio.co.uk/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

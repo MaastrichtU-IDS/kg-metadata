@@ -55,7 +55,7 @@ Clinical Terms Version 3 (CTV3) (Read Codes) (Q199): National Health Service Nat
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1427> ;
     void:triples "4229895"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

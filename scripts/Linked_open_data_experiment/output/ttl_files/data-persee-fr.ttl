@@ -124,7 +124,7 @@ OK
     ] ;
     foaf:page <http://data.persee.fr/> ;
     void:triples "48000000"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

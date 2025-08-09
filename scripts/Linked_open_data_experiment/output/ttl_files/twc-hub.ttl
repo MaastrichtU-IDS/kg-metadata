@@ -412,7 +412,7 @@ Linked Data representations of common entities and concepts that occur in many d
 """@en ;
 
     void:triples "101092"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://purl.org/twc/hub/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -38,7 +38,7 @@ The size and link statistics are wild guesses. Googling for Last.fm artist pages
 
     foaf:page <http://dbtune.org/artists/last-fm/> ;
     void:triples "250000000"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://dbtune.org/artists/last-fm/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -55,7 +55,7 @@ The Cell Ontology is designed as a structured controlled vocabulary for cell typ
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1006> ;
     void:triples "29166"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

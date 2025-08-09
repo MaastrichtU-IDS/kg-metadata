@@ -101,7 +101,7 @@ Data cube containing statistical data with with deaths by selected causes of dea
 
     foaf:page <http://data.czso.cz/resource/dataset/deaths-by-selected-causes-of-death> ;
     void:triples "6489"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://data.czso.cz/resource/observation/selected-indicators-of-public-health/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

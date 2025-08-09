@@ -55,7 +55,7 @@ This ontology is used to describe the experimental conditions within cognitive/b
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1560> ;
     void:triples "4916"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

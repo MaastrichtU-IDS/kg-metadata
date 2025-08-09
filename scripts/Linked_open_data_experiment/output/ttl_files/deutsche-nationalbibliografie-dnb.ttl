@@ -144,7 +144,7 @@ From January 2014 on, the Linked Data Service of the German National Library (DN
     ] ;
     foaf:page <http://www.dnb.de/EN/lds> ;
     void:triples "521028069"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <https://d-nb.info/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

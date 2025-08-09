@@ -1,0 +1,54 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:culturalinkeddata a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "lod", "lodcloud.nolinks", "lodcloud.unconnected", "media", "published-by-third-party", "spanish-national-library" ;
+    dct:title_main "CulturaLinkedData" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://cultura.linkeddata.es/BNE/resource/C1003/F3343969> ;
+        adms:status_exampleResource """
+FAIL (500)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://cultura.linkeddata.es/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dct:description_main """
+The Spanish National Library (Biblioteca Nacional de España, BNE) and the Ontology Engineering Group of Universidad Politécnica de Madrid are working on the joint project “Preliminary Study of Linked Data”, whose aim is to enrich the Web of Data with the BNE authority and bibliographic records. To this end, they are transforming the BNE information to RDF following the Linked Data principles proposed by Tim Berners Lee.
+"""@en ;
+
+    foaf:page <http://cultura.linkeddata.es/visualizer> ;
+    void:triples "344439"^^xsd:integer ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Ontology_Engineering_Group,_Facultad_de_Informática,_Universidad_Politécnica_de_Madrid."^^xsd:string ;
+     foaf:Cmbox <mailto:bvillazon@fi.upm.es> ; 
+ .
+

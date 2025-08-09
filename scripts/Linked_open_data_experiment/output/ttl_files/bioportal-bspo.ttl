@@ -55,7 +55,7 @@ A small ontology for anatomical spatial references, such as dorsal, ventral, axi
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1078> ;
     void:triples "2149"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

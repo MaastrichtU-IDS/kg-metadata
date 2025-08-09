@@ -70,7 +70,7 @@ Resource descriptions collected at each participating institution are freely ava
 
     foaf:page <http://cdrewu.eagle-i.net> ;
     void:triples "4000"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://cdrewu.eagle-i.net/i/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -85,7 +85,7 @@ Webpage of ASCDC LODDatasets for downloads of entire published LOD-based dataset
 FAIL (400)
 """ ;
     ] ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://data.ascdc.tw/uc/reli/dila/> ;
     void:sparqlEndpoint [
         dct:identifier "2e9c1215-992c-efca-d0eb-ec0408cbe7c4" ;

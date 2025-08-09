@@ -46,7 +46,7 @@ A Taiwan Linked Data Platform (data.odw.tw) build by the Institute of Informatio
     ] ;
     void:uriSpace <http://data.odw.tw/record/> ;
     void:triples "70719704"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

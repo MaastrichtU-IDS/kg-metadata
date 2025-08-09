@@ -81,7 +81,7 @@ Extracts of wiktionary data for several languages, structured as an RDF graph, b
     ] ;
     foaf:page <http://kaiko.getalp.org/about-dbnary> ;
     void:triples "194822148"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

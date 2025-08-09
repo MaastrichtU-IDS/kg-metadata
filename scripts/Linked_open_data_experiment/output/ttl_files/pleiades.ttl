@@ -91,7 +91,7 @@ There is a detailed [README.txt][readme] with the dumps.
 
     foaf:page <http://pleiades.stoa.org/> ;
     void:triples "2600000"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://pleiades.stoa.org/places/_http://pleiades.stoa.org/places/vocab#_http://atlantides.org/capgrids/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

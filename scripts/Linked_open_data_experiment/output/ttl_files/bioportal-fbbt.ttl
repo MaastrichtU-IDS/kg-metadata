@@ -55,7 +55,7 @@ A structured controlled vocabulary of the anatomy of <i>Drosophila melanogaster<
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1015> ;
     void:triples "135761"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

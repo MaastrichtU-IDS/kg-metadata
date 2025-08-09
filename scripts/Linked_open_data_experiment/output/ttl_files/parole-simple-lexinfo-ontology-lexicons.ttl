@@ -131,7 +131,7 @@ Sources can be found at https://github.com/martavillegas/ParoleSimpleLemon
 
     foaf:page <http://gilmere.upf.edu/corpus_data/ParoleSimpleOntology/ParoleOntology.html> ;
     void:triples "10279"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

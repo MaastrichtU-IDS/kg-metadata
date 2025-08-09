@@ -53,7 +53,7 @@ A dataset of productions put on by the Edinburgh University Theatre Company past
 
     foaf:page <http://www.bedlamtheatre.co.uk/> ;
     void:triples "31223"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://www.bedlamtheatre.co.uk/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

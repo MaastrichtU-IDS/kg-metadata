@@ -76,7 +76,7 @@ FAIL (HTTPConnectionPool(host='roma.rkbexplorer.com', port=80): Max retries exce
 
     foaf:page <http://roma.rkbexplorer.com> ;
     void:triples "41313"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://roma.rkbexplorer.com/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

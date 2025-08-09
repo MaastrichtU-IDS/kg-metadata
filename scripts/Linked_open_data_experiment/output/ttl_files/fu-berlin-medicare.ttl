@@ -52,7 +52,7 @@ FAIL (404)
 
     foaf:page <http://www4.wiwiss.fu-berlin.de/medicare/> ;
     void:triples "44500"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://www4.wiwiss.fu-berlin.de/medicare/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -57,7 +57,7 @@ The ontology was first developed under the OntoDM (Ontology of Data Mining is av
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1588> ;
     void:triples "1650"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

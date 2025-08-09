@@ -134,7 +134,7 @@ Overview of organizations active in R&D from http://www.isvav.cz/ .
 
     foaf:page <http://linked.opendata.cz/resource/dataset/vavai/organizations> ;
     void:triples "153370"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://linked.opendata.cz/resource/domain/vavai/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

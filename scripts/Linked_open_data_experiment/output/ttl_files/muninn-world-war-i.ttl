@@ -125,7 +125,7 @@ The Muninn Project is a multi-disciplinary, multi-national, academic research pr
 
     foaf:page <rdf.muninn-project.org> ;
     void:triples "38927740"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://rdf.muninn-project.org/ww1> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

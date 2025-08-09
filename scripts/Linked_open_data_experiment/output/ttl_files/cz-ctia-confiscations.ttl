@@ -76,7 +76,7 @@ Basic information about confiscations performed by the Czech Trade Inspection Au
 
     foaf:page <http://linked.opendata.cz/resource/dataset/coi.cz/zajisteni> ;
     void:triples "268617"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://linked.opendata.cz/resource/domain/coi.cz/confiscation/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

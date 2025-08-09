@@ -44,7 +44,7 @@ Linked data on all Pokemon franchise
 
     foaf:page <http://www.pokepedia.fr> ;
     void:triples "115150"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     void:uriSpace <http://www.pokepedia.fr/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

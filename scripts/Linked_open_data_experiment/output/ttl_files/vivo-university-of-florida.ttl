@@ -78,7 +78,7 @@ VIVO is a resource of the University of Florida that provides information on peo
 
     foaf:page <http://vivo.ufl.edu> ;
     void:triples "2384224"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://vivo.ufl.edu/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

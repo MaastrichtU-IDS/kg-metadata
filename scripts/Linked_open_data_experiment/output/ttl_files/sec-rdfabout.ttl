@@ -56,7 +56,7 @@ Notes: also found in the of SPARQL Endpoints
 
     foaf:page <http://www.rdfabout.com/demo/sec/> ;
     void:triples "1800000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://www.rdfabout.com/rdf/usgov/sec/id/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

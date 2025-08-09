@@ -35,7 +35,7 @@ alles
 
     dct:title "1121" ;
     dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <Noosphericus_> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

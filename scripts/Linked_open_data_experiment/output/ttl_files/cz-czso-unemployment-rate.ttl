@@ -101,7 +101,7 @@ Data cube containing statistical data aboutunemployment rate in regions of Czech
 
     foaf:page <http://data.czso.cz/resource/dataset/unemployment-rate> ;
     void:triples "14985"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://data.czso.cz/resource/observation/unemployment-rate/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

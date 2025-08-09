@@ -1,0 +1,140 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ineverycrea-argentina a dcat:Dataset ;
+    dcat:keyword "ESO", "actividades_interactivas", "américa", "argentina", "bachillerato", "corporate_excellence", "country-spain", "country.es", "creatividad_educativa", "dc", "educación", "educación_2.0", "educación_infantil", "educación_primaria", "escuela_2.0", "foaf", "format-dc", "format-dcam", "format-foaf", "format-rdfg", "format-sioc", "format-skos", "format-wot", "gnoss", "herramientas_2.0", "inevery_crea", "ineverycrea", "innovación_educativa", "laboratorio_de_ideas", "language-spa", "license-metadata", "lod", "material_educativo", "no-proprietary-vocab", "no-vocab-mappings", "pedagogía", "pizarra_digital", "plataforma_educativa", "profesores", "provenance-metadata", "proyecto_colaborativo", "published-by-third-party", "recursos_educativos_originales", "red_educativa", "schemata", "sioc", "skos", "socialweb", "sp", "spain", "unidades_didácticas", "usergeneratedcontent", "videos_educativos", "wrapper" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title_main "IneveryCREA_Argentina,_la_comunidad_de_la_creatividad_educativa" ;
+    void:exampleResource [
+        dct:title_exampleResource "RDF/XML_resource_example" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+This is an RDF/XML example link of one of the resources published in the IneveryCREA Argentina community. 
+""" ;
+        dcat:accessURL_exampleResource <http://www.ineverycrea.com.ar/en/community/ineverycreaargentina/resource/Conferencia-IneveryCREA-Argentina-la-comunidad-d/88f804a0-f920-4849-b62a-7f1a551a27e9?rdf> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "RDF/XML_resource_example_2" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+This is an RDF/XML example link of one of the resources published in the IneveryCREA Argentina community. 
+""" ;
+        dcat:accessURL_exampleResource <http://www.ineverycrea.com.ar/en/community/ineverycreaargentina/resource/Una-forma-divertida-de-crear-historias/38b041a7-f68e-4629-877d-e508b098960d?rdf> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "RDF/XML_search_example_" ;
+        dcat:mediaType_exampleResource "text/html;_charset=ISO-8859-1" ;
+        dct:description_exampleResource """
+This is an RDF/XML example link of a search results.
+""" ;
+        dcat:accessURL_exampleResource <http://ineverycrea.net/comunidad/ineverycreaargentina/busqueda-avanzada/tag/TIC?rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/owl" ;
+        dct:description_distribution """
+Gnoss Ontology
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Gnoss_Ontology" ;
+        dcat:accessURL_distribution <http://gnoss.com/gnoss.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD description
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "voiD_description" ;
+        dcat:accessURL_distribution <http://ineverycrea.net/voidIneveryCREAArg.n3> ;
+    ] ;
+    dct:description_main """
+<p>
+<a href="http://www.ineverycrea.com.ar/">IneveryCREA Argentina (Santillana) </a>
+is the community of educational creativity for teachers and education professionals to create, develop and share original educational resources in Argentina.
+</p>
+<p>
+Santillana is the leading textbook and general-interest publishing group in Spain and Latin America, and the most prestigious publisher of literary works in Spanish. With more than 108 million books sold in 2010, the company has been synonymous with quality, innovation and service to teaching staff since its inception in 1960.
+</p>
+<p>
+IneveryCREA Argentina (Santillana) works with 
+<a href="http://gnoss.com/">GNOSS software (RIAM Intelearning Lab)</a>. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. IneveryCREA offers a selection of 592 resources (November 2012). It includes a facet-based search engine and enriched contexts. Both are developments by GNOSS.
+</p>
+
+<p>
+<a href="http://www.ineverycrea.com.ar/">IneveryCREA Argentina (Santillana)</a> es la comunidad de la creatividad educativa para profesores y profesionales de la educación que crean, desarrollan y comparten recursos educativos originales en Argentina.
+</p>
+<p> Santillana es el grupo editorial líder en texto escolar y ediciones generales en España y América Latina, y la referencia en el campo de la creación literaria en lengua española. Con más de 108 millones de libros vendidos en el año 2010, es sinónimo de calidad, innovación y servicio al profesorado desde su creación en 1960.</p>
+<p>
+IneveryCREA Argentina (Santillana) trabaja con 
+<a href="http://gnoss.com/">software de GNOSS (RIAM Intelearning Lab)</a>. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. IneveryCREA ofrece en este caso una selección de 592 recursos (Noviembre 2012). Incluye un buscador facetado y contextos enriquecidos. Ambos son desarrollos de GNOSS.
+</p>
+"""@en ;
+
+    foaf:page <http://ineverycrea.net/en/community/ineverycreaargentina> ;
+    void:triples "15620"^^xsd:integer ;
+    dcat:theme  <user_generated> ;
+    void:uriSpace <http://ineverycrea.net/en/community/ineverycreaargentina> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :ineverycrea-argentina ;
+    void:triples "2644"^^xsd:integer ;
+ .
+
+:didactalia a void:Linkset ;
+    void:target :ineverycrea-argentina ;
+    void:triples "1440"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :ineverycrea-argentina ;
+    void:triples "433"^^xsd:integer ;
+ .
+
+:gnoss a void:Linkset ;
+    void:target :ineverycrea-argentina ;
+    void:triples "122"^^xsd:integer ;
+ .
+
+:ineverycrea a void:Linkset ;
+    void:target :ineverycrea-argentina ;
+    void:triples "1595"^^xsd:integer ;
+ .
+
+:nytimes-linked-open-data a void:Linkset ;
+    void:target :ineverycrea-argentina ;
+    void:triples "2405"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "GNOSS_Team"^^xsd:string ;
+     foaf:Cmbox <mailto:gnoss@gnoss.com> ; 
+ .
+

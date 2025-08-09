@@ -22,7 +22,7 @@ This dataset is about the soccer leagues
 
     dct:title "Soccer_Dataset" ;
     dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

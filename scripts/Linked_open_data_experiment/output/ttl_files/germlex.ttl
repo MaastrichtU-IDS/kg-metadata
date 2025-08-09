@@ -58,7 +58,7 @@ c) bilingual word lists generated from historical Germanic bible translations us
 """@en ;
 
     void:triples "349021"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

@@ -45,7 +45,7 @@ FAIL (404)
 """ ;
     ] ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://192.248.64.53:8080/vivo/> ;
     void:sparqlEndpoint [
         dct:identifier "259209f8-bccf-eff4-dea2-4827933d6f2f" ;

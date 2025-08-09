@@ -36,7 +36,7 @@ Linked Stage Graph is a Knowledge Graph using a dataset by the Archive of Baden-
     ] ;
     void:uriSpace <http://slod.fiz-karlsruhe.de> ;
     void:triples "143345"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

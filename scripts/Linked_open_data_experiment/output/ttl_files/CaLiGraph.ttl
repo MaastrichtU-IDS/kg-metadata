@@ -38,7 +38,7 @@ A Large-Scale Semantic Knowledge Graph compiled from Wikipedia Categories and Li
     ] ;
     void:uriSpace <http://caligraph.org> ;
     void:triples "184991955"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

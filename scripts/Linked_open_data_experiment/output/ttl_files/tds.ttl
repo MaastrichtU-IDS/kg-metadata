@@ -55,7 +55,7 @@ Typological Database System ontology
 """@en ;
 
     void:triples "3135"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

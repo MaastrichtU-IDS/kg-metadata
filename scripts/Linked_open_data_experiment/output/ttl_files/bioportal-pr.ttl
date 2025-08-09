@@ -55,7 +55,7 @@ PRO provides an ontological representation of protein-related entities by explic
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1062> ;
     void:triples "626238"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

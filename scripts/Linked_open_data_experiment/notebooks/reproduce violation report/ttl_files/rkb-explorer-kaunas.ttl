@@ -1,0 +1,99 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:rkb-explorer-kaunas a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-coref", "format-rdf", "lod", "lodcloud-diagram-2014-08-30", "lodcloud.unconnected", "provenance-metadata", "publications", "published-by-third-party", "void-sparql-endpoint" ;
+    dct:title_main "Vytautas_Magnus_University,_Kaunas_(RKBExplorer)" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://kaunas.rkbexplorer.com/id/person-3954> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='kaunas.rkbexplorer.com', port=80): Max retries exceeded with url: /id/person-3954 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686daf850>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://kaunas.rkbexplorer.com/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='kaunas.rkbexplorer.com', port=80): Max retries exceeded with url: /sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dad660>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/xml" ;
+        dct:description_distribution """
+XML Sitemap
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='kaunas.rkbexplorer.com', port=80): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dada50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://kaunas.rkbexplorer.com/sitemap.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD file
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://kaunas.rkbexplorer.com/models/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-gzip" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='kaunas.rkbexplorer.com', port=80): Max retries exceeded with url: /models/dump.tgz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686daf400>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title_distribution "Download_(tar_gzip_of_RDF)" ;
+        dcat:accessURL_distribution <http://kaunas.rkbexplorer.com/models/dump.tgz> ;
+    ] ;
+    dct:description_main """
+This repository contains data supplied from Vytautas Magnus University.
+"""@en ;
+
+    foaf:page <http://kaunas.rkbexplorer.com> ;
+    void:triples "32940"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://kaunas.rkbexplorer.com/id/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:rkb-explorer-laas a void:Linkset ;
+    void:target :rkb-explorer-kaunas ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-wiki a void:Linkset ;
+    void:target :rkb-explorer-kaunas ;
+    void:triples "7"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Hugh_Glaser"^^xsd:string ;
+     foaf:Cmbox <mailto:hg@ecs.soton.ac.uk> ; 
+ .
+

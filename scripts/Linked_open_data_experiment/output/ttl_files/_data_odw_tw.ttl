@@ -47,7 +47,7 @@ A Taiwan Linked Data Platform build by the Institute of Information Science, Aca
     ] ;
     void:uriSpace <http://data.odw.tw/record> ;
     void:triples "70719704"^^xsd:integer ;
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

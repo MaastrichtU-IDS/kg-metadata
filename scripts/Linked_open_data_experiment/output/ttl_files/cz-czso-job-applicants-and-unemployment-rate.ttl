@@ -101,7 +101,7 @@ Data cube containing statistical data about job applicants and unemployment rate
 
     foaf:page <http://data.czso.cz/resource/dataset/job-applicants-and-unemployment-rate> ;
     void:triples "18423"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://data.czso.cz/resource/observation/job-applicants-and-unemployment-rate/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

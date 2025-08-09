@@ -81,7 +81,7 @@ OK
 
     foaf:page <http://corporateexcellence.net/en/community/patronato> ;
     void:triples "4866"^^xsd:integer ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     void:uriSpace <http://corporateexcellence.net/en/community/patronato> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

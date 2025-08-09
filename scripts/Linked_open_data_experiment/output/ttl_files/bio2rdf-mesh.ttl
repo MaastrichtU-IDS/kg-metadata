@@ -149,7 +149,7 @@ The MeSH Browser is an online vocabulary look-up aid available for use with MeSH
 
     foaf:page <http://mesh.bio2rdf.org/> ;
     void:triples "7323864"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://bio2rdf.org/mesh:> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

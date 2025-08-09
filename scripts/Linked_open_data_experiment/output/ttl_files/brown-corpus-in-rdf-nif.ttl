@@ -59,7 +59,7 @@ Converted corpus contains complete texts reconstructed from TEI/XML version of t
 """@en ;
 
     void:triples "14335131"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

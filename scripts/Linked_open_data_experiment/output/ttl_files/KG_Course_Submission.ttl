@@ -38,7 +38,7 @@ Kindly download the OWL/RDF file provided and load it onto tools like protege or
 
     dct:title "EU_Soccer_League" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "user_generated" ;
+    dcat:theme  <user_generated> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

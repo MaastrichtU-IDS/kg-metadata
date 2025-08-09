@@ -1,0 +1,108 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:warsampo a dcat:Dataset ;
+    dcat:keyword "Continuation_War", "Finland", "Lapin_sota", "Lapland_War", "Second_World_War", "Winter_War", "culturalheritage", "deref-vocab", "format-crm", "format-dct", "format-foaf", "format-geo", "format-rdf", "format-schema", "format-skos", "history", "jatkosota", "lod", "sota", "talvisota", "war", "military_history", "CIDOC_CRM", "CRM", "CIDOC" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "WarSampo" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+The WarSampo knowledge graph as triples in Zenodo.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "WarSampo_Knowledge_Graph" ;
+        dct:identifier_distribution "5252e7f8-4195-5ac4-e37f-d42fa03f2b82" ;
+        dcat:downloadURL_distribution <https://doi.org/10.5281/zenodo.3431121> ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://ldf.fi/warsa/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle;_charset=utf-8" ;
+        dct:description_distribution """
+Data related to Carl Gustaf Emil Mannerheim
+""" ;
+        adms:status_distribution """
+FAIL (405)
+""" ;
+        dct:title_distribution "Example_resource" ;
+        dcat:accessURL_distribution <http://ldf.fi/warsa/actors/person_1> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Home_page" ;
+        dcat:accessURL_distribution <http://www.ldf.fi/dataset/warsa/> ;
+    ] ;
+    dct:description_main """
+This dataset includes harmonized data of different kinds concerning the Second World War in Finland, separated in different graphs representing events, actors, places, photographs, and other aspects and documentation of the war. To test and demonstrate its usefulness, this data service is in use in the semantic portal [WarSampo](http://sotasampo.fi/en/) explained in more detail in the [project page](http://seco.cs.aalto.fi/projects/sotasampo).
+"""@en ;
+
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    foaf:page <http://www.ldf.fi/dataset/warsa> ;
+    void:triples "14280903"^^xsd:integer ;
+    dcat:theme  <cross_domain> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :warsampo ;
+    void:triples "311"^^xsd:integer ;
+ .
+
+:wikidata a void:Linkset ;
+    void:target :warsampo ;
+    void:triples "159"^^xsd:integer ;
+ .
+
+:doi a void:Linkset ;
+    void:target :warsampo ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:muninn-world-war-i a void:Linkset ;
+    void:target :warsampo ;
+    void:triples "147"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:mkkoho@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Mikko_Koho"^^xsd:string ;
+     foaf:Cmbox <mailto:mikko.koho@aalto.fi> ; 
+ .
+

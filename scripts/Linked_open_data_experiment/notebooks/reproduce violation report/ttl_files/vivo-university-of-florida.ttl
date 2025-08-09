@@ -1,0 +1,97 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:vivo-university-of-florida a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "education", "format-rdf", "format-rdfs", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "publications", "published-by-producer", "science", "social-networks", "vivo" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "VIVO_University_of_Florida" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "application/json;charset=UTF-8" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://vivo.ufl.edu/individual/n1622> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "application/json;charset=UTF-8" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://vivo.ufl.edu/individual/n6593> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+SPARQL Endpoint
+""" ;
+        dcat:accessURL_exampleResource <http://sparql.vivo.ufl.edu> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='sparql.vivo.ufl.edu', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dafe80>, 'Connection to sparql.vivo.ufl.edu timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+Download (Turtle)
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://vivo.ufl.edu/UF-VIVO.n3> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+RDF Schema
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://softlayer.dl.sourceforge.net/project/vivo/Ontology/vivo-core-1.1.owl> ;
+    ] ;
+    dct:description_main """
+VIVO is a resource of the University of Florida that provides information on people, departments, facilities, courses, grants, and publications. Information is available as Linked Data and RDF dump. A SPARQL Endpoint can be used at http://vivo.ufl.edu:2020
+
+"""@en ;
+
+    foaf:page <http://vivo.ufl.edu> ;
+    void:triples "2384224"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://vivo.ufl.edu/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :vivo-university-of-florida ;
+    void:triples "58"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Christopher_P._Barnes"^^xsd:string ;
+     foaf:Cmbox <mailto:cpb@ufl.edu> ; 
+ .
+

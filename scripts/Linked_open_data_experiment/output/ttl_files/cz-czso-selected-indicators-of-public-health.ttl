@@ -100,7 +100,7 @@ Data cube containing statistical data with selected public health indicators in 
 """@en ;
 
     foaf:page <http://data.czso.cz/resource/dataset/selected-indicators-of-public-health> ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://data.czso.cz/resource/observation/selected-indicators-of-public-health/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

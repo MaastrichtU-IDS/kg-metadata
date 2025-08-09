@@ -101,7 +101,7 @@ YAGO3 is a huge semantic knowledge base, derived from Wikipedia WordNet and GeoN
 
     foaf:page <http://yago-knowledge.org> ;
     void:triples "120000000"^^xsd:integer ;
-    dcat:theme "cross_domain" ;
+    dcat:theme  <cross_domain> ;
     void:uriSpace <http://yago-knowledge.org/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

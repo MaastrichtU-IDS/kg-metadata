@@ -72,7 +72,7 @@ The BPR is also a digital library updated non-stop. By using documents in the pu
 """@en ;
 
     void:triples "366800"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://dati.camera.it/ocd/bpr/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

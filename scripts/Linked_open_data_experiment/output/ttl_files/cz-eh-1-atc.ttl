@@ -77,7 +77,7 @@ Anatomical Therapeutic Chemical Classification System
 
     foaf:page <http://linked.opendata.cz/resource/dataset/atc> ;
     void:triples "47540"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://linked.opendata.cz/resource/atc/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

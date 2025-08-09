@@ -45,7 +45,7 @@ Publishes RDF for a number of bibliographic resources:
 
     foaf:page <http://data.bib.uni-mannheim.de/> ;
     void:triples "53415605"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://data.bib.uni-mannheim.de/data/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

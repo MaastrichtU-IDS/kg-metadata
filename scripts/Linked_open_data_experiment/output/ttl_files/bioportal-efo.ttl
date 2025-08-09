@@ -55,7 +55,7 @@ The Experimental Factor Ontology (EFO) is an application focused ontology modell
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1136> ;
     void:triples "81324"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

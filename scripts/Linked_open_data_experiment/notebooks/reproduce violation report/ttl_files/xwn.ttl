@@ -1,0 +1,63 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:xwn a dcat:Dataset ;
+    dcat:keyword "lexicon", "llod", "lod", "multilingual", "wordnet" ;
+    dct:title_main "Open_Multilingual_Wordnet" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html" ;
+        dct:description_distribution """
+Documentation of and links to data for wordnets in 20 languages.
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='compling.hss.ntu.edu.sg', port=80): Max retries exceeded with url: /omw/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dacbb0>, 'Connection to compling.hss.ntu.edu.sg timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "Open_Multilingual_Wordnet_Intro_and_Downloads" ;
+        dcat:accessURL_distribution <http://compling.hss.ntu.edu.sg/omw/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+Contains folders for each language, containing LMF and lemon files in RDFXML
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='compling.hss.ntu.edu.sg', port=80): Max retries exceeded with url: /omw/all+xml.zip (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dae6b0>, 'Connection to compling.hss.ntu.edu.sg timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "Complete_data_of_all_languages,_including_LMF_and_lemon_files" ;
+        dcat:accessURL_distribution <http://compling.hss.ntu.edu.sg/omw/all%2Bxml.zip> ;
+    ] ;
+    dct:description_main """
+Documentation of and links to data for wordnets in 20 languages (Albanian, Arabic, Danish, English, Persian, Finnish, French, Hebrew, Italian, Japanese, Basque, Catalan, Galician, Spanish, Indonesian, Malaysian, Norwegian (Bokmal and Nynorsk), Portuguese, Thai).  Size, quality and license varies widely, but all licenses are open licenses that allow redistribution.
+
+There is also an online search interface.
+"""@en ;
+
+    foaf:page <http://casta-net.jp/~kuribayashi/multi/> ;
+    void:triples "10145232"^^xsd:integer ;
+    dcat:theme  <linguistics> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:wordnet-rdf a void:Linkset ;
+    void:target :xwn ;
+    void:triples "1715884"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Francis_Bond"^^xsd:string ;
+     foaf:Cmbox <mailto:bond@ieee.org> ; 
+ .
+

@@ -1,0 +1,98 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:olia a dcat:Dataset ;
+    dcat:keyword "annotation", "corpus", "crossdomain", "language_description", "linguistics", "llod", "lod", "lodcloud-diagram-2014-08-30", "nlp", "terminology" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "OLiA" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/octet-stream" ;
+        dct:description_distribution """
+Latest download from Sourceforge, including the Reference Model, released Annotation Models, and their linking.
+Does not include experimental Annotation Models and extensions.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "full_data_set" ;
+        dcat:downloadURL_distribution <https://sourceforge.net/projects/olia/files/latest/download> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "JJ_tag_from_Penn_tag_set" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://purl.org/olia/penn.owl#JJ> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Contains download links for the OLiA Reference Model and the OLiA Annotation Models
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Documentation" ;
+        dcat:accessURL_distribution <http://purl.org/olia> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+xml" ;
+        dct:description_distribution """
+Core taxonomy
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "OLiA_Reference_Model" ;
+        dcat:accessURL_distribution <http://purl.org/olia/olia.owl> ;
+    ] ;
+    dct:description_main """
+The Ontologies of Linguistic Annotations (OLiA) provide an OWL/DL taxonomy of data categories as a reference for linguistic annotation (OLiA Reference Model), plus OWL/DL models for a large number of annotation schemes (OLiA Annotation Models) and their relationship to reference data categories (OLiA Linking Models).
+The OLiA Reference Model itself is linked to community-maintained repositories such as GOLD (http://linguistics-ontology.org/) and ISOcat (http://www.isocat.org)
+
+The OLiA ontologies were originally developed as part of an infrastructure for the sustainable maintenance of linguistic resources (http://www.sfb441.uni-tuebingen.de/c2/index-engl.html), their fields of application include the formalization of annotation schemes, concept-based querying over heterogeneously annotated corpora, and the development of interoperable NLP pipelines.
+"""@en ;
+
+    foaf:page <http://purl.org/olia> ;
+    void:triples "43775"^^xsd:integer ;
+    dcat:theme  <linguistics> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:gold a void:Linkset ;
+    void:target :olia ;
+    void:triples "264"^^xsd:integer ;
+ .
+
+:isocat a void:Linkset ;
+    void:target :olia ;
+    void:triples "361"^^xsd:integer ;
+ .
+
+:tds a void:Linkset ;
+    void:target :olia ;
+    void:triples "83"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Christian_Chiarcos"^^xsd:string ;
+     foaf:Cmbox <mailto:christian.chiarcos@web.de> ; 
+ .
+

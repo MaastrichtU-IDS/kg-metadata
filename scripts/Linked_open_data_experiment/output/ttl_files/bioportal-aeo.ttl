@@ -55,7 +55,7 @@ AEO is an ontology of anatomical structures that expands CARO, the Common Anatom
 
     foaf:page <http://bioportal.bioontology.org/ontologies/1568> ;
     void:triples "3167"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

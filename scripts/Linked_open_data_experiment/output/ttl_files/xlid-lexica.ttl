@@ -52,7 +52,7 @@ Our xLiD-Lexica dataset in RDF (http://km.aifb.kit.edu/resources/xLiD-lexica.nt)
 """@en ;
 
     void:triples "300000000"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

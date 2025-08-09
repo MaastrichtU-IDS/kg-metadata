@@ -54,7 +54,7 @@ It is available in RDF form through EMBL-EBI's RDF Platform.
 """@en ;
 
     void:triples "425304329"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://rdf.ebi.ac.uk/resource/chembl/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

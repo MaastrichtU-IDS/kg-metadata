@@ -121,7 +121,7 @@ web: http://rdf.disgenet.org/
     ] ;
     foaf:page <http://ibi.imim.es/> ;
     void:triples "21730060"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://rdf.disgenet.org/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

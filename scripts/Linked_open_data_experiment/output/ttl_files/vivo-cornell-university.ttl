@@ -68,7 +68,7 @@ Information about Cornell faculty and staff across all disciplines, departments 
 
     foaf:page <http://vivo.cornell.edu/> ;
     void:triples "9796754"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://vivo.cornell.edu/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

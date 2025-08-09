@@ -77,7 +77,7 @@ links:bio2rdf-symbol: 9743
 
     foaf:page <http://www4.wiwiss.fu-berlin.de/diseasome/> ;
     void:triples "91182"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:uriSpace <http://www4.wiwiss.fu-berlin.de/diseasome/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

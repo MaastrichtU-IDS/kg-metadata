@@ -102,7 +102,7 @@ A secondary but equally important goal is to encourage additional contributions 
 
     foaf:page <http://greek-lod.math.auth.gr/police/> ;
     void:triples "145368"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:uriSpace <http://greek-lod.math.auth.gr/police/resource/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

@@ -63,7 +63,7 @@ The ISO 3166-1 is also used by the EU Geonomenclature of the Statistical Office,
         dcat:hadRole :owner ;
     ] ;
     void:triples "233369"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

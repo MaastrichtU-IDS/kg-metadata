@@ -51,7 +51,7 @@ The data set is updated weekly
     ] ;
     void:uriSpace <http://data.epo.org/linked-data/def/patent/> ;
     void:triples "600000000"^^xsd:integer ;
-    dcat:theme "government" ;
+    dcat:theme  <government> ;
     void:exampleResource [
         dct:title "Example_EP_publication_as_ttl" ;
         dct:description """

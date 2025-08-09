@@ -76,7 +76,7 @@ The FRSR vocabulary contains terms useful for finding out more about social role
     ] ;
     void:uriSpace <http://metamodeling.com/owl/familyrelations> ;
     void:triples "134"^^xsd:integer ;
-    dcat:theme "social_networking" ;
+    dcat:theme  <social_networking> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

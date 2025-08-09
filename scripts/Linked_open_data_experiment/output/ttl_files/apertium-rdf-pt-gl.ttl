@@ -105,7 +105,7 @@ RDF version of the Apertium bilingual dictionary PT-GL. The original dataset (in
 """@en ;
 
     void:triples "234065"^^xsd:integer ;
-    dcat:theme "linguistics" ;
+    dcat:theme  <linguistics> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

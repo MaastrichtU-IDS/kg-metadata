@@ -24,7 +24,7 @@ This dataset collects information on the thermochemical properties and basic phy
 
     dct:title "chemdb_thermochemistry_dataset" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     void:sparqlEndpoint [
         dct:identifier "51394d78-00aa-64f6-791b-50a4fcd20b0f" ;
         dct:title "chemdb-thermochemistry_SPARQL_endpoint" ;

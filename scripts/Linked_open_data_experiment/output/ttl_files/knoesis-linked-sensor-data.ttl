@@ -65,7 +65,7 @@ Datasets for sensors and sensor observations, created at Kno.e.sis Center, and c
 
     foaf:page <http://wiki.knoesis.org/index.php/SSW_Datasets> ;
     void:triples "1730284735"^^xsd:integer ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <http://knoesis.wright.edu/ssw/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;

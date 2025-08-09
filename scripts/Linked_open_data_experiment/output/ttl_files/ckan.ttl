@@ -111,7 +111,7 @@ FAIL (403)
 
     foaf:page <http://www.ckan.net/> ;
     void:triples "50000"^^xsd:integer ;
-    dcat:theme "life_sciences" ;
+    dcat:theme  <life_sciences> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

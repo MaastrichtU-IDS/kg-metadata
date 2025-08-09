@@ -42,7 +42,7 @@ Salzburgerland dataset for Italian resources, built with WordLift from the websi
     ] ;
     foaf:page <https://www.salzburgerland.com/it/> ;
     void:triples "4352"^^xsd:integer ;
-    dcat:theme "media" ;
+    dcat:theme  <media> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
         dcat:hadRole :contact_point ;

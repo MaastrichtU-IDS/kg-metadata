@@ -37,7 +37,7 @@ YSO places is a bi-lingual general geographic gazetteer.  It includes administra
 
     dct:title "YSO_places" ;
     dct:license <http://www.opendefinition.org/licenses/cc-by> ;
-    dcat:theme "geography" ;
+    dcat:theme  <geography> ;
     void:uriSpace <_http://www.yso.fi/onto/yso/places> ;
     void:sparqlEndpoint [
         dct:identifier "4ba995ca-8a7a-bc7d-2e5b-3c6e46453224" ;

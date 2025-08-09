@@ -102,7 +102,7 @@ The Thesaurus for the Social Sciences (Thesaurus Sozialwissenschaften) contains 
 
     foaf:page <http://lod.gesis.org/thesoz/> ;
     void:triples "438901"^^xsd:integer ;
-    dcat:theme "publications" ;
+    dcat:theme  <publications> ;
     void:uriSpace <http://lod.gesis.org/thesoz/> ;
     prov:qualifiedAttribution [
         prov:agent :contactAgent ;
