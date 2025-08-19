@@ -1,0 +1,84 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:vivo-indiana-university a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "education", "format-rdf", "format-rdfs", "lod", "lodcloud-diagram-2011", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "publications", "published-by-producer", "science", "social-networks", "vivo" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "VIVO_Indiana" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://vivo.iu.edu/individual/IndianaUniversity/IndianaUniversity.rdf> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='vivo.iu.edu', port=80): Max retries exceeded with url: /individual/IndianaUniversity/IndianaUniversity.rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686aefe20>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://vivo.iu.edu/individual/BL-SLIS/BL-SLIS.rdf> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='vivo.iu.edu', port=80): Max retries exceeded with url: /individual/BL-SLIS/BL-SLIS.rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686aefee0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+RDF Schema
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://softlayer.dl.sourceforge.net/project/vivo/Ontology/vivo-core-1.1.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+IU latest VIVO dump (20120529)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Download(RDF/XML)" ;
+        dcat:accessURL_distribution <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-29T154559/2012-05-23_vivo.iu.edu_export.rdf> ;
+    ] ;
+    dct:description_main """
+Information about Indiana University faculty and staff across, available as RDF dump and Linked Data. Currently populated with information about members of the VIVO team at IU, it will eventually be expanded to contain information about other participating researchers, departments, and centers at IU. This is a part of package:vivo.
+"""@en ;
+
+    foaf:page <http://vivo.iu.edu> ;
+    void:triples "500000"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://vivo.iu.edu/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :vivo-indiana-university ;
+    void:triples "58"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Indiana_University"^^xsd:string ;
+ .
+

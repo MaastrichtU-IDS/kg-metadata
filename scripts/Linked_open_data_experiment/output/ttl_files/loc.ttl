@@ -1,0 +1,63 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:loc a dcat:Dataset ;
+    dcat:keyword "aprilfools", "crossdomain", "ctic", "format-rdf", "lod", "no-proprietary-vocab", "published-by-third-party" ;
+    dct:title "Linked_Open_Colors" ;
+    void:exampleResource [
+        dct:title "Example_(red)" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example (red)
+""" ;
+        dcat:accessURL <http://purl.org/colors/rgb/ff0000> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "void" ;
+        dct:mirror "['ipfs:QmQD1DorWSK7Gd55LsnF3NfzLj5gJLescDbXJwaYFmirEq']" ;
+        dcat:accessURL <http://linkedopencolors.appspot.com/void.rdf> ;
+    ] ;
+    dct:description """
+Linked Open Colors, dataset created for the April Fools' Day of 2011 as an informal initiative for promoting Linked Data. 
+http://lists.w3.org/Archives/Public/public-lod/2011Apr/0003.html
+"""@en ;
+
+    foaf:page <http://linkedopencolors.appspot.com/> ;
+    void:triples "160000000"^^xsd:integer ;
+    void:uriSpace <http://purl.org/colors/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :loc ;
+    void:triples "16000000"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Sergio_Fernández"^^xsd:string ;
+     foaf:mbox <mailto:sergio.fernandez@fundacionctic.org> ; 
+ .
+

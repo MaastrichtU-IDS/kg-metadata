@@ -1,0 +1,110 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:linkedmdb a dcat:Dataset ;
+    dcat:keyword "ckanupload.esw.200910", "deref-vocab", "films", "format-dbp", "format-rdf", "license-", "linked-data", "linkeddata", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "media", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "published-by-third-party", "rdf" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Linked_Movie_DataBase" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "application/rdf+xml;_charset=utf-8" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://data.linkedmdb.org/resource/film_character/1001> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "None" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://data.linkedmdb.org/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+RDF Dump
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='queens.db.toronto.edu', port=80): Max retries exceeded with url: /~oktie/linkedmdb (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686c9dba0>, 'Connection to queens.db.toronto.edu timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://queens.db.toronto.edu/~oktie/linkedmdb> ;
+    ] ;
+    dct:description_main """
+Data exposed: Linked Data about Movies
+Size of data set: 6,148,121 triples.
+
+### Openness: Open
+
+Mixture of material from Wikipedia, Freebase and Geonames and states on http://wiki.linkedmdb.org/Main/Licensing:
+
+> Content created by (or contributed to) LinkedMDB (interlinking data, in particular) is licensed under the Creative Commons Attributions License(CC-BY). You are free to use CC-BY content as long as you provide proper attribution back to the source (LinkedMDB). Attribution should be given with a link or a reference to LinkedMDB. 
+"""@en ;
+
+    foaf:page <http://linkedmdb.org/> ;
+    void:triples "6148121"^^xsd:integer ;
+    dcat:theme  <media> ;
+    void:uriSpace <http://data.linkedmdb.org/resource/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :linkedmdb ;
+    void:triples "30354"^^xsd:integer ;
+ .
+
+:dbtune-musicbrainz a void:Linkset ;
+    void:target :linkedmdb ;
+    void:triples "2207"^^xsd:integer ;
+ .
+
+:flickr-wrappr a void:Linkset ;
+    void:target :linkedmdb ;
+    void:triples "30354"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :linkedmdb ;
+    void:triples "27544"^^xsd:integer ;
+ .
+
+:lingvoj a void:Linkset ;
+    void:target :linkedmdb ;
+    void:triples "28253"^^xsd:integer ;
+ .
+
+:rdf-book-mashup a void:Linkset ;
+    void:target :linkedmdb ;
+    void:triples "13690"^^xsd:integer ;
+ .
+
+:yago a void:Linkset ;
+    void:target :linkedmdb ;
+    void:triples "30354"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Oktie_Hassanzadeh,_Mariano_P._Consens"^^xsd:string ;
+     foaf:Cmbox <mailto:admin@linkedmdb.org> ; 
+ .
+

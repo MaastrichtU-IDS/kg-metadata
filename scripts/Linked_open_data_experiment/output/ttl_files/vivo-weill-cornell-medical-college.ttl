@@ -1,0 +1,51 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:vivo-weill-cornell-medical-college a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "education", "format-rdf", "format-rdfs", "format-vitro", "lod", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "publications", "published-by-producer", "science", "social-networks", "vivo" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "VIVO_Weill_Cornell_Medical_College" ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+VIVO is a research-focused discovery tool that enables collaboration among scientists across all disciplines. VIVO contains information about researchers associated with the Clinical and Translational Science Center.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "2012-04-02T142918/weill-rdf-dump.rdf" ;
+        dct:mirror "['ipfs:QmbdBuYDJtBCfnM6frufqSsZov6x7KnNnvepW6FoWQDF11']" ;
+        dcat:accessURL <https://commondatastorage.googleapis.com/ckannet-storage/2012-04-02T142918/weill-rdf-dump.rdf> ;
+    ] ;
+    dct:description """
+VIVO is a research-focused discovery tool that enables collaboration among scientists across all disciplines. VIVO contains information about researchers associated with the Clinical and Translational Science Center.
+"""@en ;
+
+    foaf:page <http://vivo.med.cornell.edu/> ;
+    void:triples "193000"^^xsd:integer ;
+    dcat:theme  <social_networking> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia_ a void:Linkset ;
+    void:target :vivo-weill-cornell-medical-college ;
+    void:triples "58"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "VIVO"^^xsd:string ;
+ .
+

@@ -1,0 +1,160 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:getty-tgn a dcat:Dataset ;
+    dcat:keyword "cultural_heritage", "format-skos", "format-skosxl", "geographic", "getty", "size-xlarge", "skos", "thesaurus" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-by> ;
+    dct:title "The_Getty_Thesaurus_of_Geographic_Names" ;
+    void:exampleResource [
+        dct:title "Sienna" ;
+        dcat:mediaType "application/rdf+xml;charset=UTF-8" ;
+        dct:description """
+Example with multiple parents and associative relationships.
+""" ;
+        dcat:accessURL <http://vocab.getty.edu/tgn/7011179> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Machupicchu" ;
+        dcat:mediaType "application/rdf+xml;charset=UTF-8" ;
+        dct:description """
+Example of a cultural site in Peru with a rich history.
+""" ;
+        dcat:accessURL <http://vocab.getty.edu/tgn/7015574> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Aleppo" ;
+        dcat:mediaType "application/rdf+xml;charset=UTF-8" ;
+        dct:description """
+Example of a Syrian city with a rich history.
+""" ;
+        dcat:accessURL <http://vocab.getty.edu/tgn/7002252> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Great_Lakes_Region" ;
+        dcat:mediaType "application/rdf+xml;charset=UTF-8" ;
+        dct:description """
+Example that has bounding box coordinates and elevation.
+""" ;
+        dcat:accessURL <http://vocab.getty.edu/tgn/3000034-geometry> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://vocab.getty.edu/sparql> ;
+        adms:status """
+FAIL (500)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=UTF-8" ;
+        dct:description """
+This is the Linked Open Data publication of the Getty Vocabularies. The data is described semantically following linked data principles using the Resource Description Framework (RDF) format.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Home_Page" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://vocab.getty.edu> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Getty_Vocabulary_Program_ontology" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://vocab.getty.edu/ontology> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Semantic_Representation_Documentation" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://vocab.getty.edu/doc> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/zip" ;
+        dct:description """
+NTriples zip, file size is 864 MB
+""" ;
+        adms:status """
+FAIL (500)
+""" ;
+        dct:title "Total_TGN_statements" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://vocab.getty.edu/dataset/tgn/full.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/zip" ;
+        dct:description """
+NTriples zip, file size is 461.7 MB
+""" ;
+        adms:status """
+FAIL (500)
+""" ;
+        dct:title "Explicit_TGN_statements" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://vocab.getty.edu/dataset/aat/explicit.zip> ;
+    ] ;
+    dct:description """
+Getty Thesaurus of Geographic Names® (TGN) is a structured vocabulary of geographic names intended to provide terminology and other information important to various diciplines that specialize in art, architecture and material culture. The TGN includes names and associated information about places. Places in TGN include administrative political entities (e.g., cities, nations) and physical features (e.g., mountains, rivers). Current and historical places are included. Like all of the Getty Vocabularies, the TGN is compliant with international standards and grows through contribution. 
+
+** Openness **
+TGN data is released under Open Data Commons Attribution License. Adherence to ODC Attribution instructions for the correct assertion of attribution is encouraged. The preferred form of attribution for TGN is:
+
+"*This [title or report or article or dataset] contains information from the Getty Thesaurus of Geographic Names® (TGN) which is made available under the ODC Attribution License.*"
+
+Special Case: In circumstances where providing the full attribution statement above is not technically feasible, the use of canonical TGN URIs is adequate to satisfy Section 4.3 of the ODC Attribution License.
+"""@en ;
+
+    foaf:page <http://www.getty.edu/research/tools/vocabularies/tgn/> ;
+    dcat:theme  <geography> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:schema-org a void:Linkset ;
+    void:target :getty-tgn ;
+    void:triples "1409085"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "The_Getty_Research_Institute"^^xsd:string ;
+     foaf:mbox <mailto:VocabLod@getty.edu> ; 
+ .
+

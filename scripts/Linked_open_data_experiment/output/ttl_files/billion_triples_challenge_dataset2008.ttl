@@ -1,0 +1,56 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:billion_triples_challenge_dataset2008 a dcat:Dataset ;
+    dcat:keyword "ckanupload.esw.200910", "crossdomain", "format-rdf", "linkeddata", "lod", "lodcloud.nolinks", "lodcloud.unconnected", "no-proprietary-vocab", "published-by-third-party", "rdf" ;
+    dct:title "Billion_Triples_Challenge_Dataset_2008" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmQfZKTBj7EniNR3mdUtsetD1Yaro8AFbKjiexw1askXTc']" ;
+        dcat:downloadURL <http://www.cs.vu.nl/~pmika/swc/btc.html> ;
+    ] ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "application/ld+json" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://dbpedia.org/resource/Engineering_and_Physical_Sciences_Research_Council> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dct:description """
+Data exposed: various dumps
+Size of dump and data set: 1 billion triples
+"""@en ;
+
+    foaf:page <http://challenge.semanticweb.org/> ;
+    void:triples "1000000000"^^xsd:integer ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:name "Peter_Mika,_James_Hendler"^^xsd:string ;
+ .
+

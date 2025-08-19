@@ -1,0 +1,152 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:rkb-explorer-nsf a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-rdf", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-vocab-mappings", "provenance-metadata", "publications", "published-by-third-party", "void-sparql-endpoint" ;
+    dct:title "National_Science_Foundation_(RKBExplorer)" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL <http://nsf.rkbexplorer.com/id/person-6092a2a72319fc9437583fb2d04733ea> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='nsf.rkbexplorer.com', port=80): Max retries exceeded with url: /id/person-6092a2a72319fc9437583fb2d04733ea (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db68c0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://nsf.rkbexplorer.com/sparql/> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='nsf.rkbexplorer.com', port=80): Max retries exceeded with url: /sparql/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db5d20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/xml" ;
+        dct:description """
+XML Sitemap
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='nsf.rkbexplorer.com', port=80): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db5630>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://nsf.rkbexplorer.com/sitemap.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD file
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:Qmf2NynQf3Fqjgp1ueKv28n5uZ8qNkvirqDon2mChXXwbY']" ;
+        dcat:accessURL <http://nsf.rkbexplorer.com/models/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-gzip" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='nsf.rkbexplorer.com', port=80): Max retries exceeded with url: /models/dump.tgz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db6c20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title "Download_(tar_gzip_of_RDF)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://nsf.rkbexplorer.com/models/dump.tgz> ;
+    ] ;
+    dct:description """
+
+"""@en ;
+
+    foaf:page <http://nsf.rkbexplorer.com> ;
+    void:triples "11822283"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://nsf.rkbexplorer.com/id/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :rkb-explorer-nsf ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-acm a void:Linkset ;
+    void:target :rkb-explorer-nsf ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:rkb-explorer-citeseer a void:Linkset ;
+    void:target :rkb-explorer-nsf ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:rkb-explorer-cordis a void:Linkset ;
+    void:target :rkb-explorer-nsf ;
+    void:triples "175"^^xsd:integer ;
+ .
+
+:rkb-explorer-curriculum a void:Linkset ;
+    void:target :rkb-explorer-nsf ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-dblp a void:Linkset ;
+    void:target :rkb-explorer-nsf ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:rkb-explorer-eprints a void:Linkset ;
+    void:target :rkb-explorer-nsf ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:rkb-explorer-irit a void:Linkset ;
+    void:target :rkb-explorer-nsf ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:rkb-explorer-newcastle a void:Linkset ;
+    void:target :rkb-explorer-nsf ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-rae2001 a void:Linkset ;
+    void:target :rkb-explorer-nsf ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:rkb-explorer-southampton a void:Linkset ;
+    void:target :rkb-explorer-nsf ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:rkb-explorer-wiki a void:Linkset ;
+    void:target :rkb-explorer-nsf ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Hugh_Glaser"^^xsd:string ;
+     foaf:mbox <mailto:hg@ecs.soton.ac.uk> ; 
+ .
+

@@ -1,0 +1,80 @@
+@prefix : <http://example.org/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qudt: <http://qudt.org/schema/qudt/>.
+@prefix mod: <https://w3id.org/mod#>.
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix cito: <http://purl.org/spar/cito> .
+:wikidata
+    a dcat:Dataset;
+    dct:identifier "https://www.wikidata.org/entity/Q2013"^^xsd:string ;
+    rdf:type dcat:Dataset ;
+    dct:title "Wikidata"@en ;
+    dct:alternative ""@en ;
+    qudt:acronym ""^^xsd:string ;
+    dct:description """ Wikidata is a free and open knowledge base that can be read and edited by ..."""@en ;
+    foaf:page <https://www.wikidata.org> ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Wikidata:Introduction> ;
+    pav:createdOn "2012-10-29T15:30:00Z"^^xsd:dateTimeStamp ;
+    dct:modified "2024-11-25T15:30:00Z"^^xsd:dateTimeStamp ;
+    dct:issued "2012-10-29T15:30:00Z"^^xsd:dateTimeStamp ;
+    void:vocabulary <https://github.com/mkroetzsch/wda/blob/master/wikidata-ontology.owl> ;
+    cito:citesAsAuthority <https://dl.acm.org/doi/10.1145/2629489> ;
+    foaf:depiction <https://www.researchgate.net/figure/A-simplified-class-level-diagram-of-the-Wikidata-knowledge-graph-for-biomedical-entities_fig1_339985351> ;
+    void:triples "https://www.wikidata.org/wiki/Wikidata:Statistics#"^^xsd:anyURI ;
+    dcat:distribution [
+                       dct:title "latest dump of Wikidata";
+                       dct:description "latest dump of Wikidata in turtle format"; 
+                       dct:conformsTo <https://www.wikidata.org/wiki/EntitySchema:E10>;
+                       dcat:mediaType "application/octet-stream";
+                       dcat:downloadURL <https://www.wikidata.org/wiki/Wikidata:Database_download/nl>; 
+                       dcat:accessURL <> ;];
+    dcat:dataService <https://www.wikidata.org/wiki/Q42722531> ;
+    void:sparqlEndpoint[ 
+                       dcat:endpointURL <https://query.wikidata.org/sparql> ; 
+                       dct:identifier "Wikidata SPARQL endpoint"^^rdfs:Literal ;
+                       dct:title "Wikidata Query Service"^^rdfs:Literal ;
+                       dcat:endpointDescription  """The Wikidata Query Service generally contains the full data of Wikidata,..."""^^rdfs:Literal ;
+                      adms:status  "OK";];
+    mod:sampleQueries "https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples"^^xsd:anyURI ;
+    dct:version "1.0"^^rdfs:Literal ;
+    dct:license <https://www.wikidata.org/wiki/Q6938433> ;
+    dcat:keyword "knowledge graph, wikidata, ontology"^^xsd:string ;
+    dcat:theme <open knowledge graph>
+    dct:references <https://www.wikidata.org/wiki/Wikidata:Introduction> ;
+    dct:language "en";
+    void:uriRegexPattern "https://www.wikidata.org/wiki/{id}"^^xsd:string ;
+    void:exampleResource <https://www.wikidata.org/wiki/Q2013> ;
+    dct:accessRights <https://www.wikidata.org/wiki/Q232932> ;
+    prov:hadPrimarySource <https://huggingface.co/datasets/wikimedia/wikipedia> ;
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;] ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;] 
+     .
+
+:eurovoc a void:Linkset ;
+    void:target :wikidata ;
+    void:triples "3068"^^xsd:integer ;
+ .
+
+:OwnerAgent a prov:Agent ;
+     foaf:name "Lucas_Werkmeister"^^xsd:string ;
+     foaf:mbox <mailto:lucas.werkmeister@wikimedia.de> ; 
+ .
+
+:contactAgent a prov:Agent ;
+     foaf:name "Lucas_Werkmeister"^^xsd:string ;
+     foaf:mbox <mailto:wikid@a@wikimedia.de> ; 
+ .

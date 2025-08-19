@@ -1,0 +1,60 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Upper_Ontology a dcat:Dataset ;
+    dcat:keyword "Matter", "Space", "Time", "EHCPR" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "Sup_Ont:_An_Upper_Ontology" ;
+    void:sparqlEndpoint [
+        dct:title "Big_Data" ;
+        dct:identifier "523e5f1b-dd0f-26ae-d487-1250576c1c53" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <https://query.wikidata.org/bigdata/namespace/wdq/sparql?query=%7BSPARQL%7D> ;
+        adms:status """
+FAIL (400)
+""" ;
+    ] ;
+    dct:description """
+This is the Ontology that defines the structure of universe and concept of reality. In super ontology  there is a distinction between defining and characteristic features. The devised super ontology and hence the domain ontologies can be reused across applications because of the generalized representation scheme used that is an EHCPR. An Extended Hierarchical Censored Production Rules (EHCPRs) system is a knowledge representation system for reasoning with real life problems and a step towards a generalized representation system.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://sonika-malik.github.io/super-ontology/sup_proton.xml> ;
+    void:triples "120"^^xsd:integer ;
+    dcat:theme  <user_generated> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:Generalized_Super_Ontology a void:Linkset ;
+    void:target :Upper_Ontology ;
+    void:triples "33"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:sonika.malik@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Sonika"^^xsd:string ;
+     foaf:mbox <mailto:sonika.malik@gmail.com> ; 
+ .
+

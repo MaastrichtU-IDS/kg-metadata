@@ -1,0 +1,55 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:NoiPA a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title "NoiPA_SPARQL_Endpoint" ;
+        dct:identifier "f6512e29-38ca-3f46-8040-ee732d74e856" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <https://sparql-noipa.mef.gov.it/sparql> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='sparql-noipa.mef.gov.it', port=443): Max retries exceeded with url: /sparql (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:997)'))))
+""" ;
+    ] ;
+    foaf:depiction <https://dati-noipa.mef.gov.it/cl/o/noipa-theme-opendata/images/noipa/NoiPaLogo.png> ;
+    foaf:page <https://noipa.mef.gov.it> ;
+    dct:license <https://creativecommons.org/licenses/by-sa/3.0/> ;
+    dct:title "NoiPA" ;
+    dct:description """
+Open Data NoiPA is a project created to make available, transparent and fully usable the extensive information assets managed by the Information and Innovation Systems Department of the Ministry of Economy and Finance.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:triples "340000000"^^xsd:integer ;
+    dcat:theme  <government> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:whitehall.reply@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "NoiPA"^^xsd:string ;
+     foaf:mbox <mailto:black@email.it> ; 
+ .
+

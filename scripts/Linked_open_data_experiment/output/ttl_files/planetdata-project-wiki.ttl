@@ -1,0 +1,118 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:planetdata-project-wiki a dcat:Dataset ;
+    dcat:keyword "LinkedDataCrawl2014", "crawledLinkedDataCloud2014", "format-owl", "format-rdf", "format-rdfs", "format-swivt", "lodcloud-diagram-2014-08-30", "part-deref-vocab", "publications" ;
+    dct:title "PlanetData_Project_Wiki" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://wiki.planet-data.eu/?title=Special%3AExportRDF%2FParty&xmlmime=rdf> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='wiki.planet-data.eu', port=80): Max retries exceeded with url: /?title=Special:ExportRDF/Party&xmlmime=rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686bdf640>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dct:description """
+Semantic Wiki of PlanetData Project
+"""@en ;
+
+    foaf:page <http://planet-data.eu> ;
+    dcat:theme  <publications> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:aspire-manchester a void:Linkset ;
+    void:target :planetdata-project-wiki ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:city-lichfield a void:Linkset ;
+    void:target :planetdata-project-wiki ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:currency-designators a void:Linkset ;
+    void:target :planetdata-project-wiki ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:ecb-linked-data a void:Linkset ;
+    void:target :planetdata-project-wiki ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:fao-geopolitical-ontology a void:Linkset ;
+    void:target :planetdata-project-wiki ;
+    void:triples "27"^^xsd:integer ;
+ .
+
+:fao-linked-data a void:Linkset ;
+    void:target :planetdata-project-wiki ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:linked-edgar a void:Linkset ;
+    void:target :planetdata-project-wiki ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:linked-eurostat a void:Linkset ;
+    void:target :planetdata-project-wiki ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:oecd-linked-data a void:Linkset ;
+    void:target :planetdata-project-wiki ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:personal-homepages a void:Linkset ;
+    void:target :planetdata-project-wiki ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:reference-data-gov-uk a void:Linkset ;
+    void:target :planetdata-project-wiki ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:semantic-web-dog-food a void:Linkset ;
+    void:target :planetdata-project-wiki ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:sors a void:Linkset ;
+    void:target :planetdata-project-wiki ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:transparency-linked-data a void:Linkset ;
+    void:target :planetdata-project-wiki ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:world-bank-linked-data a void:Linkset ;
+    void:target :planetdata-project-wiki ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:world-wide-web-foundation a void:Linkset ;
+    void:target :planetdata-project-wiki ;
+    void:triples "2"^^xsd:integer ;
+ .
+

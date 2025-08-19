@@ -1,0 +1,58 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:enslaved_org a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://enslaved.org/> ;
+    void:triples "55729113"^^xsd:integer ;
+    dcat:distribution [
+        dct:identifier "f03ef845-390b-6299-81bd-ba1d465eac43" ;
+        dct:title "Full_RDF_dump_Enslaved.org" ;
+        dct:description """
+
+""" ;
+        dcat:mediaType "application/octet-stream" ;
+        dcat:downloadURL <https://manta.matrix.msu.edu/msumatrix/public/exports/wikibase/2bde7b5b/latest.wikibase.dump.rdf.gz> ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:keyword "Slave_Trade", "Digital_Humanities", "People", "Events", "Places" ;
+    dct:description """
+ The primary focus of Enslaved.org is people—individuals who were enslaved, owned slaves, were connected to the slave trade, and worked to emancipate slaves.
+"""@en ;
+
+    dct:title "Enslaved.org" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dcat:theme  <cross_domain> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] ;
+    foaf:depiction <https://enslaved.org/assets/images/Logo.svg> .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:seilage@msu.edu> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Matrix:_the_Center_for_Digital_Humanities_and_Social_Sciences"^^xsd:string ;
+     foaf:mbox <mailto:enslaved.org@gmail.com> ; 
+ .
+

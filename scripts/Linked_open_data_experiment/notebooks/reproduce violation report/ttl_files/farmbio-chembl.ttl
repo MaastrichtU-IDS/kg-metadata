@@ -1,0 +1,176 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:farmbio-chembl a dcat:Dataset ;
+    dcat:keyword "backlink", "format-rdf", "lifesciences", "lod", "lodcloud-diagram-2011-09-19", "no-deref-vocab", "no-license-metadata", "no-provenance-metadata", "published-by-third-party", "sparql-endpoint" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "ChEMBL-RDF_(@_Uppsala_University)" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_target" ;
+        dcat:mediaType_exampleResource "text/plain" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://linkedchemistry.info/chembl/target/t158> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='linkedchemistry.info', port=80): Max retries exceeded with url: /chembl/target/t158 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dadd20>, 'Connection to linkedchemistry.info timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_journal_paper" ;
+        dcat:mediaType_exampleResource "text/plain" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://linkedchemistry.info/chembl/resource/r371> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='linkedchemistry.info', port=80): Max retries exceeded with url: /chembl/resource/r371 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686da36a0>, 'Connection to linkedchemistry.info timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_journal" ;
+        dcat:mediaType_exampleResource "example/n3" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://linkedchemistry.info/chembl/journal/j2d9cdf677b52f45100278f594cd7198a> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='linkedchemistry.info', port=80): Max retries exceeded with url: /chembl/journal/j2d9cdf677b52f45100278f594cd7198a (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dad810>, 'Connection to linkedchemistry.info timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_drug" ;
+        dcat:mediaType_exampleResource "text/plain" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://linkedchemistry.info/chembl/molecule/m100431> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='linkedchemistry.info', port=80): Max retries exceeded with url: /chembl/molecule/m100431 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dacd00>, 'Connection to linkedchemistry.info timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_activity" ;
+        dcat:mediaType_exampleResource "text/plain" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://linkedchemistry.info/chembl/activity/a935292> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='linkedchemistry.info', port=80): Max retries exceeded with url: /chembl/activity/a935292 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dafca0>, 'Connection to linkedchemistry.info timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_assay" ;
+        dcat:mediaType_exampleResource "text/plain" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://linkedchemistry.info/chembl/assay/a93337> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='linkedchemistry.info', port=80): Max retries exceeded with url: /chembl/assay/a93337 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dadd50>, 'Connection to linkedchemistry.info timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_drug" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://data.kasabi.com/dataset/chembl-rdf/molecule/m100431.html> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+Uppsala SPARQL end point.
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://rdf.farmbio.uu.se/chembl/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/n3" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='semantics.bigcat.unimaas.nl', port=80): Max retries exceeded with url: /chembl/v13_5/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686daf880>, 'Connection to semantics.bigcat.unimaas.nl timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "Bzip2-ed_N3_dump" ;
+        dcat:accessURL_distribution <http://semantics.bigcat.unimaas.nl/chembl/v13_5/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;charset=utf-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "CHEMINF_ontology" ;
+        dcat:accessURL_distribution <http://rest.bioontology.org/bioportal/ontologies/download/45415?apikey=4ea81d74-8960-4525-810b-fa1baab576ff> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "VoID_file_describing_the_data_set" ;
+        dcat:accessURL_distribution <http://data.kasabi.com/dataset/chembl-rdf> ;
+    ] ;
+    dct:description_main """
+RDF version of the CC-SA-BY ChEMBL database by the team of John Overington at the EBI, Hinxton/UK (http://www.ebi.ac.uk/chembl/).
+"""@en ;
+
+    foaf:page <https://github.com/egonw/chembl.rdf> ;
+    void:triples "25111377"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    void:uriSpace <http://rdf.farmbio.uu.se/chembl/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bio2rdf-chebi a void:Linkset ;
+    void:target :farmbio-chembl ;
+    void:triples "517261"^^xsd:integer ;
+ .
+
+:bio2rdf-kegg-enzyme a void:Linkset ;
+    void:target :farmbio-chembl ;
+    void:triples "661"^^xsd:integer ;
+ .
+
+:bio2rdf-pubmed a void:Linkset ;
+    void:target :farmbio-chembl ;
+    void:triples "30039"^^xsd:integer ;
+ .
+
+:bio2rdf-uniprot a void:Linkset ;
+    void:target :farmbio-chembl ;
+    void:triples "4356"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Egon_Willighagen"^^xsd:string ;
+     foaf:Cmbox <mailto:egon.willighagen@gmail.com> ; 
+ .
+

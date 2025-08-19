@@ -1,0 +1,61 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:glastonbury-2011 a dcat:Dataset ;
+    dcat:keyword "arts", "deref-vocab", "festival", "glastonbury", "lod", "lodcloud.nolinks", "lodcloud.unconnected", "music", "programme", "published-by-third-party", "rdf", "usergeneratedcontent" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Glastonbury_2011_Programme" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://programme.ecs.soton.ac.uk/glastonbury/2011/glastonbury2011.rdf#session-7979af337cd00d6b9e9d481a954953d5-Sunday-12%3A56> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Download 2011 Glastonbury Line Up in RDF
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://programme.ecs.soton.ac.uk/glastonbury/2011/glastonbury2011.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+External URIs to artists homepage mapping, to enable someone else to create solid links from this data. 
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://programme.ecs.soton.ac.uk/glastonbury/2011/homepages.rdf> ;
+    ] ;
+    dct:description_main """
+This has been screen scraped from the Glastonbury website.
+"""@en ;
+
+    foaf:page <http://programme.ecs.soton.ac.uk/glastonbury/2011/> ;
+    void:triples "42581"^^xsd:integer ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 

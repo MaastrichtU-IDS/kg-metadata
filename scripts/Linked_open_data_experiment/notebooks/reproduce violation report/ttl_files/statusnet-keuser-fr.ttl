@@ -1,0 +1,66 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:statusnet-keuser-fr a dcat:Dataset ;
+    dcat:keyword "LinkedDataCrawl2014", "crawledLinkedDataCloud2014", "format-bio", "format-foaf", "format-pos", "format-rdf", "format-rdfs", "format-sioc", "lodcloud-diagram-2014-08-30", "social_web" ;
+    dct:title_main "statusnet-keuser-fr" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://keuser.fr/lythari/foaf> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='keuser.fr', port=80): Max retries exceeded with url: /lythari/foaf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dafd30>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dct:description_main """
+StatusNet instance hosted at http://keuser.fr
+"""@en ;
+
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames-semantic-web a void:Linkset ;
+    void:target :statusnet-keuser-fr ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:statusnet-belfalas-org a void:Linkset ;
+    void:target :statusnet-keuser-fr ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:statusnet-postblue-info a void:Linkset ;
+    void:target :statusnet-keuser-fr ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:statusnet-scoffoni-net a void:Linkset ;
+    void:target :statusnet-keuser-fr ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-shnoulle-net a void:Linkset ;
+    void:target :statusnet-keuser-fr ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-status-net a void:Linkset ;
+    void:target :statusnet-keuser-fr ;
+    void:triples "6"^^xsd:integer ;
+ .
+

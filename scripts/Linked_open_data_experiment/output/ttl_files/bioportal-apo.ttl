@@ -1,0 +1,184 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bioportal-apo a dcat:Dataset ;
+    dcat:keyword "biomedicine", "bioportal", "format-obo", "format-rdf", "lod", "ontology", "published-by-third-party" ;
+    dct:title "Ascomycete_phenotype_ontology" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+REST API Wiki Documentation
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+SPARQL endpoint
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://sparql.bioontology.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+Download link, BioPortal API KEY is required
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://rest.bioontology.org/bioportal/ontologies/download/46991?apikey=BP_API_KEY> ;
+    ] ;
+    dct:description """
+A structured controlled vocabulary for the phenotypes of Ascomycete fungi
+"""@en ;
+
+    foaf:page <http://bioportal.bioontology.org/ontologies/1222> ;
+    void:triples "4213"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-bao a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-bdo a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "19"^^xsd:integer ;
+ .
+
+:bioportal-csp a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+:bioportal-ep a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-fypo a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-galen a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-go_x1 a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "45"^^xsd:integer ;
+ .
+
+:bioportal-go_x2 a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "45"^^xsd:integer ;
+ .
+
+:bioportal-hl7 a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-iev a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-mesh-owl a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "41"^^xsd:integer ;
+ .
+
+:bioportal-msh a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "28"^^xsd:integer ;
+ .
+
+:bioportal-ncit a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "63"^^xsd:integer ;
+ .
+
+:bioportal-nif a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "59"^^xsd:integer ;
+ .
+
+:bioportal-nif_cell a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "19"^^xsd:integer ;
+ .
+
+:bioportal-nif_dysfunction a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "19"^^xsd:integer ;
+ .
+
+:bioportal-nigo a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-pato a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "19"^^xsd:integer ;
+ .
+
+:bioportal-rcd a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-rid a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-snomedct a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "31"^^xsd:integer ;
+ .
+
+:bioportal-sopharm a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:bioportal-ypo a void:Linkset ;
+    void:target :bioportal-apo ;
+    void:triples "304"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "SGD_curators"^^xsd:string ;
+ .
+

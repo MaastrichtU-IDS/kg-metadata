@@ -1,0 +1,86 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:dm2e a dcat:Dataset ;
+    dcat:keyword "lod", "lodcloud-diagram-2014-08-30", "manuscripts" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "DM2E" ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+DM2E Linked Data service
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "DM2E_" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.dm2e.eu> ;
+    ] ;
+    dct:description """
+Metadata about digitalised manuscripts coming from the DM2E project (http://dm2e.eu). 
+"""@en ;
+
+    dcat:theme  <publications> ;
+    void:uriSpace <http://dm2e.eu/data> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :dm2e ;
+    void:triples "14210"^^xsd:integer ;
+ .
+
+:dnb-gemeinsame-normdatei a void:Linkset ;
+    void:target :dm2e ;
+    void:triples "22698"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :dm2e ;
+    void:triples "1868"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :dm2e ;
+    void:triples "1574"^^xsd:integer ;
+ .
+
+:judaicalink a void:Linkset ;
+    void:target :dm2e ;
+    void:triples "3108"^^xsd:integer ;
+ .
+
+:lcsh a void:Linkset ;
+    void:target :dm2e ;
+    void:triples "552"^^xsd:integer ;
+ .
+
+:linkedgeodata a void:Linkset ;
+    void:target :dm2e ;
+    void:triples "5770"^^xsd:integer ;
+ .
+
+:nytimes-linked-open-data a void:Linkset ;
+    void:target :dm2e ;
+    void:triples "570"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Dominique_Ritze"^^xsd:string ;
+     foaf:mbox <mailto:dominique@inform@ik.uni-mannheim.de> ; 
+ .
+

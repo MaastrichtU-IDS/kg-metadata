@@ -1,0 +1,85 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:national-diet-library-subject-headings a dcat:Dataset ;
+    dcat:keyword "duplicate", "lodcloud-diagram-2011-09-19", "meta.duplicate" ;
+    dct:title "National_Diet_Library_of_Japan_subject_headings" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "application/ld+json;_charset=utf-8" ;
+        dct:description """
+Example subject (RDF/XML)
+""" ;
+        dcat:accessURL <http://id.ndl.go.jp/auth/ndlsh/01017771> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://id.ndl.go.jp/auth/ndlsh/> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "" ;
+        dct:description """
+SPARQL query form
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://id.ndl.go.jp/auth/docs/sparql> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download (RDF/XML)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://id.ndl.go.jp/auth/files/ndlsh-rdf.zip> ;
+    ] ;
+    dct:description """
+duplicate:national-diet-library-authorities
+"""@en ;
+
+    foaf:page <http://id.ndl.go.jp/auth/ndlsh> ;
+    void:triples "1294669"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://id.ndl.go.jp/auth/ndlsh/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:lcsh a void:Linkset ;
+    void:target :national-diet-library-subject-headings ;
+    void:triples "588"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Kanzaki_Masahide"^^xsd:string ;
+     foaf:mbox <mailto:mkanzaki@gmail.com> ; 
+ .
+

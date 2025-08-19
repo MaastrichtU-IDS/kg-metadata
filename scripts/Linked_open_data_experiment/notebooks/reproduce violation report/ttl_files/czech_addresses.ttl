@@ -1,0 +1,49 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:czech_addresses a dcat:Dataset ;
+    dcat:keyword "bydlení", "domestic_policy", "habitat", "interior_ministry_czech_republic", "meta.imported-from.cz.ckan.net", "ministerstvo", "ministerstvo_vnitra", "ministry", "public_safety", "residence", "sídlo", "veřejná_bezpečnost", "vnitřní_politika" ;
+    dct:title_main "Czech_addresses_–_Adresy_v_České_republice" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+size: 6,9 MB, Adresy v České republice- Address in Czech republic
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Adresy_v_České_republice-_Address_in_Czech_republic" ;
+        dcat:accessURL_distribution <http://aplikace.mvcr.cz/adresy/Download.aspx> ;
+    ] ;
+    dct:description_main """
+
+"""@en ;
+
+    foaf:page <http://aplikace.mvcr.cz/adresy/> ;
+    dcat:theme  <geography> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:czech_regions_code_list a void:Linkset ;
+    void:target :czech_addresses ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Ministry_of_the_Interior_of_the_Czech_Republic_–_Ministerstvo_vnitra_České_republiky"^^xsd:string ;
+     foaf:Cmbox <mailto:posta@mvcr.cz> ; 
+ .
+

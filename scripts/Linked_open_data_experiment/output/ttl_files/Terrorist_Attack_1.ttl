@@ -1,0 +1,42 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Terrorist_Attack_1 a dcat:Dataset ;
+    foaf:page <http://www.semanticweb.org/sanatsoni/ontologies/2019/5/> ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "Terrorist_Attack1" ;
+    dct:description """
+Terrorist
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    dcat:theme  <user_generated> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:varsh@hakur510@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "varsha"^^xsd:string ;
+     foaf:mbox <mailto:varsh@hakur510@gmail.com> ; 
+ .
+

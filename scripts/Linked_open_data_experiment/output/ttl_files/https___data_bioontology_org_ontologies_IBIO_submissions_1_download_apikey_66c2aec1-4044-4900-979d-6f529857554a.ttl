@@ -1,0 +1,43 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:https___data_bioontology_org_ontologies_IBIO_submissions_1_download_apikey_66c2aec1-4044-4900-979d-6f529857554a a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://bioportal.bioontology.org/ontologies/IBIO/?p=summary> ;
+    dct:description """
+Indian Biodiversity
+"""@en ;
+
+    dct:title "Indian_Biodiversity" ;
+    dct:license <http://www.opendefinition.org/licenses/gfdl> ;
+    dcat:theme  <life_sciences> ;
+    void:uriSpace <https://data.bioontology.org/ontologies/IBIO/submissions/1/download?apikey=66c2aec1-4044-4900-979d-6f529857554a> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:iamvishallama@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Vishal_Lama"^^xsd:string ;
+     foaf:mbox <mailto:iamvishallama@gmail.com> ; 
+ .
+

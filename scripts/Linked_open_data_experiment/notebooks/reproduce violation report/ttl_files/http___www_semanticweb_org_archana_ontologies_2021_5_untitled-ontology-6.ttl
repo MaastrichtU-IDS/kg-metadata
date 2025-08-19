@@ -1,0 +1,42 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:http___www_semanticweb_org_archana_ontologies_2021_5_untitled-ontology-6 a dcat:Dataset ;
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    foaf:page <https://github.com/ArchanaPatel92/IBO-Covid19/blob/main/1.5%20Covid19-IBO.owl> ;
+    dct:description_main """
+Covid19 Impact on Banking Ontology (Covid19-IBO) provides semantic information about the impact of the Covid-19 on the banking sector of India
+"""@en ;
+
+    dct:title_main "Covid19_Impact_on_Banking_ontology_(Covid19-IBO_1.5)" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dcat:theme  <cross_domain> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:archanamca92@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Archana_PATEL"^^xsd:string ;
+     foaf:Cmbox <mailto:archanamca92@gmail.com> ; 
+ .
+

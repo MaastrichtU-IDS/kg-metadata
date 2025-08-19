@@ -1,0 +1,76 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:springernaturescigraph a dcat:Dataset ;
+    foaf:depiction <https://github.com/springernature/scigraph/blob/master/extras/SN_SciGraph_logo.jpg> ;
+    dcat:keyword "scientific_publishing", "grants", "articles", "books", "chapters", "publications", "research_organizations" ;
+    dct:license <https://scigraph.springernature.com/explorer/license/> ;
+    dct:title "Springer_Nature_SciGraph" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://scigraph.springernature.com/explorer/downloads/> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dcat:accessURL <http://scigraph.springernature.com/things/journal-brands/012496b06989edb434c6b8e1d0b0a7db> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dct:description """
+SciGraph is the Springer Nature Linked Data platform that collates information from across the research landscape, i.e. the things, documents, people, places and relations of importance to the science and scholarly domain. Metadata for millions of entities are available to explore online, as well as for downloading to reuse within your own application.
+"""@en ;
+
+    foaf:page <https://www.springernature.com/scigraph> ;
+    void:triples "979658882"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:doi a void:Linkset ;
+    void:target :springernaturescigraph ;
+    void:triples "13310639"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :springernaturescigraph ;
+    void:triples "1649135"^^xsd:integer ;
+ .
+
+:grid_dataset a void:Linkset ;
+    void:target :springernaturescigraph ;
+    void:triples "5923024"^^xsd:integer ;
+ .
+
+:wikidata a void:Linkset ;
+    void:target :springernaturescigraph ;
+    void:triples "350"^^xsd:integer ;
+ .
+
+:nlm_2007_mesh a void:Linkset ;
+    void:target :springernaturescigraph ;
+    void:triples "1580"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Michele_Pasin"^^xsd:string ;
+     foaf:mbox <mailto:scigraph@springern@ure.com> ; 
+ .
+

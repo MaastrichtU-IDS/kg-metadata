@@ -1,0 +1,179 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:data-persee-fr a dcat:Dataset ;
+    foaf:depiction <https://www.persee.fr/tiny.png> ;
+    dcat:keyword "dataset-collection", "deref-vocab", "format-bibo", "format-biro", "format-cito", "format-dcterms", "format-foaf", "format-marcrel", "format-rda", "format-rdf", "format-schema", "format-skos", "license-metadata", "lod", "pedagogic-material", "provenance-metadata", "publications", "published-by-producer", "sparql-endpoint", "vocab-mappings" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "Persée_in_RDF" ;
+    void:exampleResource [
+        dct:title "Example_:_record_of_a_person_(rdf/xml)" ;
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+For more information about the content and organisation of our records, have a look at [our data formats](http://data.persee.fr/explorer/schemas-de-donnees/)
+""" ;
+        dcat:accessURL <http://data.persee.fr/authority/196565#Person> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example:_record_of_an_article_(rdf/xml)" ;
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+Full record of an article available on Persée
+""" ;
+        dcat:accessURL <http://data.persee.fr/doc/bulmo_0007-473x_2000_num_158_2_2373> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example:_record_of_a_journal_(rdf/xml)" ;
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+Example of record describing a journal
+""" ;
+        dcat:accessURL <http://data.persee.fr/collection/ahess_0395-2649> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint" ;
+        dcat:endpointDescription """
+See: http://data.persee.fr/explorer/schemas-de-donnees/
+""" ;
+        dcat:accessURL <http://data.persee.fr/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-gzip" ;
+        dct:description """
+Dump of the alignments between Persons from Persée's collections to several external datasets : [Idref](https://datahub.ckan.io/dataset/idreffr) (about 55,000 links), primarily, but also data.bnf.fr, VIAF, ISNI, dbPedia, etc.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Linked_Persee_Persons_(tgz_dump)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.persee.fr/dumps/PERSEE_person_align_rdf.tar.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/xml" ;
+        dct:description """
+Mainly a refined typology for documents defined with sub-classes of elements from the bibo ontology.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Persées_OWL_schema" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.persee.fr/ontology/persee-ontology.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Some documentation about Persée's data formats.
+Texts are in French, but there are accompanied by informative illustrations. 
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Documentation_:_Persées_data_formats" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.persee.fr/explorer/schemas-de-donnees/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+This page provide access to several dumps (rdf/xml, targ-gzipped)
+
+- Full dump of collections available on Persée
+- Dumps generated for each collection (journal)
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Download_page" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.persee.fr/explorer/demander-un-dump/dumps-collections/> ;
+    ] ;
+    dct:description """
+![data.persee.fr](http://data.persee.fr/cropped-Logo-data.persee_petit.png)
+
+[data.persee.fr](http://data.persee.fr) is a triplestore opened in 2017. It gathers all the metadata produced by Persée and makes it available in a structured way (RDF graph) according to the semantic web principles (DCMI, FRBR, FOAF, CITO, BIBO, SKOS). The mapping between Persée’s data and international information systems enables the researchers to explore Persée database and to link to data offered by the library community (IdRef, data.bnf.fr, etc.), the scientific community (the Cairo Gazetteer, the Global Biodiversity Information Facility - GBIF) and other crowded sources (DBpedia)
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://data.persee.fr/> ;
+    void:triples "48000000"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:data-bnf-fr a void:Linkset ;
+    void:target :data-persee-fr ;
+    void:triples "65000"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :data-persee-fr ;
+    void:triples "11000"^^xsd:integer ;
+ .
+
+:idreffr a void:Linkset ;
+    void:target :data-persee-fr ;
+    void:triples "114000"^^xsd:integer ;
+ .
+
+:taxonconcept a void:Linkset ;
+    void:target :data-persee-fr ;
+    void:triples "700"^^xsd:integer ;
+ .
+
+:viaf a void:Linkset ;
+    void:target :data-persee-fr ;
+    void:triples "111000"^^xsd:integer ;
+ .
+
+:wikidata a void:Linkset ;
+    void:target :data-persee-fr ;
+    void:triples "22000"^^xsd:integer ;
+ .
+
+:bio2rdf-taxon a void:Linkset ;
+    void:target :data-persee-fr ;
+    void:triples "78000"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:viviane.bouletreau@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "UMS_Persée"^^xsd:string ;
+     foaf:mbox <mailto:viviane.bouletreau@persee.fr> ; 
+ .
+

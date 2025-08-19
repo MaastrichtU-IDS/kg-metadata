@@ -1,0 +1,102 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:copyrighttermbank a dcat:Dataset ;
+    dcat:keyword "lemon", "lexicon", "linguistics", "linked_data", "llod", "lod", "ontolex", "rdf", "terminology" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "CopyrightTermBank" ;
+    void:exampleResource [
+        dct:title "Example" ;
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+One example of concept
+""" ;
+        dcat:accessURL <https://datahub.ckan.io/dataset/11d67b88-bed3-4016-b88b-3b8fdf77ba20/resource/a75e14bc-447a-4f44-86b3-44a49f47bfb8/download/example.ttl> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='datahub.ckan.io', port=443): Max retries exceeded with url: /dataset/11d67b88-bed3-4016-b88b-3b8fdf77ba20/resource/a75e14bc-447a-4f44-86b3-44a49f47bfb8/download/example.ttl (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3686aee440>, 'Connection to datahub.ckan.io timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=UTF-8" ;
+        dct:description """
+Linked Data portal
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Linked_Data" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://copyrighttermbank.linkeddata.es/resource> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+RDF Dump in format text/turtle
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='datahub.ckan.io', port=443): Max retries exceeded with url: /dataset/11d67b88-bed3-4016-b88b-3b8fdf77ba20/resource/06baff90-92b2-460a-9cdd-95758e0ada7b/download/copyrighttermbank.ttl (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3686c9e5f0>, 'Connection to datahub.ckan.io timed out. (connect timeout=30)')))
+""" ;
+        dct:title "RDF_Dump" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://datahub.ckan.io/dataset/11d67b88-bed3-4016-b88b-3b8fdf77ba20/resource/06baff90-92b2-460a-9cdd-95758e0ada7b/download/copyrighttermbank.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/n-triples" ;
+        dct:description """
+RDF Dump In format NTRIPLES
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='datahub.ckan.io', port=443): Max retries exceeded with url: /dataset/11d67b88-bed3-4016-b88b-3b8fdf77ba20/resource/6ebb4098-8443-42c4-a4fa-07c06f81d52e/download/copyrighttermbank.nt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3686aee620>, 'Connection to datahub.ckan.io timed out. (connect timeout=30)')))
+""" ;
+        dct:title "RDF_Dump" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://datahub.ckan.io/dataset/11d67b88-bed3-4016-b88b-3b8fdf77ba20/resource/6ebb4098-8443-42c4-a4fa-07c06f81d52e/download/copyrighttermbank.nt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/pdf" ;
+        dct:description """
+Academic work describing the resource
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "Documentation" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://delicias.dia.fi.upm.es/~vrodriguez/pdf/2015.12.jurix.pdf> ;
+    ] ;
+    dct:description """
+Terminology on copyright and related concepts
+"""@en ;
+
+    void:triples "11068"^^xsd:integer ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :copyrighttermbank ;
+    void:triples "237"^^xsd:integer ;
+ .
+
+:iate-rdf a void:Linkset ;
+    void:target :copyrighttermbank ;
+    void:triples "92"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Víctor_Rodríguez-Doncel"^^xsd:string ;
+     foaf:mbox <mailto:vrodriguez@delicias.dia.fi.upm.es> ; 
+ .
+

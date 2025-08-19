@@ -1,0 +1,166 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bio2rdf-homologene a dcat:Dataset ;
+    dcat:keyword "bio2rdf", "deref-vocab", "format-dc", "format-rdf", "format-rdfs", "license-metadata", "lifesciences", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "provenance-metadata", "published-by-third-party", "vocab-mappings" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "Bio2RDF::Homologene" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download homologene.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/homologene/homologene.nq.gz> ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_resource_(RDF)" ;
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+Example resource (RDF)
+""" ;
+        dcat:accessURL <http://bio2rdf.org/homologene:1000> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://homologene.bio2rdf.org/sparql> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='homologene.bio2rdf.org', port=443): Max retries exceeded with url: /sparql (Caused by SSLError(CertificateError("hostname 'homologene.bio2rdf.org' doesn't match either of 'bio2rdf.org', 'openlifedata.org', 'search.openlifedata.org', 'sparql.openlifedata.org', 'virtuoso.openlifedata.org'"))))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "" ;
+        dct:description """
+Download
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_page_(n-quads,_gz_compressed)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/current/homologene/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "HTML" ;
+        dct:description """
+Dataset description (HTML)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Dataset_description_(HTML)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/current/homologene/homologene.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+Dataset description (RDF)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Dataset_description_(RDF)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/current/homologene/bio2rdf-homologene.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+OWL Schema
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "OWL_Schema" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/release/3/homologene/homologene.schema.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/plain;_charset=utf-8" ;
+        dct:description """
+Mappings (SIO)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Mappings_(SIO)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/homologene/bio2rdf_homologene_sio_mapping.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/sitemap" ;
+        dct:description """
+Semantic Web Sitemap
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Semantic_Web_Sitemap" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/release/3/homologene/sitemap.xml> ;
+    ] ;
+    dct:description """
+HomoloGene is a system for automated detection of homologs among the annotated genes of several completely sequenced eukaryotic genomes.
+"""@en ;
+
+    foaf:page <http://homologene.bio2rdf.org/> ;
+    void:triples "7189769"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    void:uriSpace <http://bio2rdf.org/homologene:> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bio2rdf-gi a void:Linkset ;
+    void:target :bio2rdf-homologene ;
+    void:triples "275237"^^xsd:integer ;
+ .
+
+:bio2rdf-homologene a void:Linkset ;
+    void:target :bio2rdf-homologene ;
+    void:triples "44239"^^xsd:integer ;
+ .
+
+:bio2rdf-ncbigene a void:Linkset ;
+    void:target :bio2rdf-homologene ;
+    void:triples "275237"^^xsd:integer ;
+ .
+
+:bio2rdf-refseq a void:Linkset ;
+    void:target :bio2rdf-homologene ;
+    void:triples "275237"^^xsd:integer ;
+ .
+
+:bio2rdf-taxonomy a void:Linkset ;
+    void:target :bio2rdf-homologene ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Bio2RDF"^^xsd:string ;
+     foaf:mbox <mailto:bio2rdf@googlegroups.com> ; 
+ .
+

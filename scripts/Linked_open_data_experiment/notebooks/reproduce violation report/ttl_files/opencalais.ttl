@@ -1,0 +1,98 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:opencalais a dcat:Dataset ;
+    dcat:keyword "crossdomain", "debug-tinylod", "deref-vocab", "format-foaf", "format-geo", "format-rdf", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "nlp", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "published-by-third-party" ;
+    dct:title_main "OpenCalais" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/html;charset=utf-8" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://d.opencalais.com/er/company/ralg-tr1r/9e3f6c34-aa6b-3a3b-b221-a07aa7933633> ;
+        adms:status_exampleResource """
+FAIL ('content-type')
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/html;charset=utf-8" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://d.opencalais.com/genericHasher-1/5f968907-d20d-3a45-a882-0d9ba4311230.html> ;
+        adms:status_exampleResource """
+FAIL ('content-type')
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/html;charset=utf-8" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://d.opencalais.com/genericHasher-1/bcc912a5-ce31-3071-8d7e-f862e7fdf229.html> ;
+        adms:status_exampleResource """
+FAIL ('content-type')
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;charset=utf-8" ;
+        dct:description_distribution """
+Linked Data documentation
+""" ;
+        adms:status_distribution """
+FAIL ('content-type')
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://www.opencalais.com/documentation/linked-data-entities> ;
+    ] ;
+    dct:description_main """
+OpenCalais is a web service that extracts semantic metadata from text content, such as web pages.
+"""@en ;
+
+    foaf:page <http://www.opencalais.com/> ;
+    void:triples "4500000"^^xsd:integer ;
+    dcat:theme  <cross_domain> ;
+    void:uriSpace <http://d.opencalais.com/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :opencalais ;
+    void:triples "1000"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :opencalais ;
+    void:triples "1000"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :opencalais ;
+    void:triples "1000"^^xsd:integer ;
+ .
+
+:linkedmdb a void:Linkset ;
+    void:target :opencalais ;
+    void:triples "1000"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Thomson_Reuters"^^xsd:string ;
+ .
+

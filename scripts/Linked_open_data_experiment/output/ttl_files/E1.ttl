@@ -1,0 +1,53 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:E1 a dcat:Dataset ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "E1Nuvem_dados" ;
+    void:exampleResource [
+        dct:title "E1" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://www.nathycampos.com.br> ;
+        adms:status """
+FAIL (406)
+""" ;
+    ] ;
+    dct:description """
+Nuvem de dados gerados a partir da transcrição do entrevistado E1
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://www.nathycampos.com.br> ;
+    foaf:depiction <http://www.nathycampos.com.br> ;
+    dcat:theme  <user_generated> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:n@hielly@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Nathielly"^^xsd:string ;
+     foaf:mbox <mailto:n@hielly@gmail.com> ; 
+ .
+

@@ -1,0 +1,4 @@
+rdflib 
+pyshacl
+ipykernel
+argparse

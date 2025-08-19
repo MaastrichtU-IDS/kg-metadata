@@ -1,0 +1,129 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:data-cnr-it a dcat:Dataset ;
+    dcat:keyword "format-owl", "format-skos", "government", "lod", "no-deref-vocab", "published-by-producer", "void-sparql-endpoint" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title "Open_Data_from_the_Italian_National_Research_Council" ;
+    void:exampleResource [
+        dct:title "CNR_individual" ;
+        dcat:mediaType "text/turtle;_charset=UTF-8" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://www.cnr.it/ontology/cnr/individuo/CNR> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='www.cnr.it', port=443): Max retries exceeded with url: //ontology/cnr/individuo/CNR (Caused by SSLError(SSLError(1, '[SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:997)'))))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Institute_of_Cognitive_Sciences_and_Technologies_(ISTC)" ;
+        dcat:mediaType "text/turtle;_charset=UTF-8" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://www.cnr.it/ontology/cnr/individuo/istituto/CDS078> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='www.cnr.it', port=443): Max retries exceeded with url: //ontology/cnr/individuo/istituto/CDS078 (Caused by SSLError(SSLError(1, '[SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:997)'))))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Enrico_Daga" ;
+        dcat:mediaType "text/turtle;_charset=UTF-8" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://www.cnr.it/ontology/cnr/individuo/unitaDiPersonaleInterno/MATRICOLA11472> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='www.cnr.it', port=443): Max retries exceeded with url: //ontology/cnr/individuo/unitaDiPersonaleInterno/MATRICOLA11472 (Caused by SSLError(SSLError(1, '[SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:997)'))))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://data.cnr.it/sparql-proxy/> ;
+        adms:status """
+FAIL (400)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Download Ontology
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='www.cnr.it', port=443): Max retries exceeded with url: //ontology/cnr/ (Caused by SSLError(SSLError(1, '[SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:997)'))))
+""" ;
+        dct:title "Ontology" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.cnr.it/ontology/cnr/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/rdf+n3;_charset=UTF-8" ;
+        dct:description """
+Dataset description (voID)
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "Dataset_description_(voID)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.cnr.it/dataset/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+Turtle Dump (tar.gz)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Data_dump" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.cnr.it/dump/data-cnr-it-2011-08-29-00.tar.gz> ;
+    ] ;
+    dct:description """
+data.cnr.it is an initiative of the Italian National Research Council aimed to provide public access to the information of the CNR organization.
+
+Keywords are: transparency, interoperability, open data.
+
+The technologies of the data.cnr.it are based on RDF and follows the paradygm of the Linked Data initiative.
+
+
+Documentation of the ontology is in OWL-Doc format
+
+The CNR ontology can be queried through the SPARQL Endpoint by selecting http://data.cnr.it/ as graph.
+"""@en ;
+
+    foaf:page <http://data.cnr.it/site/> ;
+    void:triples "2762278"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://www.cnr.it/ontology/cnr/individuo/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :data-cnr-it ;
+    void:triples "34706"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Consiglio_Nazionale_delle_Ricerche_(CNR)"^^xsd:string ;
+     foaf:mbox <mailto:d@a@cnr.it> ; 
+ .
+

@@ -1,0 +1,103 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ei2a a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "Aragon_Open_Data_SPARQL_endpoint" ;
+        dct:identifier_sparqlEndpoint "61741adf-616d-1819-b74c-d8f6dc569b44" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint of Aragon Open Data
+""" ;
+        dcat:accessURL_sparqlEndpoint <https://opendata.aragon.es/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    foaf:page <https://opendata.aragon.es> ;
+    dcat:keyword "Aragon", "Government", "Spain", "Interoperability", "Ontology", "LOD", "Regional_Government", "Open_Data" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Aragon_Interoperable_Information_Structure_EI2Aaragon_open_data" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html" ;
+        dct:description_distribution """
+Ontology used for the EI2A
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "EI2A_ontology" ;
+        dct:identifier_distribution "2152f73f-0735-d4e5-a47e-8c4a4327fdda" ;
+        dcat:accessURL_distribution <https://opendata.aragon.es/def/ei2av2/> ;
+    ] ;
+    dct:description_main """
+EI2A  emerges as the framework in which the open data and in general the information of the Aragon Government can begin to be automated in a much more profound way. The EI2A has to have a number of technical, organizational and legal elements that need to be developed.  EI2A  describes basic data from the Aragon Government domain, intended to support data interoperability with the aim of standardizing information and exploiting it in the future. 
+"""@en ;
+
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    void:uriSpace <ei2av2> ;
+    void:triples "435391731"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:exampleResource [
+        dct:title_exampleResource "Aragon_Open_Data_EI2A,_entities_Places" ;
+        dct:description_exampleResource """
+Places 
+""" ;
+        dcat:accessURL_exampleResource <https://opendata.aragon.es/sparql?default-graph-uri=&query=SELECT%2B%253Fs%2Bstr%2528%253Fnombre%2529%2Bas%2B%253Fnombre%2BWHERE%2B%250D%250A%257B%250D%250Aselect%2B%253Fs%2B%2B%253Fnombre%2Bwhere%2B%2B%250D%250A%257B%253Fs%2B%253Chttp%253A%252F%252Fwww.w3.org%252F1999%252F02%252F22-rdf-syntax-ns%2523type%253E%2B%2B%253Chttp%253A%252F%252Fdbpedia.org%252Fontology%252FGovernmentalAdministrativeRegion%253E.%2B%250D%250A%253Fs%2B%253Chttp%253A%252F%252Fwww.w3.org%252F2000%252F01%252Frdf-schema%2523label%253E%2B%253Fnombre%250D%250A%2B%2B%257D%250D%250Aorder%2Bby%2B%253Fs%250D%250A%257D%250D%250A&format=text%252Fhtml&timeout=0&signal_void=on> ;
+        adms:status_exampleResource """
+FAIL (406)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Aragon_Open_Data_EI2A,_triples_count" ;
+        dct:description_exampleResource """
+Aragon Open Data EI2A, Triples are grouped by graph
+""" ;
+        dcat:accessURL_exampleResource <https://opendata.aragon.es/sparql?default-graph-uri=&query=SELECT%2BDISTINCT%2Bstr%2528%253Fg%2529%2Bas%2B%253FGrafos%2B%2528count%2528%253Fp%2529%2Bas%2B%253FTripletas%2529%2BWHERE%2B%257B%2BGRAPH%2B%253Fg%2B%257B%2B%253Fs%2B%253Fp%2B%253Fo%2B%257D%2B%257D%2BGROUP%2BBY%2B%253Fg%2BORDER%2BBY%2BDESC%2B%2528%253FTripletas%2529&format=text%252Fhtml&timeout=0&debug=on> ;
+        adms:status_exampleResource """
+FAIL (406)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "EI2A_Organizations" ;
+        dct:description_exampleResource """
+Organizations
+""" ;
+        dcat:accessURL_exampleResource <https://opendata.aragon.es/sparql?default-graph-uri=&query=SELECT%2B%253Fs%2B%253Fnombre%2BWHERE%2B%250D%250A%250D%250A%257B%250D%250Aselect%2B%253Fs%2B%253Fnombre%2Bfrom%2B%253Chttp%253A%252F%252Fopendata.aragon.es%252Fdef%252Fei2av2%253E%2Bwhere%2B%2B%250D%250A%257B%253Fs%2B%253Chttp%253A%252F%252Fwww.w3.org%252F1999%252F02%252F22-rdf-syntax-ns%2523type%253E%2B%2B%253Chttp%253A%252F%252Fwww.w3.org%252Fns%252Forg%2523Organization%253E.%2B%250D%250A%253Fs%2B%253Chttp%253A%252F%252Fpurl.org%252Fdc%252Felements%252F1.1%252Ftitle%253E%2B%253Fnombre%2B%2B%257D%250D%250A%257D%250D%250A&format=text%252Fhtml&timeout=0&signal_void=on> ;
+        adms:status_exampleResource """
+FAIL (406)
+""" ;
+    ] ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:aragodbpedia a void:Linkset ;
+    void:target :ei2a ;
+    void:triples "768"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:julianmoyanoc@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Aragon_Open_Data"^^xsd:string ;
+     foaf:Cmbox <mailto:opend@a@aragon.es> ; 
+ .
+

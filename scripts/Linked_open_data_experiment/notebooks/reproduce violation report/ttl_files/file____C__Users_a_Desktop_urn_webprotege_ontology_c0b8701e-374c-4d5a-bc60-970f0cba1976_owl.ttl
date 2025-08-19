@@ -1,0 +1,42 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:file____C__Users_a_Desktop_urn_webprotege_ontology_c0b8701e-374c-4d5a-bc60-970f0cba1976_owl a dcat:Dataset ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Vocabularios_de_los_Códigos_de_Derecho_de_la_Ciberseguridad_en_España" ;
+    dct:description_main """
+Vocabularios de los Códigos de Derecho de la Ciberseguridad en España
+"""@en ;
+
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    foaf:page <https://lod-cloud.net/add-dataset> ;
+    dcat:theme  <user_generated> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:100438312@alumnos.uc3m.es> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Yixian_Chen"^^xsd:string ;
+     foaf:Cmbox <mailto:100438312@alumnos.uc3m.es> ; 
+ .
+

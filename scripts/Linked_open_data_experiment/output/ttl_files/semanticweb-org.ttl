@@ -1,0 +1,64 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:semanticweb-org a dcat:Dataset ;
+    dcat:keyword "format-rdf", "lod", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "no-vocab-mappings", "published-by-producer", "usergeneratedcontent", "wiki" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "semanticweb.org" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "text/html" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://semanticweb.org/id/Pacific_Ocean> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='semanticweb.org', port=80): Max retries exceeded with url: /id/Pacific_Ocean (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f36843fce80>, 'Connection to semanticweb.org timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download (RDF/XML)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmYWXP5eoBfbAQLAQwfrT925URTwNFsZXDgUYGpSB2Sw2g']" ;
+        dcat:accessURL <http://semanticweb.org/RDF/alldata.xml> ;
+    ] ;
+    dct:description """
+Semantic Wiki about the Semantic Web community
+"""@en ;
+
+    foaf:page <http://semanticweb.org/> ;
+    void:triples "50000"^^xsd:integer ;
+    dcat:theme  <user_generated> ;
+    void:uriSpace <http://semanticweb.org/id/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:revyu a void:Linkset ;
+    void:target :semanticweb-org ;
+    void:triples "51"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Markus_Krötzsch"^^xsd:string ;
+     foaf:mbox <mailto:mak@aifb.uni-karlsruhe.de> ; 
+ .
+

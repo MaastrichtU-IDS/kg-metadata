@@ -1,0 +1,88 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:salzburgerland-com-de a dcat:Dataset ;
+    foaf:depiction <https://www.salzburgerland.com/de/wp-content/themes/slt/assets/img/logo.svg> ;
+    dcat:keyword "travel", "wordlift", "salzbugerland" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "Salzburgerland_DE" ;
+    dcat:distribution [
+        dct:title "Salzburgerland_DE" ;
+        dcat:mediaType "application/rdf+xml;charset=UTF-8" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <https://api.wordlift.it/datasets/de.rdf> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='api.wordlift.it', port=443): Max retries exceeded with url: /datasets/de.rdf (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3686db7f70>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Bezirk_St._Johann_im_Pongau" ;
+        dcat:mediaType "application/rdf+xml" ;
+        dcat:accessURL <http://open.salzburgerland.com/de/entity/bezirk_st-_johann_im_pongau> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dct:description """
+Salzburgerland dataset for German resources, built with WordLift from the website https://www.salzburgerland.com/de/
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://www.salzburgerland.com/de/> ;
+    void:triples "28833"^^xsd:integer ;
+    dcat:theme  <media> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :salzburgerland-com-de ;
+    void:triples "726"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :salzburgerland-com-de ;
+    void:triples "679"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :salzburgerland-com-de ;
+    void:triples "191"^^xsd:integer ;
+ .
+
+:yago a void:Linkset ;
+    void:target :salzburgerland-com-de ;
+    void:triples "372"^^xsd:integer ;
+ .
+
+:wikidata a void:Linkset ;
+    void:target :salzburgerland-com-de ;
+    void:triples "168"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:name "Andrea_Volpini"^^xsd:string ;
+     foaf:mbox <mailto:andrea@insideout.io> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "WordLift_Team"^^xsd:string ;
+     foaf:mbox <mailto:andrea@wordlift.io> ; 
+ .
+

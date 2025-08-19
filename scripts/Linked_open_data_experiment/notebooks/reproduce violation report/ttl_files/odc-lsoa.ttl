@@ -1,0 +1,89 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:odc-lsoa a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "government", "lod", "lodcloud-diagram-2014-08-30", "lodcloud.nolinks", "published-by-third-party" ;
+    dct:license <http://reference.data.gov.uk/id/open-government-licence> ;
+    dct:title_main "Open_Data_CommunitiesLower_layer_Super_Output_Areas" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://opendatacommunities.org/id/geography/lsoa/E01000001> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "None" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://opendatacommunities.org/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voID
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://opendatacommunities.org/datasets/geography.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+Download
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://opendatacommunities-downloads.s3.amazonaws.com/lsoa.ttl.zip> ;
+    ] ;
+    dct:description_main """
+This dataset describes the 'Lower layer Super Output Areas' used by the Office for National Statistics for many of its statistical outputs. 
+
+Example resource:
+http://opendatacommunities.org/id/geography/lsoa/E01000001
+
+Download
+http://opendatacommunities-downloads.s3.amazonaws.com/lsoa.ttl.zip
+"""@en ;
+
+    foaf:page <http://opendatacommunities.org/datasets/geography> ;
+    void:triples "341894"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://opendatacommunities.org/id/geography/lsoa/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:stats a void:Linkset ;
+    void:target :odc-lsoa ;
+    void:triples "32482"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "http://www.ons.gov.uk"^^xsd:string ;
+ .
+

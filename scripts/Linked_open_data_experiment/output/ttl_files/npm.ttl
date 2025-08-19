@@ -1,0 +1,71 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:npm a dcat:Dataset ;
+    dcat:keyword "javascript", "linked_software_dependencies", "lod", "lsd", "npm" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "NPM" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Triple_Pattern_Fragments_interface" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://fragments.linkedsoftwaredependencies.org/npm> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/octet-stream" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "HDT" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://linkedsoftwaredependencies.org/raw/npm.hdt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Turtle" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://linkedsoftwaredependencies.org/raw/npm.ttl> ;
+    ] ;
+    dct:description """
+Semantified version of the [NPM respository](https://www.npmjs.com/)
+"""@en ;
+
+    foaf:page <https://github.com/LinkedSoftwareDependencies/npm-extraction-server> ;
+    void:triples "185269412"^^xsd:integer ;
+    void:uriSpace <https://linkedsoftwaredependencies.org/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:name "Linked_Software_Dependencies_maintainers"^^xsd:string ;
+     foaf:mbox <mailto:ruben.taelman@ugent.be> ; 
+ .
+

@@ -1,0 +1,45 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:http___www_fateh_fahad_adeel_com_grandSlam a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://www.fateh_fahad_adeel.com> ;
+    void:triples "56000"^^xsd:integer ;
+    dcat:keyword "GrandSlam", "Ontology", "Protege", "Tennis", "TennisTournament", "USOpen", "FrenchOpen", "AusOpen", "Wimbledon" ;
+    dct:description """
+This DataSet is Taken from UCI Machine Learning  Repository. It's domain is Sports and this data is about The Grand Slam tournament of Tennis for year 2013. 
+"""@en ;
+
+    dct:title "Grand_Slam_Knowledge_Graph" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dcat:theme  <user_generated> ;
+    void:uriSpace <http://www.fateh_fahad_adeel.com/grandSlam> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:i191750@nu.edu.pk> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Fateh_Muhammad"^^xsd:string ;
+     foaf:mbox <mailto:i191750@nu.edu.pk> ; 
+ .
+

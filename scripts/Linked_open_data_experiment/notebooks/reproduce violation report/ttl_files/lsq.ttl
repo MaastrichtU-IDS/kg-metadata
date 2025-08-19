@@ -1,0 +1,54 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:lsq a dcat:Dataset ;
+    dcat:keyword "lod" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "LSQ" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Project home page
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Home_Page" ;
+        dcat:accessURL_distribution <http://aksw.github.io/LSQ/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "turtle" ;
+        dct:description_distribution """
+A sample RDF representation of a query
+""" ;
+        adms:status_distribution """
+FAIL (403)
+""" ;
+        dct:title_distribution "_RDF_Representation" ;
+        dcat:accessURL_distribution <https://ckannet-storage.commondatastorage.googleapis.com/2015-05-04T11:04:52.323Z/sample-rdf.txt> ;
+    ] ;
+    dct:description_main """
+Linked SQ: a Linked Dataset describing SPARQL queries extracted from the logs of a variety of prominent public SPARQL endpoints. We argue that this dataset has a variety of uses for the SPARQL research community, be it, for example, to generate benchmarks on-the-fly by selecting real-world queries with specific characteristics that we describe, or to conduct analysis of what SPARQL (1.1) query features are most often used to interrogate endpoints, or to characterise the behaviour of the different types of agents that are using these endpoints, or to find out what queries agents are asking about a given resource, etc.
+"""@en ;
+
+    void:triples "73201194"^^xsd:integer ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Muhammad_Saleem,_Intizar_Ali,_Qaiser_Mehmood,_Aidan_Hogan,_Axel-Cyrille_Ngonga_Ngomo"^^xsd:string ;
+ .
+

@@ -1,0 +1,57 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:openlinksw-dataspaces a dcat:Dataset ;
+    dcat:keyword "LinkedDataCrawl2014", "crawledLinkedDataCloud2014", "dataset-level-metadata", "format-dcterm", "format-foaf", "format-gr", "format-owl", "format-rdf", "format-rdfs", "format-sd", "format-sioc", "format-tsioc", "format-void", "lodcloud-diagram-2014-08-30", "non-deref-vocab", "sparql", "usergeneratedcontent" ;
+    dct:title_main "openlinksw_dataspaces" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_user" ;
+        dcat:mediaType_exampleResource "text/turtle;_charset=UTF-8" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://www.openlinksw.com/dataspace/person/kidehen%40openlinksw.com#this> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    dct:description_main """
+Open Dataspaces hosted at openlinksw.com
+"""@en ;
+
+    dcat:theme  <user_generated> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:datahub a void:Linkset ;
+    void:target :openlinksw-dataspaces ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :openlinksw-dataspaces ;
+    void:triples "79"^^xsd:integer ;
+ .
+
+:personal-homepages a void:Linkset ;
+    void:target :openlinksw-dataspaces ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:w3c a void:Linkset ;
+    void:target :openlinksw-dataspaces ;
+    void:triples "765"^^xsd:integer ;
+ .
+

@@ -1,0 +1,105 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:swedish-open-cultural-heritage a dcat:Dataset ;
+    dcat:keyword "cultural", "cultural-institutions", "culturalheritage", "format-dc", "linked-open-data", "lod", "lodcloud.nolinks", "no-deref-vocab", "openaccess", "publications", "published-by-producer" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "Swedish_Open_Cultural_Heritage" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;charset=UTF-8" ;
+        dct:description_distribution """
+Enterence page for browsing the data
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "void" ;
+        dcat:accessURL_distribution <http://kringla.nu> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+description for how to use the SOCH API
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "API_Documentation_" ;
+        dcat:accessURL_distribution <http://www.ksamsok.se/in-english/api/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+xml;charset=UTF-8" ;
+        dct:description_distribution """
+RDF sample
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Sample_record" ;
+        dcat:accessURL_distribution <http://kulturarvsdata.se/nomu/object/rdf/NM0200898> ;
+    ] ;
+    dct:description_main """
+SOCH is a set of 10 million cultural heritage objects harvested from a large number of museums and other local, regional and national cultural heritage organizations.
+
+Different Creative Commons licenses are used for different datasets in SOCH. The main goal is to provide as open licenses as possible.
+"""@en ;
+
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    foaf:page <http://www.ksamsok.se/in-english/> ;
+    void:triples "1000000000"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://kulturarvsdata.se/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:libris a void:Linkset ;
+    void:target :swedish-open-cultural-heritage ;
+    void:triples "10000"^^xsd:integer ;
+ .
+
+:europeana-lod-v1 a void:Linkset ;
+    void:target :swedish-open-cultural-heritage ;
+    void:triples "1000000"^^xsd:integer ;
+ .
+
+:viaf a void:Linkset ;
+    void:target :swedish-open-cultural-heritage ;
+    void:triples "10000"^^xsd:integer ;
+ .
+
+:wikidata a void:Linkset ;
+    void:target :swedish-open-cultural-heritage ;
+    void:triples "5000"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :swedish-open-cultural-heritage ;
+    void:triples "10000"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:albin.post@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "-"^^xsd:string ;
+     foaf:Cmbox <mailto:ksamsok@raa.se> ; 
+ .
+

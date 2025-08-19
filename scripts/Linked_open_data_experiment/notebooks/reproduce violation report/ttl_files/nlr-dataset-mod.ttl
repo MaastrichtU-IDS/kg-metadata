@@ -1,0 +1,109 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:nlr-dataset-mod a dcat:Dataset ;
+    dcat:keyword "Authority_Data", "Library_catalogue", "National_Library_of_Russia", "Personal_Names", "Subject_Headings", "lod", "no-license-metadata", "no-proprietary-vocab", "provenance-metadata", "publications", "published-by-producer", "Авторитетные_данные", "Российская_национальная_библиотека" ;
+    dct:title_main "National_Library_of_Russia_BibCore_Dataset" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_of_resource" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+Example of Description at Work level
+""" ;
+        dcat:accessURL_exampleResource <http://www.rusmarc.ru/RDF/Work/title5.rdf#1> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_of_resource_2" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+Subject Heading Description Example
+""" ;
+        dcat:accessURL_exampleResource <http://www.rusmarc.ru/RDF/SubjHead/nlr66147783.rdf#concept> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_of_resource_3" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+Personal Name Description Example
+""" ;
+        dcat:accessURL_exampleResource <http://www.rusmarc.ru/RDF/PersName/nlr771515.rdf#person> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html" ;
+        dct:description_distribution """
+Dataset includes initial set of interlinked authority records at work, subject heading and personal name level, which is supposed to be expanded in future to represent catalogue of the National Library of Russia.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "National_Library_of_Russia_BibCore_Dataset" ;
+        dcat:accessURL_distribution <http://www.rusmarc.ru/RDF/nlr-bibcore.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+xml" ;
+        dct:description_distribution """
+VoID Description of Dataset
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "VoID_Description_of_Dataset" ;
+        dcat:accessURL_distribution <http://www.rusmarc.ru/RDF/DatasetVoID.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "TXT" ;
+        dct:description_distribution """
+Download page with list of downloads.
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Entire_List_of_downloads" ;
+        dcat:accessURL_distribution <http://www.rusmarc.ru/RDF/entirelist> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "TXT" ;
+        dct:description_distribution """
+Download page with list of downloads.
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "Entire_List_of_downloads" ;
+        dcat:accessURL_distribution <http://www.rusmarc.ru/RDF/EntireList.txt> ;
+    ] ;
+    dct:description_main """
+Dataset includes initial set of interlinked authority records at work, subject heading and personal name level, which is supposed to be expanded in future to represent catalogue of the National Library of Russia.
+"""@en ;
+
+    void:triples "2372"^^xsd:integer ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "National_RUSMARC_Service"^^xsd:string ;
+     foaf:Cmbox <mailto:vskv3@mail.ru> ; 
+ .
+

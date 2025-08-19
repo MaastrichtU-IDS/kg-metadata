@@ -1,0 +1,204 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bioportal-sep a dcat:Dataset ;
+    dcat:keyword "biomedicine", "bioportal", "format-obo", "format-rdf", "lod", "ontology", "published-by-third-party" ;
+    dct:title "Sample_processing_and_separation_techniques" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+REST API Wiki Documentation
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+SPARQL endpoint
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://sparql.bioontology.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+Download link, BioPortal API KEY is required
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://rest.bioontology.org/bioportal/ontologies/download/39509?apikey=BP_API_KEY> ;
+    ] ;
+    dct:description """
+A structured controlled vocabulary for the annotation of sample processing and separation techniques in scientific experiments, such as, and including, gel electrophoresis, column chromatography, capillary electrophoresis, centrifugation and so on. Developed jointly by the HUPO Proteomics Standards Initiative and The Metabolomics Standards Initiative.
+"""@en ;
+
+    foaf:page <http://bioportal.bioontology.org/ontologies/1044> ;
+    void:triples "2931"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-aero a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-birnlex a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-canco a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:bioportal-cheminf a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-cpr a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-csp a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-ddi a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-ep a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-ero a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:bioportal-galen a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:bioportal-hl7 a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+:bioportal-lnc a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:bioportal-mesh-owl a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "22"^^xsd:integer ;
+ .
+
+:bioportal-msh a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+:bioportal-ncit a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "114"^^xsd:integer ;
+ .
+
+:bioportal-nemo_x1 a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-nif a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:bioportal-nif_cell a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-nif_dysfunction a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-npo a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+:bioportal-obi a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "28"^^xsd:integer ;
+ .
+
+:bioportal-odgi a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-ontodm a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-rcd a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-sio a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "19"^^xsd:integer ;
+ .
+
+:bioportal-snomedct a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "34"^^xsd:integer ;
+ .
+
+:bioportal-tmo a void:Linkset ;
+    void:target :bioportal-sep ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "SEP_developers"^^xsd:string ;
+ .
+

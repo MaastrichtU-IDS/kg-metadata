@@ -1,0 +1,140 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:telegraphis a dcat:Dataset ;
+    dcat:keyword "ckanupload.esw.200910", "deref-vocab", "format-code", "format-geographis", "format-owl", "format-rdf", "geo", "geographic", "license-metadata", "license-nonefordb", "lod", "lodcloud-diagram-2011-09-19", "provenance-metadata", "published-by-producer", "vocab-mappings", "void-sparql-endpoint", "wikipedia" ;
+    dct:title "Telegraphis_Linked_Data" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "text/turtle;_charset=utf-8" ;
+        dct:description """
+Example (Turtle)
+""" ;
+        dcat:accessURL <http://telegraphis.net/data/countries/GB> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "None" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://telegraphis.net/data/countries/sparql> ;
+        adms:status """
+FAIL (500)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download (RDF/XML)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmW3XobByJgNi2hATZUDtysE5PipY1ZtD65CNWZZahaqec']" ;
+        dcat:accessURL <http://telegraphis.net/data/countries/countries.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD description
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmenNvNzP9x5iZfNjopLLXGTbcLnD56TvZyhCiZ8h7hqjW']" ;
+        dcat:accessURL <http://telegraphis.net/data/void> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download (RDF/XML)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmQ9ehJK6V5TGW3tFKchqov4EpxLyv84ifDUxGDJMhC8KY']" ;
+        dcat:accessURL <http://telegraphis.net/data/continents/continents.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download (RDF/XML)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmTXTiXJD9VnpE9PFaRCT5XagokAx5gf5GM9Jo38GJNQJg']" ;
+        dcat:accessURL <http://telegraphis.net/data/capitals/capitals.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download (RDF/XML)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmQFuNfGEQ3dnqmoueT1B929XUvJNZRD6hQCEnFK6mYnhA']" ;
+        dcat:accessURL <http://telegraphis.net/data/currencies/currencies.rdf> ;
+    ] ;
+    dct:description """
+Data exposed: Countries, continents, capitals, currencies collected from GeoNames and Wikipedia data.
+
+Size of dump and data set: <10k triples a piece
+
+Notes: Also has several SPARQL endpoints.
+
+### Openness
+
+Sounds like the project is currently trying to resolve licensing issues:
+
+> We are looking into publishing data about country subdivisions, airports, and airlines, but it is dependent on resolving licensing issues (country subdivisions need to be scraped from Wikipedia, as ISO source data poses licensing issues; airports and airlines are licensed under AGPL, rather than a sensible data license).
+"""@en ;
+
+    foaf:page <http://telegraphis.net/data/> ;
+    void:triples "15257"^^xsd:integer ;
+    dcat:theme  <geography> ;
+    void:uriSpace <http://telegraphis.net/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :telegraphis ;
+    void:triples "651"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :telegraphis ;
+    void:triples "486"^^xsd:integer ;
+ .
+
+:world-factbook-fu-berlin a void:Linkset ;
+    void:target :telegraphis ;
+    void:triples "233"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Ian_Jacobi_<http://www.pipian.com/people/pipian/card#me>"^^xsd:string ;
+ .
+

@@ -1,0 +1,144 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bioportal-rs a dcat:Dataset ;
+    dcat:keyword "biomedicine", "bioportal", "format-obo", "format-rdf", "lod", "ontology", "published-by-third-party" ;
+    dct:title "Rat_Strain_Ontology" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+REST API Wiki Documentation
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+SPARQL endpoint
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://sparql.bioontology.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+Download link, BioPortal API KEY is required
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://rest.bioontology.org/bioportal/ontologies/download/47163?apikey=BP_API_KEY> ;
+    ] ;
+    dct:description """
+This ontology defines the hierarchical display of the different rat strains as derived from the parental strains
+"""@en ;
+
+    foaf:page <http://bioportal.bioontology.org/ontologies/1150> ;
+    void:triples "23606"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-atmo a void:Linkset ;
+    void:target :bioportal-rs ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-birnlex a void:Linkset ;
+    void:target :bioportal-rs ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-csp a void:Linkset ;
+    void:target :bioportal-rs ;
+    void:triples "24"^^xsd:integer ;
+ .
+
+:bioportal-doid a void:Linkset ;
+    void:target :bioportal-rs ;
+    void:triples "26"^^xsd:integer ;
+ .
+
+:bioportal-ep a void:Linkset ;
+    void:target :bioportal-rs ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-galen a void:Linkset ;
+    void:target :bioportal-rs ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+:bioportal-mat a void:Linkset ;
+    void:target :bioportal-rs ;
+    void:triples "26"^^xsd:integer ;
+ .
+
+:bioportal-msh a void:Linkset ;
+    void:target :bioportal-rs ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+:bioportal-ncit a void:Linkset ;
+    void:target :bioportal-rs ;
+    void:triples "50"^^xsd:integer ;
+ .
+
+:bioportal-nif a void:Linkset ;
+    void:target :bioportal-rs ;
+    void:triples "28"^^xsd:integer ;
+ .
+
+:bioportal-ogi a void:Linkset ;
+    void:target :bioportal-rs ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-pdq a void:Linkset ;
+    void:target :bioportal-rs ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-phare a void:Linkset ;
+    void:target :bioportal-rs ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-pw a void:Linkset ;
+    void:target :bioportal-rs ;
+    void:triples "39"^^xsd:integer ;
+ .
+
+:bioportal-syn a void:Linkset ;
+    void:target :bioportal-rs ;
+    void:triples "22"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Rajni_Nigam"^^xsd:string ;
+ .
+

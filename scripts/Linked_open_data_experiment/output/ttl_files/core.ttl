@@ -1,0 +1,126 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:core a dcat:Dataset ;
+    dcat:keyword "bibliographic", "format-rdfs", "license-metadata", "llod", "lod", "lodcloud-diagram-2014-08-30", "no-proprietary-vocab", "no-provenance-metadata", "oai", "openuniversity", "publications", "published-by-producer", "similarity" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "CORESemantic_Similarity_of_Open_Access_publications" ;
+    void:exampleResource [
+        dct:title "Example_Resource" ;
+        dcat:mediaType "text/xml;charset=UTF-8" ;
+        dct:description """
+Example of a document resource and a simNode resource.
+""" ;
+        dcat:accessURL <http://core-project.kmi.open.ac.uk/files/test.rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "RDF_Example_Link" ;
+        dcat:mediaType "text/xml;charset=UTF-8" ;
+        dct:description """
+RDF example link to OAI
+""" ;
+        dcat:accessURL <http://core-project.kmi.open.ac.uk/files/example-link.rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint_" ;
+        dcat:endpointDescription """
+SPARQL endpoint for CORE data
+""" ;
+        dcat:accessURL <http://core.kmi.open.ac.uk/squery> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Main part of the dataset
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Download_data_(application/rdf+xml)" ;
+        dct:mirror "['ipfs:QmXPFMraJ8PoVnnBK6MG7QWoyVBAndqf21ZvoT1tJ1cmzt']" ;
+        dcat:accessURL <http://core-project.kmi.open.ac.uk/files/download_20120123.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD Description of the CORE Dataset
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "voiD" ;
+        dct:mirror "['ipfs:QmeXk2gKqBmRfsoGw2QkhkHBqTwdG4FxUFurHgCWfQ5bkf']" ;
+        dcat:accessURL <http://core-project.kmi.open.ac.uk/files/core-voiD.n3> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "PNG" ;
+        dct:description """
+Diagram of example RDF instance data.
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Data_structure_diagram" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://core-project.kmi.open.ac.uk/data-description> ;
+    ] ;
+    dct:description """
+The CORE dataset contains information about similarities between scientific papers stored across Open Access repositories. The similarities are calculated using Natural Language Processing techniques based on the full-text.  The similarities are provided only for research articles with an accessible and machine readable full-text. More information about the data structure can be found at:http://core-project-local.kmi.open.ac.uk/data-description.
+
+#### RDF Statistics
+
+At the moment we expose more than 92 million RDF triples describing similarities calculated on a set of more than 400k full-text articles harvested from over 230 Open Access repositories.
+
+#### Links
+
+The data about the similarities are represented using the  MuSIM ontology (http://kakapo.dcs.qmul.ac.uk/ontology/musim/0.2/musim.html) BIBO ontologies (http://bibliontology.com/) with links to the OAI (RKBExplorer) repository available in the Linked Data cloud. 
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <http://core-project.kmi.open.ac.uk/> ;
+    void:triples "101526714"^^xsd:integer ;
+    dcat:theme  <media> ;
+    void:uriSpace <http://core.kmi.open.ac.uk/data/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:rkb-explorer-oai a void:Linkset ;
+    void:target :core ;
+    void:triples "200000"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:ianmack@wondrmakr.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Petr_Knoth"^^xsd:string ;
+     foaf:mbox <mailto:p.knoth@open.ac.uk> ; 
+ .
+

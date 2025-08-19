@@ -1,0 +1,224 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:rkb-explorer-citeseer a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-dc", "format-rdf", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-vocab-mappings", "provenance-metadata", "publications", "published-by-third-party", "void-sparql-endpoint" ;
+    dct:title_main "CiteSeer_(Research_Index)_(RKBExplorer)" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://citeseer.rkbexplorer.com/id/resource-CSP26378> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='citeseer.rkbexplorer.com', port=80): Max retries exceeded with url: /id/resource-CSP26378 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686c9dbd0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://citeseer.rkbexplorer.com/sparql/> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='citeseer.rkbexplorer.com', port=80): Max retries exceeded with url: /sparql/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686c9e0e0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/xml" ;
+        dct:description_distribution """
+XML Sitemap
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='citeseer.rkbexplorer.com', port=80): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686c9dba0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://citeseer.rkbexplorer.com/sitemap.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD description
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://citeseer.rkbexplorer.com/models/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-gzip" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='citeseer.rkbexplorer.com', port=80): Max retries exceeded with url: /models/dump.tgz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686c9cf70>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title_distribution "Download_(tar_gzip_of_RDF)" ;
+        dcat:accessURL_distribution <http://citeseer.rkbexplorer.com/models/dump.tgz> ;
+    ] ;
+    dct:description_main """
+
+"""@en ;
+
+    foaf:page <http://citeseer.rkbexplorer.com/> ;
+    void:triples "8146852"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://citeseer.rkbexplorer.com/id/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-acm a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "187741"^^xsd:integer ;
+ .
+
+:rkb-explorer-budapest a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "57"^^xsd:integer ;
+ .
+
+:rkb-explorer-courseware a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-curriculum a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:rkb-explorer-dblp a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "231920"^^xsd:integer ;
+ .
+
+:rkb-explorer-deploy a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-dotac a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "12572"^^xsd:integer ;
+ .
+
+:rkb-explorer-eprints a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "104693"^^xsd:integer ;
+ .
+
+:rkb-explorer-eurecom a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:rkb-explorer-ibm a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "218"^^xsd:integer ;
+ .
+
+:rkb-explorer-ieee a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "932"^^xsd:integer ;
+ .
+
+:rkb-explorer-irit a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "528"^^xsd:integer ;
+ .
+
+:rkb-explorer-kisti a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "149281"^^xsd:integer ;
+ .
+
+:rkb-explorer-laas a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "99"^^xsd:integer ;
+ .
+
+:rkb-explorer-newcastle a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "558"^^xsd:integer ;
+ .
+
+:rkb-explorer-nsf a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:rkb-explorer-oai a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "227149"^^xsd:integer ;
+ .
+
+:rkb-explorer-pisa a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "34"^^xsd:integer ;
+ .
+
+:rkb-explorer-rae2001 a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "5022"^^xsd:integer ;
+ .
+
+:rkb-explorer-resex a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "6"^^xsd:integer ;
+ .
+
+:rkb-explorer-risks a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:rkb-explorer-roma a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+:rkb-explorer-southampton a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "1763"^^xsd:integer ;
+ .
+
+:rkb-explorer-ulm a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:rkb-explorer-wiki a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:southampton-ecs-eprints a void:Linkset ;
+    void:target :rkb-explorer-citeseer ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Hugh_Glaser"^^xsd:string ;
+     foaf:Cmbox <mailto:hg@ecs.soton.ac.uk> ; 
+ .
+

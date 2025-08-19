@@ -1,0 +1,69 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:uniprotkb a dcat:Dataset ;
+    dcat:keyword "format-rdf", "lifesciences", "lod", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "no-vocab-mappings", "uniprot" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "UniProtKB" ;
+    void:sparqlEndpoint [
+        dct:title "Official_SPARQL_endpoint" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <https://sparql.uniprot.org/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Official_ftp_site" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://ftp.expasy.org/databases/uniprot/current_release/rdf/uniprot%2A.rdf.xz> ;
+    ] ;
+    dct:description """
+UniProtKB is the central hub for the collection of functional information on proteins, with accurate, consistent and rich annotation. In addition to capturing the core data mandatory for each UniProtKB entry (mainly, the amino acid sequence, protein name or description, taxonomic data and citation information), as much annotation information as possible is added. This includes widely accepted biological ontologies, classifications and cross-references, and clear indications of the quality of annotation in the form of evidence attribution of experimental and computational data.
+
+
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://www.uniprot.org/uniprot/> ;
+    void:triples "55343596553"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    void:uriSpace <http://purl.uniprot.org/uniprot/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:jerven.bolleman@sib.swiss> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "UniProt_consortium"^^xsd:string ;
+     foaf:mbox <mailto:help@uniprot.org> ; 
+ .
+

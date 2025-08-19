@@ -1,0 +1,730 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ckan a dcat:Dataset ;
+    dcat:keyword "access-api", "bio2rdf", "catalog", "catalogue", "format-dcat", "format-opmv", "format-rdf", "format-void", "lodcloud-diagram-2014-08-30", "package-type.catalog", "published-by-producer", "registry", "resource-deref" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-odbl> ;
+    dct:title "Comprehensive_Knowledge_Archive_Network" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+NTriples
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://semantic.ckan.net/catalogue.nt> ;
+    ] ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Example N3 Resource
+""" ;
+        dcat:accessURL <http://semantic.ckan.net/package/c/k/ckan.n3> ;
+        adms:status """
+FAIL (403)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Example RDF/XML Resource
+""" ;
+        dcat:accessURL <http://semantic.ckan.net/package/c/k/ckan.rdf> ;
+        adms:status """
+FAIL (403)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Example NTriples Resource
+""" ;
+        dcat:accessURL <http://semantic.ckan.net/package/c/k/ckan.nt> ;
+        adms:status """
+FAIL (403)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "None" ;
+        dcat:endpointDescription """
+SPARQL Endpoint
+""" ;
+        dcat:accessURL <http://semantic.ckan.net/sparql/> ;
+        adms:status """
+FAIL (403)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.ckan.net/dump/ckan.net-daily.json.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+RDF/XML
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://semantic.ckan.net/catalogue.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+N3
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://semantic.ckan.net/catalogue.n3> ;
+    ] ;
+    dct:description """
+
+"""@en ;
+
+    foaf:page <http://www.ckan.net/> ;
+    void:triples "50000"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:2000-us-census-rdf a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:austrian_ski_racers a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:bbc-music a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:bbc-programmes a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:bbc-wildlife-finder a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:bibbase a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:business-data-gov-uk a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:chronicling-america a void:Linkset ;
+    void:target :ckan ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:ckan a void:Linkset ;
+    void:target :ckan ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:cornetto a void:Linkset ;
+    void:target :ckan ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:data-gov-uk-time-intervals a void:Linkset ;
+    void:target :ckan ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:data-incubator-discogs a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:data-incubator-moseley a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:data-incubator-musicbrainz a void:Linkset ;
+    void:target :ckan ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:data-incubator-nasa a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:data-incubator-pokedex a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:data-open-ac-uk a void:Linkset ;
+    void:target :ckan ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :ckan ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:dbpedia-lite a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:dbtropes a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:dbtune-artists-last-fm a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:dcs-sheffield a void:Linkset ;
+    void:target :ckan ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:dnb-gemeinsame-normdatei a void:Linkset ;
+    void:target :ckan ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:ecs a void:Linkset ;
+    void:target :ckan ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:education-data-gov-uk a void:Linkset ;
+    void:target :ckan ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:enakting-co2emission a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:enakting-mortality a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:enakting-population a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:environment-data-gov-uk a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:environmental-applications-reference-thesaurus a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:esd-standards a void:Linkset ;
+    void:target :ckan ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:eurostat-ontologycentral a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:eurostat-rdf a void:Linkset ;
+    void:target :ckan ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:event-media a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:fishes-of-texas a void:Linkset ;
+    void:target :ckan ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:flickr-wrappr a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:fu-berlin-eurostat a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:gemeenschappelijke-thesaurus-audiovisuele-archieven a void:Linkset ;
+    void:target :ckan ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:geospecies a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:gesis-thesoz a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:govtrack a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:hungarian-national-library-catalog a void:Linkset ;
+    void:target :ckan ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:iserve a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:john-goodwins-family-tree a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:knoesis-linked-sensor-data a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:lexvo a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:linked-open-numbers a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:linkedlccn a void:Linkset ;
+    void:target :ckan ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:london-gazette a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:lotico a void:Linkset ;
+    void:target :ckan ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:marc-codes a void:Linkset ;
+    void:target :ckan ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:my-experiment a void:Linkset ;
+    void:target :ckan ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:national-diet-library-subject-headings a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:opencalais a void:Linkset ;
+    void:target :ckan ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:openlibrary a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:openlylocal a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:ordnance-survey-linked-data a void:Linkset ;
+    void:target :ckan ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:patents-data-gov-uk a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:printed-book-auction-catalogues a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rdfize-lastfm a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rechtspraak a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:reference-data-gov-uk a void:Linkset ;
+    void:target :ckan ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:research-data-gov-uk a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:revyu a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-acm a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-budapest a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-citeseer a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-cordis a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-courseware a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-curriculum a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-darmstadt a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-dblp a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-deepblue a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-deploy a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-dotac a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-eprints a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-era a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-eurecom a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-ft a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-ibm a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-ieee a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-irit a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-jisc a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-kisti a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-laas a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-newcastle a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-nsf a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-oai a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-pisa a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-rae2001 a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-resex a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-risks a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-roma a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-southampton a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-ulm a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-unlocode a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-wiki a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-wordnet a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:semantic-xbrl a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statistics-data-gov-uk a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:stw-thesaurus-for-economics a void:Linkset ;
+    void:target :ckan ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:surge-radio a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:t4gm-info a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:talis-openlibrary a void:Linkset ;
+    void:target :ckan ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:taxonconcept a void:Linkset ;
+    void:target :ckan ;
+    void:triples "6"^^xsd:integer ;
+ .
+
+:telegraphis a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:the-view-from a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:transport-data-gov-uk a void:Linkset ;
+    void:target :ckan ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:uberblic a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:ugent_biblio a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:uk-legislation-api a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:uk-postcodes a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:university-plymouth-reading-lists a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:uriburner a void:Linkset ;
+    void:target :ckan ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:viaf a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:vivo-cornell-university a void:Linkset ;
+    void:target :ckan ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:vivo-indiana-university a void:Linkset ;
+    void:target :ckan ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:vivo-university-of-florida a void:Linkset ;
+    void:target :ckan ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:vu-wordnet a void:Linkset ;
+    void:target :ckan ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:zbw-pressemappe20 a void:Linkset ;
+    void:target :ckan ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:zitgist-musicbrainz a void:Linkset ;
+    void:target :ckan ;
+    void:triples "1"^^xsd:integer ;
+ .
+

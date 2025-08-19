@@ -1,0 +1,42 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:zaragoza_turruta a dcat:Dataset ;
+    dcat:keyword "LinkedDataCrawl2014", "crawledLinkedDataCloud2014", "format-dcterm", "format-foaf", "format-hartigprov", "format-owl", "format-pos", "format-prvt", "format-rdf", "format-rdfg", "format-rdfs", "format-skos", "format-turismo", "government", "lodcloud-diagram-2014-08-30", "non-deref-vocab", "provenance-metadata" ;
+    dct:title "zaragoza_turruta" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://www.zaragoza.es/turruta/resource/data/Edificio-historico/9200> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dct:description """
+
+"""@en ;
+
+    dcat:theme  <government> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:zaragoza-datosabiertos a void:Linkset ;
+    void:target :zaragoza_turruta ;
+    void:triples "16"^^xsd:integer ;
+ .
+

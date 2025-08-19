@@ -1,0 +1,148 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:lodac-bdls a dcat:Dataset ;
+    dcat:keyword "biology", "deref-vocab", "format-dcndl", "format-dcterms", "format-rdfs", "format-skos", "license-metadata", "lifesciences", "llod", "lod", "lodcloud-diagram-2014-08-30", "no-vocab-mappings", "provenance-metadata", "published-by-producer", "rdf" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "LODAC_BDLS" ;
+    void:exampleResource [
+        dct:title_exampleResource "Link_to_an_example_species_data_(RDF/XML)" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://lod.ac/bdls/species/Pygoscelis_adeliae.rdf> ;
+        adms:status_exampleResource """
+FAIL (500)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "LInk_to_an_example_species_data_(Turtle)" ;
+        dcat:mediaType_exampleResource "example/turtle" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://lod.ac/bdls/species/Pygoscelis_adeliae.ttl> ;
+        adms:status_exampleResource """
+FAIL (500)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Link_to_an_example_term_(RDF/XML)" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://lod.ac/bdls/term/ET.rdf> ;
+        adms:status_exampleResource """
+FAIL (500)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Link_to_an_example_term_(Turtle)" ;
+        dcat:mediaType_exampleResource "example/turtle" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://lod.ac/bdls/term/ET.ttl> ;
+        adms:status_exampleResource """
+FAIL (500)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://lod.ac/bdls/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+it includes dump files of BDLS.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Download_directory" ;
+        dcat:accessURL_distribution <http://lod.ac/dumps/bdls/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;charset=utf-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Link_to_a_resource" ;
+        dcat:accessURL_distribution <http://lod.ac/bdls/species/Pygoscelis_adeliae> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Link_to_the_species_schema" ;
+        dcat:accessURL_distribution <http://lod.ac/ns/species> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "VoID_Description" ;
+        dcat:accessURL_distribution <http://lod.ac/bdls/void.ttl> ;
+    ] ;
+    dct:description_main """
+LODAC BDLS (Building Dictionary for Life Sciense) provides two types of datasets. One is relationships between scientific names and common names of species. Another is relationships of Japanese and English scientific terms in Life Science. Datasets also include links to DBpedia, DBpedia Japanese and LODAC Species.
+
+
+
+
+"""@en ;
+
+    foaf:page <http://lod.ac/wiki/LODAC_BDLS> ;
+    void:triples "5764962"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    void:uriSpace <http://lod.ac/bdls/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :lodac-bdls ;
+    void:triples "18545"^^xsd:integer ;
+ .
+
+:dbpedia-ja a void:Linkset ;
+    void:target :lodac-bdls ;
+    void:triples "7367"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Fumihiro_Kato"^^xsd:string ;
+     foaf:Cmbox <mailto:fumi@fumi.me> ; 
+ .
+

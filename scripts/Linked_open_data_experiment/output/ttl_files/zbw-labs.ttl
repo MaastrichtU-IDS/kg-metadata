@@ -1,0 +1,64 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:zbw-labs a dcat:Dataset ;
+    dcat:keyword "format-dc", "format-foaf", "format-rdf", "format-rdfa", "format-schema", "format-skos", "license-metadata", "lld", "lod", "no-proprietary-vocab", "provenance-metadata", "publications", "published-by-producer" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "ZBW_Labs" ;
+    void:exampleResource [
+        dct:title "Web_Services_for_Economics_project" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Example project description
+""" ;
+        dcat:accessURL <http://zbw.eu/labs/en/project/econ-ws> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDFa" ;
+        dct:description """
+RDFa enhanced Drupal-Website. dcterms, doap, schema.org and adms vocabularies used.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "ZBW_Labs_Website" ;
+        dct:mirror "['ipfs:QmTL382QKgySVfuRw53LTuZsxbFWhecyq6MJztwadTtqya']" ;
+        dcat:accessURL <http://zbw.eu/labs> ;
+    ] ;
+    dct:description """
+ZBW Labs projects exposed as Linked Open Data.
+
+ZBW Labs gives you insight into some of the latest software developments of ZBW Leibniz Information Cenre for Economis. Through this platform, ZBW's department for Innovative Information Systems and Publishing Technologies is constantly presenting applications and (web)services in an experimental or 'beta' state.
+"""@en ;
+
+    void:triples "1000"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://zbw.eu/labs/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :zbw-labs ;
+    void:triples "70"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "ZBW_German_National_Library_of_EconomicsLeibniz_Centre_for_Economics"^^xsd:string ;
+ .
+

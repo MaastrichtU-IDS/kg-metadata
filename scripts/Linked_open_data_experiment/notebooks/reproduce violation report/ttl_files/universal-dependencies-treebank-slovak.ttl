@@ -1,0 +1,64 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:universal-dependencies-treebank-slovak a dcat:Dataset ;
+    dcat:keyword "corpus", "linguistics", "lod" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title_main "Universal_Dependencies_Treebank_Slovak" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "UD_Slovak_Treebank" ;
+        dcat:accessURL_distribution <https://github.com/UniversalDependencies/UD_Slovak/archive/master.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+xml" ;
+        dct:description_distribution """
+Converted test.conllu using ACoLi's conll-rdf converter
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='datahub.ckan.io', port=443): Max retries exceeded with url: /dataset/b19be93d-9fee-4043-908d-ca8eb34b9e0e/resource/d897eae0-7154-4348-962d-4b37f81528f3/download/udslovak.rdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3686aef5e0>, 'Connection to datahub.ckan.io timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "UD_Slovak_RDF_Example" ;
+        dcat:accessURL_distribution <https://datahub.ckan.io/dataset/b19be93d-9fee-4043-908d-ca8eb34b9e0e/resource/d897eae0-7154-4348-962d-4b37f81528f3/download/udslovak.rdf> ;
+    ] ;
+    dct:description_main """
+Universal Dependencies is a project that seeks to develop cross-linguistically consistent treebank annotation for many languages, with the goal of facilitating multilingual parser development, cross-lingual learning, and parsing research from a language typology perspective. The annotation scheme is based on (universal) Stanford dependencies (de Marneffe et al., 2006, 2008, 2014), Google universal part-of-speech tags (Petrov et al., 2012), and the Interset interlingua for morphosyntactic tagsets (Zeman, 2008).
+
+This dataset refers to UD's Slovak treebank.
+
+"""@en ;
+
+    foaf:page <https://github.com/UniversalDependencies/UD_Slovak> ;
+    void:triples "106043"^^xsd:integer ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:olia a void:Linkset ;
+    void:target :universal-dependencies-treebank-slovak ;
+    void:triples "72"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Gajdošová,_Katarína;_Šimková,_Mária;_Zeman,_Daniel"^^xsd:string ;
+     foaf:Cmbox <mailto:zeman@ufal.mff.cuni.cz> ; 
+ .
+

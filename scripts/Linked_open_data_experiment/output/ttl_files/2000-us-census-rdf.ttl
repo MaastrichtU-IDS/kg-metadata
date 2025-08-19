@@ -1,0 +1,92 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:2000-us-census-rdf a dcat:Dataset ;
+    dcat:keyword "census", "data", "demographics", "deref-vocab", "format-dc", "format-geonames", "format-politico", "format-rdf", "geographic", "linkeddata", "lod", "lodcloud-diagram-2007-05-01", "lodcloud-diagram-2011-09-19", "lodcloud.nolinks", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "population", "published-by-third-party", "rdf", "statistics", "us" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title "2000_U.S._Census_in_RDF_(rdfabout.com)" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL <http://www.rdfabout.com/rdf/usgov/geo/us/ny> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='www.rdfabout.com', port=80): Max retries exceeded with url: /rdf/usgov/geo/us/ny (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686daf730>, 'Connection to www.rdfabout.com timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "None" ;
+        dcat:endpointDescription """
+SPARQL enpdoint
+""" ;
+        dcat:accessURL <http://www.rdfabout.com/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='www.rdfabout.com', port=80): Max retries exceeded with url: /sparql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dad660>, 'Connection to www.rdfabout.com timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Download
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='www.rdfabout.com', port=80): Max retries exceeded with url: /demo/census/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dad4e0>, 'Connection to www.rdfabout.com timed out. (connect timeout=30)')))
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.rdfabout.com/demo/census/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+XML Sitemap
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='www.rdfabout.com', port=80): Max retries exceeded with url: /sitemap.xml (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dac460>, 'Connection to www.rdfabout.com timed out. (connect timeout=30)')))
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.rdfabout.com/sitemap.xml> ;
+    ] ;
+    dct:description """
+2000 U.S. Census converted into over a billion RDF triples.
+
+Population statistics at various geographic levels, from the U.S. as a whole, down through states, counties, sub-counties (roughly, cities and incorporated towns)
+
+Notes: also found in the of SPARQL Endpoints.
+
+From home page:
+
+> * For the detailed Census statistics, you'll have to download the raw Census data files from the Census Bureau, my Perl script and the patch file below and run it yourself because the files are too big for me to offer as a download!
+> 
+> * The data and scripts can be reused under Creative Commons Attribution-NonCommercial-ShareAlike.
+
+"""@en ;
+
+    foaf:page <http://www.rdfabout.com/demo/census/> ;
+    void:triples "1002848918"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://www.rdfabout.com/rdf/usgov/geo/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:name "Joshua_Tauberer"^^xsd:string ;
+     foaf:mbox <mailto:http://razor.occams.info/> ; 
+ .
+

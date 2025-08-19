@@ -1,0 +1,134 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bioportal-mddb a dcat:Dataset ;
+    dcat:keyword "biomedicine", "bioportal", "format-rdf", "format-rrf", "lod", "ontology", "published-by-third-party" ;
+    dct:title "Master_Drug_Data_Base" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+REST API Wiki Documentation
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+SPARQL endpoint
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://sparql.bioontology.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+Download link, BioPortal API KEY is required
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://rest.bioontology.org/bioportal/ontologies/download/42284?apikey=BP_API_KEY> ;
+    ] ;
+    dct:description """
+Master Drug Data Base, 2009_08_05
+"""@en ;
+
+    foaf:page <http://bioportal.bioontology.org/ontologies/1426> ;
+    void:triples "76883"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-csp a void:Linkset ;
+    void:target :bioportal-mddb ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-galen a void:Linkset ;
+    void:target :bioportal-mddb ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-lnc a void:Linkset ;
+    void:target :bioportal-mddb ;
+    void:triples "35"^^xsd:integer ;
+ .
+
+:bioportal-mesh-owl a void:Linkset ;
+    void:target :bioportal-mddb ;
+    void:triples "103"^^xsd:integer ;
+ .
+
+:bioportal-msh a void:Linkset ;
+    void:target :bioportal-mddb ;
+    void:triples "132"^^xsd:integer ;
+ .
+
+:bioportal-ncit a void:Linkset ;
+    void:target :bioportal-mddb ;
+    void:triples "49"^^xsd:integer ;
+ .
+
+:bioportal-nddf a void:Linkset ;
+    void:target :bioportal-mddb ;
+    void:triples "11812"^^xsd:integer ;
+ .
+
+:bioportal-ndfrt a void:Linkset ;
+    void:target :bioportal-mddb ;
+    void:triples "8531"^^xsd:integer ;
+ .
+
+:bioportal-pdq a void:Linkset ;
+    void:target :bioportal-mddb ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-rcd a void:Linkset ;
+    void:target :bioportal-mddb ;
+    void:triples "3015"^^xsd:integer ;
+ .
+
+:bioportal-rxnorm a void:Linkset ;
+    void:target :bioportal-mddb ;
+    void:triples "9667"^^xsd:integer ;
+ .
+
+:bioportal-snomedct a void:Linkset ;
+    void:target :bioportal-mddb ;
+    void:triples "9315"^^xsd:integer ;
+ .
+
+:bioportal-vandf a void:Linkset ;
+    void:target :bioportal-mddb ;
+    void:triples "8519"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Karen_Eckert"^^xsd:string ;
+ .
+

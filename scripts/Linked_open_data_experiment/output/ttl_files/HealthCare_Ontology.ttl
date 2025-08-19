@@ -1,0 +1,77 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:HealthCare_Ontology a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title "Sparql_Editor" ;
+        dct:identifier "791b536b-f112-2d2a-4969-956f3a9d642a" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <https://www.orpha.net/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+http://bioportal.bioontology.org/ontologies/HCOT
+""" ;
+        dcat:downloadURL <http://bioportal.bioontology.org/ontologies/HCOT> ;
+        adms:status """
+OK
+""" ;
+        dct:title "HealthOnto" ;
+        dct:mirror "[]" ;
+        dct:identifier "778ac33c-4e7b-e6b8-59dd-46c1902671a1" ;
+    ] ;
+    foaf:page <http://bioportal.bioontology.org/ontologies/HCOT> ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "HealthCare_Ontology" ;
+    dct:description """
+A sensor based Health Care Ontology
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:triples "48"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:SocialLink a void:Linkset ;
+    void:target :HealthCare_Ontology ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:Face_Link a void:Linkset ;
+    void:target :HealthCare_Ontology ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:fereshtehrabiei@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Dr._Sanju_Tiwari"^^xsd:string ;
+     foaf:mbox <mailto:tiwarisanju18@ieee.org> ; 
+ .
+

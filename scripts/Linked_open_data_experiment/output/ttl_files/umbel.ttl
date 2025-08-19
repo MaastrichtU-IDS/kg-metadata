@@ -1,0 +1,134 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:umbel a dcat:Dataset ;
+    dcat:keyword "broken_link", "concepts", "crossdomain", "deref-vocab", "format-foaf", "format-lingvoj", "format-owl", "format-rdf", "format-rdfs", "format-skos", "format-umbel", "format-vann", "format-vs", "linked-data", "linked-open-data", "linkeddata", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-provenance-metadata", "published-by-producer", "reference-concepts", "schemata", "subjects", "vocab-mappings" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "UMBEL_(Upper_Mapping_and_Binding_Exchange_Layer)" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+instantiates all of the reference concepts that belong to UMBEL using the RDF/N3 serialization
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmSuZJMqtH2oMQ5pKmRuy7FhKaVEQqS7u7KWHiqvotRJ5G']" ;
+        dcat:downloadURL <http://umbel.googlecode.com/svn/trunk/v100/Reference%2520Structure/umbel_reference_concepts_v100.n3> ;
+    ] ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "text/html" ;
+        dct:description """
+Example resource (Abolutionism)
+""" ;
+        dcat:accessURL <http://umbel.org/umbel/rc/Abolitionism> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/owl" ;
+        dct:description """
+describes all of the classes and properties created for the UMBEL Ontology in OWL 2; that is, the basic UMBEL vocabulary and formal specification
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmSiS8RwTcr24gYb3hQbjhjuKJ23MNzYT5TTzR3rHDGscB']" ;
+        dcat:accessURL <http://umbel.googlecode.com/svn/trunk/v100/Ontology/umbel_v100.n3> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "mapping" ;
+        dct:description """
+mapped linkages to PROTON ontology in RDF/N3 serialization
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://umbel.googlecode.com/svn/trunk/v100/External%2520Ontologies/proton.n3> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "Web_services" ;
+        dct:description """
+various publicly-available UMBEL Web services
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='umbel.structureddynamics.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fda80>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://umbel.structureddynamics.com/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "mapping/owl" ;
+        dct:description """
+mapped linkages to DBpedia ontology in RDF/N3 serialization
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://umbel.googlecode.com/svn/trunk/v100/External%2520Ontologies/dbpediaOntology.n3> ;
+    ] ;
+    dct:description """
+A lightweight, reference structure of 28,000 subject concepts for the Web. UMBEL is jointly developed and maintained by [Structured Dynamics LLC](http://structureddynamics.com) and [Ontotext AD](http://www.ontotext.com/).
+
+There is a total of 46,173 external data links.
+"""@en ;
+
+    foaf:page <http://umbel.org> ;
+    void:triples "478585"^^xsd:integer ;
+    dcat:theme  <cross_domain> ;
+    void:uriSpace <http://umbel.org/umbel/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :umbel ;
+    void:triples "257"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :umbel ;
+    void:triples "671"^^xsd:integer ;
+ .
+
+:opencyc a void:Linkset ;
+    void:target :umbel ;
+    void:triples "27917"^^xsd:integer ;
+ .
+
+:proton a void:Linkset ;
+    void:target :umbel ;
+    void:triples "444"^^xsd:integer ;
+ .
+
+:wikipedia a void:Linkset ;
+    void:target :umbel ;
+    void:triples "16884"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Michael_K_Bergman"^^xsd:string ;
+     foaf:mbox <mailto:mike@mkbergman.com> ; 
+ .
+

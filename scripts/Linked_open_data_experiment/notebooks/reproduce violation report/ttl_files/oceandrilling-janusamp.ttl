@@ -1,0 +1,65 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:oceandrilling-janusamp a dcat:Dataset ;
+    dcat:keyword "drilling", "geographic", "lod", "lodcloud-diagram-2011-09-19", "no-deref-vocab", "ocean", "published-by-producer" ;
+    dct:title_main "Ocean_DrillingJanus_Age_Models" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://data.oceandrilling.org/codices/lsh/1/7/A> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='data.oceandrilling.org', port=80): Max retries exceeded with url: /codices/lsh/1/7/A (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686da1690>, 'Connection to data.oceandrilling.org timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL Endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://data.oceandrilling.org/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='data.oceandrilling.org', port=80): Max retries exceeded with url: /sparql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dae2f0>, 'Connection to data.oceandrilling.org timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dct:description_main """
+A collection of age models for the Deep Sea Drilling Program (DSDP), Ocean Drilling Program (ODP) and Integrated Ocean Drilling Program (IODP) drilling sites.
+
+These can be used to convert depth measurement to geologic age. 
+
+http://data.oceandrilling.org/linkeddata.html
+  
+"""@en ;
+
+    foaf:page <http://chronos.org/janusAmp/> ;
+    void:triples "24489366"^^xsd:integer ;
+    void:uriSpace <http://chronos.org/janusamp/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:oceandrilling-codices a void:Linkset ;
+    void:target :oceandrilling-janusamp ;
+    void:triples "6414"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "CHRONOS"^^xsd:string ;
+     foaf:Cmbox <mailto:dfils@oceanleadership.org> ; 
+ .
+

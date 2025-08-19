@@ -1,0 +1,94 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:linked-open-piracy a dcat:Dataset ;
+    dcat:keyword "attacks", "deref-vocab", "events", "geographic", "government", "hijackings", "icc", "imb", "lod", "lodcloud-diagram-2014-08-30", "lodcloud.nolinks", "lodcloud.unconnected", "maritime", "nga", "piracy", "published-by-producer", "sea", "shipping-safety" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Linked_Open_Piracy" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://semanticweb.cs.vu.nl/poseidon/ns/instances/event_2006_214> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+events
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://semanticweb.cs.vu.nl/poseidon/ns/api/export_graph?format=rdfxml&graph=file%3A%2F%2F%2Fhome%2Fposeidon%2Fpiracy_lod%2Fpiracy%2Fpiracy_events_imb_mss_eez.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "" ;
+        dct:description_distribution """
+types with mappings
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://semanticweb.cs.vu.nl/poseidon/ns/api/export_graph?format=rdfxml&graph=file%3A%2F%2F%2Fhome%2Fposeidon%2Fpiracy_lod%2Fpiracy%2Ftypes_and_mappings.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "" ;
+        dct:description_distribution """
+SEM
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://semanticweb.cs.vu.nl/poseidon/ns/api/export_graph?format=rdfxml&graph=http%3A%2F%2Fsemanticweb.cs.vu.nl%2F2009%2F11%2Fsem%2F> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+eez
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://semanticweb.cs.vu.nl/poseidon/ns/api/export_graph?format=rdfxml&graph=file%3A%2F%2F%2Fhome%2Fposeidon%2Fpiracy_lod%2Fpiracy%2Feez.ttl> ;
+    ] ;
+    dct:description_main """
+Maritime piracy event descriptions from the International Chamber of Commerce International Maritime Bureau
+
+## Accessing the dataset
+
+* SPARQL query form
+* No dereferenceable URIs for the RDF data
+"""@en ;
+
+    foaf:page <http://semanticweb.cs.vu.nl/poseidon/ns/home> ;
+    void:triples "30583"^^xsd:integer ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Willem_Robert_van_Hage"^^xsd:string ;
+     foaf:Cmbox <mailto:W.R.van.Hage@vu.nl> ; 
+ .
+

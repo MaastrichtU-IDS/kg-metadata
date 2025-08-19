@@ -1,0 +1,68 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:data-incubator-our-airports a dcat:Dataset ;
+    dcat:keyword "ckanupload.esw.200910", "format-rdf", "geographic", "lodcloud-diagram-2011-09-19", "no-deref-vocab", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "published-by-third-party", "rdf" ;
+    dct:title_main "Airport_data_from_Our_Airports_published_as_RDF" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://airports.dataincubator.org/airports/AR-0281.rdf> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='airports.dataincubator.org', port=80): Max retries exceeded with url: /airports/AR-0281.rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dafcd0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "None" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://api.talis.com/stores/airports/services/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='api.talis.com', port=80): Max retries exceeded with url: /stores/airports/services/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dadb70>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dct:description_main """
+### Description
+
+Data exposed: Information about airports, originally from package:ourairports, here re-published as RDF.
+
+Notes: Dump available by contact
+
+### Issues
+
+The dataset does not appear to be actively maintained. There are quality issues with the owl:sameAs links.
+"""@en ;
+
+    foaf:page <http://airports.dataincubator.org/> ;
+    void:triples "748363"^^xsd:integer ;
+    void:uriSpace <http://airports.dataincubator.org/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :data-incubator-our-airports ;
+    void:triples "9761"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Rob_Styles"^^xsd:string ;
+     foaf:Cmbox <mailto:rob.styles@dynamicorange.com> ; 
+ .
+

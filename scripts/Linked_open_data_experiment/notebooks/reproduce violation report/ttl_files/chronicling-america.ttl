@@ -1,0 +1,110 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:chronicling-america a dcat:Dataset ;
+    dcat:keyword "format-dc", "format-frbr", "format-ore", "format-rdf", "format-rdfs", "lld", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "media", "newspaper", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "no-vocab-mappings", "published-by-producer" ;
+    dct:title_main "Chronicling_America" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://chroniclingamerica.loc.gov/lccn/sn85038615.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://chroniclingamerica.loc.gov/lccn/sn83045555/1889-11-21/ed-1.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://chroniclingamerica.loc.gov/lccn/sn83030214/1905-01-15/ed-1/seq-25.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL_exampleResource <http://chroniclingamerica.loc.gov/awardees/mohi.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Linked Data entry point
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://chroniclingamerica.loc.gov/newspapers.rdf> ;
+    ] ;
+    dct:description_main """
+Chronicling America provides access to information about historic newspapers and select digitized newspaper pages.
+
+140,000 newspapers, 3.2 million pages.
+
+### Issues
+
+The statistics below are complete guesses. Link information is incomplete.
+"""@en ;
+
+    foaf:page <http://chroniclingamerica.loc.gov/about/api/> ;
+    void:triples "20000000"^^xsd:integer ;
+    dcat:theme  <media> ;
+    void:uriSpace <http://chroniclingamerica.loc.gov/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :chronicling-america ;
+    void:triples "10000"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :chronicling-america ;
+    void:triples "1000"^^xsd:integer ;
+ .
+
+:lingvoj a void:Linkset ;
+    void:target :chronicling-america ;
+    void:triples "1000"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Library_of_Congress"^^xsd:string ;
+ .
+

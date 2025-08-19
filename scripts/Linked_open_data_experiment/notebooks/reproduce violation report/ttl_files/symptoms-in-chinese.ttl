@@ -1,0 +1,89 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:symptoms-in-chinese a dcat:Dataset ;
+    dcat:keyword "Linked_Data", "life_science", "symptoms_in_Chinese" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Symptoms_in_Chinese" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/vnd.rar" ;
+        dct:description_distribution """
+Symptom entities, symptom-related entities and their properties in Chinese.
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='datahub.ckan.io', port=443): Max retries exceeded with url: /dataset/003abde3-aa16-4126-a8da-2f5d9e472285/resource/8d8bf867-23f6-475a-b023-91ec6093b7bf/download/dsc.nlp-bigdatalab.org.rar (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f36843006a0>, 'Connection to datahub.ckan.io timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "Dataset_of_Symptoms_in_Chinese" ;
+        dcat:accessURL_distribution <https://datahub.ckan.io/dataset/003abde3-aa16-4126-a8da-2f5d9e472285/resource/8d8bf867-23f6-475a-b023-91ec6093b7bf/download/dsc.nlp-bigdatalab.org.rar> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/plain" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='datahub.ckan.io', port=443): Max retries exceeded with url: /dataset/003abde3-aa16-4126-a8da-2f5d9e472285/resource/600164ff-fdf5-40cf-9d03-3efbb7ef4d95/download/dataset-description-in-dcat.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3684300280>, 'Connection to datahub.ckan.io timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "Dataset_description_in_DCAT" ;
+        dcat:accessURL_distribution <https://datahub.ckan.io/dataset/003abde3-aa16-4126-a8da-2f5d9e472285/resource/600164ff-fdf5-40cf-9d03-3efbb7ef4d95/download/dataset-description-in-dcat.txt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='datahub.ckan.io', port=443): Max retries exceeded with url: /dataset/003abde3-aa16-4126-a8da-2f5d9e472285/resource/c68762ff-fa0b-443b-882a-f090faab052d/download/example.ttl (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f36843007f0>, 'Connection to datahub.ckan.io timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "Example" ;
+        dcat:accessURL_distribution <https://datahub.ckan.io/dataset/003abde3-aa16-4126-a8da-2f5d9e472285/resource/c68762ff-fa0b-443b-882a-f090faab052d/download/example.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/plain" ;
+        dct:description_distribution """
+Schema of the dataset
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='datahub.ckan.io', port=443): Max retries exceeded with url: /dataset/003abde3-aa16-4126-a8da-2f5d9e472285/resource/9c38197a-c7e0-4d9c-ab27-5005dc8a41ac/download/dsc-schema.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3686aef6d0>, 'Connection to datahub.ckan.io timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <https://datahub.ckan.io/dataset/003abde3-aa16-4126-a8da-2f5d9e472285/resource/9c38197a-c7e0-4d9c-ab27-5005dc8a41ac/download/dsc-schema.txt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/vnd.rar" ;
+        dct:description_distribution """
+We sampled 417 triples from 26445 triples which describe the rdf:type of the instances is symptom for calculating the precision of symptoms. We sampled 423 triples from 364,657 triples which are related to symptom (triples containing rdf:type and same:As are not involved). We sampled 395 triples from 6024 triples which describe the links (sameAs) to UMLS. The precisions are 98%, 96%, 92%.
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='datahub.ckan.io', port=443): Max retries exceeded with url: /dataset/003abde3-aa16-4126-a8da-2f5d9e472285/resource/e902e889-25a5-4320-acf7-dd96a240d61a/download/evaluation-results-of-the-dataset.rar (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3686aef7c0>, 'Connection to datahub.ckan.io timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "Evaluation_results_of_the_dataset" ;
+        dcat:accessURL_distribution <https://datahub.ckan.io/dataset/003abde3-aa16-4126-a8da-2f5d9e472285/resource/e902e889-25a5-4320-acf7-dd96a240d61a/download/evaluation-results-of-the-dataset.rar> ;
+    ] ;
+    dct:description_main """
+This is a dataset containing entities of symptoms and symptom-related facts. It  is extracted from eight mainstream healthcare websites, three Chinese encyclopedia sites as well as Electronic Medical Records (EMRs). It also includes the link results between symptoms in our dataset and concepts in UMLS. We provide lookup interface and SPARQL endpoint for our dataset (http://dsc.nlp-bigdatalab.org:8081/search.html).
+"""@en ;
+
+    foaf:page <http://dsc.nlp-bigdatalab.org:8081/search.html> ;
+    void:triples "1008772"^^xsd:integer ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "East_China_University_of_Science_and_Technology"^^xsd:string ;
+     foaf:Cmbox <mailto:ruantong@ecust.edu.cn> ; 
+ .
+

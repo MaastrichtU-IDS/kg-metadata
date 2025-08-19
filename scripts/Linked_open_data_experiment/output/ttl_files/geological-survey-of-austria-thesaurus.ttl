@@ -1,0 +1,284 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:geological-survey-of-austria-thesaurus a dcat:Dataset ;
+    dcat:keyword "austria", "format-skos", "geographic", "geology", "geoscience", "lod", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-proprietary-vocab", "provenance-metadata", "published-by-producer", "thesaurus" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "Geological_Survey_of_Austria_(GBA)Thesaurus" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "application/rdf+xml;charset=UTF-8" ;
+        dct:description """
+Example (rdf) - Geologic Unit
+""" ;
+        dcat:accessURL <http://resource.geolba.ac.at/GeologicUnit/291.rdf> ;
+        adms:status """
+FAIL (406)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "application/rdf+xml;charset=UTF-8" ;
+        dct:description """
+Example (rdf) - Geologic Time Scale
+""" ;
+        dcat:accessURL <http://resource.geolba.ac.at/GeologicTimeScale/35.rdf> ;
+        adms:status """
+FAIL (406)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "application/rdf+xml;charset=UTF-8" ;
+        dct:description """
+Example (rdf) - Lithology
+""" ;
+        dcat:accessURL <http://resource.geolba.ac.at/lithology/48.rdf> ;
+        adms:status """
+FAIL (406)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "application/rdf+xml;charset=UTF-8" ;
+        dct:description """
+Example (rdf) - Lithotectonic Unit
+""" ;
+        dcat:accessURL <http://resource.geolba.ac.at/tectonicunit/115.rdf> ;
+        adms:status """
+FAIL (406)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL Endpoint - Geologic Unit
+""" ;
+        dcat:accessURL <http://resource.geolba.ac.at/PoolParty/sparql/GeologicUnit> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL Endpoint - Geologic Time Scale
+""" ;
+        dcat:accessURL <http://resource.geolba.ac.at/PoolParty/sparql/GeologicTimeScale> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL Endpoint - Lithology
+""" ;
+        dcat:accessURL <http://resource.geolba.ac.at/PoolParty/sparql/lithology> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL Endpoint - Lithotectonic Unit
+""" ;
+        dcat:accessURL <http://resource.geolba.ac.at/PoolParty/sparql/tectonicunit> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+Geologic Unit
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://resource.geolba.ac.at/GeologicUnit> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download - Geologic Unit
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmWqtFGdJffYV7EC1PFMcjuYJYXHWXQSycWtWTrWJKzfuJ']" ;
+        dcat:accessURL <http://resource.geolba.ac.at/PoolParty/OpenConfigPathResourceProvider/backuproot?fileName=d7b07bce-7ce4-4bcb-85ae-e0f774e6fb8d%2Fpp_project_geologische_einheiten.rdf&contentType=application%2Frdf%252Bxml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+Geologic Time Scale
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://resource.geolba.ac.at/GeologicTimeScale> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download - Geologic Time Scale
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmSLKkV1ciqfz2hUy3G53rAt8wc6XZYMRgBmrDJAurHyA9']" ;
+        dcat:accessURL <http://resource.geolba.ac.at/PoolParty/OpenConfigPathResourceProvider/backuproot?fileName=urn%3Auuid%3A1D763DCD-0E5C-0001-FBB1-1D401A50B620%2Fpp_project_geologische_zeitskala.rdf&contentType=application%2Frdf%252Bxml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+Lithology
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://resource.geolba.ac.at/lithology> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download - Lithology
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmNtvKrazoT2fUnawt9LzirceTs4nPVLRDZcgvZkaUFPke']" ;
+        dcat:accessURL <http://resource.geolba.ac.at/PoolParty/OpenConfigPathResourceProvider/backuproot?fileName=urn%3Auuid%3A1D87806F-E88C-0001-AFCC-DC87F6001C3A%2Fpp_project_lithologische_einheiten.rdf&contentType=application%2Frdf%252Bxml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+Lithotectonic Unit
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://resource.geolba.ac.at/tectonicunit> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download - Lithotectonic Unit
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmVfGu2gsoD27aqikTgo84bw2gfYnYoeDwqZdfaL3e1tbV']" ;
+        dcat:accessURL <http://resource.geolba.ac.at/PoolParty/OpenConfigPathResourceProvider/backuproot?fileName=d13bb3e7-df48-4cba-bd0c-e63c8943d9e0%2Fpp_project_lithotektonische_einheiten.rdf&contentType=application%2Frdf%252Bxml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+VoiD - Lithotectonic Unit
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmZXjcitnbQ9HuqK75YJEHHwjcg6q5dWtQ7ga281W7KK3P']" ;
+        dcat:accessURL <http://resource.geolba.ac.at/tectonicunit.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+VoiD - Lithology
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmYHVaYMA42i7GtA5z8fMVytufH8PmJ6FWYtEd4SXU8k5t']" ;
+        dcat:accessURL <http://resource.geolba.ac.at/lithology.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+VoiD - Geologic Time Scale
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmayeCdqENd19kTBLW76tN3LAb9pomBzmEsMVaGseQdS8z']" ;
+        dcat:accessURL <http://resource.geolba.ac.at/GeologicTimeScale.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+VoiD - Geologic Unit
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:Qmd4mLWFVWrEdakTz5nHAiUfZ2fLEi47gUNiKifxM5h9Hn']" ;
+        dcat:accessURL <http://resource.geolba.ac.at/GeologicUnit.rdf> ;
+    ] ;
+    dct:description """
+The Thesaurus of the Geological Survey of Austria is a bilingual (de/en) controlled vocabulary for the semantic harmonisation of geoscientific map-based geodata. Currently there are four thematic subjects available : 
+
+* lithology
+* geologic timescale
+* geologic units
+* tectonic units & classification
+"""@en ;
+
+    foaf:page <http://resource.geolba.ac.at/> ;
+    void:triples "40912"^^xsd:integer ;
+    dcat:theme  <geography> ;
+    void:uriSpace <http://resource.geolba.ac.at/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :geological-survey-of-austria-thesaurus ;
+    void:triples "100"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :geological-survey-of-austria-thesaurus ;
+    void:triples "93"^^xsd:integer ;
+ .
+
+:opencyc a void:Linkset ;
+    void:target :geological-survey-of-austria-thesaurus ;
+    void:triples "9"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Thesaurus_Editorial_Team"^^xsd:string ;
+     foaf:mbox <mailto:thesaurus@geologie.ac.@> ; 
+ .
+

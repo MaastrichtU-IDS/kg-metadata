@@ -1,0 +1,66 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:esd-standards a dcat:Dataset ;
+    dcat:keyword "country-uk", "format-skos", "government", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "no-vocab-mappings", "published-by-producer", "ukgov" ;
+    dct:title_main "ESD_Standards:_Controlled_lists_for_the_UK_public_sector" ;
+    void:exampleResource [
+        dct:title_exampleResource "Annual_review_of_child_care_provision_and_establishment/maintenance_of_information_service" ;
+        dcat:mediaType_exampleResource "application/rdf+xml;_charset=utf-8" ;
+        dct:description_exampleResource """
+Annual review of child care provision and establishment/maintenance of information service
+""" ;
+        dcat:accessURL_exampleResource <http://id.esd.org.uk/duty/208.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Primary_school_places" ;
+        dcat:mediaType_exampleResource "application/rdf+xml;_charset=utf-8" ;
+        dct:description_exampleResource """
+Dealing with requests for places at primary schools from parents of prospective pupils. Allocation of school places according to education authority policy.
+""" ;
+        dcat:accessURL_exampleResource <http://id.esd.org.uk/service/13.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    dct:description_main """
+Standard controlled vocabularies used within the UK public sector.
+"""@en ;
+
+    foaf:page <http://standards.esd.org.uk/> ;
+    void:triples "234230"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://id.esd.org.uk/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :esd-standards ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:uk-legislation-api a void:Linkset ;
+    void:target :esd-standards ;
+    void:triples "937"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cmbox <mailto:support@esd.org.uk> ; 
+ .
+

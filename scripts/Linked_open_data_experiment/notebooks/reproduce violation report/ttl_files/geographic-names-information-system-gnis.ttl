@@ -1,0 +1,91 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:geographic-names-information-system-gnis a dcat:Dataset ;
+    dcat:keyword "geographic", "geography", "geology", "gnis", "semantic_web", "usgs" ;
+    dct:title_main "Geographic_Names_Information_System_(GNIS)" ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "USGS-LOD_SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+The SPARQL endpoint for live USGS-LD data.
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://usgs-stko.geog.ucsb.edu:8080/sparql/select> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='usgs-stko.geog.ucsb.edu', port=8080): Max retries exceeded with url: /sparql/select (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f36843fda80>, 'Connection to usgs-stko.geog.ucsb.edu timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle;_charset=UTF-8" ;
+        dct:description_distribution """
+Machine readable metadata about the dataset
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='usgs-stko.geog.ucsb.edu', port=80): Max retries exceeded with url: /resource/void.ttl (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686aee620>, 'Connection to usgs-stko.geog.ucsb.edu timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "VoID_description" ;
+        dcat:accessURL_distribution <http://usgs-stko.geog.ucsb.edu/resource/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle;_charset=UTF-8" ;
+        dct:description_distribution """
+A feature type vocabulary for GNIS features.
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='usgs-stko.geog.ucsb.edu', port=80): Max retries exceeded with url: /resource/cegis.ttl (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686db7f10>, 'Connection to usgs-stko.geog.ucsb.edu timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "GNIS_Feature_Definitions" ;
+        dcat:accessURL_distribution <http://usgs-stko.geog.ucsb.edu/resource/cegis.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+The entire GNIS dataset as RDF/Turtle (includes geometry data for URIs).
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='usgs-stko.geog.ucsb.edu', port=80): Max retries exceeded with url: /resource/GNIS-LD.zip (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686db71f0>, 'Connection to usgs-stko.geog.ucsb.edu timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "GNIS_RDF_Data_Dump" ;
+        dcat:accessURL_distribution <http://usgs-stko.geog.ucsb.edu/resource/GNIS-LD.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle;_charset=UTF-8" ;
+        dct:description_distribution """
+Machine readable metadata about SPARQL endpoint
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='usgs-stko.geog.ucsb.edu', port=80): Max retries exceeded with url: /resource/sd.ttl (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f36843fc8e0>, 'Connection to usgs-stko.geog.ucsb.edu timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "USGS-LOD_SPARQL_Service_Description" ;
+        dcat:accessURL_distribution <http://usgs-stko.geog.ucsb.edu/resource/sd.ttl> ;
+    ] ;
+    dct:description_main """
+The GNIS contains information about physical and cultural geographic features in the United States and associated areas, both current and historical (not including roads and highways). The database holds the Federally recognized name of each feature and defines the location of the feature by state, county, USGS topographic map, and geographic coordinates.
+"""@en ;
+
+    void:triples "3508685"^^xsd:integer ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :geographic-names-information-system-gnis ;
+    void:triples "45532"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Blake_Regalia"^^xsd:string ;
+     foaf:Cmbox <mailto:blake.regalia@gmail.com> ; 
+ .
+

@@ -1,0 +1,55 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:baixue_composer a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType "application/octet-stream" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "composer" ;
+        dct:mirror "[]" ;
+        dct:identifier "64b1b3c5-cdbe-c73d-84ca-58a44b2067fe" ;
+        dcat:downloadURL <https://demo.ckan.org/dataset/27ddc796-ff3b-472f-9ff2-c613b22911b7/resource/0cdae291-2588-4ae5-a13b-dcc074d66262/download/composer.ttl> ;
+    ] ;
+    foaf:page <http://baixue.com> ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "baixue_composer" ;
+    dct:description """
+baixue composer
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    dcat:theme  <cross_domain> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:baixueimis@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "wageawgw"^^xsd:string ;
+     foaf:mbox <mailto:ewagrehawg@qage.com> ; 
+ .
+

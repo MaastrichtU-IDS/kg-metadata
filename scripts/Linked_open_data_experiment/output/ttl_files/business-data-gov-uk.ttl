@@ -1,0 +1,101 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:business-data-gov-uk a dcat:Dataset ;
+    dcat:keyword "business-register", "deref-vocab", "format-dc", "format-foaf", "format-rdf", "government", "lod", "lodcloud-diagram-2011-09-19", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "published-by-producer" ;
+    dct:title "business.data.gov.uk" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Download (N-Triples)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmYJYZTEPazRMh5Wb9E4iV2zt5T6Lyhec1jMFGrNfPZYPT']" ;
+        dcat:downloadURL <http://source.data.gov.uk/data/business/bis-research-explorer/2010-03-04/business.data.gov.uk.nt> ;
+    ] ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Example company (RDF/XML)
+""" ;
+        dcat:accessURL <http://business.data.gov.uk/id/company/1003142> ;
+        adms:status """
+FAIL (406)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://services.data.gov.uk/business/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='services.data.gov.uk', port=80): Max retries exceeded with url: /business/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dac2e0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "api/search" ;
+        dct:description """
+Search API
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='services.data.gov.uk', port=80): Max retries exceeded with url: /business/search (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dae5f0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://services.data.gov.uk/business/search> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD description (partial)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://business.data.gov.uk/doc/company> ;
+    ] ;
+    dct:description """
+Business-related data from data.gov.uk:
+
+* [Namespace for companies](http://business.data.gov.uk/doc/company); this appears to have entries for all companies registered at Companies House.
+
+Part of package:data-gov-uk.
+"""@en ;
+
+    foaf:page <http://business.data.gov.uk/> ;
+    void:triples "15237"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://business.data.gov.uk/id/company/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:research-data-gov-uk a void:Linkset ;
+    void:target :business-data-gov-uk ;
+    void:triples "1415"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Data.gov.uk_Team"^^xsd:string ;
+     foaf:mbox <mailto:team@d@a.gov.uk> ; 
+ .
+

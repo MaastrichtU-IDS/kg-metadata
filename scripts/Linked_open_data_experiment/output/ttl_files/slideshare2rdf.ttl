@@ -1,0 +1,49 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:slideshare2rdf a dcat:Dataset ;
+    dcat:keyword "api", "format-dc", "format-rdf", "format-sioc", "lod", "lodcloud-diagram-2011-09-19", "lodcloud.nolinks", "metadata", "presentations", "published-by-third-party", "slides", "usergeneratedcontent" ;
+    dct:title "Slideshare2RDF_Server" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://linkeddata.few.vu.nl/slideshare/mhelmke/presentation-zen> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='linkeddata.few.vu.nl', port=80): Max retries exceeded with url: /slideshare/mhelmke/presentation-zen (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fd5d0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dct:description """
+### Description
+
+An API for [Slideshare.net](http://slideshare.net/), it provides RDF metadata for the presentations uploaded to Slideshare. The RDF representation uses the SIOC ontology.
+
+
+"""@en ;
+
+    foaf:page <http://linkeddata.few.vu.nl/slideshare/> ;
+    void:triples "10000000"^^xsd:integer ;
+    void:uriSpace <http://linkeddata.few.vu.nl/slideshare/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:name "Paul_Groth"^^xsd:string ;
+     foaf:mbox <mailto:pgroth@few.vu.nl> ; 
+ .
+

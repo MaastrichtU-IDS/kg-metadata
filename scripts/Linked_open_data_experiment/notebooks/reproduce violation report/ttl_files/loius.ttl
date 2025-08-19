@@ -1,0 +1,95 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:loius a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-owl", "format-rdf", "government", "italy", "linkeddata", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "miur", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "published-by-producer", "statistic", "university", "university-students" ;
+    dct:title_main "Linking_Italian_University_Statistics_Project" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdfa" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://sw.unime.it/loius/index.py?area=iscritti&year=2001_2002&model=modello12&university=05806> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='sw.unime.it', port=80): Max retries exceeded with url: /loius/index.py?area=iscritti&year=2001_2002&model=modello12&university=05806 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686daccd0>, 'Connection to sw.unime.it timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource (RDF+XML)
+""" ;
+        dcat:accessURL_exampleResource <http://sw.unime.it/loius/dimension/faculty/143> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='sw.unime.it', port=80): Max retries exceeded with url: /loius/dimension/faculty/143 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dacf40>, 'Connection to sw.unime.it timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://sw.unime.it:8890/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='sw.unime.it', port=8890): Max retries exceeded with url: /sparql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dade70>, 'Connection to sw.unime.it timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "" ;
+        dct:description_distribution """
+RDFa starting point
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='sw.unime.it', port=80): Max retries exceeded with url: /loius (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dad780>, 'Connection to sw.unime.it timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://sw.unime.it/loius> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "" ;
+        dct:description_distribution """
+Download
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='sw.unime.it', port=80): Max retries exceeded with url: /loius/download.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686daef20>, 'Connection to sw.unime.it timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://sw.unime.it/loius/download.html> ;
+    ] ;
+    dct:description_main """
+The MIUR is the Italian Ministry of Education, University and Research and each year publishes a set of useful information about the University student data.
+The LOIUS project represents an attempt towards the adoption of semantic standards in publishing statistical data coming from MIUR Government.  
+"""@en ;
+
+    foaf:page <http://sw.unime.it/loius/info.html> ;
+    void:triples "586000000"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://sw.unime.it/loius/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames-semantic-web a void:Linkset ;
+    void:target :loius ;
+    void:triples "311"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Giovanni_Pirrotta"^^xsd:string ;
+     foaf:Cmbox <mailto:giovanni.pirrotta@gmail.com> ; 
+ .
+

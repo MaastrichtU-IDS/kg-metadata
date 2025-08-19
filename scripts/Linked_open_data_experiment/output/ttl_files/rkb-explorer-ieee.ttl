@@ -1,0 +1,192 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:rkb-explorer-ieee a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-rdf", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-vocab-mappings", "provenance-metadata", "publications", "published-by-third-party", "void-sparql-endpoint" ;
+    dct:title "IEEE_Papers_(RKBExplorer)" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL <http://ieee.rkbexplorer.com/id/person-21757c2767705194600b55ff6b0ef692-1e427d6bbb6d2bb2aa5434059d6c58f4> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='ieee.rkbexplorer.com', port=80): Max retries exceeded with url: /id/person-21757c2767705194600b55ff6b0ef692-1e427d6bbb6d2bb2aa5434059d6c58f4 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686aefeb0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://ieee.rkbexplorer.com/sparql/> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='ieee.rkbexplorer.com', port=80): Max retries exceeded with url: /sparql/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686aeec20>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/xml" ;
+        dct:description """
+XML Sitemap
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='ieee.rkbexplorer.com', port=80): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686aeebc0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://ieee.rkbexplorer.com/sitemap.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD file
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmVkt4EPPh78boEszRYcuiGyCndbJER5At82qYdSmDd2RS']" ;
+        dcat:accessURL <http://ieee.rkbexplorer.com/models/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-gzip" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='ieee.rkbexplorer.com', port=80): Max retries exceeded with url: /models/dump.tgz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686aef3a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title "Download_(tar_gzip_of_RDF)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://ieee.rkbexplorer.com/models/dump.tgz> ;
+    ] ;
+    dct:description """
+
+"""@en ;
+
+    foaf:page <http://ieee.rkbexplorer.com> ;
+    void:triples "91564"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://ieee.rkbexplorer.com/id/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:rkb-explorer-acm a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "2949"^^xsd:integer ;
+ .
+
+:rkb-explorer-citeseer a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "1182"^^xsd:integer ;
+ .
+
+:rkb-explorer-curriculum a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:rkb-explorer-dblp a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "5867"^^xsd:integer ;
+ .
+
+:rkb-explorer-dotac a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "50"^^xsd:integer ;
+ .
+
+:rkb-explorer-eprints a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "643"^^xsd:integer ;
+ .
+
+:rkb-explorer-ibm a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "29"^^xsd:integer ;
+ .
+
+:rkb-explorer-kisti a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "516"^^xsd:integer ;
+ .
+
+:rkb-explorer-laas a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "97"^^xsd:integer ;
+ .
+
+:rkb-explorer-newcastle a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "73"^^xsd:integer ;
+ .
+
+:rkb-explorer-nsf a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:rkb-explorer-oai a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "417"^^xsd:integer ;
+ .
+
+:rkb-explorer-pisa a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "18"^^xsd:integer ;
+ .
+
+:rkb-explorer-rae2001 a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:rkb-explorer-resex a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "6"^^xsd:integer ;
+ .
+
+:rkb-explorer-risks a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:rkb-explorer-roma a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "3"^^xsd:integer ;
+ .
+
+:rkb-explorer-southampton a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "7"^^xsd:integer ;
+ .
+
+:rkb-explorer-ulm a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:rkb-explorer-wiki a void:Linkset ;
+    void:target :rkb-explorer-ieee ;
+    void:triples "9"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Hugh_Glaser"^^xsd:string ;
+     foaf:mbox <mailto:hg@ecs.soton.ac.uk> ; 
+ .
+

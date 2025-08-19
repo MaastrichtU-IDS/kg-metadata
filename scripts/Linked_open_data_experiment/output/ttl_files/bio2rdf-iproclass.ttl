@@ -1,0 +1,334 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bio2rdf-iproclass a dcat:Dataset ;
+    dcat:keyword "bio2rdf", "deref-vocab", "format-dc", "format-rdf", "format-rdfs", "license-metadata", "lifesciences", "lod", "lodcloud-diagram-2014-08-30", "provenance-metadata", "published-by-third-party", "vocab-mappings" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "Bio2RDF::Iproclass" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download iproclass.1.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/iproclass/iproclass.1.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download iproclass.2.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/iproclass/iproclass.2.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download iproclass.3.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/iproclass/iproclass.3.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download iproclass.4.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/iproclass/iproclass.4.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download iproclass.5.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/iproclass/iproclass.5.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download iproclass.6.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/iproclass/iproclass.6.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download iproclass.7.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/iproclass/iproclass.7.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download iproclass.8.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/iproclass/iproclass.8.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download iproclass.9.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/iproclass/iproclass.9.nq.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-nquads" ;
+        dct:description """
+Download iproclass.10.nq.gz (n-quads, gzipped)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_(n-quads,_gzipped)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://download.bio2rdf.org/current/iproclass/iproclass.10.nq.gz> ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_resource_(RDF)" ;
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+Example resource (RDF)
+""" ;
+        dcat:accessURL <http://bio2rdf.org/iproclass:P69380> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://iproclass.bio2rdf.org/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='iproclass.bio2rdf.org', port=80): Max retries exceeded with url: /sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686daca30>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "" ;
+        dct:description """
+Download
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_page_(n-quads,_gz_compressed)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/current/iproclass/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "HTML" ;
+        dct:description """
+Dataset description (HTML)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Dataset_description_(HTML)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/current/iproclass/iproclass.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+Dataset description (RDF)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Dataset_description_(RDF)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/current/iproclass/bio2rdf-iproclass.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+OWL Schema
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "OWL_Schema" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/release/3/iproclass/iproclass.schema.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "mapping/owl" ;
+        dct:description """
+Mappings (SIO)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Mappings_(SIO)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://raw.github.com/bio2rdf/bio2rdf-mapping/master/2/iproclass/bio2rdf_iproclass_sio_mapping.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/sitemap" ;
+        dct:description """
+Semantic Web Sitemap
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Semantic_Web_Sitemap" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://download.bio2rdf.org/release/3/iproclass/sitemap.xml> ;
+    ] ;
+    dct:description """
+The iProClass database provides value-added information reports for UniProtKB and unique UniParc proteins, with links to over 90 biological databases, including databases for protein families, functions and pathways, interactions, structures and structural classifications, genes and genomes, ontologies, literature, and taxonomy.
+"""@en ;
+
+    foaf:page <http://iproclass.bio2rdf.org/> ;
+    void:triples "3306107223"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    void:uriSpace <http://bio2rdf.org/iproclass:> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bio2rdf-ensembl a void:Linkset ;
+    void:target :bio2rdf-iproclass ;
+    void:triples "1195975"^^xsd:integer ;
+ .
+
+:bio2rdf-genbank a void:Linkset ;
+    void:target :bio2rdf-iproclass ;
+    void:triples "68498274"^^xsd:integer ;
+ .
+
+:bio2rdf-gi a void:Linkset ;
+    void:target :bio2rdf-iproclass ;
+    void:triples "95540862"^^xsd:integer ;
+ .
+
+:bio2rdf-go a void:Linkset ;
+    void:target :bio2rdf-iproclass ;
+    void:triples "22789"^^xsd:integer ;
+ .
+
+:bio2rdf-ipi a void:Linkset ;
+    void:target :bio2rdf-iproclass ;
+    void:triples "257120"^^xsd:integer ;
+ .
+
+:bio2rdf-iproclass a void:Linkset ;
+    void:target :bio2rdf-iproclass ;
+    void:triples "74181457"^^xsd:integer ;
+ .
+
+:bio2rdf-ncbigene a void:Linkset ;
+    void:target :bio2rdf-iproclass ;
+    void:triples "13878455"^^xsd:integer ;
+ .
+
+:bio2rdf-omim a void:Linkset ;
+    void:target :bio2rdf-iproclass ;
+    void:triples "17916"^^xsd:integer ;
+ .
+
+:bio2rdf-pdb a void:Linkset ;
+    void:target :bio2rdf-iproclass ;
+    void:triples "247349"^^xsd:integer ;
+ .
+
+:bio2rdf-pfam a void:Linkset ;
+    void:target :bio2rdf-iproclass ;
+    void:triples "14839"^^xsd:integer ;
+ .
+
+:bio2rdf-pirsf a void:Linkset ;
+    void:target :bio2rdf-iproclass ;
+    void:triples "11766"^^xsd:integer ;
+ .
+
+:bio2rdf-pubmed a void:Linkset ;
+    void:target :bio2rdf-iproclass ;
+    void:triples "974573"^^xsd:integer ;
+ .
+
+:bio2rdf-refseq a void:Linkset ;
+    void:target :bio2rdf-iproclass ;
+    void:triples "20380489"^^xsd:integer ;
+ .
+
+:bio2rdf-taxonomy a void:Linkset ;
+    void:target :bio2rdf-iproclass ;
+    void:triples "484101"^^xsd:integer ;
+ .
+
+:bio2rdf-unigene a void:Linkset ;
+    void:target :bio2rdf-iproclass ;
+    void:triples "506685"^^xsd:integer ;
+ .
+
+:bio2rdf-uniparc a void:Linkset ;
+    void:target :bio2rdf-iproclass ;
+    void:triples "31486979"^^xsd:integer ;
+ .
+
+:bio2rdf-uniprot a void:Linkset ;
+    void:target :bio2rdf-iproclass ;
+    void:triples "56555610"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Bio2RDF"^^xsd:string ;
+     foaf:mbox <mailto:bio2rdf@googlegroups.com> ; 
+ .
+

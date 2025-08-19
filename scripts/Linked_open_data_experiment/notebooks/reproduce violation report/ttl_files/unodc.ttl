@@ -1,0 +1,89 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:unodc a dcat:Dataset ;
+    dcat:keyword "format-rdf", "latc", "legal", "lod", "lodcloud" ;
+    dct:title_main "UNODCStatistics_on_criminal_justice" ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://unodc.publicdata.eu/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "RDF/XML_Dump" ;
+        dcat:accessURL_distribution <http://unodc.publicdata.eu/model/export/?m=http%253A%252F%252Funodc.publicdata.eu%252F&f=rdfxml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Example_Resource_(RDF/XML)" ;
+        dcat:accessURL_distribution <http://unodc.publicdata.eu/resource/export/f/rdfxml?r=http%253A%252F%252Funodc.publicdata.eu%252Fr%252Fobservation%252Fdata%252Fcts12_criminal_justice_resourcesCts12%252Btotal%252Bpolice%252BpersonnelCountKenya2009> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "HTML" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (No connection adapters were found for 'ihttp://unodc.publicdata.eu/r/observation/data/cts12_criminal_justice_resourcesCts12+total+police+personnelCountKenya2009')
+""" ;
+        dct:title_distribution "Example_Resource_(HTML)" ;
+    ] ;
+    dct:description_main """
+The United Nations office on Drugs and Crime (UNODC) provides statistical data on criminal justice on a regular basis. The data is provided as Excel sheets, which can be downloaded from the website.
+If you want to browse the data, please use the links in the "navigation box" on the left side. Furthermore, it is possible to create your own SPARQL queries for obtaining lists of combined information.
+This dataset (http://unodc.publicdata.eu/) was triplified and published by the research group AKSW (Agile Knowledge Engineering and Semantic Web). For further information about AKSW please visit our website.
+"""@en ;
+
+    foaf:page <http://unodc.publicdata.eu/> ;
+    void:triples "230000"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://unodc.publicdata.eu/r/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :unodc ;
+    void:triples "111"^^xsd:integer ;
+ .
+
+:eurostat-linked-data a void:Linkset ;
+    void:target :unodc ;
+    void:triples "168"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Philipp_Frischmuth"^^xsd:string ;
+     foaf:Cmbox <mailto:frischmuth@inform@ik.uni-leipzig.de> ; 
+ .
+

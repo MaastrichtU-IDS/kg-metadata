@@ -1,0 +1,84 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:eu-parliament-media a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "eu", "eu-institution", "eu-parliament", "format-foaf", "format-nfo", "format-places", "government", "latc", "lod", "media", "no-license-metadata", "no-proprietary-vocab", "politics", "provenance-metadata", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title_main "EU_Parliament_Media_Library" ;
+    void:exampleResource [
+        dct:title_exampleResource "EP_Subcommittee_on_Human_Rights:_Exchange_of_views_with_Jerzy_BUZEK,_EP_President" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Data about a video from the EU Parliament audio-visual library.
+""" ;
+        dcat:accessURL_exampleResource <http://eupmedia.publicdata.eu/data/video/eu_parliament/9cbc7cbf-4a97-41b9-91a4-14baad45bb94.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://api.talis.com/stores/eupmedia/services/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='api.talis.com', port=80): Max retries exceeded with url: /stores/eupmedia/services/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684301d20>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "VoID_Description_of_the_dataset" ;
+        dcat:accessURL_distribution <http://eupmedia.publicdata.eu/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Turtle_Data_Dump" ;
+        dcat:accessURL_distribution <http://eupmedia.publicdata.eu/dump/eup_media_assets.ttl> ;
+    ] ;
+    dct:description_main """
+This dataset contains information about multi-media content published by the European Parliament at http://audiovisual.europarl.europa.eu/. Media assets of type video, audio and image are contained. All assests are annotated with primary metadata (e.g., length, resolution, size, etc.), as well as topic metadata. Where topics are people, those are represented as complex resources in their own right, with names, roles in organisations, etc. Organisations are located in countries according to the Kasabi country dataset.
+
+"""@en ;
+
+    foaf:page <http://eupmedia.publicdata.eu/> ;
+    void:triples "532957"^^xsd:integer ;
+    void:uriSpace <http://eupmedia.publicdata.eu/data/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:eu-who-is-who a void:Linkset ;
+    void:target :eu-parliament-media ;
+    void:triples "1000"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Knud_Möller"^^xsd:string ;
+     foaf:Cmbox <mailto:knud.moeller> ; 
+ .
+

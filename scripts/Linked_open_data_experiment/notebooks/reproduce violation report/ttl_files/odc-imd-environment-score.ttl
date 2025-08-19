@@ -1,0 +1,73 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:odc-imd-environment-score a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "government", "lod", "lodcloud.nolinks", "lodcloud.unconnected", "published-by-third-party" ;
+    dct:license <http://reference.data.gov.uk/id/open-government-licence> ;
+    dct:title_main "Index_of_Multiple_Deprivation,_Living_Environment_Deprivation_Domain,_Scores_2010" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://opendatacommunities.org/id/IMD/2010/IMD-environment-score/LSOA/E01000001> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+Datasest Description
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://opendatacommunities.org/datasets/imd-environment-score-2010.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+Download
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://opendatacommunities-downloads.s3.amazonaws.com/imd-2010-environment-score.ttl.zip> ;
+    ] ;
+    dct:description_main """
+This dataset contains the scores for the Living Environment Deprivation Domain of the Index of Multiple Deprivation, 2010. This indicator measures the quality of individuals’ immediate surroundings both within and outside the home. A high number indicates a high level of deprivation. 
+
+
+Example:
+http://opendatacommunities.org/id/IMD/2010/IMD-environment-score/LSOA/E01000001
+
+Download:
+http://opendatacommunities-downloads.s3.amazonaws.com/imd-2010-environment-score.ttl.zip
+"""@en ;
+
+    foaf:page <http://opendatacommunities.org/datasets/imd-environment-score-2010> ;
+    void:triples "194892"^^xsd:integer ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "http://reference.data.gov.uk/id/department/dclg"^^xsd:string ;
+ .
+

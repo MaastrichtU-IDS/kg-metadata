@@ -1,0 +1,92 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:yso a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+
+""" ;
+        dcat:downloadURL <http://finto.fi/rest/v1/yso/data?format=text%2Fturtle> ;
+        adms:status """
+OK
+""" ;
+        dct:title "Turtle_dump" ;
+        dct:mirror "[]" ;
+        dct:identifier "7afa6f5c-a4e5-7e43-d51a-79c2a2f128a3" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+
+""" ;
+        dcat:downloadURL <http://finto.fi/rest/v1/yso/data?format=application%2Frdf%252Bxml> ;
+        adms:status """
+OK
+""" ;
+        dct:title "RDF/XML_dump" ;
+        dct:mirror "[]" ;
+        dct:identifier "c48dc6b8-f40b-5364-5f2e-1e09c53d2477" ;
+    ] ;
+    foaf:page <http://finto.fi/yso/> ;
+    dcat:keyword "library", "publications", "thesaurus", "multilingual", "ontology", "finland", "format-skos", "format-dc", "lld", "published-by-producer" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "YSOGeneral_Finnish_Ontology" ;
+    dct:description """
+General Finnish Ontology YSO is a trilingual ontology consisting mainly of general concepts. YSO has been founded on the basis of concepts in Finnish cultural sphere. As an indexing tool it is best applicable when indexed material is interdiscliplinary and its themes vary to a great extent.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <http://www.yso.fi/onto/yso/> ;
+    void:triples "570000"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:exampleResource [
+        dcat:mediaType "application/rdf+xml;_charset=utf-8" ;
+        dct:description """
+The concept for "linked open data"
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "linked_open_data" ;
+        dcat:accessURL <http://www.yso.fi/onto/yso/p26001> ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:ysa a void:Linkset ;
+    void:target :yso ;
+    void:triples "29400"^^xsd:integer ;
+ .
+
+:lcsh a void:Linkset ;
+    void:target :yso ;
+    void:triples "14000"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:osma.suominen@helsinki.fi> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Finto_service"^^xsd:string ;
+     foaf:mbox <mailto:finto-posti@helsinki.fi> ; 
+ .
+

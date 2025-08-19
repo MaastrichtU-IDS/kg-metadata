@@ -1,0 +1,55 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:olac a dcat:Dataset ;
+    dcat:keyword "language_description", "linguistics" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "OLAC_Metadata" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-gzip" ;
+        dct:description_distribution """
+Compressed RDF XML of the compete OLAC catalog of language resources, containing the archive descriptions of the approximately 60 participating OLAC archives and the item descriptions of the approximately 250,000 language resources that they hold. The compressed dataset is regenerated nightly. See [presentation](http://www-01.sil.org/~simonsg/presentation/OLAC%20Metadata%20as%20LD.pdf) about the project.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "OLAC_metadata_triples" ;
+        dcat:accessURL_distribution <http://www.language-archives.org/static/olac-datahub.rdf.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/xml" ;
+        dct:description_distribution """
+Sample triples from a snapshot taken on May 15, 2016.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "OLAC_metadata_sample_triples" ;
+        dcat:accessURL_distribution <http://www.language-archives.org/static/sample-20160515.rdf.xml> ;
+    ] ;
+    dct:description_main """
+Metadata of linguistic resources participating in Open Language Archives Community.
+"""@en ;
+
+    foaf:page <http://www.language-archives.org/archive_records.php> ;
+    void:triples "5143342"^^xsd:integer ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:lexvo a void:Linkset ;
+    void:target :olac ;
+    void:triples "344260"^^xsd:integer ;
+ .
+

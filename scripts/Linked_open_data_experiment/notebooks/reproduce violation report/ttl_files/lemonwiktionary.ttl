@@ -1,0 +1,121 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:lemonwiktionary a dcat:Dataset ;
+    dcat:keyword "crossdomain", "lemon", "linguistics", "llod", "lod", "wiktionary" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "LemonWiktionary" ;
+    void:exampleResource [
+        dct:title_exampleResource "English_Lexicon_URI" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://lemon-model.net/lexica/wiktionary_en/en/Lexicon> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "French_Lexicon_URI" ;
+        dcat:accessURL_distribution <http://lemon-model.net/lexica/wiktionary_en/fr/Lexicon> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Dutch_Lexicon_URI" ;
+        dcat:accessURL_distribution <http://lemon-model.net/lexica/wiktionary_en/nl/Lexicon> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Spanish_Lexicon_URI" ;
+        dcat:accessURL_distribution <http://lemon-model.net/lexica/wiktionary_en/es/Lexicon> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "German_Lexicon_URI" ;
+        dcat:accessURL_distribution <http://lemon-model.net/lexica/wiktionary_en/de/Lexicon> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Japanese_Lexicon_URI" ;
+        dcat:accessURL_distribution <http://lemon-model.net/lexica/wiktionary_en/ja/Lexicon> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-gzip" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Zipped_Dump" ;
+        dcat:accessURL_distribution <http://lemon-model.net/lexica/wiktionary_en/en/en.nt.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Landing_Page" ;
+        dcat:accessURL_distribution <http://lemon-model.net/lexica/wiktionary_en/> ;
+    ] ;
+    dct:description_main """
+[Lemon](http://www.lemon-model.net) data extracted from Wiktionary
+"""@en ;
+
+    void:triples "5000000"^^xsd:integer ;
+    dcat:theme  <linguistics> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:wiktionary-dbpedia-org a void:Linkset ;
+    void:target :lemonwiktionary ;
+    void:triples "500000"^^xsd:integer ;
+ .
+

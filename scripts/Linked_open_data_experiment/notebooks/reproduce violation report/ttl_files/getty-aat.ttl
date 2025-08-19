@@ -1,0 +1,175 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:getty-aat a dcat:Dataset ;
+    dcat:keyword "Thesauri", "architecture", "art", "conservation", "cultural_heritage", "format-skos", "format-skosxl", "lod", "skos", "topic.schemata" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-by> ;
+    dct:title_main "Art_&_Architecture_Thesaurus" ;
+    void:exampleResource [
+        dct:title_exampleResource "Objects_Facet" ;
+        dcat:mediaType_exampleResource "application/rdf+xml;charset=UTF-8" ;
+        dct:description_exampleResource """
+Note: The Objects facet encompasses discrete tangible or visual things that are for the most part produced by human endeavor or otherwise fabricated or given form by human activity. Included are built works, images, written documents, and other works, having utilitarian or purely aesthetic purpose. Natural landscapes are included in this facet too.
+""" ;
+        dcat:accessURL_exampleResource <http://vocab.getty.edu/aat/300264092> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Furnishings_and_Equipment_(Hierarchy_Name)" ;
+        dcat:mediaType_exampleResource "application/rdf+xml;charset=UTF-8" ;
+        dct:description_exampleResource """
+Note: The Furnishings and Equipment hierarchy contains terms for objects that are primarily movable that provide comfort, convenience, or protection in dwellings, places or business, or other public or private spaces. They may be useful or ornamental and may be used in indoor or outdoor spaces. Regarding other Hierarchies: Terms for objects with the primary purpose of storage receptacles or other forms of container (e.g., "candle boxes," "footlockers") are in the Containers hierarchy.
+""" ;
+        dcat:accessURL_exampleResource <http://vocab.getty.edu/aat/300264551> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "<containers_by_function_or_context>" ;
+        dcat:mediaType_exampleResource "application/rdf+xml;charset=UTF-8" ;
+        dct:description_exampleResource """
+ 	<containers by function or context> (containers (receptacles), Containers (hierarchy name), Furnishings and Equipment (hierarchy name))
+""" ;
+        dcat:accessURL_exampleResource <http://vocab.getty.edu/aat/300197200> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Rhyta" ;
+        dcat:mediaType_exampleResource "application/rdf+xml;charset=UTF-8" ;
+        dct:description_exampleResource """
+Note: Vessels from Ancient Greece, eastern Europe, or the Middle East that were typically made as a closed form with two openings, one at the top for filling and one at the base so that liquid could stream out. They are often in the shape of a horn or an animal's head, and were typically used as a drinking cup or for pouring wine into another vessel. Drinking was done by holding the rhyton above the drinker's head and catching the stream of liquid in the mouth.
+""" ;
+        dcat:accessURL_exampleResource <http://vocab.getty.edu/aat/300198841> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://vocab.getty.edu/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (500)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;charset=UTF-8" ;
+        dct:description_distribution """
+This is the Linked Open Data publication of the Getty Vocabularies. The data is described semantically following linked data principles using the Resource Description Framework (RDF) format. 
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Homepage" ;
+        dcat:accessURL_distribution <http://vocab.getty.edu> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Getty_Vocabulary_Program_ontology" ;
+        dcat:accessURL_distribution <http://vocab.getty.edu/ontology> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Semantic_Representation_Documentation" ;
+        dcat:accessURL_distribution <http://vocab.getty.edu/doc> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+NTriples zip, file size is 133.5 Mb
+""" ;
+        adms:status_distribution """
+FAIL (500)
+""" ;
+        dct:title_distribution "Total_AAT_statements" ;
+        dcat:accessURL_distribution <http://vocab.getty.edu/dataset/aat/full.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+NTriples zip, file size is 71 Mb
+""" ;
+        adms:status_distribution """
+FAIL (500)
+""" ;
+        dct:title_distribution "Explicit_AAT_statements" ;
+        dcat:accessURL_distribution <http://vocab.getty.edu/dataset/aat/explicit.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle;charset=UTF-8" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL ('content-type')
+""" ;
+        dct:title_distribution "VOID_Description" ;
+        dcat:accessURL_distribution <http://vocab.getty.edu/.well-known/void> ;
+    ] ;
+    dct:description_main """
+The Art & Architecture Thesaurus® (AAT) is a structured, multilingual vocabulary including terms, descriptions, and other information for generic concepts related to art, architecture, and other cultural heritage, and conservation. For decades now, the AAT as been used as a primary reference by museums, art libraries, archives, visual resource catalogers, conservation specialists, archaeological projects, bibliographic projects, researchers, and information specialists who are dealing with the needs of these users. Like all of the Getty Vocabularies, the AAT is compliant with international standards and grows through contribution. 
+
+** Openness **
+AAT data is released under Open Data Commons Attribution License. Adherence to ODC Attribution instructions for the correct assertion of attribution is encouraged. The preferred form of attribution for AAT is:
+
+"*This [title or report or article or dataset] contains information from the Art & Architecture Thesaurus® (AAT) which is made available under the ODC Attribution License.*"
+
+Special Case: In circumstances where providing the full attribution statement above is not technically feasible, the use of canonical AAT URIs is adequate to satisfy Section 4.3 of the ODC Attribution License.
+"""@en ;
+
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    foaf:page <https://altawil.my.opendatasoft.com> ;
+    dcat:theme  <linguistics> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:lcsh a void:Linkset ;
+    void:target :getty-aat ;
+    void:triples "335"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:100357694@alumnos.uc3m.es> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "The_Getty_Research_Institute"^^xsd:string ;
+     foaf:Cmbox <mailto:abctawil@gmail.com> ; 
+ .
+

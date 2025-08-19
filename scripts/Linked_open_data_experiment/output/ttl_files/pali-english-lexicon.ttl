@@ -1,0 +1,110 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:pali-english-lexicon a dcat:Dataset ;
+    dcat:keyword "culturalheritage", "deref-vocab", "format-owl", "format-rdf", "format-rdfs", "geographic", "license-metadata", "llod", "lod", "lodcloud.nolinks", "lodcloud.unconnected", "provenance-metadata", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "Pali_English_Lexicon" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Example RDF
+""" ;
+        dcat:accessURL <http://data.kasabi.com/dataset/pali-english-lexicon/pts-dictionary/e0.rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://api.kasabi.com/dataset/pali-english-lexicon/apis/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Void Description
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "VOID" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.kasabi.com/dataset/pali-english-lexicon> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+Language OWL Schema
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='rdf.ontosema.org', port=80): Max retries exceeded with url: /lang/language.owl (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686bde440>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://rdf.ontosema.org/lang/language.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+OWL
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmUAphtEqEuH4MudQ9pXxormvin7Th9tbko61SwxTq47XW']" ;
+        dcat:accessURL <http://www.w3.org/2002/07/owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+RDF Syntax NS
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmbCDqDXc9G1akWmszjTirVeYmfhJrxCno4TFmTiDwKk8z']" ;
+        dcat:accessURL <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+RDFS
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmSAukqNUbLECMEnd9EjrJGchmZHjypaAqpnxwoKfqJuAc']" ;
+        dcat:accessURL <http://www.w3.org/2000/01/rdf-schema> ;
+    ] ;
+    dct:description """
+A lexicon from Pali to English.
+"""@en ;
+
+    foaf:page <http://kasabi.com/dataset/pali-english-lexicon> ;
+    void:triples "202731"^^xsd:integer ;
+    void:uriSpace <http://data.kasabi.com/dataset/pali-english-lexicon> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 

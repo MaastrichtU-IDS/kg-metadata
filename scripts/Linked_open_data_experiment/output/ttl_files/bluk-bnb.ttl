@@ -1,0 +1,260 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bluk-bnb a dcat:Dataset ;
+    dcat:keyword "bibliographic", "british-library", "cc0", "crossdomain", "format-rdf", "format-xhtml", "format-xml", "library", "lld", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-proprietary-vocab", "publications", "published-by-producer" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "British_National_Bibliography_(BNB)Linked_Open_Data" ;
+    void:exampleResource [
+        dct:title "Example_resourceRDF" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Example resource - RDF
+""" ;
+        dcat:accessURL <http://bnb.data.bl.uk/doc/resource/006893251.rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_resourceTurtle" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Example resource - Turtle
+""" ;
+        dcat:accessURL <http://bnb.data.bl.uk/doc/resource/006893251.ttl> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_resourceJSON" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Example resource - JSON
+""" ;
+        dcat:accessURL <http://bnb.data.bl.uk/doc/resource/006893251.json> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_resourcehtml" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Example resource - html
+""" ;
+        dcat:accessURL <http://bnb.data.bl.uk/doc/resource/006893251.html> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint" ;
+        dcat:endpointDescription """
+SPARQL Endpoint
+""" ;
+        dcat:accessURL <http://bnb.data.bl.uk/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Search Service
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Search_Service" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://bnb.data.bl.uk/search> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Example resource RDF - ttl/json/html - default html
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Example_resource_RDFttl/json/htmldefault_html" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://bnb.data.bl.uk/doc/resource/006893251> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "XML" ;
+        dct:description """
+British Library Terms RDF Schema
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "British_Library_Terms_RDF_Schema" ;
+        dct:mirror "['ipfs:QmPaY4rtSiVNxaWhre3jGJegsJkH919HDNsH8jCRroXAwS']" ;
+        dcat:accessURL <http://www.bl.uk/schemas/bibliographic/blterms> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Current Information on releases and documentation
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Current_Information_on_releases_and_documentation" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.bl.uk/bibliographic/datafree.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/pdf" ;
+        dct:description """
+This is a diagram detailing the data model developed for books, including books published over time.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Data_model_(Book)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.bl.uk/bibliographic/pdfs/bldatamodelbook.pdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/pdf" ;
+        dct:description """
+This is the diagram detailing the data model developed for serials, i.e. journals, newpapers, etc.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Data_model_(Serial)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.bl.uk/bibliographic/pdfs/bldatamodelserial.pdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+This SPARQL editor enables the query of the BNB using SPARQL.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "SPARQL_Editor" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://bnb.data.bl.uk/flint> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+This page provides access to bulk downloads of the datasets (Books, Serials)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Bulk_downloads" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.bl.uk/bibliographic/download.html#lodbnb> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/pdf" ;
+        dct:description """
+This is a diagram detailing the data model developed for forthcoming books
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Data_model_(Forthcoming_book)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.bl.uk/bibliographic/pdfs/bldatamodelcip.pdf> ;
+    ] ;
+    dct:description """
+British National Bibliography (BNB) published as Linked Data by the British Library, linked to external sources including: [VIAF](http://viaf.org/), [ISNI](http://isni.org), [LCSH](http://id.loc.gov/authorities/), [Lexvo](http://www.lexvo.org/), [GeoNames](http://www.geonames.org/ontology/documentation.html), MARC [country](http://id.loc.gov/vocabulary/countries.html), and [language](http://id.loc.gov/vocabulary/languages.html), [Dewey.info](http://dewey.info/).  Published to [this data model for books](https://www.bl.uk/bibliographic/pdfs/bldatamodelbook.pdf); [this data model for serials](https://www.bl.uk/bibliographic/pdfs/bldatamodelserial.pdf) and this data model for forthcoming books (http://www.bl.uk/bibliographic/pdfs/bldatamodelcip.pdf).
+
+Current release of approximately 3.9 million descriptions (146,901,135 triples) of books (including monographs published over time); forthcoming books and serials published in the UK over the last 60 years.The dataset, covering UK publications since 1950, is updated monthly.
+"""@en ;
+
+    foaf:page <http://bnb.data.bl.uk> ;
+    void:triples "146901135"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://bnb.data.bl.uk/id/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:ddc_(books) a void:Linkset ;
+    void:target :bluk-bnb ;
+    void:triples "222110"^^xsd:integer ;
+ .
+
+:ddc_(forthcoming_books) a void:Linkset ;
+    void:target :bluk-bnb ;
+    void:triples "100687"^^xsd:integer ;
+ .
+
+:ddc_(serials) a void:Linkset ;
+    void:target :bluk-bnb ;
+    void:triples "29263"^^xsd:integer ;
+ .
+
+:isni_(books) a void:Linkset ;
+    void:target :bluk-bnb ;
+    void:triples "775485"^^xsd:integer ;
+ .
+
+:isni_(forthcoming_books) a void:Linkset ;
+    void:target :bluk-bnb ;
+    void:triples "273293"^^xsd:integer ;
+ .
+
+:isni_(serials) a void:Linkset ;
+    void:target :bluk-bnb ;
+    void:triples "7592"^^xsd:integer ;
+ .
+
+:lcsh_(books) a void:Linkset ;
+    void:target :bluk-bnb ;
+    void:triples "142026"^^xsd:integer ;
+ .
+
+:lcsh_(forthcoming_books) a void:Linkset ;
+    void:target :bluk-bnb ;
+    void:triples "83189"^^xsd:integer ;
+ .
+
+:lcsh_(serials) a void:Linkset ;
+    void:target :bluk-bnb ;
+    void:triples "18642"^^xsd:integer ;
+ .
+
+:viaf_(books) a void:Linkset ;
+    void:target :bluk-bnb ;
+    void:triples "1127476"^^xsd:integer ;
+ .
+
+:viaf_(forthcoming_books) a void:Linkset ;
+    void:target :bluk-bnb ;
+    void:triples "359437"^^xsd:integer ;
+ .
+
+:viaf_(serials) a void:Linkset ;
+    void:target :bluk-bnb ;
+    void:triples "22286"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "The_British_Library_Metadata_Services"^^xsd:string ;
+     foaf:mbox <mailto:metad@a@bl.uk> ; 
+ .
+

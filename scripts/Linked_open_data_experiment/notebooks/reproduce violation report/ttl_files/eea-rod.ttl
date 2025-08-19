@@ -1,0 +1,114 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:eea-rod a dcat:Dataset ;
+    dcat:keyword "environment", "format-rdf", "government", "license-metadata", "lod", "published-by-producer", "void-sparql-endpoint" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "EEA_Reporting_Obligations_Database" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "application/rdf+xml;charset=UTF-8" ;
+        dct:description_exampleResource """
+Example obligation
+""" ;
+        dcat:accessURL_exampleResource <http://rod.eionet.europa.eu/obligations/523> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://cr.eionet.europa.eu/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (400)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+voiD description
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://rod.eionet.europa.eu/void.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/rdf+xml;charset=UTF-8" ;
+        dct:description_distribution """
+Download obligations
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://rod.eionet.europa.eu/obligations.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Download legal instruments
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://rod.eionet.europa.eu/instruments.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Download localities
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://rod.eionet.europa.eu/spatial> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Download themes (categories)
+""" ;
+        adms:status_distribution """
+FAIL (No connection adapters were found for 'ttp://rod.eionet.europa.eu/issues')
+""" ;
+        dct:title_distribution "" ;
+    ] ;
+    dct:description_main """
+ROD is the EEA's reporting obligations database. It contains records describing environmental reporting obligations that countries have towards international organisations.
+
+ROD is part of Reportnet. Reportnet is group of web applications and processes developed by the EEA to support international environmental reporting. 
+
+"""@en ;
+
+    foaf:page <http://rod.eionet.europa.eu/> ;
+    void:triples "28000"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://rod.eionet.europa.eu> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Søren_Roug"^^xsd:string ;
+     foaf:Cmbox <mailto:soren.roug@eea.europa.eu> ; 
+ .
+

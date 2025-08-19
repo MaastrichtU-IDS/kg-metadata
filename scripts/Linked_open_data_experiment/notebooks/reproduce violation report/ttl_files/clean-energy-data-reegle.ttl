@@ -1,0 +1,193 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:clean-energy-data-reegle a dcat:Dataset ;
+    dcat:keyword "climate", "deref-vocab", "energy", "format-skos", "government", "license-metadata", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "provenance-metadata", "published-by-producer", "renewable-energy", "save-energy", "thesaurus", "void-sparql-endpoint" ;
+    dct:license <http://reference.data.gov.uk/id/open-government-licence> ;
+    dct:title_main "Linked_Clean_Energy_Data_(reegle.info)" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/x-ntriples" ;
+        dct:description_distribution """
+Download (full dump)
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:downloadURL_distribution <http://www.reegle.info/downloads/latest_reegle_dump.nt> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+Link to an example data item within the dataset (Actors)
+""" ;
+        dcat:accessURL_exampleResource <http://www.reegle.info/actors/2354.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+Link to an example data item within the dataset (Policy Overview)
+""" ;
+        dcat:accessURL_exampleResource <http://www.reegle.info/profiles/40.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+Link to an example data item within the dataset (Project Outputs)
+""" ;
+        dcat:accessURL_exampleResource <http://reegle.info/projectoutputs/28.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+Link to an example data item within the dataset (thesaurus)
+""" ;
+        dcat:accessURL_exampleResource <http://reegle.info/glossary/39.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://www.reegle.info/actors/2354.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://sparql.reegle.info/> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Description of Stakeholder Datasets
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://data.reegle.info/developers/actor> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Description of Policy and Regulatory Country Overviews
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://data.reegle.info/developers/profile> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Description of Project Output Datasets
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://data.reegle.info/developers/projectoutput> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Description of Clean Energy and Climate Change Thesaurus Datasets
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://data.reegle.info/thesaurus/concept> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+RDF Schema
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://www.reegle.info/schema.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Sitemap
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://www.reegle.info/sitemap.xml> ;
+    ] ;
+    dct:description_main """
+Comprehensive set of linked clean energy data including: 
+
+*  policy and regulatory country profiles, 
+*  key stakeholders (organisation profiles),
+*  project outcome documents and a
+*  thesaurus (SKOS format) on renewables, energy efficiency and climate change for public re-use. 
+"""@en ;
+
+    foaf:page <http://data.reegle.info/> ;
+    void:triples "334049"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://reegle.info> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :clean-energy-data-reegle ;
+    void:triples "330"^^xsd:integer ;
+ .
+
+:open-energy-info-wiki a void:Linkset ;
+    void:target :clean-energy-data-reegle ;
+    void:triples "227"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Florian_Bauer"^^xsd:string ;
+     foaf:Cmbox <mailto:florian.bauer@reeep.org> ; 
+ .
+

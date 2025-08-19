@@ -1,0 +1,140 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:education-data-gov-uk a dcat:Dataset ;
+    dcat:keyword "broken_link", "deref-vocab", "edubase", "education", "format-dc", "format-foaf", "format-geo", "format-vcard", "government", "linked-data-api", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "nurseries", "published-by-producer", "schools", "ukgov", "university" ;
+    dct:title "education.data.gov.uk" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Example school (RDF/XML)
+""" ;
+        dcat:accessURL <http://education.data.gov.uk/id/school/520965> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://services.data.gov.uk/education/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='services.data.gov.uk', port=80): Max retries exceeded with url: /education/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684300cd0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "api/search" ;
+        dct:description """
+Search API
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='services.data.gov.uk', port=80): Max retries exceeded with url: /education/search (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843002e0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://services.data.gov.uk/education/search> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download Edubase (RDF/XML)
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='source.data.gov.uk', port=80): Max retries exceeded with url: /data/education/edubase/2009-08-14/edubase-rdf-r2rc3.tgz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684303fd0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://source.data.gov.uk/data/education/edubase/2009-08-14/edubase-rdf-r2rc3.tgz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download school statistics (RDF/XML)
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='source.data.gov.uk', port=80): Max retries exceeded with url: /data/education/pupil-teacher/2009-09-30/education-statistics.zip (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843029e0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://source.data.gov.uk/data/education/pupil-teacher/2009-09-30/education-statistics.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+voiD description (partial)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://education.data.gov.uk/doc/institution> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Linked Data API access to schools
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://education.data.gov.uk/doc/school> ;
+    ] ;
+    dct:description """
+Linked data about schools, nurseries and universities within the UK:
+
+* [Namespace for research institutionhttp://education.data.gov.uk/doc/institutions](http://education.data.gov.uk/doc/institution); populated with institutions that recently received BIS research funding
+* Edubase data on schools, nurseries
+* 2009 school statistics on local authority level: number of teachers; vacancies; pupil-teacher ratios (SCOVO)
+
+Part of package:data-gov-uk.
+
+### REST API
+
+The Edubase data is also available [through a REST API](http://education.data.gov.uk/doc/school). See also [Jeni Tennison's blog post](http://data.gov.uk/blog/guest-post-developers-guide-linked-data-apis-jeni-tennison).
+"""@en ;
+
+    foaf:page <http://education.data.gov.uk/> ;
+    void:triples "6619847"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://education.data.gov.uk/doc/institution> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :education-data-gov-uk ;
+    void:triples "1697"^^xsd:integer ;
+ .
+
+:research-data-gov-uk a void:Linkset ;
+    void:target :education-data-gov-uk ;
+    void:triples "379"^^xsd:integer ;
+ .
+
+:statistics-data-gov-uk a void:Linkset ;
+    void:target :education-data-gov-uk ;
+    void:triples "400000"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "UK_Government"^^xsd:string ;
+ .
+

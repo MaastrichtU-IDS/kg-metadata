@@ -1,0 +1,304 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bioportal-ctcae a dcat:Dataset ;
+    dcat:keyword "biomedicine", "bioportal", "format-owl", "format-rdf", "lod", "ontology", "published-by-third-party" ;
+    dct:title "Common_Terminology_Criteria_for_Adverse_Events" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+REST API Wiki Documentation
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+SPARQL endpoint
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://sparql.bioontology.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+Download link, BioPortal API KEY is required
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://rest.bioontology.org/bioportal/ontologies/download/46081?apikey=BP_API_KEY> ;
+    ] ;
+    dct:description """
+A coding system for reporting adverse events that occur in the course of cancer therapy.  It was derived from the Common Toxicity Criteria (CTC) v2.0 and is maintained by the Cancer Therapy Evaluation Program (CTEP) at the National Cancer Institution (NCI).
+"""@en ;
+
+    foaf:page <http://bioportal.bioontology.org/ontologies/1415> ;
+    void:triples "50880"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-acgt a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:bioportal-air a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+:bioportal-bdo a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "191"^^xsd:integer ;
+ .
+
+:bioportal-bho a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-canco a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "89"^^xsd:integer ;
+ .
+
+:bioportal-csp a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "175"^^xsd:integer ;
+ .
+
+:bioportal-cst a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "306"^^xsd:integer ;
+ .
+
+:bioportal-ctx a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-doid a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "128"^^xsd:integer ;
+ .
+
+:bioportal-efo a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "62"^^xsd:integer ;
+ .
+
+:bioportal-galen a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "176"^^xsd:integer ;
+ .
+
+:bioportal-hp_x1 a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "212"^^xsd:integer ;
+ .
+
+:bioportal-icd10 a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "62"^^xsd:integer ;
+ .
+
+:bioportal-icd10cm a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "114"^^xsd:integer ;
+ .
+
+:bioportal-icd9cm a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "95"^^xsd:integer ;
+ .
+
+:bioportal-icnp a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "50"^^xsd:integer ;
+ .
+
+:bioportal-icpc a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "28"^^xsd:integer ;
+ .
+
+:bioportal-icpc2p a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "255"^^xsd:integer ;
+ .
+
+:bioportal-idomal a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-lnc a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "95"^^xsd:integer ;
+ .
+
+:bioportal-mccl_x1 a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "190"^^xsd:integer ;
+ .
+
+:bioportal-mdr a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "801"^^xsd:integer ;
+ .
+
+:bioportal-medlineplus a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "117"^^xsd:integer ;
+ .
+
+:bioportal-mesh-owl a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "606"^^xsd:integer ;
+ .
+
+:bioportal-mp a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "134"^^xsd:integer ;
+ .
+
+:bioportal-mpath a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+:bioportal-msh a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "296"^^xsd:integer ;
+ .
+
+:bioportal-natpro a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "113"^^xsd:integer ;
+ .
+
+:bioportal-nbo a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-ncit a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "1391"^^xsd:integer ;
+ .
+
+:bioportal-ndfrt a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "237"^^xsd:integer ;
+ .
+
+:bioportal-nif a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "130"^^xsd:integer ;
+ .
+
+:bioportal-nif_dysfunction a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:bioportal-omim a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "233"^^xsd:integer ;
+ .
+
+:bioportal-ontoorpha a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "58"^^xsd:integer ;
+ .
+
+:bioportal-pdq a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "28"^^xsd:integer ;
+ .
+
+:bioportal-pedterm a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "22"^^xsd:integer ;
+ .
+
+:bioportal-pma a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:bioportal-rcd a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "297"^^xsd:integer ;
+ .
+
+:bioportal-rid a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "70"^^xsd:integer ;
+ .
+
+:bioportal-shr a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "18"^^xsd:integer ;
+ .
+
+:bioportal-snomedct a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "953"^^xsd:integer ;
+ .
+
+:bioportal-sopharm a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "159"^^xsd:integer ;
+ .
+
+:bioportal-sso a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "54"^^xsd:integer ;
+ .
+
+:bioportal-tm-signs-and-sympts a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "36"^^xsd:integer ;
+ .
+
+:bioportal-vo a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-who a void:Linkset ;
+    void:target :bioportal-ctcae ;
+    void:triples "225"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "CTCAE_Help"^^xsd:string ;
+ .
+

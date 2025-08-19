@@ -1,0 +1,133 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:museosespania-gnoss a dcat:Dataset ;
+    dcat:keyword "bellas_artes", "ciencias_naturales", "country-spain", "country.es", "dc", "escultura", "foaf", "format-dc", "format-dcam", "format-foaf", "format-rdfg", "format-sioc", "format-skos", "format-wot", "language-spa", "license-metadata", "lod", "museos", "no-proprietary-vocab", "no-vocab-mappings", "obras_de_arte", "pinacoteca", "pintura", "provenance-metadata", "published-by-third-party", "schemata", "sioc", "skos", "socialweb", "sp", "spain", "usergeneratedcontent", "wrapper" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title "Museos_de_España,_colección_de_museos_públicos_y_privados_españoles_(GNOSS)" ;
+    void:exampleResource [
+        dct:title "RDF/XML_resource_example" ;
+        dcat:mediaType "text/html" ;
+        dct:description """
+This is an RDF/XML example link of one of the resources published in Museos de España. Currently, about 1500 resources have been published in the community.
+""" ;
+        dcat:accessURL <http://museos.gnoss.com/en/community/mismuseos/resource/MUSEO-SOROLLA/67800771-4cc6-4acf-9089-dd6c931d1726?rdf> ;
+        adms:status """
+FAIL (Exceeded 30 redirects.)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "RDF/XML_resource_example_2" ;
+        dcat:mediaType "text/html" ;
+        dct:description """
+This is an RDF/XML example link of one of the resources published in Museos de España. Currently, about 1500 resources have been published in the community.
+""" ;
+        dcat:accessURL <http://museos.gnoss.com/en/community/mismuseos/resource/MUSEO-NACIONAL-DEL-PRADO/c9b9b89c-0281-491b-8631-656ddd504be5?rdf> ;
+        adms:status """
+FAIL (Exceeded 30 redirects.)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "RDF/XML_search_example_" ;
+        dcat:mediaType "text/html" ;
+        dct:description """
+This is an RDF/XML example link of a search results.
+""" ;
+        dcat:accessURL <http://museos.gnoss.com/en/community/mismuseos/advanced-search/tag/arte?rdf> ;
+        adms:status """
+FAIL (Exceeded 30 redirects.)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/owl" ;
+        dct:description """
+Gnoss OWL Ontology
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Gnoss_Ontology" ;
+        dct:mirror "['ipfs:QmbDWiHLbnjJ2vGnaViALUEZFtCGu3hgUVhsSZjQ5xwpki']" ;
+        dcat:accessURL <http://gnoss.com/gnoss.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/n3" ;
+        dct:description """
+voiD description
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='museos.gnoss.com', port=80): Read timed out. (read timeout=30))
+""" ;
+        dct:title "voiD_description" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://museos.gnoss.com/voidMuseosdeEspa%C3%B1aGNOSS.n3> ;
+    ] ;
+    dct:description """
+<p>
+<a href="http://museos.gnoss.com/en/community/mismuseos">Museos de España</a>
+ is a directory that allows facet-based searches on a collection with more than 1,500 dynamic pages of public and private Spanish museums. Museos de España works with 
+<a href="http://gnoss.com/">GNOSS software (RIAM Intelearning Lab)</a>
+</p>
+
+<p>
+<a href="http://museos.gnoss.com/comunidad/mismuseos">Museos de España</a>
+es un directorio que permite realizar búsquedas facetadas sobre una colección que reúne las fichas de más de 1.500 museos públicos y privados españoles. Museos de España funciona sobre
+<a href="http://gnoss.com/">software de GNOSS (RIAM Intelearning Lab)</a>
+</p>
+"""@en ;
+
+    foaf:page <http://museos.gnoss.com/comunidad/mismuseos/> ;
+    void:triples "79065"^^xsd:integer ;
+    dcat:theme  <user_generated> ;
+    void:uriSpace <http://museos.gnoss.com/comunidad/mismuseos/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :museosespania-gnoss ;
+    void:triples "140275"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :museosespania-gnoss ;
+    void:triples "3309"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :museosespania-gnoss ;
+    void:triples "6158"^^xsd:integer ;
+ .
+
+:gnoss a void:Linkset ;
+    void:target :museosespania-gnoss ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:mismuseos-gnoss a void:Linkset ;
+    void:target :museosespania-gnoss ;
+    void:triples "7725"^^xsd:integer ;
+ .
+
+:nytimes-linked-open-data a void:Linkset ;
+    void:target :museosespania-gnoss ;
+    void:triples "128835"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "GNOSS_Team"^^xsd:string ;
+     foaf:mbox <mailto:gnoss@gnoss.com> ; 
+ .
+

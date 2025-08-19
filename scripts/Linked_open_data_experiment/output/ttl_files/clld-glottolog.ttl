@@ -1,0 +1,72 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:clld-glottolog a dcat:Dataset ;
+    dcat:keyword "linguistics", "llod", "lod" ;
+    dct:title "CLLD-GLOTTOLOG" ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle;_charset=utf-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "VoID_description" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://glottolog.org/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/n3" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "RDF_dump" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://glottolog.org/static/download/glottolog-dataset.n3.gz> ;
+    ] ;
+    dct:description """
+Glottolog 2.7 published by the CLLD project
+"""@en ;
+
+    foaf:page <http://glottolog.org> ;
+    void:triples "8322839"^^xsd:integer ;
+    dcat:theme  <linguistics> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :clld-glottolog ;
+    void:triples "7822"^^xsd:integer ;
+ .
+
+:geonames a void:Linkset ;
+    void:target :clld-glottolog ;
+    void:triples "10763"^^xsd:integer ;
+ .
+
+:gold a void:Linkset ;
+    void:target :clld-glottolog ;
+    void:triples "24393"^^xsd:integer ;
+ .
+
+:lexvo a void:Linkset ;
+    void:target :clld-glottolog ;
+    void:triples "7822"^^xsd:integer ;
+ .
+

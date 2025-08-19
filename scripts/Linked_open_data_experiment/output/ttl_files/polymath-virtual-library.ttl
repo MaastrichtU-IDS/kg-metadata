@@ -1,0 +1,131 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:polymath-virtual-library a dcat:Dataset ;
+    dcat:keyword "authority", "bibliographic_data", "crossdomain", "europeana_data_model", "format-edm", "format-skos", "library", "lld", "lod", "no-proprietary-vocab", "published-by-producer" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "Polymath_Virtual_Library_(Authority_data)Fundación_Ignacio_Larramendi" ;
+    void:exampleResource [
+        dct:title "Example:_Francisco_Sánchez" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-23T161002/Francisco_Sanchez.rdf> ;
+        adms:status """
+FAIL (403)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example:_Marcelino_Menéndez_Pelayo" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-23T161117/Menendez_Pelayo.rdf> ;
+        adms:status """
+FAIL (403)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example:_Miguel_de_Unamuno" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-23T161210/Unamuno_Miguel-de.rdf> ;
+        adms:status """
+FAIL (403)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf_xml" ;
+        dct:description """
+Zipped RDF/XML file
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "Polígrafos_españoles_=_Spanish_Polymath" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-23T160246/Poligrafos_espanoles_edm.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf_xml" ;
+        dct:description """
+Zipped RDF/XML file
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "Polígrafos_hispanoamericanos_=_Hispanoamerican_Polymath" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-23T160611/Poligrafos_hispanoamericanos_edm.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf_xml" ;
+        dct:description """
+Zipped RDF/XML file
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "Polígrafos_portugueses_=_Portuguese_Polymath" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-23T160728/Poligrafos_portugueses_edm.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf_xml" ;
+        dct:description """
+Zipped RDF/XML file
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "Polígrafos_brasileños_=_Brazilian_Polymath" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://commondatastorage.googleapis.com/ckannet-storage/2012-05-23T160857/Poligrafos_brasilenos_edm.zip> ;
+    ] ;
+    dct:description """
+The Polymath Virtual Library aims to bring together the works of the most important Hispanic polymaths and to establish semantic relationships between them, expressing the different schools of thought, from Seneca to Octavio Paz. The aim is to bring together information, data, digital texts and web resources about Spanish, Hispano-American, Brazilian and Portuguese polymaths from all times. These datasets consists of  polymath authority data (Spanish, Latin American, Brasilian and Portuguese)  expressed in <a href="http://pro.europeana.eu/web/guest/edm-documentation" title="Europeana Data Model">
+Europeana Data Model</a>. Links to VIAF and DBpedia in progress. 
+"""@en ;
+
+    foaf:page <http://www.larramendi.es/i18n/estaticos/contenido.cmd?pagina=estaticos/bibliotecaIL> ;
+    dcat:theme  <linguistics> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :polymath-virtual-library ;
+    void:triples "57"^^xsd:integer ;
+ .
+
+:oclc-fast a void:Linkset ;
+    void:target :polymath-virtual-library ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:viaf a void:Linkset ;
+    void:target :polymath-virtual-library ;
+    void:triples "321"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Xavier_Agenjo"^^xsd:string ;
+     foaf:mbox <mailto:xavier.agenjo@larramendi.es> ; 
+ .
+

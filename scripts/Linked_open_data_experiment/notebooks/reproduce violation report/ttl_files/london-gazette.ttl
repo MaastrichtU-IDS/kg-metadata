@@ -1,0 +1,91 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:london-gazette a dcat:Dataset ;
+    dcat:keyword "companies", "competition", "country-uk", "deref-vocab", "environment", "finance", "format-dc", "format-foaf", "gov", "government", "health", "insolvency", "lod", "lodcloud-diagram-2011-09-19", "lodcloud.nolinks", "newspaper", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "parliament", "planning", "published-by-producer", "state", "transport", "uk" ;
+    dct:title_main "The_London_GazetteGazettes_Data" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdfa" ;
+        dct:description_exampleResource """
+Example notice
+""" ;
+        dcat:accessURL_exampleResource <http://www.london-gazette.co.uk/issues/59535/notices/1196300> ;
+        adms:status_exampleResource """
+FAIL (403)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "None" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint (not up to date)
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://api.talis.com/stores/datagovuk/services/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (HTTPConnectionPool(host='api.talis.com', port=80): Max retries exceeded with url: /stores/datagovuk/services/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686daf5e0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (403)
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://www.london-gazette.co.uk/mashup/LondonGazetteData.zip> ;
+    ] ;
+    dct:description_main """
+## About
+
+From website:
+
+> The London Gazette, Official Newspaper of Record for the United Kingdom plays a major role in the information infrastructure for government, with 175,000 notices published in 2007.
+
+> A wide range of notices, the majority of which are mandatory by law appear in the following broad categories (bold = very high numbers of notices): State, Parliament, Ecclesiastical, Public Finance, Transport, Planning, Health, Environment, Water, Agriculture & Fisheries, Energy, Post & Telecom., Other Notices, Competition, Corporate Insolvency, Personal Insolvency, Companies & Financial Regulation, Partnerships, Societies Regulation, Personal Legal.
+
+> Plans are in place to further upgrade the tagging but any change in mark up for the London Gazette (and sister newspapers the Edinburgh and Belfast Gazettes) will be backwards compatible. Different types of notice presently have very different degrees of mark up.
+
+> The quality of the information in the London Gazette is excellent. Content is published primarily on behalf of solicitors, government, insolvency practitioners and other known stakeholders. Accuracy is absolutely key.
+
+> Data can be made available on an ongoing basis in XML, Excel and other formats. RDFa will launch shortly for some categories.
+
+> The two files on this web page enable you to explore the content:
+
+> 1. An XML file of all published notices from mid February 2007 to end May 2008.
+> 2. A list and order of notice types.
+
+## Format
+
+XML
+
+## Re-use
+
+Website says "Please treat the data as Crown Copyright."
+"""@en ;
+
+    foaf:page <http://www.london-gazette.co.uk/mashup/gazettesdata.htm> ;
+    void:triples "12000000"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://www.london-gazette.co.uk/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:CAgent ;
+     foaf:Cmbox <mailto:london.gazette@tso.co.uk> ; 
+ .
+

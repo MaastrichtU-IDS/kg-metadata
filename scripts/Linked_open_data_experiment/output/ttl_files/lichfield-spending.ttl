@@ -1,0 +1,98 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:lichfield-spending a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-csv", "format-rdfs", "format-xml", "government", "lod", "published-by-producer" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "Lichfield_District_CouncilSpending" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "text/csv" ;
+        dct:description """
+Example CSV
+""" ;
+        dcat:accessURL <http://spending.lichfielddc.gov.uk/apps/spending/public/data/September_2010_v1.csv> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://spending.lichfielddc.gov.uk/spend/8654106.rdf> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://spending.lichfielddc.gov.uk/sparql> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Download
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://spending.lichfielddc.gov.uk/all.rdf> ;
+    ] ;
+    dct:description """
+Monthly published data on expenditure over £500 including VAT of Lichfield District.
+"""@en ;
+
+    foaf:page <http://spending.lichfielddc.gov.uk> ;
+    void:triples "93839"^^xsd:integer ;
+    dcat:theme  <government> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :lichfield-spending ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:opencorporates a void:Linkset ;
+    void:target :lichfield-spending ;
+    void:triples "304"^^xsd:integer ;
+ .
+
+:reference-data-gov-uk a void:Linkset ;
+    void:target :lichfield-spending ;
+    void:triples "51"^^xsd:integer ;
+ .
+
+:statistics-data-gov-uk a void:Linkset ;
+    void:target :lichfield-spending ;
+    void:triples "4641"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Lichfield_District_Council"^^xsd:string ;
+ .
+

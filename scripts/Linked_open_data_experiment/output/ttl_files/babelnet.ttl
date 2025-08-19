@@ -1,0 +1,137 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:babelnet a dcat:Dataset ;
+    dcat:keyword "access-web", "format-rdf", "ldl-2014", "lemon", "lexical-resources", "lexico", "linguistics", "llod", "void-sparql-endpoint" ;
+    dct:title "BabelNet" ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint_" ;
+        dcat:endpointDescription """
+SPARQL endpoint 
+""" ;
+        dcat:accessURL <http://babelnet.org/sparql/> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "BabelNet_in_Lemon_RDF_format_(IRIs)_version_2.0_(March_2014)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://babelnet.org/data/babelnet-2.0-lemon-IRIs.tar.xz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "BabelNet_in_Lemon_RDF_format_(URIs)_version_2.0" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://babelnet.org/data/babelnet-2.0-lemon-URIs.tar.xz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+Home page
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Linked_Data_interface" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://babelnet.org/rdf/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=UTF-8" ;
+        dct:description """
+Home page
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "BabelNet_interface" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://babelnet.org> ;
+    ] ;
+    dct:description """
+BabelNet is both a multilingual encyclopedic dictionary, with lexicographic and encyclopedic coverage of terms, and an ontology which connects concepts and named entities in a very large network of semantic relations, made up of 13,801,844 millions of nodes, called Babel synsets. Each Babel synset represents a given meaning and contains all the synonyms which in different languages express that meaning. The BabelNet resource is made available under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported license. The different resources from which BabelNet originates are made available under different licenses, as follows: WordNet: http://wordnet.princeton.edu/wordnet/license/, Wikipedia: Creative Commons Attribution-ShareAlike 3.0 Unported license, Wiktionary: Creative Commons Attribution-ShareAlike 3.0 Unported license, OmegaWiki: Creative Commons Attribution 2.5 Generic license or higher, ItalWordNet: Open Data Commons Attribution 1.0 License, and Open Multilingual WordNet: different licenses according to the language, as indicated at http://compling.hss.ntu.edu.sg/omw/. When applicable, specific license rights are specified through the property dcterms:license. Please make sure of using data in compliance with their respective licenses.
+"""@en ;
+
+    void:triples "1971744856"^^xsd:integer ;
+    dcat:theme  <linguistics> ;
+    void:uriSpace <http://babelnet.org/rdf/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :babelnet ;
+    void:triples "27585374"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :babelnet ;
+    void:triples "3850334"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :babelnet ;
+    void:triples "474189"^^xsd:integer ;
+ .
+
+:lemonuby a void:Linkset ;
+    void:target :babelnet ;
+    void:triples "22298"^^xsd:integer ;
+ .
+
+:lexinfo a void:Linkset ;
+    void:target :babelnet ;
+    void:triples "75326283"^^xsd:integer ;
+ .
+
+:wikipedia a void:Linkset ;
+    void:target :babelnet ;
+    void:triples "86241042"^^xsd:integer ;
+ .
+
+:wiktionary-dbpedia-org a void:Linkset ;
+    void:target :babelnet ;
+    void:triples "285912"^^xsd:integer ;
+ .
+
+:wordnet-rdf a void:Linkset ;
+    void:target :babelnet ;
+    void:triples "322519"^^xsd:integer ;
+ .
+
+:yago a void:Linkset ;
+    void:target :babelnet ;
+    void:triples "3517616"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Roberto_Navigli"^^xsd:string ;
+     foaf:mbox <mailto:navigli@di.uniroma1.it> ; 
+ .
+

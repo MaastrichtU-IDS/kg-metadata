@@ -1,0 +1,91 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:data-gov-uk-time-intervals a dcat:Dataset ;
+    dcat:keyword "country-uk", "dates", "days", "deref-vocab", "format-foaf", "format-skos", "format-time", "government", "instants", "intervals", "lod", "lodcloud-diagram-2011-09-19", "lodcloud.nolinks", "months", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "published-by-producer", "quarters", "times", "uk", "ukgov", "weeks", "years" ;
+    dct:title_main "data.gov.uk_Time_Intervals" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example Gregorian interval
+""" ;
+        dcat:accessURL_exampleResource <http://reference.data.gov.uk/id/gregorian-interval/1977-11-01T12:22:45/P2Y1MT1H6S> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='reference.data.gov.uk', port=80): Max retries exceeded with url: /id/gregorian-interval/1977-11-01T12:22:45/P2Y1MT1H6S (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fe9e0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example year
+""" ;
+        dcat:accessURL_exampleResource <http://reference.data.gov.uk/id/year/2010> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='reference.data.gov.uk', port=80): Max retries exceeded with url: /id/year/2010 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843feaa0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example day
+""" ;
+        dcat:accessURL_exampleResource <http://reference.data.gov.uk/id/day/2010-09-06> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='reference.data.gov.uk', port=80): Max retries exceeded with url: /id/day/2010-09-06 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fdab0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example government year
+""" ;
+        dcat:accessURL_exampleResource <http://reference.data.gov.uk/id/government-year/2010-2011> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='reference.data.gov.uk', port=80): Max retries exceeded with url: /id/government-year/2010-2011 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fecb0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/rdf-schema" ;
+        dct:description_distribution """
+RDF Schema
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "None" ;
+        dcat:accessURL_distribution <http://reference.data.gov.uk/def/intervals> ;
+    ] ;
+    dct:description_main """
+Linked data for every time interval and instant into the past and future, from years down to seconds. This is an infinite set of linked data. It includes government years and properly handles the transition to the Gregorian calendar within the UK.
+
+Part of package:reference-data-gov-uk
+"""@en ;
+
+    foaf:page <http://www.epimorphics.com/web/wiki/using-interval-set-uris-statistical-data> ;
+    void:triples "1000000000"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://reference.data.gov.uk/id/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Stuart_Williams_(Epimorphics_Ltd)"^^xsd:string ;
+ .
+

@@ -1,0 +1,65 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:dbpedia-pt a dcat:Dataset ;
+    dcat:keyword "crossdomain", "deref-vocab", "format-rdf", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "published-by-producer" ;
+    dct:title "DBpedia_in_Portuguese" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+Example Resource: Brazil
+""" ;
+        dcat:accessURL <http://pt.dbpedia.org/resource/Brazil> ;
+        adms:status """
+FAIL (500)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL Endpoint
+""" ;
+        dcat:accessURL <http://pt.dbpedia.org/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dct:description """
+DBpedia Portuguese is being constructed by a working group to internationalize DBpedia to the [Lusosphere](http://en.wikipedia.org/wiki/Lusosphere "what is lusosphere?").
+
+We are actively collaborating with the [DBpedia Internationalization Team](http://wiki.dbpedia.org/Internationalization) to include knowledge from the [Portuguese Language Wikipedia](http://pt.wikipedia.org) into DBpedia. As a first step, we have performed a preliminary extraction (available at http://pt.dbpedia.org) and are editing several mappings and labels to the DBpedia Ontology. The activity is organized via the mailing list dbpedia-portuguese@lists.sourceforge.net
+
+http://pt.dbpedia.org
+"""@en ;
+
+    foaf:page <http://pt.dbpedia.org> ;
+    void:triples "24607332"^^xsd:integer ;
+    dcat:theme  <cross_domain> ;
+    void:uriSpace <http://pt.dbpedia.org/resource/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :dbpedia-pt ;
+    void:triples "365839"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Pablo_Mendes"^^xsd:string ;
+     foaf:mbox <mailto:pablo.mendes@fu-berlin.de> ; 
+ .
+

@@ -1,0 +1,103 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:drug-data-hifm a dcat:Dataset ;
+    dcat:keyword "Macedonia", "deref-vocab", "drugs", "format-drugbank", "government", "health", "health_insurance_fund", "healthcare", "hifm", "lod", "no-license-metadata", "no-provenance-metadata", "prices", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-by> ;
+    dct:title "Drug_Data_from_the_Health_Insurance_Fund_of_Macedonia" ;
+    void:exampleResource [
+        dct:title "Example_resource" ;
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+Example RDF/XML resource from the graph.
+""" ;
+        dcat:accessURL <http://linkeddata.finki.ukim.mk/lod/data/hifm#963089> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint" ;
+        dcat:endpointDescription """
+SPARQL endpoint for querying the HIFM LODD dataset and ontology. Use the graph http://linkeddata.finki.ukim.mk/lod/data/hifm# for the HIFM data, and the http://linkeddata.finki.ukim.mk/lod/ontology/hifm# graph for the HIFM ontology.
+""" ;
+        dcat:accessURL <http://linkeddata.finki.ukim.mk/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle;_charset=UTF-8" ;
+        dct:description """
+Download link for the dataset in RDF/XML format.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Download" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://purl.org/net/hifm/data> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle;_charset=UTF-8" ;
+        dct:description """
+Download link for the HIFM Ontology, used by the dataset.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Ontology" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://purl.org/net/hifm/ontology> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+RDF/XML dump of the HIFM Drug Data graph
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "RDF/XML_dump" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://linkeddata.finki.ukim.mk/DAV/ontology/data/hifm.rdf> ;
+    ] ;
+    dct:description """
+Linked Open Drug Data from the Health Insurance Fund of the Republic of Macedonia. 
+
+The dataset provides data about the referent (nominal) prices of drugs in Macedonia, along with the generic drug name, brand name, packaging, manufacturer, etc. The drugs from the dataset are linked among themselves with a "similar to" relation, and with an "owl:seeAlso" relation with corresponding drugs from the [DrugBank dataset](http://wifo5-03.informatik.uni-mannheim.de/drugbank/ "DrugBank"). Both relations are based on the drug ATC code.
+
+The drug data from the Fund is described using a custom HIFM ontology, along with relations from the DrugBank dataset. 
+
+For more info on the dataset, please refer to [this paper](http://e-tnc.com/etnc/Portals/3/papers/loddhifm-ciit2013.pdf "LODD from the HIFM").
+"""@en ;
+
+    void:triples "21233"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://purl.org/net/hifm/data#> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:fu-berlin-drugbank a void:Linkset ;
+    void:target :drug-data-hifm ;
+    void:triples "1015"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Milos_Jovanovik"^^xsd:string ;
+     foaf:mbox <mailto:milos.jovanovik@finki.ukim.mk> ; 
+ .
+

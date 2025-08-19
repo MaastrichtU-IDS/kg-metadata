@@ -1,0 +1,50 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:nottingham-trent-university-resource-lists a dcat:Dataset ;
+    dcat:keyword "education", "format-rdf", "higher-education", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "no-vocab-mappings", "publications", "published-by-producer", "talis" ;
+    dct:title "Nottingham_Trent_University_Resource_Lists" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://resourcelists.ntu.ac.uk/lists/AE0AA29A-3E56-9D53-5003-B72A6A21C2D5> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dct:description """
+lists, modules & courses of the trent university of nottinghame
+"""@en ;
+
+    foaf:page <http://resourcelists.ntu.ac.uk/> ;
+    void:triples "726933"^^xsd:integer ;
+    void:uriSpace <http://resourcelists.ntu.ac.uk/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:openlibrary a void:Linkset ;
+    void:target :nottingham-trent-university-resource-lists ;
+    void:triples "23422"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Ian_Davis"^^xsd:string ;
+     foaf:mbox <mailto:ian.davis@talis.com> ; 
+ .
+

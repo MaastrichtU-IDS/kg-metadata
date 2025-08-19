@@ -1,0 +1,49 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:nhs-jargon a dcat:Dataset ;
+    dcat:keyword "format-dc", "format-rdf", "format-skos", "format-wv", "government", "lod", "lodcloud-diagram-2014-08-30", "lodcloud.unconnected" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "NHS_Jargon_RDF" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://kantenwerk.org/metadata/nhs_jargon.rdf#arg> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='kantenwerk.org', port=443): Read timed out. (read timeout=30))
+""" ;
+    ] ;
+    dct:description """
+Extracted data from the 'NHS Jargon Buster? site (http://www.ic.nhs.uk/jargon-buster). Contains definitions for commonly used acronyms in NHS (British National Health Service) documents.
+"""@en ;
+
+    foaf:page <http://kantenwerk.org/2011/05/16/nhs-jargon-rdf/> ;
+    void:triples "500"^^xsd:integer ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :nhs-jargon ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "NHS.uk"^^xsd:string ;
+ .
+

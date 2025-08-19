@@ -1,0 +1,95 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:eea-vocabularies a dcat:Dataset ;
+    dcat:keyword "countries", "eu", "lod", "published-by-producer" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "EEA_Vocabularies" ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://cr.eionet.europa.eu/sparql> ;
+        adms:status """
+FAIL (400)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Download vocabularies
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://rdfdata.eionet.europa.eu/eea/data_dump.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+Example resource (Austria)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Example_resource_(Austria)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://rdfdata.eionet.europa.eu/eea/countries/AT> ;
+    ] ;
+    dct:description """
+Superseded by dataset:eionet-rdf
+
+Vocabularies used by EEA Linked Data: countries, biogeographical regions, DPSIR codes, languages.
+
+"""@en ;
+
+    dcat:theme  <geography> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :eea-vocabularies ;
+    void:triples "114"^^xsd:integer ;
+ .
+
+:eea-rod a void:Linkset ;
+    void:target :eea-vocabularies ;
+    void:triples "54"^^xsd:integer ;
+ .
+
+:eurostat-rdf a void:Linkset ;
+    void:target :eea-vocabularies ;
+    void:triples "92"^^xsd:integer ;
+ .
+
+:fao-geopolitical-ontology a void:Linkset ;
+    void:target :eea-vocabularies ;
+    void:triples "50"^^xsd:integer ;
+ .
+
+:geonames a void:Linkset ;
+    void:target :eea-vocabularies ;
+    void:triples "54"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Søren_Roug"^^xsd:string ;
+     foaf:mbox <mailto:soren.roug@eea.europa.eu> ; 
+ .
+

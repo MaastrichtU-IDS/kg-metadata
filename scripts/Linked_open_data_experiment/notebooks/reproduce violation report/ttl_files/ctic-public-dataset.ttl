@@ -1,0 +1,84 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ctic-public-dataset a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-dcterms", "format-foaf", "format-rdf", "geographic", "government", "license-metadata", "lod", "lodcloud-diagram-2014-08-30", "no-provenance-metadata", "no-vocab-mappings", "published-by-producer" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "CTIC_Public_Dataset_Catalogs" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example:_City_of_Saragossa_Open_Data_initiative" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Description of the Open Data Portal and catalogue of Saragossa (Zaragoza)
+""" ;
+        dcat:accessURL_exampleResource <http://data.fundacionctic.org/sparql?default-graph-uri=&query=describe%2B%253Fcatalog%2B%253Fspatial%2B%253FparentCountry%250D%250Awhere%2B%257B%250D%250A%253Fcatalog%2B%253Chttp%253A%252F%252Fpurl.org%252Fdc%252Fterms%252Fidentifier%253E%2B%2522zaragoza.es%2522%253B%250D%250A%253Chttp%253A%252F%252Fpurl.org%252Fdc%252Fterms%252Fspatial%253E%2B%253Fspatial.%250D%250A%250D%250A%253Fspatial%2B%253Chttp%253A%252F%252Fsws.geonames.org%252Fontology%2523parentCountry%253E%2B%253FparentCountry.%250D%250A%250D%250A%257D&format=rdf> ;
+        adms:status_exampleResource """
+FAIL (503)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Example link RDF/XML
+""" ;
+        dcat:accessURL_exampleResource <http://data.fundacionctic.org/sparql?default-graph-uri=http%253A%252F%252Fdata.fundacionctic.org%252Fdataset-catalog&query=DESCRIBE%2520%253Chttp%253A%252F%252Fdata.fundacionctic.org%252Fdataset-catalog%252Ftoronto.ca%253E&output=rdf> ;
+        adms:status_exampleResource """
+FAIL (503)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "None" ;
+        dcat:endpointDescription_sparqlEndpoint """
+Sparql endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://data.fundacionctic.org/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (503)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+Download link of rdf file
+""" ;
+        adms:status_distribution """
+FAIL (503)
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://data.fundacionctic.org/sparql?query=select%2B%2A%2Bwhere%2B%7B%253Fs%2Ba%2B%253Chttp%3A%2F%2Fdata.fundacionctic.org%2Fvocab%2Fcatalog%2Fdatasets%2523Catalog%253E%3B%2B%253Fp%2B%253Fo.%7D&format=rdf> ;
+    ] ;
+    dct:description_main """
+Overview of worldwide data catalogues.
+"""@en ;
+
+    foaf:page <http://datos.fundacionctic.org/en/> ;
+    void:triples "535230"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://data.fundacionctic.org/dataset-catalog/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames-semantic-web a void:Linkset ;
+    void:target :ctic-public-dataset ;
+    void:triples "3000"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Fundacion_CTIC"^^xsd:string ;
+     foaf:Cmbox <mailto:opend@a@fundacionctic.org> ; 
+ .
+

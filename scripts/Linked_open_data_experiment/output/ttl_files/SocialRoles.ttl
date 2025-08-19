@@ -1,0 +1,96 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:SocialRoles a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Metamodeling feature by punning to show entities in different context like father as class also as an instance of social-role class. 
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "FamilyRelations_as_SocialRole" ;
+        dct:mirror "[]" ;
+        dct:identifier "8505d574-1c68-16d8-1680-07afeab0b582" ;
+        dcat:downloadURL <https://datahub.io/hmqq/lod-frsr-witty-swan-49> ;
+    ] ;
+    foaf:page <http://metamodeling.com/owl/familyrelations> ;
+    dct:license <http://www.opendefinition.org/licenses/gfdl> ;
+    dct:title "FamilyRelations_as_SocialRole" ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+
+""" ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+        dct:title "cwrc" ;
+        dct:identifier "9afddb1a-aaec-883b-649e-9c18bbbc164c" ;
+        dcat:accessURL <http://sparql.cwrc.ca/ontologies/cwrc> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+
+""" ;
+        dct:mirror "[]" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Bio_vocabulary" ;
+        dct:identifier "1ab0555e-18ea-028e-64e3-ed71411a3ca5" ;
+        dcat:accessURL <http://purl.org/vocab/bio/0.1/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "http://xmlns.com/foaf/0.1/" ;
+        dct:description """
+
+""" ;
+        dct:mirror "['ipfs:QmXTmGjkei19mbhkXLHHFAQqgAqhSPvVv4gHXFBzVTTxko']" ;
+        adms:status """
+OK
+""" ;
+        dct:title "foaf" ;
+        dct:identifier "79c2a25e-b69b-8cc5-d1fe-a5b3487be113" ;
+        dcat:accessURL <http://xmlns.com/foaf/0.1/> ;
+    ] ;
+    dct:description """
+The FRSR vocabulary contains terms useful for finding out more about social roles of a family relation. The approach taken is to describe roles of a person in a society in which he/she is living. this roles could be a father, mother,son or daughter.  These social roles are different from occupational roles. these roles are based on relations. Another purpose of this vocabulary is to show the metamodeling feature through punning. Like Father is a class as well is an instance of class socialroles.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <http://metamodeling.com/owl/familyrelations> ;
+    void:triples "134"^^xsd:integer ;
+    dcat:theme  <social_networking> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:qureshihayamajid@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Haya_Qureshi"^^xsd:string ;
+     foaf:mbox <mailto:hmq.17@hotmail.com> ; 
+ .
+

@@ -1,0 +1,90 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:racai-legalnero a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://doi.org/10.5281/zenodo.4772094> ;
+    void:triples "5761781"^^xsd:integer ;
+    dcat:distribution [
+        dct:identifier "3b941d48-814b-aae2-263b-7c9c4360eb5a" ;
+        dct:title "LegalNERo_RDF_Turtle" ;
+        dct:description """
+Direct link to the RDF Turtle format associated with the corpus. The preffered download format is through the Zeonodo platform by using the following DOI url: https://doi.org/10.5281/zenodo.4772094 .
+""" ;
+        dcat:mediaType "text/turtle" ;
+        dcat:downloadURL <https://relate.racai.ro/resources/legalnero/legalnero.ttl> ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier "6b136d03-7b15-d774-dbab-66dc76460b79" ;
+        dct:title "LegalNERo" ;
+        dct:description """
+LegalNERo is hosted on the Zenodo platform. The latest version can be accessed using the following DOI url: https://doi.org/10.5281/zenodo.4772094 . This is the preffered way to download the dataset. Apart from the RDF formant, the archive contains raw text files and tokenized CoNLLU-Plus files.
+""" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dcat:downloadURL <https://doi.org/10.5281/zenodo.4772094> ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:keyword "named_entity_recognition", "legal_domain" ;
+    dct:description """
+LegalNERo is a manually annotated corpus for named entity recognition in the Romanian legal domain. 
+It provides gold annotations for organizations, locations, persons, time and legal resources mentioned in legal documents.
+Additionally it offers GEONAMES codes for the named entities annotated as location (where a link could be established). 
+"""@en ;
+
+    dct:title "Romanian_Named_Entity_Recognition_in_the_Legal_domain_(LegalNERo)" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dcat:theme  <cross_domain> ;
+    void:uriSpace <http://racai.ro/legalnero> ;
+    void:sparqlEndpoint [
+        dct:identifier "d6b5db13-e6c9-c546-f962-4cb759473ff8" ;
+        dct:title "LegalNERo_SPARQL_endpoint" ;
+        dcat:endpointDescription """
+SPARQL endpoint for LegalNERo hosted at RACAI. A query form is available at https://relate.racai.ro/datasets/dataset.html?tab=query&ds=/legalnero
+""" ;
+        dcat:accessURL <https://relate.racai.ro/datasets/legalnero/query> ;
+        adms:status """
+FAIL (405)
+""" ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] ;
+    dct:identifier "10.5281/zenodo.4772094" .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames-semantic-web a void:Linkset ;
+    void:target :racai-legalnero ;
+    void:triples "1333"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:vasile@racai.ro> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Vasile_Pais"^^xsd:string ;
+     foaf:mbox <mailto:vasile@racai.ro> ; 
+ .
+

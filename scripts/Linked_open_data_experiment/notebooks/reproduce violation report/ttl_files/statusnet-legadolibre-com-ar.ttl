@@ -1,0 +1,91 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:statusnet-legadolibre-com-ar a dcat:Dataset ;
+    dcat:keyword "LinkedDataCrawl2014", "crawledLinkedDataCloud2014", "format-bio", "format-foaf", "format-pos", "format-rdf", "format-rdfs", "format-sioc", "lodcloud-diagram-2014-08-30", "social_web" ;
+    dct:title_main "statusnet-legadolibre-com-ar" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://legadolibre.com.ar/serafasto/foaf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    dct:description_main """
+StatusNet instance hosted at http://legadolibre.com.ar
+"""@en ;
+
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames-semantic-web a void:Linkset ;
+    void:target :statusnet-legadolibre-com-ar ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+:statusnet-fragdev-com a void:Linkset ;
+    void:target :statusnet-legadolibre-com-ar ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:statusnet-gomertronic-com a void:Linkset ;
+    void:target :statusnet-legadolibre-com-ar ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:statusnet-mamalibre-com-ar a void:Linkset ;
+    void:target :statusnet-legadolibre-com-ar ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:statusnet-morphtown-de a void:Linkset ;
+    void:target :statusnet-legadolibre-com-ar ;
+    void:triples "8"^^xsd:integer ;
+ .
+
+:statusnet-opensim-chat-eu a void:Linkset ;
+    void:target :statusnet-legadolibre-com-ar ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-quitter-se a void:Linkset ;
+    void:target :statusnet-legadolibre-com-ar ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:statusnet-rainbowdash-net a void:Linkset ;
+    void:target :statusnet-legadolibre-com-ar ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-russwurm-org a void:Linkset ;
+    void:target :statusnet-legadolibre-com-ar ;
+    void:triples "8"^^xsd:integer ;
+ .
+
+:statusnet-somsants-net a void:Linkset ;
+    void:target :statusnet-legadolibre-com-ar ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-status-net a void:Linkset ;
+    void:target :statusnet-legadolibre-com-ar ;
+    void:triples "3"^^xsd:integer ;
+ .
+

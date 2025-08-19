@@ -1,0 +1,68 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Tesla_Deaths a dcat:Dataset ;
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    foaf:page <https://www.tesladeaths.com> ;
+    dcat:distribution [
+        dct:identifier_distribution "98557186-2a55-d0bd-b319-a3ded27351a0" ;
+        dct:title_distribution "Tesla_Deaths_Google_Spreadsheet" ;
+        dct:description_distribution """
+
+""" ;
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dcat:downloadURL_distribution <https://docs.google.com/spreadsheets/d/1ESnyJ4b7m96OCjs3GSQ6EGF7YOMuv0XV-ROXTYIazTs/?shared=true&pub=1> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:keyword "deaths", "tesla", "fatalities", "car_accidents", "Autopilot", "autonomous_vehicles", "Tesla_Inc", "collisions", "elon_musk" ;
+    dct:description_main """
+Tesla Deaths is a digital record of Tesla accidents that involved a driver, occupant, cyclist, motorcyclist, or pedestrian death, whether or not the Tesla or its driver were at fault
+"""@en ;
+
+    dct:title_main "Tesla_Deaths:_A_digital_record_of_Tesla_accidents_that_involved_a_fatality" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dcat:distribution [
+        dct:identifier_distribution "ffe36ee0-840c-a9d5-16ee-59d067a9594d" ;
+        dct:title_distribution "TeslaDeaths.com" ;
+        dct:description_distribution """
+
+""" ;
+        dcat:accessURL_distribution <https://www.tesladeaths.com> ;
+        dcat:mediaType_distribution "text/html;_charset=UTF-8" ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:theme  <cross_domain> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] ;
+    dct:identifier "10.5281/zenodo.4671088" .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:ian.capulet@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "I_Capulet"^^xsd:string ;
+     foaf:Cmbox <mailto:teslade@hs@protonmail.com> ; 
+ .
+

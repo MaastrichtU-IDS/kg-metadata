@@ -1,0 +1,78 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:rism-authorities a dcat:Dataset ;
+    dcat:keyword "authorities", "library", "license-metadata", "literature", "lld", "lod", "organisations", "persons", "rdf" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "RISM_Authority_data" ;
+    void:sparqlEndpoint [
+        dct:title "RISM_SPARQL_Endpoint" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://data.rism.info/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml;charset=UTF-8" ;
+        dct:description """
+Authority data for Johann Sebastian Bach  (1685-1750)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Example_Resource" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.rism.info/id/rismauthorities/pe2539?format=rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-gzip" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Downloadable_Data_Dump" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://opac.rism.info/fileadmin/user_upload/lod/update/rismAuthoritiesRDF.ttl.gz> ;
+    ] ;
+    dct:description """
+Authority data used in the ([RISM catalogue](https://opac.rism.info "RISM Opac"), [dataset description](http://datahub.io/dataset/rism "Dataset description for RISM Opac")). It contains information about persons, organisations and literary works. 
+"""@en ;
+
+    void:triples "1154325"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <https://data.rism.info/id/rismauthorities/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dnb-gemeinsame-normdatei a void:Linkset ;
+    void:target :rism-authorities ;
+    void:triples "19360"^^xsd:integer ;
+ .
+
+:viaf a void:Linkset ;
+    void:target :rism-authorities ;
+    void:triples "6138"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "RISM"^^xsd:string ;
+ .
+

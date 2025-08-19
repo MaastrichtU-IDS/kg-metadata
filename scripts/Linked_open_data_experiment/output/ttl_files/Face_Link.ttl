@@ -1,0 +1,48 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Face_Link a dcat:Dataset ;
+    foaf:page <http://loki.org> ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "Face_Link" ;
+    dct:description """
+Face
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    dcat:theme  <cross_domain> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:yahoo_geoplanet a void:Linkset ;
+    void:target :Face_Link ;
+    void:triples "0"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:name "Dae_Woong_Jo"^^xsd:string ;
+     foaf:mbox <mailto:doubletaken@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "DDD"^^xsd:string ;
+     foaf:mbox <mailto:realcom@msn.com> ; 
+ .
+

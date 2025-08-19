@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "identifier": "http://schema.org/identifier",
+    "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "name": "http://schema.org/name",
+    "alternateName": "http://schema.org/alternateName",
+    "termCode": "http://schema.org/termCode",
+    "description": "http://schema.org/description",
+    "url": "http://schema.org/url",
+    "relatedLink": "http://schema.org/relatedLink",
+    "creator": "http://schema.org/creator",
+    "dateCreated": "http://schema.org/dateCreated",
+    "publisher": "http://schema.org/publisher",
+    "funding": "http://schema.org/funding",
+    "dateModified": "http://schema.org/dateModified",
+    "datePublished": "http://schema.org/datePublished",
+    "maintainer": "http://schema.org/maintainer",
+    "email": "http://schema.org/email",
+    "subjectOf": "http://schema.org/subjectOf",
+    "image": "http://schema.org/image",
+    "distribution": "http://schema.org/distribution",
+    "mainEntityOfPage": "http://schema.org/mainEntityOfPage",
+    "contentURL": "http://schema.org/contentURL",
+    "version": "http://schema.org/version",
+    "license": "http://schema.org/license",
+    "keywords": "http://schema.org/keywords",
+    "publication": "http://schema.org/publication",
+    "inLanguage": "http://schema.org/inLanguage"
+  }
+}

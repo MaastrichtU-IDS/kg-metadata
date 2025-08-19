@@ -1,0 +1,103 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:panlex a dcat:Dataset ;
+    dcat:keyword "lexicon", "linguistics", "machine_translation" ;
+    dct:title "PanLex" ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://ld.panlex.org/sparql> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=UTF-8" ;
+        dct:description """
+Download page
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Download_page" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://ld.panlex.org/downloads/releases/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+Documentation page
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Documentation_page" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://ld.panlex.org/rdf.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/ntriples" ;
+        dct:description """
+N-triples dump (2013-02-14)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "N-triples_dump_(2013-02-14)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://ld.panlex.org/downloads/releases/2013-02-14/2013-02-14-panlex-dump.nt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+Ontology (2013-02-14)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Ontology_(2013-02-14)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://ld.panlex.org/downloads/releases/2013-02-14/2013-02-14-panlex-ontology.ttl> ;
+    ] ;
+    dct:description """
+A lexical database documenting translations among lexemes of language varieties.
+"""@en ;
+
+    foaf:page <http://panlex.org> ;
+    void:triples "786205297"^^xsd:integer ;
+    dcat:theme  <linguistics> ;
+    void:uriSpace <http://ld.panlex.org/plx/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :panlex ;
+    void:triples "2536556"^^xsd:integer ;
+ .
+
+:lexvo a void:Linkset ;
+    void:target :panlex ;
+    void:triples "372"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "PanLex"^^xsd:string ;
+     foaf:mbox <mailto:info@panlex.org> ; 
+ .
+

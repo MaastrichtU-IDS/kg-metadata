@@ -1,0 +1,74 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:cornetto a dcat:Dataset ;
+    dcat:keyword "broken_link", "cornetto", "crossdomain", "deref-vocab", "dutch", "format-rdf", "format-skos", "language", "linguistics", "linkeddata", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "published-by-producer", "vu", "wordnet" ;
+    dct:title "Cornetto1.2" ;
+    dcat:distribution [
+        dcat:mediaType "HTML" ;
+        dct:description """
+Example top concept (conneg)
+""" ;
+        adms:status """
+FAIL (503)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://purl.org/vocabularies/cornetto/synset-iets-2-noun> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "XML" ;
+        dct:description """
+Example top concept (RDF only, no conneg)
+""" ;
+        adms:status """
+FAIL (503)
+""" ;
+        dct:title "iets_(eng:_something)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://purl.org/vocabularies/cornetto/synset-iets-2-noun.rdf> ;
+    ] ;
+    dct:description """
+[Dutch lexical database](http://www2.let.vu.nl/oz/cltl/cornetto/), similar to WordNet but with more semantic relations.
+Links to package:vu-wordnet and package:w3c-wordnet .
+
+When this dataset is used for research purposes, please cite:
+
+Vossen, P., Maks, I., Segers, R., van der Vliet, H.: Integrating lexical units, synsets and ontology in the Cornetto database. In: (ELRA), E.L.R.A. (ed.) Proceedings of the Sixth International Language Resources and Evaluation (LREC?08) (2008)
+"""@en ;
+
+    foaf:page <http://www2.let.vu.nl/oz/cltl/cornetto/> ;
+    void:triples "792747"^^xsd:integer ;
+    dcat:theme  <linguistics> ;
+    void:uriSpace <http://purl.org/vocabularies/cornetto/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:vu-wordnet a void:Linkset ;
+    void:target :cornetto ;
+    void:triples "84473"^^xsd:integer ;
+ .
+
+:w3c-wordnet a void:Linkset ;
+    void:target :cornetto ;
+    void:triples "85116"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "RDF_version_by_Jacco_van_Ossenbruggen"^^xsd:string ;
+     foaf:mbox <mailto:jacco.van.ossenbruggen@cwi.nl> ; 
+ .
+

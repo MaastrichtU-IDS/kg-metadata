@@ -1,0 +1,64 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:enakting-nhs a dcat:Dataset ;
+    dcat:keyword "format-rdf", "format-xhtml", "government", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-proprietary-vocab", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "EnAKTing_NHS_Dataset" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://nhs.psi.enakting.org/id/nhs/NHS_RXH> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD file
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmXQyABvRWvNGFhvAKWwfETeewUsr76zPQxNUA8NRb7rVA']" ;
+        dcat:accessURL <http://nhs.psi.enakting.org/id/void> ;
+    ] ;
+    dct:description """
+National Health Service (waiting times) performance data  published by the UK Department of Health for the year 2008/09. 
+"""@en ;
+
+    foaf:page <http://nhs.psi.enakting.org/> ;
+    void:triples "23828953"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://nhs.psi.enakting.org/id/nhs/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:ordnance-survey-linked-data a void:Linkset ;
+    void:target :enakting-nhs ;
+    void:triples "280"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Tope_Omitola"^^xsd:string ;
+     foaf:mbox <mailto:t.omitola@ecs.soton.ac.uk> ; 
+ .
+

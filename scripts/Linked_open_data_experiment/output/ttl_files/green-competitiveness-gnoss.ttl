@@ -1,0 +1,138 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:green-competitiveness-gnoss a dcat:Dataset ;
+    dcat:keyword "Web_social", "biocomercio", "biocompetitividad", "capital_natural", "codesarrollo_sostenible", "competitividad_verde", "corporate_excellence", "country-spain", "country.es", "dc", "desarrollo_sostenible", "desarrollo_territorial", "ecocertificación", "ecoeficiencia", "energías_renovables", "evolución_sostenible", "foaf", "format-dc", "format-dcam", "format-foaf", "format-rdfg", "format-sioc", "format-skos", "format-wot", "gestión_del_conocimiento", "gnoss", "green_products", "green_technology", "impacto_medioambiental", "laboratorio_de_ideas", "language-spa", "license-metadata", "lod", "no-proprietary-vocab", "no-vocab-mappings", "pensamiento_colectivo", "prospectiva", "provenance-metadata", "published-by-third-party", "rentabilidad_verde", "schemata", "sioc", "skos", "socialweb", "sostenibilidad_y_medio_ambiente", "sp", "spain", "usergeneratedcontent", "wrapper" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title "Green_Competitiveness_(GNOSS)" ;
+    void:exampleResource [
+        dct:title "RDF/XML_resource_example" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+This is an RDF/XML example link of one of the resources published in the Green Competitiveness community. 
+""" ;
+        dcat:accessURL <http://red.gnoss.com/en/community/greencompetitiveness/resource/TABLERO-CONTRACHAPADO-Garnica-Plywood-lider-en-l/be1aad9a-448f-4daa-8be5-2c8b806a5b4e?rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "RDF/XML_resource_example_2" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+This is an RDF/XML example link of one of the resources published in the Green Competitiveness community. 
+""" ;
+        dcat:accessURL <http://red.gnoss.com/en/community/greencompetitiveness/resource/Guia-de-la-Productividad-para-empresas-de-tecnolog/c79fb300-c3b1-4212-a3a6-d94503de37ca?rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "RDF/XML_search_example_" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+This is an RDF/XML example link of a search results.
+""" ;
+        dcat:accessURL <http://red.gnoss.com/en/community/greencompetitiveness/advanced-search/tag/sostenibilidad?rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/owl" ;
+        dct:description """
+Gnoss Ontology
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Gnoss_Ontology" ;
+        dct:mirror "['ipfs:QmbDWiHLbnjJ2vGnaViALUEZFtCGu3hgUVhsSZjQ5xwpki']" ;
+        dcat:accessURL <http://gnoss.com/gnoss.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD description
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "voiD_description" ;
+        dct:mirror "['ipfs:QmZ9ucDhprr1H8QEX7EMLLX4XGUDVt3RyYBm7zxkqSbdDy']" ;
+        dcat:accessURL <http://red.gnoss.com/voidGreenCompetitivenessGNOSS.n3> ;
+    ] ;
+    dct:description """
+<p>
+The competitiveness and the green economy should be a collective idea of organizing industrial production and, therefore, a business space, not a thought exercise or a radical practice.
+<a href="http://red.gnoss.com/en/community/greencompetitiveness">Green Competitiveness</a>
+is a global knowledge network designed to share content and opinion about the opportunities for economic growth and social well-being related to the promotion and growth of the green economy.
+</p>
+<p>
+Green Competitiveness works with 
+<a href="http://gnoss.com/">GNOSS software (RIAM Intelearning Lab)</a>
+. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. Green Competitiveness offers a selection of 189 resources (November 2012). It includes facet-based searches and enriched contexts. Both are developments by GNOSS.
+</p>
+<p>
+<br>
+La competitividad y economía verdes deberían llegar a ser un idea colectiva organizadora de la producción industrial y, por tanto, un espacio de negocios y no un ejercicio de pensamiento en los márgenes o una práctica radical. La comunidad
+<a href="http://red.gnoss.com/comunidad/greencompetitiveness">Green Competitiveness</a>
+tiene como objetivo mostrar las oportunidades de crecimiento económico y bienestar social relacionados con la promoción y el crecimiento de la economía verde.
+</p>
+<p>
+Green Competitiveness trabaja con software de 
+<a href="http://gnoss.com/">GNOSS software (RIAM Intelearning Lab)</a>
+. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. NextWeb ofrece en este caso una selección de 189 recursos (Noviembre 2012). Incluye un buscador facetado y contextos enriquecidos. Ambos son desarrollos de GNOSS.
+</p>
+"""@en ;
+
+    foaf:page <http://red.gnoss.com/en/community/greencompetitiveness> ;
+    void:triples "17219"^^xsd:integer ;
+    dcat:theme  <user_generated> ;
+    void:uriSpace <http://red.gnoss.com/en/community/greencompetitiveness> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :green-competitiveness-gnoss ;
+    void:triples "554"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :green-competitiveness-gnoss ;
+    void:triples "523"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :green-competitiveness-gnoss ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:gnoss a void:Linkset ;
+    void:target :green-competitiveness-gnoss ;
+    void:triples "222"^^xsd:integer ;
+ .
+
+:nytimes-linked-open-data a void:Linkset ;
+    void:target :green-competitiveness-gnoss ;
+    void:triples "505"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "GNOSS_Team"^^xsd:string ;
+     foaf:mbox <mailto:gnoss@gnoss.com> ; 
+ .
+

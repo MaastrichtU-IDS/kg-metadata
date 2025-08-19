@@ -1,0 +1,73 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:BibSonomy a dcat:Dataset ;
+    foaf:depiction <https://www.bibsonomy.org/resources/image/logo.png> ;
+    foaf:page <https://www.bibsonomy.org/> ;
+    dcat:keyword "tagging", "social_bookmarking", "folksonomy", "bibsonomy", "_" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title_main "BibSonomyThe_blue_social_bookmark_and_publication_sharing_system." ;
+    dct:description_main """
+BibSonomy is a social bookmarking system. The dataset contains user-generated metadata about web pages and scholarly publications, specifically, tags, that is, freely chosen keywords.  BibSonomy provides metadata to web pages using owl:sameAs links as well links to DBLP.
+"""@en ;
+
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    void:uriSpace <https://bibsonomy.org/> ;
+    void:triples "8929782"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:exampleResource [
+        dcat:mediaType_exampleResource "application/xml;charset=UTF-8" ;
+        dct:description_exampleResource """
+RDF/XML of the DBLP data mirrored in BibSonomy 
+""" ;
+        adms:status_exampleResource """
+OK
+""" ;
+        dct:title_exampleResource "Data_for_user_DBLP" ;
+        dcat:accessURL_exampleResource <https://www.bibsonomy.org/publrss/user/dblp> ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Reverse_Link_from_L3S_DBLP_to_BibSonomy" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <https://dblp.l3s.de/d2r/page/authors/A%27lishia_Bowman> ;
+        adms:status_exampleResource """
+FAIL (HTTPSConnectionPool(host='dblp.l3s.de', port=443): Max retries exceeded with url: /d2r/page/authors/A'lishia_Bowman (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:997)'))))
+""" ;
+    ] ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:l3s-dblp a void:Linkset ;
+    void:target :BibSonomy ;
+    void:triples "1000"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Oname "Robert_Jäschke"^^xsd:string ;
+     foaf:Ombox <mailto:rjoberon@googlemail.com> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Robert_Jäschke"^^xsd:string ;
+     foaf:Cmbox <mailto:jaeschke@l3s.de> ; 
+ .
+

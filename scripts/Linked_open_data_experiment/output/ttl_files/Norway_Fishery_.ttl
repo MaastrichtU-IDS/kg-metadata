@@ -1,0 +1,57 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Norway_Fishery_ a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint_in_Virtuoso" ;
+        dct:identifier "c862654a-ee6e-db74-900e-5434c80324e7" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <https://www.foodie-cloud.org/sparql> ;
+        adms:status """
+FAIL (502)
+""" ;
+    ] ;
+    foaf:depiction <https://box.psnc.pl/f/ba0a07005e/?raw=1> ;
+    foaf:page <https://www.foodie-cloud.org/fct/> ;
+    dcat:keyword "fishery", "stock", "norway_fishery", "life_science", "_" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "Norway_fishery_stocks_dataset" ;
+    dct:description """
+Stock data from Norway, transformed and published as Linked Data. Data source was the list of all stocks for all years retrieved in XML (transformed initially to JSON), collected from service: http://standardgraphs.ices.dk/StandardGraphsWebServices.asmx/getListStocks?year=0.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <http://standardgraphs.ices.dk/stocks/> ;
+    void:triples "1270280"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:soumya.put.poznan@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Raul_Palma,_Soumya_Brahma"^^xsd:string ;
+     foaf:mbox <mailto:rpalma@man.poznan.pl> ; 
+ .
+

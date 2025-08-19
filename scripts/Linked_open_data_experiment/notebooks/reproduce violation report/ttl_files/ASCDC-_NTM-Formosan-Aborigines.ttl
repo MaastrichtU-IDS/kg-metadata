@@ -1,0 +1,129 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ASCDC-_NTM-Formosan-Aborigines a dcat:Dataset ;
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    foaf:page <https://data.ascdc.tw/en/data.php> ;
+    void:triples "118549"^^xsd:integer ;
+    dcat:distribution [
+        dct:identifier_distribution "c5b46365-039f-f947-14c6-816f2c2ac9e7" ;
+        dct:title_distribution "ASCDC_LODDatasets" ;
+        dct:description_distribution """
+Launched in 2018, ASCDC LODDatasets is an online portal platform for publishing LOD-based datasets, which are converted and provided by the ASCDC in Taiwan (R.O.C), with service for SPARQL queries and data downloads.
+""" ;
+        dcat:mediaType_distribution "XML,_JSON,_TTL,_CSV." ;
+        dcat:downloadURL_distribution <https://data.ascdc.tw/en/index.php> ;
+        adms:status_distribution """
+FAIL (400)
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "b5595d71-e6cb-364f-64b1-0cd35fb97982" ;
+        dct:title_distribution "ASCDC_LODDataset_of_AS-NTM-Formosan-Aborigines" ;
+        dct:description_distribution """
+Full download of ASCDC LODDataset of AS-NTM-Formosan-Aborigines in ttl format.
+""" ;
+        dcat:mediaType_distribution "ttl" ;
+        dcat:downloadURL_distribution <https://data.ascdc.tw/dataset/ASCDC-Formosan-Aborigines.ttl> ;
+        adms:status_distribution """
+FAIL (400)
+""" ;
+    ] ;
+    dcat:keyword "ASCDC", "Anthropology", "Taiwanese_Indigenous_people", "Cultural_Heritages", "National_Taiwan_Museum", "Taiwan_Union_Catalog" ;
+    dct:description_main """
+The LOD dataset of ASCDC_The National Taiwan Museum's Formosan Aborigines Collections Digitizing Project (NTM- Formosan-Aborigines) was created by the Academia Sinica Center for Digital Cultures (ASCDC) and based on the metadata from “The National Taiwan Museum's Formosan Aborigines Collections Digitizing Project” (國立台灣博物館原住民文物典藏數位化計畫) in the “Taiwan Union Catalog” (數位典藏與數位學習聯合目錄, https://catalog.digitalarchives.tw/Organization/List.jsp?CID=38973). Originally, the metadata was established by the History & Ethnic Groups of National Taiwan Museum (NTM, 國立台灣博物館) in Taipei. It provides information on Taiwanese indigenous people’s cultural heritages collected by the NTM and can serve as a database for the study of the indigenous people in Taiwan. Containing 3,767 data records and 118,549 triples, the textual content within the LOD dataset is licensed under the Creative Commons Attribution (CC 0), while the rights of the digitized item are reserved by the National Taiwan Museum.
+"""@en ;
+
+    dct:title_main "The_National_Taiwan_Museums_Formosan_Aborigines_Collections_Digitizing_Project_(NTM-Formosan-Aborigines)" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_Resource:_Male_Sleeve_Jacket_/_男子長袖短衣" ;
+        dct:description_exampleResource """
+Resource contains the LOD-based data on the cultural object of “Male Sleeve Jacket / 男子長袖短衣”, collected in 1945.
+""" ;
+        dcat:accessURL_exampleResource <http://data.ascdc.tw/uc/anth/ntm/002f97bd> ;
+        adms:status_exampleResource """
+OK
+""" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_Resource:_Jews_Harp_/_口簧琴" ;
+        dct:description_exampleResource """
+Resource contains the LOD-based data on the cultural object of “Jew's Harp / 口簧琴”.
+""" ;
+        dcat:accessURL_exampleResource <http://data.ascdc.tw/uc/anth/ntm/0066e09a> ;
+        adms:status_exampleResource """
+FAIL (HTTPSConnectionPool(host='data.ascdc.tw', port=443): Read timed out. (read timeout=30))
+""" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+    ] ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dcat:distribution [
+        dct:identifier_distribution "ecd77a30-7647-b300-4335-078a671e147c" ;
+        dct:title_distribution "ASCDC_LODDatasetsDownloads" ;
+        dct:description_distribution """
+Webpage of ASCDC LODDatasets for downloads of entire published LOD-based datasets.
+""" ;
+        dcat:accessURL_distribution <https://data.ascdc.tw/en/data.php> ;
+        dcat:mediaType_distribution "text/html" ;
+        adms:status_distribution """
+FAIL (400)
+""" ;
+    ] ;
+    dcat:theme  <user_generated> ;
+    void:uriSpace <http://data.ascdc.tw/uc/anth/ntm/> ;
+    void:sparqlEndpoint [
+        dct:identifier_sparqlEndpoint "8242abab-1d62-cb6b-4676-da41bb251b5b" ;
+        dct:title_sparqlEndpoint "ASCDC_LODDatasetsSPARQL_Queries" ;
+        dcat:endpointDescription_sparqlEndpoint """
+Access to the SPARQL endpoint of ASCDC's LOD datasets for data retrieval (with template-based examples), downloads and further reuse.
+""" ;
+        dcat:accessURL_sparqlEndpoint <https://data.ascdc.tw/en/sparql.php> ;
+        adms:status_sparqlEndpoint """
+FAIL (400)
+""" ;
+    ] ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:getty-aat a void:Linkset ;
+    void:target :ASCDC-_NTM-Formosan-Aborigines ;
+    void:triples "7258"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :ASCDC-_NTM-Formosan-Aborigines ;
+    void:triples "4427"^^xsd:integer ;
+ .
+
+:viaf a void:Linkset ;
+    void:target :ASCDC-_NTM-Formosan-Aborigines ;
+    void:triples "4177"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:luluyen1210@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Dr._Shu-Jiun_Sophy_Chen_(Academia_Sinica_Center_for_Digital_Cultures,_Taiwan_R.O.C.)"^^xsd:string ;
+     foaf:Cmbox <mailto:sophy@g@e.sinica.edu.tw> ; 
+ .
+

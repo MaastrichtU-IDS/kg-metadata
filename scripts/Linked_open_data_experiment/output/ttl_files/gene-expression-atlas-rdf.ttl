@@ -1,0 +1,76 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:gene-expression-atlas-rdf a dcat:Dataset ;
+    dcat:keyword "experimental_factor_ontology", "functional_genomics", "gene_expression", "lifesciences", "linked_data", "lod", "lodcloud-diagram-2014-08-30", "provenance-metadata", "published-by-producer", "rdf", "vocab-mappings" ;
+    dct:title "Gene_Expression_Atlas_RDF" ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://www.ebi.ac.uk/rdf/services/atlas/sparql> ;
+        adms:status """
+FAIL (500)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "VoiD_file" ;
+        dct:mirror "['ipfs:Qmd8EZmWmRtXvtmjz2AgkKw9KYQwnBWKxvU3DzuVXUJTVY']" ;
+        dcat:accessURL <http://rdf.ebi.ac.uk/dataset/atlas> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (No connection adapters were found for 'ftp://ftp.ebi.ac.uk/pub/databases//microarray/data/gxa/rdf')
+""" ;
+        dct:title "Download_" ;
+        dct:mirror "[]" ;
+    ] ;
+    dct:description """
+The Gene Expression Atlas RDF provides information on gene expression patterns under different biological conditions. Gene expression data is re-analysed in-house to detect genes showing interesting baseline and differential expression patterns.
+"""@en ;
+
+    void:triples "447149547"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    void:uriSpace <http://rdf.ebi.ac.uk/resource/atlas/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:identifiers.org a void:Linkset ;
+    void:target :gene-expression-atlas-rdf ;
+    void:triples "559805"^^xsd:integer ;
+ .
+
+:uniprotkb a void:Linkset ;
+    void:target :gene-expression-atlas-rdf ;
+    void:triples "453390"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Samples_Phenotypes_and_Ontologies_Team"^^xsd:string ;
+ .
+

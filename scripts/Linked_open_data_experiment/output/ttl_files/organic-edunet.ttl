@@ -1,0 +1,168 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:organic-edunet a dcat:Dataset ;
+    dcat:keyword "agriculture", "agroecology", "deref-vocab", "format-dcterms", "format-lom", "format-rdf", "license-metadata", "lifesciences", "lod", "provenance-metadata", "published-by-producer", "vocab-mappings" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "Organic_Edunet_Linked_Open_Data" ;
+    void:exampleResource [
+        dct:title "Example_URI_(rdf+xml)" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+An rdf/xml example of a e-learning resource metadata
+""" ;
+        dcat:accessURL <https://ckannet-storage.commondatastorage.googleapis.com/2012-10-27T214009/1454.rdf> ;
+        adms:status """
+FAIL (403)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example_URI_(turtle)" ;
+        dcat:mediaType "example/turtle" ;
+        dct:description """
+An n3 example of a e-learning resource metadata
+""" ;
+        dcat:accessURL <https://ckannet-storage.commondatastorage.googleapis.com/2012-10-27T214250/1454.n3> ;
+        adms:status """
+FAIL (403)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint" ;
+        dcat:endpointDescription """
+Sparql End point of Organic Edunet
+""" ;
+        dcat:accessURL <http://data.organic-edunet.eu/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.organic-edunet.eu', port=80): Max retries exceeded with url: /sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dad180>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint_API" ;
+        dcat:endpointDescription """
+Sparql endpoint query service
+""" ;
+        dcat:accessURL <http://data.organic-edunet.eu/snorql/> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.organic-edunet.eu', port=80): Max retries exceeded with url: /snorql/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dafd90>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+VoID vocabulary
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "VoID_of_Organic_Edunet" ;
+        dct:mirror "['ipfs:QmRmpmcv3yG2MsthpYGqUbxX3vYxKXsTVXjaXSaNM5dwTf']" ;
+        dcat:accessURL <http://data.organic-edunet.eu/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "api/linked-data" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.organic-edunet.eu', port=80): Max retries exceeded with url: /page/identifier/1454 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686daddb0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "An_Entry_Point_to_an_example_relating_to_organic_farming" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.organic-edunet.eu/page/identifier/1454> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+the lom vocabulary should be extend to http://ltsc.ieee.org/rdf/lomv1.0/vocab/
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Mapping_to_Learning_Object_Metadata_Standard_(LOM)" ;
+        dct:mirror "['ipfs:QmRMKGco1ryzCyUnXbR4pzacTPJZixZ2hD7di8Ai5twUwL']" ;
+        dcat:accessURL <http://ltsc.ieee.org/xsd/lomv1.0/common/vocabValues.xsd> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "PDF" ;
+        dct:description """
+LRE Thesauri "170. Modern Languages"
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "LRE_v3.0" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://lreforschools.eun.org/c/document_library/get_file?p_l_id=10970&folderId=12073&name=DLFE-1.pdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "rdf_dump" ;
+        dct:mirror "['ipfs:QmaxH1Q18wyUUH2RtK9YF7wxFdq4dhmqT9pMGTfNN1BnvM']" ;
+        dcat:accessURL <http://data.organic-edunet.eu/rdfdump.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "mapping/d2r" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "D2RQ_Mapping" ;
+        dct:mirror "['ipfs:QmRyD2U7zMtktedWuZz1G8wdMQhPnBkARipmreCZZVhTz7']" ;
+        dcat:accessURL <http://sites.wiwiss.fu-berlin.de/suhl/bizer/d2r-server/config.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+Snorql for sparql endpoint
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.organic-edunet.eu', port=80): Max retries exceeded with url: /snorql/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686daf610>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Sparql_API" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.organic-edunet.eu/snorql/> ;
+    ] ;
+    dct:description """
+Organic Edunet Linked Open Data currently contains the metadata of collection of learning objects exposed through the Organic.Edunet portal. These objects come from organizations that have become providers of educational materials on the portal. The topics of the collection include organic agriculture and agroecology.
+
+"""@en ;
+
+    foaf:page <http://data.organic-edunet.eu/> ;
+    void:triples "11091"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    void:uriSpace <http://data.organic-edunet.eu/directory/identifier> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :organic-edunet ;
+    void:triples "11091"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "University_of_Alcala_de_Henares"^^xsd:string ;
+     foaf:mbox <mailto:enay@.rajabi@uah.es> ; 
+ .
+

@@ -1,0 +1,70 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:tds a dcat:Dataset ;
+    dcat:keyword "language_description", "linguistics", "llod", "ontology", "typological-database" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "TDS" ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+TDS ontology
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "TDS_ontology" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://languagelink.let.uu.nl/tds/ontology/LinguisticOntology.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+TDS main site
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Typological_Database_System,_main_site" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://languagelink.let.uu.nl/tds/index.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+TDS web interface
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "TDS_web_interface" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://languagelink.let.uu.nl/tds/main.html> ;
+    ] ;
+    dct:description """
+Typological Database System ontology
+"""@en ;
+
+    void:triples "3135"^^xsd:integer ;
+    dcat:theme  <linguistics> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:name "Dimitriadis,_Alexis,_Menzo_Windhouwer,_Adam_Saulwick,_Rob_Goedemans,_and_Tamás_Bíró"^^xsd:string ;
+     foaf:mbox <mailto:tds.gw@uu.nl> ; 
+ .
+

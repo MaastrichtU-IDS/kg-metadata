@@ -1,0 +1,42 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:PersonOnto a dcat:Dataset ;
+    foaf:page <http://www.semanticweb.org/user/ontologies/2020/0/untitled-ontology-30> ;
+    dct:license <http://www.opendefinition.org/licenses/odc-odbl> ;
+    dct:title "Ontology_of_University_People" ;
+    dct:description """
+The ontology contains a hierarchy of people in a university, lecturers and students. Some properties associated with them like which subject they teach or study etc.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    dcat:theme  <user_generated> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:shriya2021@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Shripriya_Dubey"^^xsd:string ;
+     foaf:mbox <mailto:shriya2021@gmail.com> ; 
+ .
+

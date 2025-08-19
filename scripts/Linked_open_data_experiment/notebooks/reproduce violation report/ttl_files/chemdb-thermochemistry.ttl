@@ -1,0 +1,65 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:chemdb-thermochemistry a dcat:Dataset ;
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    foaf:page <http://chemdc.casdc.cn/> ;
+    void:triples "42003"^^xsd:integer ;
+    dcat:keyword "compound", "thermochemical_properties", "physicochemical_properties" ;
+    dct:description_main """
+This dataset collects information on the thermochemical properties and basic physicochemical properties of compounds at gaseous state and condensed state, including heat capacity, standard entropy and standard enthalpy, et. al.
+"""@en ;
+
+    dct:title_main "chemdb_thermochemistry_dataset" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dcat:theme  <life_sciences> ;
+    void:sparqlEndpoint [
+        dct:identifier_sparqlEndpoint "51394d78-00aa-64f6-791b-50a4fcd20b0f" ;
+        dct:title_sparqlEndpoint "chemdb-thermochemistry_SPARQL_endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://chemdb.semweb.csdb.cn/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-sio a void:Linkset ;
+    void:target :chemdb-thermochemistry ;
+    void:triples "31487"^^xsd:integer ;
+ .
+
+:bioportal-cheminf a void:Linkset ;
+    void:target :chemdb-thermochemistry ;
+    void:triples "10516"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:hfsophie123@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "赵月红"^^xsd:string ;
+     foaf:Cmbox <mailto:yhzhao@ipe.ac.cn> ; 
+ .
+

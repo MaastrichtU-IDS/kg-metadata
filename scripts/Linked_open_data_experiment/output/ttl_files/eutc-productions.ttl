@@ -1,0 +1,79 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:eutc-productions a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-rdf", "lod", "lodcloud-diagram-2011-09-19", "media", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "published-by-producer", "theatre" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-pddl> ;
+    dct:title "Edinburgh_University_Theatre_Company_Productions" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://www.bedlamtheatre.co.uk/people/79> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "None" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://api.talis.com/stores/eutc-productions/services/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='api.talis.com', port=80): Max retries exceeded with url: /stores/eutc-productions/services/sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686c9dab0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+RDF Schema
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "['ipfs:QmanmJSAAZjPJWX2XZFT3Qdv2MaXT8yk5BUHdh8s95LTJG']" ;
+        dcat:accessURL <http://purl.org/theatre> ;
+    ] ;
+    dct:description """
+A dataset of productions put on by the Edinburgh University Theatre Company past and present, including linked cast & crew lists.
+"""@en ;
+
+    foaf:page <http://www.bedlamtheatre.co.uk/> ;
+    void:triples "31223"^^xsd:integer ;
+    dcat:theme  <media> ;
+    void:uriSpace <http://www.bedlamtheatre.co.uk/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bbc-programmes a void:Linkset ;
+    void:target :eutc-productions ;
+    void:triples "55"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :eutc-productions ;
+    void:triples "166"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Luke_Blaney"^^xsd:string ;
+     foaf:mbox <mailto:ckan@lukeblaney.co.uk> ; 
+ .
+

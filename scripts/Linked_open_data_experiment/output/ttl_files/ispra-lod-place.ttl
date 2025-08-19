@@ -1,0 +1,105 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ispra-lod-place a dcat:Dataset ;
+    dcat:keyword "administrative_division", "country-italy", "format-rdf", "lod", "luoghi", "luogo", "places", "rdf", "rdf-format" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "ISPRAThe_administrative_divisions_of_Italy_(regions/provinces/municipalities)" ;
+    void:exampleResource [
+        dct:title "Exampe_ResourceMunicipality_of_Roviano_(Province:Rome,_Region:_Lazio)_in_Italy" ;
+        dcat:mediaType "text/html;charset=UTF-8" ;
+        dct:description """
+Municipality of Roviano (Italy) with his shape and link to istat, dbpedia, etc.
+""" ;
+        dcat:accessURL <http://dati.isprambiente.it/id/place/58092/html> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "main_sparql_EndPoint" ;
+        dcat:endpointDescription """
+main sparql EndPoint
+""" ;
+        dcat:accessURL <http://dati.isprambiente.it/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-gzip" ;
+        dct:description """
+RDF (N-Triples) Distribution of the administrative divisions of Italy (regions/provinces/municipalities) dataset
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "RDF_(N-Triples)_Distribution_of_the_administrative_divisions_of_Italy_(regions/provinces/municipalities)_dataset" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://dati.isprambiente.it/downloads/luoghi.nt.gz> ;
+    ] ;
+    dct:description """
+#### dati.isprambiente.it - ISPRA Linked Open Data - The administrative divisions of Italy (regions/provinces/municipalities) + shape of municipalities + link to istat + link to geoname/dbpedia
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :ispra-lod-place ;
+    void:triples "6918"^^xsd:integer ;
+ .
+
+:dbpedia-it a void:Linkset ;
+    void:target :ispra-lod-place ;
+    void:triples "6898"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :ispra-lod-place ;
+    void:triples "6941"^^xsd:integer ;
+ .
+
+:gadm.geovocab a void:Linkset ;
+    void:target :ispra-lod-place ;
+    void:triples "5909"^^xsd:integer ;
+ .
+
+:geonames a void:Linkset ;
+    void:target :ispra-lod-place ;
+    void:triples "7879"^^xsd:integer ;
+ .
+
+:istat a void:Linkset ;
+    void:target :ispra-lod-place ;
+    void:triples "8222"^^xsd:integer ;
+ .
+
+:linkedgeodata a void:Linkset ;
+    void:target :ispra-lod-place ;
+    void:triples "6397"^^xsd:integer ;
+ .
+
+:musicbrainz a void:Linkset ;
+    void:target :ispra-lod-place ;
+    void:triples "6861"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Italian_National_Institute_for_Environmental_Protection_and_Research,_ISPRA"^^xsd:string ;
+     foaf:mbox <mailto:assistenza-lod@isprambiente.it> ; 
+ .
+

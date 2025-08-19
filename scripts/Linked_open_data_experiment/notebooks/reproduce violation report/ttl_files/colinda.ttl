@@ -1,0 +1,87 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:colinda a dcat:Dataset ;
+    dcat:keyword "conferences", "crossdomain", "deref-vocab", "format-geo", "format-geonames", "format-owl", "format-rdf", "format-rdfs", "format-swrc", "locations", "lod", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-provenance-metadata", "published-by-producer" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title_main "COLINDAConference_Linked_Data" ;
+    void:exampleResource [
+        dct:title_exampleResource "Sample_conference" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+Example (RDF/XML)
+
+""" ;
+        dcat:accessURL_exampleResource <http://colinda.org/resource/conference/WWW/2012> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_endpoint_1" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint 1
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://colinda.org/endpoint.php> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_enpdoint_2" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL enpdoint 2
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://data.colinda.org/endpoint.php> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+COLINDA RDF Dump
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Download__Link_(RDF_Data)" ;
+        dcat:accessURL_distribution <http://data.colinda.org/rdf-dump/COLINDA.rdf> ;
+    ] ;
+    dct:description_main """
+COLINDA -COnference LInked DAta 
+This data set is linked to GeoNames, DBPedia and DBLP (L3S).
+Includes information about scientific conferences and their location including start and end times
+
+"""@en ;
+
+    foaf:page <http://colinda.org> ;
+    void:triples "149020"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://colinda.org/resource/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames a void:Linkset ;
+    void:target :colinda ;
+    void:triples "10492"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Selver_Softic"^^xsd:string ;
+     foaf:Cmbox <mailto:softic.s@gmail.com> ; 
+ .
+

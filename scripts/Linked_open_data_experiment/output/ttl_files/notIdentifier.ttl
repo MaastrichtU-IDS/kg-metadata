@@ -1,0 +1,74 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:notIdentifier a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://lod-cloud.net/add-dataset#> ;
+    void:triples "5000"^^xsd:integer ;
+    dcat:distribution [
+        dct:identifier "3bb0eca7-9d25-f52b-e967-5e2efff2f8d8" ;
+        dct:title "nitpInfo" ;
+        dct:description """
+Information about NIT Patna
+""" ;
+        dcat:mediaType "text/plain;_charset=utf-8" ;
+        dcat:downloadURL <https://raw.githubusercontent.com/Rupali0311/RDF/main/nitpInfo-xlsx.ttl> ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier "439f08f4-6408-a2a5-01d7-595ae10fb1a0" ;
+        dct:title "professors" ;
+        dct:description """
+Information about professors of NIT Patna
+""" ;
+        dcat:mediaType "text/plain;_charset=utf-8" ;
+        dcat:downloadURL <https://raw.githubusercontent.com/Rupali0311/RDF/main/professors.ttl> ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dct:description """
+NITP_PROFESSORS_DATA
+"""@en ;
+
+    dct:title "NITP" ;
+    dct:license <http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/> ;
+    dcat:theme  <cross_domain> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :notIdentifier ;
+    void:triples "150"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:rupalitiwary0311@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "LOD"^^xsd:string ;
+     foaf:mbox <mailto:rupalitiwary0311@gmail.com> ; 
+ .
+

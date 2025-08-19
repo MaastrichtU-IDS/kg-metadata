@@ -1,0 +1,389 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:europeana-lod-v1 a dcat:Dataset ;
+    dcat:keyword "culturalheritage", "culture", "eu", "europe", "europeana", "format-dc", "format-ore", "format-rdf", "library", "license-metadata", "lld", "lod", "metadata", "no-deref-vocab", "no-vocab-mappings", "provenance-metadata", "publications", "published-by-producer", "void-sparql-endpoint" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "Europeana_Linked_Open_Data_V1.0" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Portugal (Download)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmYvWY54JGCqp7SZ1LZMXizgU7EBBNzBfx2RS43xjoPp5E']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/92039_Ag_EU_TEL_a0005_Portugal.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Jewish Lives (Download)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmQ1MtB46ukLsHshkQMo881dyd6wrfzvfKgoP4RDi7hKvc']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/09405g_Ag_UK_ELocal_TWAM-JL.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Det Danske Filminstitut / Danish Film Institute (Download)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmTjtJ6yNucSjkDicGi5fM445mPZQKpgiVANvk1kcz4eKY']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/08601_Ag_EU_EFG_DFI.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Filmarchiv Austria (Download)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmREqJRSVz73159dMnDqmu57DK8KizXLbetvY6tcBKzp5C']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/08603_Ag_EU_EFG_FilmArchiv.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Culture Shock (Download)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmcNenJWwvVLwmJT5k387FZcBDf7NQJgQvgnBUnJmAhjaZ']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/09405e_Ag_UK_ELocal_TWAM-CS.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+MemoryNet (Download)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmZr1PTHWeUFdNEo8t2Da2A2eiiKzBMQbqtcnWM1z5Y5Kb']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/09405f_Ag_UK_ELocal_TWAM-MN.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Discovering Bewick (Download)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:Qme3BgCSWRH9PfX9BD5cmbZs1j9SGZJrpuhQ79s4CC7NuE']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/09405h_Ag_UK_ELocal_TWAM-DB.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Tyne & Wear Archive and museum (Download)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:Qmc2ZzgLWpR9V5iTKLPpUP6q5HuGaNxw1dhemvShkkU613']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/09405i_Ag_UK_ELocal_TWAM-AOL.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Geofinder (Download)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmeWwigg2EgigRAUVPf1yw7eHajKuwrJSrcWtHNtJzG2P7']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/09405j_Ag_UK_ELocal_TWAM-GF.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Tyne & Wear Imagine (Download)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmTdVbFgXXi7KuEab8ztELU6uFAM2saVFE53Ai4ybNizxw']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/09405p_Ag_UK_ELocal_TyneWearImagine.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Swedish Open Cultural Heritage (Download 1)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmV8DQNP5hJPdZCvEUZsicY8gbv3zwCYp2J9H9qW4NYQhd']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/91622_Ag_SE_SwedishNationalHeritage_raa_kmb.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Swedish Open Cultural Heritage (Download 2/2)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmUE4XxyEGMGoqoMen3woKgcpnf5CpJoDQSqj4fQCYbhZ3']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/91611_Ag_SE_SwedishNationalHeritage_fornvannen.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Austrian Library (Download 1/5)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmVTi9Xh67LwBKf8jeA42hMEz5WxcmtChh9tdjvx3j2hV1']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/92060_Ag_EU_TEL_a0478_Austria.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Serbian Library (Download 1/11)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmQsQoM6X1MWvB7LqQY2jRtStcdnH4gJeWN9oUHXu4pw56']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/92040_Ag_EU_TEL_a0155_Serbia.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Czech Republic (Download)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmfMQ5FZYr1UCZ1WAUV7m8Bnhxo78SXSSPMCWSUhvHXUbk']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/92003_Ag_EU_TEL_a0078_TEL_NKP_kramerius.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Luxemburg (Download)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmSvUdwgEB14VBi9Unw9KEyNpi26ufb6LJa8AuhQj6Kuw6']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/92038_Ag_EU_TEL_a0327_Luxemburg.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Slovenia (Download 1/10)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/92019_Ag_EU_TEL_a0425E.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Ireland (Download)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.0/datasets/nt/92022_Ag_EU_TEL_a0430E.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+United Kingdom (Download)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:Qmf3yojCFRSyDJtnCQ7CCqB3qQj9v3jBPiUUFnZgKMJdGy']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/92037_Ag_EU_TEL_a0444_BritishLibrary.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Hispana (Ministry of Culture – Spain) (Download 1/3)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmXZBgY1BDabQkPRMb4tzgW4LQfG6VEk9TDmMPHD8fcRz6']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/09407a_Ag_ES_ELocal_esegen.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+eLocal Norway called ABM-utvikling (Download 1/2)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmTUaf5WN6uddxK9XSNSmr3RNfUNrfbfrC6vy9LbQjJrwx']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/09414b_Ag_NO_ELocal_Foto-SF.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+Erfgoedplus.be, province of Limburg Belgium (Download 1/11)
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmVWZb3wcG95ZsmDsKHFyYeoFgtbbDc7aj22jjofMje4RU']" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/datasets/nt/09421a_Ag_BE_Elocal_Bokrijk.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Global dump
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Global_dump" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://data.europeana.eu/download/1.1/europeana_lod_1.1.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.europeana.eu/download/1.1/datasets/nt/92022_Ag_EU_TEL_a0430E.nt.bz2> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD dataset description 
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmREamn6v2rdDzGjmxzReC9yhY58idYRztyzbf2jB3RB6h']" ;
+        dcat:accessURL <http://data.europeana.eu/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Link to an example data item within the dataset (RDF/XML)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.europeana.eu/data/item/09404/C3C50BD0958EE18ECE1B8F93780DC84D8273664F> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Semantic Web Sitemap
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.europeana.eu/download/1.0/sitemap.xml> ;
+    ] ;
+    dct:description """
+[data.europeana.eu](http://data.europeana.eu)</a> started as an experimental pilot  in February 2012 with a small number of data providers who committed at an early stage to Europeana's initiative of promoting more open data and new data exchange agreements.
+
+The current version of data.europeana.eu contains all the data available on the [Europeana Portal](www.europeana.eu/). Check the description of the data at [http://datahub.io/dataset/europeana-lod](http://datahub.io/dataset/europeana-lod)
+
+The first version of data.europeana.eu as used in the W3C Library Linked Data  group contained [open](http://creativecommons.org/publicdomain/zero/1.0/) metadata on 2.4 million texts, images, videos and sounds gathered by Europeana. These collections came from 8 direct Europeana providers encompassing over 200 cultural institutions from 15 countries. They cover a great variety of heritage objects, such as this [slovenian version of O Sole Mio](http://data.europeana.eu/item/92056/BD9D5C6C6B02248F187238E9D7CC09EAF17BEA59) from the National Library of Slovenia, or Neil Robson's [memories of the herring business](http://data.europeana.eu/item/09405f/533F9A826CB038D02C05A9814CF97E5D1B49BBEE) from the Tyne and Wear Archives & Museums. 
+Here is an example URI to get started with:
+http://data.europeana.eu/item/92037/25F9104787668C4B5148BE8E5AB8DBEF5BE5FE03
+
+The project has been described in a [paper](http://dcevents.dublincore.org/index.php/IntConf/dc-2011/paper/view/55) presented at the Dublin Core 2011 conference.
+
+"""@en ;
+
+    foaf:page <http://data.europeana.eu/> ;
+    void:triples "117000000"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://data.europeana.eu> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :europeana-lod-v1 ;
+    void:triples "1304"^^xsd:integer ;
+ .
+
+:gemet a void:Linkset ;
+    void:target :europeana-lod-v1 ;
+    void:triples "863247"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :europeana-lod-v1 ;
+    void:triples "1650634"^^xsd:integer ;
+ .
+
+:swedish-open-cultural-heritage a void:Linkset ;
+    void:target :europeana-lod-v1 ;
+    void:triples "100489"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Bernhard_Haslhofer_and_Antoine_Isaac"^^xsd:string ;
+     foaf:mbox <mailto:bernhard.haslhofer@cornell.edu;aisaac@few.vu.nl> ; 
+ .
+

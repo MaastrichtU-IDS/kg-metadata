@@ -1,0 +1,69 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:lcsh a dcat:Dataset ;
+    dcat:keyword "authorities", "bibliographic", "format-rdf", "format-skos", "library", "lld", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "no-vocab-mappings", "publications", "published-by-producer" ;
+    dct:title "Library_of_Congress_Subject_Headings" ;
+    dcat:distribution [
+        dcat:mediaType "application/zip" ;
+        dct:description """
+N-Triples using SKOS and DublinCore
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "LCSH_SKOS_(ntriples)" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://id.loc.gov/static/data/authoritiessubjects.nt.skos.zip> ;
+    ] ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+RDF/XML example
+""" ;
+        dcat:accessURL <http://id.loc.gov/authorities/subjects/sh87001447.rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+RDF/XML using SKOS and DublinCore vocabularies
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "LCSH_SKOS_(rdf/xml)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://id.loc.gov/static/data/authoritiessubjects.rdfxml.skos.zip> ;
+    ] ;
+    dct:description """
+LCSH has been actively maintained since 1898 to catalog materials held at the Library of Congress. By virtue of cooperative cataloging other libraries around the United States also use LCSH to provide subject access to their collections. In addition LCSH is used internationally, often in translation.
+"""@en ;
+
+    foaf:page <http://id.loc.gov/authorities/> ;
+    void:triples "7332816"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://id.loc.gov/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:stitch-rameau a void:Linkset ;
+    void:target :lcsh ;
+    void:triples "55281"^^xsd:integer ;
+ .
+

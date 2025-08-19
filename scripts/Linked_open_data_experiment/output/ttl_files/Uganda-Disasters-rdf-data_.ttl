@@ -1,0 +1,63 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Uganda-Disasters-rdf-data_ a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+RDF file contains 155993 statements
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "RDF_dataset" ;
+        dct:mirror "[]" ;
+        dct:identifier "b75804dc-3ffe-60e4-87ea-7a24f25b8ace" ;
+        dcat:downloadURL <http://ld4du.optimistcarter.com/ugdom.owl/> ;
+    ] ;
+    foaf:page <http://ld4du.optimistcarter.com> ;
+    dcat:keyword "disaster", "uganda", "hazard", "disaster_data" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "Uganda_Disasters" ;
+    dct:description """
+A data set containing all disasters recorded to have occurred in Uganda. Created by GI members of Makerere University, Kampala, Uganda.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <http://w3id.org/gicentre/onto/ugdom#> ;
+    void:triples "155993"^^xsd:integer ;
+    dcat:theme  <geography> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames-semantic-web a void:Linkset ;
+    void:target :Uganda-Disasters-rdf-data_ ;
+    void:triples "347"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:zamycar90@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Mosi_Kiroge"^^xsd:string ;
+     foaf:mbox <mailto:mosikiroge@yahoo.co.uk> ; 
+ .
+

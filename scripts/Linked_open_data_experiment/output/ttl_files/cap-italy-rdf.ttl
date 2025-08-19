@@ -1,0 +1,80 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:cap-italy-rdf a dcat:Dataset ;
+    dcat:keyword "cap", "country.it", "deref-vocab", "format-rdf", "format-vcard", "geographic", "italy", "license-metadata", "linkeddata", "lod", "lodcloud.nolinks", "lodcloud.unconnected", "postal-code", "provenance-metadata", "published-by-producer", "void-sparql-endpoint" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "Postal_codes_Italy_(LinkedOpenData.it)" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://data.linkedopendata.it/cap/resource/ANCONA-VIA_ACHILLE_BARILATTI> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.linkedopendata.it', port=80): Max retries exceeded with url: /cap/resource/ANCONA-VIA_ACHILLE_BARILATTI (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686daddb0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "None" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://sparql.linkedopendata.it/cap> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='sparql.linkedopendata.it', port=80): Max retries exceeded with url: /cap (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686daeb90>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+RDF dump
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='dump.linkedopendata.it', port=80): Max retries exceeded with url: /cap (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dadff0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://dump.linkedopendata.it/cap> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+Void description
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='void.linkedopendata.it', port=80): Max retries exceeded with url: /cap (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686daec50>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://void.linkedopendata.it/cap> ;
+    ] ;
+    dct:description """
+List of postal codes in Italy. Includes street names, city and administrative regions.
+"""@en ;
+
+    foaf:page <cap-italia-rdf> ;
+    void:triples "436603"^^xsd:integer ;
+    void:uriSpace <http://data.linkedopendata.it/cap/resource/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:name "Linkedopendata.it"^^xsd:string ;
+     foaf:mbox <mailto:info@linkedopend@a.it> ; 
+ .
+

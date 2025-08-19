@@ -1,0 +1,127 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:arthroscopy a dcat:Dataset ;
+    dcat:keyword "Arthroscopy", "aparato_locomotor", "arthroscopic_proceedings", "artrocopia", "corporate_excellence", "country-spain", "country.es", "dc", "foaf", "format-dc", "format-dcam", "format-foaf", "format-rdfg", "format-sioc", "format-skos", "format-wot", "health", "laboratorio_de_ideas", "language-spa", "license-metadata", "locomotor_system", "lod", "no-proprietary-vocab", "no-vocab-mappings", "procesos_quirúrgicos", "provenance-metadata", "published-by-third-party", "schemata", "sioc", "skos", "socialweb", "sp", "spain", "surgical_procedures", "usergeneratedcontent", "wrapper" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title "Arthroscopy_community" ;
+    void:exampleResource [
+        dct:title "RDF/XML_resource_example" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+This is an RDF/XML example link of one of the resources published in the arthroscopy community. 
+""" ;
+        dcat:accessURL <http://portalartroscopia.com/en/community/Arthroscopy/resource/Reconstruccion-de-LCA-mediante-tendones-isquiotibi/267556b2-67f0-4264-8071-1932151c8439> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='portalartroscopia.com', port=80): Max retries exceeded with url: /en/community/Arthroscopy/resource/Reconstruccion-de-LCA-mediante-tendones-isquiotibi/267556b2-67f0-4264-8071-1932151c8439 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fd630>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "RDF/XML_resource_example_2" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+This is an RDF/XML example link of one of the resources published in the arthroscopy community. 
+""" ;
+        dcat:accessURL <http://portalartroscopia.com/en/community/Arthroscopy/resource/Reparacion-de-cartilago-en-la-rodilla/a7617f64-8a3c-4913-aea1-17657100cc45?rdf> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='portalartroscopia.com', port=80): Max retries exceeded with url: /en/community/Arthroscopy/resource/Reparacion-de-cartilago-en-la-rodilla/a7617f64-8a3c-4913-aea1-17657100cc45?rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fe8c0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "RDF/XML_search_example_" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+This is an RDF/XML example link of a search results.
+""" ;
+        dcat:accessURL <http://portalartroscopia.com/en/community/Arthroscopy/advanced-search/tag/Arthroscopy?rdf> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='portalartroscopia.com', port=80): Max retries exceeded with url: /en/community/Arthroscopy/advanced-search/tag/Arthroscopy?rdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843fef80>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/owl" ;
+        dct:description """
+Gnoss OWL Ontology
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Gnoss_Ontology" ;
+        dct:mirror "['ipfs:QmbDWiHLbnjJ2vGnaViALUEZFtCGu3hgUVhsSZjQ5xwpki']" ;
+        dcat:accessURL <http://gnoss.com/gnoss.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD description
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "voiD_description" ;
+        dct:mirror "['ipfs:QmR4vVQ66rCzG81pvftDWiWKRirB7UuK5BJJ2WTEQjbQdP']" ;
+        dcat:accessURL <http://museos.gnoss.com/voidArtroscopyGNOSS.n3> ;
+    ] ;
+    dct:description """
+<p> The arthroscopy community is the adecuate space for all those who take part on the arthroscopic surgical procedures of the locomotor system. Its meaning is to create and share knowledge concerning the answers to the current and effective matters on these kind of arthroscopic proceedings: surgical, anesthesic, rehabilitative or even organizing ones.</p>
+<p>The arthroscopy community works with <a href="http://gnoss.com/">GNOSS software (RIAM Intelearning Lab)</a>. RIAM is a company that develops semantic technology for the creation of specialized networks and linked markets. It includes a facet-based search engine and enriched contexts. Both are developments by GNOSS.</p>
+
+<p> Portal de Artroscopia es un espacio de aprendizaje para todas las personas que participan en los procedimientos quirúrgicos artroscópicos del aparato locomotor. El propósito es generar y compartir conocimiento sobre las soluciones a los problemas reales y concretos en este tipo procedimientos, sean estos quirúrgicos, de anestesia, de rehabilitación o de organización. </p><p> Portal de Artroscopia trabaja con <a href="http://gnoss.com/">software de GNOSS (RIAM Intelearning Lab)</a>. RIAM es una compañía que desarrolla tecnología semántica para la creación de redes especializadas y mercados enlazados. El proyecto Incluye un buscador facetado y contextos enriquecidos. Ambos son desarrollos de GNOSS.
+</p>
+"""@en ;
+
+    foaf:page <http://gnoss.com/comunidad/Arthroscopy> ;
+    void:triples "62355"^^xsd:integer ;
+    dcat:theme  <user_generated> ;
+    void:uriSpace <http://gnoss.com/comunidad/Arthroscopy> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dblp-deusto-gnoss a void:Linkset ;
+    void:target :arthroscopy ;
+    void:triples "789"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :arthroscopy ;
+    void:triples "16245"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :arthroscopy ;
+    void:triples "6088"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :arthroscopy ;
+    void:triples "223"^^xsd:integer ;
+ .
+
+:gnoss a void:Linkset ;
+    void:target :arthroscopy ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+:nytimes-linked-open-data a void:Linkset ;
+    void:target :arthroscopy ;
+    void:triples "383"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "GNOSS_Team"^^xsd:string ;
+     foaf:mbox <mailto:gnoss@gnoss.com> ; 
+ .
+

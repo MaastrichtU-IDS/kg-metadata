@@ -1,0 +1,180 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:vivo2doi a dcat:Dataset ;
+    dcat:keyword "academic", "deref-vocab", "doi", "format-bibo", "format-foaf", "format-prov", "format-sio", "format-void", "license-metadata", "lifesciences", "literature", "lod", "provenance-metadata", "publications", "published-by-producer", "vivo" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-by> ;
+    dct:title "vivo2doi" ;
+    void:exampleResource [
+        dct:title "Example_URI" ;
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://lod.hackerceo.org/ANGEL/VIVO2DOI/http-reach.suny.edu/individual/Yamamoto_A> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='lod.hackerceo.org', port=80): Max retries exceeded with url: /ANGEL/VIVO2DOI/http-reach.suny.edu/individual/Yamamoto_A (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dad360>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='research.hackerceo.org', port=80): Max retries exceeded with url: /renaissance/ANGEL/Datasets/VIVO2DOI (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dacaf0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Homepage" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://research.hackerceo.org/renaissance/ANGEL/Datasets/VIVO2DOI> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle;charset=UTF-8" ;
+        dct:description """
+Listing of all Linkset Bundles available, using the Vocabulary of Interlinked Datasets (VoID)
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='lod.hackerceo.org', port=80): Max retries exceeded with url: /ANGEL/VIVO2DOI/void.ttl (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dae770>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "VoID_File" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://lod.hackerceo.org/ANGEL/VIVO2DOI/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/ntriples" ;
+        dct:description """
+Compressed n-triples file of 7,073,060 triples crawled 2 Aug 2015 from the 168,928 void:subsets listed at http://lod.hackerceo.org/ANGEL/VIVO2DOI/void.ttl on 2 Aug 2015.
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='lodcloud.tw.rpi.edu', port=80): Max retries exceeded with url: /source/hackerceo-org/vivo2doi/version/2015-Aug-02/publish/vivo2doi_20150802.nt.gz (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686daf7c0>, 'Connection to lodcloud.tw.rpi.edu timed out. (connect timeout=30)')))
+""" ;
+        dct:title "7_Million_N-Triples_Dump_File_(20150802)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://lodcloud.tw.rpi.edu/source/hackerceo-org/vivo2doi/version/2015-Aug-02/publish/vivo2doi_20150802.nt.gz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdfs-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "prv_RDF_Schema" ;
+        dct:mirror "['ipfs:QmdJJW2hptxL4TefCCM1PcnjxoUrSZQde9ZTwXZhpiQXY3']" ;
+        dcat:accessURL <http://purl.org/net/provenance/ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "BIBO_RDF_Schema" ;
+        dct:mirror "['ipfs:QmfHEffjG7eWcxaeW7mpKuszYDeGgFsSRYaumXiAfNoutN']" ;
+        dcat:accessURL <http://purl.org/ontology/bibo/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "VoID_RDF_Schema" ;
+        dct:mirror "['ipfs:QmScZ3nsKvCpwiQDcDULgKYqoVEaZ43YsCXfrmD1zCJmq9']" ;
+        dcat:accessURL <http://rdfs.org/ns/void> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "SIO_RDF_Schema" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://semanticscience.org/resource/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "PROV_RDF_Schema" ;
+        dct:mirror "['ipfs:QmUzz1Z8nRvSfoZBntrHu4XihYEMSHWnV4h9tNo5RpCN5y']" ;
+        dcat:accessURL <http://www.w3.org/ns/prov> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "FOAF_RDF_Schema" ;
+        dct:mirror "['ipfs:QmXTmGjkei19mbhkXLHHFAQqgAqhSPvVv4gHXFBzVTTxko']" ;
+        dcat:accessURL <http://xmlns.com/foaf/0.1/> ;
+    ] ;
+    dct:description """
+A proof-of-concept application was created to automatically cross-link publications that were written by the same person through harvesting linked open data from institution-based research networking systems. This is important because it (1) helps people identify related articles when exploring the biomedical literature, (2) gives scientists appropriate credit for the work they have done, and (3) makes it easier to find experts in a subject area.
+
+This project was funded by NSF SciSIP Award #1238469, NIH grants 8UL1TR000170 and 1UL1TR001102, and Harvard University and its affiliated academic health centers.
+"""@en ;
+
+    void:triples "7073060"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://lod.hackerceo.org/ANGEL/VIVO2DOI/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:doi a void:Linkset ;
+    void:target :vivo2doi ;
+    void:triples "23352"^^xsd:integer ;
+ .
+
+:vivo-scripps-research-institute a void:Linkset ;
+    void:target :vivo2doi ;
+    void:triples "50911"^^xsd:integer ;
+ .
+
+:vivo-university-of-florida a void:Linkset ;
+    void:target :vivo2doi ;
+    void:triples "1887251"^^xsd:integer ;
+ .
+
+:vivo-weill-cornell-medical-college a void:Linkset ;
+    void:target :vivo2doi ;
+    void:triples "542769"^^xsd:integer ;
+ .
+
+:vivo-wustl a void:Linkset ;
+    void:target :vivo2doi ;
+    void:triples "86301"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Nick_Benik,_Timothy_Lebo,_Griffin_M_Weber"^^xsd:string ;
+ .
+

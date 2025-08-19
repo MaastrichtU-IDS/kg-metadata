@@ -1,0 +1,206 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:data-bnf-fr a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-dc", "format-foaf", "format-skos", "library", "lld", "lod", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "publications", "published-by-producer" ;
+    dct:title "data.bnf.frBibliothèque_nationale_de_France" ;
+    void:exampleResource [
+        dct:title "Example" ;
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+Alexandre Dumas, La Reine Margot (rdf/xml)
+""" ;
+        dcat:accessURL <http://data.bnf.fr/12417486/alexandre_dumas_la_reine_margot/rdf.xml> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "Example" ;
+        dcat:mediaType "text/plain;_charset=UTF-8" ;
+        dct:description """
+Alexandre Dumas, La Reine Margot (rdf/n3)
+""" ;
+        dcat:accessURL <http://data.bnf.fr/12417486/alexandre_dumas_la_reine_margot/rdf.nt> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint" ;
+        dcat:endpointDescription """
+SPARQL Endpoint data.bnf.fr
+""" ;
+        dcat:accessURL <http://data.bnf.fr/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Bulk download of the RDF data from data.bnf.fr (RDF/XML)
+""" ;
+        adms:status """
+FAIL (No connection adapters were found for 'ftp://databnf:databnf@pef.bnf.fr/DATA/databnf_all_rdf_xml.tar.gz')
+""" ;
+        dct:title "Full_dump_of_data.bnf.fr" ;
+        dct:mirror "[]" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+Over 250 countries, with their codes (2 characters alphabetic string), compliant with standard ISO 3166. 
+They are matched with the Marc list for countries from the Library of Congress: http://id.loc.gov/vocabulary/countries.html. 
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Country_codes_list" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.bnf.fr/vocabulary/countrycodes/rdf.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+500 types of role or relationships between a person or a corporate body and a resource (Example: translator). They are used at the BnF for bibliographic records in Intermarc. 
+Most of them are matched with Marc codes from the relator codes list maintained by the Library of Congress: http://id.loc.gov/vocabulary/relators.html.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Relator_codes_list" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.bnf.fr/vocabulary/roles/rdf.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+RAMEAU subject headings are used at the BnF, in Intermarc, so as to identify the subjects of a resource. 
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Types_of_RAMEAU_subject_headings" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.bnf.fr/vocabulary/scheme/rdf.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+They are used as geographic schemes for geographic authority records. 
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "List_of_geographic_area_codes" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.bnf.fr/vocabulary/geo-scheme/rdf.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+They are used to specify the musical genre of a musical work (authority record for musical works).
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Musical_genre_codes_list" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.bnf.fr/vocabulary/musical-genre/rdf.xml> ;
+    ] ;
+    dct:description """
+data.bnf.fr gathers data from the different databases of the Bibliothèque nationale de France, so as to create Web pages about Works, Authors, Subjects and Places together with a RDF view on the extracted data. 
+
+There are links to id.loc.gov for languages and nationalities, to dewey.info  for subjects, and to DCMI type for types.
+
+The authors and subjects are matched to Agrovoc,Geonames, DBpedia, Wikipedia, VIAF, Stitch, Dewey, ISNI, the library of Congress, and the German national library.
+
+We use SKOS, FOAF, DC and RDA vocabularies, in a FRBR model.
+"""@en ;
+
+    foaf:page <http://data.bnf.fr> ;
+    void:triples "409712948"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://data.bnf.fr/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:agrovoc-skos a void:Linkset ;
+    void:target :data-bnf-fr ;
+    void:triples "682"^^xsd:integer ;
+ .
+
+:datos-bne-es a void:Linkset ;
+    void:target :data-bnf-fr ;
+    void:triples "15588"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :data-bnf-fr ;
+    void:triples "185149"^^xsd:integer ;
+ .
+
+:dnb-gemeinsame-normdatei a void:Linkset ;
+    void:target :data-bnf-fr ;
+    void:triples "25976"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :data-bnf-fr ;
+    void:triples "105055"^^xsd:integer ;
+ .
+
+:idreffr a void:Linkset ;
+    void:target :data-bnf-fr ;
+    void:triples "1059765"^^xsd:integer ;
+ .
+
+:isni a void:Linkset ;
+    void:target :data-bnf-fr ;
+    void:triples "1516663"^^xsd:integer ;
+ .
+
+:lcsh a void:Linkset ;
+    void:target :data-bnf-fr ;
+    void:triples "114024"^^xsd:integer ;
+ .
+
+:musicbrainz a void:Linkset ;
+    void:target :data-bnf-fr ;
+    void:triples "42381"^^xsd:integer ;
+ .
+
+:thesaurus-w a void:Linkset ;
+    void:target :data-bnf-fr ;
+    void:triples "1039"^^xsd:integer ;
+ .
+
+:viaf a void:Linkset ;
+    void:target :data-bnf-fr ;
+    void:triples "2352029"^^xsd:integer ;
+ .
+
+:wikidata a void:Linkset ;
+    void:target :data-bnf-fr ;
+    void:triples "356614"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "data.bnf.fr_project_teamFrench_national_Library"^^xsd:string ;
+     foaf:mbox <mailto:d@a@bnf.fr> ; 
+ .
+

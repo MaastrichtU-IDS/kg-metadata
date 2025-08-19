@@ -1,0 +1,137 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:govagribus-denmark a dcat:Dataset ;
+    dcat:keyword "OWL", "RDF", "SPARQL", "agriculture", "business", "denmark", "format-rdf", "government", "governmental", "linkeddata", "lod", "lodcloud-diagram-2014-08-30", "rdf", "sparql-endpoint" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "GovAgriBus_Denmark" ;
+    void:sparqlEndpoint [
+        dct:title "EXTBI_SPARQL_Endpoint_" ;
+        dcat:endpointDescription """
+Danish Governmental Agricultural Data SPARQL endpoint
+""" ;
+        dcat:accessURL <http://extbi.lab.aau.dk/sparql/> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='extbi.lab.aau.dk', port=80): Max retries exceeded with url: /sparql/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686daf6d0>, 'Connection to extbi.lab.aau.dk timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+This dataset contains agricultural data of Denmark. We have three agricultural datasets; Field, Field Block, Organic Field converted into RDF+N3 format. 
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='lod.cs.aau.dk', port=80): Max retries exceeded with url: /downloads/JIST14/GovAgriBus/agriculture.rdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686daffa0>, 'Connection to lod.cs.aau.dk timed out. (connect timeout=30)')))
+""" ;
+        dct:title "Agricultural_Data" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://lod.cs.aau.dk/downloads/JIST14/GovAgriBus/agriculture.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml" ;
+        dct:description """
+This data set publish information about businesses incorporating in agriculture containing companies, addresses, production units and fully responsible participants of each business. 
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='lod.cs.aau.dk', port=80): Max retries exceeded with url: /downloads/JIST14/GovAgriBus/business.rdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686daf700>, 'Connection to lod.cs.aau.dk timed out. (connect timeout=30)')))
+""" ;
+        dct:title "Business_Data" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://lod.cs.aau.dk/downloads/JIST14/GovAgriBus/business.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "OWL" ;
+        dct:description """
+This file contains the ontology developed for Danish agricultural linked data. 
+Ontology is defined by re-using predicates from common vocabularies i.e. agrovoc, geonames, dbpedia (categories), etc.
+ 
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "Agriculture_Ontology" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-28T11:26:20.234Z/agriculture-ontology.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "OWL" ;
+        dct:description """
+This file contains the ontology developed for Danish business data sets. Ontology is defined by re-using predicates from common vocabularies i.e. geonames, dbpedia, foaf , time, etc. 
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "Business_Ontology" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-28T11:27:07.863Z/business-ontology.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "BIN" ;
+        dct:description """
+The complete ontology developed for Danish agricultural and business linked data. Ontology is defined by re-using predicates from common vocabularies i.e. agrovoc, geonames, dbpedia (categories), foaf , time, etc.
+
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "Agriculture_and_Business_Ontology" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-28T11:27:38.554Z/govagribus-denmark-ontology.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-gzip" ;
+        dct:description """
+This file contains RDF triples of complete govagribus-denmark data. Agricultural and business data is linked in this data set by using  
+together agricultural and business ontologies (govagribus-denmark_ontology.owl) and other relevant external vocabularies. It also includes existing links to the external datasets.
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='lod.cs.aau.dk', port=80): Max retries exceeded with url: /downloads/JIST14/GovAgriBus/govagribus-denmark.rdf.tgz (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686da07c0>, 'Connection to lod.cs.aau.dk timed out. (connect timeout=30)')))
+""" ;
+        dct:title "govagribus-denmark" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://lod.cs.aau.dk/downloads/JIST14/GovAgriBus/govagribus-denmark.rdf.tgz> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/n3" ;
+        dct:description """
+voID Description of GovAgriBus Denmark
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://ckannet-storage.commondatastorage.googleapis.com/2014-11-28T15:15:16.594Z/govagribus-denmark-void.n3> ;
+    ] ;
+    dct:description """
+In this collection we publish the Danish agricultural data sets integrated with the central company registry (CVR) data and make it available to the public via SPARQL endpoint. This integration makes it possible to query across this data. The endpoint is hosted on OpenLink Virtuoso. The original open data sets are provided from: [Central Business Registry of Denmark (CVR)](http://cvr.dk/ "cvr.dk"), [The Danish Ministry of the Environment](http://gst.dk/ "gst.dk"), [The Ministry of Food, Agriculture, and Fisheries of Denmark](http://fvm.dk/ "fvm.dk").
+
+"""@en ;
+
+    void:uriSpace <http://extbi.lab.aau.dk/resource/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:GeoNames a void:Linkset ;
+    void:target :govagribus-denmark ;
+    void:triples "192"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "EXTBI_Team"^^xsd:string ;
+     foaf:mbox <mailto:nurefsan@cs.aau.dk> ; 
+ .
+

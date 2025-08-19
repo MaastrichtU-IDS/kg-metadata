@@ -1,0 +1,51 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:flickr-wrappr a dcat:Dataset ;
+    dcat:keyword "format-foaf", "format-rdf", "format-vcard", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "no-vocab-mappings", "published-by-third-party", "usergeneratedcontent" ;
+    dct:title "flickr?_wrappr" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL <http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/White_House> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dct:description """
+The flickr wrappr extends DBpedia with RDF links to photos posted on flickr. For each of the 1.95 million DBpedia concepts, the wrappr generates a collection of flickr photos that depict the concept. 
+"""@en ;
+
+    foaf:page <http://www4.wiwiss.fu-berlin.de/flickrwrappr> ;
+    void:triples "56100000"^^xsd:integer ;
+    dcat:theme  <user_generated> ;
+    void:uriSpace <http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :flickr-wrappr ;
+    void:triples "3400000"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Christian_Becker"^^xsd:string ;
+     foaf:mbox <mailto:chris@beckr.org> ; 
+ .
+

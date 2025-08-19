@@ -1,0 +1,117 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:norwegian-geo-divisions a dcat:Dataset ;
+    dcat:keyword "format-cc", "format-dct", "format-geo", "format-geonames", "format-ngeoi", "format-owl", "format-rdf", "format-rdfs", "geographic", "license-metadata", "lod", "no-proprietary-vocab", "provenance-metadata", "published-by-third-party", "topic.geographic" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "Norwegian_geo-divisions" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_Fylke" ;
+        dcat:mediaType_exampleResource "text/turtle" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://data.lenka.no/geo/inndeling/06> ;
+        adms:status_exampleResource """
+FAIL (502)
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_center" ;
+        dcat:mediaType_exampleResource "text/turtle" ;
+        dct:description_exampleResource """
+
+""" ;
+        dcat:accessURL_exampleResource <http://data.lenka.no/geo/sted/60196> ;
+        adms:status_exampleResource """
+FAIL (502)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "SPARQL_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://data.lenka.no/sparql> ;
+        adms:status_sparqlEndpoint """
+FAIL (502)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "meta/void" ;
+        dct:description_distribution """
+A basic VoID description of the dataset.
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "VoID_description" ;
+        dcat:accessURL_distribution <http://data.lenka.no/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Links_from_Fylke_to_Geonames" ;
+        dcat:accessURL_distribution <http://data.lenka.no/dumps/fylke-geonames.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Municipality_names" ;
+        dcat:accessURL_distribution <http://data.lenka.no/dumps/kommune-navn.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/turtle" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "Municipality_centre_names_with_geoname_links" ;
+        dcat:accessURL_distribution <http://data.lenka.no/dumps/kommunesentre-geonames.ttl> ;
+    ] ;
+    dct:description_main """
+A dataset with Norwegian Administrative Divisions and their administrative centers.
+"""@en ;
+
+    foaf:page <http://data.lenka.no/> ;
+    void:triples "8399"^^xsd:integer ;
+    dcat:theme  <geography> ;
+    void:uriSpace <http://data.lenka.no/geo> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames-semantic-web a void:Linkset ;
+    void:target :norwegian-geo-divisions ;
+    void:triples "835"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Kjetil_Kjernsmo"^^xsd:string ;
+     foaf:Cmbox <mailto:kjetil@kjernsmo.net> ; 
+ .
+

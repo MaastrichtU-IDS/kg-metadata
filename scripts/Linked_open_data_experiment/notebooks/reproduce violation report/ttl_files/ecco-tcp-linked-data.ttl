@@ -1,0 +1,85 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ecco-tcp-linked-data a dcat:Dataset ;
+    dcat:keyword "18thc", "books", "deref-vocab", "eighteenth-century", "format-bibo", "format-foaf", "format-rdf", "literature", "lod", "lodcloud-diagram-2011-09-19", "publications", "published-by-third-party", "publishing", "texts" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-pddl> ;
+    dct:title_main "ECCO-TCP_Eighteenth_Century_Texts_Linked_Data" ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+example resource
+""" ;
+        dcat:accessURL_exampleResource <http://data.kasabi.com/dataset/ecco-tcp-eighteenth-century-collections-online-texts/text/CW110133203> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "" ;
+        dcat:mediaType_exampleResource "text/html;_charset=utf-8" ;
+        dct:description_exampleResource """
+Example Resource
+""" ;
+        dcat:accessURL_exampleResource <http://data.kasabi.com/dataset/ecco-tcp-eighteenth-century-collections-online-texts/person/Susanna_Centlivre_1667-1723> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "" ;
+        dcat:endpointDescription_sparqlEndpoint """
+SPARQL endpoint
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://api.kasabi.com/dataset/ecco-tcp-eighteenth-century-collections-online-texts/apis/sparql> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+VoID Description
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "" ;
+        dcat:accessURL_distribution <http://data.kasabi.com/dataset/ecco-tcp-eighteenth-century-collections-online-texts> ;
+    ] ;
+    dct:description_main """
+Linked Data conversion of the metadata about the texts in the ECCO-TCP Eighteenth Century Collections Online Texts dataset.
+
+The conversion was done from the csv and plain text files linked to from http://ckan.net/package/tcp-ecco-18th-century-texts
+"""@en ;
+
+    foaf:page <http://kasabi.com/dataset/ecco-tcp-eighteenth-century-collections-online-texts> ;
+    void:triples "35215"^^xsd:integer ;
+    void:uriSpace <http://data.kasabi.com/dataset/ecco-tcp-eighteenth-century-collections-online-texts/> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :ecco-tcp-linked-data ;
+    void:triples "50"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Keith_Alexander"^^xsd:string ;
+     foaf:Cmbox <mailto:keithalexander@keithalexander.co.uk> ; 
+ .
+

@@ -1,0 +1,92 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:rkb-explorer-epsrc a dcat:Dataset ;
+    dcat:keyword "format-dc", "format-rdf", "lod", "lodcloud-diagram-2014-08-30", "lodcloud.nolinks", "lodcloud.unconnected", "no-deref-vocab", "provenance-metadata", "publications", "published-by-third-party", "void-sparql-endpoint" ;
+    dct:title "epsrc" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://epsrc.rkbexplorer.com/id/resource-person-7150> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='epsrc.rkbexplorer.com', port=80): Max retries exceeded with url: /id/resource-person-7150 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684303bb0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://epsrc.rkbexplorer.com/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='epsrc.rkbexplorer.com', port=80): Max retries exceeded with url: /sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684301e40>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/xml" ;
+        dct:description """
+XML Sitemap
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='epsrc.rkbexplorer.com', port=80): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684302c80>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://epsrc.rkbexplorer.com/sitemap.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD file
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:Qmb5yj4ZY1tAsM8FtSmP6tSvnFZ5HRXd29bsmr5DH9JWE8']" ;
+        dcat:accessURL <http://epsrc.rkbexplorer.com/models/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-gzip" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='epsrc.rkbexplorer.com', port=80): Max retries exceeded with url: /models/dump.tgz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843013c0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title "Download_(tar_gzip_of_RDF)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://epsrc.rkbexplorer.com/models/dump.tgz> ;
+    ] ;
+    dct:description """
+This repository contains data from the UK's EPSRC Grants on the Web Data, but only up to 2003. Thus it contains data about many scientific researchers in the UK, and the projects they were funded to undertake.
+"""@en ;
+
+    foaf:page <http://epsrc.rkbexplorer.com> ;
+    void:triples "472985"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://epsrc.rkbexplorer.com/id/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:name "Hugh_Glaser"^^xsd:string ;
+     foaf:mbox <mailto:hg@ecs.soton.ac.uk> ; 
+ .
+

@@ -1,0 +1,72 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:xlid-lexica a dcat:Dataset ;
+    dcat:keyword "catalan", "chinese", "dbpedia", "english", "german", "lexicon", "llod", "lod", "lrec-2014", "slovenian", "spanish", "word-list" ;
+    dct:title "xLiD-Lexica" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-ntriples" ;
+        dct:description """
+cross-lingual groundings
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "dataset" ;
+        dct:mirror "[]" ;
+        dcat:downloadURL <http://km.aifb.kit.edu/resources/xLiD-lexica.nt> ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_end_point" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://km.aifb.kit.edu/services/xlike-lexicon/> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "documentation" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.aifb.kit.edu/web/Inproceedings3406> ;
+    ] ;
+    dct:description """
+Our xLiD-Lexica dataset in RDF (http://km.aifb.kit.edu/resources/xLiD-lexica.nt) contains about 300 million triples of cross-lingual groundings. It is extracted from Wikipedia dumps of July 2013 in English, German, Spanish, Catalan, Slovenian and Chinese, and based on the canonicalized datasets of DBpedia 3.8 containing triples extracted from the respective Wikipedia whose subject and object resource have an equivalent English article. Based on our xLiD-Lexica dataset, we provide a SPARQL endpoint (http://km.aifb.kit.edu/services/xlike-lexicon/) using OpenLink Virtuoso6 as the back-end database engine.
+"""@en ;
+
+    void:triples "300000000"^^xsd:integer ;
+    dcat:theme  <linguistics> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :xlid-lexica ;
+    void:triples "0"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Lei_Zhang"^^xsd:string ;
+     foaf:mbox <mailto:http://www.aifb.kit.edu/web/Lei_Zhang> ; 
+ .
+

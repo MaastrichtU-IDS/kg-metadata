@@ -1,0 +1,115 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:naics-2012 a dcat:Dataset ;
+    dcat:keyword "10ders", "deref-vocab", "e-procurement", "euroalert", "format-dc", "format-dcterms", "format-gr", "format-skos", "format-skosxl", "geodata", "government", "license-metadata", "linkeddata", "linkedopendata", "lod", "naics", "naics-2012", "oviedo", "procurement", "provenance-metadata", "pscs", "public_contracts", "published-by-third-party", "uniovi", "university-of-oviedo", "vocab-mappings", "weso" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-odbl> ;
+    dct:title "NAICS_2012" ;
+    void:exampleResource [
+        dct:title "Example_of_resource-North_American_Industry_Classification_System_2012" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example of resource-North American Industry Classification System 2012
+""" ;
+        dcat:accessURL <http://purl.org/weso/pscs/data/naics/2012/resource/111150?output=xml> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='156.35.82.103', port=80): Max retries exceeded with url: /pscs/data/naics/2012/resource/111150?output=xml (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f36843fcb50>, 'Connection to 156.35.82.103 timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "WESO_SPARQL_Endpoint" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://purl.org/weso/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='156.35.82.103', port=80): Max retries exceeded with url: /sparql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684301e40>, 'Connection to 156.35.82.103 timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+Data Dump North American Industry Classification System 2012
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='156.35.82.103', port=80): Max retries exceeded with url: /datasets/pscs/naics/2012/naics-2012.ttl (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f36843fece0>, 'Connection to 156.35.82.103 timed out. (connect timeout=30)')))
+""" ;
+        dct:title "North_American_Industry_Classification_System_2012" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://purl.org/weso/datasets/pscs/naics/2012/naics-2012.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "HTML" ;
+        dct:description """
+Linked Data Frontend-North American Industry Classification System 2012
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='156.35.82.103', port=80): Max retries exceeded with url: /pscs/naics/2012/resource/ds (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f36843002e0>, 'Connection to 156.35.82.103 timed out. (connect timeout=30)')))
+""" ;
+        dct:title "Linked_Data_Frontend-North_American_Industry_Classification_System_2012" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://purl.org/weso/pscs/naics/2012/resource/ds> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+VoID of North American Industry Classification System 2012
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='156.35.82.103', port=80): Max retries exceeded with url: /pscs/naics/2012/resource/ds (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3684300400>, 'Connection to 156.35.82.103 timed out. (connect timeout=30)')))
+""" ;
+        dct:title "VoID_of_North_American_Industry_Classification_System_2012" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://purl.org/weso/pscs/naics/2012/resource/ds> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+Custom definitions of North American Industry Classification System 2012
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='156.35.82.103', port=80): Max retries exceeded with url: /datasets/pscs/psc-ontology.ttl (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686aeefb0>, 'Connection to 156.35.82.103 timed out. (connect timeout=30)')))
+""" ;
+        dct:title "Custom_definitions_of_North_American_Industry_Classification_System_2012" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://purl.org/weso/datasets/pscs/psc-ontology.ttl> ;
+    ] ;
+    dct:description """
+The North American Industry Classification System (NAICS) is the standard used by Federal statistical agencies in classifying business establishments for the purpose of collecting, analyzing, and publishing statistical data related to the U.S. business economy.
+
+Authors of the linked data version:
+
+-Jose María Alvarez Rodríguez & Jose Emilio Labra Gayo
+
+WESO-University of Oviedo
+"""@en ;
+
+    foaf:page <http://www.josemalvarez.es/web/2011/11/16/product-scheme-classifications/> ;
+    void:triples "35390"^^xsd:integer ;
+    void:uriSpace <http://purl.org/weso/pscs/naics/2012/resource> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:http://productontology.org a void:Linkset ;
+    void:target :naics-2012 ;
+    void:triples "8037"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Jose_María_Alvarez_Rodríguez_at_WESO_(University_of_Oviedo)"^^xsd:string ;
+     foaf:mbox <mailto:josem.alvarez@weso.es> ; 
+ .
+

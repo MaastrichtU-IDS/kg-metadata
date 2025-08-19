@@ -1,0 +1,122 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:un-hazardous-numbers a dcat:Dataset ;
+    dcat:keyword "dc", "deref-vocab", "format-dc", "format-owl", "format-rdf", "format-rdfs", "government", "license-metadata", "lod", "lodcloud.nolinks", "lodcloud.unconnected", "provenance-metadata", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dct:title "UN_Hazardous_Materials_Numbers" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Example Resource
+""" ;
+        dcat:accessURL <http://data.kasabi.com/dataset/un-hazardous-material-numbers/1203.rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "Sparql" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://api.kasabi.com/dataset/un-hazardous-material-numbers/apis/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Void description
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.kasabi.com/dataset/un-hazardous-material-numbers> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Kasabi Schema
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.kasabi.com/dataset/un-hazardous-material-numbers/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+OWL
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmUAphtEqEuH4MudQ9pXxormvin7Th9tbko61SwxTq47XW']" ;
+        dcat:accessURL <http://www.w3.org/2002/07/owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+rdfs
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmSAukqNUbLECMEnd9EjrJGchmZHjypaAqpnxwoKfqJuAc']" ;
+        dcat:accessURL <http://www.w3.org/2000/01/rdf-schema> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+RDF Syntax NS
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmbCDqDXc9G1akWmszjTirVeYmfhJrxCno4TFmTiDwKk8z']" ;
+        dcat:accessURL <http://www.w3.org/1999/02/22-rdf-syntax-ns> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+Dublin Core
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmcTcfFaaccSE6PvCZfSRH4jUH8YPddw1kviuEoXJa6dgY']" ;
+        dcat:accessURL <http://purl.org/dc/elements/1.1/> ;
+    ] ;
+    dct:description """
+UN Numbers are categories of harzardous materials.  See http://en.wikipedia.org/wiki/UN_numbers for more details.
+"""@en ;
+
+    foaf:page <http://kasabi.com/dataset/un-hazardous-material-numbers> ;
+    void:triples "26550"^^xsd:integer ;
+    void:uriSpace <http://data.kasabi.com/dataset/un-hazardous-material-numbers> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 

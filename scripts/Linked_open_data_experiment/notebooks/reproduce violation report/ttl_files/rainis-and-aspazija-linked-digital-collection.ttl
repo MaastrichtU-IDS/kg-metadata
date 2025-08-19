@@ -1,0 +1,142 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:rainis-and-aspazija-linked-digital-collection a dcat:Dataset ;
+    dcat:keyword "Aspazija", "Latvia", "Rainis", "culturalheritage", "library", "literature", "lld", "lod", "publications" ;
+    dct:title_main "Rainis_and_Aspazija_Linked_Digital_Collection" ;
+    void:exampleResource [
+        dct:title_exampleResource "ExampleAnnotated_letter_(Turtle)" ;
+        dcat:mediaType_exampleResource "text/turtle;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Annotated letter (correspondence) with links to other collection objects (named entities) mentioned in its transcribed content.
+""" ;
+        dcat:accessURL_exampleResource <http://runa.lnb.lv/60316.ttl> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "ExampleAnnotated_letter_(RDF/XML)" ;
+        dcat:mediaType_exampleResource "application/rdf+xml;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Annotated letter (correspondence) with links to other collection objects (named entities) mentioned in its transcribed content.
+""" ;
+        dcat:accessURL_exampleResource <http://runa.lnb.lv/60316.rdf> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "ExampleAnnotated_letter_(HTML)" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Annotated letter (correspondence) with links to other collection objects (named entities) mentioned in its transcribed content.
+
+This is an HTML view. RDF resources can be retrieved (a) by following visible links to RDF data; (b) using HTTP content negotiation or (c) using RDF auto-discovery links.
+""" ;
+        dcat:accessURL_exampleResource <http://runa.lnb.lv/60316/> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "ExamplePerson_(Turtle)" ;
+        dcat:mediaType_exampleResource "text/turtle;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Information about a person (named entity) with links to VIAF and collection objects where this person was mentioned.
+""" ;
+        dcat:accessURL_exampleResource <http://runa.lnb.lv/33383.ttl> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "ExamplePersonRainis_(HTML)" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Information about Rainis - one of the two persons who are the main topic of this collection. Its RDF data contain links to VIAF and to many other collection object mentioning Rainis.
+
+This is an HTML view. RDF resources can be retrieved (a) by following visible links to RDF data; (b) using HTTP content negotiation or (c) using RDF auto-discovery links.
+""" ;
+        dcat:accessURL_exampleResource <http://runa.lnb.lv/110023/> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "ExamplePhoto_(HTML)" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Information about a photo (depicting Aspazija and Rainis).
+
+This is an HTML view. RDF resources can be retrieved (a) by following visible links to RDF data; (b) using HTTP content negotiation or (c) using RDF auto-discovery links.
+""" ;
+        dcat:accessURL_exampleResource <http://runa.lnb.lv/62056/> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title_exampleResource "ExampleLiterary_work_(HTML)" ;
+        dcat:mediaType_exampleResource "text/html;_charset=UTF-8" ;
+        dct:description_exampleResource """
+Information about a literary work "Zem vakara zvaigznes" - a collection of poems by Aspazija.
+
+This is an HTML view. RDF resources can be retrieved (a) by following visible links to RDF data; (b) using HTTP content negotiation or (c) using RDF auto-discovery links.
+""" ;
+        dcat:accessURL_exampleResource <http://runa.lnb.lv/60884/> ;
+        adms:status_exampleResource """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/plain" ;
+        dct:description_distribution """
+This file lists URIs of all resources from the "Rainis and Aspazija" (RunA) Linked Digital Collection.
+
+Note: the URIs listed are without the trailing slash. This is a temporary measure due to a bug (being fixed) that prevents content negotiation on RunA URIs with a trailing slash. When crawling the dataset please use URIs without the trailing slash.
+""" ;
+        adms:status_distribution """
+FAIL (HTTPSConnectionPool(host='datahub.ckan.io', port=443): Max retries exceeded with url: /dataset/4329e622-a001-4922-b111-60b9046c4660/resource/85f69bce-c988-4100-aa2a-656038956347/download/runaalluris.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f3684300970>, 'Connection to datahub.ckan.io timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "List_of_URIs_(for_crawling)" ;
+        dcat:accessURL_distribution <https://datahub.ckan.io/dataset/4329e622-a001-4922-b111-60b9046c4660/resource/85f69bce-c988-4100-aa2a-656038956347/download/runaalluris.txt> ;
+    ] ;
+    dct:description_main """
+Linked Digital Collection "Rainis and Aspazija" created by the National Library of Latvia.
+
+It is a cultural heritage collection (containing information about two famous Latvian cultural personalities - Rainis and Aspazija) that emphasizes links between collection objects. A subset of objects are transcribed and annotated with mentions of named entities, adding these entities as new collection objects.
+
+The collection is published as Linked Data. See dataset resources for further information about it.
+
+Publication: http://ceur-ws.org/Vol-1608/paper-04.pdf
+"""@en ;
+
+    foaf:page <http://runa.lnb.lv> ;
+    void:triples "34660"^^xsd:integer ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:viaf a void:Linkset ;
+    void:target :rainis-and-aspazija-linked-digital-collection ;
+    void:triples "446"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Uldis_Bojars"^^xsd:string ;
+     foaf:Cmbox <mailto:uldis.bojars@lnb.lv> ; 
+ .
+

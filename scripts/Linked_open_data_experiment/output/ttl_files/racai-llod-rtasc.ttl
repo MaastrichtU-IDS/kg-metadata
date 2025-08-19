@@ -1,0 +1,81 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:racai-llod-rtasc a dcat:Dataset ;
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://doi.org/10.5281/zenodo.4626540> ;
+    void:triples "284683"^^xsd:integer ;
+    dcat:distribution [
+        dct:identifier "7a23b4b2-531b-5018-cc08-8a4e2945a06c" ;
+        dct:title "RTASC" ;
+        dct:description """
+
+""" ;
+        dcat:mediaType "application/zip" ;
+        dcat:downloadURL <https://www.racai.ro/p/llod/resources/rtasc_v1.zip> ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier "a93cab74-1cca-76a1-7495-9a9120f15ae5" ;
+        dct:title "RTASC" ;
+        dct:description """
+RTASC is hosted on the Zenodo platform. The latest version can be accessed using the following DOI url: https://doi.org/10.5281/zenodo.4626540
+""" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dcat:downloadURL <https://doi.org/10.5281/zenodo.4626540> ;
+        dct:mirror "[]" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dct:description """
+RTASC is a Romanian bi-modal corpus (text and speech) of read sentences, containing recordings from 6 speakers (3 males and 3 females). It was designed to serve the need of training the robot Pepper to interact with customers in the laptop department of a computer store.
+"""@en ;
+
+    dct:title "ROBIN_Technical_Acquisition_Speech_Corpus" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dcat:theme  <user_generated> ;
+    void:sparqlEndpoint [
+        dct:identifier "6ddc57eb-def0-85fe-acff-14903705e4a9" ;
+        dct:title "RTASC_SPARQL_endpoint" ;
+        dcat:endpointDescription """
+SPARQL endpoint for RTASC hosted at RACAI. A query form is available at https://relate.racai.ro/datasets/dataset.html?tab=query&ds=/rtasc
+""" ;
+        dcat:accessURL <https://relate.racai.ro/datasets/rtasc/sparql> ;
+        adms:status """
+FAIL (405)
+""" ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] ;
+    dct:identifier "10.5281/zenodo.4626540" .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:vergi@racai.ro> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Vasile_Păiș"^^xsd:string ;
+     foaf:mbox <mailto:vasile@racai.ro> ; 
+ .
+

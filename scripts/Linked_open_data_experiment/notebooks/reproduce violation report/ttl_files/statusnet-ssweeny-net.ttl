@@ -1,0 +1,107 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:statusnet-ssweeny-net a dcat:Dataset ;
+    dcat:keyword "LinkedDataCrawl2014", "crawledLinkedDataCloud2014", "format-bio", "format-foaf", "format-pos", "format-rdf", "format-sioc", "lodcloud-diagram-2014-08-30", "social_web" ;
+    dct:title_main "statusnet-ssweeny-net" ;
+    void:exampleResource [
+        dct:title_exampleResource "None" ;
+        dcat:mediaType_exampleResource "application/rdf+xml" ;
+        dct:description_exampleResource """
+Example resource
+""" ;
+        dcat:accessURL_exampleResource <http://status.ssweeny.net/foaf> ;
+        adms:status_exampleResource """
+FAIL (404)
+""" ;
+    ] ;
+    dct:description_main """
+StatusNet instance hosted at http://ssweeny.net
+"""@en ;
+
+    dcat:theme  <social_networking> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames-semantic-web a void:Linkset ;
+    void:target :statusnet-ssweeny-net ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:personal-homepages a void:Linkset ;
+    void:target :statusnet-ssweeny-net ;
+    void:triples "9"^^xsd:integer ;
+ .
+
+:statusnet-chromic-org a void:Linkset ;
+    void:target :statusnet-ssweeny-net ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:statusnet-fragdev-com a void:Linkset ;
+    void:target :statusnet-ssweeny-net ;
+    void:triples "18"^^xsd:integer ;
+ .
+
+:statusnet-freelish-us a void:Linkset ;
+    void:target :statusnet-ssweeny-net ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-macno-org a void:Linkset ;
+    void:target :statusnet-ssweeny-net ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-postblue-info a void:Linkset ;
+    void:target :statusnet-ssweeny-net ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-quitter-se a void:Linkset ;
+    void:target :statusnet-ssweeny-net ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:statusnet-russwurm-org a void:Linkset ;
+    void:target :statusnet-ssweeny-net ;
+    void:triples "8"^^xsd:integer ;
+ .
+
+:statusnet-skilledtests-com a void:Linkset ;
+    void:target :statusnet-ssweeny-net ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:statusnet-soucy-cc a void:Linkset ;
+    void:target :statusnet-ssweeny-net ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:statusnet-status-net a void:Linkset ;
+    void:target :statusnet-ssweeny-net ;
+    void:triples "9"^^xsd:integer ;
+ .
+
+:statusnet-tekk-com-ar a void:Linkset ;
+    void:target :statusnet-ssweeny-net ;
+    void:triples "4"^^xsd:integer ;
+ .
+
+:wordpress a void:Linkset ;
+    void:target :statusnet-ssweeny-net ;
+    void:triples "1"^^xsd:integer ;
+ .
+

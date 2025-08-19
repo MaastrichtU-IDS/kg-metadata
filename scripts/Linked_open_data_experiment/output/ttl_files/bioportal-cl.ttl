@@ -1,0 +1,249 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bioportal-cl a dcat:Dataset ;
+    dcat:keyword "biomedicine", "bioportal", "format-obo", "format-rdf", "lod", "ontology", "published-by-third-party" ;
+    dct:title "Cell_type" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+REST API Wiki Documentation
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+SPARQL endpoint
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://sparql.bioontology.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+Download link, BioPortal API KEY is required
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://rest.bioontology.org/bioportal/ontologies/download/46604?apikey=BP_API_KEY> ;
+    ] ;
+    dct:description """
+The Cell Ontology is designed as a structured controlled vocabulary for cell types. This ontology was constructed for use by the model organism and other bioinformatics databases, where there is a need for a controlled vocabulary of cell types. This ontology is not organism specific; indeed it includes cell types from prokaryotes to mammals, including plants and fungi. A full description of the Cell Ontology can be found in <a href="http://genomebiology.com/2005/6/2/R21">Bard, Rhee and Ashburner. 2005. An Ontology for Cell Types</a>.
+"""@en ;
+
+    foaf:page <http://bioportal.bioontology.org/ontologies/1006> ;
+    void:triples "29166"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-aao a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "41"^^xsd:integer ;
+ .
+
+:bioportal-aeo a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "69"^^xsd:integer ;
+ .
+
+:bioportal-biomodels a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "603"^^xsd:integer ;
+ .
+
+:bioportal-bto a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "473"^^xsd:integer ;
+ .
+
+:bioportal-canco a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "59"^^xsd:integer ;
+ .
+
+:bioportal-csp a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "103"^^xsd:integer ;
+ .
+
+:bioportal-dc_cl a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "44"^^xsd:integer ;
+ .
+
+:bioportal-ddanat a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "31"^^xsd:integer ;
+ .
+
+:bioportal-efo a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "52"^^xsd:integer ;
+ .
+
+:bioportal-ev a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "155"^^xsd:integer ;
+ .
+
+:bioportal-fao a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "43"^^xsd:integer ;
+ .
+
+:bioportal-fbbt a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "155"^^xsd:integer ;
+ .
+
+:bioportal-galen a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "71"^^xsd:integer ;
+ .
+
+:bioportal-gro_x1 a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "59"^^xsd:integer ;
+ .
+
+:bioportal-lnc a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:bioportal-mat a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-mccl_x1 a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "2064"^^xsd:integer ;
+ .
+
+:bioportal-mesh-owl a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:bioportal-mp a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "88"^^xsd:integer ;
+ .
+
+:bioportal-msh a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "177"^^xsd:integer ;
+ .
+
+:bioportal-ncit a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "340"^^xsd:integer ;
+ .
+
+:bioportal-nif a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "70"^^xsd:integer ;
+ .
+
+:bioportal-nif_cell a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "60"^^xsd:integer ;
+ .
+
+:bioportal-obi a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "22"^^xsd:integer ;
+ .
+
+:bioportal-po a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "102"^^xsd:integer ;
+ .
+
+:bioportal-po_x2 a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "62"^^xsd:integer ;
+ .
+
+:bioportal-rcd a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "45"^^xsd:integer ;
+ .
+
+:bioportal-sao a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "45"^^xsd:integer ;
+ .
+
+:bioportal-snomedct a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "183"^^xsd:integer ;
+ .
+
+:bioportal-syn a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "202"^^xsd:integer ;
+ .
+
+:bioportal-tao a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "777"^^xsd:integer ;
+ .
+
+:bioportal-vao a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "30"^^xsd:integer ;
+ .
+
+:bioportal-vhog a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-wbbt a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "35"^^xsd:integer ;
+ .
+
+:bioportal-xao a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "162"^^xsd:integer ;
+ .
+
+:bioportal-zfa a void:Linkset ;
+    void:target :bioportal-cl ;
+    void:triples "783"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Alex_Diehl"^^xsd:string ;
+ .
+

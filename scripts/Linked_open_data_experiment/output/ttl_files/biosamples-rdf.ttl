@@ -1,0 +1,71 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:biosamples-rdf a dcat:Dataset ;
+    dcat:keyword "bioinformatics", "biology", "lifesciences", "linked_data", "lod", "lodcloud-diagram-2014-08-30", "provenance-metadata", "published-by-producer", "rdf", "vocab-mappings" ;
+    dct:title "BioSamples_RDF" ;
+    void:sparqlEndpoint [
+        dct:title "BioSamples_SPARQL_endpoint" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <https://www.ebi.ac.uk/rdf/services/biosamples/sparql> ;
+        adms:status """
+FAIL (500)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml;charset=utf-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='rdf.ebi.ac.uk', port=443): Max retries exceeded with url: /dataset/biosamples/v20140506/dataset-void.ttl (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:997)'))))
+""" ;
+        dct:title "BioSamples_VoID_description" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://rdf.ebi.ac.uk/dataset/biosamples/v20140506/dataset-void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (No connection adapters were found for 'ftp://ftp.ebi.ac.uk/pub/databases/RDF/biosamples/')
+""" ;
+        dct:title "BioSamples_RDF_FTP_download" ;
+        dct:mirror "[]" ;
+    ] ;
+    dct:description """
+The BioSamples database aggregates sample information for reference samples (e.g. Coriell Cell lines) and samples for which data exist in one of the EBI's assay databases such as ArrayExpress, the European Nucleotide Archive or PRoteomics Identificates DatabasE. It provides links to assays an specific samples, and accepts direct submissions of sample information.
+"""@en ;
+
+    void:triples "136323595"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    void:uriSpace <http://rdf.ebi.ac.uk/resource/biosamples/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:gene-expression-atlas-rdf a void:Linkset ;
+    void:target :biosamples-rdf ;
+    void:triples "39370"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Samples,_Phenotypes_&_Ontologies_team"^^xsd:string ;
+ .
+

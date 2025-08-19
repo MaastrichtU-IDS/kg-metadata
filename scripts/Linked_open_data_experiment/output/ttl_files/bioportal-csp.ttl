@@ -1,0 +1,1059 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bioportal-csp a dcat:Dataset ;
+    dcat:keyword "biomedicine", "bioportal", "format-rdf", "format-rrf", "lod", "ontology", "published-by-third-party" ;
+    dct:title "CRISP_Thesaurus,_2006" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+REST API Wiki Documentation
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+SPARQL endpoint
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://sparql.bioontology.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+Download link, BioPortal API KEY is required
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://rest.bioontology.org/bioportal/ontologies/download/44432?apikey=BP_API_KEY> ;
+    ] ;
+    dct:description """
+Computer Retrieval of Information on Scientific Projects (CRISP)
+"""@en ;
+
+    foaf:page <http://bioportal.bioontology.org/ontologies/1526> ;
+    void:triples "258641"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-aao a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "180"^^xsd:integer ;
+ .
+
+:bioportal-aba a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "38"^^xsd:integer ;
+ .
+
+:bioportal-acgt a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "250"^^xsd:integer ;
+ .
+
+:bioportal-adw a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "30"^^xsd:integer ;
+ .
+
+:bioportal-aeo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "46"^^xsd:integer ;
+ .
+
+:bioportal-aero a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "26"^^xsd:integer ;
+ .
+
+:bioportal-air a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "193"^^xsd:integer ;
+ .
+
+:bioportal-amino-acid a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "22"^^xsd:integer ;
+ .
+
+:bioportal-apo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+:bioportal-atmo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-bao a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "211"^^xsd:integer ;
+ .
+
+:bioportal-basic-vertebrate-gross-anatomy a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "19"^^xsd:integer ;
+ .
+
+:bioportal-bdo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "671"^^xsd:integer ;
+ .
+
+:bioportal-bho a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "113"^^xsd:integer ;
+ .
+
+:bioportal-bila a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "24"^^xsd:integer ;
+ .
+
+:bioportal-biomodels a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "866"^^xsd:integer ;
+ .
+
+:bioportal-birnlex a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "425"^^xsd:integer ;
+ .
+
+:bioportal-bodysystem a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-bootstrep a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "107"^^xsd:integer ;
+ .
+
+:bioportal-bro_x1 a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "48"^^xsd:integer ;
+ .
+
+:bioportal-bt a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "52"^^xsd:integer ;
+ .
+
+:bioportal-bto a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "557"^^xsd:integer ;
+ .
+
+:bioportal-canco a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "1576"^^xsd:integer ;
+ .
+
+:bioportal-cco a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "229"^^xsd:integer ;
+ .
+
+:bioportal-cdao a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "24"^^xsd:integer ;
+ .
+
+:bioportal-chebi a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "1535"^^xsd:integer ;
+ .
+
+:bioportal-chem2bio2owl a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "32"^^xsd:integer ;
+ .
+
+:bioportal-cl a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "103"^^xsd:integer ;
+ .
+
+:bioportal-clo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:bioportal-cmo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-cogat a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "84"^^xsd:integer ;
+ .
+
+:bioportal-cogpo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:bioportal-cpr a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-cpt a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "215"^^xsd:integer ;
+ .
+
+:bioportal-cst a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "1792"^^xsd:integer ;
+ .
+
+:bioportal-ctcae a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "175"^^xsd:integer ;
+ .
+
+:bioportal-ctx a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "44"^^xsd:integer ;
+ .
+
+:bioportal-dc_cl a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-ddi a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "78"^^xsd:integer ;
+ .
+
+:bioportal-dikb-evidence a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-doid a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "1219"^^xsd:integer ;
+ .
+
+:bioportal-ecg a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "35"^^xsd:integer ;
+ .
+
+:bioportal-efo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "1259"^^xsd:integer ;
+ .
+
+:bioportal-ehda a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "1716"^^xsd:integer ;
+ .
+
+:bioportal-ehdaa a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "462"^^xsd:integer ;
+ .
+
+:bioportal-ehdaa2 a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "145"^^xsd:integer ;
+ .
+
+:bioportal-envo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "69"^^xsd:integer ;
+ .
+
+:bioportal-eo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "56"^^xsd:integer ;
+ .
+
+:bioportal-ep a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "108"^^xsd:integer ;
+ .
+
+:bioportal-epileponto a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-ero a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "329"^^xsd:integer ;
+ .
+
+:bioportal-ev a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "956"^^xsd:integer ;
+ .
+
+:bioportal-exo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-fbbi a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "29"^^xsd:integer ;
+ .
+
+:bioportal-fbbt a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "100"^^xsd:integer ;
+ .
+
+:bioportal-fbcv a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "48"^^xsd:integer ;
+ .
+
+:bioportal-fbsp a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "248"^^xsd:integer ;
+ .
+
+:bioportal-fda-meddevice a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "37"^^xsd:integer ;
+ .
+
+:bioportal-fhho a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "31"^^xsd:integer ;
+ .
+
+:bioportal-flu a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "55"^^xsd:integer ;
+ .
+
+:bioportal-galen a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "2579"^^xsd:integer ;
+ .
+
+:bioportal-gaz a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "152"^^xsd:integer ;
+ .
+
+:bioportal-gfo-bio a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "27"^^xsd:integer ;
+ .
+
+:bioportal-go_x1 a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "456"^^xsd:integer ;
+ .
+
+:bioportal-go_x2 a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "458"^^xsd:integer ;
+ .
+
+:bioportal-gro_x1 a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "918"^^xsd:integer ;
+ .
+
+:bioportal-gro_x2 a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "107"^^xsd:integer ;
+ .
+
+:bioportal-hao a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "57"^^xsd:integer ;
+ .
+
+:bioportal-hcpcs a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-hl7 a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "600"^^xsd:integer ;
+ .
+
+:bioportal-hlth_indics a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "42"^^xsd:integer ;
+ .
+
+:bioportal-hom_ehs a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-hp_x1 a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "598"^^xsd:integer ;
+ .
+
+:bioportal-hpio a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "39"^^xsd:integer ;
+ .
+
+:bioportal-icd10 a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "1688"^^xsd:integer ;
+ .
+
+:bioportal-icd10cm a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "2436"^^xsd:integer ;
+ .
+
+:bioportal-icd10pcs a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:bioportal-icd9cm a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "1876"^^xsd:integer ;
+ .
+
+:bioportal-icf_x1 a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "66"^^xsd:integer ;
+ .
+
+:bioportal-icnp a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "348"^^xsd:integer ;
+ .
+
+:bioportal-icpc a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "247"^^xsd:integer ;
+ .
+
+:bioportal-icpc2p a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "2921"^^xsd:integer ;
+ .
+
+:bioportal-icps a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+:bioportal-ido a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "44"^^xsd:integer ;
+ .
+
+:bioportal-idobru a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "115"^^xsd:integer ;
+ .
+
+:bioportal-idomal a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "189"^^xsd:integer ;
+ .
+
+:bioportal-iev a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "90"^^xsd:integer ;
+ .
+
+:bioportal-imgt a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-imr a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "417"^^xsd:integer ;
+ .
+
+:bioportal-ino a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "38"^^xsd:integer ;
+ .
+
+:bioportal-ixno a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+:bioportal-jerm a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "44"^^xsd:integer ;
+ .
+
+:bioportal-lipro a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:bioportal-lnc a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "8807"^^xsd:integer ;
+ .
+
+:bioportal-ma a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "362"^^xsd:integer ;
+ .
+
+:bioportal-mao a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:bioportal-mat a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "177"^^xsd:integer ;
+ .
+
+:bioportal-mcbcc a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "32"^^xsd:integer ;
+ .
+
+:bioportal-mccl a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "149"^^xsd:integer ;
+ .
+
+:bioportal-mccl_x1 a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "2160"^^xsd:integer ;
+ .
+
+:bioportal-mcv a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "73"^^xsd:integer ;
+ .
+
+:bioportal-mddb a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-mdr a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "11533"^^xsd:integer ;
+ .
+
+:bioportal-medlineplus a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "1793"^^xsd:integer ;
+ .
+
+:bioportal-mego a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-mesh-owl a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "15617"^^xsd:integer ;
+ .
+
+:bioportal-mfo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "113"^^xsd:integer ;
+ .
+
+:bioportal-mfoem a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:bioportal-mhc a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:bioportal-mi a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "104"^^xsd:integer ;
+ .
+
+:bioportal-miro a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "24"^^xsd:integer ;
+ .
+
+:bioportal-mmo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+:bioportal-mo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-mod a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-mp a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "363"^^xsd:integer ;
+ .
+
+:bioportal-mpath a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "170"^^xsd:integer ;
+ .
+
+:bioportal-ms a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "24"^^xsd:integer ;
+ .
+
+:bioportal-msh a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "17672"^^xsd:integer ;
+ .
+
+:bioportal-mthch a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "81"^^xsd:integer ;
+ .
+
+:bioportal-natpro a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "1122"^^xsd:integer ;
+ .
+
+:bioportal-nbo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "96"^^xsd:integer ;
+ .
+
+:bioportal-ncbitaxon a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "1084"^^xsd:integer ;
+ .
+
+:bioportal-ncit a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "7000"^^xsd:integer ;
+ .
+
+:bioportal-nddf a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "1847"^^xsd:integer ;
+ .
+
+:bioportal-ndfrt a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "9163"^^xsd:integer ;
+ .
+
+:bioportal-nemo_x1 a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "84"^^xsd:integer ;
+ .
+
+:bioportal-neomark a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:bioportal-nif a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "2947"^^xsd:integer ;
+ .
+
+:bioportal-nif_cell a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "112"^^xsd:integer ;
+ .
+
+:bioportal-nif_dysfunction a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "203"^^xsd:integer ;
+ .
+
+:bioportal-nigo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "160"^^xsd:integer ;
+ .
+
+:bioportal-npo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "341"^^xsd:integer ;
+ .
+
+:bioportal-oae a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-obi a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "386"^^xsd:integer ;
+ .
+
+:bioportal-oboe-sbc a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "36"^^xsd:integer ;
+ .
+
+:bioportal-ocre a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-odgi a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "39"^^xsd:integer ;
+ .
+
+:bioportal-ogi a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "36"^^xsd:integer ;
+ .
+
+:bioportal-ogmd a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "30"^^xsd:integer ;
+ .
+
+:bioportal-ogms a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-ogr a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:bioportal-omim a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "3042"^^xsd:integer ;
+ .
+
+:bioportal-omit a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "35"^^xsd:integer ;
+ .
+
+:bioportal-ontodm a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-ontoorpha a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "587"^^xsd:integer ;
+ .
+
+:bioportal-opb.properties a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-opl a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "34"^^xsd:integer ;
+ .
+
+:bioportal-pato a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "74"^^xsd:integer ;
+ .
+
+:bioportal-pdq a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "1447"^^xsd:integer ;
+ .
+
+:bioportal-pedterm a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "211"^^xsd:integer ;
+ .
+
+:bioportal-peo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-phare a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "79"^^xsd:integer ;
+ .
+
+:bioportal-pma a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "289"^^xsd:integer ;
+ .
+
+:bioportal-po a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "18"^^xsd:integer ;
+ .
+
+:bioportal-po_x2 a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "918"^^xsd:integer ;
+ .
+
+:bioportal-pr a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "399"^^xsd:integer ;
+ .
+
+:bioportal-propreo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+:bioportal-rcd a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "12993"^^xsd:integer ;
+ .
+
+:bioportal-rex a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "42"^^xsd:integer ;
+ .
+
+:bioportal-rid a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "1077"^^xsd:integer ;
+ .
+
+:bioportal-roleo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "36"^^xsd:integer ;
+ .
+
+:bioportal-rs a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "24"^^xsd:integer ;
+ .
+
+:bioportal-rxnorm a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "2051"^^xsd:integer ;
+ .
+
+:bioportal-sao a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "166"^^xsd:integer ;
+ .
+
+:bioportal-sbo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "47"^^xsd:integer ;
+ .
+
+:bioportal-sdo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "165"^^xsd:integer ;
+ .
+
+:bioportal-sep a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-shr a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "74"^^xsd:integer ;
+ .
+
+:bioportal-sio a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "138"^^xsd:integer ;
+ .
+
+:bioportal-sitbac a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-snomedct a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "31461"^^xsd:integer ;
+ .
+
+:bioportal-snpo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "117"^^xsd:integer ;
+ .
+
+:bioportal-so_x1 a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "92"^^xsd:integer ;
+ .
+
+:bioportal-sopharm a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "1569"^^xsd:integer ;
+ .
+
+:bioportal-spd a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-spo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "50"^^xsd:integer ;
+ .
+
+:bioportal-spto a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-sso a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "54"^^xsd:integer ;
+ .
+
+:bioportal-syn a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "629"^^xsd:integer ;
+ .
+
+:bioportal-tao a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "281"^^xsd:integer ;
+ .
+
+:bioportal-tgma a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+:bioportal-tm-signs-and-sympts a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "38"^^xsd:integer ;
+ .
+
+:bioportal-tmo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "39"^^xsd:integer ;
+ .
+
+:bioportal-tok a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:bioportal-tto a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:bioportal-uberon a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "619"^^xsd:integer ;
+ .
+
+:bioportal-vandf a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "1894"^^xsd:integer ;
+ .
+
+:bioportal-vao a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "24"^^xsd:integer ;
+ .
+
+:bioportal-vhog a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "239"^^xsd:integer ;
+ .
+
+:bioportal-vivo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+:bioportal-vo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "287"^^xsd:integer ;
+ .
+
+:bioportal-vt a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-wbbt a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "53"^^xsd:integer ;
+ .
+
+:bioportal-who a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "1407"^^xsd:integer ;
+ .
+
+:bioportal-xao a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "188"^^xsd:integer ;
+ .
+
+:bioportal-xco a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "39"^^xsd:integer ;
+ .
+
+:bioportal-ypo a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "22"^^xsd:integer ;
+ .
+
+:bioportal-zfa a void:Linkset ;
+    void:target :bioportal-csp ;
+    void:triples "272"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Anita_Ghebeles"^^xsd:string ;
+ .
+

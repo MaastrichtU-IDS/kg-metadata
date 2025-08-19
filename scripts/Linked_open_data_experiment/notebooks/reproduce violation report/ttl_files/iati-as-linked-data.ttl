@@ -1,0 +1,99 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:iati-as-linked-data a dcat:Dataset ;
+    dcat:keyword "Aid", "Development", "Transparency", "accountibility", "developing_countries", "government", "ict4d", "international-development", "ld4d", "linked_data", "lod", "lodcloud-diagram-2014-08-30" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "IATI_as_Linked_Data" ;
+    void:exampleResource [
+        dct:title_exampleResource "Example_URI_(Country_Chad)" ;
+        dcat:mediaType_exampleResource "example/rdf+xml" ;
+        dct:description_exampleResource """
+Returns RDF/XML, RDF/Turtle, JSON-LD or HTML depending on HTTP Request header (Content negotiation)
+""" ;
+        dcat:accessURL_exampleResource <http://purl.org/collections/iati/codelist/Country/TD> ;
+        adms:status_exampleResource """
+FAIL (HTTPConnectionPool(host='eculture.cs.vu.nl', port=1987): Max retries exceeded with url: /iati/lod/collections/iati/codelist/Country/TD (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686da0a00>: Failed to establish a new connection: [Errno 111] Connection refused')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title_sparqlEndpoint "IATI_Sparql_Endpoint" ;
+        dcat:endpointDescription_sparqlEndpoint """
+
+""" ;
+        dcat:accessURL_sparqlEndpoint <http://semanticweb.cs.vu.nl/iati/sparql/> ;
+        adms:status_sparqlEndpoint """
+FAIL (400)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "text/html;_charset=utf-8" ;
+        dct:description_distribution """
+Git repository for a zipfile containing the RDF turtle files. note that because of the data model, there are *a lot* of files. 
+""" ;
+        adms:status_distribution """
+OK
+""" ;
+        dct:title_distribution "GIT_repository_for_data_dump" ;
+        dcat:accessURL_distribution <https://bitbucket.org/biktorrr/iati2lod_data> ;
+    ] ;
+    dct:description_main """
+International Aid Transparancy Initiative model and data from IATIRegistry as Linked Open Data. 
+
+For more information see: http://iati2lod.appspot.com
+
+It is widely recognized that the effectiveness of aid can be improved by providing transparant insight into aid activities. The International Aid Transparency Initiative (IATI), a multi-stakeholder initiative that seeks to improve the transparency of aid, has developed an open standard for the publication of aid information. As of 2013, over 150 donors, NGOs and governments have registered to the IATI registry for publishing their aid activities in this XML standard. Based on the IATI data, we have created a Linked Data model and converted the open data to Linked Data. In order to show the added benefits of Linked Data, we have linked the IATI dataset to various other datasets such as World Bank indicators and DBPedia information. Finally, we have created several applications which combine the information from the IATI dataset and the datasets it was linked to. As a result, we have shown that creating Linked Data for the IATI dataset and linking it to other datasets give new valuable insights in aid transparency. Based on actual information needs and use cases of IATI users, we were able to show that linking IATI data adds significant value to the data and is able to fulfill the needs of IATI users.
+"""@en ;
+
+    void:triples "36629045"^^xsd:integer ;
+    dcat:theme  <government> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:cia-world-factbook a void:Linkset ;
+    void:target :iati-as-linked-data ;
+    void:triples "240"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :iati-as-linked-data ;
+    void:triples "484"^^xsd:integer ;
+ .
+
+:fao-linked-data a void:Linkset ;
+    void:target :iati-as-linked-data ;
+    void:triples "191"^^xsd:integer ;
+ .
+
+:geonames a void:Linkset ;
+    void:target :iati-as-linked-data ;
+    void:triples "2486"^^xsd:integer ;
+ .
+
+:transparency-linked-data a void:Linkset ;
+    void:target :iati-as-linked-data ;
+    void:triples "182"^^xsd:integer ;
+ .
+
+:world-bank-linked-data a void:Linkset ;
+    void:target :iati-as-linked-data ;
+    void:triples "212"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Kasper_Brandt"^^xsd:string ;
+ .
+

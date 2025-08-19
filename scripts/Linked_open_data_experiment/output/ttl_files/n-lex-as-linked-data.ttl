@@ -1,0 +1,75 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:n-lex-as-linked-data a dcat:Dataset ;
+    dcat:keyword "government", "latc", "legal", "lod" ;
+    dct:title "N-Lex_as_Linked_Data" ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://n-lex.publicdata.eu/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Example_resource" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://n-lex.publicdata.eu/germany/id/BJNR036900005> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Example_resource" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://n-lex.publicdata.eu/resource/export/f/rdfxml?r=http%253A%252F%252Fn-lex.publicdata.eu%252Fgermany%252Fid%252FBJNR036900005> ;
+    ] ;
+    dct:description """
+The original N-LEX is a portal developed by the EU publications office and EU governments. It offers a unified search form to national legislation databases, a multilingual dictionary (EUROVOC) as well as a context-sensitive help. The project started with 4 national databases and has grown to 23 databases today.
+Besides the unified search form (which is not very useful for extraction purposes), the website also contains links to the respective national websites of the databases. All national databases offer a non-standardized access to their data, which in all cases is HTML or worse (e.g. PDF documents). Given the fact, that there are also no dumps of raw data (e.g. CSV) available, there is no unified N-LEX dataset that can be converted and published as Linked Data. Rather each countries legislation database has to be treated as an autonomous dataset. Thus we have chosen one country, namely Germany and converted this database into Linked Data via scraping.
+"""@en ;
+
+    foaf:page <http://n-lex.publicdata.eu/> ;
+    void:triples "1792054"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://n-lex.publicdata.eu/ontology> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :n-lex-as-linked-data ;
+    void:triples "2"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Philipp_Frischmuth"^^xsd:string ;
+     foaf:mbox <mailto:frischmuth@inform@ik.uni-leipzig.de> ; 
+ .
+

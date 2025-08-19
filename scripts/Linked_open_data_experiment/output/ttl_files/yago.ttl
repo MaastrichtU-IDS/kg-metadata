@@ -1,0 +1,121 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:yago a dcat:Dataset ;
+    dcat:keyword "ckanupload.esw.200910", "crossdomain", "format-rdf", "linkeddata", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-deref-vocab", "no-license-metadata", "no-provenance-metadata", "ontology", "published-by-producer" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title "YAGO" ;
+    dcat:distribution [
+        dcat:mediaType "application/x-7z-compressed" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "The_entire_YAGO_in_RDF/TTL/Turtle_format" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://resources.mpi-inf.mpg.de/yago-naga/yago3.1/yago3.1_entire_ttl.7z> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-7z-compressed" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "The_entire_YAGO_in_TSV_format" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://resources.mpi-inf.mpg.de/yago-naga/yago3.1/yago3.1_entire_tsv.7z> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-7z-compressed" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Schema_of_YAGO_in_TTL/Turtle/RDF" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://resources.mpi-inf.mpg.de/yago-naga/yago3.1/yagoSchema.ttl.7z> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-7z-compressed" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "rdf:type_facts_of_YAGO_in_RDF/TTL/Turtle" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://resources.mpi-inf.mpg.de/yago-naga/yago3.1/yagoTypes.ttl.7z> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-7z-compressed" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Taxonomy_of_YAGO_in_RDF/TTL/Turtle" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://resources.mpi-inf.mpg.de/yago-naga/yago3.1/yagoTaxonomy.ttl.7z> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Go to the Web page of YAGO to check individual downloads. These include:
+
+* TAXONOMY: All types of entitites, and the class structure of YAGO2s. Moreover, it has formal definitions of YAGO relations.
+* SIMPLETAX: An alternative, simpler taxonomy of YAGO.
+* CORE: Core facts of YAGO2s, such as the facts between entities, the facts containing literals,i.e., numbers, dates, strings, etc.
+* GEONAMES: Geographical entities, classes taken from GeoNames.
+* META: Temporally and spatially scoped facts together with statistics and extraction sources about the facts.
+* MULTILINGUAL: The multilingual names for entities.
+* LINK: The connection of YAGO2s to Wordnet, DBPedia, etc.
+* OTHER: Miscellaneous features of YAGO2s, such as Wikipedia in-outlinks, etc.
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Simplified_taxonomy,_multilingual,_links_to_DBpedia,_geonames,_WordNet" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/yago/downloads/> ;
+    ] ;
+    dct:description """
+YAGO3 is a huge semantic knowledge base, derived from Wikipedia WordNet and GeoNames. Currently, YAGO3 has knowledge of more than 10 million entities (like persons, organizations, cities, etc.) and contains more than 120 million facts about these entities.
+"""@en ;
+
+    foaf:page <http://yago-knowledge.org> ;
+    void:triples "120000000"^^xsd:integer ;
+    dcat:theme  <cross_domain> ;
+    void:uriSpace <http://yago-knowledge.org/resource/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :yago ;
+    void:triples "2625671"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "YAGO_Team"^^xsd:string ;
+ .
+

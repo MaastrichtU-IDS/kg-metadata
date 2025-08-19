@@ -1,0 +1,95 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:istat-immigration a dcat:Dataset ;
+    dcat:keyword "country-italy", "data-cube", "deref-vocab", "format-foaf", "format-org", "format-qb", "format-rdf", "format-sdmx", "format-skos", "government", "immigration", "istat", "italy", "license-metadata", "linked-data", "linkedopendata.it", "lod", "lodcloud-diagram-2011-09-19", "provenance-metadata", "published-by-third-party", "statistics", "void-sparql-endpoint" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "ISTAT_Immigration_(LinkedOpenData.it)" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://data.linkedopendata.it/istat/resource/Obs-DCIS_MATRIMONISTR-2586> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.linkedopendata.it', port=80): Max retries exceeded with url: /istat/resource/Obs-DCIS_MATRIMONISTR-2586 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f36843009d0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "None" ;
+        dcat:endpointDescription """
+SPARQL Endpoint
+""" ;
+        dcat:accessURL <http://sparql.linkedopendata.it/istat> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='sparql.linkedopendata.it', port=80): Max retries exceeded with url: /istat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684302b00>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+RDF Dump
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='dump.linkedopendata.it', port=80): Max retries exceeded with url: /istat/immigrazione (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684300b80>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://dump.linkedopendata.it/istat/immigrazione> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+VOID Description
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='void.linkedopendata.it', port=80): Max retries exceeded with url: /istat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3684301780>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://void.linkedopendata.it/istat> ;
+    ] ;
+    dct:description """
+Statistical data about immigration in Italy and related topics.
+Original data comes from the National Statistical Institute of Italy (ISTAT, dati.istat.it) and has been put in RDF Data Cube format by Linked Open Data Italia association.
+"""@en ;
+
+    foaf:page <http://www.linkedopendata.it/datasets/istat-immigration> ;
+    void:triples "3024396"^^xsd:integer ;
+    dcat:theme  <government> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :istat-immigration ;
+    void:triples "319"^^xsd:integer ;
+ .
+
+:geonames-semantic-web a void:Linkset ;
+    void:target :istat-immigration ;
+    void:triples "190"^^xsd:integer ;
+ .
+
+:reference-data-gov-uk a void:Linkset ;
+    void:target :istat-immigration ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Linkedopendata.it"^^xsd:string ;
+ .
+

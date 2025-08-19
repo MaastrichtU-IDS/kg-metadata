@@ -1,0 +1,106 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bibbase a dcat:Dataset ;
+    dcat:keyword "bib", "bibliographic", "bibtex", "citation", "co-reference", "data", "format-bibtex", "format-foaf", "format-rdf", "library", "license-metadata", "lld", "lod", "lodcloud-diagram-2011-09-19", "lodcloud-diagram-2014-08-30", "no-proprietary-vocab", "no-provenance-metadata", "publications", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "BibBase" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL <http://data.bibbase.org/author/christian-bizer> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.bibbase.org', port=80): Max retries exceeded with url: /author/christian-bizer (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dad690>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://data.bibbase.org:2020/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.bibbase.org', port=2020): Max retries exceeded with url: /sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dacfa0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.bibbase.org', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dac040>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.bibbase.org> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "" ;
+        dct:description """
+D2R Server
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='data.bibbase.org', port=2020): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dad390>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.bibbase.org:2020> ;
+    ] ;
+    dct:description """
+BibBase.org facilitates the dissemination of scientific publications over the Internet. BibBase makes it easy for scientists to maintain their publications pages. As a scientist, you simply maintain a bibtex-file of your publications, including links to the papers, and BibBase does the rest. When a web user visits your publications page, BibBase dynamically generates an always up-to-date HTML page from the bibtex file, and even allows the user to sort the publications by other than the default ordering (e.g. year, author, keywords, research area, publication type). BibBase has been used by several scientists and research groups since 2006.
+"""@en ;
+
+    foaf:page <http://data.bibbase.org> ;
+    void:triples "200000"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://data.bibbase.org/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :bibbase ;
+    void:triples "53"^^xsd:integer ;
+ .
+
+:fu-berlin-dblp a void:Linkset ;
+    void:target :bibbase ;
+    void:triples "5000"^^xsd:integer ;
+ .
+
+:l3s-dblp a void:Linkset ;
+    void:target :bibbase ;
+    void:triples "7161"^^xsd:integer ;
+ .
+
+:rkb-explorer-ieee a void:Linkset ;
+    void:target :bibbase ;
+    void:triples "75"^^xsd:integer ;
+ .
+
+:semantic-web-dog-food a void:Linkset ;
+    void:target :bibbase ;
+    void:triples "361"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Christian_Fritz,_Oktie_Hassanzadeh,_Reynold_S._Xin"^^xsd:string ;
+     foaf:mbox <mailto:oktie@cs.toronto.edu> ; 
+ .
+

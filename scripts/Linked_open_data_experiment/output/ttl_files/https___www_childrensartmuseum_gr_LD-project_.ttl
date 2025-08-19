@@ -1,0 +1,70 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:https___www_childrensartmuseum_gr_LD-project_ a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+Turtle encoding for Children Art Museum Dataset
+""" ;
+        dcat:downloadURL <https://www.childrensartmuseum.gr/LD-project/children_artworks.ttl> ;
+        dct:mirror "[]" ;
+        dct:title "children_artworks.ttl" ;
+        dct:identifier "507634ce-79c0-b65f-d861-a7da4aa1cc07" ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dct:identifier "10.5281/zenodo.4425440" ;
+    dcat:keyword "Painting", "Museum", "Child_Art", "Creative_Work" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "Greek_Children_Art__Museum_dataset" ;
+    dct:description """
+The "LD-project" deals with the creation of cultural Open Linked Data (LOD), based on the artifacts of Greek Children Art Museum, in Greece, Athens. It was created in the frame of Master Thesis of MSc. students, Marini Efstathia and Chondrogianni Maria, in Cultural Informatics postgraduate program at the Department of Cultural Technology and Communication of the University of the Aegean.
+
+DCAT Description: https://www.childrensartmuseum.gr/LD-project/
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    foaf:page <https://www.childrensartmuseum.gr/LD-project/> ;
+    void:triples "2211"^^xsd:integer ;
+    dcat:theme  <user_generated> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:wikidata a void:Linkset ;
+    void:target :https___www_childrensartmuseum_gr_LD-project_ ;
+    void:triples "150"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :https___www_childrensartmuseum_gr_LD-project_ ;
+    void:triples "489"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:sotiriosangelis@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Sotiris_Angelis"^^xsd:string ;
+     foaf:mbox <mailto:sotiris@aegean.gr> ; 
+ .
+

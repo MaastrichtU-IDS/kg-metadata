@@ -1,0 +1,97 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:rkb-explorer-darmstadt a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-akt", "format-dc", "format-rdf", "lod", "lodcloud.unconnected", "no-license-metadata", "no-vocab-mappings", "provenance-metadata", "publications", "published-by-third-party", "void-sparql-endpoint" ;
+    dct:title "Technische_Universität_Darmstadt_(RKBExplorer)" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example (RDF/XML)
+""" ;
+        dcat:accessURL <http://darmstadt.rkbexplorer.com/id/person-1248337cae47063dccb9e5eea87baccc> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='darmstadt.rkbexplorer.com', port=80): Max retries exceeded with url: /id/person-1248337cae47063dccb9e5eea87baccc (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dae140>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL endpoint
+""" ;
+        dcat:accessURL <http://darmstadt.rkbexplorer.com/sparql/> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='darmstadt.rkbexplorer.com', port=80): Max retries exceeded with url: /sparql/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686daf490>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/xml" ;
+        dct:description """
+XML Sitemap
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='darmstadt.rkbexplorer.com', port=80): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dad1b0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://darmstadt.rkbexplorer.com/sitemap.xml> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD file
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmcE8kCeHCpLjLywvZPncq1XNX8W3LXs6R26Aert2iAjd7']" ;
+        dcat:accessURL <http://darmstadt.rkbexplorer.com/models/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/x-gzip" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='darmstadt.rkbexplorer.com', port=80): Max retries exceeded with url: /models/dump.tgz (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dadf60>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')))
+""" ;
+        dct:title "Download_(tar_gzip_of_RDF)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://darmstadt.rkbexplorer.com/models/dump.tgz> ;
+    ] ;
+    dct:description """
+
+"""@en ;
+
+    foaf:page <http://darmstadt.rkbexplorer.com> ;
+    void:triples "35325"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://darmstadt.rkbexplorer.com/id/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:rkb-explorer-wiki a void:Linkset ;
+    void:target :rkb-explorer-darmstadt ;
+    void:triples "7"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Hugh_Glaser"^^xsd:string ;
+     foaf:mbox <mailto:hg@ecs.soton.ac.uk> ; 
+ .
+

@@ -1,0 +1,126 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:athelia-rfid a dcat:Dataset ;
+    dcat:keyword "air_liquide", "asset_tracking", "asset_tracking_solutions", "athelia", "athelia_solutions", "country-spain", "country.es", "dc", "energy_and_utilities", "foaf", "food_and_beverages", "format-dc", "format-dcam", "format-foaf", "format-rdfg", "format-sioc", "format-skos", "format-wot", "glp", "industrial_mobility", "language-spa", "license-metadata", "liquefied_petroleum_gas", "lod", "lpg", "no-proprietary-vocab", "no-vocab-mappings", "oil_and_gas", "provenance-metadata", "published-by-third-party", "radio_frequency_identification", "rfid", "rfid_industry", "rfid_tags", "schemata", "sioc", "skos", "socialweb", "sp", "spain", "usergeneratedcontent", "wrapper" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title "Athelia_RFID,_a_global_knowledge_network_of_RFID_technology" ;
+    void:exampleResource [
+        dct:title "RDF/XML_resource_example" ;
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+This is an RDF/XML example link of one of the resources published in the Athelia Solutions Community. Currently, more than 1000 resources have been published in the platform.
+""" ;
+        dcat:accessURL <http://athelia.com/comunidad/atheliasolutions/recurso/Django-Maintenance--Inspection/1ea18bcd-ce29-4443-86b7-485df3ef4d0a?rdf> ;
+        adms:status """
+FAIL (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "RDF/XML_resource_example_2" ;
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+This is an RDF/XML example link of one of the resources published in the Athelia Solutions Community. Currently, more than 1000 resources have been published in the platform.
+""" ;
+        dcat:accessURL <http://athelia.com/comunidad/atheliasolutions/recurso/Athelia-Services/2fad094b-4ff6-42ce-bf2c-02c72fb57eb9?rdf> ;
+        adms:status """
+FAIL (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+""" ;
+    ] ;
+    void:exampleResource [
+        dct:title "RDF/XML_search_example_" ;
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+This is an RDF/XML example link of a search results.
+""" ;
+        dcat:accessURL <http://athelia.com/en/community/atheliasolutions/advanced-search/tag/rfid?rdf> ;
+        adms:status """
+FAIL (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/owl" ;
+        dct:description """
+Gnoss OWL Ontology
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Gnoss_Ontology" ;
+        dct:mirror "['ipfs:QmbDWiHLbnjJ2vGnaViALUEZFtCGu3hgUVhsSZjQ5xwpki']" ;
+        dcat:accessURL <http://gnoss.com/gnoss.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+voiD description
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "voiD_description" ;
+        dct:mirror "['ipfs:QmQMbGtd3Cgv3myBcr7jFK15MBXZ2BJhYoT2aEnfuxYxb6']" ;
+        dcat:accessURL <http://athelia.com/voidAtheliaRFIDGNOSS.n3> ;
+    ] ;
+    dct:description """
+<a href="http://athelia.com/">Athelia Solutions</a>
+, a company specialized in tracking solutions based on RFID technology (Radio Frequency Identification) and Mobile Data Capture, renewed its digital identity with a global knowledge network designed to share content and opinion about RFID technology in Oil & Gas, Food & Beverage, Energy & Utilities and Healthcare. The online global network of Athelia includes a professional community, called
+<a href="http://community.athelia.com/en/community/atheliacommunity">Athelia Community</a>
+, and a
+<a href="http://athelia.com/en/community/atheliasolutions">portfolio of services and solutions</a>
+of the company.
+</p>
+<p>
+<p> It is focused on specialists in this field: users of technologies for traceability solutions, suppliers, technicians, engineers, researchers, consultants and journalists, among others, of those sectors in which Athelia is reference in identification and traceability.</p>
+"""@en ;
+
+    foaf:page <http://athelia.com> ;
+    void:triples "253440"^^xsd:integer ;
+    dcat:theme  <user_generated> ;
+    void:uriSpace <http://athelia.com> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dblp-deusto-gnoss a void:Linkset ;
+    void:target :athelia-rfid ;
+    void:triples "814"^^xsd:integer ;
+ .
+
+:dbpedia a void:Linkset ;
+    void:target :athelia-rfid ;
+    void:triples "153"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :athelia-rfid ;
+    void:triples "102"^^xsd:integer ;
+ .
+
+:gnoss a void:Linkset ;
+    void:target :athelia-rfid ;
+    void:triples "133"^^xsd:integer ;
+ .
+
+:nytimes-linked-open-data a void:Linkset ;
+    void:target :athelia-rfid ;
+    void:triples "154"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "GNOSS_Team"^^xsd:string ;
+     foaf:mbox <mailto:gnoss@gnoss.com> ; 
+ .
+

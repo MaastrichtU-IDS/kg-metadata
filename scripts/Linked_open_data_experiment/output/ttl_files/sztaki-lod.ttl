@@ -1,0 +1,89 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:sztaki-lod a dcat:Dataset ;
+    dcat:keyword "catalog", "country-hungary", "format-dbpedia", "format-dc", "format-foaf", "format-rdf", "linkeddata", "lod", "lodcloud-diagram-2014-08-30", "no-license-metadata", "no-proprietary-vocab", "no-provenance-metadata", "publications", "published-by-producer", "rdf", "sparql" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "National_Digital_Data_Archive_of_Hungary_(partial)" ;
+    void:exampleResource [
+        dct:title "Link_to_an_example_data_item_(person)" ;
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <http://lod.sztaki.hu/data/auth/287922.xml> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://lod.sztaki.hu/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/rdf+xml;_charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Link_to_an_example_data_item_(book)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://lod.sztaki.hu/data/item/146675.xml> ;
+    ] ;
+    dct:description """
+This dataset aims at publishing the contents of Hungarian archives as Linked Open Data based on the National Digital Data Archive of Hungary. The dataset contains information about books, movies, articles published in Hungary and some of its resources are linked to other datasets (e.g. DBpedia, VIAF, NSZL).
+"""@en ;
+
+    foaf:page <http://lod.sztaki.hu/> ;
+    void:triples "11000000"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://lod.sztaki.hu/data/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :sztaki-lod ;
+    void:triples "13034"^^xsd:integer ;
+ .
+
+:hungarian-national-library-catalog a void:Linkset ;
+    void:target :sztaki-lod ;
+    void:triples "99709"^^xsd:integer ;
+ .
+
+:lexvo a void:Linkset ;
+    void:target :sztaki-lod ;
+    void:triples "388854"^^xsd:integer ;
+ .
+
+:viaf a void:Linkset ;
+    void:target :sztaki-lod ;
+    void:triples "59356"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "SZTAKI_DSD"^^xsd:string ;
+     foaf:mbox <mailto:webmaster@dsd.sztaki.hu> ; 
+ .
+

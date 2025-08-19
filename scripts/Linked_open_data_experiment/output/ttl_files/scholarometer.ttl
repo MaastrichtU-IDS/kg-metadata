@@ -1,0 +1,83 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:scholarometer a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-foaf", "format-owl", "format-rdf", "format-rdfs", "format-scholar", "impact-analysis", "lod", "lodcloud-diagram-2011-09-19", "no-license-metadata", "no-provenance-metadata", "no-vocab-mappings", "publications", "published-by-producer", "scholarometer" ;
+    dct:title "Scholarometer" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://scholarometer.indiana.edu/resource/author/f%2520menczer> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+RDF Schema
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "['ipfs:QmRe49ndscbfr4aWU2TtFanRNfX4ZkRFouEXXhfFDM3Dwn']" ;
+        dcat:accessURL <http://scholarometer.indiana.edu/namespaces/> ;
+    ] ;
+    dct:description """
+Scholarometer is a social tool for citation analysis, which provides a service to scholars by computing citation-based impact measures. Scholarometer data provides information about authors and disciplines based on citation analysis.
+"""@en ;
+
+    foaf:page <http://scholarometer.indiana.edu/data.html> ;
+    void:triples "900000"^^xsd:integer ;
+    dcat:theme  <publications> ;
+    void:uriSpace <http://scholarometer.indiana.edu/namespaces/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :scholarometer ;
+    void:triples "1000"^^xsd:integer ;
+ .
+
+:freebase a void:Linkset ;
+    void:target :scholarometer ;
+    void:triples "1000"^^xsd:integer ;
+ .
+
+:fu-berlin-dblp a void:Linkset ;
+    void:target :scholarometer ;
+    void:triples "1000"^^xsd:integer ;
+ .
+
+:l3s-dblp a void:Linkset ;
+    void:target :scholarometer ;
+    void:triples "2500"^^xsd:integer ;
+ .
+
+:opencyc a void:Linkset ;
+    void:target :scholarometer ;
+    void:triples "530"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Scholarometer_Team"^^xsd:string ;
+     foaf:mbox <mailto:scholarometer@googlegroups.com> ; 
+ .
+

@@ -1,0 +1,54 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Rb_PL_LGU a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title "Polish_LGU_financial_statementsSPARQL_Endpoint" ;
+        dct:identifier "3cf60887-c1c7-8427-0304-fc45ce3c920f" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://185.94.71.25:62020/snorql/> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='185.94.71.25', port=62020): Max retries exceeded with url: /snorql/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f36843fd2a0>, 'Connection to 185.94.71.25 timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    foaf:page <http://185.94.71.25:62020> ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "Polish_LGU_financial_statements" ;
+    dct:description """
+There are four financial statement tables for every year in the 2013-2018 interval - Rb-27s contains detailed information about revenues, Rb-28s contains expenditures data, Rb-Z contains data about debt and Rb-NDS contains aggregated financial data, like total revenues, total expenditures, change indebt etc.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:triples "7000000"^^xsd:integer ;
+    dcat:theme  <user_generated> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:kwasko.incr@ing@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Krzysztof_Waśko"^^xsd:string ;
+     foaf:mbox <mailto:krzysztof.wasko@incr@ing.pl> ; 
+ .
+

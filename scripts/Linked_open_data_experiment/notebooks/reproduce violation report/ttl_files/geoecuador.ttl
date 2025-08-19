@@ -1,0 +1,82 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:geoecuador a dcat:Dataset ;
+    dcat:keyword "geospatial", "linked_data", "lod", "lodcloud-diagram-2014-08-30" ;
+    dct:title_main "GeoEcuador" ;
+    dcat:distribution [
+        dcat:mediaType_distribution "RDF" ;
+        dct:description_distribution """
+GeoSparql Endpoint geo.linkeddata.ec dataset
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='190.15.132.241', port=80): Max retries exceeded with url: /marmotta/sparql/select (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686daf130>, 'Connection to 190.15.132.241 timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "Sparql_Endpoint" ;
+        dcat:accessURL_distribution <http://190.15.132.241/marmotta/sparql/select> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='geo.linkeddata.ec', port=80): Max retries exceeded with url: /download/data.zip (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686da1480>, 'Connection to geo.linkeddata.ec timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "Ecuadorian_GeoSpatial" ;
+        dcat:accessURL_distribution <http://geo.linkeddata.ec/download/data.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "application/zip" ;
+        dct:description_distribution """
+1993
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='geo.linkeddata.ec', port=80): Max retries exceeded with url: /download/owlSameAs.zip (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686da2d70>, 'Connection to geo.linkeddata.ec timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "internal_owl:sameAs_links" ;
+        dcat:accessURL_distribution <http://geo.linkeddata.ec/download/owlSameAs.zip> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType_distribution "" ;
+        dct:description_distribution """
+4502
+""" ;
+        adms:status_distribution """
+FAIL (HTTPConnectionPool(host='geo.linkeddata.ec', port=80): Max retries exceeded with url: /download/DBPedia_owlSameAs.zip (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686da2fe0>, 'Connection to geo.linkeddata.ec timed out. (connect timeout=30)')))
+""" ;
+        dct:title_distribution "DBPedia_owl:sameAs" ;
+        dcat:accessURL_distribution <http://geo.linkeddata.ec/download/DBPedia_owlSameAs.zip> ;
+    ] ;
+    dct:description_main """
+Ecuadorian geospatial LD dataset
+"""@en ;
+
+    void:triples "1278288"^^xsd:integer ;
+    void:uriSpace <http://geo.linkeddata.ec/resource> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :geoecuador ;
+    void:triples "4502"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Universidad_de_Cuenca"^^xsd:string ;
+     foaf:Cmbox <mailto:victor.saquicela@ucuenca.edu.ec> ; 
+ .
+

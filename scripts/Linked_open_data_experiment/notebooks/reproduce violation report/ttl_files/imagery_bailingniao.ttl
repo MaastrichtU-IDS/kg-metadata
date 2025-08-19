@@ -1,0 +1,54 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:imagery_bailingniao a dcat:Dataset ;
+    dcat:distribution [
+        dcat:mediaType_distribution "MIME_type" ;
+        dct:description_distribution """
+
+""" ;
+        adms:status_distribution """
+FAIL (404)
+""" ;
+        dct:title_distribution "imagery" ;
+        dct:identifier_distribution "56ee602b-df87-0f19-ec16-a56f87056f13" ;
+        dcat:downloadURL_distribution <https://demo.ckan.org/dataset/5e065f17-b055-4485-9e41-165de0953871/resource/16e2fc92-6676-4a07-8ca4-e3ce7a52fbf2/download/imagery.json> ;
+    ] ;
+    foaf:page <http://baixue.com> ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by> ;
+    dct:title_main "imagery_bailingniao" ;
+    dct:description_main """
+imagery bailingniao
+"""@en ;
+
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    dcat:theme  <cross_domain> ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:baixueimis@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "wageawgw"^^xsd:string ;
+     foaf:Cmbox <mailto:ewagrehawg@qage.com> ; 
+ .
+

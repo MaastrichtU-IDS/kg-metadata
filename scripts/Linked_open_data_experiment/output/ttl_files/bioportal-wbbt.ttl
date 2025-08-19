@@ -1,0 +1,299 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bioportal-wbbt a dcat:Dataset ;
+    dcat:keyword "biomedicine", "bioportal", "format-obo", "format-rdf", "lod", "ontology", "published-by-third-party" ;
+    dct:title "C._elegans_gross_anatomy" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+REST API Wiki Documentation
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+SPARQL endpoint
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://sparql.bioontology.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+Download link, BioPortal API KEY is required
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://rest.bioontology.org/bioportal/ontologies/download/47291?apikey=BP_API_KEY> ;
+    ] ;
+    dct:description """
+A structured controlled vocabulary of the anatomy of <i>Caenorhabditis elegans</i>.
+"""@en ;
+
+    foaf:page <http://bioportal.bioontology.org/ontologies/1048> ;
+    void:triples "97058"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-aao a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "42"^^xsd:integer ;
+ .
+
+:bioportal-acgt a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-aeo a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "19"^^xsd:integer ;
+ .
+
+:bioportal-bila a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:bioportal-biomodels a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "58"^^xsd:integer ;
+ .
+
+:bioportal-birnlex a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-bto a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "64"^^xsd:integer ;
+ .
+
+:bioportal-canco a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "115"^^xsd:integer ;
+ .
+
+:bioportal-cco a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+:bioportal-cl a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "35"^^xsd:integer ;
+ .
+
+:bioportal-csp a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "53"^^xsd:integer ;
+ .
+
+:bioportal-cst a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-efo a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "102"^^xsd:integer ;
+ .
+
+:bioportal-ehda a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "147"^^xsd:integer ;
+ .
+
+:bioportal-ehdaa a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:bioportal-ehdaa2 a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "26"^^xsd:integer ;
+ .
+
+:bioportal-ev a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "95"^^xsd:integer ;
+ .
+
+:bioportal-fbbt a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "61"^^xsd:integer ;
+ .
+
+:bioportal-galen a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "51"^^xsd:integer ;
+ .
+
+:bioportal-gaz a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-hao a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+:bioportal-icd10 a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:bioportal-icnp a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:bioportal-lnc a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "55"^^xsd:integer ;
+ .
+
+:bioportal-ma a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "35"^^xsd:integer ;
+ .
+
+:bioportal-mat a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "45"^^xsd:integer ;
+ .
+
+:bioportal-mccl a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-mccl_x1 a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "107"^^xsd:integer ;
+ .
+
+:bioportal-mesh-owl a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "86"^^xsd:integer ;
+ .
+
+:bioportal-mfo a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "39"^^xsd:integer ;
+ .
+
+:bioportal-msh a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "92"^^xsd:integer ;
+ .
+
+:bioportal-ncit a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "194"^^xsd:integer ;
+ .
+
+:bioportal-nif a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "45"^^xsd:integer ;
+ .
+
+:bioportal-nif_cell a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "18"^^xsd:integer ;
+ .
+
+:bioportal-obi a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-omim a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:bioportal-pr a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "19"^^xsd:integer ;
+ .
+
+:bioportal-rcd a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "39"^^xsd:integer ;
+ .
+
+:bioportal-rid a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "37"^^xsd:integer ;
+ .
+
+:bioportal-snomedct a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "123"^^xsd:integer ;
+ .
+
+:bioportal-syn a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "55"^^xsd:integer ;
+ .
+
+:bioportal-tao a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "54"^^xsd:integer ;
+ .
+
+:bioportal-uberon a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "83"^^xsd:integer ;
+ .
+
+:bioportal-vhog a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "37"^^xsd:integer ;
+ .
+
+:bioportal-xao a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "39"^^xsd:integer ;
+ .
+
+:bioportal-zfa a void:Linkset ;
+    void:target :bioportal-wbbt ;
+    void:triples "53"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Raymond_Lee"^^xsd:string ;
+ .
+

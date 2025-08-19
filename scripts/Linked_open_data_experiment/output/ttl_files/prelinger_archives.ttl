@@ -1,0 +1,158 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:prelinger_archives a dcat:Dataset ;
+    dcat:keyword "deref-vocab", "format-dcmit", "format-foaf", "format-rdf", "license-metadata", "media", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/odc-pddl> ;
+    dct:title "Prelinger_Archives" ;
+    void:exampleResource [
+        dct:title "" ;
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Example RDF for Prelinger Archives
+""" ;
+        dcat:accessURL <http://data.kasabi.com/dataset/prelinger-archives/film//1935_comedy_mallinckrodt.rdf> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "" ;
+        dcat:endpointDescription """
+SPARQL endpoint for Prelinger Archives
+""" ;
+        dcat:accessURL <http://api.kasabi.com/dataset/prelinger-archives/apis/sparql> ;
+        adms:status """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Kasabi Homepage for Prelinger Archives dataset
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://kasabi.com/dataset/prelinger-archives> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Kasabi page for Prelinger Archives Search API
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://kasabi.com/dataset/prelinger-archives/apis/search> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Kasabi page for Prelinger Archives SPARQL Endpoint
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://kasabi.com/dataset/prelinger-archives/apis/sparql> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Kasabi page for Prelinger Archives Lookup API
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://kasabi.com/dataset/prelinger-archives/apis/lookup> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Kasabi page for Prelinger Archives Reconciliation API
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://kasabi.com/dataset/prelinger-archives/apis/reconciliation> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Kasabi page for Prelinger Archives Augmentation API
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://kasabi.com/dataset/prelinger-archives/apis/augmentation> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+Void description of Prelinger Archives dataset
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://data.kasabi.com/dataset/prelinger-archives> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "application/octet-stream" ;
+        dct:description """
+Dump of the dataset uploaded to the internet archive
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Dataset_export" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://archive.org/download/kasabi/prelinger-archives.gz> ;
+    ] ;
+    dct:description """
+The Prelinger Archives is a collection of films relating to U.S. cultural history, the evolution of the American landscape, everyday life and social history. It was physically located in New York City from 1982-2002 and is now in San Francisco.
+
+The Archives was founded by Rick Prelinger in 1982 in order to preserve what he calls "ephemeral" films: films sponsored by corporations and organizations, educational films, and amateur and home movies. Typically, ephemeral films were produced to fulfill specific purposes at specific times, and many exist today only by chance or accident. About 65% of the Archive's holdings are in the public domain because their copyrights have expired, or because they were U.S. productions that were published without proper copyright notice.
+
+This dataset consists of metadata about more than 2,000 public domain films that the Prelinger Archives have made available for unrestricted use via the Internet Archive.
+
+*Note* this dataset is no longer updated, it was taken off-line during the shutdown of Kasabi. A dump of the dataset has been [uploaded to the Internet Archive](http://archive.org/details/kasabi)
+"""@en ;
+
+    foaf:page <http://kasabi.com/dataset/prelinger-archives> ;
+    void:triples "454904"^^xsd:integer ;
+    void:uriSpace <http://data.kasabi.com/dataset/prelinger-archives> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:contactAgent a prov:Agent ;
+     foaf:name "Leigh_Dodds"^^xsd:string ;
+     foaf:mbox <mailto:leigh@ldodds.com> ; 
+ .
+

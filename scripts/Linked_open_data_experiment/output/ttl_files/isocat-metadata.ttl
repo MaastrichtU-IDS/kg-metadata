@@ -1,0 +1,80 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:isocat-metadata a dcat:Dataset ;
+    dcat:keyword "ISOcat", "linguistic", "llod", "lod", "metadata", "ontology", "terminology" ;
+    dct:title "ISOcat-metadata" ;
+    dcat:distribution [
+        dcat:mediaType "OWL" ;
+        dct:description """
+OWL representation
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "ISOcat_TDG_Metadata_Ontology_(OWL)" ;
+        dct:mirror "['ipfs:QmZKKNyMLeQaxmB3D22BDRP7gCPKevaQnHsFpumQRGegQR']" ;
+        dcat:accessURL <http://www.sfs.uni-tuebingen.de/nalida/images/isocat/isocatOWL.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+HTML version
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "ISOcat_TDG_Metadata_Ontology_(html)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.sfs.uni-tuebingen.de/nalida/images/isocat/isocat_hierarchy.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html" ;
+        dct:description """
+Description
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Description_(en)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.sfs.uni-tuebingen.de/nalida/en/docu/isocat-hierarchy.html> ;
+    ] ;
+    dct:description """
+ The linguistics community is building a metadata-based infrastructure for the description of its research data and tools. At its core is the ISOcat registry ISOcat.org, a collaborative platform to hold a (to be standardized) set of data catgories (i.e., field descriptors). Descriptors have definitions in natural language and little explicit interrelations. With the registry growing to many hundred entries, authored by many, it is becoming increasingly apparent that the rather informal definitions and their glossary-like design make it hard for users to grasp, exploit and manage the registry’s content. Here we take a large subset of the ISOcat term set and reconstruct from it a tree structure following the footsteps of schema.org. Our ontological re-engineering yields a representation that gives users a hierarchical view of linguistic, metadata-related terminology. The new representation adds to the precision of all definitions by making explicit information which is only implicitly given in the ISOcat registry. It also helps uncovering and addressing potential inconsistencies in term definitions as well as gaps and redundancies in the overall ISOcat term set. The new representation can serve as a complement to the existing ISOcat model, providing additional support for authors and users in browsing, (re-)using, maintaining, and further extending the community’s terminological metadata repertoire.
+
+The set of data categories has been taken from the TDG Metadata of the ISOcat data category registry. As the ISOcat registry changes over time, we give a snapshot of all data in this RDF representation, as generated automatically from the registry's export functionality in Dec 2011. Note that this data is a flat representation of the TDG Metadata entries. Each entry is only represented in RDF with its mnemonic identifier, name, persistent identifier and natural language definition. No other information, in particular, no structural information is given.
+(http://www.sfs.uni-tuebingen.de/nalida/en/docu/isocat-hierarchy.html)
+
+Free for academic and research use.
+(http://www.sfs.uni-tuebingen.de/nalida/images/isocat/isocatOWL.owl)
+"""@en ;
+
+    void:triples "830"^^xsd:integer ;
+    dcat:theme  <linguistics> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:isocat a void:Linkset ;
+    void:target :isocat-metadata ;
+    void:triples "65"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Nalida_Tübingen"^^xsd:string ;
+     foaf:mbox <mailto:nalida@sfs.uni-tuebingen.de> ; 
+ .
+

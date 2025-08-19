@@ -1,0 +1,443 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:eurosentiment a dcat:Dataset ;
+    dcat:keyword "ldl-2014", "lexicon", "linguistic", "llod", "lod", "sentiment" ;
+    dct:license <http://www.opendefinition.org/licenses/gfdl> ;
+    dct:title "EuroSentiment" ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_Endpoint" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <http://virtuoso-eurosentiment.paradigmatecnologico.com/sparql> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='virtuoso-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db55a0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in German  for  Electronics
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000030_000001.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db59c0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_German__for__Electronics" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000030_000001.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in Catalan  for  Electronics
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/electronics_ca_human_final_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db5f00>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_Catalan__for__Electronics" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/electronics_ca_human_final_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in English  for  Electronics
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/electronics_en_human_final_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db5570>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_English__for__Electronics" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/electronics_en_human_final_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in Spanish  for  Electronics
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/electronics_es_human_final_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db60e0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_Spanish__for__Electronics" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/electronics_es_human_final_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in Portuguese   for  Electronics
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/electronics_pt_human_final_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db7910>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_Portuguese___for__Electronics" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/electronics_pt_human_final_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in Italian  for  Finance
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000013_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db59c0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_Italian__for__Finance" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000013_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in Italian  for  Music
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000014_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db5f00>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_Italian__for__Music" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000014_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in English  for  Pharmacy
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000015_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db5570>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_English__for__Pharmacy" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000015_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in Italian  for  Post
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000016_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db60e0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_Italian__for__Post" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000016_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in English  for  Engineering
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000017_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db7910>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_English__for__Engineering" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000017_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in Italian  for  Post
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000018_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db59c0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_Italian__for__Post" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000018_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in English   for  Vehicles
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000019_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db5f00>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_English___for__Vehicles" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000019_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in English  for  News
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000020_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db5570>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_English__for__News" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000020_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in English  for  Engineering
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000021_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db60e0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_English__for__Engineering" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000021_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in English  for  News
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000022_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db7910>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_English__for__News" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000022_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in Italian  for  Finance
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000023_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db59c0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_Italian__for__Finance" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000023_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in Italian  for Music
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000024_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db5f00>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_Italian__for_Music" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000024_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in English  for  Pharmacy
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000025_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db5570>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_English__for__Pharmacy" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000025_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in English  for  Electronics
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000026_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db60e0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_English__for__Electronics" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000026_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in English for  Tourism
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000028_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db7910>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_English_for__Tourism" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000028_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in Catalan for  Tourism
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000029_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db59c0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_Catalan_for__Tourism" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000029_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in Spanish  for  Electronics
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000030_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db5f00>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_Spanish__for__Electronics" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000030_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in Portuguese  for  Tourism
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000031_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db5570>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_Portuguese__for__Tourism" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000031_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in Spanish  for Tourism
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000033_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db60e0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_Spanish__for_Tourism" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000033_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in Catalan  for  Electronics
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000034_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db7910>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_Catalan__for__Electronics" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000034_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in Portuguese  for  Electronics
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/graph000035_000001_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db59c0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_Portuguese__for__Electronics" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/graph000035_000001_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in English  for  Hotels
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/hotel_en_human_final_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db5f00>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_English__for__Hotels" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/hotel_en_human_final_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in Spanish  for  Hotels
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/hotel_es_human_final_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db5570>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_Spanish__for__Hotels" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/hotel_es_human_final_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in Portuguese  for  Hotels
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/hotel_pt_human_final_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db60e0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_Portuguese__for__Hotels" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/hotel_pt_human_final_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in German  for  Cars
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/human_de_cars_250_revised_final_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db7910>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_German__for__Cars" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/human_de_cars_250_revised_final_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in German  for  Technology
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/human_de_tech_250_revised_final_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db59c0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_German__for__Technology" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/human_de_tech_250_revised_final_metadata.nq> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "n-quads" ;
+        dct:description """
+Annotated corpus in Catalan  for  Hotels
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='tomcat-eurosentiment.paradigmatecnologico.com', port=80): Max retries exceeded with url: /dataset/static/corpora/hotel_ca_human_final_metadata.nq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686db5f00>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Annotated_corpus_in_Catalan__for__Hotels" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://tomcat-eurosentiment.paradigmatecnologico.com/dataset/static/corpora/hotel_ca_human_final_metadata.nq> ;
+    ] ;
+    dct:description """
+Gabriela Vulcu, Raul Lario Monje, Mario Munoz, Paul Buitelaar and Carlos A. Iglesias (2014), Linked-Data based Domain-Specific Sentiment Lexicons, In: Proceedings of the 3rd Workshop on Linked Data in Linguistics (LDL-2014), Reykjavik, Iceland, May 2014
+
+    Resource Type: 	Lexicon
+    Resource Name: 	EUROSENTIMENT domain-specific sentiment lexicons	
+    Size: 	9160	
+    Resource Production Status: 	Newly created-in progress	
+    Language(s): 	W	
+    Modality: 	Written	
+    Use of the Resource: 	Emotion Recognition/Generation	
+    Resource Availability: 	Freely Avalable	
+    Resource URL (if available): 	http://140.203.155.231:8080/eurosentiment/	
+    Resource Description: 	Please see the submitted article. It describes this language resource and all other involved. 
+"""@en ;
+
+    void:triples "975566"^^xsd:integer ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:lexinfo a void:Linkset ;
+    void:target :eurosentiment ;
+    void:triples "0"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Gabriela_Vulcu_et_al."^^xsd:string ;
+     foaf:mbox <mailto:gabriela.vulcu@insight-centre.org> ; 
+ .
+

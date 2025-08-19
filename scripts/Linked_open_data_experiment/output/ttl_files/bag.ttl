@@ -1,0 +1,85 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bag a dcat:Dataset ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_endpoint_voor_de_BAG" ;
+        dct:identifier "01d8dd6a-a1f2-9554-09bf-cb5f7c956d7c" ;
+        dcat:endpointDescription """
+
+""" ;
+        dcat:accessURL <https://data.pdok.nl/sparql> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='data.pdok.nl', port=443): Max retries exceeded with url: /sparql (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:997)'))))
+""" ;
+    ] ;
+    foaf:depiction <https://www.pdok.nl/documents/1901824/1952435/kadaster.png/03b48013-32ca-89fd-3b93-29a467efbb74?t=1530020613449> ;
+    foaf:page <https://www.pdok.nl/introductie?articleid=1948911> ;
+    dcat:keyword "geo", "gis", "eGovernment", "base-registry", "netherlands" ;
+    dct:title "Basisregistratie_Adressen_en_Gebouwen" ;
+    dcat:distribution [
+        dcat:mediaType "application/octet-stream" ;
+        dct:description """
+
+""" ;
+        dcat:downloadURL <https://demo.triply.cc/kadaster/bag/assets/5ac4b7e46d64e5027d47bc68> ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='demo.triply.cc', port=443): Max retries exceeded with url: /kadaster/bag/assets/5ac4b7e46d64e5027d47bc68 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3686db69e0>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Download_link" ;
+        dct:mirror "[]" ;
+        dct:identifier "fc7420fa-2fec-2af8-a31b-8fa9564ec7dd" ;
+    ] ;
+    dct:description """
+De gegevens bestaan uit BAG-panden en een deelselectie van BAG-gegevens van deze panden en de zich daarin bevindende verblijfsobjecten. Ook de ligplaatsen en standplaatsen zijn hierin opgenomen met een deelselectie van BAG-gegevens. De gegevens van de nummeraanduiding zijn in deze services onderdeel van de adresseerbare objecten, hierbij wordt slechts 1 adres opgenomen, dus objecten met meerdere adressen (hoofd- en nevenadressen) zijn niet compleet. In deze services zitten dus niet alle BAG adressen.
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent  :OwnerAgent ;
+        dcat:hadRole :owner ;
+    ] ;
+    void:uriSpace <http://bag.basisregistraties.overheid.nl/def/bag#identificatiecode> ;
+    void:triples "1000000000"^^xsd:integer ;
+    dcat:theme  <geography> ;
+    void:exampleResource [
+        dcat:mediaType "application/rdf+xml;charset=utf-8" ;
+        dct:description """
+Voorbeeld van een pand registratie in de BAG.
+""" ;
+        adms:status """
+FAIL (HTTPSConnectionPool(host='bag.basisregistraties.overheid.nl', port=443): Max retries exceeded with url: /bag/id/pand/0200100000085932 (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:997)'))))
+""" ;
+        dct:title "Kantoorpand_De_Brug_te_Apeldoorn" ;
+        dcat:accessURL <http://bag.basisregistraties.overheid.nl/bag/id/pand/0200100000085932> ;
+    ] ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:wikidata a void:Linkset ;
+    void:target :bag ;
+    void:triples "2505"^^xsd:integer ;
+ .
+
+
+:OwnerAgent a prov:Agent ;
+     foaf:mbox <mailto:wouter@triply.cc> ; 
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Erwin_Folmer"^^xsd:string ;
+     foaf:mbox <mailto:erwin.folmer@kadaster.nl> ; 
+ .
+

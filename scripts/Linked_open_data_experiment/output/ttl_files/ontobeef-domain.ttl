@@ -1,0 +1,206 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:ontobeef-domain a dcat:Dataset ;
+    dcat:keyword "agriculture", "animals", "beef", "beef_production", "deref-vocab", "food", "format-owl", "format-skos", "license-metadata", "lifesciences", "linked-open-data", "lod", "meat", "provenance-metadata", "published-by-producer", "vocab-mappings" ;
+    dct:license <http://creativecommons.org/licenses/by-nc/2.0/> ;
+    dct:title "OntoBeef_Domain" ;
+    void:exampleResource [
+        dct:title "Example_(human_readable_with_object_and_data_properties)" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Presentation makes object and data properties explicit.
+""" ;
+        dcat:accessURL <http://onto.beef.org.pl/ontobeef/Ontology?siri=D%3Bc201&output=hrrdf> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    void:sparqlEndpoint [
+        dct:title "SPARQL_EndPoint" ;
+        dcat:endpointDescription """
+SPARQL EndPoint
+""" ;
+        dcat:accessURL <http://onto.beef.org.pl/sparql> ;
+        adms:status """
+FAIL (404)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "mapping/owl" ;
+        dct:description """
+mapping file between OntoBeef-AGROVOC-SKOS
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "ontobeef-agrovoc-skos.ttl" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://onto.beef.org.pl/ontobeef/files/ontobeef-agrovoc.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+mapping between OntoBeef and NAL
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "ontobeef-nal.ttl" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://onto.beef.org.pl/ontobeef/files/ontobeef-nal.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+mapping between OntoBeef and GEMET
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "ontobeef-gemet.ttl" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://onto.beef.org.pl/ontobeef/files/ontobeef-gemet.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/turtle" ;
+        dct:description """
+mapping between OntoBeef and STW
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "ontobeef-stw.ttl" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://onto.beef.org.pl/ontobeef/files/ontobeef-stw.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=UTF-8" ;
+        dct:description """
+Data is presented here in a friendly way.
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Example_(human_readable)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://onto.beef.org.pl/domain/c201> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "" ;
+        dct:description """
+Link to an example data item within the dataset (RDF/XML)
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Link_to_an_example_data_item_within_the_dataset_(RDF/XML)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://onto.beef.org.pl/ontobeef/Ontology?siri=D%3Bc201&output=rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+DOLCE top-level ontology structuring OntoBeef
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "DOLCE" ;
+        dct:mirror "['ipfs:QmStWvwiJTQTEdU1d3AEdBnQpMmAWACcaL7fBJN3unTUAx']" ;
+        dcat:accessURL <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/rdf-schema" ;
+        dct:description """
+OWL version of OntoBeef Domain ontology
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Domain.owl" ;
+        dct:mirror "['ipfs:QmXTX7vcRCfcAKTtzdviQGx61rJwYZAZvgBBNfXKKSBgT8']" ;
+        dcat:accessURL <http://onto.beef.org.pl/ontobeef/files/Domain.owl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=UTF-8" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "Application" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://onto.beef.org.pl/ontobeef/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+VoID
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "void" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://onto.beef.org.pl/ontobeef/files/void.ttl> ;
+    ] ;
+    dct:description """
+Ontology of Beef created within ProOptiBeef project 
+([www.prooptibeef.pl](http://www.prooptibeef.pl/ "ProOptiBeef")).
+
+Links with LOD datasets (27.06.2013): 
+
+- 797 links with AGROVOC, 
+- 211 links with GEMET, 
+- 546 links with NAL and 
+- 119 links with STW.
+
+"""@en ;
+
+    foaf:page <http://onto.beef.org.pl/ontobeef> ;
+    void:triples "13099"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    void:uriSpace <http://onto.beef.org.pl/domain/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:agrovoc-skos a void:Linkset ;
+    void:target :ontobeef-domain ;
+    void:triples "797"^^xsd:integer ;
+ .
+
+:gemet a void:Linkset ;
+    void:target :ontobeef-domain ;
+    void:triples "211"^^xsd:integer ;
+ .
+
+:nalt a void:Linkset ;
+    void:target :ontobeef-domain ;
+    void:triples "546"^^xsd:integer ;
+ .
+
+:stw-thesaurus-for-economics a void:Linkset ;
+    void:target :ontobeef-domain ;
+    void:triples "119"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Polish_Beef_Association"^^xsd:string ;
+     foaf:mbox <mailto:robert@trypuz.pl> ; 
+ .
+

@@ -1,0 +1,142 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:Hoa_Thinh_Phat a dcat:Dataset ;
+    prov:OqualifiedAttribution [
+        prov:Oagent  :OwnerAgent ;
+        dcat:OhadRole :owner ;
+    ] ;
+    foaf:page <https://hoathinhphatgroup.com/> ;
+    void:triples "17"^^xsd:integer ;
+    dcat:distribution [
+        dct:identifier_distribution "934ed18b-96a5-7427-a717-d1c58638604e" ;
+        dct:title_distribution "XML_Sitemap" ;
+        dct:description_distribution """
+XML Sitemap
+""" ;
+        dcat:mediaType_distribution "text/xml;_charset=UTF-8" ;
+        dcat:downloadURL_distribution <https://hoathinhphatgroup.com/sitemap_index.xml> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "1f8d09a1-db57-0463-a24e-e09be575ffb6" ;
+        dct:title_distribution "Tường_cây__giả" ;
+        dct:description_distribution """
+Tường cây giả đang là sự lựa chọn hàng đầu trong thiết kế nội thất, tiểu cảnh sân vườn hiện nay. Thay vì đầu tư vuờn lá cây thật tốn nhiều thời gian, công sức chăm sóc, chi phí thì ngày nay người ta sẽ chọn thi công tường lá cây giả để mang không gian xanh vào trong ngôi nhà một cách đơn giản nhất.
+""" ;
+        dcat:mediaType_distribution "text/html;charset=utf-8" ;
+        dcat:downloadURL_distribution <https://hoathinhphatgroup.com/tuong-cay-gia/> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "7b20ac2c-4dd9-dbe5-4a4f-665915fa273b" ;
+        dct:title_distribution "Giới_Thiệu" ;
+        dct:description_distribution """
+Trong hơn 3 nằm gầy dựng thương hiệu, công ty cỏ nhân tạo Hoa Thịnh Phát đã thực sự chinh phục được sự hài lòng của người tiêu dùng qua sản phẩm thật chất lượng, dịch vụ tuyệt vời, giá thành hợp lý mà còn bởi chế độ bảo hành siêu lâu.
+""" ;
+        dcat:mediaType_distribution "text/html;charset=utf-8" ;
+        dcat:downloadURL_distribution <https://hoathinhphatgroup.com/gioi-thieu/> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "fb183dc7-e499-89c3-0ef7-e65aafcc4185" ;
+        dct:title_distribution "Cỏ_nhân_tạo" ;
+        dct:description_distribution """
+Đặc điểm cỏ nhân tạo sân vườn: Tiện lợi, đẹp, bền, không mất công chăm sóc nên được sử dụng với các mục đích để làm sân bóng đá, sân bóng chày, sân tenis, trang trí sân vườn, sân chơi công viên
+""" ;
+        dcat:mediaType_distribution "text/html;charset=utf-8" ;
+        dcat:downloadURL_distribution <https://hoathinhphatgroup.com/co-nhan-tao/> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "b109392f-9a7a-abc2-c11f-5d113ef69209" ;
+        dct:title_distribution "Cát_trắng_tự_nhiên" ;
+        dct:description_distribution """
+Trang trí nhà cửa, sân chơi,  vườn cây cảnh, quán cà phê, sân golf… bằng CÁT TRẮNG sân chơi đã trở thành trào lưu thịnh hành trong những năm gần đây. 
+""" ;
+        dcat:mediaType_distribution "text/html;charset=utf-8" ;
+        dcat:downloadURL_distribution <https://hoathinhphatgroup.com/cat-trang-tu-nhien/> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "7531e5b5-8272-1fe5-f6b3-cf966e033d9b" ;
+        dct:title_distribution "Xây_hồ_bơi" ;
+        dct:description_distribution """
+
+Xây hồ bơi gia đình đang là mô hình được nhiều người đón nhận trong không gian sống của mình. Một thực tế cho thấy, hiện nay các gia đình có điều kiện họ thi công bể bơi luôn trong nhà của mình, ở sân vườn hoặc sân thượng, hoặc 1 góc cạnh nào đó của không gian
+""" ;
+        dcat:mediaType_distribution "text/html;charset=utf-8" ;
+        dcat:downloadURL_distribution <https://hoathinhphatgroup.com/chi-phi-xay-ho-boi-gia-dinh/#gia_dinh> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:distribution [
+        dct:identifier_distribution "86ad38b1-744a-eea2-b537-c1b15ede061a" ;
+        dct:title_distribution "Thiết_bị_hồ_bơi" ;
+        dct:description_distribution """
+Một hồ bơi tốt phải được trang bị những thiết bị chất lượng và phù hợp. Bạn đang đắn đo không biết nên sắm sửa thiết bị hồ bơi giá tốt ở đâu? Vậy còn trần trừ gì mà không tìm đến Hoa Thịnh Phát – đơn vị thiết kế, xây dựng, cung cấp mọi trang thiết bị cần thiết cho hồ bơi nhà bạn trọn gói nhất.
+""" ;
+        dcat:mediaType_distribution "text/html;charset=utf-8" ;
+        dcat:downloadURL_distribution <https://hoathinhphatgroup.com/thiet-bi-ho-boi/> ;
+        adms:status_distribution """
+OK
+""" ;
+    ] ;
+    dcat:keyword "cỏ_nhân_tạo", "xây_hồ_bơi", "thiết_bị_hồ_bơi", "tường_cây_giả", "cỏ_nhân_tạo_sân_vườn", "thi_công_hồ_cá_koi", "cát_trắng_sân_chơi", "cát_trắng_tự_nhiên" ;
+    dct:description_main """
+Hoa Thịnh Phát là đơn vị đi đầu trong lĩnh vực cung cấp và thi công các loại cỏ nhân tạo cho sân vườn, xây hồ bơi, thiết kế hồ cá koi, sân bóng đá, cát trắng sân chơi trẻ em,… chuyên nghiệp nhất cả nước.
+"""@en ;
+
+    dct:title_main "Hoa_Thịnh_Phát" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-zero> ;
+    dcat:theme  <social_networking> ;
+    void:uriSpace <Hoa_Thịnh_Phát> ;
+    void:sparqlEndpoint [
+        dct:identifier_sparqlEndpoint "2aed2592-2c6b-003f-3592-c0b266eb9e30" ;
+        dct:title_sparqlEndpoint "Liên_hệ" ;
+        dcat:endpointDescription_sparqlEndpoint """
+Liên hệ
+""" ;
+        dcat:accessURL_sparqlEndpoint <https://hoathinhphatgroup.com/lien-he/> ;
+        adms:status_sparqlEndpoint """
+OK
+""" ;
+    ] ;
+    prov:CqualifiedAttribution [
+        prov:Cagent :contactAgent ;
+        dcat:ChadRole :contact_point ;
+    ] ;
+    foaf:depiction <https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_162,h_111/http://hoathinhphatgroup.com/wp-content/uploads/2020/08/logohoathinhphat2-2.png> .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+
+:OwnerAgent a prov:OAgent ;
+     foaf:Ombox <mailto:collagenadivaduc4@gmail.com> ; 
+ .
+
+
+:contactAgent a prov:CAgent ;
+     foaf:Cname "Hoa_Thịnh_Phát"^^xsd:string ;
+     foaf:Cmbox <mailto:trangtriho@hinhph@@gmail.com> ; 
+ .
+

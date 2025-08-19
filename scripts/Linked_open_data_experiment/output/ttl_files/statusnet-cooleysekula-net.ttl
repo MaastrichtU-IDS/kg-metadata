@@ -1,0 +1,76 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:statusnet-cooleysekula-net a dcat:Dataset ;
+    dcat:keyword "LinkedDataCrawl2014", "crawledLinkedDataCloud2014", "format-bio", "format-foaf", "format-pos", "format-rdf", "format-rdfs", "format-sioc", "lodcloud-diagram-2014-08-30", "social_web" ;
+    dct:title "statusnet-cooleysekula-net" ;
+    void:exampleResource [
+        dct:title "None" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+Example resource
+""" ;
+        dcat:accessURL <http://chirp.cooleysekula.net/jtuggle/foaf> ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='chirp.cooleysekula.net', port=80): Max retries exceeded with url: /jtuggle/foaf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f3686dac760>, 'Connection to chirp.cooleysekula.net timed out. (connect timeout=30)')))
+""" ;
+    ] ;
+    dct:description """
+StatusNet instance hosted at http://cooleysekula.net
+"""@en ;
+
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:geonames-semantic-web a void:Linkset ;
+    void:target :statusnet-cooleysekula-net ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:statusnet-fragdev-com a void:Linkset ;
+    void:target :statusnet-cooleysekula-net ;
+    void:triples "5"^^xsd:integer ;
+ .
+
+:statusnet-jonkman-ca a void:Linkset ;
+    void:target :statusnet-cooleysekula-net ;
+    void:triples "8"^^xsd:integer ;
+ .
+
+:statusnet-linuxwrangling-com a void:Linkset ;
+    void:target :statusnet-cooleysekula-net ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-quitter-se a void:Linkset ;
+    void:target :statusnet-cooleysekula-net ;
+    void:triples "30"^^xsd:integer ;
+ .
+
+:statusnet-russwurm-org a void:Linkset ;
+    void:target :statusnet-cooleysekula-net ;
+    void:triples "1"^^xsd:integer ;
+ .
+
+:statusnet-skilledtests-com a void:Linkset ;
+    void:target :statusnet-cooleysekula-net ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:statusnet-status-net a void:Linkset ;
+    void:target :statusnet-cooleysekula-net ;
+    void:triples "2"^^xsd:integer ;
+ .
+

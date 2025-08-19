@@ -1,0 +1,319 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:bioportal-ocre a dcat:Dataset ;
+    dcat:keyword "biomedicine", "bioportal", "format-owl", "format-rdf", "lod", "ontology", "published-by-third-party" ;
+    dct:title "Ontology_of_Clinical_Research_(OCRe)" ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=UTF-8" ;
+        dct:description """
+REST API Wiki Documentation
+""" ;
+        adms:status """
+FAIL (404)
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.bioontology.org/wiki/index.php/BioPortal_REST_services> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;_charset=utf-8" ;
+        dct:description """
+SPARQL endpoint
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://sparql.bioontology.org/> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "text/html;charset=utf-8" ;
+        dct:description """
+Download link, BioPortal API KEY is required
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "None" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://rest.bioontology.org/bioportal/ontologies/download/46936?apikey=BP_API_KEY> ;
+    ] ;
+    dct:description """
+OCRe is an ontology designed to support systematic description of, and interoperable queries on, human studies and study elements.
+"""@en ;
+
+    foaf:page <http://bioportal.bioontology.org/ontologies/1076> ;
+    void:triples "5139"^^xsd:integer ;
+    dcat:theme  <life_sciences> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:bioportal-aero a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "19"^^xsd:integer ;
+ .
+
+:bioportal-bao a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:bioportal-bdo a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:bioportal-birnlex a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-canco a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "21"^^xsd:integer ;
+ .
+
+:bioportal-cheminf a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:bioportal-clo a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:bioportal-cogpo a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:bioportal-cpr a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-csp a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-ddi a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+:bioportal-efo a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-ehda a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "18"^^xsd:integer ;
+ .
+
+:bioportal-ep a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "19"^^xsd:integer ;
+ .
+
+:bioportal-ero a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "27"^^xsd:integer ;
+ .
+
+:bioportal-flu a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:bioportal-galen a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:bioportal-hl7 a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "17"^^xsd:integer ;
+ .
+
+:bioportal-hpio a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "10"^^xsd:integer ;
+ .
+
+:bioportal-iao a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "19"^^xsd:integer ;
+ .
+
+:bioportal-ido a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:bioportal-idobru a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:bioportal-lnc a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "40"^^xsd:integer ;
+ .
+
+:bioportal-mesh-owl a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "42"^^xsd:integer ;
+ .
+
+:bioportal-mf a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:bioportal-mfoem a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "15"^^xsd:integer ;
+ .
+
+:bioportal-msh a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "25"^^xsd:integer ;
+ .
+
+:bioportal-ncit a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "139"^^xsd:integer ;
+ .
+
+:bioportal-nemo_x1 a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "22"^^xsd:integer ;
+ .
+
+:bioportal-nif a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "41"^^xsd:integer ;
+ .
+
+:bioportal-nif_cell a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+:bioportal-nif_dysfunction a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "20"^^xsd:integer ;
+ .
+
+:bioportal-npo a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:bioportal-obi a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "23"^^xsd:integer ;
+ .
+
+:bioportal-odgi a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-ogms a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-omrse a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-ontodm a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "18"^^xsd:integer ;
+ .
+
+:bioportal-ontodt a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-ooevv a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "11"^^xsd:integer ;
+ .
+
+:bioportal-opl a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "16"^^xsd:integer ;
+ .
+
+:bioportal-pato a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-rcd a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "22"^^xsd:integer ;
+ .
+
+:bioportal-sdo a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "30"^^xsd:integer ;
+ .
+
+:bioportal-sio a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "19"^^xsd:integer ;
+ .
+
+:bioportal-snomedct a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "41"^^xsd:integer ;
+ .
+
+:bioportal-sopharm a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "18"^^xsd:integer ;
+ .
+
+:bioportal-teo a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "18"^^xsd:integer ;
+ .
+
+:bioportal-tmo a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "14"^^xsd:integer ;
+ .
+
+:bioportal-vo a void:Linkset ;
+    void:target :bioportal-ocre ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Ida_Sim"^^xsd:string ;
+ .
+

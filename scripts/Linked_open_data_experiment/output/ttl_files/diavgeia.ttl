@@ -1,0 +1,161 @@
+
+@prefix : <http://example.org/> . 
+@prefix dct: <http://purl.org/dc/terms/> . 
+@prefix void: <http://rdfs.org/ns/void#> . 
+@prefix dcat: <http://www.w3.org/ns/dcat#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms:<http://www.w3.org/TR/vocab-adms/>.
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .  # vCard for contact details
+
+:diavgeia a dcat:Dataset ;
+    dcat:keyword "clarity", "diavgeia", "format-dc", "format-foaf", "format-owl", "format-rdf", "format-skos", "government", "greece", "greek", "license-metadata", "linked_data", "lod", "no-proprietary-vocab", "opendata", "openspending", "provenance-metadata", "published-by-third-party" ;
+    dct:license <http://www.opendefinition.org/licenses/cc-by-sa> ;
+    dct:title "Diavgeia" ;
+    void:exampleResource [
+        dct:title "2012-08-27T164505/Diavgeia_demo_RDF_XML.rdf" ;
+        dcat:mediaType "example/rdf+xml" ;
+        dct:description """
+
+""" ;
+        dcat:accessURL <https://commondatastorage.googleapis.com/ckannet-storage/2012-08-27T164505/Diavgeia_demo_RDF_XML.rdf> ;
+        adms:status """
+FAIL (403)
+""" ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "CSV" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='diavgeia.math.auth.gr', port=80): Max retries exceeded with url: /sparql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dacf40>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Diavgeia_SPARQL_endpoint" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://diavgeia.math.auth.gr/sparql> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "HTML" ;
+        dct:description """
+Visualizing spending data (querying sparql endpoint) using Google's API
+""" ;
+        adms:status """
+FAIL (HTTPConnectionPool(host='www.greek-lod.gr', port=80): Max retries exceeded with url: /DiavgeiaTreeMap/dapanes/General.html (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3686dacd30>: Failed to establish a new connection: [Errno -2] Name or service not known')))
+""" ;
+        dct:title "Spending_Visualizationexample_#1" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <http://www.greek-lod.gr/DiavgeiaTreeMap/dapanes/General.html> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "RDF" ;
+        dct:description """
+Uploaded file with SPARQL Query results (RDF/XML output) listing 100 expenses greater than 1000 Euros
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "Diavgeia_/_Example_data_item_within_the_dataset_(RDF/XML)" ;
+        dct:mirror "['ipfs:QmYGSAD7i5QfFPaz4c6ivSGQfYUbx1KX3dDynkAwPq61Qf']" ;
+        dcat:accessURL <https://commondatastorage.googleapis.com/ckannet-storage/2012-08-27T163756/Diavgeia_demo_RDF_XML.rdf> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "TXT" ;
+        dct:description """
+Example data - SPARQL Query results (NTriples output) listing 100 expenses greater than 1000 Euros
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "Diavgeia_/_Example_data_item_within_the_dataset_(NTriples)" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://commondatastorage.googleapis.com/ckannet-storage/2012-08-27T164145/Diavgeia_demo_NTriples.nt> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "meta/void" ;
+        dct:description """
+
+""" ;
+        adms:status """
+OK
+""" ;
+        dct:title "voiD_description_file" ;
+        dct:mirror "['ipfs:QmRX4uprYbbV3CxRQGZ5o73P4oxobF1GmPUqWSvPgMeiMm']" ;
+        dcat:accessURL <https://commondatastorage.googleapis.com/ckannet-storage/2012-09-27T161432/void.ttl> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "XLS" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "2013-02-08T154930/MinistriesSpending2012_1.csv" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://ckannet-storage.commondatastorage.googleapis.com/2013-02-08T154930/MinistriesSpending2012_1.csv> ;
+    ] ;
+    dcat:distribution [
+        dcat:mediaType "XLS" ;
+        dct:description """
+
+""" ;
+        adms:status """
+FAIL (403)
+""" ;
+        dct:title "2013-02-08T164424/PolicePerRegion_1.csv" ;
+        dct:mirror "[]" ;
+        dcat:accessURL <https://ckannet-storage.commondatastorage.googleapis.com/2013-02-08T164424/PolicePerRegion_1.csv> ;
+    ] ;
+    dct:description """
+The Clarity program introduces for the first time in Greece the obligation to publish all the decisions on the Internet, with the exception of decisions that contain sensitive personal data and/or information on national security. It is quite an innovative program, even by European standards, aiming first of all to bring about the maximum publicity of the government policy and administrative action. The use of Internet guarantees wide publicity and access to information, progressively contributing to a culture change in the whole of the Public Administration.
+"""@en ;
+
+    foaf:page <http://opendata.diavgeia.gov.gr/?lang=en> ;
+    void:triples "48051108"^^xsd:integer ;
+    dcat:theme  <government> ;
+    void:uriSpace <http://diavgeia.math.auth.gr/resource/> ;
+    prov:qualifiedAttribution [
+        prov:agent :contactAgent ;
+        dcat:hadRole :contact_point ;
+    ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . 
+:dbpedia a void:Linkset ;
+    void:target :diavgeia ;
+    void:triples "13"^^xsd:integer ;
+ .
+
+:dbpedia-el a void:Linkset ;
+    void:target :diavgeia ;
+    void:triples "676"^^xsd:integer ;
+ .
+
+:eurostat a void:Linkset ;
+    void:target :diavgeia ;
+    void:triples "12"^^xsd:integer ;
+ .
+
+:hellenic-fire-brigade a void:Linkset ;
+    void:target :diavgeia ;
+    void:triples "156"^^xsd:integer ;
+ .
+
+:hellenic-police a void:Linkset ;
+    void:target :diavgeia ;
+    void:triples "45"^^xsd:integer ;
+ .
+
+:kalikratis-municipalities a void:Linkset ;
+    void:target :diavgeia ;
+    void:triples "355"^^xsd:integer ;
+ .
+
+
+:contactAgent a prov:Agent ;
+     foaf:name "Spiros_Alexiou"^^xsd:string ;
+     foaf:mbox <mailto:spiros.alexiou@gmail.com> ; 
+ .
+
