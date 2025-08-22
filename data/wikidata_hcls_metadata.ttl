@@ -28,11 +28,11 @@
     void:vocabulary <https://github.com/mkroetzsch/wda/blob/master/wikidata-ontology.owl> ;
     cito:citesAsAuthority <https://dl.acm.org/doi/10.1145/2629489> ;
     foaf:depiction <https://www.researchgate.net/figure/A-simplified-class-level-diagram-of-the-Wikidata-knowledge-graph-for-biomedical-entities_fig1_339985351> ;
+    dct:conformsTo <https://www.wikidata.org/wiki/EntitySchema:E10>;
     void:triples "17841499814"^^xsd:integer ;
     dcat:distribution [
                        dct:title "latest dump of Wikidata";
                        dct:description "latest dump of Wikidata in turtle format"; 
-                       dct:conformsTo <https://www.wikidata.org/wiki/EntitySchema:E10>;
                        dcat:mediaType "application/octet-stream";
                        dcat:downloadURL <https://www.wikidata.org/wiki/Wikidata:Database_download/nl>;   dcat:accessURL <> ;];
     void:sparqlEndpoint[ 
@@ -41,7 +41,7 @@
                        dct:title "Wikidata Query Service"^^rdfs:Literal ;
                        dcat:endpointDescription  """The Wikidata Query Service generally contains the full data of Wikidata,...""" ;
                       adms:status  <http://purl.org/adms/status/Completed> ;];
-    mod:sampleQueries "https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples"^^xsd:anyURI ;
+    mod:sampleQueries <https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples> ;
     dct:version "1.0"^^rdfs:Literal ;
     dct:license <https://www.wikidata.org/wiki/Q6938433> ;
     dcat:keyword "knowledge graph, wikidata, ontology"^^xsd:string ;

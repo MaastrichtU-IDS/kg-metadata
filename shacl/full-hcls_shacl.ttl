@@ -182,7 +182,7 @@
         sh:path mod:sampleQueries   ;
         sh:nodeKind sh:IRIOrLiteral;
         sh:description "To provide an exemplar query against the KG" ;
-        :example "https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples"^^xsd:anyURI ;
+        :example <https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples>;
     ] ;   
     
      
