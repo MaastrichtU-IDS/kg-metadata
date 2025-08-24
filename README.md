@@ -70,15 +70,10 @@ Visit  [Google Rich Results Test](https://search.google.com/test/rich-results), 
 
 - Go to [https://search.google.com/search-console](https://search.google.com/search-console)
 - Add the URL as a new property.
-- Choose one of the following verification methods:
-  - Add a meta tag to the `<head>` of the HTML file.
-  - Upload a provided HTML verification file to the root directory.
 - Complete the verification process.
+- Request indexing
+- Optionally, submit a `sitemap.xml` file to improve crawlability
 
-### Step 6: Submit for Indexing
-
-Use the URL Inspection Tool in Google Search Console to request indexing.  
-Optionally, submit a `sitemap.xml` file to improve crawlability.
 
 
 
