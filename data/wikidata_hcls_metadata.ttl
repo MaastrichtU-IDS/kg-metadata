@@ -45,7 +45,7 @@
     dct:version "1.0"^^rdfs:Literal ;
     dct:license <https://www.wikidata.org/wiki/Q6938433> ;
     dcat:keyword "knowledge graph, wikidata, ontology"^^xsd:string ;
-    dcat:theme <open knowledge graph>
+    dcat:theme <http://www.wikidata.org/ontology#> ;
     dct:references <https://www.wikidata.org/wiki/Wikidata:Introduction> ;
     dct:language "en" ;
     void:uriRegexPattern "https://www.wikidata.org/wiki/{id}"^^xsd:string ;
